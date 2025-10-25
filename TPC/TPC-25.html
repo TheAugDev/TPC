@@ -1,0 +1,995 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ch. 25 Study Guide: Texas Penal Code</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet">
+    <style>
+        :root {
+            --header-bg: #1f2937;
+            --bg-color: #f3f4f6;
+            --tab-active-bg: #3b82f6;
+            --tab-active-text: #ffffff;
+            --card-bg: #ffffff;
+            --text-color: #111827;
+            --link-color: #2563eb;
+        }
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            font-family: 'Inter', sans-serif;
+        }
+        @import url('https://rsms.me/inter/inter.css');
+        .tab-content { display: none; }
+        .tab-content.active { display: block; }
+        .tab.active {
+            background-color: var(--tab-active-bg);
+            color: var(--tab-active-text);
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .tab {
+            transition: all 0.3s ease-in-out;
+        }
+        .definition-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 1rem;
+        }
+        .definition-item {
+            background-color: #f9fafb;
+            padding: 0.75rem;
+            border-radius: 0.5rem;
+            border: 1px solid #e5e7eb;
+        }
+        .definition-term {
+            font-weight: 600;
+            color: #111827;
+        }
+        .definition-desc {
+            font-size: 0.875rem;
+            color: #4b5563;
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Header -->
+    <header class="bg-gray-800 text-white p-4 shadow-md">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-2xl font-bold">
+                <i class="fas fa-users mr-2"></i>Ch. 25: Offenses Against the Family
+            </h1>
+            <a href="index.html" class="text-sm text-blue-300 hover:text-blue-100 hover:underline">
+                <i class="fas fa-arrow-left mr-1"></i> Back to Main Page
+            </a>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container mx-auto p-4 md:p-6">
+        <!-- Tab Navigation -->
+        <div class="mb-6 bg-white rounded-lg shadow-md overflow-x-auto">
+            <nav id="tabs" class="flex flex-row space-x-1 p-2">
+                <button data-tab="key-definitions" class="tab active flex-1 md:flex-none flex items-center justify-center px-4 py-2 text-sm font-semibold rounded-lg text-gray-600 hover:bg-blue-100">
+                    <i class="fas fa-book mr-2"></i> <span class="hidden md:inline">Key Definitions</span>
+                </button>
+                <button data-tab="key-sections-1" class="tab flex-1 md:flex-none flex items-center justify-center px-4 py-2 text-sm font-semibold rounded-lg text-gray-600 hover:bg-blue-100">
+                    <i class="fas fa-ring mr-2"></i> <span class="hidden md:inline">Marriage & Custody (25.01-25.04)</span>
+                </button>
+                <button data-tab="key-sections-2" class="tab flex-1 md:flex-none flex items-center justify-center px-4 py-2 text-sm font-semibold rounded-lg text-gray-600 hover:bg-blue-100">
+                    <i class="fas fa-hand-holding-dollar mr-2"></i> <span class="hidden md:inline">Support & Orders (25.05-25.072)</span>
+                </button>
+                <button data-tab="key-sections-3" class="tab flex-1 md:flex-none flex items-center justify-center px-4 py-2 text-sm font-semibold rounded-lg text-gray-600 hover:bg-blue-100">
+                    <i class="fas fa-baby mr-2"></i> <span class="hidden md:inline">Child Placement & Others (25.08-25.11)</span>
+                </button>
+                <button data-tab="knowledge-check" class="tab flex-1 md:flex-none flex items-center justify-center px-4 py-2 text-sm font-semibold rounded-lg text-gray-600 hover:bg-blue-100">
+                    <i class="fas fa-question-circle mr-2"></i> <span class="hidden md:inline">Knowledge Check</span>
+                </button>
+                <button data-tab="resources" class="tab flex-1 md:flex-none flex items-center justify-center px-4 py-2 text-sm font-semibold rounded-lg text-gray-600 hover:bg-blue-100">
+                    <i class="fas fa-link mr-2"></i> <span class="hidden md:inline">Resources</span>
+                </button>
+            </nav>
+        </div>
+
+        <!-- Tab Content -->
+        <div id="tab-contents">
+            <!-- Key Definitions Tab -->
+            <div id="key-definitions" class="tab-content active">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-2xl font-bold mb-4">Key Definitions (Ch. 25)</h2>
+                    <div class="definition-grid">
+                        <div class="definition-item">
+                            <span class="definition-term">Under the appearance of being married (25.01)</span>
+                            <p class="definition-desc">Holding out that the parties are married with cohabitation and an intent to be married by either party.</p>
+                        </div>
+                        <div class="definition-item">
+                            <span class="definition-term">Deviate sexual intercourse (25.02)</span>
+                            <p class="definition-desc">Any contact between the genitals of one person and the mouth or anus of another person with intent to arouse or gratify.</p>
+                        </div>
+                        <div class="definition-item">
+                            <span class="definition-term">Sexual intercourse (25.02)</span>
+                            <p class="definition-desc">Any penetration of the female sex organ by the male sex organ.</p>
+                        </div>
+                        <div class="definition-item">
+                            <span class="definition-term">Child (25.05)</span>
+                            <p class="definition-desc">Includes a child born out of wedlock whose paternity has been acknowledged by the actor or established in a civil suit.</p>
+                        </div>
+                        <div class="definition-item">
+                            <span class="definition-term">Family violence, family, household (25.07)</span>
+                            <p class="definition-desc">Have the meanings assigned by Chapter 71, Family Code.</p>
+                        </div>
+                        <div class="definition-item">
+                            <span class="definition-term">Global positioning monitoring system (25.07)</span>
+                            <p class="definition-desc">Has the meaning assigned by Article 17.49, Code of Criminal Procedure.</p>
+                        </div>
+                        <div class="definition-item">
+                            <span class="definition-term">Assistance animal (25.07)</span>
+                            <p class="definition-desc">Has the meaning assigned by Section 121.002, Human Resources Code.</p>
+                        </div>
+                        <div class="definition-item">
+                            <span class="definition-term">Sexual abuse / assault / stalking / trafficking (25.07)</span>
+                            <p class="definition-desc">Means conduct constituting an offense under Sec. 21.02/21.11, 22.011/22.021, 42.072, or 20A.02, respectively.</p>
+                        </div>
+                        <div class="definition-item">
+                            <span class="definition-term">Adopted child (25.081)</span>
+                            <p class="definition-desc">A person younger than 18 who was legally adopted.</p>
+                        </div>
+                        <div class="definition-item">
+                            <span class="definition-term">Unregulated custody transfer (25.081)</span>
+                            <p class="definition-desc">The transfer of permanent physical custody of an adopted child without court approval as required by Sec. 162.026, Family Code.</p>
+                        </div>
+                        <div class="definition-item">
+                            <span class="definition-term">Public media (25.09)</span>
+                            <p class="definition-desc">Has the meaning from Sec. 38.01, and also includes the Internet or another public computer network.</p>
+                        </div>
+                        <div class="definition-item">
+                            <span class="definition-term">Possessory right (25.10)</span>
+                            <p class="definition-desc">The right of a guardian to have physical possession of a ward and establish their legal domicile.</p>
+                        </div>
+                         <div class="definition-item">
+                            <span class="definition-term">Ward (25.10)</span>
+                            <p class="definition-desc">Has the meaning assigned by Chapter 1002, Estates Code.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Key Sections (25.01-25.04) Tab -->
+            <div id="key-sections-1" class="tab-content space-y-6">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-xl font-bold mb-4 border-b pb-2"><a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.25.htm#25.01" target="_blank" class="text-blue-600 hover:underline">Sec. 25.01. Bigamy</a></h2>
+                    <ul class="list-disc list-inside text-sm text-gray-700 space-y-2">
+                        <li><strong class="font-semibold">Offense (a)(1):</strong> A legally married person commits an offense if they:
+                            <ol class="list-decimal list-inside ml-6">
+                                <li>Purport to marry or do marry someone else; OR</li>
+                                <li>Live with someone else in this state under the "appearance of being married."</li>
+                            </ol>
+                        </li>
+                        <li><strong class="font-semibold">Offense (a)(2):</strong> A person commits an offense if they *know* another person is married and they:
+                            <ol class="list-decimal list-inside ml-6">
+                                <li>Purport to marry or do marry that married person; OR</li>
+                                <li>Live with that married person in this state under the "appearance of being married."</li>
+                            </ol>
+                        </li>
+                        <li><strong class="font-semibold">Definition (b):</strong> "Under the appearance of being married" = holding out + cohabitation + intent to be married by *either* party.</li>
+                        <li><strong class="font-semibold">Defense (c):</strong> It is a defense (for the married party) that the actor <strong class="font-semibold">reasonably believed</strong> they were eligible to marry because the prior marriage was void or dissolved. A belief is reasonable if substantiated by a certified death certificate or court document.</li>
+                        <li><strong class="font-semibold">Testimony (d):</strong> A lawful spouse *may* testify for or against the actor.</li>
+                        <li><strong class="font-semibold">Penalty (e):</strong> <strong class="font-semibold">Felony of the third degree</strong>, enhanced to:
+                            <ul class="list-disc list-inside ml-6">
+                                <li><strong class="font-semibold">Felony of the second degree</strong> if the other person is 17.</li>
+                                <li><strong class="font-semibold">Felony of the first degree</strong> if the other person is 16 or younger.</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-xl font-bold mb-4 border-b pb-2"><a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.25.htm#25.02" target="_blank" class="text-blue-600 hover:underline">Sec. 25.02. Prohibited Sexual Conduct</a></h2>
+                    <ul class="list-disc list-inside text-sm text-gray-700 space-y-2">
+                        <li><strong class="font-semibold">Offense (a):</strong> A person commits an offense if they engage in sexual intercourse or deviate sexual intercourse with another person the actor *knows* to be their:
+                            <ol class="list-decimal list-inside ml-6">
+                                <li>Ancestor or descendant (blood or adoption).</li>
+                                <li>Current or former stepchild or stepparent.</li>
+                                <li>Aunt or uncle.</li>
+                                <li>Brother or sister (whole, half, or adoption).</li>
+                                <li>Niece or nephew.</li>
+                                <li>First cousin.</li>
+                            </ol>
+                        </li>
+                        <li><strong class="font-semibold">Penalty (c):</strong> <strong class="font-semibold">Felony of the third degree</strong>, *unless* it's with an ancestor/descendant (a)(1), which is a <strong class="font-semibold">Felony of the second degree</strong>.</li>
+                    </ul>
+                </div>
+
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-xl font-bold mb-4 border-b pb-2"><a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.25.htm#25.03" target="_blank" class="text-blue-600 hover:underline">Sec. 25.03. Interference with Child Custody</a></h2>
+                    <ul class="list-disc list-inside text-sm text-gray-700 space-y-2">
+                        <li><strong class="font-semibold">Offense (a):</strong> A person takes or retains a child < 18 when:
+                            <ol class="list-decimal list-inside ml-6">
+                                <li>They *know* it violates a court order; OR</li>
+                                <li>They have no custody order, *know* a suit has been filed, and take the child out of the court's geographic area *with intent to deprive the court of authority*.</li>
+                                <li>They take the child *outside the U.S.* with intent to deprive another of possession/access.</li>
+                            </ol>
+                        </li>
+                        <li><strong class="font-semibold">Offense (b):</strong> A *noncustodial parent* commits an offense if, with intent to interfere, they knowingly entice or persuade the child to leave the custodian.</li>
+                        <li><strong class="font-semibold">Defense (c):</strong> For (a)(2), it's a defense if the actor returned the child to the geographic area within <strong class="font-semibold">3 days</strong>.</li>
+                        <li><strong class="font-semibold">Affirmative Defense (c-1):</strong> For (a)(3) (taking outside U.S.), it's an affirmative defense if it was pursuant to a valid order OR retention was due to circumstances beyond control and actor provided prompt notice.</li>
+                        <li><strong class="font-semibold">Exception (c-2):</strong> (a)(3) does not apply if the person was entitled to possession/access AND was <strong class="font-semibold">fleeing family violence</strong>.</li>
+                        <li><strong class="font-semibold">Penalty (d):</strong> <strong class="font-semibold">State jail felony</strong>.</li>
+                        <li><strong class="font-semibold">Overlap (e):</strong> If conduct under (a)(3) is also Kidnapping (20.03), it can *only* be prosecuted as Kidnapping.</li>
+                    </ul>
+                </div>
+                
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-xl font-bold mb-4 border-b pb-2"><a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.25.htm#25.031" target="_blank" class="text-blue-600 hover:underline">Sec. 25.031. Agreement to Abduct from Custody</a></h2>
+                    <ul class="list-disc list-inside text-sm text-gray-700 space-y-2">
+                        <li><strong class="font-semibold">Offense (a):</strong> A person agrees, *for remuneration*, to abduct a child (< 18) by force, threat, misrepresentation, etc., *knowing* the child is under court-ordered care.</li>
+                        <li><strong class="font-semibold">Penalty (b):</strong> <strong class="font-semibold">State jail felony</strong>.</li>
+                    </ul>
+                </div>
+
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-xl font-bold mb-4 border-b pb-2"><a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.25.htm#25.04" target="_blank" class="text-blue-600 hover:underline">Sec. 25.04. Enticing a Child</a></h2>
+                    <ul class="list-disc list-inside text-sm text-gray-700 space-y-2">
+                        <li><strong class="font-semibold">Offense (a):</strong> With *intent to interfere with lawful custody* of a child (< 18), knowingly entices, persuades, or takes the child from the custodian.</li>
+                        <li><strong class="font-semibold">Penalty (b):</strong> <strong class="font-semibold">Class B misdemeanor</strong>, *unless* the actor intended to commit a felony against the child, then it's a <strong class="font-semibold">Felony of the third degree</strong>.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Key Sections (25.05-25.072) Tab -->
+            <div id="key-sections-2" class="tab-content space-y-6">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-xl font-bold mb-4 border-b pb-2"><a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.25.htm#25.05" target="_blank" class="text-blue-600 hover:underline">Sec. 25.05. Criminal Nonsupport</a></h2>
+                    <ul class="list-disc list-inside text-sm text-gray-700 space-y-2">
+                        <li><strong class="font-semibold">Offense (a):</strong> An individual *intentionally or knowingly* fails to provide support for their child (< 18) or a child they are under a court order to support.</li>
+                        <li><strong class="font-semibold">Affirmative Defense (d):</strong> It is an affirmative defense that the actor *could not* provide support.</li>
+                        <li><strong class="font-semibold">Penalty (f):</strong> <strong class="font-semibold">State jail felony</strong>.</li>
+                    </ul>
+                </div>
+
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-xl font-bold mb-4 border-b pb-2"><a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.25.htm#25.06" target="_blank" class="text-blue-600 hover:underline">Sec. 25.06. Harboring Runaway Child</a></h2>
+                    <ul class="list-disc list-inside text-sm text-gray-700 space-y-2">
+                        <li><strong class="font-semibold">Offense (a):</strong> A person *knowingly* harbors a child and is *criminally negligent* about whether the child is < 18 AND has escaped custody or is voluntarily absent from home.</li>
+                        <li><strong class="font-semibold">Defense (b):</strong> Actor was related within the second degree (e.g., grandparent, sibling).</li>
+                        <li><strong class="font-semibold">Defense (c):</strong> Actor notified law enforcement or the child's home/custodian within <strong class="font-semibold">24 hours</strong> of discovery.</li>
+                        <li><strong class="font-semibold">Penalty (d):</strong> <strong class="font-semibold">Class A misdemeanor</strong>.</li>
+                        <li><strong class="font-semibold">Mandatory LE Action (e):</strong> LE *shall immediately* enter a report of a missing/escaped child into NCIC.</li>
+                    </ul>
+                </div>
+
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-xl font-bold mb-4 border-b pb-2"><a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.25.htm#25.07" target="_blank" class="text-blue-600 hover:underline">Sec. 25.07. Violation of Certain Court Orders... (Protective Orders)</a></h2>
+                    <ul class="list-disc list-inside text-sm text-gray-700 space-y-2">
+                        <li><strong class="font-semibold">Offense (a):</strong> A person *knowingly or intentionally* violates a condition of bond or protective order (related to FV, sexual assault, stalking, etc.) by:
+                            <ol class="list-decimal list-inside ml-6">
+                                <li>Committing family violence or an act in furtherance of stalking, trafficking, etc.</li>
+                                <li>Communicating in a threatening/harassing manner or any communication if prohibited.</li>
+                                <li>Going to or near a protected place (residence, work, school).</li>
+                                <li>Possessing a firearm.</li>
+                                <li>Harming, threatening, or interfering with a protected animal.</li>
+                                <li>Tampering with a GPS monitor.</li>
+                                <li>Tracking a protected person's property/vehicle without consent.</li>
+                            </ol>
+                        </li>
+                        <li><strong class="font-semibold">No Effect (d):</strong> Reconciliatory actions (e.g., the victim invites the person over) *do not* affect the order's validity or the officer's duty to enforce.</li>
+                        <li><strong class="font-semibold">Arrest (e):</strong> A peace officer *may not* arrest a *protected person* for a violation of that order.</li>
+                        <li><strong class="font-semibold">Penalty (g):</strong> <strong class="font-semibold">Class A misdemeanor</strong>, enhanced to:
+                            <ul class="list-disc list-inside ml-6">
+                                <li><strong class="font-semibold">State Jail Felony</strong> if it violates a post-conviction order OR the person possesses a deadly weapon during violations (a)(1, 2, 3, 5, 6, 7).</li>
+                                <li><strong class="font-semibold">Felony of the third degree</strong> if the person has <strong class="font-semibold">two or more prior convictions</strong> (under 25.07 or 25.072) OR violates the order by committing <strong class="font-semibold">assault or stalking</strong>.</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-xl font-bold mb-4 border-b pb-2"><a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.25.htm#25.071" target="_blank" class="text-blue-600 hover:underline">Sec. 25.071. Violation of Protective Order Preventing Offense Caused by Bias or Prejudice</a></h2>
+                    <ul class="list-disc list-inside text-sm text-gray-700 space-y-2">
+                        <li><strong class="font-semibold">Offense (a):</strong> Knowingly/intentionally violates a "hate crime" PO by:
+                             <ol class="list-decimal list-inside ml-6">
+                                <li>Committing a Title 5 (against person) or Title 7 (property) offense *because of* bias or prejudice.</li>
+                                <li>Communicating in a threatening/harassing manner.</li>
+                                <li>Going to or near a protected place.</li>
+                            </ol>
+                        </li>
+                        <li><strong class="font-semibold">Penalty (d):</strong> <strong class="font-semibold">Class A misdemeanor</strong>, enhanced to a <strong class="font-semibold">Felony of the third degree</strong> if <strong class="font-semibold">two or more prior convictions</strong> or violated by committing <strong class="font-semibold">assault</strong>.</li>
+                    </ul>
+                </div>
+
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-xl font-bold mb-4 border-b pb-2"><a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.25.htm#25.072" target="_blank" class="text-blue-600 hover:underline">Sec. 25.072. Repeated Violation of Certain Court Orders...</a></h2>
+                    <ul class="list-disc list-inside text-sm text-gray-700 space-y-2">
+                        <li><strong class="font-semibold">Offense (a):</strong> A person, *during a period of 12 months or less*, engages in conduct *two or more times* that constitutes an offense under Sec. 25.07.</li>
+                        <li><strong class="font-semibold">Jury (b):</strong> Jury does not need to be unanimous on the specific acts, only that the actor committed two or more acts in the 12-month period.</li>
+                        <li><strong class="font-semibold">Penalty (e):</strong> <strong class="font-semibold">Felony of the third degree</strong>, enhanced to a <strong class="font-semibold">Felony of the second degree</strong> if at least one of the acts was punishable as a SJF under 25.07(g)(1)(B) (violation while possessing a deadly weapon).</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Key Sections (25.08-25.11) Tab -->
+            <div id="key-sections-3" class="tab-content space-y-6">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-xl font-bold mb-4 border-b pb-2"><a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.25.htm#25.08" target="_blank" class="text-blue-600 hover:underline">Sec. 25.08. Sale or Purchase of Child</a></h2>
+                    <ul class="list-disc list-inside text-sm text-gray-700 space-y-2">
+                        <li><strong class="font-semibold">Offense (a)(1):</strong> A person with custody of a child (< 18) offers to accept, or accepts, a thing of value for the child's delivery to another for adoption.</li>
+                        <li><strong class="font-semibold">Offense (a)(2):</strong> A person offers to give, or gives, a thing of value to another to acquire a child for adoption.</li>
+                        <li><strong class="font-semibold">Exceptions (b):</strong> Does *not* apply to legitimate fees paid to a child-placing agency, attorney, social worker, doctor, or for pregnancy-related expenses.</li>
+                        <li><strong class="font-semibold">Penalty (c):</strong> <strong class="font-semibold">Felony of the third degree</strong>, enhanced to a <strong class="font-semibold">Felony of the second degree</strong> if done with intent to commit certain trafficking or sexual offenses.</li>
+                    </ul>
+                </div>
+
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-xl font-bold mb-4 border-b pb-2"><a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.25.htm#25.081" target="_blank" class="text-blue-600 hover:underline">Sec. 25.081. Unregulated Custody Transfer of Adopted Child</a></h2>
+                    <ul class="list-disc list-inside text-sm text-gray-700 space-y-2">
+                        <li><strong class="font-semibold">Offense (b):</strong> A person knowingly (1) conducts an unregulated custody transfer, or (2) facilitates or participates in one.</li>
+                        <li><strong class="font-semibold">Exceptions (d):</strong> Does *not* apply to placement with a licensed agency, DFPS, a relative/stepparent, temporary placements (e.g., vacation, military service), or emergency "Baby Moses" delivery.</li>
+                        <li><strong class="font-semibold">Penalty (c):</strong> <strong class="font-semibold">Felony of the third degree</strong>, enhanced to a <strong class="font-semibold">Felony of the second degree</strong> if done with intent to commit certain trafficking or sexual offenses.</li>
+                    </ul>
+                </div>
+
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-xl font-bold mb-4 border-b pb-2"><a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.25.htm#25.09" target="_blank" class="text-blue-600 hover:underline">Sec. 25.09. Advertising for Placement of Child</a></h2>
+                    <ul class="list-disc list-inside text-sm text-gray-700 space-y-2">
+                        <li><strong class="font-semibold">Offense (a):</strong> A person advertises in the *public media* (including the Internet) that they will place, provide, or obtain a child for adoption.</li>
+                        <li><strong class="font-semibold">Exception (b):</strong> Does *not* apply to a *licensed child-placing agency* that identifies itself as such in the ad.</li>
+                        <li><strong class="font-semibold">Penalty (c):</strong> <strong class="font-semibold">Class A misdemeanor</strong>, enhanced to a <strong class="font-semibold">Felony of the third degree</strong> if the person has a previous conviction under this section.</li>
+                    </ul>
+                </div>
+
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-xl font-bold mb-4 border-b pb-2"><a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.25.htm#25.10" target="_blank" class="text-blue-600 hover:underline">Sec. 25.10. Interference with Rights of Guardian of the Person</a></h2>
+                    <ul class="list-disc list-inside text-sm text-gray-700 space-y-2">
+                        <li><strong class="font-semibold">Offense (b):</strong> A person takes, retains, or conceals a *ward* when the person *knows* their action interferes with a *possessory right* of the guardian.</li>
+                        <li><strong class="font-semibold">Penalty (c):</strong> <strong class="font-semibold">State jail felony</strong>.</li>
+                    </ul>
+                </div>
+
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-xl font-bold mb-4 border-b pb-2"><a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.25.htm#25.11" target="_blank" class="text-blue-600 hover:underline">Sec. 25.11. Continuous Violence Against the Family</a></h2>
+                    <ul class="list-disc list-inside text-sm text-gray-700 space-y-2">
+                        <li><strong class="font-semibold">Offense (a):</strong> A person, *during a period of 12 months or less*, engages in conduct *two or more times* that constitutes Assault (22.01(a)(1)) against a family member.</li>
+                        <li><strong class="font-semibold">Jury (b):</strong> Jury does *not* need to be unanimous on the specific acts, dates, or counties. They must only agree unanimously that the actor committed two or more such acts in the 12-month period.</li>
+                        <li><strong class="font-semibold">Penalty (e):</strong> <strong class="font-semibold">Felony of the third degree</strong>.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Knowledge Check Tab -->
+            <div id="knowledge-check" class="tab-content">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-2xl font-bold mb-4">Knowledge Check (Ch. 25)</h2>
+                    <p class="mb-6 text-gray-600">Test your understanding of the material. (77 Questions)</p>
+                    <div id="quiz-container" class="space-y-8">
+                        <!-- Questions will be dynamically inserted here -->
+                    </div>
+                    <!-- Results Div -->
+                    <div id="quiz-results" class="hidden mt-8 text-center">
+                        <h3 class="text-2xl font-bold" id="quiz-score"></h3>
+                        <p class="text-lg text-gray-700" id="quiz-percentage"></p>
+                    </div>
+                    <!-- Button Container -->
+                    <div class="mt-8 text-center space-x-4">
+                        <button id="check-answers-btn" class="bg-blue-600 text-white font-bold py-2 px-6 rounded-lg hover:bg-blue-700 transition-colors">Submit Answers</button>
+                        <button id="retake-quiz-btn" class="hidden bg-gray-600 text-white font-bold py-2 px-6 rounded-lg hover:bg-gray-700 transition-colors">Retake Quiz</button>
+                    </div>
+                </div>
+            </div>
+        <div id="tab-contents">
+            <!-- Key Definitions Tab -->
+            <div id="key-definitions" class="tab-content active">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-2xl font-bold mb-4">External Resources</h2>
+                    <p class="mb-6 text-gray-600">Quick links to official Texas statutes.</p>
+                    <div id="resources-list" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 text-sm">
+                        <!-- Links will be dynamically inserted here -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const tabs = document.querySelectorAll('#tabs button');
+            const tabContents = document.querySelectorAll('.tab-content');
+
+            tabs.forEach(tab => {
+                tab.addEventListener('click', () => {
+                    tabs.forEach(t => t.classList.remove('active'));
+                    tabContents.forEach(c => c.classList.remove('active'));
+                    tab.classList.add('active');
+                    document.getElementById(tab.dataset.tab).classList.add('active');
+                });
+            });
+
+            // --- QUIZ DATA (CHAPTER 25) ---
+            const quizData = [
+                {
+                    question: "A legally married man lives with a woman in Texas, and they both tell their neighbors they are married. What offense has the man committed?",
+                    options: ["Adultery", "Bigamy (25.01(a)(1)(B))", "Prohibited Sexual Conduct", "No offense if they don't get a new license."],
+                    answer: "Bigamy (25.01(a)(1)(B))",
+                    explanation: "Sec. 25.01(a)(1)(B) states a married person commits bigamy if he lives with a person other than his spouse in this state under the appearance of being married."
+                },
+                {
+                    question: "A woman *knows* her co-worker is legally married. She marries him anyway. What offense has she committed?",
+                    options: ["Adultery", "Bigamy (25.01(a)(2))", "No offense, only the married person is liable.", "Prohibited Sexual Conduct"],
+                    answer: "Bigamy (25.01(a)(2))",
+                    explanation: "Sec. 25.01(a)(2) states an offense is committed if a person *knows* another is married and marries them."
+                },
+                {
+                    question: "What is the definition of 'under the appearance of being married' for Bigamy (25.01)?",
+                    options: ["Cohabitation for more than one year.", "Having a child together.", "Holding out, cohabitation, and an intent to be married by either party.", "Filing a joint tax return."],
+                    answer: "Holding out, cohabitation, and an intent to be married by either party.",
+                    explanation: "Sec. 25.01(b) defines it as 'holding out that the parties are married with cohabitation and an intent to be married by either party.'"
+                },
+                {
+                    question: "A man commits bigamy with a 17-year-old. What is the penalty level?",
+                    options: ["Felony of the third degree", "Felony of the second degree", "Felony of the first degree", "State jail felony"],
+                    answer: "Felony of the second degree",
+                    explanation: "Sec. 25.01(e)(1) enhances the penalty to a second-degree felony if the other person is 17 years of age."
+                },
+                {
+                    question: "What is the penalty for Bigamy (25.01) if the person the actor marries is 16 years old?",
+                    options: ["Felony of the first degree", "Felony of the second degree", "Felony of the third degree", "State jail felony"],
+                    answer: "Felony of the first degree",
+                    explanation: "Sec. 25.01(e)(2) enhances the penalty to a first-degree felony if the other person is '16 years of age or younger'."
+                },
+                {
+                    question: "What is the defense to prosecution for Bigamy under Sec. 25.01(c)?",
+                    options: ["The actor was intoxicated.", "The actor reasonably believed the prior marriage was dissolved, and the belief is substantiated by a court document.", "The actor's spouse gave permission.", "The actor did not cohabitate with the new person."],
+                    answer: "The actor reasonably believed the prior marriage was dissolved, and the belief is substantiated by a court document.",
+                    explanation: "Sec. 25.01(c) provides a defense for a reasonable belief of eligibility, and states the belief is reasonable if substantiated by a document like a divorce decree."
+                },
+                {
+                    question: "In a bigamy trial, can the actor's lawful spouse testify against the actor concerning proof of the original marriage?",
+                    options: ["No, spousal privilege prevents this.", "Yes, the lawful wife or husband may testify both for or against the actor.", "Only if the spouse was the complainant.", "Only if the actor agrees to it."],
+                    answer: "Yes, the lawful wife or husband may testify both for or against the actor.",
+                    explanation: "Sec. 25.01(d) explicitly states that the lawful spouse 'may testify both for or against the actor' regarding the original marriage."
+                },
+                {
+                    question: "Which of the following relationships is NOT listed under Prohibited Sexual Conduct (25.02)?",
+                    options: ["First cousin", "Current or former stepchild", "Second cousin", "Niece or nephew"],
+                    answer: "Second cousin",
+                    explanation: "Sec. 25.02(a) lists ancestor/descendant, stepchild/stepparent, aunt/uncle, sibling, niece/nephew, and first cousin. Second cousins are not listed."
+                },
+                {
+                    question: "What is the definition of 'Deviate sexual intercourse' under Sec. 25.02?",
+                    options: ["Any sexual contact between persons of the same sex.", "Any contact between the genitals of one person and the mouth or anus of another with intent to arouse or gratify.", "Any sexual act that is not procreative.", "Any penetration of the anus by an object."],
+                    answer: "Any contact between the genitals of one person and the mouth or anus of another with intent to arouse or gratify.",
+                    explanation: "Sec. 25.02(b)(1) provides this specific definition."
+                },
+                {
+                    question: "What is the definition of 'Sexual intercourse' under Sec. 25.02?",
+                    options: ["Any penetration of the female sex organ by the male sex organ.", "Any sexual contact involving genitals.", "Sexual contact between a married couple.", "Any act intended to arouse or gratify."],
+                    answer: "Any penetration of the female sex organ by the male sex organ.",
+                    explanation: "Sec. 25.02(b)(2) provides this specific, traditional definition."
+                },
+                {
+                    question: "A person engages in prohibited sexual conduct with their first cousin. What is the penalty?",
+                    options: ["Felony of the second degree", "Felony of the third degree", "State jail felony", "Class A misdemeanor"],
+                    answer: "Felony of the third degree",
+                    explanation: "Sec. 25.02(c) states the offense is a third-degree felony, *unless* it's with an ancestor/descendant (a)(1), which is a second-degree felony."
+                },
+                {
+                    question: "A person engages in prohibited sexual conduct with their adult daughter. What is the penalty?",
+                    options: ["Felony of the second degree", "Felony of the third degree", "State jail felony", "Class A misdemeanor"],
+                    answer: "Felony of the second degree",
+                    explanation: "Sec. 25.02(c) enhances the penalty to a second-degree felony if the offense is committed under (a)(1), which is 'the actor\'s ancestor or descendant'."
+                },
+                {
+                    question: "A parent has a court order that explicitly denies them possession of their child. The parent *knows* this, but takes the child from school anyway. What offense is this?",
+                    options: ["Interference with Child Custody (25.03(a)(1))", "Kidnapping", "Enticing a Child", "No offense, they are the parent."],
+                    answer: "Interference with Child Custody (25.03(a)(1))",
+                    explanation: "Sec. 25.03(a)(1) applies when the person 'knows that the person\'s taking... violates the express terms of a... court order... disposing of the child\'s custody'."
+                },
+                {
+                    question: "A father, knowing a divorce suit has been filed, takes his child from Tarrant County to Oklahoma without the court's permission, intending to prevent the court from having authority. What offense has he committed?",
+                    options: ["Kidnapping", "Interference with Child Custody (25.03(a)(2))", "Enticing a Child", "No offense, he is the father."],
+                    answer: "Interference with Child Custody (25.03(a)(2))",
+                    explanation: "This matches all elements of 25.03(a)(2): no custody order, knows suit is filed, takes child out of the geographic area, and has intent to deprive the court of authority."
+                },
+                {
+                    question: "What is the penalty for Interference with Child Custody (25.03)?",
+                    options: ["Class A misdemeanor", "State jail felony", "Felony of the third degree", "Felony of the second degree"],
+                    answer: "State jail felony",
+                    explanation: "Sec. 25.03(d) states: 'An offense under this section is a state jail felony.'"
+                },
+                {
+                    question: "A mother takes her child outside the U.S. to deprive the father of his court-ordered access. She was, however, fleeing the father's commission of family violence. Is this an offense under 25.03(a)(3)?",
+                    options: ["Yes, she violated a court order.", "No, Sec. 25.03(c-2) provides an exception for fleeing family violence.", "Yes, but it's a defense she can raise at trial.", "No, it's only an offense if she intended to commit Kidnapping."],
+                    answer: "No, Sec. 25.03(c-2) provides an exception for fleeing family violence.",
+                    explanation: "Sec. 25.03(c-2) states that (a)(3) does not apply if the person was entitled to possession/access and was fleeing family violence against the child or herself."
+                },
+                {
+                    question: "What is the defense to Interference with Child Custody under 25.03(a)(2) (taking child from geographic area)?",
+                    options: ["The actor returned the child within 3 days.", "The actor returned the child within 10 days.", "The actor was fleeing family violence.", "The actor had a reasonable belief they had custody."],
+                    answer: "The actor returned the child within 3 days.",
+                    explanation: "Sec. 25.03(c) provides a specific defense to (a)(2) if 'the actor returned the child to the geographic area... within three days'."
+                },
+                {
+                    question: "What is an affirmative defense to prosecution under 25.03(a)(3) (taking child outside U.S.)?",
+                    options: ["The actor was fleeing family violence (this is an *exception*).", "The actor returned the child within 3 days.", "The retention was due to circumstances beyond the actor's control and they provided prompt notice.", "The actor believed it was in the child's best interest."],
+                    answer: "The retention was due to circumstances beyond the actor's control and they provided prompt notice.",
+                    explanation: "Sec. 25.03(c-1)(2) provides this affirmative defense. Fleeing FV (c-2) is an *exception* (a different legal standard)."
+                },
+                {
+                    question: "A person is charged with Interference with Child Custody (25.03(a)(3)) for taking a child to Mexico. The conduct also constitutes Kidnapping (20.03). How may the actor be prosecuted?",
+                    options: ["Only under 25.03", "Only under 20.03", "Under both sections", "Under whichever section has a lower penalty."],
+                    answer: "Only under 20.03",
+                    explanation: "Sec. 25.03(e) states: '...the actor may be prosecuted *only* under Section 20.03.'"
+                },
+                {
+                    question: "A person agrees to forcibly abduct a child from their legal guardian in exchange for $5,000. What offense is this?",
+                    options: ["Kidnapping", "Interference with Child Custody", "Agreement to Abduct from Custody (25.031)", "Enticing a Child"],
+                    answer: "Agreement to Abduct from Custody (25.031)",
+                    explanation: "Sec. 25.031(a) perfectly describes this: agreeing, for remuneration, to abduct a child by force, knowing they are under court-ordered care."
+                },
+                {
+                    question: "Besides 'for remuneration,' what is a key element of Agreement to Abduct from Custody (25.031)?",
+                    options: ["The actor must be a noncustodial parent.", "The abduction must be by 'force, threat of force, misrepresentation, stealth, or unlawful entry.'", "The child must be taken out of the U.S.", "The actor must have a prior conviction."],
+                    answer: "The abduction must be by 'force, threat of force, misrepresentation, stealth, or unlawful entry.'",
+                    explanation: "Sec. 25.031(a) specifies the illegal means to be used, in addition to the payment and knowledge of the court order."
+                },
+                {
+                    question: "A man, intending to interfere with his ex-wife's custody, persuades his 16-year-old son to run away from her home and come live with him. What offense has the man committed?",
+                    options: ["Interference with Child Custody (25.03(b))", "Enticing a Child (25.04)", "Harboring a Runaway Child", "Both A and B"],
+                    answer: "Both A and B",
+                    explanation: "The conduct fits 25.03(b) (noncustodial parent... knowingly entices) AND 25.04(a) (intent to interfere... knowingly entices). The actor could be prosecuted under either."
+                },
+                {
+                    question: "What is the base penalty for Enticing a Child (25.04)?",
+                    options: ["Class C misdemeanor", "Class B misdemeanor", "Class A misdemeanor", "State jail felony"],
+                    answer: "Class B misdemeanor",
+                    explanation: "Sec. 25.04(b) states the offense is a Class B misdemeanor."
+                },
+                {
+                    question: "When is Enticing a Child (25.04) enhanced to a felony of the third degree?",
+                    options: ["If the child is under 17.", "If the actor has a prior conviction.", "If the actor intended to commit a felony against the child.", "If the actor transported the child across state lines."],
+                    answer: "If the actor intended to commit a felony against the child.",
+                    explanation: "Sec. 25.04(b) provides this enhancement: '...unless it is shown on the trial... that the actor intended to commit a felony against the child...'"
+                },
+                {
+                    question: "A father intentionally fails to pay court-ordered child support for his 15-year-old son. What offense has he committed?",
+                    options: ["Contempt of court only", "Criminal Nonsupport (25.05)", "Theft", "No offense, it's a civil matter."],
+                    answer: "Criminal Nonsupport (25.05)",
+                    explanation: "Sec. 25.05(a) states an individual commits an offense if they intentionally or knowingly fail to provide support for their child who is the subject of a court order."
+                },
+                {
+                    question: "For Criminal Nonsupport, does the definition of 'child' include a child born out of wedlock?",
+                    options: ["No, it only applies to children of a legal marriage.", "Yes, but only if paternity has been established in a civil suit.", "Yes, if paternity has been acknowledged by the actor OR established in a civil suit.", "Only if the child is younger than 12."],
+                    answer: "Yes, if paternity has been acknowledged by the actor OR established in a civil suit.",
+                    explanation: "Sec. 25.05(b) explicitly includes a child born out of wedlock whose paternity is acknowledged or has been legally established."
+                },
+                {
+                    question: "Can a person be convicted of Criminal Nonsupport based only on the uncorroborated testimony of a party to the offense (e.g., the other parent)?",
+                    options: ["No, the testimony must be corroborated by financial records.", "Yes, a conviction may be had on the uncorroborated testimony of a party.", "Only if the actor has a prior conviction.", "Only if the actor confessed."],
+                    answer: "Yes, a conviction may be had on the uncorroborated testimony of a party.",
+                    explanation: "Sec. 25.05(c) specifically allows for a conviction 'on the uncorroborated testimony of a party to the offense.'"
+                },
+                {
+                    question: "Does a criminal prosecution for Nonsupport (25.05) prevent a civil court from entering a child support order?",
+                    options: ["Yes, all civil matters must wait until the criminal case is resolved.", "No, the pendency of a prosecution does not affect the power of a court to enter a support order.", "Yes, this would constitute double jeopardy.", "Only if the actor is found not guilty."],
+                    answer: "No, the pendency of a prosecution does not affect the power of a court to enter a support order.",
+                    explanation: "Sec. 25.05(e) clarifies that the criminal prosecution does not affect the civil court's power."
+                },
+                {
+                    question: "What is the penalty for Criminal Nonsupport (25.05)?",
+                    options: ["Class A misdemeanor", "State jail felony", "Felony of the third degree", "It is a civil penalty only."],
+                    answer: "State jail felony",
+                    explanation: "Sec. 25.05(f) states: 'An offense under this section is a state jail felony.'"
+                },
+                {
+                    question: "What is the affirmative defense to Criminal Nonsupport (25.05)?",
+                    options: ["The actor did not agree with the support order.", "The actor's child is over 16.", "The actor could not provide support.", "The actor provided support in the past."],
+                    answer: "The actor could not provide support.",
+                    explanation: "Sec. 25.05(d) states: 'It is an affirmative defense... that the actor could not provide support for the actor\'s child.'"
+                },
+                {
+                    question: "A person lets their 16-year-old nephew, who they know ran away from home, stay at their apartment for a week without telling his parents. What offense has been committed?",
+                    options: ["Harboring Runaway Child (25.06)", "No offense, due to the defense in (b).", "Enticing a Child", "Kidnapping"],
+                    answer: "No offense, due to the defense in (b).",
+                    explanation: "Sec. 25.06(b) provides a defense if the actor is 'related to the child within the second degree by consanguinity or affinity.' An aunt/uncle-nephew relationship is within the second degree."
+                },
+                {
+                    question: "A person harbors a 15-year-old who they are *criminally negligent* about having run away from home. 36 hours after finding out the child is a runaway, they notify the police. Is this a valid defense?",
+                    options: ["Yes, they notified the police.", "No, the notification must be made within 24 hours.", "Yes, because the culpability is only criminal negligence.", "No, they must also be related to the child."],
+                    answer: "No, the notification must be made within 24 hours.",
+                    explanation: "Sec. 25.06(c)(2) provides a defense *if* the actor notifies law enforcement 'within 24 hours after discovering' the child was absent from home."
+                },
+                {
+                    question: "What culpability is required for Harboring Runaway Child (25.06) regarding the child's status?",
+                    options: ["Intentionally or Knowingly", "Recklessly", "Criminally Negligent", "Strict Liability"],
+                    answer: "Criminally Negligent",
+                    explanation: "Sec. 25.06(a) states the person 'knowingly harbors' but only needs to be 'criminally negligent about whether the child' is under 18 and a runaway/escapee."
+                },
+                {
+                    question: "Upon receiving a report of a missing or escaped child, what *must* a law enforcement agency do?",
+                    options: ["Wait 24 hours before acting.", "Immediately enter a record of the child into the National Crime Information Center (NCIC).", "Only take a report if the child is under 13.", "Send an officer to the home within 72 hours."],
+                    answer: "Immediately enter a record of the child into the National Crime Information Center (NCIC).",
+                    explanation: "Sec. 25.06(e) states a law enforcement agency 'shall immediately enter a record of the child into the National Crime Information Center.'"
+                },
+                {
+                    question: "What is the base penalty for Violation of a Protective Order (25.07)?",
+                    options: ["Class C misdemeanor", "Class B misdemeanor", "Class A misdemeanor", "State jail felony"],
+                    answer: "Class A misdemeanor",
+                    explanation: "Sec. 25.07(g) states the offense is a Class A misdemeanor, with exceptions that enhance it."
+                },
+                {
+                    question: "A man is under a protective order that prohibits him from going within 200 yards of his ex-wife's home. She calls him and invites him over. He goes, and she calls the police. Has he committed an offense?",
+                    options: ["No, her invitation is a valid defense.", "No, her reconciliatory action invalidated the order.", "Yes, reconciliatory actions by the protected person do not affect the order's validity.", "Yes, but only if he harms her."],
+                    answer: "Yes, reconciliatory actions by the protected person do not affect the order's validity.",
+                    explanation: "Sec. 25.07(d) is very clear: 'Reconciliatory actions or agreements made by persons affected by an order do not affect the validity of the order...'"
+                },
+                {
+                    question: "A peace officer investigates a potential violation of a PO (25.07) and finds that *both* the man and the protected woman violated terms of the order. Who can the officer arrest?",
+                    options: ["Both the man and the woman.", "Only the man; an officer may not arrest a protected person for a violation of that order.", "Only the woman, if she initiated the contact.", "Neither, if they both violated it."],
+                    answer: "Only the man; an officer may not arrest a protected person for a violation of that order.",
+                    explanation: "Sec. 25.07(e) states: 'A peace officer... may not arrest a person protected by that order for a violation of that order.'"
+                },
+                {
+                    question: "A person is subject to a protective order related to family violence. The order states they cannot possess a firearm. If they knowingly possess one, what offense is this?",
+                    options: ["Unlawful Carrying of a Weapon", "Violation of Protective Order (25.07(a)(4))", "Terroristic Threat", "No offense, unless they use it."],
+                    answer: "Violation of Protective Order (25.07(a)(4))",
+                    explanation: "Sec. 25.07(a)(4) makes it an offense to 'possess a firearm' in violation of a listed order. The base penalty is a Class A Misdemeanor."
+                },
+                {
+                    question: "A man violates a protective order by knowingly threatening to harm his ex-wife's dog, which is a protected animal under the order. What offense is this?",
+                    options: ["Cruelty to Animals", "Violation of Protective Order (25.07(a)(5))", "Criminal Mischief", "No offense, the order can't protect animals."],
+                    answer: "Violation of Protective Order (25.07(a)(5))",
+                    explanation: "Sec. 25.07(a)(5) makes it a specific violation to 'harms, threatens, or interferes with the care... of a pet... possessed by a person protected by the order'."
+                },
+                {
+                    question: "A person violates a protective order by secretly placing a GPS tracker on the protected individual's car. What offense is this?",
+                    options: ["No offense, this is not listed.", "Stalking", "Violation of Protective Order (25.07(a)(7))", "Criminal Mischief"],
+                    answer: "Violation of Protective Order (25.07(a)(7))",
+                    explanation: "Sec. 25.07(a)(7) makes it an offense to 'tracks or monitors... a motor vehicle in the possession of a protected individual... without... effective consent'."
+                },
+                {
+                    question: "A person violates a protective order (25.07) by going to their ex-spouse's home. This is their first offense, but they have a handgun in their waistband at the time. What is the penalty?",
+                    options: ["Class A misdemeanor", "State jail felony", "Felony of the third degree", "Felony of the second degree"],
+                    answer: "State jail felony",
+                    explanation: "Sec. 25.07(g)(1)(B) enhances the penalty to a state jail felony if the defendant violates the order (in a manner listed) 'while possessing a deadly weapon'."
+                },
+                {
+                    question: "A person violates a protective order (25.07) by committing an assault against the protected person. This is their first offense. What is the penalty?",
+                    options: ["Class A misdemeanor", "State jail felony", "Felony of the third degree", "Felony of the second degree"],
+                    answer: "Felony of the third degree",
+                    explanation: "Sec. 25.07(g)(2)(B) enhances the penalty to a third-degree felony if the person 'has violated the order... by committing an assault'."
+                },
+                {
+                    question: "A person is convicted of Violation of a PO (25.07). Later, they are convicted a second time. Later, they are arrested for a third violation. What is the penalty for this third offense?",
+                    options: ["Class A misdemeanor", "State jail felony", "Felony of the third degree", "Felony of the second degree"],
+                    answer: "Felony of the third degree",
+                    explanation: "Sec. 25.07(g)(2)(A) enhances the penalty to a third-degree felony if the defendant 'has previously been convicted two or more times' under this section."
+                },
+                {
+                    question: "A person has one prior conviction for 25.07. They commit a second 25.07 violation by stalking the victim. What is the penalty for the new offense?",
+                    options: ["Class A misdemeanor", "State jail felony", "Felony of the third degree", "Felony of the second degree"],
+                    answer: "Felony of the third degree",
+                    explanation: "Sec. 25.07(g)(2)(B) enhances the penalty to a third-degree felony if the person 'has violated the order... by... stalking,' regardless of prior convictions (though 2 priors would also make it an F3)."
+                },
+                {
+                    question: "Is it a defense to prosecution under 25.07 that certain information (like the protected person's address) was excluded from the order?",
+                    options: ["Yes, if the actor did not know the address.", "No, it is not a defense.", "Yes, if the actor's attorney was not present.", "Only if the order was temporary."],
+                    answer: "No, it is not a defense.",
+                    explanation: "Sec. 25.07(f) explicitly states: 'It is not a defense... that certain information has been excluded... from an order'."
+                },
+                {
+                    question: "If a person was convicted in Oklahoma for a crime 'substantially similar' to 25.07, can that conviction be used for enhancement in Texas?",
+                    options: ["No, only Texas convictions can be used.", "Yes, but only if it was a felony in Oklahoma.", "Yes, it is considered to be a conviction under this section.", "No, unless the Texas AG approves it."],
+                    answer: "Yes, it is considered to be a conviction under this section.",
+                    explanation: "Sec. 25.07(h) allows out-of-state convictions for substantially similar offenses to be used for enhancement."
+                },
+                {
+                    question: "What is the key element that distinguishes a violation under 25.071 (Bias/Prejudice PO) from a violation under 25.07?",
+                    options: ["The actor used a deadly weapon.", "The actor committed an offense *because of bias or prejudice*.", "The victim was a family member.", "The actor had a prior conviction."],
+                    answer: "The actor committed an offense *because of bias or prejudice*.",
+                    explanation: "Sec. 25.071(a)(1) applies to a person who 'commits an offense... and commits the offense *because of bias or prejudice*'."
+                },
+                {
+                    question: "What is the penalty for 25.071 (Violation of Bias/Prejudice PO) if the actor has *two or more prior convictions* under that section?",
+                    options: ["Class A misdemeanor", "State jail felony", "Felony of the third degree", "Felony of the second degree"],
+                    answer: "Felony of the third degree",
+                    explanation: "Sec. 25.071(d) enhances the penalty to a third-degree felony if the defendant 'has previously been convicted... two or more times' or 'violated... by committing an assault'."
+                },
+                {
+                    question: "What is the key element of Repeated Violation of a PO (25.072)?",
+                    options: ["Two or more violations against the same person.", "Two or more violations of the same court order.", "Two or more violations of Sec. 25.07 within a 12-month period or less.", "Three or more violations of Sec. 25.07 in a lifetime."],
+                    answer: "Two or more violations of Sec. 25.07 within a 12-month period or less.",
+                    explanation: "Sec. 25.072(a) specifies 'during a period that is 12 months or less in duration, the person two or more times engages in conduct' that violates 25.07."
+                },
+                {
+                    question: "What is the penalty for Repeated Violation of a PO (25.072)?",
+                    options: ["Felony of the third degree", "Felony of the second degree", "State jail felony", "Class A misdemeanor"],
+                    answer: "Felony of the third degree",
+                    explanation: "Sec. 25.072(e) states the offense is a third-degree felony."
+                },
+                {
+                    question: "When is Repeated Violation of a PO (25.072) enhanced to a second-degree felony?",
+                    options: ["If the victim is a child.", "If the actor has 3 or more prior violations.", "If at least one of the underlying violations involved possessing a deadly weapon (punishable under 25.07(g)(1)(B)).", "If the actor committed assault."],
+                    answer: "If at least one of the underlying violations involved possessing a deadly weapon (punishable under 25.07(g)(1)(B)).",
+                    explanation: "Sec. 25.072(e) provides this specific enhancement, referencing the SJF enhancement from 25.07(g)(1)(B)."
+                },
+                {
+                    question: "A person is charged with Repeated Violation of a PO (25.072). Can they also be convicted in the same trial for one of the underlying assault-FV offenses?",
+                    options: ["Yes, they can be stacked.", "No, unless the other offense is charged in the alternative.", "Yes, but only if the assault was a felony.", "No, this is always double jeopardy."],
+                    answer: "No, unless the other offense is charged in the alternative.",
+                    explanation: "Sec. 25.072(c)(1) states the actor *may not* be convicted of both *unless* the other offense 'is charged in the alternative'."
+                },
+                {
+                    question: "A person violates a *single* court order 5 times. What is the maximum number of counts of Repeated Violation (25.072) they can be charged with?",
+                    options: ["Five counts", "Two counts", "One count", "Zero, they must violate multiple orders."],
+                    answer: "One count",
+                    explanation: "Sec. 25.072(d) states a defendant 'may not be charged with more than one count... if all... conduct... is alleged to have been committed in violation of a single court order'."
+                },
+                {
+                    question: "A person with legal custody of a child offers to accept $5,000 in exchange for delivering the child to another person for adoption. What offense is this?",
+                    options: ["Sale or Purchase of Child (25.08(a)(1))", "Bribery", "Unregulated Custody Transfer", "No offense, they have custody."],
+                    answer: "Sale or Purchase of Child (25.08(a)(1))",
+                    explanation: "Sec. 25.08(a)(1) makes it an offense for a person with custody to 'offer to accept... a thing of value for the delivery of the child... for purposes of adoption'."
+                },
+                {
+                    question: "A person offers to give $10,000 to a woman to acquire her child for the purpose of adoption. What offense is this?",
+                    options: ["Bribery", "Sale or Purchase of Child (25.08(a)(2))", "Unregulated Custody Transfer", "No offense, if it's for adoption."],
+                    answer: "Sale or Purchase of Child (25.08(a)(2))",
+                    explanation: "Sec. 25.08(a)(2) states a person commits an offense if they 'offer to give... a thing of value to another for acquiring... a child for the purpose of adoption.'"
+                },
+                {
+                    question: "Which of the following is *not* an exception to Sale or Purchase of Child (25.08)?",
+                    options: ["A fee paid to a licensed child-placing agency.", "A reimbursement of legal or medical expenses for the child.", "A direct payment to the parent for 'living expenses' not approved by an agency.", "A fee paid to an attorney for services rendered."],
+                    answer: "A direct payment to the parent for 'living expenses' not approved by an agency.",
+                    explanation: "Sec. 25.08(b) lists specific, legitimate exceptions, such as agency fees, legal/medical fees, and *agency-paid* pregnancy expenses. A direct, unapproved payment is not an exception."
+                },
+                {
+                    question: "Which of the following *is* a permissible payment under Sec. 25.08 (Sale or Purchase of Child)?",
+                    options: ["A $20,000 cash payment directly to the mother.", "A $5,000 'gift' to the father.", "Reimbursement of legal or medical expenses incurred for the benefit of the child.", "A car for the child's grandparents."],
+                    answer: "Reimbursement of legal or medical expenses incurred for the benefit of the child.",
+                    explanation: "Sec. 25.08(b)(3) lists this as a specific exception to the offense."
+                },
+                {
+                    question: "What is the penalty for Sale or Purchase of Child (25.08) *with intent to commit* an offense under Sec. 20A.02 (Trafficking)?",
+                    options: ["Felony of the third degree", "Felony of the second degree", "Felony of the first degree", "State jail felony"],
+                    answer: "Felony of the second degree",
+                    explanation: "Sec. 25.08(c) enhances the base F3 penalty to an F2 if the actor has the intent to commit certain other offenses, including 20A.02."
+                },
+                {
+                    question: "A parent transfers permanent physical custody of their adopted child to a neighbor without court approval. What offense is this?",
+                    options: ["Sale or Purchase of Child", "Unregulated Custody Transfer of Adopted Child (25.081)", "Interference with Child Custody", "No offense, if no money was exchanged."],
+                    answer: "Unregulated Custody Transfer of Adopted Child (25.081)",
+                    explanation: "Sec. 25.081(b)(1) prohibits knowingly conducting an 'unregulated custody transfer,' defined as a transfer of permanent custody without court approval."
+                },
+                {
+                    question: "A person knowingly transports an adopted child from their parent to an un-approved new family, facilitating an unregulated custody transfer. What offense is this?",
+                    options: ["Kidnapping", "Unregulated Custody Transfer of Adopted Child (25.081(b)(2))", "Sale or Purchase of Child", "No offense, they are just a transporter."],
+                    answer: "Unregulated Custody Transfer of Adopted Child (25.081(b)(2))",
+                    explanation: "Sec. 25.081(b)(2) makes it an offense to 'facilitate or participate' in an unregulated transfer, 'including by... transporting... an adopted child for that purpose'."
+                },
+                {
+                    question: "Which of these is an *exception* to Unregulated Custody Transfer (25.081)?",
+                    options: ["Placing the child with a neighbor for a year.", "Giving the child to a couple found on the internet.", "A temporary placement for a school-sponsored activity or vacation.", "Giving the child to a co-worker."],
+                    answer: "A temporary placement for a school-sponsored activity or vacation.",
+                    explanation: "Sec. 25.081(d)(3) explicitly exempts 'temporary placement... for a designated short-term period,' such as for a vacation or school function."
+                },
+                {
+                    question: "Which of the following is an *exception* to Unregulated Custody Transfer (25.081)?",
+                    options: ["Placing the child with an adult relative or stepparent.", "Placing the child with a person the parent trusts.", "A permanent placement with a family friend.", "A transfer for money."],
+                    answer: "Placing the child with an adult relative or stepparent.",
+                    explanation: "Sec. 25.081(d)(1) specifically exempts 'placement of an adopted child with... an adult relative, stepparent, or other adult with a significant and long-standing relationship to the child'."
+                },
+                {
+                    question: "A person posts an ad on the internet stating they will 'provide' a child for adoption. They are not a licensed agency. What offense is this?",
+                    options: ["Sale or Purchase of Child", "Advertising for Placement of Child (25.09)", "Unregulated Custody Transfer", "No offense, it's just an advertisement."],
+                    answer: "Advertising for Placement of Child (25.09)",
+                    explanation: "Sec. 25.09(a) prohibits advertising in 'public media' (which 25.09(d) clarifies includes the internet) that a person will 'place, provide, or obtain a child for adoption'."
+                },
+                {
+                    question: "What is the penalty for a *first-time* offense of Advertising for Placement of Child (25.09)?",
+                    options: ["Class C misdemeanor", "Class B misdemeanor", "Class A misdemeanor", "State jail felony"],
+                    answer: "Class A misdemeanor",
+                    explanation: "Sec. 25.09(c) states the offense is a Class A misdemeanor."
+                },
+                {
+                    question: "What is the penalty for Advertising for Placement of Child (25.09) if the actor has *one* prior conviction under this section?",
+                    options: ["Class A misdemeanor", "State jail felony", "Felony of the third degree", "Felony of the second degree"],
+                    answer: "Felony of the third degree",
+                    explanation: "Sec. 25.09(c) enhances the penalty to a third-degree felony if the person 'has been convicted previously under this section'."
+                },
+                {
+                    question: "Which organization is *exempt* from Sec. 25.09 (Advertising for Placement of Child)?",
+                    options: ["Any non-profit organization.", "A licensed child-placing agency that identifies itself as such.", "Any attorney or law firm.", "Any hospital or doctor's office."],
+                    answer: "A licensed child-placing agency that identifies itself as such.",
+                    explanation: "Sec. 25.09(b) provides this specific exception."
+                },
+                {
+                    question: "A person's adult son is a 'ward' with a court-appointed guardian. The son's friend convinces the ward to leave the guardian's home and hides him at his apartment, knowing this interferes with the guardian's rights. What offense is this?",
+                    options: ["Kidnapping", "Interference with Rights of Guardian of the Person (25.10)", "Harboring a Runaway", "No offense, the ward is an adult."],
+                    answer: "Interference with Rights of Guardian of the Person (25.10)",
+                    explanation: "Sec. 25.10(b) prohibits taking, retaining, or concealing a 'ward' (defined by Estates Code) knowing it 'interferes with a possessory right' of the guardian."
+                },
+                {
+                    question: "What is the 'possessory right' referenced in Sec. 25.10 (Interference with Rights of Guardian)?",
+                    options: ["The right to own the ward's property.", "The right to have physical possession of a ward and establish their legal domicile.", "The right to vote on the ward's behalf.", "The right to the ward's income."],
+                    answer: "The right to have physical possession of a ward and establish their legal domicile.",
+                    explanation: "Sec. 25.10(a)(1) defines 'possessory right' as 'the right of a guardian... to have physical possession of a ward and to establish the ward\'s legal domicile'."
+                },
+                {
+                    question: "What is the penalty for Interference with Rights of Guardian of the Person (25.10)?",
+                    options: ["Class A misdemeanor", "State jail felony", "Felony of the third degree", "Felony of the second degree"],
+                    answer: "State jail felony",
+                    explanation: "Sec. 25.10(c) states: 'An offense under this section is a state jail felony.'"
+                },
+                {
+                    question: "Is it an offense under 25.10 (Interference w/ Guardian) if a governmental entity (like CPS/DFPS) takes a ward, and the taking is authorized by the Family Code?",
+                    options: ["Yes, they must get the guardian's permission.", "Yes, but it is a Class C misdemeanor.", "No, this section does not apply to a governmental entity acting under such authority.", "Only if the ward is harmed."],
+                    answer: "No, this section does not apply to a governmental entity acting under such authority.",
+                    explanation: "Sec. 25.10(d) provides a specific exception for a governmental entity when the taking 'was authorized by Subtitle E, Title 5, Family Code, or Chapter 48, Human Resources Code'."
+                },
+                {
+                    question: "A man commits Assault (22.01(a)(1)) against his wife in January, again in May, and a third time in October of the same year. What single offense can he be charged with?",
+                    options: ["Aggravated Assault", "Repeated Violation of a PO", "Continuous Violence Against the Family (25.11)", "Three separate counts of Assault FV."],
+                    answer: "Continuous Violence Against the Family (25.11)",
+                    explanation: "Sec. 25.11(a) creates this offense for 'two or more times' committing Assault (22.01(a)(1)) against a family member 'during a period that is 12 months or less'."
+                },
+                {
+                    question: "What is the penalty for Continuous Violence Against the Family (25.11)?",
+                    options: ["State jail felony", "Felony of the third degree", "Felony of the second degree", "Class A misdemeanor"],
+                    answer: "Felony of the third degree",
+                    explanation: "Sec. 25.11(e) states: 'An offense under this section is a felony of the third degree.'"
+                },
+                {
+                    question: "For Continuous Violence Against the Family (25.11), what must the jury agree on unanimously?",
+                    options: ["The specific date and location of each assault.", "They must agree on all elements for at least two specific assaults.", "That the defendant committed two or more assaults in the 12-month period.", "That the victim suffered serious bodily injury."],
+                    answer: "That the defendant committed two or more assaults in the 12-month period.",
+                    explanation: "Sec. 25.11(b) explicitly states the jury is *not* required to agree on the specific conduct or exact date, only 'that the defendant... two or more times engaged in conduct that constituted an offense...'"
+                },
+                {
+                    question: "A man commits 4 acts of assault-FV against his wife and 3 against his son (all in the same household) within 12 months. What is the maximum number of counts of Continuous Violence (25.11) he can be charged with?",
+                    options: ["Seven counts (one for each act)", "Two counts (one for each victim)", "One count", "Three counts (one for the wife, one for the son, one for the household)"],
+                    answer: "One count",
+                    explanation: "Sec. 25.11(d) states a defendant 'may not be charged with more than one count... if all... conduct... is alleged to have been committed against... members of the same household'."
+                },
+                {
+                    question: "A noncustodial parent persuades their 17-year-old child to leave the custodial parent's home, with intent to interfere with custody. What offense is this?",
+                    options: ["Interference with Child Custody (25.03(b))", "No offense, the child is over 16.", "Kidnapping", "Enticing a Child (25.04)"],
+                    answer: "Interference with Child Custody (25.03(b))",
+                    explanation: "Sec. 25.03(b) applies to a 'child younger than 18 years' and specifically targets a 'noncustodial parent' who 'knowingly entices or persuades'."
+                }
+            ];
+
+
+            const quizContainer = document.getElementById('quiz-container');
+            const checkAnswersBtn = document.getElementById('check-answers-btn');
+            const retakeQuizBtn = document.getElementById('retake-quiz-btn');
+            const quizResultsDiv = document.getElementById('quiz-results');
+            const quizScoreEl = document.getElementById('quiz-score');
+            const quizPercentageEl = document.getElementById('quiz-percentage');
+
+            function loadQuiz() {
+                // Shuffle the quiz data for a new order each time
+                const shuffledQuizData = [...quizData].sort(() => Math.random() - 0.5);
+                
+                quizContainer.innerHTML = ''; // Clear previous questions
+                
+                shuffledQuizData.forEach((q, index) => {
+                    const questionDiv = document.createElement('div');
+                    questionDiv.className = 'quiz-question';
+                    
+                    // Store the original question index to check the answer later
+                    const originalIndex = quizData.indexOf(q);
+                    
+                    // Escape single quotes in the option value
+                    let optionsHtml = q.options.map(option => {
+                        const escapedOption = option.replace(/'/g, "&apos;").replace(/"/g, "&quot;");
+                        const labelText = option.replace(/</g, "&lt;").replace(/>/g, "&gt;");
+                        return `<label class="block"><input type="radio" name="q${index}" value="${escapedOption}" data-original-index="${originalIndex}" class="mr-2">${labelText}</label>`;
+                    }).join('');
+                    
+                    // Escape HTML in the question
+                    const escapedQuestion = q.question.replace(/</g, "&lt;").replace(/>/g, "&gt;");
+
+                    questionDiv.innerHTML = `
+                        <p class="font-semibold mb-2">${index + 1}. ${escapedQuestion}</p>
+                        <div class="space-y-2">${optionsHtml}</div>
+                        <div class="feedback hidden mt-2 p-2 rounded-lg text-sm"></div>
+                    `;
+                    quizContainer.appendChild(questionDiv);
+                });
+            }
+
+
+            loadQuiz(); // Initial load
+
+            checkAnswersBtn.addEventListener('click', () => {
+                let score = 0;
+                const totalQuestions = quizData.length;
+                const questions = quizContainer.querySelectorAll('.quiz-question');
+
+                questions.forEach((questionDiv, index) => {
+                    const selected = questionDiv.querySelector(`input[name="q${index}"]:checked`);
+                    const feedback = questionDiv.querySelector('.feedback');
+                    const radioButtons = questionDiv.querySelectorAll(`input[name="q${index}"]`);
+                    
+                    feedback.classList.remove('hidden', 'bg-green-100', 'text-green-800', 'bg-red-100', 'text-red-800', 'bg-yellow-100', 'text-yellow-800');
+                    
+                    if (selected) {
+                        const originalIndex = selected.dataset.originalIndex;
+                        const q = quizData[originalIndex];
+                        
+                        // Must escape the correct answer in the same way as the value
+                        const escapedAnswer = q.answer.replace(/'/g, "&apos;").replace(/"/g, "&quot;");
+
+                        if (selected.value === escapedAnswer) {
+                            score++;
+                            feedback.textContent = `Correct! ${q.explanation}`;
+                            feedback.classList.add('bg-green-100', 'text-green-800');
+                        } else {
+                            feedback.textContent = `Incorrect. The correct answer is "${q.answer}". ${q.explanation}`;
+                            feedback.classList.add('bg-red-100', 'text-red-800');
+                        }
+                    } else {
+                        // Find the original question to show the answer
+                        const firstRadio = questionDiv.querySelector(`input[name="q${index}"]`);
+                        const originalIndex = firstRadio.dataset.originalIndex;
+                        const q = quizData[originalIndex];
+                        
+                        feedback.textContent = `You did not answer this question. The correct answer is "${q.answer}". ${q.explanation}`;
+                        feedback.classList.add('bg-yellow-100', 'text-yellow-800');
+                    }
+                    
+                    // Disable radio buttons after submitting
+                    radioButtons.forEach(radio => {
+                        radio.disabled = true;
+                    });
+                });
+
+                // Calculate and display results
+                const percentage = ((score / totalQuestions) * 100).toFixed(0);
+                quizScoreEl.textContent = `Your Score: ${score} / ${totalQuestions}`;
+                quizPercentageEl.textContent = `Percentage: ${percentage}%`;
+                
+                quizResultsDiv.classList.remove('hidden');
+                checkAnswersBtn.classList.add('hidden');
+                retakeQuizBtn.classList.remove('hidden');
+            });
+
+            retakeQuizBtn.addEventListener('click', () => {
+                // Hide results and retake button
+                quizResultsDiv.classList.add('hidden');
+                retakeQuizBtn.classList.add('hidden');
+                
+                // Show submit button
+                checkAnswersBtn.classList.remove('hidden');
+                
+                // Reload the quiz (clears answers and feedback)
+                loadQuiz();
+            });
+
+
+            // --- RESOURCES LIST ---
+            const resources = [
+                { name: "Texas Penal Code - Official Site", url: "https://statutes.capitol.texas.gov/Default.aspx?Code=PE" },
+                { name: "Penal Code Ch. 25 - Offenses Against the Family", url: "https://statutes.capitol.texas.gov/Docs/PE/htm/PE.25.htm" },
+                { name: "Family Code Ch. 71 - Family Violence", url: "https://statutes.capitol.texas.gov/Docs/FA/htm/FA.71.htm" },
+                { name: "Estates Code Ch. 1002 - Definitions (Ward)", url: "https://statutes.capitol.texas.gov/Docs/ES/htm/ES.1002.htm" },
+                { name: "CCP Art. 17.49 - GPS Monitoring", url: "https://statutes.capitol.texas.gov/Docs/CR/htm/CR.17.htm#17.49" },
+                { name: "Human Resources Code Sec. 121.002 - (Assistance Animal)", url: "https://statutes.capitol.texas.gov/Docs/HR/htm/HR.121.htm#121.002" }
+            ];
+            const resourcesList = document.getElementById('resources-list');
+            resources.sort((a, b) => a.name.localeCompare(b.name));
+            resources.forEach(res => {
+                const link = document.createElement('a'); // Use an anchor tag for links
+                link.href = res.url;
+                link.target = '_blank';
+                link.rel = 'noopener noreferrer'; // Good practice for security
+                link.className = 'text-blue-600 hover:underline p-2 bg-gray-50 rounded-md block hover:bg-gray-100';
+                link.innerHTML = `<i class="fas fa-external-link-alt mr-2"></i>${res.name}`;
+                resourcesList.appendChild(link);
+            });
+        });
+    </script>
+</body>
+</html>
+

@@ -1,0 +1,1223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ch. 21 Study Guide: Texas Penal Code</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet">
+    <style>
+        :root {
+            --header-bg: #1f2937;
+            --bg-color: #f3f4f6;
+            --tab-active-bg: #3b82f6;
+            --tab-active-text: #ffffff;
+            --card-bg: #ffffff;
+            --text-color: #111827;
+            --link-color: #2563eb;
+        }
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            font-family: 'Inter', sans-serif;
+        }
+        @import url('https://rsms.me/inter/inter.css');
+        .tab-content { display: none; }
+        .tab-content.active { display: block; }
+        .tab.active {
+            background-color: var(--tab-active-bg);
+            color: var(--tab-active-text);
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .tab {
+            transition: all 0.3s ease-in-out;
+        }
+        .grid-definitions {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 1rem;
+        }
+        .definition-card {
+            background-color: #f9fafb;
+            border: 1px solid #e5e7eb;
+            border-left: 4px solid var(--tab-active-bg);
+            padding: 1rem;
+            border-radius: 0.5rem;
+        }
+        /* Style for longer definitions */
+        .definition-card-full {
+             background-color: #f9fafb;
+            border: 1px solid #e5e7eb;
+            border-left: 4px solid var(--tab-active-bg);
+            padding: 1rem;
+            border-radius: 0.5rem;
+            grid-column: 1 / -1; /* Make it span all columns */
+        }
+
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Header -->
+    <header class="bg-gray-800 text-white p-4 shadow-md">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-xl md:text-2xl font-bold">
+                <i class="fas fa-gavel mr-2"></i>Ch. 21: Sexual Offenses
+            </h1>
+            <a href="index.html" class="text-sm text-blue-300 hover:text-blue-100 hover:underline">
+                <i class="fas fa-arrow-left mr-1"></i> Back to Main Page
+            </a>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container mx-auto p-4 md:p-6">
+        <!-- Tab Navigation -->
+        <div class="mb-6 bg-white rounded-lg shadow-md overflow-x-auto">
+            <nav id="tabs" class="flex flex-row space-x-1 p-2">
+                <button data-tab="ch21-definitions" class="tab active flex-1 md:flex-none flex items-center justify-center px-4 py-2 text-sm font-semibold rounded-lg text-gray-600 hover:bg-blue-100">
+                    <i class="fas fa-book mr-2"></i> <span class="hidden md:inline">Key Definitions (21.01+)</span>
+                </button>
+                <button data-tab="ch21-continuous" class="tab flex-1 md:flex-none flex items-center justify-center px-4 py-2 text-sm font-semibold rounded-lg text-gray-600 hover:bg-blue-100">
+                    <i class="fas fa-calendar-alt mr-2"></i> <span class="hidden md:inline">Continuous Offenses (21.02, 21.03)</span>
+                </button>
+                <button data-tab="ch21-child" class="tab flex-1 md:flex-none flex items-center justify-center px-4 py-2 text-sm font-semibold rounded-lg text-gray-600 hover:bg-blue-100">
+                    <i class="fas fa-child mr-2"></i> <span class="hidden md:inline">Indecency/Educator (21.11, 21.12)</span>
+                </button>
+                <button data-tab="ch21-public" class="tab flex-1 md:flex-none flex items-center justify-center px-4 py-2 text-sm font-semibold rounded-lg text-gray-600 hover:bg-blue-100">
+                    <i class="fas fa-eye mr-2"></i> <span class="hidden md:inline">Exposure/Observation (21.07+)</span>
+                </button>
+                <button data-tab="ch21-tech" class="tab flex-1 md:flex-none flex items-center justify-center px-4 py-2 text-sm font-semibold rounded-lg text-gray-600 hover:bg-blue-100">
+                    <i class="fas fa-camera mr-2"></i> <span class="hidden md:inline">Recording/Disclosure (21.15+)</span>
+                </button>
+                <button data-tab="ch21-other" class="tab flex-1 md:flex-none flex items-center justify-center px-4 py-2 text-sm font-semibold rounded-lg text-gray-600 hover:bg-blue-100">
+                    <i class="fas fa-folder-open mr-2"></i> <span class="hidden md:inline">Other Offenses (21.06, 21.09)</span>
+                </button>
+                <button data-tab="knowledge-check" class="tab flex-1 md:flex-none flex items-center justify-center px-4 py-2 text-sm font-semibold rounded-lg text-gray-600 hover:bg-blue-100">
+                    <i class="fas fa-question-circle mr-2"></i> <span class="hidden md:inline">Knowledge Check</span>
+                </button>
+                <button data-tab="resources" class="tab flex-1 md:flex-none flex items-center justify-center px-4 py-2 text-sm font-semibold rounded-lg text-gray-600 hover:bg-blue-100">
+                    <i class="fas fa-link mr-2"></i> <span class="hidden md:inline">Resources</span>
+                </button>
+            </nav>
+        </div>
+
+        <!-- Tab Content -->
+        <div id="tab-contents">
+            <!-- Ch. 21: Key Definitions Tab -->
+            <div id="ch21-definitions" class="tab-content active">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-xl font-bold mb-4 border-b pb-2"><a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.21.htm#21.01" target="_blank" class="text-blue-600 hover:underline">Sec. 21.01+ Key Definitions</a></h2>
+                     <p class="text-sm text-gray-600 mb-4">Definitions from 21.01 and other sections within Chapter 21.</p>
+                    <div class="grid-definitions">
+                        <div class="definition-card">
+                            <h3 class="font-bold text-gray-900">Deviate Sexual Intercourse (21.01)</h3>
+                            <p class="text-sm text-gray-700">(A) Contact between genitals of one person and the mouth or anus of another; OR (B) Penetration of the genitals or anus of another with an object.</p>
+                        </div>
+                        <div class="definition-card">
+                            <h3 class="font-bold text-gray-900">Sexual Contact (21.01)</h3>
+                            <p class="text-sm text-gray-700">Any touching of the anus, breast, or any part of the genitals of another person with <strong class="font-semibold">intent to arouse or gratify</strong> the sexual desire of any person. (Note special definitions in 21.11/21.12).</p>
+                        </div>
+                        <div class="definition-card">
+                            <h3 class="font-bold text-gray-900">Sexual Intercourse (21.01)</h3>
+                            <p class="text-sm text-gray-700">Any penetration of the female sex organ by the male sex organ.</p>
+                        </div>
+                        <div class="definition-card">
+                            <h3 class="font-bold text-gray-900">Spouse (21.01)</h3>
+                            <p class="text-sm text-gray-700">A person to whom a person is legally married.</p>
+                        </div>
+                        <div class="definition-card">
+                            <h3 class="font-bold text-gray-900">Intimate Area (21.15)</h3>
+                            <p class="text-sm text-gray-700">The naked or clothed genitals, pubic area, anus, buttocks, or female breast of a person.</p>
+                        </div>
+                         <div class="definition-card">
+                            <h3 class="font-bold text-gray-900">Female Breast (21.15)</h3>
+                            <p class="text-sm text-gray-700">Any portion of the female breast below the top of the areola.</p>
+                        </div>
+                         <div class="definition-card">
+                            <h3 class="font-bold text-gray-900">Changing Room (21.15)</h3>
+                            <p class="text-sm text-gray-700">A room or portioned area provided for or primarily used for changing clothes (includes dressing rooms, locker rooms, swimwear changing areas).</p>
+                        </div>
+                        <div class="definition-card">
+                            <h3 class="font-bold text-gray-900">Intimate Parts (21.16)</h3>
+                            <p class="text-sm text-gray-700">The naked genitals, pubic area, anus, buttocks, or female nipple of a person.</p>
+                        </div>
+                         <div class="definition-card">
+                            <h3 class="font-bold text-gray-900">Sexual Conduct (21.16)</h3>
+                            <p class="text-sm text-gray-700">Sexual contact, actual or simulated sexual intercourse, deviate sexual intercourse, sexual bestiality, masturbation, or sadomasochistic abuse.</p>
+                        </div>
+                         <div class="definition-card">
+                            <h3 class="font-bold text-gray-900">Simulated (21.16)</h3>
+                            <p class="text-sm text-gray-700">Explicit depiction creating appearance of actual sexual conduct, during which a person exhibits uncovered breasts, genitals, or buttocks.</p>
+                        </div>
+                         <div class="definition-card">
+                            <h3 class="font-bold text-gray-900">Deep Fake Media (21.165)</h3>
+                            <p class="text-sm text-gray-700">Visual depiction created/altered by software/AI that looks real but depicts a person doing something that didn't occur in reality.</p>
+                        </div>
+                        <div class="definition-card">
+                            <h3 class="font-bold text-gray-900">Visual Depiction (21.165)</h3>
+                            <p class="text-sm text-gray-700">Photograph, film, videotape, digital image/video, or other visual recording.</p>
+                        </div>
+                        <div class="definition-card-full">
+                            <h3 class="font-bold text-gray-900">Place w/ Reasonable Expectation of Privacy (21.15)</h3>
+                            <p class="text-sm text-gray-700">A place where a reasonable person would believe they could disrobe in privacy without being photographed, recorded, or broadcasted. Includes bathrooms, bedrooms, and changing rooms.</p>
+                        </div>
+                         <div class="definition-card-full">
+                            <h3 class="font-bold text-gray-900">Promote (21.16)</h3>
+                            <p class="text-sm text-gray-700">Procure, manufacture, issue, sell, give, provide, lend, mail, deliver, transfer, transmit, publish, distribute, circulate, disseminate, present, exhibit, or advertise, or offer/agree to do any of the above.</p>
+                        </div>
+                        <div class="definition-card-full">
+                            <h3 class="font-bold text-gray-900">Visual Material (21.16)</h3>
+                            <p class="text-sm text-gray-700">(A) Film, photograph, videotape, negative, slide, or reproduction thereof; OR (B) Disk, diskette, other physical medium, or digital file allowing image display on a screen, or image transmitted electronically.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Ch. 21: Continuous Offenses Tab -->
+            <div id="ch21-continuous" class="tab-content space-y-6">
+                
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-xl font-bold mb-4 border-b pb-2"><a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.21.htm#21.02" target="_blank" class="text-blue-600 hover:underline">Sec. 21.02. Continuous Sexual Abuse of Young Child or Disabled Individual</a></h2>
+                    <div class="space-y-4 text-sm text-gray-700">
+                        <ul class="list-disc list-inside space-y-2">
+                            <li><strong class="font-semibold">Offense:</strong> Actor (17+) commits <strong class="font-semibold">2 or more "acts of sexual abuse"</strong> during a <strong class="font-semibold">30+ day period</strong>.</li>
+                            <li><strong class="font-semibold">Victim:</strong> (A) A child <strong class="font-semibold">younger than 14</strong> (regardless of actor's knowledge of age) OR (B) A <strong class="font-semibold">disabled individual</strong>.</li>
+                            <li><strong class="font-semibold">"Act of Sexual Abuse" (c):</strong> Includes specific violations of: 20.04(a)(4)(Agg Kid w/ sex intent), 21.11(a)(1)(Indecency by contact, excluding breast touch), 22.011 (SA), 22.021 (Agg SA), 30.02 (Burglary w/ sex intent), 43.25 (Sexual Performance), 20A.02(a)(3,4,7,8)(Trafficking), 43.05 (Compelling Prostitution).</li>
+                            <li><strong class="font-semibold">Jury Rule (d):</strong> Jury must be unanimous that 2+ acts occurred in 30+ days, but <strong class="font-semibold">not</strong> on the specific acts or dates.</li>
+                             <li><strong class="font-semibold">Charging Rule (e):</strong> Cannot convict of both 21.02 AND an underlying offense against the same victim in the same action unless charged in alternative, occurred outside the period, or lesser included.</li>
+                            <li><strong class="font-semibold">Charging Rule (f):</strong> Cannot charge more than <strong class="font-semibold">one count</strong> if all acts are against a <strong class="font-semibold">single victim</strong>.</li>
+                            <li><strong class="font-semibold">Affirmative Defense (g):</strong> (Applies to < 14 victims only) Actor was (1) <strong class="font-semibold">not more than 5 years older</strong>, (2) used <strong class="font-semibold">no duress/force/threat</strong>, AND (3) was <strong class="font-semibold">not a registered sex offender</strong> (for life) or had prior conviction under this section or for an underlying "act of sexual abuse".</li>
+                            <li><strong class="font-semibold">Punishment (h):</strong> <strong class="font-semibold text-red-600">Felony of the First Degree (25-Life / 25-99)</strong>.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-xl font-bold mb-4 border-b pb-2"><a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.21.htm#21.03" target="_blank" class="text-blue-600 hover:underline">Sec. 21.03. Continuous Sexual Abuse</a></h2>
+                    <div class="space-y-4 text-sm text-gray-700">
+                        <ul class="list-disc list-inside space-y-2">
+                            <li><strong class="font-semibold">Offense:</strong> Actor (17+) commits <strong class="font-semibold">2 or more "acts of sexual abuse"</strong> during a <strong class="font-semibold">30+ day period</strong> against <strong class="font-semibold">2 or more victims</strong>.</li>
+                            <li><strong class="font-semibold">"Act of Sexual Abuse" (b):</strong> Same "laundry list" as Sec. 21.02.</li>
+                            <li><strong class="font-semibold">Jury Rule (c):</strong> Jury must be unanimous that 2+ acts occurred against 2+ victims in 30+ days, but <strong class="font-semibold">not</strong> on specifics.</li>
+                            <li><strong class="font-semibold">Charging Rule (d):</strong> Cannot convict of both 21.03 AND an underlying offense against the same victim in the same action unless charged in alternative, occurred outside the period, or lesser included.</li>
+                            <li><strong class="font-semibold">Charging Rule (e):</strong> Cannot charge more than <strong class="font-semibold">one count</strong> if all acts are against <strong class="font-semibold">only two victims</strong>.</li>
+                            <li><strong class="font-semibold">Affirmative Defense (f):</strong> (Applies if *all* victims < 17 only) Actor was (1) <strong class="font-semibold">not more than 5 years older</strong> than the <strong class="font-semibold">youngest victim</strong>, (2) used <strong class="font-semibold">no duress/force/threat</strong>, AND (3) was <strong class="font-semibold">not a registered sex offender</strong> (for life) or had prior conviction under this section or for an underlying "act of sexual abuse".</li>
+                            <li><strong class="font-semibold">Punishment (g):</strong> <strong class="font-semibold text-red-600">Felony of the First Degree (Ordinary)</strong>.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Ch. 21: Indecency/Educator Tab -->
+            <div id="ch21-child" class="tab-content space-y-6">
+                
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-xl font-bold mb-4 border-b pb-2"><a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.21.htm#21.11" target="_blank" class="text-blue-600 hover:underline">Sec. 21.11. Indecency with a Child</a></h2>
+                    <div class="space-y-4 text-sm text-gray-700">
+                        <p>Commits offense if, with a child <strong class="font-semibold">younger than 17</strong> (regardless of age knowledge), the person:</p>
+                        <ul class="list-disc list-inside ml-4 space-y-2">
+                            <li><strong class="font-semibold">(a)(1):</strong> Engages in "sexual contact" with the child or causes the child to engage in sexual contact. <strong class="font-semibold text-red-600">(F2)</strong></li>
+                            <li><strong class="font-semibold">(a)(2):</strong> With <strong class="font-semibold">intent to arouse/gratify</strong>: (A) exposes their anus/genitals, knowing child is present; OR (B) causes child to expose their anus/genitals. <strong class="font-semibold text-red-600">(F3)</strong></li>
+                        </ul>
+                        <h3 class="font-semibold text-base text-gray-800 mt-4">Special Definition of "Sexual Contact" (c)</h3>
+                        <p>For *this section*, "sexual contact" means (1) touching (incl. through clothing) the child's anus/breast/genitals or (2) touching any part of the child's body (incl. through clothing) with the actor's anus/breast/genitals, IF committed with <strong class="font-semibold">intent to arouse or gratify</strong>.</p>
+                        <h3 class="font-semibold text-base text-gray-800 mt-4">Affirmative Defenses</h3>
+                        <ul class="list-disc list-inside ml-4 space-y-2">
+                            <li><strong class="font-semibold">(b):</strong> Actor was (1) <strong class="font-semibold">not more than 3 years older</strong> AND <strong class="font-semibold">of the opposite sex</strong>, (2) used <strong class="font-semibold">no duress/force/threat</strong>, AND (3) was <strong class="font-semibold">not a registered sex offender</strong> (for life) or had prior reportable conviction under Ch 62.</li>
+                            <li><strong class="font-semibold">(b-1):</strong> The actor was the <strong class="font-semibold">spouse</strong> of the child.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-xl font-bold mb-4 border-b pb-2"><a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.21.htm#21.12" target="_blank" class="text-blue-600 hover:underline">Sec. 21.12. Improper Relationship Between Educator and Student</a></h2>
+                    <div class="space-y-4 text-sm text-gray-700">
+                        <p>An <strong class="font-semibold">employee</strong> of a public/private primary or secondary school commits an offense if they:</p>
+                        <ul class="list-disc list-inside ml-4 space-y-2">
+                            <li><strong class="font-semibold">(a)(1):</strong> Engage in sexual contact/intercourse/DSI with a student enrolled <strong class="font-semibold">at their school</strong>.</li>
+                            <li><strong class="font-semibold">(a)(2):</strong> Hold a specific role (teacher, coach, counselor, etc., regardless of certification) AND engage in sexual contact/intercourse/DSI with a person they know is a student <strong class="font-semibold">at another school</strong> OR a student participant in a <strong class="font-semibold">sponsored educational activity</strong>.</li>
+                            <li><strong class="font-semibold">(a)(3):</strong> Engage in <strong class="font-semibold">Online Solicitation of a Minor (33.021)</strong> conduct with any such student.</li>
+                        </ul>
+                         <h3 class="font-semibold text-base text-gray-800 mt-4">Special Definition of "Sexual Contact" (e)</h3>
+                        <p>For *this section*, similar to 21.11(c), requires touching specified areas with <strong class="font-semibold">intent to arouse or gratify</strong>.</p>
+                        <h3 class="font-semibold text-base text-gray-800 mt-4">Punishment, Defenses, & Other Rules</h3>
+                        <ul class="list-disc list-inside ml-4 space-y-2">
+                            <li><strong class="font-semibold">Punishment (b):</strong> <strong class="font-semibold text-red-600">Felony of the Second Degree (F2)</strong>.</li>
+                            <li><strong class="font-semibold">Affirmative Defense (b-1):</strong> (1) The actor was the <strong class="font-semibold">spouse</strong> of the student; OR (2) Actor was <strong class="font-semibold">not more than 3 years older</strong> AND the relationship <strong class="font-semibold">began *before* the actor's employment</strong>.</li>
+                            <li><strong class="font-semibold">Prosecution Rule (c):</strong> Actor may be prosecuted under <strong class="font-semibold">this section or other sections (or both)</strong>.</li>
+                            <li><strong class="font-semibold">Confidentiality (d):</strong> The <strong class="font-semibold">student's name</strong> is not public information.</li>
+                            <li><strong class="font-semibold">Confidentiality (d-1):</strong> The <strong class="font-semibold">employee's name</strong> may not be released externally to the general public <strong class="font-semibold">until indictment</strong> (with exceptions for reporting to agencies/LE or internal investigations).</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Ch. 21: Public/Exposure Tab -->
+            <div id="ch21-public" class="tab-content space-y-6">
+                
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-xl font-bold mb-4 border-b pb-2"><a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.21.htm#21.07" target="_blank" class="text-blue-600 hover:underline">Sec. 21.07. Public Lewdness</a></h2>
+                    <div class="space-y-4 text-sm text-gray-700">
+                        <ul class="list-disc list-inside space-y-2">
+                            <li><strong class="font-semibold">Offense:</strong> Person <strong class="font-semibold">knowingly</strong> engages in an act of (1) sexual intercourse, (2) deviate sexual intercourse, or (3) sexual contact in a <strong class="font-semibold">public place</strong>.</li>
+                            <li><strong class="font-semibold">Alternate Offense:</strong> If not in a public place, person is <strong class="font-semibold">reckless</strong> about whether another is present who will be offended or alarmed.</li>
+                            <li><strong class="font-semibold">Punishment:</strong> <strong class="font-semibold text-red-600">Class A Misdemeanor</strong>.</li>
+                            <li><strong class="font-semibold">Enhancement:</strong> <strong class="font-semibold">Felony of the Third Degree</strong> if the actor is a civilly committed sexually violent predator (SVP).</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-xl font-bold mb-4 border-b pb-2"><a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.21.htm#21.08" target="_blank" class="text-blue-600 hover:underline">Sec. 21.08. Indecent Exposure</a></h2>
+                    <div class="space-y-4 text-sm text-gray-700">
+                        <ul class="list-disc list-inside space-y-2">
+                            <li><strong class="font-semibold">Offense:</strong> Person (1) exposes anus or any part of genitals (2) with <strong class="font-semibold">intent to arouse or gratify</strong> sexual desire, AND (3) is <strong class="font-semibold">reckless</strong> about whether another is present who will be offended or alarmed.</li>
+                            <li><strong class="font-semibold">Punishment:</strong> <strong class="font-semibold text-red-600">Class B Misdemeanor</strong>.</li>
+                            <li><strong class="font-semibold">Enhancements:</strong>
+                                <ul>
+                                    <li class="ml-4 list-item list-disc"><strong class="font-semibold">Class A Misdemeanor</strong> if <strong class="font-semibold">1 prior conviction</strong> under this section.</li>
+                                    <li class="ml-4 list-item list-disc"><strong class="font-semibold">State Jail Felony</strong> if <strong class="font-semibold">2 or more prior convictions</strong> under this section.</li>
+                                    <li class="ml-4 list-item list-disc"><strong class="font-semibold">Felony of the Third Degree</strong> if the actor is a civilly committed SVP.</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-xl font-bold mb-4 border-b pb-2"><a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.21.htm#21.17" target="_blank" class="text-blue-600 hover:underline">Sec. 21.17. Voyeurism</a></h2>
+                    <div class="space-y-4 text-sm text-gray-700">
+                        <ul class="list-disc list-inside space-y-2">
+                            <li><strong class="font-semibold">Offense:</strong> Person (1) with <strong class="font-semibold">intent to arouse or gratify</strong> sexual desire, (2) <strong class="font-semibold">observes</strong> (including <strong class="font-semibold">remotely through electronic means</strong>) (3) another person <strong class="font-semibold">without consent</strong> (4) while the person is in a <strong class="font-semibold">dwelling or structure</strong> where they have a <strong class="font-semibold">reasonable expectation of privacy</strong>.</li>
+                            <li><strong class="font-semibold">Punishment:</strong> <strong class="font-semibold text-red-600">Class A Misdemeanor</strong>.</li>
+                            <li><strong class="font-semibold">Enhancement (SJF):</strong> Offense is a <strong class="font-semibold">State Jail Felony</strong> if: (1) actor has a <strong class="font-semibold">prior conviction</strong> under this section, OR (2) victim was <strong class="font-semibold">child < 18</strong>, OR (3) offense committed on <strong class="font-semibold">postsecondary (college) premises</strong>.</li>
+                            <li><strong class="font-semibold">Enhancement (F3):</strong> Offense is a <strong class="font-semibold">Felony of the Third Degree</strong> if: (1) victim was <strong class="font-semibold">child < 18</strong> AND (2) actor has a <strong class="font-semibold">prior conviction</strong> for victim < 18 under (c)(2).</li>
+                             <li><strong class="font-semibold">Prosecution Rule (e):</strong> Actor may be prosecuted under <strong class="font-semibold">this section or other laws (or both)</strong>.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Ch. 21: Recording/Disclosure Tab -->
+            <div id="ch21-tech" class="tab-content space-y-6">
+                
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-xl font-bold mb-4 border-b pb-2"><a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.21.htm#21.15" target="_blank" class="text-blue-600 hover:underline">Sec. 21.15. Invasive Visual Recording</a></h2>
+                    <div class="space-y-4 text-sm text-gray-700">
+                        <p>Person commits offense if, <strong class="font-semibold">without consent</strong> and with <strong class="font-semibold">intent to invade privacy</strong>, the person:</p>
+                        <ul class="list-disc list-inside ml-4 space-y-2">
+                            <li><strong class="font-semibold">(b)(1):</strong> Records/broadcasts/transmits a visual image of an <strong class="font-semibold">intimate area</strong> of a person who has a reasonable expectation that the area is <strong class="font-semibold">not subject to public view</strong>.</li>
+                            <li><strong class="font-semibold">(b)(2):</strong> Records/broadcasts/transmits *any* visual image of a person in a <strong class="font-semibold">place with a reasonable expectation of privacy</strong> (e.g., bathroom, changing room).</li>
+                            <li><strong class="font-semibold">(b)(3):</strong> Knowing the character/content, <strong class="font-semibold">promotes</strong> a recording/broadcast/transmission from (b)(1) or (b)(2).</li>
+                        </ul>
+                        <p><strong class="font-semibold">Key Rule (e):</strong> Posting a <strong class="font-semibold">sign</strong> saying "you are being recorded" is <strong class="font-semibold">NOT sufficient to establish consent</strong>.</p>
+                        <p><strong class="font-semibold">Prosecution Rule (d):</strong> Actor may be prosecuted under <strong class="font-semibold">this section or other laws (or both)</strong>.</p>
+                        <p><strong class="font-semibold">Punishment (c):</strong> <strong class="font-semibold text-red-600">State Jail Felony</strong>.</p>
+                    </div>
+                </div>
+
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-xl font-bold mb-4 border-b pb-2"><a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.21.htm#21.16" target="_blank" class="text-blue-600 hover:underline">Sec. 21.16. Unlawful Disclosure... (Revenge Porn)</a></h2>
+                    <div class="space-y-4 text-sm text-gray-700">
+                        <ul class="list-disc list-inside space-y-2">
+                            <li><strong class="font-semibold">Offense (Disclosure) (b):</strong> Person (1) <strong class="font-semibold">without consent</strong> & with <strong class="font-semibold">intent to harm</strong>, (2) <strong class="font-semibold">discloses</strong> visual material of intimate parts/sexual conduct, (3) knowing the material was <strong class="font-semibold">private</strong>, (4) the disclosure <strong class="font-semibold">causes harm</strong>, AND (5) it <strong class="font-semibold">reveals the victim's identity</strong> (incl. via accompanying info or info provided by 3rd party).</li>
+                            <li><strong class="font-semibold">Offense (Threat) (c):</strong> Intentionally <strong class="font-semibold">threatens to disclose</strong> such material to <strong class="font-semibold">obtain a benefit</strong> (in return for not disclosing, or in connection with the threat).</li>
+                            <li><strong class="font-semibold">Offense (Promotion) (d):</strong> Knowing character/content, <strong class="font-semibold">promotes</strong> such material on an <strong class="font-semibold">Internet website/forum they own/operate</strong>.</li>
+                            <li><strong class="font-semibold">No Defense (e):</strong> It is NOT a defense that the victim (1) <strong class="font-semibold">consented to the CREATION</strong> of the material, or (2) <strong class="font-semibold">voluntarily SENT</strong> the material to the actor.</li>
+                            <li><strong class="font-semibold">Affirmative Defense (f):</strong> Disclosure/promotion was for (A) lawful LE/medical purpose, (B) reporting unlawful activity, (C) legal proceeding; OR actor is an ISP; OR it depicts <strong class="font-semibold">voluntary exposure in a PUBLIC or COMMERCIAL setting</strong>.</li>
+                             <li><strong class="font-semibold">Prosecution Rule (h):</strong> Actor may be prosecuted under <strong class="font-semibold">this section or other laws (or both)</strong>.</li>
+                            <li><strong class="font-semibold">Punishment (g):</strong> <strong class="font-semibold text-red-600">State Jail Felony</strong>.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-xl font-bold mb-4 border-b pb-2"><a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.21.htm#21.165" target="_blank" class="text-blue-600 hover:underline">Sec. 21.165. Unlawful Production... (Deep Fake)</a></h2>
+                    <div class="space-y-4 text-sm text-gray-700">
+                        <ul class="list-disc list-inside space-y-2">
+                            <li><strong class="font-semibold">Offense (Produce/Distribute) (b):</strong> <strong class="font-semibold">Knowingly</strong> produces or distributes by electronic means <strong class="font-semibold">"deep fake media"</strong> <strong class="font-semibold">without effective consent</strong> that appears to depict a real person with fake intimate parts or engaging in sexual conduct they did not engage in.
+                                <ul><li class="ml-4 list-item list-disc"><strong class="font-semibold">Punishment (c):</strong> <strong class="font-semibold text-red-600">Class A Misdemeanor</strong>. (Enhanced to <strong class="font-semibold">F3</strong> if prior or victim < 18).</li></ul>
+                            </li>
+                            <li><strong class="font-semibold">Offense (Threat) (b-1):</strong> Intentionally <strong class="font-semibold">threatens</strong> to produce/distribute deep fake media with <strong class="font-semibold">intent to coerce/extort/harass/intimidate</strong>.
+                                <ul><li class="ml-4 list-item list-disc"><strong class="font-semibold">Punishment (c-1):</strong> <strong class="font-semibold text-red-600">Class B Misdemeanor</strong>. (Enhanced to <strong class="font-semibold">Class A</strong> if prior or victim < 18).</li></ul>
+                            </li>
+                            <li><strong class="font-semibold">Consent Rule (b-2):</strong> Effective consent must be <strong class="font-semibold">written, signed, plain language</strong>, describe media, and describe audiovisual work if applicable.</li>
+                            <li><strong class="font-semibold">No Defense (c-2):</strong> It is NOT a defense that the media <strong class="font-semibold">contained a disclaimer or label</strong> indicating it's fake/unauthorized.</li>
+                             <li><strong class="font-semibold">Affirmative Defense (c-3):</strong> Production/distribution in course of lawful LE, reporting crime, or legal proceeding.</li>
+                             <li><strong class="font-semibold">Affirmative Defense (c-4):</strong> Actor is ISP, cloud provider, etc., acting solely in technical/automatic nature.</li>
+                            <li><strong class="font-semibold">Affirmative Defense (c-5):</strong> Actor is AI developer who <strong class="font-semibold">prohibited creation</strong> in user policies AND <strong class="font-semibold">took affirmative steps to prevent/filter</strong> such content.</li>
+                            <li><strong class="font-semibold">Prosecution Rule (d):</strong> Actor may be prosecuted under <strong class="font-semibold">this section or other laws</strong>.</li>
+                            <li><strong class="font-semibold">Restitution (e):</strong> Court <strong class="font-semibold">shall order</strong> restitution for psychological, financial, or reputational harm.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-xl font-bold mb-4 border-b pb-2"><a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.21.htm#21.18" target="_blank" class="text-blue-600 hover:underline">Sec. 21.18. Sexual Coercion</a></h2>
+                    <div class="space-y-4 text-sm text-gray-700">
+                        <ul class="list-disc list-inside space-y-2">
+                            <li><strong class="font-semibold">Offense (b):</strong> Intentionally <strong class="font-semibold">threatens (incl. coercion/extortion) to commit a specified sex/disclosure offense</strong> (e.g., Ch 43, 20A.02(a)(3+), 21.02, 21.03, 21.08, 21.11, 21.12, 21.15, 21.16, 21.17, 22.011, 22.021) to get a benefit of (1) <strong class="font-semibold">intimate visual material</strong>, (2) <strong class="font-semibold">sexual conduct</strong>, OR (3) <strong class="font-semibold">monetary benefit/other benefit of value</strong>.</li>
+                            <li><strong class="font-semibold">Offense (c):</strong> Intentionally <strong class="font-semibold">threatens (incl. coercion/extortion) to commit a specified violence/trafficking offense</strong> (Ch 19, Ch 20, 20A.02(a)(1,2,5,6)) to get a benefit of (1) <strong class="font-semibold">intimate visual material</strong> OR (2) <strong class="font-semibold">sexual conduct</strong>.</li>
+                             <li><strong class="font-semibold">Communication (d):</strong> Threat applies regardless of how communicated (incl. electronic means).</li>
+                            <li><strong class="font-semibold">Punishment (e):</strong> <strong class="font-semibold text-red-600">State Jail Felony</strong>. (Enhanced to <strong class="font-semibold">F3</strong> if prior conviction under this section).</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-xl font-bold mb-4 border-b pb-2"><a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.21.htm#21.19" target="_blank" class="text-blue-600 hover:underline">Sec. 21.19. Unlawful Electronic Transmission... (Cyberflashing)</a></h2>
+                    <div class="space-y-4 text-sm text-gray-700">
+                        <ul class="list-disc list-inside space-y-2">
+                            <li><strong class="font-semibold">Offense (b):</strong> Person <strong class="font-semibold">knowingly</strong> transmits by electronic means visual material that:
+                                <ul class="list-disc list-inside ml-4">
+                                    <li>(1) Depicts (A) sexual conduct or intimate parts exposed, OR (B) <strong class="font-semibold">covered genitals of a male person that are in a discernibly turgid state</strong>; AND</li>
+                                    <li>(2) Is <strong class="font-semibold">not sent at the request</strong> or with the <strong class="font-semibold">express consent</strong> of the recipient.</li>
+                                </ul>
+                            </li>
+                             <li><strong class="font-semibold">Prosecution Rule (d):</strong> Actor may be prosecuted under <strong class="font-semibold">this section or other laws (or both)</strong>.</li>
+                            <li><strong class="font-semibold">Punishment (c):</strong> <strong class="font-semibold text-red-600">Class C Misdemeanor</strong>.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Ch. 21: Other Offenses Tab -->
+            <div id="ch21-other" class="tab-content space-y-6">
+                
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-xl font-bold mb-4 border-b pb-2"><a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.21.htm#21.06" target="_blank" class="text-blue-600 hover:underline">Sec. 21.06. Homosexual Conduct</a></h2>
+                    <div class="space-y-4 text-sm text-gray-700">
+                        <ul class="list-disc list-inside space-y-2">
+                            <li><strong class="font-semibold">Offense:</strong> Engages in deviate sexual intercourse with another individual of the same sex.</li>
+                            <li><strong class="font-semibold">Punishment:</strong> Class C Misdemeanor.</li>
+                            <li><strong class="font-semibold text-red-600">Note:</strong> This statute was declared unconstitutional by the U.S. Supreme Court in *Lawrence v. Texas* (2003) and is unenforceable.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-xl font-bold mb-4 border-b pb-2"><a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.21.htm#21.09" target="_blank" class="text-blue-600 hover:underline">Sec. 21.09. Bestiality</a></h2>
+                    <div class="space-y-4 text-sm text-gray-700">
+                        <ul class="list-disc list-inside space-y-2">
+                            <li><strong class="font-semibold">Offense (a):</strong> Knowingly engages in, causes, permits, promotes, possesses/transfers/advertises animal for, or observes any of the following:
+                                <ul class="list-disc list-inside ml-4">
+                                    <li>(1) Contact between person's genitals/mouth/anus and animal's genitals/anus/mouth.</li>
+                                    <li>(2) Fondling animal's genitals/anus (not for husbandry/vet practice).</li>
+                                    <li>(3) Causing animal to contact <strong class="font-semibold">seminal fluid</strong> of the person.</li>
+                                    <li>(4) <strong class="font-semibold">Inserting object/body part</strong> into animal's anus/genitals (not for husbandry/vet practice).</li>
+                                    <li>(8) <strong class="font-semibold">Permitting</strong> conduct on premises under person's control.</li>
+                                    <li>(9) Committing any of these acts in the <strong class="font-semibold">presence of a child < 18</strong>.</li>
+                                </ul>
+                            </li>
+                            <li><strong class="font-semibold">Exception (c):</strong> Conduct is a <strong class="font-semibold">generally accepted and otherwise lawful animal husbandry or veterinary practice</strong>.</li>
+                            <li><strong class="font-semibold">Punishment (b):</strong> <strong class="font-semibold text-red-600">State Jail Felony</strong>.</li>
+                            <li><strong class="font-semibold">Enhancement (b):</strong> <strong class="font-semibold">Felony of the Second Degree</strong> if committed under (a)(9) (presence of child) OR results in <strong class="font-semibold">SBI/death of the animal</strong>.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Knowledge Check Tab -->
+            <div id="knowledge-check" class="tab-content">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-2xl font-bold mb-4">Knowledge Check (Ch. 21)</h2>
+                    <p class="mb-6 text-gray-600">Test your understanding of the material. (96 Questions)</p>
+                    <div id="quiz-container" class="space-y-8">
+                        <!-- Questions will be dynamically inserted here -->
+                    </div>
+                    <!-- New Results Div -->
+                    <div id="quiz-results" class="hidden mt-8 text-center">
+                        <h3 class="text-2xl font-bold" id="quiz-score"></h3>
+                        <p class="text-lg text-gray-700" id="quiz-percentage"></p>
+                    </div>
+                    <!-- Button Container -->
+                    <div class="mt-8 text-center space-x-4">
+                        <button id="check-answers-btn" class="bg-blue-600 text-white font-bold py-2 px-6 rounded-lg hover:bg-blue-700 transition-colors">Submit Answers</button>
+                        <button id="retake-quiz-btn" class="hidden bg-gray-600 text-white font-bold py-2 px-6 rounded-lg hover:bg-gray-700 transition-colors">Retake Quiz</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Resources Tab -->
+            <div id="resources" class="tab-content">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-2xl font-bold mb-4">External Resources</h2>
+                    <p class="mb-6 text-gray-600">Quick links to official Texas statutes referenced in this chapter.</p>
+                    <div id="resources-list" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 text-sm">
+                        <!-- Links will be dynamically inserted here -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const tabs = document.querySelectorAll('#tabs button');
+            const tabContents = document.querySelectorAll('.tab-content');
+
+            tabs.forEach(tab => {
+                tab.addEventListener('click', () => {
+                    tabs.forEach(t => t.classList.remove('active'));
+                    tabContents.forEach(c => c.classList.remove('active'));
+                    tab.classList.add('active');
+                    document.getElementById(tab.dataset.tab).classList.add('active');
+                });
+            });
+
+            // --- QUIZ DATA (CHAPTER 21) ---
+            const quizData = [
+                // Section 21.01 Definitions
+                {
+                    question: `Under 21.01, which of the following is "Deviate Sexual Intercourse"?`,
+                    options: [`Penetration of the female sex organ by the male sex organ.`, `Penetration of the anus of another person with an object.`, `Touching the breast with intent to arouse.`, `Penetration of the mouth with an object.`],
+                    answer: `Penetration of the anus of another person with an object.`,
+                    explanation: `Sec. 21.01(1)(B) defines it as penetration of the genitals OR the anus with an object. (1)(A) covers genital/mouth/anus contact.`
+                },
+                {
+                    question: `Under 21.01, "Deviate Sexual Intercourse" also includes...`,
+                    options: [`Contact between the genitals of one person and the mouth or anus of another.`, `Any penetration of the female sex organ.`, `Touching the anus with intent to arouse.`, `Any contact with an animal.`],
+                    answer: `Contact between the genitals of one person and the mouth or anus of another.`,
+                    explanation: `Sec. 21.01(1)(A) provides this part of the definition.`
+                },
+                {
+                    question: `The general definition of "Sexual Contact" (21.01) requires touching the anus, breast, or genitals with what specific intent?`,
+                    options: [`Intent to harm.`, `Intent to invade privacy.`, `Intent to arouse or gratify the sexual desire of any person.`, `Intent to commit a felony.`],
+                    answer: `Intent to arouse or gratify the sexual desire of any person.`,
+                    explanation: `Sec. 21.01(2) specifies "with intent to arouse or gratify the sexual desire of any person."`
+                },
+                {
+                    question: `What is the definition of "Sexual Intercourse" under 21.01?`,
+                    options: [`Any penetration of an orifice.`, `Any penetration of the female sex organ by the male sex organ.`, `Any contact between genitals.`, `Penetration of the genitals or anus with an object.`],
+                    answer: `Any penetration of the female sex organ by the male sex organ.`,
+                    explanation: `Sec. 21.01(3) provides this specific definition.`
+                },
+                {
+                    question: `Under Sec. 21.01, a "Spouse" is defined as a person legally married under...`,
+                    options: [`Any religious law.`, `Common law only.`, `Subtitle A, Title 1, Family Code or comparable law.`, `The Texas Constitution.`]
+                    ,answer: `Subtitle A, Title 1, Family Code or comparable law.`,
+                    explanation: `Sec. 21.01(4) specifically references the Family Code or comparable laws.`
+                },
+                // Section 21.02 Continuous Sexual Abuse Young Child/Disabled
+                {
+                    question: `What is the offense of Continuous Sexual Abuse of Young Child/Disabled Individual (21.02)?`,
+                    options: [`2 or more acts of sexual abuse in a 30+ day period.`, `1 act of sexual abuse against a child < 14.`, `3 or more acts of sexual abuse in a 1-year period.`, `2 or more acts of indecency in a 30+ day period.`],
+                    answer: `2 or more acts of sexual abuse in a 30+ day period.`,
+                    explanation: `Sec. 21.02(b)(1) requires 'two or more acts' in 'a period that is 30 or more days in duration.'`
+                },
+                {
+                    question: `Who is the victim for an offense under 21.02?`,
+                    options: [`A child younger than 17.`, `A child younger than 14 OR a disabled individual.`, `A child younger than 17 OR a disabled individual.`, `A child younger than 14 only.`],
+                    answer: `A child younger than 14 OR a disabled individual.`,
+                    explanation: `Sec. 21.02(b)(2) lists (A) child younger than 14 or (B) a disabled individual.`
+                },
+                {
+                    question: `What is the required age of the actor for 21.02?`,
+                    options: [`17 years of age or older.`, `18 years of age or older.`, `More than 3 years older than the victim.`, `More than 5 years older than the victim.`],
+                    answer: `17 years of age or older.`,
+                    explanation: `Sec. 21.02(b)(2) requires the actor to be '17 years of age or older.'`
+                },
+                {
+                    question: `What is the punishment for 21.02 (Continuous Sexual Abuse of Young Child/Disabled Individual)?`,
+                    options: [`F1 (ordinary).`, `F2.`, `F1, punishable by life or 25-99 years.`, `Capital Felony.`],
+                    answer: `F1, punishable by life or 25-99 years.`,
+                    explanation: `Sec. 21.02(h) provides this specific high-end F1 punishment range.`
+                },
+                {
+                    question: `Which of the following *is* an "act of sexual abuse" listed under 21.02(c)?`,
+                    options: [`Sexual Assault (22.011).`, `Indecency with a Child by Exposure (21.11(a)(2)).`, `Public Lewdness (21.07).`, `Indecent Exposure (21.08).`],
+                    answer: `Sexual Assault (22.011).`,
+                    explanation: `Sec. 21.02(c)(3) lists Sexual Assault (22.011). The list *excludes* 21.11(a)(2) (exposure) and does not include 21.07 or 21.08.`
+                },
+                 {
+                    question: `Which Aggravated Kidnapping offense qualifies as an "act of sexual abuse" under 21.02(c)?`,
+                    options: [`Any Aggravated Kidnapping.`, `Aggravated Kidnapping under 20.04(a)(4) (intent to violate/abuse sexually).`, `Aggravated Kidnapping under 20.04(a)(1) (ransom).`, `Aggravated Kidnapping involving SBI.`]
+                    ,answer: `Aggravated Kidnapping under 20.04(a)(4) (intent to violate/abuse sexually).`,
+                    explanation: `Sec. 21.02(c)(1) specifies this particular subsection of Aggravated Kidnapping.`
+                },
+                {
+                    question: `Which Trafficking offense qualifies as an "act of sexual abuse" under 21.02(c)?`,
+                    options: [`Any Trafficking offense under 20A.02.`, `Trafficking for forced labor (20A.02(a)(1)).`, `Trafficking involving prostitution or sexual conduct (20A.02(a)(3), (4), (7), or (8)).`, `Only Continuous Trafficking (20A.03).`]
+                    ,answer: `Trafficking involving prostitution or sexual conduct (20A.02(a)(3), (4), (7), or (8)).`,
+                    explanation: `Sec. 21.02(c)(7) specifically lists these subsections.`
+                },
+                {
+                    question: `Which Burglary offense qualifies as an "act of sexual abuse" under 21.02(c)?`,
+                    options: [`Any Burglary under 30.02.`, `Burglary of a Habitation.`, `Burglary punishable under 30.02(d) where actor intended to commit SA, Agg SA, etc.`, `Burglary of a Vehicle.`]
+                    ,answer: `Burglary punishable under 30.02(d) where actor intended to commit SA, Agg SA, etc.`,
+                    explanation: `Sec. 21.02(c)(5) requires both the punishment level of Burglary (30.02(d)) AND the intent to commit one of the listed sexual offenses.`
+                },
+                {
+                    question: `Under 21.02(c)(2), Indecency w/ Child (21.11(a)(1)) counts as an "act of sexual abuse" *unless* it was committed...`,
+                    options: [`By an actor < 17.`, `By touching the breast of a child.`, `Without intent to arouse.`, `Against a spouse.`],
+                    answer: `By touching the breast of a child.`,
+                    explanation: `Sec. 21.02(c)(2) specifically carves out 21.11(a)(1) "if the actor committed the offense in a manner other than by touching... the breast of a child."`
+                },
+                {
+                    question: `For 21.02, the jury must be unanimous on...`,
+                    options: [`The specific dates of both acts.`, `The specific nature of both acts (e.g., one SA, one Indecency).`, `That 2+ acts occurred in a 30+ day period.`, `All of the above.`],
+                    answer: `That 2+ acts occurred in a 30+ day period.`,
+                    explanation: `Sec. 21.02(d) states the jury is *not* required to agree on specific acts or dates, only on the core elements.`
+                },
+                {
+                    question: `Under 21.02(e), can a defendant be convicted of both 21.02 and an underlying SA (22.011) against the same victim in the same trial?`,
+                    options: [`Yes, always.`, `No, never.`, `Only if the SA occurred outside the 30-day period alleged for 21.02.`, `Yes, unless the victim objects.`]
+                    ,answer: `Only if the SA occurred outside the 30-day period alleged for 21.02.`,
+                    explanation: `Sec. 21.02(e) prohibits conviction for both in the same action unless (1) charged in alternative, (2) occurred outside the period, or (3) lesser included.`
+                },
+                {
+                    question: `Under 21.02(f), what is the charging limitation if all acts are against a single victim?`,
+                    options: [`The actor may not be charged with this offense.`, `The actor may not be charged with more than one count.`, `The actor must also be charged with the underlying offenses.`, `The punishment is reduced to an F2.`],
+                    answer: `The actor may not be charged with more than one count.`,
+                    explanation: `Sec. 21.02(f) prevents "stacking" counts of 21.02 for a single victim.`
+                },
+                {
+                    question: `Which is *NOT* an element of the affirmative defense for 21.02?`,
+                    options: [`Actor was not more than 5 years older than the victim.`, `Actor did not use duress, force, or threat.`, `Actor was not a registered sex offender.`, `Actor was the spouse of the victim.`],
+                    answer: `Actor was the spouse of the victim.`,
+                    explanation: `Sec. 21.02(g) lists the 3 elements (age, no force, not registered). Being a spouse is *not* a defense to 21.02 (unlike 21.11).`
+                },
+                {
+                    question: `The affirmative defense in 21.02(g) applies only if the victim(s) are...`,
+                    options: [`Disabled individuals.`, `Children younger than 14.`, `Children younger than 17.`, `Any victim listed in (b)(2).`],
+                    answer: `Children younger than 14.`,
+                    explanation: `The introductory phrase of 21.02(g) states: 'With respect to a prosecution under this section involving only one or more victims described by Subsection (b)(2)(A)...' which refers to children younger than 14.`
+                },
+                 // Section 21.03 Continuous Sexual Abuse
+                {
+                    question: `What is the key difference between 21.02 and 21.03 (Continuous Sexual Abuse)?`,
+                    options: [`21.02 requires 2+ acts; 21.03 requires 3+ acts.`, `21.02 has a 30-day period; 21.03 has a 60-day period.`, `21.02 involves victims < 14 or disabled; 21.03 requires 2 or more victims.`, `21.02 is an F1; 21.03 is an F2.`],
+                    answer: `21.02 involves victims < 14 or disabled; 21.03 requires 2 or more victims.`,
+                    explanation: `21.02 is defined by the *victim's status* (< 14 or disabled). 21.03 is defined by the *number of victims* (2 or more). Note: 21.03 applies regardless of victim age if other elements met.`
+                },
+                {
+                    question: `What is the punishment for 21.03 (Continuous Sexual Abuse)?`,
+                    options: [`F1 (ordinary).`, `F2.`, `F1, punishable by life or 25-99 years.`, `SJF.`],
+                    answer: `F1 (ordinary).`,
+                    explanation: `Sec. 21.03(g) lists the punishment as a Felony of the First Degree (which has a 5-99/Life range, unlike 21.02's 25-99/Life range).`
+                },
+                 {
+                    question: `What is the required age of the actor for 21.03?`,
+                    options: [`17 years of age or older.`, `18 years of age or older.`, `No age requirement.`, `Depends on the victim's age.`]
+                    ,answer: `17 years of age or older.`,
+                    explanation: `Sec. 21.03(a)(2) requires the actor to be '17 years of age or older.'`
+                },
+                {
+                    question: `Under 21.03(e), what is the charging limitation if all acts are against *only two* victims?`,
+                    options: [`The actor may not be charged with more than one count.`, `The actor must be charged with two counts.`, `The punishment is reduced.`, `The actor cannot be charged with this offense.`]
+                    ,answer: `The actor may not be charged with more than one count.`,
+                    explanation: `Sec. 21.03(e) prevents stacking counts of 21.03 if only two victims are involved.`
+                },
+                {
+                    question: `The affirmative defense in 21.03(f) applies only if...`,
+                    options: [`All victims are disabled.`, `All victims are younger than 17.`, `There are only two victims.`, `The actor used no force.`]
+                    ,answer: `All victims are younger than 17.`,
+                    explanation: `The introductory phrase of 21.03(f) states: 'With respect to a prosecution under this section involving only two or more victims younger than 17 years of age...'`
+                },
+                {
+                    question: `The affirmative defense in 21.03(f) requires the actor be no more than 5 years older than...`,
+                    options: [`The oldest victim.`, `The youngest victim.`, `The average age of the victims.`, `Any of the victims.`],
+                    answer: `The youngest victim.`,
+                    explanation: `Sec. 21.03(f)(1) specifies 'not more than five years older than the *youngest* victim'.`
+                },
+                // Section 21.07 Public Lewdness
+                {
+                    question: `What is the offense of Public Lewdness (21.07)?`,
+                    options: [`Exposing genitals with intent to arouse.`, `Knowingly engaging in sexual contact in a public place.`, `Knowingly engaging in sexual intercourse in a public place.`, `Both B and C.`],
+                    answer: `Both B and C.`,
+                    explanation: `Sec. 21.07(a) lists (1) sexual intercourse, (2) deviate sexual intercourse, and (3) sexual contact.`
+                },
+                {
+                    question: `A person engages in sexual intercourse in their home, but is reckless about whether a neighbor can see and is alarmed. What offense?`,
+                    options: [`No offense.`, `Public Lewdness (21.07).`, `Indecent Exposure (21.08).`, `Invasive Visual Recording (21.15).`],
+                    answer: `Public Lewdness (21.07).`,
+                    explanation: `Sec. 21.07(a) covers acts 'if not in a public place, the person is reckless about whether another is present who will be offended or alarmed'.`
+                },
+                {
+                    question: `What is the base punishment for Public Lewdness (21.07)?`,
+                    options: [`Class C Misdemeanor.`, `Class B Misdemeanor.`, `Class A Misdemeanor.`, `State Jail Felony.`],
+                    answer: `Class A Misdemeanor.`,
+                    explanation: `Sec. 21.07(b) sets the base punishment as a Class A Misdemeanor.`
+                },
+                {
+                    question: `Public Lewdness (21.07) is enhanced to an F3 if the actor is...`,
+                    options: [`A registered sex offender.`, `Over 18.`, `Civilly committed as a sexually violent predator (SVP).`, `In a public park.`]
+                    ,answer: `Civilly committed as a sexually violent predator (SVP).`,
+                    explanation: `Sec. 21.07(b) adds this specific enhancement.`
+                },
+                // Section 21.08 Indecent Exposure
+                {
+                    question: `What is the offense of Indecent Exposure (21.08)?`,
+                    options: [`Exposing genitals with intent to arouse AND being reckless about offense.`, `Exposing genitals in a public place.`, `Engaging in sexual contact in public.`, `Exposing genitals to a minor.`],
+                    answer: `Exposing genitals with intent to arouse AND being reckless about offense.`,
+                    explanation: `Sec. 21.08(a) requires *both* intent to arouse *and* recklessness about whether another is present who will be offended.`
+                },
+                {
+                    question: `What is the base punishment for Indecent Exposure (21.08)?`,
+                    options: [`Class C Misdemeanor.`, `Class B Misdemeanor.`, `Class A Misdemeanor.`, `State Jail Felony.`],
+                    answer: `Class B Misdemeanor.`,
+                    explanation: `Sec. 21.08(b) sets the base punishment as a Class B Misdemeanor.`
+                },
+                {
+                    question: `A person commits Indecent Exposure (21.08) and has *one* prior conviction for 21.08. What is the punishment?`,
+                    options: [`Class B Misdemeanor.`, `Class A Misdemeanor.`, `State Jail Felony.`, `Felony of the Third Degree.`],
+                    answer: `Class A Misdemeanor.`,
+                    explanation: `Sec. 21.08(b)(1) enhances the offense to a Class A Misdemeanor for one prior conviction.`
+                },
+                {
+                    question: `A person commits Indecent Exposure (21.08) and has *two* prior convictions for 21.08. What is the punishment?`,
+                    options: [`Class B Misdemeanor.`, `Class A Misdemeanor.`, `State Jail Felony.`, `Felony of the Third Degree.`],
+                    answer: `State Jail Felony.`,
+                    explanation: `Sec. 21.08(b)(2) enhances the offense to a State Jail Felony for two or more prior convictions.`
+                },
+                {
+                    question: `Indecent Exposure (21.08) is enhanced to an F3 if the actor is...`,
+                    options: [`Over 65.`, `In a school zone.`, `Civilly committed as an SVP.`, `Has 3 prior convictions.`]
+                    ,answer: `Civilly committed as an SVP.`,
+                    explanation: `Sec. 21.08(b)(3) adds this specific enhancement.`
+                },
+                // Section 21.09 Bestiality
+                {
+                    question: `Which of the following is an offense under Bestiality (21.09)?`,
+                    options: [`Possessing an animal with intent to use it for a prohibited sex act.`, `Organizing or participating as an observer of a prohibited sex act.`, `Engaging in a prohibited sex act in the presence of a child < 18.`, `All of the above.`],
+                    answer: `All of the above.`,
+                    explanation: `Sec. 21.09(a) lists all these acts: (a)(5), (a)(6), and (a)(9).`
+                },
+                 {
+                    question: `Under Bestiality (21.09), knowingly causing an animal to contact the seminal fluid of the person is...`,
+                    options: [`Not an offense.`, `An offense under (a)(3).`, `An exception if for breeding.`, `Only an offense if the animal is harmed.`]
+                    ,answer: `An offense under (a)(3).`,
+                    explanation: `Sec. 21.09(a)(3) specifically criminalizes this act.`
+                },
+                 {
+                    question: `Under Bestiality (21.09), knowingly inserting any part of a person's body or an object into an animal's anus or genitals is an offense unless...`,
+                    options: [`The animal is owned by the actor.`, `It is a generally accepted husbandry or veterinary practice.`, `The animal enjoys it.`, `No one else is present.`]
+                    ,answer: `It is a generally accepted husbandry or veterinary practice.`,
+                    explanation: `Sec. 21.09(a)(4) prohibits this, but (c) provides the exception for lawful husbandry/veterinary practices.`
+                },
+                {
+                    question: `Knowingly permitting bestiality to occur on premises under the person's control is an offense under...`,
+                    options: [`Sec. 21.09(a)(1).`, `Sec. 21.09(a)(6).`, `Sec. 21.09(a)(8).`, `Sec. 21.09(a)(10).`],
+                    answer: `Sec. 21.09(a)(8).`,
+                    explanation: `Sec. 21.09(a)(8) specifically criminalizes permitting the conduct on one's premises.`
+                },
+                {
+                    question: `What is the base punishment for Bestiality (21.09)?`,
+                    options: [`Class A Misdemeanor.`, `State Jail Felony.`, `Felony of the Second Degree.`, `Felony of the Third Degree.`],
+                    answer: `State Jail Felony.`,
+                    explanation: `Sec. 21.09(b) sets the base punishment as a State Jail Felony.`
+                },
+                {
+                    question: `Bestiality (21.09) is enhanced to a Felony of the Second Degree if...`,
+                    options: [`The act results in SBI or death of the animal.`, `The act is committed in the presence of a child < 18.`, `The actor has a prior conviction.`, `Both A and B.`],
+                    answer: `Both A and B.`,
+                    explanation: `Sec. 21.09(b) enhances the offense to F2 if it's committed under (a)(9) (presence of child) OR results in SBI/death of the animal.`
+                },
+                {
+                    question: `What is the exception to prosecution for Bestiality (21.09)?`,
+                    options: [`The actor was the owner of the animal.`, `The animal was not harmed.`, `The conduct was a generally accepted and lawful animal husbandry or veterinary practice.`, `The actor was not paid.`]
+                    ,answer: `The conduct was a generally accepted and lawful animal husbandry or veterinary practice.`,
+                    explanation: `Sec. 21.09(c) provides this specific exception.`
+                },
+                // Section 21.11 Indecency with a Child
+                {
+                    question: `A person commits Indecency with a Child (21.11) if they engage in sexual contact with a child of what age?`,
+                    options: [`Younger than 14.`, `Younger than 15.`, `Younger than 17.`, `Younger than 18.`],
+                    answer: `Younger than 17.`,
+                    explanation: `Sec. 21.11(a) specifies 'a child younger than 17 years of age.'`
+                },
+                {
+                    question: `What is the punishment for Indecency with a Child by *sexual contact* (21.11(a)(1))?`,
+                    options: [`Felony of the Second Degree.`, `Felony of the Third Degree.`, `State Jail Felony.`, `Class A Misdemeanor.`],
+                    answer: `Felony of the Second Degree.`,
+                    explanation: `Sec. 21.11(d) states an offense under (a)(1) is a Felony of the Second Degree.`
+                },
+                {
+                    question: `What is the punishment for Indecency with a Child by *exposure* (21.11(a)(2))?`,
+                    options: [`Felony of the Second Degree.`, `Felony of the Third Degree.`, `State Jail Felony.`, `Class A Misdemeanor.`],
+                    answer: `Felony of the Third Degree.`,
+                    explanation: `Sec. 21.11(d) states an offense under (a)(2) is a Felony of the Third Degree.`
+                },
+                {
+                    question: `Does the state need to prove the actor knew the child's age for Indecency with a Child (21.11)?`,
+                    options: [`Yes.`, `No.`, `Yes, unless the child was under 14.`, `Only for the exposure offense (a)(2).`],
+                    answer: `No.`,
+                    explanation: `Sec. 21.11(a) explicitly states 'regardless of whether the person knows the age of the child at the time of the offense.'`
+                },
+                {
+                    question: `The special definition of "sexual contact" in 21.11(c) (Indecency) includes touching the child's body with the actor's genitals if committed with intent to arouse, and...`,
+                    options: [`Touching the child's anus, breast, or genitals (incl. through clothing).`, `Touching the child's mouth.`, `Exposing genitals to the child.`, `Only applies if penetration occurs.`]
+                    ,answer: `Touching the child's anus, breast, or genitals (incl. through clothing).`,
+                    explanation: `Sec. 21.11(c) defines it as (1) touching the child's anus/breast/genitals or (2) touching the child's body with the actor's anus/breast/genitals, if done with intent to arouse.`
+                },
+                {
+                    question: `Which of the following is an affirmative defense to Indecency with a Child (21.11)?`,
+                    options: [`The actor was the spouse of the child.`, `The actor was not more than 3 years older, of the opposite sex, used no force/threats, and not registered.`, `The child consented.`, `Both A and B.`],
+                    answer: `Both A and B.`,
+                    explanation: `Sec. 21.11(b-1) provides the spouse defense. Sec. 21.11(b) provides the "Romeo and Juliet" age-gap defense, which includes the opposite sex requirement.`
+                },
+                {
+                    question: `The affirmative defense in 21.11(b) requires the actor to be not more than 3 years older, use no force, not be registered, AND...`,
+                    options: [`Be married to the child.`, `Be of the opposite sex as the child.`, `Be under 21 years old.`, `Have parental consent.`]
+                    ,answer: `Be of the opposite sex as the child.`,
+                    explanation: `Sec. 21.11(b)(1) explicitly requires the actor to be 'of the opposite sex'.`
+                },
+                // Section 21.12 Improper Relationship Educator/Student
+                {
+                    question: `A teacher engages in sexual intercourse with a student enrolled at the same school. What offense?`,
+                    options: [`Indecency with a Child (21.11).`, `Improper Relationship Between Educator and Student (21.12).`, `Sexual Assault (22.011).`, `Public Lewdness (21.07).`],
+                    answer: `Improper Relationship Between Educator and Student (21.12).`,
+                    explanation: `Sec. 21.12(a)(1) directly applies. The actor *could* also be charged with 21.11 or 22.011 depending on the student's age, per 21.12(c).`
+                },
+                {
+                    question: `An uncertified coach (holding a role under Ed Code 21.003) engages in sexual contact with a student from another school during a UIL event. Offense?`,
+                    options: [`No offense, not certified.`, `No offense, different school.`, `Improper Relationship (21.12(a)(2)).`, `Indecency with a Child (21.11) only.`]
+                    ,answer: `Improper Relationship (21.12(a)(2)).`,
+                    explanation: `Sec. 21.12(a)(2) applies to employees holding specific roles 'regardless of whether the employee holds the appropriate certificate' and covers students from other schools or participants in sponsored activities.`
+                },
+                 {
+                    question: `An employee of a primary school engages in Online Solicitation of a Minor (33.021) with a student at that school. What offense under Ch 21?`,
+                    options: [`Indecency w/ Child (21.11).`, `Improper Relationship (21.12(a)(3)).`, `Sexual Coercion (21.18).`, `No Ch 21 offense, only 33.021.`]
+                    ,answer: `Improper Relationship (21.12(a)(3)).`,
+                    explanation: `Sec. 21.12(a)(3) specifically incorporates conduct described by 33.021.`
+                },
+                {
+                    question: `What is the punishment for Improper Relationship Between Educator and Student (21.12)?`,
+                    options: [`Felony of the First Degree.`, `Felony of the Second Degree.`, `Felony of the Third Degree.`, `State Jail Felony.`],
+                    answer: `Felony of the Second Degree.`,
+                    explanation: `Sec. 21.12(b) sets the punishment as a Felony of the Second Degree.`
+                },
+                {
+                    question: `A 22-year-old teacher dates a 19-year-old student (not a minor). The relationship began *before* the teacher was hired. Defense?`,
+                    options: [`No, it is a strict liability offense.`, `Yes, this is an affirmative defense under 21.12(b-1)(2).`, `No, the age gap is more than 3 years.`, `Yes, this is an affirmative defense under 21.12(b-1)(1).`],
+                    answer: `Yes, this is an affirmative defense under 21.12(b-1)(2).`,
+                    explanation: `Sec. 21.12(b-1)(2) provides a defense if the actor is <= 3 years older (22 is 3 years older than 19) *AND* the relationship began *before* employment.`
+                },
+                {
+                    question: `Can an educator charged with 21.12 also be charged with 22.011 (Sexual Assault) for the same conduct?`,
+                    options: [`No, only one charge allowed.`, `Yes, 21.12(c) allows prosecution under either or both sections.`, `Only if the student is under 17.`, `Only if the educator used force.`]
+                    ,answer: `Yes, 21.12(c) allows prosecution under either or both sections.`,
+                    explanation: `Sec. 21.12(c) explicitly states the actor may be prosecuted under either or both sections.`
+                },
+                {
+                    question: `An educator is accused of 21.12. When can the school release their name to the public?`,
+                    options: [`Immediately.`, `After the investigation is complete.`, `Not until the employee is indicted for the offense.`, `Never.`]
+                    ,answer: `Not until the employee is indicted for the offense.`,
+                    explanation: `Sec. 21.12(d-1) prohibits external release of the employee's name until indictment, with exceptions for reporting to state agencies or law enforcement, or internal investigation/reporting.`
+                },
+                {
+                    question: `Under 21.12(d), is the name of the student involved in an improper relationship public information?`,
+                    options: [`Yes.`, `No.`, `Only if they are over 18.`, `Only if the educator is convicted.`]
+                    ,answer: `No.`,
+                    explanation: `Sec. 21.12(d) explicitly states the student's name 'may not be released to the public and is not public information'.`
+                },
+                 // Section 21.15 Invasive Visual Recording
+                {
+                    question: `Under 21.15, what is an "Intimate area"?`,
+                    options: [`Naked genitals only.`, `Naked or clothed genitals, pubic area, anus, buttocks, or female breast.`, `Any part of the body below the neck.`, `Female breast below the top of the areola.`]
+                    ,answer: `Naked or clothed genitals, pubic area, anus, buttocks, or female breast.`,
+                    explanation: `Sec. 21.15(a)(2) provides this definition.`
+                },
+                {
+                    question: `Under 21.15, what constitutes a "Place in which a person has a reasonable expectation of privacy"?`,
+                    options: [`A public park.`, `A crowded street.`, `A bathroom, bedroom, or changing room.`, `Any place indoors.`]
+                    ,answer: `A bathroom, bedroom, or changing room.`,
+                    explanation: `Sec. 21.15(a)(3-a) defines it and explicitly includes these examples.`
+                },
+                {
+                    question: `A person, with intent to invade privacy, films *any* visual image of another person in a bathroom. What offense?`,
+                    options: [`Voyeurism (21.17).`, `Invasive Visual Recording (21.15(b)(2)).`, `Invasive Visual Recording (21.15(b)(1)).`, `No offense if no intimate area was seen.`],
+                    answer: `Invasive Visual Recording (21.15(b)(2)).`,
+                    explanation: `Sec. 21.15(b)(2) makes it an offense to record *any* image (not just intimate areas) in a place with a reasonable expectation of privacy (like a bathroom).`
+                },
+                {
+                    question: `A person, with intent to invade privacy, uses a drone to film someone's "intimate area" while they are sunbathing in their fenced backyard. What offense?`,
+                    options: [`Voyeurism (21.17).`, `Invasive Visual Recording (21.15(b)(1)).`, `No offense, they are outside.`, `Trespass (30.05).`],
+                    answer: `Invasive Visual Recording (21.15(b)(1)).`,
+                    explanation: `Sec. 21.15(b)(1) applies if the victim has a 'reasonable expectation that the intimate area is not subject to public view,' even if outside.`
+                },
+                 {
+                    question: `A person knowingly promotes (e.g., shares online) a video they know was taken in violation of 21.15(b)(1) or (b)(2). What offense?`,
+                    options: [`No offense, only the recorder is liable.`, `Tampering with Evidence.`, `Invasive Visual Recording (21.15(b)(3)).`, `Unlawful Disclosure (21.16).`]
+                    ,answer: `Invasive Visual Recording (21.15(b)(3)).`,
+                    explanation: `Sec. 21.15(b)(3) specifically criminalizes *promoting* recordings made under (b)(1) or (b)(2).`
+                },
+                {
+                    question: `A gym posts a sign in the locker room: "This area is under video surveillance." Does this constitute consent for 21.15?`,
+                    options: [`Yes.`, `No.`, `Yes, it's implied consent.`, `Only if the sign is in large print.`],
+                    answer: `No.`,
+                    explanation: `Sec. 21.15(e) explicitly states 'a sign... is not sufficient to establish the person's consent'.`
+                },
+                {
+                    question: `What is the punishment for Invasive Visual Recording (21.15)?`,
+                    options: [`Class A Misdemeanor.`, `State Jail Felony.`, `Felony of the Third Degree.`, `Felony of the Second Degree.`],
+                    answer: `State Jail Felony.`,
+                    explanation: `Sec. 21.15(c) sets the punishment as a State Jail Felony.`
+                },
+                 // Section 21.16 Unlawful Disclosure (Revenge Porn)
+                 {
+                    question: `Under 21.16, "Intimate parts" includes the naked genitals, pubic area, anus, buttocks, or...`,
+                    options: [`Female breast below the areola.`, `Female nipple.`, `Any part of the breast.`, `Clothed genitals.`]
+                    ,answer: `Female nipple.`,
+                    explanation: `Sec. 21.16(a)(1) uses "female nipple," slightly different from 21.15's "female breast."`
+                },
+                 {
+                    question: `Under 21.16, "Promote" means to procure, manufacture, sell, give, transmit, publish, distribute, OR...`,
+                    options: [`View.`, `Possess.`, `Offer or agree to do any of the listed actions.`, `Delete.`]
+                    ,answer: `Offer or agree to do any of the listed actions.`,
+                    explanation: `Sec. 21.16(a)(2) includes a broad definition ending with 'or to offer or agree to do any of the above.'`
+                },
+                {
+                    question: `Which is *NOT* an element of 21.16(b) (Unlawful Disclosure / Revenge Porn)?`,
+                    options: [`Disclosure was without consent.`, `Actor had intent to harm.`, `Disclosure reveals victim's identity.`, `Actor must have been the one who recorded the material.`],
+                    answer: `Actor must have been the one who recorded the material.`,
+                    explanation: `The statute only requires the actor to *disclose* the material knowing it was obtained/created under private circumstances. It doesn't require the actor to be the photographer.`
+                },
+                {
+                    question: `Under 21.16(b), the disclosure must reveal the identity of the depicted person, which can include accompanying info OR...`,
+                    options: [`Information provided by a third party in response to the disclosure.`, `A watermark on the image.`, `Facial recognition software results.`, `The file name.`]
+                    ,answer: `Information provided by a third party in response to the disclosure.`,
+                    explanation: `Sec. 21.16(b)(4)(B) explicitly includes identification through third-party responses (like comments saying who it is).`
+                },
+                {
+                    question: `A person threatens to post intimate photos of their ex-partner unless the ex-partner pays them $1,000. What offense?`,
+                    options: [`Theft (31.03).`, `Unlawful Disclosure (21.16(b)).`, `Unlawful Disclosure (21.16(c)).`, `Sexual Coercion (21.18).`],
+                    answer: `Unlawful Disclosure (21.16(c)).`,
+                    explanation: `Sec. 21.16(c) is the "threat" portion of the statute. This could *also* be Sexual Coercion (21.18(b)(3)) as both apply to threatening disclosure for a monetary benefit.`
+                },
+                 {
+                    question: `A person knowingly posts revenge porn on a website they own and operate. What offense under 21.16?`,
+                    options: [`21.16(b) Disclosure.`, `21.16(c) Threat.`, `21.16(d) Promotion.`, `No offense, they didn't create it.`]
+                    ,answer: `21.16(d) Promotion.`,
+                    explanation: `Sec. 21.16(d) specifically covers promoting the material on a website/forum owned or operated by the person.`
+                },
+                {
+                    question: `A person's ex-partner sends them an intimate photo. The person then posts it online to harm their ex. The ex claims it's not an offense because they *sent* the photo. Is this a valid defense?`,
+                    options: [`Yes, they consented.`, `No, 21.16(e) states this is not a defense.`, `Yes, the material was no longer private.`, `No, but it mitigates punishment.`]
+                    ,answer: `No, 21.16(e) states this is not a defense.`,
+                    explanation: `Sec. 21.16(e)(2) explicitly states it is *not* a defense that the depicted person 'voluntarily transmitted the visual material to the actor.'`
+                },
+                 {
+                    question: `A person posts an intimate photo online, claiming it was necessary to report a crime committed by the depicted person. Under 21.16, this might be...`,
+                    options: [`Still an offense.`, `An affirmative defense under (f)(1)(B).`, `Justification under Chapter 9.`, `Mitigation at punishment.`]
+                    ,answer: `An affirmative defense under (f)(1)(B).`,
+                    explanation: `Sec. 21.16(f)(1)(B) provides an affirmative defense if the disclosure is made in the course of 'reporting unlawful activity.'`
+                },
+                {
+                    question: `A person discloses a photo of someone exposing themselves at a public Mardi Gras parade. Is this likely an offense under 21.16?`,
+                    options: [`Yes.`, `No, because it depicts voluntary exposure in a public setting (Affirmative Defense f(2)).`, `Yes, unless the person consented.`, `No, because Mardi Gras is commercial.`]
+                    ,answer: `No, because it depicts voluntary exposure in a public setting (Affirmative Defense f(2)).`,
+                    explanation: `Sec. 21.16(f)(2) provides an affirmative defense for material depicting 'in a public or commercial setting only a person's voluntary exposure'.`
+                },
+                {
+                    question: `What is the punishment for any offense under 21.16 (Unlawful Disclosure/Threat/Promotion)?`,
+                    options: [`Class A Misdemeanor.`, `State Jail Felony.`, `Felony of the Third Degree.`, `Felony of the Second Degree.`]
+                    ,answer: `State Jail Felony.`,
+                    explanation: `Sec. 21.16(g) sets the punishment as a State Jail Felony.`
+                },
+                // Section 21.165 Deep Fake
+                {
+                    question: `What is "Deep fake media" under 21.165?`,
+                    options: [`Any photoshopped image.`, `A visual depiction that appears real but shows a person doing something that did not occur in reality.`, `A video of a person in disguise.`, `A recording made without consent.`],
+                    answer: `A visual depiction that appears real but shows a person doing something that did not occur in reality.`,
+                    explanation: `Sec. 21.165(a)(1) defines it as a depiction created by AI/software that looks real and 'depict[s] a real person... performing an action that did not occur in reality.'`
+                },
+                {
+                    question: `What is the offense under 21.165(b) (Deep Fake)?`,
+                    options: [`Knowingly *producing or distributing* deep fake media of intimate parts/sex act without consent.`, `*Possessing* deep fake media.`, `*Viewing* deep fake media.`, `All of the above.`],
+                    answer: `Knowingly *producing or distributing* deep fake media of intimate parts/sex act without consent.`,
+                    explanation: `Sec. 21.165(b) targets the *production* and *distribution* of the media.`
+                },
+                {
+                    question: `What is the offense under 21.165(b-1) (Deep Fake Threat)?`,
+                    options: [`Threatening to distribute deep fakes to get money.`, `Threatening to distribute deep fakes to get sex.`, `Intentionally threatening to produce/distribute deep fakes with intent to coerce, extort, harass, or intimidate.`, `All of the above.`]
+                    ,answer: `Intentionally threatening to produce/distribute deep fakes with intent to coerce, extort, harass, or intimidate.`,
+                    explanation: `Sec. 21.165(b-1) criminalizes the *threat* itself if made with this intent.`
+                },
+                {
+                    question: `For consent to be valid under 21.165 (Deep Fake), it must be...`,
+                    options: [`Verbal.`, `Implied by conduct.`, `Written, signed, and in plain language.`, `Given after distribution.`]
+                    ,answer: `Written, signed, and in plain language.`,
+                    explanation: `Sec. 21.165(b-2) requires specific written consent.`
+                },
+                {
+                    question: `A person distributes a deep fake video, but adds a "This is not real" disclaimer. Is this a defense to 21.165?`,
+                    options: [`Yes.`, `No.`, `Yes, it's an affirmative defense.`, `Only if the disclaimer is at the beginning.`],
+                    answer: `No.`,
+                    explanation: `Sec. 21.165(c-2) states it is *not* a defense that the media 'contains a disclaimer' or 'indicates... that the depiction is not authentic.'`
+                },
+                {
+                    question: `Which is an affirmative defense to 21.165 (Deep Fake Production/Distribution)?`,
+                    options: [`The actor is an ISP acting solely in a technical capacity.`, `The production occurred during lawful law enforcement activity.`, `The actor is an AI developer who took steps to prevent misuse.`, `All of the above.`]
+                    ,answer: `All of the above.`,
+                    explanation: `Sec. 21.165(c-3), (c-4), and (c-5) provide these affirmative defenses.`
+                },
+                {
+                    question: `What is the base punishment for *producing* a deep fake under 21.165(b)?`,
+                    options: [`Class C Misdemeanor.`, `Class B Misdemeanor.`, `Class A Misdemeanor.`, `State Jail Felony.`],
+                    answer: `Class A Misdemeanor.`,
+                    explanation: `Sec. 21.165(c) sets the base punishment for (b) as a Class A Misdemeanor.`
+                },
+                {
+                    question: `The punishment for *producing* a deep fake (21.165(b)) is enhanced to an F3 if...`,
+                    options: [`The actor was paid.`, `The actor has a prior conviction or the victim is < 18.`, `The actor posted it online.`, `The actor used AI.`]
+                    ,answer: `The actor has a prior conviction or the victim is < 18.`,
+                    explanation: `Sec. 21.165(c) enhances the offense to an F3 if (1) prior conviction or (2) victim < 18.`
+                },
+                {
+                    question: `What is the base punishment for *threatening* to produce a deep fake under 21.165(b-1)?`,
+                    options: [`Class C Misdemeanor.`, `Class B Misdemeanor.`, `Class A Misdemeanor.`, `State Jail Felony.`],
+                    answer: `Class B Misdemeanor.`,
+                    explanation: `Sec. 21.165(c-1) sets the base punishment for (b-1) as a Class B Misdemeanor.`
+                },
+                {
+                    question: `If convicted under 21.165 (Deep Fake), the court SHALL order restitution for...`,
+                    options: [`Legal fees only.`, `Psychological, financial, or reputational harm.`, `Pain and suffering.`, `Medical expenses only.`]
+                    ,answer: `Psychological, financial, or reputational harm.`,
+                    explanation: `Sec. 21.165(e) makes restitution for these types of harm mandatory.`
+                },
+                 // Section 21.17 Voyeurism
+                {
+                    question: `What is the offense of Voyeurism (21.17)?`,
+                    options: [`Observing another in a *public place* w/o consent.`, `Recording another in a *dwelling* w/o consent.`, `Observing another in a *dwelling/structure* w/ R.E.P., w/o consent, and w/ *intent to arouse*.`, `Any unauthorized observation.`]
+                    ,answer: `Observing another in a *dwelling/structure* w/ R.E.P., w/o consent, and w/ *intent to arouse*.`,
+                    explanation: `Sec. 21.17(a) requires all these elements: intent to arouse, "observes," "without consent," and "dwelling or structure" w/ R.E.P.`
+                },
+                 {
+                    question: `Voyeurism (21.17) includes observing remotely through...`,
+                    options: [`Binoculars.`, `A keyhole.`, `The use of electronic means.`, `A telescope.`]
+                    ,answer: `The use of electronic means.`,
+                    explanation: `Sec. 21.17(a) explicitly includes 'remotely through the use of electronic means'.`
+                },
+                {
+                    question: `What is the base punishment for Voyeurism (21.17)?`,
+                    options: [`Class C Misdemeanor.`, `Class B Misdemeanor.`, `Class A Misdemeanor.`, `State Jail Felony.`],
+                    answer: `Class A Misdemeanor.`,
+                    explanation: `Sec. 21.17(b) sets the base punishment as a Class A Misdemeanor.`
+                },
+                {
+                    question: `Voyeurism (21.17) is enhanced to a State Jail Felony if...`,
+                    options: [`The actor has a prior conviction for 21.17.`, `The victim was a child < 18.`, `The offense was committed on a college campus.`, `All of the above.`],
+                    answer: `All of the above.`,
+                    explanation: `Sec. 21.17(c) lists all three as triggers for an SJF enhancement: (1) prior, (2) victim < 18, (3) on postsecondary premises.`
+                },
+                {
+                    question: `A person commits Voyeurism (21.17) against a 16-year-old. They have a prior conviction for 21.17, also against a 16-year-old. What is the punishment?`,
+                    options: [`Class A Misdemeanor.`, `State Jail Felony.`, `Felony of the Third Degree.`, `Felony of the Second Degree.`],
+                    answer: `Felony of the Third Degree.`,
+                    explanation: `Sec. 21.17(d) provides a specific F3 enhancement if (1) victim < 18 AND (2) actor has a prior conviction *for a victim < 18* under (c)(2).`
+                },
+                // Section 21.18 Sexual Coercion
+                {
+                    question: `A person threatens to commit Sexual Assault (22.011) unless the victim sends them intimate photos. What offense?`,
+                    options: [`Sexual Coercion (21.18(b)).`, `Sexual Coercion (21.18(c)).`, `Sexual Assault (22.011).`, `Unlawful Disclosure (21.16).`],
+                    answer: `Sexual Coercion (21.18(b)).`,
+                    explanation: `Sec. 21.18(b) covers *threatening a sex crime* to get (1) intimate material, (2) sexual conduct, or (3) money/benefit.`
+                },
+                 {
+                    question: `A person threatens to commit Indecent Exposure (21.08) unless the victim gives them money. What offense?`,
+                    options: [`Sexual Coercion (21.18(b)).`, `Sexual Coercion (21.18(c)).`, `Theft by Coercion (31.03).`, `This is not Sexual Coercion.`]
+                    ,answer: `Sexual Coercion (21.18(b)).`,
+                    explanation: `Sec. 21.18(b) applies because the actor threatened a listed sex offense (21.08) to obtain a monetary benefit.`
+                },
+                {
+                    question: `A person threatens to kill (Ch. 19) the victim unless the victim sends them intimate photos. What offense?`,
+                    options: [`Sexual Coercion (21.18(b)).`, `Sexual Coercion (21.18(c)).`, `Terroristic Threat (22.07).`, `Unlawful Disclosure (21.16).`],
+                    answer: `Sexual Coercion (21.18(c)).`,
+                    explanation: `Sec. 21.18(c) covers *threatening a violence crime* (Ch 19/20/20A(labor)) to get (1) intimate material or (2) sexual conduct.`
+                },
+                {
+                    question: `A person threatens to commit Kidnapping (Ch. 20) unless the victim pays them $500. What offense?`,
+                    options: [`Sexual Coercion (21.18(b)).`, `Sexual Coercion (21.18(c)).`, `This is not an offense under 21.18.`, `Aggravated Kidnapping (20.04).`],
+                    answer: `This is not an offense under 21.18.`,
+                    explanation: `This is a trick question. 21.18(c) (threatening violence) *only* applies if the benefit sought is *intimate material* or *sexual conduct*, not money. This would be Theft or another offense.`
+                },
+                 {
+                    question: `Sexual Coercion (21.18) applies to threats made via...`,
+                    options: [`Email.`, `Social media.`, `In person.`, `All of the above.`]
+                    ,answer: `All of the above.`,
+                    explanation: `Sec. 21.18(d) states the section applies 'regardless of how that threat is communicated, including... electronic or technological means.'`
+                },
+                {
+                    question: `What is the base punishment for Sexual Coercion (21.18)?`,
+                    options: [`Class A Misdemeanor.`, `State Jail Felony.`, `Felony of the Third Degree.`, `Felony of the Second Degree.`],
+                    answer: `State Jail Felony.`,
+                    explanation: `Sec. 21.18(e) sets the base punishment as a State Jail Felony.`
+                },
+                {
+                    question: `Sexual Coercion (21.18) is enhanced to an F3 if...`,
+                    options: [`The victim is a minor.`, `The actor used a weapon.`, `The actor has a prior conviction under this section.`, `The threat was made online.`]
+                    ,answer: `The actor has a prior conviction under this section.`,
+                    explanation: `Sec. 21.18(e) provides the F3 enhancement for a prior conviction under 21.18.`
+                },
+                // Section 21.19 Cyberflashing
+                {
+                    question: `What is the offense of Unlawful Electronic Transmission (Cyberflashing) (21.19)?`,
+                    options: [`Knowingly sending unsolicited explicit images.`, `Knowingly sending any image to harass.`, `Intentionally sending explicit images to harm.`, `Recklessly sending explicit images.`]
+                    ,answer: `Knowingly sending unsolicited explicit images.`,
+                    explanation: `Sec. 21.19(b) requires the actor 'knowingly transmits' material that 'is not sent at the request of or with the express consent of the recipient.'`
+                },
+                {
+                    question: `Which type of image is specifically included in 21.19 (Cyberflashing)?`,
+                    options: [`Covered genitals of a male in a turgid state.`, `Any image of a person in lingerie.`, `Any image from a legal proceeding.`, `Any image of a person's breast.`],
+                    answer: `Covered genitals of a male in a turgid state.`,
+                    explanation: `Sec. 21.19(b)(1)(B) specifically lists this, in addition to sexual conduct or exposed intimate parts.`
+                },
+                {
+                    question: `What is the punishment for 21.19 (Cyberflashing)?`,
+                    options: [`Class C Misdemeanor.`, `Class B Misdemeanor.`, `Class A Misdemeanor.`, `No offense, it's a civil matter.`],
+                    answer: `Class C Misdemeanor.`,
+                    explanation: `Sec. 21.19(c) sets the punishment as a Class C Misdemeanor.`
+                }
+            ];
+
+
+            const quizContainer = document.getElementById('quiz-container');
+            const checkAnswersBtn = document.getElementById('check-answers-btn');
+            const retakeQuizBtn = document.getElementById('retake-quiz-btn');
+            const quizResultsDiv = document.getElementById('quiz-results');
+            const quizScoreEl = document.getElementById('quiz-score');
+            const quizPercentageEl = document.getElementById('quiz-percentage');
+
+            function loadQuiz() {
+                // Shuffle the quiz data for a new order each time
+                const shuffledQuizData = [...quizData].sort(() => Math.random() - 0.5);
+                
+                quizContainer.innerHTML = ''; // Clear previous questions
+                
+                shuffledQuizData.forEach((q, index) => {
+                    const questionDiv = document.createElement('div');
+                    questionDiv.className = 'quiz-question';
+                    
+                    // Store the original question index to check the answer later
+                    const originalIndex = quizData.indexOf(q);
+                    
+                    let optionsHtml = q.options.map(option => {
+                        // Use template literals for the value to handle any special characters
+                        const escapedOption = `${option}`;
+                        // Ensure quotes within options are properly handled in the value attribute
+                        const valueAttribute = escapedOption.replace(/"/g, '&quot;').replace(/'/g, '&#39;');
+                        return `<label class="block"><input type="radio" name="q${index}" value="${valueAttribute}" data-original-index="${originalIndex}" class="mr-2">${option}</label>`;
+                    }).join('');
+                    
+                    const escapedQuestion = q.question;
+
+                    questionDiv.innerHTML = `
+                        <p class="font-semibold mb-2">${index + 1}. ${escapedQuestion}</p>
+                        <div class="space-y-2">${optionsHtml}</div>
+                        <div class="feedback hidden mt-2 p-2 rounded-lg text-sm"></div>
+                    `;
+                    quizContainer.appendChild(questionDiv);
+                });
+            }
+
+
+            loadQuiz(); // Initial load
+
+            checkAnswersBtn.addEventListener('click', () => {
+                let score = 0;
+                const totalQuestions = quizData.length;
+                const questions = quizContainer.querySelectorAll('.quiz-question');
+
+                questions.forEach((questionDiv, index) => {
+                    const selected = questionDiv.querySelector(`input[name="q${index}"]:checked`);
+                    const feedback = questionDiv.querySelector('.feedback');
+                    const radioButtons = questionDiv.querySelectorAll(`input[name="q${index}"]`);
+                    
+                    feedback.classList.remove('hidden', 'bg-green-100', 'text-green-800', 'bg-red-100', 'text-red-800', 'bg-yellow-100', 'text-yellow-800');
+                    
+                    if (selected) {
+                        const originalIndex = selected.dataset.originalIndex;
+                        const q = quizData[originalIndex];
+                        // Prepare the answer for comparison, escaping quotes similarly to how the value was set
+                        const correctAnswerValue = q.answer.replace(/"/g, '&quot;').replace(/'/g, '&#39;');
+
+
+                        // Compare the selected value with the answer
+                        if (selected.value === correctAnswerValue) {
+                            score++;
+                            feedback.textContent = `Correct! ${q.explanation}`;
+                            feedback.classList.add('bg-green-100', 'text-green-800');
+                        } else {
+                            feedback.textContent = `Incorrect. The correct answer is "${q.answer}". ${q.explanation}`;
+                            feedback.classList.add('bg-red-100', 'text-red-800');
+                        }
+                    } else {
+                        // Find the original question to show the answer
+                        const firstRadio = questionDiv.querySelector(`input[name="q${index}"]`);
+                         // Ensure firstRadio exists before accessing dataset
+                        if (firstRadio) {
+                            const originalIndex = firstRadio.dataset.originalIndex;
+                            const q = quizData[originalIndex];
+                            
+                            feedback.textContent = `You did not answer this question. The correct answer is "${q.answer}". ${q.explanation}`;
+                            feedback.classList.add('bg-yellow-100', 'text-yellow-800');
+                        } else {
+                             // Handle case where no radio buttons were found (shouldn't happen with valid HTML)
+                             feedback.textContent = 'Error processing this question.';
+                             feedback.classList.add('bg-red-100', 'text-red-800');
+                        }
+                    }
+                    
+                    // Disable radio buttons after submitting
+                    radioButtons.forEach(radio => {
+                        radio.disabled = true;
+                    });
+                     feedback.classList.remove('hidden'); // Ensure feedback is shown
+                });
+
+                // Calculate and display results
+                const percentage = ((score / totalQuestions) * 100).toFixed(0);
+                quizScoreEl.textContent = `Your Score: ${score} / ${totalQuestions}`;
+                quizPercentageEl.textContent = `Percentage: ${percentage}%`;
+                
+                quizResultsDiv.classList.remove('hidden');
+                checkAnswersBtn.classList.add('hidden');
+                retakeQuizBtn.classList.remove('hidden');
+            });
+
+            retakeQuizBtn.addEventListener('click', () => {
+                // Hide results and retake button
+                quizResultsDiv.classList.add('hidden');
+                retakeQuizBtn.classList.add('hidden');
+                
+                // Show submit button
+                checkAnswersBtn.classList.remove('hidden');
+                
+                // Reload the quiz (clears answers and feedback)
+                loadQuiz();
+            });
+
+
+            // --- RESOURCES LIST ---
+            const resources = [
+                { name: "Texas Penal Code - Official Site", url: "https://statutes.capitol.texas.gov/Default.aspx?Code=PE" },
+                { name: "Penal Code Ch. 21 - Sexual Offenses", url: "https://statutes.capitol.texas.gov/Docs/PE/htm/PE.21.htm" },
+                { name: "Penal Code Ch. 19 - Criminal Homicide", url: "https://statutes.capitol.texas.gov/Docs/PE/htm/PE.19.htm" },
+                { name: "Penal Code Ch. 20 - Kidnapping, etc.", url: "https://statutes.capitol.texas.gov/Docs/PE/htm/PE.20.htm" },
+                { name: "Penal Code Ch. 20A - Trafficking of Persons", url: "https://statutes.capitol.texas.gov/Docs/PE/htm/PE.20A.htm" },
+                { name: "Penal Code Ch. 22 - Assaultive Offenses", url: "https://statutes.capitol.texas.gov/Docs/PE/htm/PE.22.htm" },
+                { name: "Penal Code Ch. 30 - Burglary & Trespass", url: "https://statutes.capitol.texas.gov/Docs/PE/htm/PE.30.htm" },
+                { name: "Penal Code Ch. 33 - Computer Crimes (incl 33.021)", url: "https://statutes.capitol.texas.gov/Docs/PE/htm/PE.33.htm"},
+                { name: "Penal Code Ch. 43 - Public Indecency", url: "https://statutes.capitol.texas.gov/Docs/PE/htm/PE.43.htm" },
+                { name: "CCP Ch. 62 - Sex Offender Registration", url: "https://statutes.capitol.texas.gov/Docs/CR/htm/CR.62.htm" },
+                { name: "Health & Safety Code Ch. 841 - SVP Civil Commitment", url: "https://statutes.capitol.texas.gov/Docs/HS/htm/HS.841.htm" },
+                { name: "Family Code Title 1, Subtitle A - Marriage", url: "https://statutes.capitol.texas.gov/Docs/FA/htm/FA.1.A.htm"}
+            ];
+            const resourcesList = document.getElementById('resources-list');
+            resources.sort((a, b) => a.name.localeCompare(b.name));
+            resources.forEach(res => {
+                const link = document.createElement('a'); // Use an anchor tag for links
+                link.href = res.url;
+                link.target = '_blank';
+                link.rel = 'noopener noreferrer'; // Good practice for security
+                link.className = 'text-blue-600 hover:underline p-2 bg-gray-50 rounded-md block hover:bg-gray-100';
+                link.innerHTML = `<i class="fas fa-external-link-alt mr-2"></i>${res.name}`;
+                resourcesList.appendChild(link);
+            });
+        });
+    </script>
+</body>
+</html>
+

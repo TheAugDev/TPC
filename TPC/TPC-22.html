@@ -1,0 +1,1552 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ch. 22 Study Guide: Texas Penal Code</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet">
+    <style>
+        :root {
+            --header-bg: #1f2937;
+            --bg-color: #f3f4f6;
+            --tab-active-bg: #3b82f6;
+            --tab-active-text: #ffffff;
+            --card-bg: #ffffff;
+            --text-color: #111827;
+            --link-color: #2563eb;
+        }
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            font-family: 'Inter', sans-serif;
+        }
+        @import url('https://rsms.me/inter/inter.css');
+        .tab-content { display: none; }
+        .tab-content.active { display: block; }
+        .tab.active {
+            background-color: var(--tab-active-bg);
+            color: var(--tab-active-text);
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .tab {
+            transition: all 0.3s ease-in-out;
+        }
+        .grid-definitions {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 1rem;
+        }
+        .definition-card {
+            background-color: #f9fafb;
+            border: 1px solid #e5e7eb;
+            border-left: 4px solid var(--tab-active-bg);
+            padding: 1rem;
+            border-radius: 0.5rem;
+        }
+         /* Style for longer definitions */
+        .definition-card-full {
+             background-color: #f9fafb;
+            border: 1px solid #e5e7eb;
+            border-left: 4px solid var(--tab-active-bg);
+            padding: 1rem;
+            border-radius: 0.5rem;
+            grid-column: 1 / -1; /* Make it span all columns */
+        }
+        .enhancement-list li { margin-left: 1.5rem; position: relative; }
+        .enhancement-list li::before { content: '•'; position: absolute; left: -1rem; color: #6b7280; }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Header -->
+    <header class="bg-gray-800 text-white p-4 shadow-md">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-xl md:text-2xl font-bold">
+                <i class="fas fa-fist-raised mr-2"></i>Ch. 22: Assaultive Offenses
+            </h1>
+            <a href="index.html" class="text-sm text-blue-300 hover:text-blue-100 hover:underline">
+                <i class="fas fa-arrow-left mr-1"></i> Back to Main Page
+            </a>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container mx-auto p-4 md:p-6">
+        <!-- Tab Navigation -->
+        <div class="mb-6 bg-white rounded-lg shadow-md overflow-x-auto">
+            <nav id="tabs" class="flex flex-row space-x-1 p-2 text-center">
+                 <button data-tab="ch22-definitions" class="tab flex-1 md:flex-none flex items-center justify-center px-3 py-2 text-xs md:text-sm font-semibold rounded-lg text-gray-600 hover:bg-blue-100">
+                    <i class="fas fa-book mr-1 md:mr-2"></i> <span class="hidden md:inline">Definitions</span><span class="md:hidden">Defs</span>
+                </button>
+                <button data-tab="ch22-assault" class="tab active flex-1 md:flex-none flex items-center justify-center px-3 py-2 text-xs md:text-sm font-semibold rounded-lg text-gray-600 hover:bg-blue-100">
+                    <i class="fas fa-user-injured mr-1 md:mr-2"></i> <span class="hidden md:inline">Assault (22.01)</span><span class="md:hidden">Aslt</span>
+                </button>
+                <button data-tab="ch22-agg-assault" class="tab flex-1 md:flex-none flex items-center justify-center px-3 py-2 text-xs md:text-sm font-semibold rounded-lg text-gray-600 hover:bg-blue-100">
+                    <i class="fas fa-skull-crossbones mr-1 md:mr-2"></i> <span class="hidden md:inline">Agg Assault (22.02)</span><span class="md:hidden">Agg Aslt</span>
+                </button>
+                 <button data-tab="ch22-sex-assaults" class="tab flex-1 md:flex-none flex items-center justify-center px-3 py-2 text-xs md:text-sm font-semibold rounded-lg text-gray-600 hover:bg-blue-100">
+                    <i class="fas fa-venus-mars mr-1 md:mr-2"></i> <span class="hidden md:inline">Sexual Assaults</span><span class="md:hidden">Sex Aslt</span>
+                </button>
+                <button data-tab="ch22-other-assaults" class="tab flex-1 md:flex-none flex items-center justify-center px-3 py-2 text-xs md:text-sm font-semibold rounded-lg text-gray-600 hover:bg-blue-100">
+                    <i class="fas fa-wheelchair mr-1 md:mr-2"></i> <span class="hidden md:inline">Other Assaults</span><span class="md:hidden">Other</span>
+                </button>
+                <button data-tab="ch22-threats" class="tab flex-1 md:flex-none flex items-center justify-center px-3 py-2 text-xs md:text-sm font-semibold rounded-lg text-gray-600 hover:bg-blue-100">
+                    <i class="fas fa-exclamation-triangle mr-1 md:mr-2"></i> <span class="hidden md:inline">Threats/Endanger</span><span class="md:hidden">Threat</span>
+                </button>
+                <button data-tab="ch22-specific" class="tab flex-1 md:flex-none flex items-center justify-center px-3 py-2 text-xs md:text-sm font-semibold rounded-lg text-gray-600 hover:bg-blue-100">
+                    <i class="fas fa-car mr-1 md:mr-2"></i> <span class="hidden md:inline">Specific Circ.</span><span class="md:hidden">Specific</span>
+                </button>
+                 <button data-tab="ch22-defenses" class="tab flex-1 md:flex-none flex items-center justify-center px-3 py-2 text-xs md:text-sm font-semibold rounded-lg text-gray-600 hover:bg-blue-100">
+                    <i class="fas fa-shield-alt mr-1 md:mr-2"></i> <span class="hidden md:inline">Defenses/Apply</span><span class="md:hidden">Defense</span>
+                </button>
+                <button data-tab="knowledge-check" class="tab flex-1 md:flex-none flex items-center justify-center px-3 py-2 text-xs md:text-sm font-semibold rounded-lg text-gray-600 hover:bg-blue-100">
+                    <i class="fas fa-question-circle mr-1 md:mr-2"></i> <span class="hidden md:inline">Knowledge Check</span><span class="md:hidden">Quiz</span>
+                </button>
+                <button data-tab="resources" class="tab flex-1 md:flex-none flex items-center justify-center px-3 py-2 text-xs md:text-sm font-semibold rounded-lg text-gray-600 hover:bg-blue-100">
+                    <i class="fas fa-link mr-1 md:mr-2"></i> <span class="hidden md:inline">Resources</span><span class="md:hidden">Links</span>
+                </button>
+            </nav>
+        </div>
+
+        <!-- Tab Content -->
+        <div id="tab-contents">
+            <!-- Ch. 22: Key Definitions Tab -->
+             <div id="ch22-definitions" class="tab-content">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-xl font-bold mb-4 border-b pb-2">Key Definitions (Ch. 22 & Related)</h2>
+                     <p class="text-sm text-gray-600 mb-4">Selected definitions relevant to Chapter 22 offenses.</p>
+                    <div class="grid-definitions">
+                        <div class="definition-card">
+                            <h3 class="font-bold text-gray-900">Bodily Injury (1.07)</h3>
+                            <p class="text-sm text-gray-700">Physical pain, illness, or any impairment of physical condition.</p>
+                        </div>
+                         <div class="definition-card">
+                            <h3 class="font-bold text-gray-900">Serious Bodily Injury (1.07)</h3>
+                            <p class="text-sm text-gray-700">Bodily injury that creates a substantial risk of death or that causes death, serious permanent disfigurement, or protracted loss or impairment of the function of any bodily member or organ.</p>
+                        </div>
+                        <div class="definition-card">
+                            <h3 class="font-bold text-gray-900">Deadly Weapon (1.07)</h3>
+                            <p class="text-sm text-gray-700">(A) A firearm or anything manifestly designed, made, or adapted for the purpose of inflicting death or serious bodily injury; or (B) anything that in the manner of its use or intended use is capable of causing death or serious bodily injury.</p>
+                        </div>
+                         <div class="definition-card">
+                            <h3 class="font-bold text-gray-900">Public Servant (1.07)</h3>
+                            <p class="text-sm text-gray-700">Officer, employee, or agent of government; juror or grand juror; arbitrator or referee; attorney general candidate; person performing governmental function under claim of right.</p>
+                        </div>
+                         <div class="definition-card">
+                            <h3 class="font-bold text-gray-900">Emergency Services Personnel (22.01)</h3>
+                            <p class="text-sm text-gray-700">Includes firefighters, EMS personnel, ER personnel, and others providing services during emergencies.</p>
+                        </div>
+                        <div class="definition-card">
+                            <h3 class="font-bold text-gray-900">Hospital Personnel (22.01)</h3>
+                            <p class="text-sm text-gray-700">Includes nurses, physicians, PAs, maintenance/janitorial staff, receptionists, etc., employed by or working in a licensed hospital.</p>
+                        </div>
+                         <div class="definition-card">
+                            <h3 class="font-bold text-gray-900">Security Officer (22.01, 22.02)</h3>
+                            <p class="text-sm text-gray-700">Commissioned security officer (Sec 1702.002 Occ Code) or noncommissioned security officer registered under Sec 1702.221 Occ Code.</p>
+                        </div>
+                         <div class="definition-card">
+                            <h3 class="font-bold text-gray-900">Process Server (22.01, 22.02)</h3>
+                            <p class="text-sm text-gray-700">Meaning assigned by Sec 156.001, Government Code.</p>
+                        </div>
+                        <div class="definition-card">
+                            <h3 class="font-bold text-gray-900">Sports Participant (22.01)</h3>
+                            <p class="text-sm text-gray-700">Person in official capacity in organized athletic competition (athlete, ref, coach, staff, etc.).</p>
+                        </div>
+                         <div class="definition-card">
+                            <h3 class="font-bold text-gray-900">Child (22.011)</h3>
+                            <p class="text-sm text-gray-700">Person younger than 17 years of age.</p>
+                        </div>
+                        <div class="definition-card">
+                            <h3 class="font-bold text-gray-900">Disabled Individual (22.021)</h3>
+                            <p class="text-sm text-gray-700">Person older than 13 who by reason of age or physical/mental issue is substantially unable to protect self or provide basic care.</p>
+                        </div>
+                        <div class="definition-card">
+                            <h3 class="font-bold text-gray-900">Elderly Individual (22.04)</h3>
+                            <p class="text-sm text-gray-700">Person 65 years of age or older.</p>
+                        </div>
+                         <div class="definition-card">
+                            <h3 class="font-bold text-gray-900">Child (22.04)</h3>
+                            <p class="text-sm text-gray-700">Person 14 years of age or younger.</p>
+                        </div>
+                        <div class="definition-card">
+                            <h3 class="font-bold text-gray-900">Disabled Individual (22.04)</h3>
+                            <p class="text-sm text-gray-700">Person with specific listed conditions (autism, developmental disability, intellectual disability, severe emotional disturbance, TBI, mental illness) OR who by age/disease/defect/injury is substantially unable to protect self or provide basic care.</p>
+                        </div>
+                        <div class="definition-card">
+                            <h3 class="font-bold text-gray-900">Abandon (22.041)</h3>
+                            <p class="text-sm text-gray-700">Leave a child/elderly/disabled individual in any place without providing reasonable/necessary care under circumstances where no reasonable person would leave them.</p>
+                        </div>
+                         <div class="definition-card">
+                            <h3 class="font-bold text-gray-900">Utility (22.01)</h3>
+                             <p class="text-sm text-gray-700">Electric, telecommunications, cable/video, gas utility; pipeline; electric coop/municipally owned utility (as defined by Utilities Code).</p>
+                        </div>
+                         <div class="definition-card">
+                            <h3 class="font-bold text-gray-900">Health Care Services Provider (22.011)</h3>
+                             <p class="text-sm text-gray-700">Physician, chiropractor, physical therapist, PA, RN/LVN/APN, massage therapist (licensed under Occ Code).</p>
+                        </div>
+                         <div class="definition-card">
+                            <h3 class="font-bold text-gray-900">Mental Health Services Provider (22.011)</h3>
+                             <p class="text-sm text-gray-700">Licensed/unlicensed person performing/purporting MH services (social worker, chem dependency counselor, LPC, LMFT, clergy, psychologist, special officer for MH).</p>
+                        </div>
+                         <div class="definition-card">
+                            <h3 class="font-bold text-gray-900">Employee of a facility (22.011)</h3>
+                             <p class="text-sm text-gray-700">Employee of facility under H&SC 250.001 or person providing services for compensation (incl. contract laborer).</p>
+                        </div>
+                         <div class="definition-card">
+                            <h3 class="font-bold text-gray-900">Assisted Reproduction / Donor (22.011)</h3>
+                             <p class="text-sm text-gray-700">Meanings assigned by Family Code 160.102.</p>
+                        </div>
+                         <div class="definition-card">
+                            <h3 class="font-bold text-gray-900">Human Reproductive Material (22.011)</h3>
+                             <p class="text-sm text-gray-700">Spermatozoon, ovum, or organism from fertilized ovum to embryo.</p>
+                        </div>
+                        <div class="definition-card">
+                            <h3 class="font-bold text-gray-900">Consumer Product (22.09)</h3>
+                            <p class="text-sm text-gray-700">Any product offered for sale to or for consumption by the public (includes food/drugs per HSC 431.002).</p>
+                        </div>
+                         <div class="definition-card">
+                            <h3 class="font-bold text-gray-900">Tamper (22.09)</h3>
+                             <p class="text-sm text-gray-700">Alter or add a foreign substance to a consumer product to make it probable that it will cause serious bodily injury.</p>
+                        </div>
+                        <div class="definition-card">
+                            <h3 class="font-bold text-gray-900">Family/Household/Family Violence</h3>
+                             <p class="text-sm text-gray-700">Definitions assigned by Family Code Sections 71.003, 71.005, and 71.004 respectively.</p>
+                        </div>
+                        <div class="definition-card-full">
+                            <h3 class="font-bold text-gray-900">Consent (Lack of - for 22.011/22.021)</h3>
+                             <p class="text-sm text-gray-700">Assault is without consent if actor uses force/violence/coercion; threatens force/violence/harm (victim believes actor can execute); victim unconscious/unable to resist (actor knows); victim incapable due to mental disease/defect (actor knows); victim unaware (actor knows); victim intoxicated/impaired & incapable (actor knows); threat against 3rd person; actor is public servant using coercion; actor is MH/HC provider exploiting dependency; actor is clergyman exploiting dependency; actor is facility employee & victim is resident (unless married); actor is HC provider using unconsented donor material in assisted reproduction; actor is coach/tutor exploiting dependency; actor is caregiver exploiting dependency. (See 22.011(b)).</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Ch. 22: Assault Tab -->
+            <div id="ch22-assault" class="tab-content active space-y-6">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-xl font-bold mb-4 border-b pb-2"><a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.22.htm#22.01" target="_blank" class="text-blue-600 hover:underline">Sec. 22.01. Assault</a></h2>
+                    <div class="space-y-4 text-sm text-gray-700">
+                        <p><strong class="font-semibold">Three Ways to Commit (a):</strong></p>
+                        <ul class="list-decimal list-inside ml-4 space-y-1">
+                            <li><strong class="font-semibold">(a)(1):</strong> Intentionally, knowingly, or recklessly causes <strong class="font-semibold">bodily injury</strong> to another (incl. spouse).</li>
+                            <li><strong class="font-semibold">(a)(2):</strong> Intentionally or knowingly <strong class="font-semibold">threatens</strong> another with <strong class="font-semibold">imminent bodily injury</strong> (incl. spouse).</li>
+                            <li><strong class="font-semibold">(a)(3):</strong> Intentionally or knowingly causes <strong class="font-semibold">physical contact</strong> when knows/should know the other will regard it as <strong class="font-semibold">offensive or provocative</strong>.</li>
+                        </ul>
+
+                        <h3 class="font-semibold text-base text-gray-800 mt-4">Punishments:</h3>
+                        <ul class="list-disc list-inside space-y-2 enhancement-list">
+                             <li><strong class="font-semibold">(a)(1) - Bodily Injury:</strong>
+                                <ul>
+                                    <li>Base: <strong class="font-semibold text-red-600">Class A Misdemeanor</strong>.</li>
+                                    <li>Enhanced to <strong class="font-semibold text-red-600">Felony of the Third Degree (F3)</strong> if against:
+                                        <ul>
+                                            <li>Public servant (on duty/retaliation) (b)(1)</li>
+                                            <li>Family member + prior FV conviction (from specific list: Ch19, 20.03, 20.04, 21.11, Ch22, 25.07(a)(1), 25.072 based on 25.07(a)(1), 25.11) (b)(2)(A)</li>
+                                            <li>Family member + impeding breathing/circulation (b)(2)(B)</li>
+                                            <li>Govt contractor/employee in specified facility (b)(3)</li>
+                                            <li>Security officer (on duty) (b)(4)</li>
+                                            <li>Emergency services personnel (providing services) (b)(5)</li>
+                                            <li>Process server (on duty) (b)(6)</li>
+                                            <li>Pregnant individual (to force abortion) (b)(7)</li>
+                                             <li>Pregnant individual (actor knows pregnant) (b)(8)</li>
+                                              <li>Hospital personnel (on hospital property) (b)(9)</li>
+                                             <li>Utility worker/agent (on duty) (b)(10)</li>
+                                             <li>Committed by civilly committed person against TCO employee/contractor (on duty/retaliation) (b-1)</li>
+                                             <li>Committed during Smuggling of Persons (fleeing LEO - 20.05(a)(2)) (b-4)</li>
+                                        </ul>
+                                    </li>
+                                     <li>Enhanced to <strong class="font-semibold text-red-600">Felony of the Second Degree (F2)</strong> if against:
+                                         <ul>
+                                            <li>Peace officer or judge (on duty/retaliation) (b-2)</li>
+                                            <li>Family member + prior FV conviction (from specific list) + impeding breathing/circulation (b-3)</li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                             <li><strong class="font-semibold">(a)(2) - Threat / (a)(3) - Offensive Contact:</strong>
+                                <ul>
+                                    <li>Base: <strong class="font-semibold text-red-600">Class C Misdemeanor</strong>.</li>
+                                    <li>Enhanced to <strong class="font-semibold text-red-600">Class B Misdemeanor</strong> if (a)(2) or (a)(3) committed by non-participant against sports participant (on duty/retaliation) (c)(2).</li>
+                                     <li>Enhanced to <strong class="font-semibold text-red-600">Class A Misdemeanor</strong> if:
+                                         <ul>
+                                             <li>(a)(3) committed against elderly or disabled individual (c)(1).</li>
+                                             <li>(a)(2) or (a)(3) committed against pregnant individual to force abortion (c)(3).</li>
+                                         </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                         <h3 class="font-semibold text-base text-gray-800 mt-4">Presumption (d, d-1):</h3>
+                         <p>Actor presumed to know victim was public servant, security officer, utility worker, emergency personnel, or TCO personnel/contractor if victim was wearing distinctive uniform/badge indicating status.</p>
+                         <h3 class="font-semibold text-base text-gray-800 mt-4">Prior Conviction Rule (f):</h3>
+                         <p>For FV enhancements (b)(2)(A) & (b-3)(2), "previously convicted" includes deferred adjudication, regardless of discharge. Out-of-state convictions count if elements are substantially similar.</p>
+                         <h3 class="font-semibold text-base text-gray-800 mt-4">Prosecution Rule (g):</h3>
+                         <p>Actor can be prosecuted under this section and/or other sections for the same conduct.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Ch. 22: Agg Assault Tab -->
+            <div id="ch22-agg-assault" class="tab-content space-y-6">
+                 <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-xl font-bold mb-4 border-b pb-2"><a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.22.htm#22.02" target="_blank" class="text-blue-600 hover:underline">Sec. 22.02. Aggravated Assault</a></h2>
+                    <div class="space-y-4 text-sm text-gray-700">
+                        <p><strong class="font-semibold">Offense (a):</strong> Commits Assault (22.01) AND:</p>
+                        <ul class="list-decimal list-inside ml-4 space-y-1">
+                             <li>Causes <strong class="font-semibold">Serious Bodily Injury (SBI)</strong>; OR</li>
+                             <li>Uses or exhibits a <strong class="font-semibold">deadly weapon</strong> during the assault.</li>
+                        </ul>
+                         <h3 class="font-semibold text-base text-gray-800 mt-4">Punishments:</h3>
+                        <ul class="list-disc list-inside space-y-2 enhancement-list">
+                            <li>Base: <strong class="font-semibold text-red-600">Felony of the Second Degree (F2)</strong>.</li>
+                            <li>Enhanced to <strong class="font-semibold text-red-600">Felony of the First Degree (F1)</strong> if:
+                                <ul>
+                                    <li>Uses deadly weapon AND causes SBI to family member (b)(1)(A).</li>
+                                     <li>Uses deadly weapon AND causes traumatic brain/spine injury resulting in persistent vegetative state or irreversible paralysis (b)(1)(B).</li>
+                                    <li>Committed by public servant acting under color of the servant's office or employment (b)(2)(A).</li>
+                                    <li>Against a person the actor knows is a public servant while the public servant is lawfully discharging an official duty, or in retaliation or on account of an exercise of official power or performance of an official duty as a public servant (b)(2)(B).</li>
+                                    <li>In retaliation against or on account of the service of another as a witness, prospective witness, informant, or person who has reported the occurrence of a crime (b)(2)(C).</li>
+                                    <li>Against a person the actor knows is a process server while the person is performing a duty as a process server (b)(2)(D).</li>
+                                    <li>Against a person the actor knows is a security officer while the officer is performing a duty as a security officer (b)(2)(E).</li>
+                                    <li>Committed by an actor who is committed to a civil commitment facility, against specified TCO personnel or contractors (on duty/retaliation) (b)(2)(F).</li>
+                                    <li>Drive-by shooting: actor inside/en route to/from motor vehicle AND (A) knowingly discharges firearm at/toward habitation/bldg/vehicle, (B) reckless if occupied, AND (C) causes BI/property damage OR places person in fear of imminent SBI (b)(3).</li>
+                                    <li>The actor commits the assault as part of a mass shooting (b)(4).</li>
+                                </ul>
+                            </li>
+                         </ul>
+                          <h3 class="font-semibold text-base text-gray-800 mt-4">Presumption (c, c-1):</h3>
+                         <p>Actor presumed to know victim was public servant, security officer, or TCO personnel/contractor if victim was wearing distinctive uniform/badge.</p>
+                    </div>
+                 </div>
+            </div>
+
+             <!-- Ch. 22: Sexual Assaults Tab -->
+            <div id="ch22-sex-assaults" class="tab-content space-y-6">
+                 <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-xl font-bold mb-4 border-b pb-2"><a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.22.htm#22.011" target="_blank" class="text-blue-600 hover:underline">Sec. 22.011. Sexual Assault</a></h2>
+                    <div class="space-y-4 text-sm text-gray-700">
+                         <p><strong class="font-semibold">Two Ways to Commit:</strong></p>
+                        <ul class="list-decimal list-inside ml-4 space-y-1">
+                            <li><strong class="font-semibold">(a)(1):</strong> Intentionally or knowingly causes penetration of anus/sexual organ of another by any means, or penetration of mouth by actor's sexual organ, or causes contact/penetration involving sexual organs - all <strong class="font-semibold">without consent</strong>.</li>
+                            <li><strong class="font-semibold">(a)(2):</strong> Intentionally or knowingly causes penetration/contact involving anus/mouth/sexual organ of/by a <strong class="font-semibold">child (< 17)</strong> (regardless of actor's knowledge of age). Consent is not an element here.</li>
+                        </ul>
+                         <h3 class="font-semibold text-base text-gray-800 mt-4">Lack of Consent (b):</h3>
+                         <p>Extensive list defining when assault is without consent (force, threat, unconscious, mental defect, unaware, intoxicated, public servant coercion, provider/clergyman/employee exploiting dependency, wrong donor material, coach/tutor exploiting dependency, caregiver exploiting dependency, etc.). See definitions tab or statute for full list.</p>
+                         <h3 class="font-semibold text-base text-gray-800 mt-4">Defenses:</h3>
+                         <ul class="list-disc list-inside ml-4 space-y-1">
+                            <li><strong class="font-semibold">(d) Defense to (a)(2):</strong> Conduct was medical care, no prohibited contact occurred.</li>
+                            <li><strong class="font-semibold">(e) Affirmative Defenses to (a)(2):</strong> (1) Actor was spouse; OR (2) "Romeo & Juliet": Actor <= 3 yrs older, not registered, victim >= 14, and <strong class="font-semibold">not prohibited relationship</strong> (incest under 25.01/25.02).</li>
+                         </ul>
+                        <h3 class="font-semibold text-base text-gray-800 mt-4">Punishments (f):</h3>
+                        <ul class="list-disc list-inside space-y-2 enhancement-list">
+                            <li>Base: <strong class="font-semibold text-red-600">Felony of the Second Degree (F2)</strong>.</li>
+                            <li>Enhanced to <strong class="font-semibold text-red-600">Felony of the First Degree (F1)</strong> if victim was person actor prohibited from marrying/living with/having sex with under Ch 25 (Incest). (f)(1).</li>
+                            <li>Reduced to <strong class="font-semibold text-red-600">State Jail Felony (SJF)</strong> if under (a)(1) + (b)(12) (wrong donor material). (f)(2).</li>
+                         </ul>
+                    </div>
+                 </div>
+
+                 <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-xl font-bold mb-4 border-b pb-2"><a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.22.htm#22.021" target="_blank" class="text-blue-600 hover:underline">Sec. 22.021. Aggravated Sexual Assault</a></h2>
+                    <div class="space-y-4 text-sm text-gray-700">
+                        <p><strong class="font-semibold">Offense (a):</strong> Commits Sexual Assault (conduct from 22.011(a)(1) or (a)(2)) AND one of the following aggravating factors exists:</p>
+                        <ul class="list-disc list-inside ml-4 space-y-1">
+                             <li><strong class="font-semibold">(a)(2)(A):</strong> During same criminal episode, actor:
+                                <ul>
+                                    <li>(i) Causes SBI or attempts to cause death.</li>
+                                    <li>(ii) By acts/words, places victim in fear of imminent Trafficking (sex under 20A.02(a)(3,4,7,8)), death, SBI, or kidnapping.</li>
+                                    <li>(iii) By acts/words in victim's presence, threatens Trafficking (sex under 20A.02(a)(3,4,7,8)), death, SBI, or kidnapping of *any* person.</li>
+                                    <li>(iv) Uses or exhibits a deadly weapon.</li>
+                                    <li>(v) Acts in concert with another who commits SA against same victim in same episode.</li>
+                                     <li>(vi) Administers impairing substance to facilitate.</li>
+                                </ul>
+                            </li>
+                             <li><strong class="font-semibold">(a)(2)(B):</strong> Victim is younger than 14 years old (regardless of actor's knowledge).</li>
+                             <li><strong class="font-semibold">(a)(2)(C):</strong> Victim is an elderly individual or a disabled individual.</li>
+                        </ul>
+                          <h3 class="font-semibold text-base text-gray-800 mt-4">Other Rules:</h3>
+                         <ul class="list-disc list-inside ml-4 space-y-1">
+                             <li><strong class="font-semibold">Consent (c):</strong> Uses same lack-of-consent definitions as 22.011(b).</li>
+                             <li><strong class="font-semibold">Defense (d):</strong> Medical care defense from 22.011(d) applies.</li>
+                             <li><strong class="font-semibold">Punishment (e):</strong> <strong class="font-semibold text-red-600">Felony of the First Degree (F1)</strong>.</li>
+                              <li><strong class="font-semibold">Minimum Term Increased (f):</strong> Minimum term becomes <strong class="font-semibold">25 years</strong> if: (1) victim < 10 yrs old; OR (2) victim < 14 yrs old AND actor committed offense using an (a)(2)(A) manner (SBI, threat, weapon, etc.).</li>
+                         </ul>
+                    </div>
+                 </div>
+            </div>
+
+            <!-- Ch. 22: Other Assaults Tab -->
+             <div id="ch22-other-assaults" class="tab-content space-y-6">
+                  <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-xl font-bold mb-4 border-b pb-2"><a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.22.htm#22.012" target="_blank" class="text-blue-600 hover:underline">Sec. 22.012. Indecent Assault</a></h2>
+                    <div class="space-y-4 text-sm text-gray-700">
+                         <p><strong class="font-semibold">Offense (a):</strong> Without consent and with intent to arouse/gratify, person:</p>
+                         <ul class="list-decimal list-inside ml-4 space-y-1">
+                            <li>Touches anus, breast, or genitals of another.</li>
+                            <li>Touches another with anus, breast, or genitals of any person.</li>
+                            <li>Exposes or attempts to expose another's genitals, pubic area, anus, buttocks, or female areola.</li>
+                            <li>Causes another to contact blood, seminal fluid, vaginal fluid, saliva, urine, or feces of any person.</li>
+                         </ul>
+                         <h3 class="font-semibold text-base text-gray-800 mt-4">Punishments (b):</h3>
+                        <ul class="list-disc list-inside space-y-2 enhancement-list">
+                            <li>Base: <strong class="font-semibold text-red-600">Class A Misdemeanor</strong>.</li>
+                             <li>Enhanced to <strong class="font-semibold text-red-600">State Jail Felony (SJF)</strong> if:
+                                 <ul>
+                                     <li>Prior conviction under this section (not HCS provider type); OR</li>
+                                     <li>Actor is HCS/MHS provider, act committed during treatment, AND beyond scope of accepted practice.</li>
+                                 </ul>
+                            </li>
+                            <li>Enhanced to <strong class="font-semibold text-red-600">Felony of the Third Degree (F3)</strong> if:
+                                <ul>
+                                    <li>Prior conviction under the HCS/MHS provider enhancement (b)(1)(B).</li>
+                                     <li>(Per SB 1610) Committed by actor in civil commitment facility against TCO employee/contractor.</li>
+                                </ul>
+                            </li>
+                            <li>Enhanced to <strong class="font-semibold text-red-600">Felony of the Second Degree (F2)</strong> if:
+                                 <ul>
+                                      <li>(Per HB 2593) Victim is disabled individual or elderly individual.</li>
+                                 </ul>
+                             </li>
+                         </ul>
+                         <h3 class="font-semibold text-base text-gray-800 mt-4">Prosecution Rule (c):</h3>
+                         <p>Actor can be prosecuted under this section and/or other sections for the same conduct.</p>
+                    </div>
+                  </div>
+
+                  <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-xl font-bold mb-4 border-b pb-2"><a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.22.htm#22.04" target="_blank" class="text-blue-600 hover:underline">Sec. 22.04. Injury to a Child, Elderly Individual, or Disabled Individual</a></h2>
+                    <div class="space-y-4 text-sm text-gray-700">
+                         <p><strong class="font-semibold">Offense (a):</strong> Intentionally, knowingly, recklessly, or with criminal negligence (by act) OR intentionally, knowingly, or recklessly (by omission) causes SBI, serious mental injury, or BI to a child (< 14), elderly individual (65+), or disabled individual.</p>
+                          <p><strong class="font-semibold">Offense (a-1):</strong> Owner/operator/employee of specified facility (group home, nursing home, ALF, boarding home, ICF, etc.) Intentionally, knowingly, recklessly, or with criminal negligence <strong class="font-semibold">by omission</strong> causes SBI, serious mental injury, or BI to a resident C/E/D.</p>
+                         <p><strong class="font-semibold">Omission Liability (b):</strong> Omission is offense if actor has (1) legal/statutory duty OR (2) assumed care, custody, or control.</p>
+                         <p><strong class="font-semibold">Assumption of Care (d):</strong> Includes acting so reasonable person would conclude actor accepted responsibility. Facility owners/operators/employees are considered to have accepted responsibility for residents.</p>
+                         <h3 class="font-semibold text-base text-gray-800 mt-4">Punishments:</h3>
+                        <ul class="list-disc list-inside space-y-2 enhancement-list">
+                             <li><strong class="font-semibold">SBI / Serious Mental Injury (a)(1)/(2) or (a-1)(1)/(2):</strong>
+                                 <ul>
+                                      <li>Intentionally/Knowingly: <strong class="font-semibold text-red-600">F1</strong>.</li>
+                                      <li>Recklessly: <strong class="font-semibold text-red-600">F2</strong>.</li>
+                                 </ul>
+                            </li>
+                             <li><strong class="font-semibold">Bodily Injury (a)(3) or (a-1)(3):</strong>
+                                  <ul>
+                                      <li>Intentionally/Knowingly: <strong class="font-semibold text-red-600">F3</strong> (Enhanced to <strong class="font-semibold text-red-600">F2</strong> if I/K, victim is disabled resident of certain facilities (HSC 555.001 center or Ch 252 licensed facility), and actor is employee providing direct care).</li>
+                                      <li>Recklessly: <strong class="font-semibold text-red-600">SJF</strong>.</li>
+                                 </ul>
+                            </li>
+                             <li><strong class="font-semibold">Criminal Negligence (a) or (a-1 by omission):</strong> <strong class="font-semibold text-red-600">SJF</strong>.</li>
+                         </ul>
+                         <h3 class="font-semibold text-base text-gray-800 mt-4">Defenses / Affirmative Defenses:</h3>
+                          <ul class="list-disc list-inside ml-4 space-y-1">
+                             <li><strong class="font-semibold">(i) Affirmative Defense (Omission):</strong> Actor notified victim <strong class="font-semibold">in person</strong> AND parents/other <strong class="font-semibold">in writing</strong> (or notified DFPS in writing) they would no longer provide care before offense.</li>
+                              <li><strong class="font-semibold">(k) Defense:</strong> Reasonable medical care by/under physician OR emergency care in good faith.</li>
+                             <li><strong class="font-semibold">(l) Affirmative Defenses:</strong> (1) Religious healing; (2) Omission victim of FV by co-defendant + no prior knowledge of injury + didn't cause injury + couldn't prevent; (3) Actor <= 3 yrs older than child victim.</li>
+                              <li><strong class="font-semibold">(m) Affirmative Defense:</strong> Actor didn't know/couldn't reasonably know victim was disabled.</li>
+                         </ul>
+                           <h3 class="font-semibold text-base text-gray-800 mt-4">Prosecution Rule (h):</h3>
+                         <p>Actor can be prosecuted under this section and/or others. If sentences assessed under both for same episode, they run <strong class="font-semibold">concurrently</strong>. Sec 3.04 (consolidation/joinder) does not apply.</p>
+                    </div>
+                  </div>
+
+                 <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-xl font-bold mb-4 border-b pb-2"><a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.22.htm#22.041" target="_blank" class="text-blue-600 hover:underline">Sec. 22.041. Abandoning or Endangering...</a></h2>
+                    <div class="space-y-4 text-sm text-gray-700">
+                         <p><strong class="font-semibold">Offense (b) - Abandoning:</strong> Having custody/care/control, intentionally <strong class="font-semibold">abandons</strong> child (< 14), elderly (65+), or disabled individual in place exposing them to <strong class="font-semibold">unreasonable risk of harm</strong>.</p>
+                          <p><strong class="font-semibold">Offense (c) - Endangering:</strong> Intentionally, knowingly, recklessly, or with criminal negligence, by act or omission, engages in conduct placing C/E/D in <strong class="font-semibold">imminent danger</strong> of death, BI, or impairment.</p>
+                          <p><strong class="font-semibold">Presumption of Endangerment (c-1):</strong> Presumed if actor (1) makes/possesses/uses Meth or PG1-B drug in presence of C/E/D; (2) Meth/PG1-B is accessible AND found in C/E/D's system; or (3) unlawfully injects/ingests/etc. PG1 or PG1-B drug.</p>
+                           <h3 class="font-semibold text-base text-gray-800 mt-4">Punishments:</h3>
+                        <ul class="list-disc list-inside space-y-2 enhancement-list">
+                            <li><strong class="font-semibold">Abandoning (b):</strong>
+                                <ul>
+                                    <li>With intent to return: <strong class="font-semibold text-red-600">SJF</strong>. (d)(1)</li>
+                                    <li>Without intent to return: <strong class="font-semibold text-red-600">F3</strong>. (d)(2)</li>
+                                    <li>Under circumstances reasonable person believes place C/E/D in imminent danger of death/BI/impairment: <strong class="font-semibold text-red-600">F2</strong>. (e)</li>
+                                </ul>
+                            </li>
+                             <li><strong class="font-semibold">Endangering (c):</strong> <strong class="font-semibold text-red-600">SJF</strong>. (f)</li>
+                         </ul>
+                          <h3 class="font-semibold text-base text-gray-800 mt-4">Defense / Exception:</h3>
+                           <ul class="list-disc list-inside ml-4 space-y-1">
+                               <li><strong class="font-semibold">(g) Defense to (c) Endangering:</strong> Act/omission enabled participation in organized athletic event with appropriate safety measures.</li>
+                               <li><strong class="font-semibold">(h) Exception to Abandoning/Endangering CHILD:</strong> Actor voluntarily delivered child to designated emergency infant care provider (Baby Moses Law).</li>
+                           </ul>
+                    </div>
+                 </div>
+             </div>
+
+             <!-- Ch. 22: Threats/Endangerment Tab -->
+            <div id="ch22-threats" class="tab-content space-y-6">
+                 <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-xl font-bold mb-4 border-b pb-2"><a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.22.htm#22.05" target="_blank" class="text-blue-600 hover:underline">Sec. 22.05. Deadly Conduct</a></h2>
+                    <div class="space-y-4 text-sm text-gray-700">
+                        <ul class="list-disc list-inside space-y-2">
+                            <li><strong class="font-semibold">Offense (a):</strong> Recklessly engages in conduct that places another in <strong class="font-semibold">imminent danger of SBI</strong>.
+                                 <ul><li class="ml-4 list-item list-disc">Punishment: <strong class="font-semibold text-red-600">Class A Misdemeanor</strong>.</li></ul>
+                            </li>
+                             <li><strong class="font-semibold">Offense (b):</strong> Knowingly discharges a firearm at or in the direction of: (1) one or more individuals; OR (2) a habitation, building, or vehicle AND is reckless as to whether it's occupied.
+                                  <ul><li class="ml-4 list-item list-disc">Punishment: <strong class="font-semibold text-red-600">Felony of the Third Degree</strong>.</li></ul>
+                            </li>
+                            <li><strong class="font-semibold">Presumption (c):</strong> Recklessness and danger presumed if actor knowingly pointed firearm at/toward another (whether loaded or not). Does not apply to LEO on duty.</li>
+                             <li><strong class="font-semibold">LEO Exception (f):</strong> Subsection <strong class="font-semibold">(b)(1)</strong> (shooting AT individual) does not apply if LEO was on duty AND reasonably believed discharge was justified under Ch 9.</li>
+                        </ul>
+                    </div>
+                 </div>
+                 <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-xl font-bold mb-4 border-b pb-2"><a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.22.htm#22.07" target="_blank" class="text-blue-600 hover:underline">Sec. 22.07. Terroristic Threat</a></h2>
+                    <div class="space-y-4 text-sm text-gray-700">
+                         <p><strong class="font-semibold">Offense (a):</strong> Threatens to commit any offense involving violence to person or property with specific intent to:</p>
+                         <ul class="list-decimal list-inside ml-4 space-y-1">
+                             <li>Cause reaction by emergency agency.</li>
+                             <li>Place person in fear of imminent SBI.</li>
+                             <li>Prevent/interrupt use of building, public place, conveyance, etc.</li>
+                             <li>Impair/interrupt public communications, utilities, transport.</li>
+                             <li>Place public/substantial group in fear of SBI.</li>
+                             <li>Influence government conduct.</li>
+                         </ul>
+                         <h3 class="font-semibold text-base text-gray-800 mt-4">Punishments:</h3>
+                        <ul class="list-disc list-inside space-y-2 enhancement-list">
+                             <li>(a)(1) Emergency Reaction: <strong class="font-semibold text-red-600">Class B Misdemeanor</strong>. (b)</li>
+                             <li>(a)(2) Fear of Imminent SBI: <strong class="font-semibold text-red-600">Class B Misdemeanor</strong>. (c)
+                                 <ul><li>Enhanced to <strong class="font-semibold text-red-600">Class A Misdemeanor</strong> if against family/household member (FV) or public servant. (c)</li>
+                                     <li>Enhanced to <strong class="font-semibold text-red-600">State Jail Felony</strong> if against peace officer or judge. (c-1)</li>
+                                 </ul>
+                             </li>
+                             <li>(a)(3) Prevent/Interrupt Use: <strong class="font-semibold text-red-600">Class A Misdemeanor</strong>. (d)
+                                  <ul><li>Enhanced to <strong class="font-semibold text-red-600">State Jail Felony</strong> if causes pecuniary loss >= $1,500. (d)</li></ul>
+                            </li>
+                             <li>(a)(4) Impair Public Service, (a)(5) Place Public in Fear, or (a)(6) Influence Govt: <strong class="font-semibold text-red-600">Felony of the Third Degree</strong>. (e)</li>
+                         </ul>
+                          <h3 class="font-semibold text-base text-gray-800 mt-4">Pecuniary Loss (g):</h3>
+                         <p>For (a)(3) enhancement, loss is economic loss suffered by owner due to interruption.</p>
+                    </div>
+                 </div>
+            </div>
+
+             <!-- Ch. 22: Specific Circumstances Tab -->
+            <div id="ch22-specific" class="tab-content space-y-6">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-xl font-bold mb-4 border-b pb-2"><a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.22.htm#22.08" target="_blank" class="text-blue-600 hover:underline">Sec. 22.08. Aiding Suicide</a></h2>
+                    <div class="space-y-4 text-sm text-gray-700">
+                        <ul class="list-disc list-inside space-y-2">
+                           <li><strong class="font-semibold">Offense (a):</strong> With intent to promote/assist suicide by another, aids or attempts to aid the other to commit or attempt suicide.</li>
+                           <li><strong class="font-semibold">Punishment (b):</strong> <strong class="font-semibold text-red-600">Class C Misdemeanor</strong>.</li>
+                           <li><strong class="font-semibold">Enhancement (b):</strong> <strong class="font-semibold text-red-600">State Jail Felony</strong> if actor's conduct causes suicide or attempted suicide resulting in SBI.</li>
+                        </ul>
+                    </div>
+                 </div>
+                 <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-xl font-bold mb-4 border-b pb-2"><a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.22.htm#22.09" target="_blank" class="text-blue-600 hover:underline">Sec. 22.09. Tampering With Consumer Product</a></h2>
+                    <div class="space-y-4 text-sm text-gray-700">
+                         <ul class="list-disc list-inside space-y-2">
+                           <li><strong class="font-semibold">Offense (b) - Tampering:</strong> Knowingly/intentionally <strong class="font-semibold">tampers</strong> (alters/adds substance likely to cause SBI) with consumer product knowing it will be offered for sale/gift.
+                                <ul><li class="ml-4 list-item list-disc">Punishment: <strong class="font-semibold text-red-600">F2</strong>. Enhanced to <strong class="font-semibold text-red-600">F1</strong> if SBI results.</li></ul>
+                           </li>
+                           <li><strong class="font-semibold">Offense (c) - Threat:</strong> Knowingly/intentionally <strong class="font-semibold">threatens</strong> to tamper with intent to cause fear, affect sale, or cause BI.
+                                <ul><li class="ml-4 list-item list-disc">Punishment: <strong class="font-semibold text-red-600">F3</strong>.</li></ul>
+                           </li>
+                        </ul>
+                    </div>
+                 </div>
+                 <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-xl font-bold mb-4 border-b pb-2"><a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.22.htm#22.10" target="_blank" class="text-blue-600 hover:underline">Sec. 22.10. Leaving a Child in a Vehicle</a></h2>
+                    <div class="space-y-4 text-sm text-gray-700">
+                         <ul class="list-disc list-inside space-y-2">
+                            <li><strong class="font-semibold">Offense (a):</strong> Intentionally or knowingly leaves a child in motor vehicle for <strong class="font-semibold">longer than 5 minutes</strong>, knowing child is (1) <strong class="font-semibold">younger than 7</strong> AND (2) <strong class="font-semibold">not attended</strong> by someone <strong class="font-semibold">14 or older</strong>.</li>
+                            <li><strong class="font-semibold">Punishment (b):</strong> <strong class="font-semibold text-red-600">Class C Misdemeanor</strong>.</li>
+                         </ul>
+                    </div>
+                 </div>
+                 <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-xl font-bold mb-4 border-b pb-2"><a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.22.htm#22.11" target="_blank" class="text-blue-600 hover:underline">Sec. 22.11. Harassment by Persons in Certain Facilities...</a></h2>
+                    <div class="space-y-4 text-sm text-gray-700">
+                         <p><strong class="font-semibold">Offense (a):</strong> With intent to assault, harass, annoy, alarm, abuse, torment, or embarrass:</p>
+                        <ul class="list-decimal list-inside ml-4 space-y-1">
+                             <li>While imprisoned/confined in correctional/detention facility, causes <strong class="font-semibold">another person</strong> to contact blood, seminal fluid, vaginal fluid, saliva, urine, or feces of actor/other/animal, or any other fluid/liquid.</li>
+                             <li>While committed to civil commitment facility, causes <strong class="font-semibold">TCO employee/contractor</strong> to contact specified fluids (on duty/retaliation).</li>
+                             <li>Causes person actor knows is <strong class="font-semibold">public servant</strong> to contact specified fluids (on duty/retaliation).</li>
+                         </ul>
+                         <p><strong class="font-semibold">Punishment (b):</strong> <strong class="font-semibold text-red-600">Felony of the Third Degree</strong>.</p>
+                         <p><strong class="font-semibold">Definition (d):</strong> "Correctional or detention facility" includes secure juvenile facilities.</p>
+                         <p><strong class="font-semibold">No Defense (g):</strong> Not a defense that actor warned the person.</p>
+                         <p><strong class="font-semibold">Presumptions (e, f):</strong> Actor presumed to know victim status if distinctive uniform/badge worn.</p>
+                         <p><strong class="font-semibold">Prosecution Rule (c):</strong> Actor may be prosecuted under this section and/or another section.</p>
+                    </div>
+                 </div>
+            </div>
+
+             <!-- Ch. 22: Defenses/Applicability Tab -->
+            <div id="ch22-defenses" class="tab-content space-y-6">
+                 <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-xl font-bold mb-4 border-b pb-2"><a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.22.htm#22.06" target="_blank" class="text-blue-600 hover:underline">Sec. 22.06. Consent as Defense to Assaultive Conduct</a></h2>
+                    <div class="space-y-4 text-sm text-gray-700">
+                        <ul class="list-disc list-inside space-y-2">
+                           <li><strong class="font-semibold">Defense (a):</strong> Victim's effective consent (or actor's reasonable belief victim consented) is a defense to 22.01 (Assault), 22.02 (Agg Assault), or 22.05 (Deadly Conduct) IF:
+                               <ul>
+                                   <li class="ml-4 list-item list-disc">(1) Conduct did <strong class="font-semibold">NOT threaten or inflict SBI</strong>; OR</li>
+                                   <li class="ml-4 list-item list-disc">(2) Victim knew conduct was a risk of (A) occupation, (B) medical treatment, or (C) scientific experiment.</li>
+                               </ul>
+                           </li>
+                           <li><strong class="font-semibold">Limitation (b):</strong> Defense is <strong class="font-semibold">NOT available</strong> if conduct committed as condition of initiation/membership in a <strong class="font-semibold">criminal street gang</strong>.</li>
+                        </ul>
+                    </div>
+                 </div>
+                 <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-xl font-bold mb-4 border-b pb-2"><a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.22.htm#22.12" target="_blank" class="text-blue-600 hover:underline">Sec. 22.12. Applicability to Certain Conduct (Unborn Child)</a></h2>
+                    <div class="space-y-4 text-sm text-gray-700">
+                        <p>Chapter 22 <strong class="font-semibold">does not apply</strong> to conduct against an unborn child if the conduct is:</p>
+                        <ul class="list-decimal list-inside ml-4 space-y-1">
+                             <li>Committed by the mother.</li>
+                             <li>Lawful medical procedure by provider w/ consent.</li>
+                             <li>Lawful medical procedure for assisted reproduction w/ consent.</li>
+                             <li>Dispensation/administration of drug in accordance with law.</li>
+                         </ul>
+                    </div>
+                 </div>
+            </div>
+
+            <!-- Knowledge Check Tab -->
+            <div id="knowledge-check" class="tab-content">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-2xl font-bold mb-4">Knowledge Check (Ch. 22)</h2>
+                    <p class="mb-6 text-gray-600">Test your understanding of the material. (109 Questions)</p>
+                    <div id="quiz-container" class="space-y-8">
+                        <!-- Questions will be dynamically inserted here -->
+                    </div>
+                    <!-- New Results Div -->
+                    <div id="quiz-results" class="hidden mt-8 text-center">
+                        <h3 class="text-2xl font-bold" id="quiz-score"></h3>
+                        <p class="text-lg text-gray-700" id="quiz-percentage"></p>
+                    </div>
+                    <!-- Button Container -->
+                    <div class="mt-8 text-center space-x-4">
+                        <button id="check-answers-btn" class="bg-blue-600 text-white font-bold py-2 px-6 rounded-lg hover:bg-blue-700 transition-colors">Submit Answers</button>
+                        <button id="retake-quiz-btn" class="hidden bg-gray-600 text-white font-bold py-2 px-6 rounded-lg hover:bg-gray-700 transition-colors">Retake Quiz</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Resources Tab -->
+            <div id="resources" class="tab-content">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-2xl font-bold mb-4">External Resources</h2>
+                    <p class="mb-6 text-gray-600">Quick links to official Texas statutes referenced in this chapter.</p>
+                    <div id="resources-list" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 text-sm">
+                        <!-- Links will be dynamically inserted here -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const tabs = document.querySelectorAll('#tabs button');
+            const tabContents = document.querySelectorAll('.tab-content');
+
+            tabs.forEach(tab => {
+                tab.addEventListener('click', () => {
+                    tabs.forEach(t => t.classList.remove('active'));
+                    tabContents.forEach(c => c.classList.remove('active'));
+                    tab.classList.add('active');
+                    document.getElementById(tab.dataset.tab).classList.add('active');
+                });
+            });
+
+            // --- QUIZ DATA (CHAPTER 22) ---
+            const quizData = [
+                // Section 22.01 Assault
+                {
+                    question: `Which mental state is sufficient for Assault causing Bodily Injury (22.01(a)(1))?`,
+                    options: [`Intentionally only.`, `Knowingly only.`, `Recklessly only.`, `Intentionally, Knowingly, or Recklessly.`],
+                    answer: `Intentionally, Knowingly, or Recklessly.`,
+                    explanation: `Sec. 22.01(a)(1) includes all three mental states.`
+                },
+                {
+                    question: `Which mental state is sufficient for Assault by Threat (22.01(a)(2))?`,
+                    options: [`Intentionally or Knowingly.`, `Recklessly.`, `Criminal Negligence.`, `Strict Liability.`],
+                    answer: `Intentionally or Knowingly.`,
+                    explanation: `Sec. 22.01(a)(2) requires intentional or knowing conduct.`
+                },
+                {
+                    question: `Which mental state is sufficient for Assault by Offensive Contact (22.01(a)(3))?`,
+                    options: [`Intentionally or Knowingly.`, `Recklessly.`, `Criminal Negligence.`, `Strict Liability.`],
+                    answer: `Intentionally or Knowingly.`,
+                    explanation: `Sec. 22.01(a)(3) requires intentional or knowing conduct.`
+                },
+                {
+                    question: `What is the base punishment for Assault causing Bodily Injury (22.01(a)(1))?`,
+                    options: [`Class C Misdemeanor.`, `Class B Misdemeanor.`, `Class A Misdemeanor.`, `State Jail Felony.`],
+                    answer: `Class A Misdemeanor.`,
+                    explanation: `Sec. 22.01(b) sets the base punishment as Class A Misdemeanor.`
+                },
+                {
+                    question: `What is the base punishment for Assault by Threat (22.01(a)(2))?`,
+                    options: [`Class C Misdemeanor.`, `Class B Misdemeanor.`, `Class A Misdemeanor.`, `No offense.`],
+                    answer: `Class C Misdemeanor.`,
+                    explanation: `Sec. 22.01(c) sets the base punishment as Class C Misdemeanor.`
+                },
+                 {
+                    question: `What is the base punishment for Assault by Offensive Contact (22.01(a)(3))?`,
+                    options: [`Class C Misdemeanor.`, `Class B Misdemeanor.`, `Class A Misdemeanor.`, `No offense.`],
+                    answer: `Class C Misdemeanor.`,
+                    explanation: `Sec. 22.01(c) sets the base punishment as Class C Misdemeanor.`
+                },
+                {
+                    question: `Assault causing Bodily Injury (a)(1) against a person the actor knows is a public servant on duty is enhanced to what level?`,
+                    options: [`Class A Misdemeanor.`, `State Jail Felony.`, `Felony of the Third Degree.`, `Felony of the Second Degree.`],
+                    answer: `Felony of the Third Degree.`,
+                    explanation: `Sec. 22.01(b)(1) enhances it to an F3.`
+                },
+                {
+                    question: `Assault causing Bodily Injury (a)(1) against a family member, where the actor has a prior FV conviction listed in (b)(2)(A), is what level?`,
+                    options: [`Class A Misdemeanor.`, `State Jail Felony.`, `Felony of the Third Degree.`, `Felony of the Second Degree.`],
+                    answer: `Felony of the Third Degree.`,
+                    explanation: `Sec. 22.01(b)(2)(A) enhances it to an F3.`
+                },
+                 {
+                    question: `Which chapter contains offenses that qualify as a prior family violence conviction for the Assault enhancement under 22.01(b)(2)(A)?`,
+                    options: [`Chapter 28 (Arson, Criminal Mischief).`, `Chapter 31 (Theft).`, `Chapter 19 (Criminal Homicide).`, `Chapter 42 (Disorderly Conduct).`],
+                    answer: `Chapter 19 (Criminal Homicide).`,
+                    explanation: `Sec. 22.01(b)(2)(A)(ii)(a) lists Ch 19, Ch 22, 20.03, 20.04, 21.11, and 25.11, along with specific violations of 25.07 and 25.072.`
+                },
+                 {
+                    question: `Assault causing Bodily Injury (a)(1) against a family member committed by impeding breathing or circulation is what level?`,
+                    options: [`Class A Misdemeanor.`, `State Jail Felony.`, `Felony of the Third Degree.`, `Felony of the Second Degree.`],
+                    answer: `Felony of the Third Degree.`,
+                    explanation: `Sec. 22.01(b)(2)(B) enhances it to an F3.`
+                },
+                 {
+                    question: `Assault BI (a)(1) against a security officer on duty is what level?`,
+                    options: [`Class A Misdemeanor.`, `SJF.`, `F3.`, `F2.`],
+                    answer: `F3.`,
+                    explanation: `Sec. 22.01(b)(4) enhances it to an F3.`
+                },
+                 {
+                    question: `Assault BI (a)(1) against emergency services personnel providing services is what level?`,
+                    options: [`Class A Misdemeanor.`, `SJF.`, `F3.`, `F2.`],
+                    answer: `F3.`,
+                    explanation: `Sec. 22.01(b)(5) enhances it to an F3.`
+                },
+                {
+                    question: `Assault BI (a)(1) against a person who contracts with the government to perform a service in a correctional facility is what level, if committed while they are performing that service?`,
+                    options: [`Class A Misdemeanor.`, `SJF.`, `F3.`, `F2.`],
+                    answer: `F3.`,
+                    explanation: `Sec. 22.01(b)(3) enhances assault BI against government contractors or their employees in certain facilities to an F3.`
+                },
+                {
+                    question: `Assault BI (a)(1) against a known process server performing their duty is what level?`,
+                    options: [`Class A Misdemeanor.`, `SJF.`, `F3.`, `F2.`],
+                    answer: `F3.`,
+                    explanation: `Sec. 22.01(b)(6) enhances assault BI against a process server to an F3.`
+                },
+                {
+                    question: `Assault BI (a)(1) against a known hospital personnel while on hospital property is what level?`,
+                    options: [`Class A Misdemeanor.`, `SJF.`, `F3.`, `F2.`],
+                    answer: `F3.`,
+                    explanation: `Sec. 22.01(b)(9) enhances assault BI against hospital personnel to an F3.`
+                },
+                {
+                    question: `Assault BI (a)(1) against a known utility worker performing their duty is what level?`,
+                    options: [`Class A Misdemeanor.`, `SJF.`, `F3.`, `F2.`],
+                    answer: `F3.`,
+                    explanation: `Sec. 22.01(b)(10) enhances assault BI against a utility worker/agent to an F3.`
+                },
+                {
+                    question: `Assault BI (a)(1) committed by a person civilly committed against a TCO employee on duty is what level?`,
+                    options: [`Class A Misdemeanor.`, `SJF.`, `F3.`, `F2.`],
+                    answer: `F3.`,
+                    explanation: `Sec. 22.01(b-1) enhances assault BI by a civilly committed person against TCO staff/contractors to an F3.`
+                },
+                {
+                    question: `Assault BI (a)(1) committed during the commission of Smuggling of Persons (fleeing LEO) under 20.05(a)(2) is what level?`,
+                    options: [`Class A Misdemeanor.`, `SJF.`, `F3.`, `F2.`],
+                    answer: `F3.`,
+                    explanation: `Sec. 22.01(b-4) enhances assault BI committed during smuggling while fleeing LEO to an F3.`
+                },
+                 {
+                    question: `Assault BI (a)(1) against a pregnant individual the actor knows is pregnant is what level?`,
+                    options: [`Class A Misdemeanor.`, `SJF.`, `F3.`, `F2.`],
+                    answer: `F3.`,
+                    explanation: `Sec. 22.01(b)(8) enhances it to an F3.`
+                },
+                {
+                    question: `The Assault BI enhancement under 22.01(b)(7) applies if the assault against a pregnant individual was committed for what purpose?`,
+                    options: [`To cause a miscarriage.`, `To force the individual to have an abortion.`, `To prevent the individual from seeking medical care.`, `To steal from the individual.`],
+                    answer: `To force the individual to have an abortion.`,
+                    explanation: `Sec. 22.01(b)(7) specifically requires the intent 'to force the individual to have an abortion'.`
+                },
+                 {
+                    question: `Assault BI (a)(1) against a person the actor knows is a peace officer on duty is what level?`,
+                    options: [`Class A Misdemeanor.`, `SJF.`, `F3.`, `F2.`],
+                    answer: `F2.`,
+                    explanation: `Sec. 22.01(b-2) provides a specific F2 enhancement for peace officers and judges.`
+                },
+                 {
+                    question: `Assault BI (a)(1) against a family member, with a prior FV conviction, AND committed by impeding breathing is what level?`,
+                    options: [`Class A Misdemeanor.`, `SJF.`, `F3.`, `F2.`],
+                    answer: `F2.`,
+                    explanation: `Sec. 22.01(b-3) provides a specific F2 enhancement when both the prior and impeding breathing factors are present.`
+                },
+                {
+                    question: `Assault by Offensive Contact (a)(3) against an elderly individual is what level?`,
+                    options: [`Class C Misdemeanor.`, `Class B Misdemeanor.`, `Class A Misdemeanor.`, `SJF.`],
+                    answer: `Class A Misdemeanor.`,
+                    explanation: `Sec. 22.01(c)(1) enhances it to a Class A Misdemeanor.`
+                },
+                 {
+                    question: `Assault by Threat (a)(2) committed by a fan against a referee during a game is what level?`,
+                    options: [`Class C Misdemeanor.`, `Class B Misdemeanor.`, `Class A Misdemeanor.`, `SJF.`],
+                    answer: `Class B Misdemeanor.`,
+                    explanation: `Sec. 22.01(c)(2) enhances threat or contact against a sports participant by a non-participant to a Class B Misdemeanor.`
+                },
+                 {
+                    question: `Assault by Threat (a)(2) against a pregnant individual to force an abortion is what level?`,
+                    options: [`Class C Misdemeanor.`, `Class B Misdemeanor.`, `Class A Misdemeanor.`, `SJF.`],
+                    answer: `Class A Misdemeanor.`,
+                    explanation: `Sec. 22.01(c)(3) enhances threat OR contact against a pregnant individual to force abortion to a Class A Misdemeanor.`
+                },
+                {
+                    question: `Under 22.01(d), an actor is presumed to know the victim was a public servant if the victim was...`,
+                    options: [`Driving a marked police car.`, `Wearing a distinctive uniform or badge.`, `Carrying a firearm.`, `Working during normal business hours.`]
+                    ,answer: `Wearing a distinctive uniform or badge.`,
+                    explanation: `Sec. 22.01(d) establishes this presumption based on uniform or badge.`
+                },
+                 {
+                    question: `For the FV prior conviction enhancements in 22.01, does a deferred adjudication count as a conviction?`,
+                    options: [`Yes.`, `No.`, `Only if probation was revoked.`, `Only if it was for a felony.`]
+                    ,answer: `Yes.`,
+                    explanation: `Sec. 22.01(f)(1) explicitly states 'previously convicted... if the defendant was adjudged guilty... or entered a plea... in return for a grant of deferred adjudication, regardless of whether the sentence... was probated and the defendant was subsequently discharged'.`
+                },
+                {
+                    question: `Which definition source is used for "Security Officer" in Sec. 22.01?`,
+                    options: [`Penal Code 1.07.`, `Occupations Code 1702.`, `Government Code 156.`, `Health & Safety Code 773.`],
+                    answer: `Occupations Code 1702.`,
+                    explanation: `Sec. 22.01(e)(3) points to Occupations Code Sec 1702.002 and 1702.221.`
+                },
+                 {
+                    question: `Which is included in the definition of "Utility" under Sec 22.01?`,
+                    options: [`Electric utility.`, `Telecommunications provider.`, `Gas utility.`, `All of the above.`]
+                    ,answer: `All of the above.`,
+                    explanation: `Sec. 22.01(e)(5) lists various types of utilities defined in the Utilities Code.`
+                },
+                // Section 22.02 Aggravated Assault
+                {
+                    question: `What are the two ways to commit Aggravated Assault (22.02(a))?`,
+                    options: [`Cause BI or Threaten SBI.`, `Cause SBI or Use/Exhibit Deadly Weapon.`, `Cause BI with Deadly Weapon or Cause SBI.`, `Threaten with Deadly Weapon or Cause SBI.`]
+                    ,answer: `Cause SBI or Use/Exhibit Deadly Weapon.`,
+                    explanation: `Sec. 22.02(a) requires committing Assault (under 22.01) AND (1) causing SBI or (2) using/exhibiting a deadly weapon.`
+                },
+                {
+                    question: `What is the base punishment for Aggravated Assault (22.02)?`,
+                    options: [`F1.`, `F2.`, `F3.`, `SJF.`],
+                    answer: `F2.`,
+                    explanation: `Sec. 22.02(b) sets the base punishment as a Felony of the Second Degree.`
+                },
+                 {
+                    question: `Aggravated Assault is enhanced to an F1 if the actor uses a deadly weapon AND causes SBI to...`,
+                    options: [`A public servant.`, `A family member.`, `A pregnant individual.`, `An elderly individual.`]
+                    ,answer: `A family member.`,
+                    explanation: `Sec. 22.02(b)(1)(A) provides this specific F1 enhancement.`
+                },
+                 {
+                    question: `Aggravated Assault is enhanced to an F1 if the actor uses a deadly weapon and causes a traumatic brain injury resulting in...`,
+                    options: [`Temporary unconsciousness.`, `A concussion.`, `A persistent vegetative state or irreversible paralysis.`, `Any impairment requiring surgery.`]
+                    ,answer: `A persistent vegetative state or irreversible paralysis.`,
+                    explanation: `Sec. 22.02(b)(1)(B) provides this specific F1 enhancement for these severe outcomes.`
+                },
+                 {
+                    question: `Aggravated Assault committed BY a public servant acting under color of office is what level?`,
+                    options: [`F1.`, `F2.`, `F3.`, `Same as if committed by anyone else.`]
+                    ,answer: `F1.`,
+                    explanation: `Sec. 22.02(b)(2)(A) enhances Agg Assault to F1 if committed by a public servant under color of office.`
+                },
+                {
+                    question: `Aggravated Assault is enhanced to an F1 if committed against a person the actor knows is a public servant on duty.`,
+                    options: [`True.`, `False.`, `Only if SBI occurs.`, `Only if a deadly weapon is used.`]
+                    ,answer: `True.`,
+                    explanation: `Sec. 22.02(b)(2)(B) enhances Aggravated Assault (either SBI or DW version) against a public servant to an F1.`
+                },
+                 {
+                    question: `Aggravated Assault committed in retaliation against a witness or informant is what level?`,
+                    options: [`F1.`, `F2.`, `F3.`, `SJF.`],
+                    answer: `F1.`,
+                    explanation: `Sec. 22.02(b)(2)(C) enhances retaliation Agg Assaults to an F1.`
+                },
+                {
+                    question: `Aggravated Assault against a known process server performing their duty is what level?`,
+                    options: [`F1.`, `F2.`, `F3.`, `SJF.`],
+                    answer: `F1.`,
+                    explanation: `Sec. 22.02(b)(2)(D) enhances Agg Assault against a process server to an F1.`
+                },
+                {
+                    question: `Aggravated Assault against a known security officer performing their duty is what level?`,
+                    options: [`F1.`, `F2.`, `F3.`, `SJF.`],
+                    answer: `F1.`,
+                    explanation: `Sec. 22.02(b)(2)(E) enhances Agg Assault against a security officer to an F1.`
+                },
+                {
+                    question: `Aggravated Assault committed by a civilly committed person against a TCO employee on duty is what level?`,
+                    options: [`F1.`, `F2.`, `F3.`, `SJF.`],
+                    answer: `F1.`,
+                    explanation: `Sec. 22.02(b)(2)(F) enhances Agg Assault by civilly committed persons against TCO staff/contractors to an F1.`
+                },
+                 {
+                    question: `Aggravated Assault involving a drive-by shooting under the circumstances listed in (b)(3) is what level?`,
+                    options: [`F1.`, `F2.`, `F3.`, `SJF.`],
+                    answer: `F1.`,
+                    explanation: `Sec. 22.02(b)(3) enhances this specific type of drive-by shooting Agg Assault to an F1.`
+                },
+                {
+                    question: `To qualify for the drive-by shooting enhancement under 22.02(b)(3), the actor must knowingly discharge a firearm at a habitation, building, or vehicle, be reckless if occupied, AND...?`,
+                    options: [`Cause SBI.`, `Use a fully automatic weapon.`, `Cause BI or property damage OR place a person in fear of imminent SBI.`, `Be a member of a criminal street gang.`]
+                    ,answer: `Cause BI or property damage OR place a person in fear of imminent SBI.`,
+                    explanation: `Sec. 22.02(b)(3)(C) requires one of these resulting conditions.`
+                },
+                {
+                    question: `Aggravated Assault committed as part of a mass shooting is what level?`,
+                    options: [`F1.`, `F2.`, `F3.`, `Capital Felony.`]
+                    ,answer: `F1.`,
+                    explanation: `Sec. 22.02(b)(4) enhances Agg Assault committed during a mass shooting to an F1.`
+                },
+                // Section 22.011 Sexual Assault
+                {
+                    question: `Which act constitutes Sexual Assault under 22.011(a)(1) if done without consent?`,
+                    options: [`Causing penetration of the anus by any means.`, `Causing penetration of the mouth by the actor's sexual organ.`, `Causing the victim's sexual organ to contact the actor's mouth.`, `All of the above.`]
+                    ,answer: `All of the above.`,
+                    explanation: `Sec. 22.011(a)(1) lists (A) penetration of anus/sex organ by any means, (B) penetration of mouth by actor's sex organ, and (C) contact/penetration involving victim's sex organ.`
+                },
+                 {
+                    question: `Which act constitutes Sexual Assault under 22.011(a)(2) if done against a child (< 17)?`,
+                    options: [`Causing penetration of the anus by any means.`, `Causing the child's mouth to contact the actor's anus.`, `Causing the child's anus to contact another person's sexual organ.`, `All of the above.`]
+                    ,answer: `All of the above.`,
+                    explanation: `Sec. 22.011(a)(2) lists various penetration and contact scenarios involving a child's anus, mouth, or sexual organ.`
+                },
+                {
+                    question: `Under 22.011(b), a sexual assault is without consent if the actor compels submission by threatening force against the victim AND...`,
+                    options: [`The actor uses a deadly weapon.`, `The victim believes the actor has the present ability to execute the threat.`, `The threat causes SBI.`, `The actor is related to the victim.`]
+                    ,answer: `The victim believes the actor has the present ability to execute the threat.`,
+                    explanation: `Sec. 22.011(b)(2) defines lack of consent this way.`
+                },
+                 {
+                    question: `Under 22.011(b), a sexual assault is without consent if the victim hasn't consented and the actor knows the victim is...`,
+                    options: [`Unconscious or physically unable to resist.`, `Unaware the assault is occurring.`, `Intoxicated/impaired and incapable of consenting.`, `All of the above.`]
+                    ,answer: `All of the above.`,
+                    explanation: `Sec. 22.011(b)(3), (b)(5), and (b)(6) cover these scenarios.`
+                },
+                {
+                    question: `Under 22.011(b)(8), SA is without consent if the actor is a _______ who coerces the other person to submit.`,
+                    options: [`Family Member.`, `Public Servant.`, `Clergyman.`, `Teacher.`]
+                    ,answer: `Public Servant.`,
+                    explanation: `Sec. 22.011(b)(8) specifically addresses coercion by a public servant.`
+                },
+                {
+                    question: `Under 22.011(b)(10), SA is without consent if the actor is a _______ who exploits the other's emotional dependency as spiritual adviser.`,
+                    options: [`Mental Health Provider.`, `Doctor.`, `Clergyman.`, `Teacher.`]
+                    ,answer: `Clergyman.`,
+                    explanation: `Sec. 22.011(b)(10) specifically addresses exploitation by a clergyman.`
+                },
+                {
+                    question: `Under 22.011(b)(11), SA is without consent if the actor is an employee of a facility where the other person is a resident, unless...`,
+                    options: [`The resident consents.`, `They are legally or informally married.`, `The employee is off duty.`, `The resident is over 18.`]
+                    ,answer: `They are legally or informally married.`,
+                    explanation: `Sec. 22.011(b)(11) provides an exception only if the employee and resident are married.`
+                },
+                 {
+                    question: `Under 22.011(b)(13), SA is without consent if the actor is a _______ who exploits the other person's dependency.`,
+                    options: [`Parent.`, `Coach or Tutor.`, `Employer.`, `Landlord.`]
+                    ,answer: `Coach or Tutor.`,
+                    explanation: `Sec. 22.011(b)(13) specifically addresses exploitation by a coach or tutor.`
+                },
+                {
+                    question: `Under 22.011(b)(14), SA is without consent if the actor is a _______ hired to assist with daily life and exploits the other person's dependency.`,
+                    options: [`Nurse.`, `Family member.`, `Caregiver.`, `Roommate.`]
+                    ,answer: `Caregiver.`,
+                    explanation: `Sec. 22.011(b)(14) specifically addresses exploitation by a hired caregiver.`
+                },
+                 {
+                    question: `Under 22.011(b)(9), a sexual assault is without consent if the actor is a mental health provider who causes a patient/former patient to submit by...`,
+                    options: [`Using physical force.`, `Exploiting the patient's emotional dependency.`, `Threatening to reveal confidential information.`, `Administering medication.`]
+                    ,answer: `Exploiting the patient's emotional dependency.`,
+                    explanation: `Sec. 22.011(b)(9) specifically addresses exploiting emotional dependency.`
+                },
+                {
+                    question: `What is the definition of "Child" for Sexual Assault (22.011)?`,
+                    options: [`Younger than 14.`, `Younger than 15.`, `Younger than 17.`, `Younger than 18.`]
+                    ,answer: `Younger than 17.`,
+                    explanation: `Sec. 22.011(c)(1) defines child as younger than 17.`
+                },
+                 {
+                    question: `What is the base punishment for Sexual Assault (22.011)?`,
+                    options: [`F1.`, `F2.`, `F3.`, `SJF.`],
+                    answer: `F2.`,
+                    explanation: `Sec. 22.011(f) sets the base punishment as a Felony of the Second Degree.`
+                },
+                 {
+                    question: `Sexual Assault (22.011) is enhanced to an F1 if the victim is a person the actor was prohibited from marrying under which chapter?`,
+                    options: [`Chapter 20.`, `Chapter 21.`, `Chapter 22.`, `Chapter 25.`]
+                    ,answer: `Chapter 25.`,
+                    explanation: `Sec. 22.011(f)(1) enhances the offense to F1 if the relationship falls under Sec 25.01 (incestuous marriage) or 25.02 (prohibited sexual conduct).`
+                },
+                {
+                    question: `Sexual Assault (22.011) committed by a healthcare provider using unconsented donor material during assisted reproduction is punished as what level?`,
+                    options: [`F1.`, `F2.`, `F3.`, `SJF.`],
+                    answer: `SJF.`,
+                    explanation: `Sec. 22.011(f)(2) specifically reduces the punishment for this scenario (described in (b)(12)) to a State Jail Felony.`
+                },
+                 {
+                    question: `Which is an affirmative defense to Sexual Assault against a child (22.011(a)(2))?`,
+                    options: [`Actor was spouse of the child.`, `Actor was <= 3 yrs older, child >= 14, not registered, and not in a prohibited relationship (incest).`, `Child consented.`, `Both A and B.`]
+                    ,answer: `Both A and B.`,
+                    explanation: `Sec. 22.011(e) provides both the spousal defense (e)(1) and the "Romeo & Juliet" age-gap defense (e)(2), which includes the requirement that the victim was >=14 and not in a prohibited relationship.`
+                },
+                // Section 22.021 Aggravated Sexual Assault
+                {
+                    question: `Aggravated Sexual Assault (22.021) requires committing Sexual Assault AND...`,
+                    options: [`Causing SBI or Attempted Murder.`, `Using a Deadly Weapon.`, `Victim is < 14, Elderly, or Disabled.`, `Any of the above (or other listed factors).`],
+                    answer: `Any of the above (or other listed factors).`,
+                    explanation: `Sec. 22.021(a)(2) lists multiple aggravating factors, including causing SBI/attempted murder (A)(i), using a deadly weapon (A)(iv), victim < 14 (B), or victim elderly/disabled (C).`
+                },
+                {
+                    question: `Which threat constitutes an aggravator for Aggravated Sexual Assault under (a)(2)(A)(iii)?`,
+                    options: [`Threatening SBI to the victim.`, `Threatening kidnapping of a third person in the victim's presence.`, `Threatening to call the police.`, `Threatening property damage.`]
+                    ,answer: `Threatening kidnapping of a third person in the victim's presence.`,
+                    explanation: `Sec. 22.021(a)(2)(A)(iii) covers threats of Trafficking(sex), death, SBI, or kidnapping against *any person* made in the victim's presence.`
+                },
+                 {
+                    question: `Acting in concert with another person who also commits Sexual Assault against the same victim in the same episode is an aggravator under...`,
+                    options: [`22.021(a)(2)(A)(i).`, `22.021(a)(2)(A)(iv).`, `22.021(a)(2)(A)(v).`, `22.021(a)(2)(B).`]
+                    ,answer: `22.021(a)(2)(A)(v).`,
+                    explanation: `Sec. 22.021(a)(2)(A)(v) specifically lists acting in concert.`
+                },
+                 {
+                    question: `Administering Rohypnol to the victim to facilitate a Sexual Assault is an aggravator under...`,
+                    options: [`22.021(a)(2)(A)(i).`, `22.021(a)(2)(A)(iv).`, `22.021(a)(2)(A)(vi).`, `22.021(a)(2)(C).`]
+                    ,answer: `22.021(a)(2)(A)(vi).`,
+                    explanation: `Sec. 22.021(a)(2)(A)(vi) specifically lists administering an impairing substance to facilitate the offense.`
+                },
+                {
+                    question: `For Aggravated Sexual Assault where the victim is < 14 (a)(2)(B), does the state need to prove the actor knew the victim's age?`,
+                    options: [`Yes.`, `No.`, `Only if the victim was between 10 and 14.`, `Only if no other aggravator applies.`]
+                    ,answer: `No.`,
+                    explanation: `The introductory language of (a)(1)(B) (incorporated by reference) and the specific language of (a)(2)(B) state 'regardless of whether the person knows the age'.`
+                },
+                 {
+                    question: `What is the definition of "Disabled individual" for Aggravated Sexual Assault (22.021)?`,
+                    options: [`Person < 14.`, `Person 65+.`, `Person > 13 unable to protect self due to age/physical/mental issue.`, `Person with any listed disability.`]
+                    ,answer: `Person > 13 unable to protect self due to age/physical/mental issue.`,
+                    explanation: `Sec. 22.021(b)(3) provides this specific definition (different from 22.04).`
+                },
+                {
+                    question: `What is the base punishment for Aggravated Sexual Assault (22.021)?`,
+                    options: [`F1.`, `F2.`, `F1 (25-Life).`, `Capital Felony.`]
+                    ,answer: `F1.`,
+                    explanation: `Sec. 22.021(e) sets the punishment as a Felony of the First Degree.`
+                },
+                 {
+                    question: `The minimum term for Aggravated Sexual Assault (22.021) is increased to 25 years if the victim is...`,
+                    options: [`Younger than 10.`, `Younger than 14 AND the offense involved SBI, threat, weapon, etc. (an (a)(2)(A) manner).`, `Elderly or Disabled.`, `Both A and B.`]
+                    ,answer: `Both A and B.`,
+                    explanation: `Sec. 22.021(f) increases the minimum to 25 years if (1) victim < 10 OR (2) victim < 14 AND an (a)(2)(A) aggravator was used.`
+                },
+                 // Section 22.012 Indecent Assault
+                {
+                    question: `Which act constitutes Indecent Assault (22.012) if done without consent and with intent to arouse?`,
+                    options: [`Touching the breast of another person.`, `Exposing another person's buttocks.`, `Causing another to contact the actor's saliva.`, `All of the above.`]
+                    ,answer: `All of the above.`,
+                    explanation: `Sec. 22.012(a) lists (1) touching breast/anus/genitals, (2) touching with breast/anus/genitals, (3) exposing specified areas, and (4) causing contact with specified fluids.`
+                },
+                {
+                    question: `What is the base punishment for Indecent Assault (22.012)?`,
+                    options: [`Class C Misdemeanor.`, `Class B Misdemeanor.`, `Class A Misdemeanor.`, `State Jail Felony.`]
+                    ,answer: `Class A Misdemeanor.`,
+                    explanation: `Sec. 22.012(b) sets the base punishment as Class A Misdemeanor.`
+                },
+                 {
+                    question: `Indecent Assault (22.012) is enhanced to an SJF if the actor...`,
+                    options: [`Has a prior conviction under 22.012.`, `Is an HCS/MHS provider acting outside scope of practice during treatment.`, `Used a weapon.`, `Both A and B.`]
+                    ,answer: `Both A and B.`,
+                    explanation: `Sec. 22.012(b)(1) provides the SJF enhancement for (A) a prior or (B) the HCS/MHS provider scenario.`
+                },
+                {
+                    question: `(Per HB 2593) Indecent Assault (22.012) is enhanced to an F2 if the victim is...`,
+                    options: [`A child < 17.`, `A public servant.`, `Pregnant.`, `Disabled or Elderly.`]
+                    ,answer: `Disabled or Elderly.`,
+                    explanation: `The version of Sec. 22.012(b)(3) amended by HB 2593 enhances the offense to F2 if the victim is disabled or elderly.`
+                },
+                 // Section 22.04 Injury to Child/Elderly/Disabled
+                {
+                    question: `What is the age definition of "Child" for Injury to a Child (22.04)?`,
+                    options: [`Younger than 18.`, `Younger than 17.`, `Younger than 15.`, `14 years of age or younger.`]
+                    ,answer: `14 years of age or younger.`,
+                    explanation: `Sec. 22.04(c)(1) defines child as 14 or younger (different from SA/Agg SA).`
+                },
+                {
+                    question: `What is the age definition of "Elderly individual" for 22.04?`,
+                    options: [`60+.`, `62+.`, `65+.`, `70+.`]
+                    ,answer: `65+.`,
+                    explanation: `Sec. 22.04(c)(2) defines elderly as 65 or older.`
+                },
+                {
+                    question: `The definition of "Disabled Individual" under 22.04 includes persons with autism, developmental disability, intellectual disability, severe emotional disturbance, TBI, mental illness, OR...`,
+                    options: [`Any physical handicap.`, `Anyone over 13.`, `Anyone substantially unable to protect self or provide care due to age/disease/defect/injury.`, `Anyone receiving disability benefits.`]
+                    ,answer: `Anyone substantially unable to protect self or provide care due to age/disease/defect/injury.`,
+                    explanation: `Sec. 22.04(c)(3)(B) provides this alternative definition based on functional inability.`
+                },
+                {
+                    question: `Injury to a Child/Elderly/Disabled (22.04) can be committed by act with which mental state(s)?`,
+                    options: [`Intentionally or Knowingly only.`, `Recklessly only.`, `Criminal Negligence only.`, `Intentionally, Knowingly, Recklessly, or with Criminal Negligence.`]
+                    ,answer: `Intentionally, Knowingly, Recklessly, or with Criminal Negligence.`,
+                    explanation: `Sec. 22.04(a) lists all four mental states for commission by act.`
+                },
+                {
+                    question: `Injury to a Child/Elderly/Disabled (22.04) can be committed by omission with which mental state(s)?`,
+                    options: [`Intentionally or Knowingly only.`, `Recklessly only.`, `Intentionally, Knowingly, or Recklessly.`, `Criminal Negligence.`]
+                    ,answer: `Intentionally, Knowingly, or Recklessly.`,
+                    explanation: `Sec. 22.04(a) lists I, K, or R for commission by omission. Criminal negligence by omission is a separate offense level under (g).`
+                },
+                {
+                    question: `An employee of a nursing facility recklessly fails to provide care, causing BI to an elderly resident. Offense?`,
+                    options: [`Injury to Elderly (22.04(a)).`, `Injury to Elderly by Facility Employee Omission (22.04(a-1)).`, `Abandoning/Endangering (22.041).`, `No offense unless intentional.`]
+                    ,answer: `Injury to Elderly by Facility Employee Omission (22.04(a-1)).`,
+                    explanation: `Sec. 22.04(a-1) specifically addresses omissions by facility employees causing injury to residents. Recklessness causing BI by omission by facility staff is an SJF under (f).`
+                },
+                {
+                    question: `Under 22.04, when does an omission constitute an offense?`,
+                    options: [`Always.`, `Only if SBI occurs.`, `If actor has legal/statutory duty OR has assumed care, custody, or control.`, `If actor is related to the victim.`]
+                    ,answer: `If actor has legal/statutory duty OR has assumed care, custody, or control.`,
+                    explanation: `Sec. 22.04(b) establishes these bases for liability by omission.`
+                },
+                {
+                    question: `Intentionally or knowingly causing SBI to a child (22.04) is what level?`,
+                    options: [`F1.`, `F2.`, `F3.`, `SJF.`],
+                    answer: `F1.`,
+                    explanation: `Sec. 22.04(e) makes I/K causation of SBI or serious mental injury an F1.`
+                },
+                {
+                    question: `Recklessly causing SBI to an elderly individual (22.04) is what level?`,
+                    options: [`F1.`, `F2.`, `F3.`, `SJF.`],
+                    answer: `F2.`,
+                    explanation: `Sec. 22.04(e) makes reckless causation of SBI or serious mental injury an F2.`
+                },
+                {
+                    question: `Intentionally or knowingly causing BI to a disabled individual (22.04) is what level?`,
+                    options: [`F1.`, `F2.`, `F3.`, `SJF.`],
+                    answer: `F3.`,
+                    explanation: `Sec. 22.04(f) makes I/K causation of BI an F3 (unless the specific F2 enhancement applies).`
+                },
+                {
+                    question: `An employee providing direct care intentionally causes BI to a disabled resident of a state supported living center (HSC 555.001). Level?`,
+                    options: [`F1.`, `F2.`, `F3.`, `SJF.`],
+                    answer: `F2.`,
+                    explanation: `Sec. 22.04(f) includes a specific F2 enhancement for I/K causing BI to disabled resident of certain facilities by a direct care employee.`
+                },
+                {
+                    question: `Recklessly causing BI to a child (22.04) is what level?`,
+                    options: [`F1.`, `F2.`, `F3.`, `SJF.`],
+                    answer: `SJF.`,
+                    explanation: `Sec. 22.04(f) makes reckless causation of BI an SJF.`
+                },
+                 {
+                    question: `Causing BI to a child by criminal negligence (22.04) is what level?`,
+                    options: [`F1.`, `F2.`, `F3.`, `SJF.`],
+                    answer: `SJF.`,
+                    explanation: `Sec. 22.04(g) makes criminal negligence causing any injury under (a) an SJF.`
+                },
+                {
+                    question: `Under 22.04(h), if a defendant is convicted under 22.04 and another section (e.g., Agg Assault) for the same criminal episode, how should the sentences run?`,
+                    options: [`Consecutively (stacked).`, `Concurrently (at the same time).`, `Only the sentence for the higher offense is imposed.`, `The judge decides.`]
+                    ,answer: `Concurrently (at the same time).`,
+                    explanation: `Sec. 22.04(h) states that if sentences are assessed under both sections for the same episode, 'the sentences shall run concurrently.'`
+                },
+                {
+                    question: `To claim the affirmative defense under 22.04(i) (notifying of cessation of care), the actor must notify the victim ______ and the parents/other caregiver ______.`,
+                    options: [`In writing / In writing`, `In person / In person`, `In person / In writing`, `In writing / In person`]
+                    ,answer: `In person / In writing`,
+                    explanation: `Sec. 22.04(i)(1) requires notifying the victim 'in person' and notifying the parents/other 'in writing'. Notifying DFPS 'in writing' is an alternative under (i)(2).`
+                },
+                 {
+                    question: `Which is an affirmative defense to Injury to C/E/D (22.04)?`,
+                    options: [`Treatment based on recognized religious healing methods.`, `Actor by omission was FV victim of co-defendant & couldn't prevent.`, `Actor was <= 3 yrs older than child victim.`, `All of the above.`]
+                    ,answer: `All of the above.`,
+                    explanation: `Sec. 22.04(l) lists (1) religious healing, (2) FV victim unable to prevent, and (3) age gap for child victims as affirmative defenses.`
+                },
+                {
+                    question: `It is an affirmative defense to prosecution for injury to a disabled individual under 22.04 that the actor...?`,
+                    options: [`Did not intend to cause injury.`, `Was also disabled.`, `Did not know and could not reasonably have known the individual was disabled.`, `Provided medical care afterward.`]
+                    ,answer: `Did not know and could not reasonably have known the individual was disabled.`,
+                    explanation: `Sec. 22.04(m) provides this specific affirmative defense regarding knowledge of disability.`
+                },
+                 // Section 22.041 Abandoning/Endangering
+                 {
+                    question: `What does "Abandon" mean under 22.041?`,
+                    options: [`Leave a child alone for any period.`, `Leave a C/E/D without reasonable care where no reasonable person would.`, `Leave a child with someone under 14.`, `Leave a C/E/D in danger.`]
+                    ,answer: `Leave a C/E/D without reasonable care where no reasonable person would.`,
+                    explanation: `Sec. 22.041(a)(1) provides this definition.`
+                },
+                {
+                    question: `Intentionally abandoning a child with intent to return is what level?`,
+                    options: [`Class A Misdemeanor.`, `SJF.`, `F3.`, `F2.`],
+                    answer: `SJF.`,
+                    explanation: `Sec. 22.041(d)(1) makes abandoning with intent to return an SJF.`
+                },
+                 {
+                    question: `Intentionally abandoning an elderly individual without intent to return is what level?`,
+                    options: [`Class A Misdemeanor.`, `SJF.`, `F3.`, `F2.`],
+                    answer: `F3.`,
+                    explanation: `Sec. 22.041(d)(2) makes abandoning without intent to return an F3.`
+                },
+                 {
+                    question: `Intentionally abandoning a disabled individual in circumstances believed to place them in imminent danger of death is what level?`,
+                    options: [`Class A Misdemeanor.`, `SJF.`, `F3.`, `F2.`],
+                    answer: `F2.`,
+                    explanation: `Sec. 22.041(e) enhances abandoning to an F2 if done under circumstances a reasonable person would believe place the individual in imminent danger of death, BI, or impairment.`
+                },
+                {
+                    question: `Recklessly engaging in conduct placing a child in imminent danger of BI is what offense/level?`,
+                    options: [`No offense.`, `Abandoning/Endangering (22.041(c)) - SJF.`, `Injury to a Child (22.04) - SJF.`, `Assault (22.01) - Class A.`]
+                    ,answer: `Abandoning/Endangering (22.041(c)) - SJF.`,
+                    explanation: `Sec. 22.041(c) covers I, K, R, or CN conduct placing a C/E/D in imminent danger. Sec. 22.041(f) makes it an SJF.`
+                },
+                {
+                    question: `Under 22.041(c-1), endangerment is presumed if the actor possesses Meth in the presence of a child OR...`,
+                    options: [`Uses marijuana in the child's home.`, `Leaves Meth accessible AND Meth is found in child's system.`, `Unlawfully injects/ingests/etc. a PG1 or PG1-B controlled substance.`, `Both B and C.`]
+                    ,answer: `Both B and C.`,
+                    explanation: `Sec. 22.041(c-1) presumes endangerment if actor (1) makes/possesses/uses Meth/PG1-B in presence; (2) Meth/PG1-B accessible AND found in system; OR (3) unlawfully injects/ingests/etc. PG1 or PG1-B.`
+                },
+                 {
+                    question: `Voluntarily delivering an infant to a fire station under the Baby Moses Law is an exception to prosecution under...`,
+                    options: [`Sec 22.04 only.`, `Sec 22.041 only.`, `Both 22.04 and 22.041.`, `Neither, it's a separate defense.`]
+                    ,answer: `Sec 22.041 only.`,
+                    explanation: `Sec. 22.041(h) explicitly provides the exception for abandoning or endangering a CHILD under the Safe Haven / Baby Moses law (FC 262.302).`
+                },
+                // Section 22.05 Deadly Conduct
+                 {
+                    question: `Recklessly engaging in conduct placing another in imminent danger of SBI is what offense/level?`,
+                    options: [`Assault (22.01) - Class A.`, `Deadly Conduct (22.05(a)) - Class A.`, `Aggravated Assault (22.02) - F2.`, `Terroristic Threat (22.07) - Class B.`]
+                    ,answer: `Deadly Conduct (22.05(a)) - Class A.`,
+                    explanation: `Sec. 22.05(a) defines this offense, and (e) sets the punishment as Class A Misdemeanor.`
+                },
+                {
+                    question: `Knowingly discharging a firearm at or in the direction of a vehicle, while reckless if it's occupied, is what offense/level?`,
+                    options: [`Deadly Conduct (22.05(a)) - Class A.`, `Deadly Conduct (22.05(b)) - F3.`, `Aggravated Assault (22.02) - F2.`, `Criminal Mischief.`]
+                    ,answer: `Deadly Conduct (22.05(b)) - F3.`,
+                    explanation: `Sec. 22.05(b)(2) defines this offense, and (e) sets the punishment as F3.`
+                },
+                {
+                    question: `Under 22.05(c), recklessness and danger are presumed if the actor knowingly points a firearm at another, unless...`,
+                    options: [`The firearm was unloaded.`, `The actor did not intend to shoot.`, `The actor is a peace officer on duty.`, `The victim consented.`]
+                    ,answer: `The actor is a peace officer on duty.`,
+                    explanation: `Sec. 22.05(c) creates the presumption but explicitly excludes peace officers engaged in lawful discharge of official duties.`
+                },
+                {
+                    question: `The LEO exception under 22.05(f) applies to which subsection of Deadly Conduct?`,
+                    options: [`(a) Reckless Endangerment SBI.`, `(b)(1) Discharge At Individual(s).`, `(b)(2) Discharge At Habitation/Bldg/Vehicle.`, `Both (b)(1) and (b)(2).`],
+                    answer: `(b)(1) Discharge At Individual(s).`,
+                    explanation: `Sec. 22.05(f) explicitly states "Subsection (b)(1) does not apply..."`
+                },
+                 // Section 22.06 Consent Defense
+                 {
+                    question: `Under 22.06, consent is a defense to Assault (22.01) if the conduct did not threaten or inflict SBI OR...`,
+                    options: [`The victim was related to the actor.`, `The actor apologized afterwards.`, `The victim knew the conduct was a risk of their occupation.`, `The conduct occurred during a sporting event.`]
+                    ,answer: `The victim knew the conduct was a risk of their occupation.`,
+                    explanation: `Sec. 22.06(a) allows consent as a defense if no SBI OR victim knew risk of (A) occupation, (B) medical treatment, or (C) scientific experiment.`
+                },
+                {
+                    question: `Consent under 22.06 IS a valid defense if the conduct involved SBI.`,
+                    options: [`True.`, `False.`, `True, if it was medical treatment known to carry risk of SBI.`, `False, unless it was a scientific experiment known to carry risk of SBI.`]
+                    ,answer: `True, if it was medical treatment known to carry risk of SBI.`,
+                    explanation: `Sec. 22.06(a)(1) requires no SBI *UNLESS* (a)(2) applies, meaning the victim knew the conduct (even if it involved risk of SBI) was a risk of occupation, medical treatment, or science.`
+                },
+                 {
+                    question: `The consent defense under 22.06 is NOT available if the assault was committed...`,
+                    options: [`Against a family member.`, `With a deadly weapon.`, `As a condition of initiation into a criminal street gang.`, `While intoxicated.`]
+                    ,answer: `As a condition of initiation into a criminal street gang.`,
+                    explanation: `Sec. 22.06(b) specifically removes the consent defense in gang initiation/membership scenarios.`
+                },
+                // Section 22.07 Terroristic Threat
+                 {
+                    question: `Threatening violence with intent to cause a reaction by an emergency agency (e.g., bomb threat) is what offense/level?`,
+                    options: [`Terroristic Threat (22.07(a)(1)) - Class B.`, `Terroristic Threat (22.07(a)(2)) - Class B.`, `Deadly Conduct (22.05) - Class A.`, `Criminal Mischief.`]
+                    ,answer: `Terroristic Threat (22.07(a)(1)) - Class B.`,
+                    explanation: `Sec. 22.07(a)(1) covers threats intended to cause reaction by emergency agency. Sec. 22.07(b) sets punishment as Class B.`
+                },
+                {
+                    question: `Threatening violence with intent to place a family member in fear of imminent SBI is what level?`,
+                    options: [`Class C Misd.`, `Class B Misd.`, `Class A Misd.`, `SJF.`]
+                    ,answer: `Class A Misd.`,
+                    explanation: `Threatening imminent SBI (a)(2) is normally Class B, but (c)(1) enhances it to Class A if it's against family/household (FV).`
+                },
+                 {
+                    question: `Threatening violence with intent to place a person the actor knows is a peace officer in fear of imminent SBI is what level?`,
+                    options: [`Class C Misd.`, `Class B Misd.`, `Class A Misd.`, `SJF.`]
+                    ,answer: `SJF.`,
+                    explanation: `Threatening imminent SBI (a)(2) against a public servant is Class A (c)(2), BUT (c-1) provides a specific SJF enhancement if the victim is a peace officer or judge.`
+                },
+                {
+                    question: `Threatening violence to prevent use of a building, causing $1,000 loss, is what level?`,
+                    options: [`Class B Misd.`, `Class A Misd.`, `SJF.`, `F3.`]
+                    ,answer: `Class A Misd.`,
+                    explanation: `Threatening to prevent use (a)(3) is Class A unless pecuniary loss is $1,500+, then it's SJF (d).`
+                },
+                 {
+                    question: `How is pecuniary loss calculated for the Terroristic Threat enhancement under 22.07(d)?`,
+                    options: [`Cost to repair damage.`, `Value of items stolen.`, `Economic loss suffered by owner due to interruption of use.`, `Medical bills incurred.`]
+                    ,answer: `Economic loss suffered by owner due to interruption of use.`,
+                    explanation: `Sec. 22.07(g) specifically defines pecuniary loss for this section as the economic loss from the interruption.`
+                },
+                {
+                    question: `Threatening violence to interrupt public water supply (a)(4) is what level?`,
+                    options: [`Class B Misd.`, `Class A Misd.`, `SJF.`, `F3.`]
+                    ,answer: `F3.`,
+                    explanation: `Sec. 22.07(e) makes offenses under (a)(4), (a)(5), or (a)(6) an F3.`
+                },
+                 {
+                    question: `Threatening violence with intent to place the public in fear of SBI (a)(5) is what level?`,
+                    options: [`Class B Misd.`, `Class A Misd.`, `SJF.`, `F3.`]
+                    ,answer: `F3.`,
+                    explanation: `Sec. 22.07(e) makes offenses under (a)(4), (a)(5), or (a)(6) an F3.`
+                },
+                {
+                    question: `Threatening violence with intent to influence the conduct of a state agency (a)(6) is what level?`,
+                    options: [`Class B Misd.`, `Class A Misd.`, `SJF.`, `F3.`]
+                    ,answer: `F3.`,
+                    explanation: `Sec. 22.07(e) makes offenses under (a)(4), (a)(5), or (a)(6) an F3.`
+                },
+                // Other Sections
+                 {
+                    question: `Aiding Suicide (22.08) is normally a Class C Misdemeanor, but enhanced to SJF if...`,
+                    options: [`The actor provides the means.`, `The victim is under 18.`, `The actor's conduct causes suicide or attempted suicide resulting in SBI.`, `The actor has a prior conviction.`]
+                    ,answer: `The actor's conduct causes suicide or attempted suicide resulting in SBI.`,
+                    explanation: `Sec. 22.08(b) provides this enhancement.`
+                },
+                 {
+                    question: `Under 22.09, what is a "Consumer Product"?`,
+                    options: [`Any item sold in a store.`, `Any product offered for sale/consumption by public (incl food/drugs).`, `Food items only.`, `Prescription drugs only.`]
+                    ,answer: `Any product offered for sale/consumption by public (incl food/drugs).`,
+                    explanation: `Sec. 22.09(a)(1) provides this broad definition.`
+                },
+                {
+                    question: `Under 22.09, what does "Tamper" mean?`,
+                    options: [`To damage the packaging.`, `To steal the product.`, `To alter/add substance making it likely to cause SBI.`, `To change the price tag.`]
+                    ,answer: `To alter/add substance making it likely to cause SBI.`,
+                    explanation: `Sec. 22.09(a)(2) defines tamper specifically in relation to causing SBI.`
+                },
+                {
+                    question: `Knowingly tampering with a drug (consumer product) likely to cause SBI is what offense/level under 22.09?`,
+                    options: [`SJF.`, `F3.`, `F2.`, `F1.`]
+                    ,answer: `F2.`,
+                    explanation: `Sec. 22.09(b) defines the offense, and (d) sets the punishment as F2 (enhanced to F1 if SBI results).`
+                },
+                {
+                    question: `Knowingly threatening to tamper with food with intent to affect its sale is what offense/level under 22.09?`,
+                    options: [`SJF.`, `F3.`, `F2.`, `F1.`]
+                    ,answer: `F3.`,
+                    explanation: `Sec. 22.09(c) defines the threat offense, and (d) sets the punishment as F3.`
+                },
+                 {
+                    question: `Intentionally leaving a 6-year-old child unattended in a car for 10 minutes is what offense/level under 22.10?`,
+                    options: [`No offense.`, `Abandoning/Endangering (22.041) - SJF.`, `Leaving Child in Vehicle (22.10) - Class C.`, `Injury to a Child (22.04) - SJF.`]
+                    ,answer: `Leaving Child in Vehicle (22.10) - Class C.`,
+                    explanation: `Sec. 22.10(a) applies (longer than 5 min, child < 7, unattended by person 14+). (b) sets punishment as Class C.`
+                },
+                 {
+                    question: `While confined in jail, an inmate intentionally causes a guard to contact the inmate's urine with intent to harass. Offense/level?`,
+                    options: [`Assault (22.01) - F3.`, `Harassment by Person in Facility (22.11) - F3.`, `Indecent Assault (22.012) - Class A.`, `Both A and B.`]
+                    ,answer: `Both A and B.`,
+                    explanation: `Sec. 22.11(a)(1) defines this offense, punished as F3 under (b). Assault BI on Public Servant (22.01(b)(1)) could also apply (F3). Sec 22.11(c) allows prosecution under either or both.`
+                },
+                 {
+                    question: `Which bodily fluids/substances are specifically listed under Harassment by Persons in Facilities (22.11)?`,
+                    options: [`Blood, seminal fluid, vaginal fluid, saliva, urine, or feces.`, `Only blood or feces.`, `Any fluid considered hazardous.`, `Saliva or urine only.`]
+                    ,answer: `Blood, seminal fluid, vaginal fluid, saliva, urine, or feces.`,
+                    explanation: `Sec. 22.11(a) lists these specific substances, plus 'any other fluid or liquid'.`
+                },
+                {
+                    question: `The definition of "Correctional or detention facility" for Harassment under 22.11 includes secure juvenile facilities.`,
+                    options: [`True.`, `False.`]
+                    ,answer: `True.`,
+                    explanation: `Sec. 22.11(d)(2) explicitly includes secure correctional/detention facilities as defined by Family Code 51.02.`
+                },
+                {
+                    question: `What is the specific intent required for Harassment by Person in Facility (22.11)?`,
+                    options: [`Intent to cause SBI.`, `Intent to cause BI.`, `Intent to assault, harass, annoy, alarm, abuse, torment, or embarrass.`, `Intent to escape.`]
+                    ,answer: `Intent to assault, harass, annoy, alarm, abuse, torment, or embarrass.`,
+                    explanation: `Sec. 22.11(a) requires this specific broad intent related to harassment or assault.`
+                },
+                 {
+                    question: `Is warning the victim beforehand a defense to Harassment by Person in Facility (22.11)?`,
+                    options: [`Yes.`, `No.`, `Yes, it's an affirmative defense.`, `Only if the warning was written.`]
+                    ,answer: `No.`,
+                    explanation: `Sec. 22.11(g) explicitly states it is not a defense that the actor warned the person.`
+                },
+                {
+                    question: `Does Chapter 22 apply to a lawful medical procedure performed by a doctor with consent that results in injury to an unborn child?`,
+                    options: [`Yes.`, `No.`, `Only if the injury was intentional.`, `Only if the mother objects.`]
+                    ,answer: `No.`,
+                    explanation: `Sec. 22.12(2) states Chapter 22 does not apply to lawful medical procedures with consent against an unborn child.`
+                }
+
+            ];
+
+
+            const quizContainer = document.getElementById('quiz-container');
+            const checkAnswersBtn = document.getElementById('check-answers-btn');
+            const retakeQuizBtn = document.getElementById('retake-quiz-btn');
+            const quizResultsDiv = document.getElementById('quiz-results');
+            const quizScoreEl = document.getElementById('quiz-score');
+            const quizPercentageEl = document.getElementById('quiz-percentage');
+
+            function loadQuiz() {
+                // Shuffle the quiz data for a new order each time
+                const shuffledQuizData = [...quizData].sort(() => Math.random() - 0.5);
+                
+                quizContainer.innerHTML = ''; // Clear previous questions
+                
+                shuffledQuizData.forEach((q, index) => {
+                    const questionDiv = document.createElement('div');
+                    questionDiv.className = 'quiz-question';
+                    
+                    // Store the original question index to check the answer later
+                    const originalIndex = quizData.indexOf(q);
+                    
+                    let optionsHtml = q.options.map(option => {
+                        // Use template literals for the value to handle any special characters
+                        const escapedOption = `${option}`;
+                        // Ensure quotes within options are properly handled in the value attribute
+                        const valueAttribute = escapedOption.replace(/"/g, '&quot;').replace(/'/g, '&#39;');
+                        return `<label class="block"><input type="radio" name="q${index}" value="${valueAttribute}" data-original-index="${originalIndex}" class="mr-2">${option}</label>`;
+                    }).join('');
+                    
+                    const escapedQuestion = q.question;
+
+                    questionDiv.innerHTML = `
+                        <p class="font-semibold mb-2">${index + 1}. ${escapedQuestion}</p>
+                        <div class="space-y-2">${optionsHtml}</div>
+                        <div class="feedback hidden mt-2 p-2 rounded-lg text-sm"></div>
+                    `;
+                    quizContainer.appendChild(questionDiv);
+                });
+            }
+
+
+            loadQuiz(); // Initial load
+
+            checkAnswersBtn.addEventListener('click', () => {
+                let score = 0;
+                const totalQuestions = quizData.length;
+                const questions = quizContainer.querySelectorAll('.quiz-question');
+
+                questions.forEach((questionDiv, index) => {
+                    const selected = questionDiv.querySelector(`input[name="q${index}"]:checked`);
+                    const feedback = questionDiv.querySelector('.feedback');
+                    const radioButtons = questionDiv.querySelectorAll(`input[name="q${index}"]`);
+                    
+                    feedback.classList.remove('hidden', 'bg-green-100', 'text-green-800', 'bg-red-100', 'text-red-800', 'bg-yellow-100', 'text-yellow-800');
+                    
+                    if (selected) {
+                        const originalIndex = selected.dataset.originalIndex;
+                        const q = quizData[originalIndex];
+                        // Prepare the answer for comparison, escaping quotes similarly to how the value was set
+                        const correctAnswerValue = q.answer.replace(/"/g, '&quot;').replace(/'/g, '&#39;');
+
+
+                        // Compare the selected value with the answer
+                        if (selected.value === correctAnswerValue) {
+                            score++;
+                            feedback.textContent = `Correct! ${q.explanation}`;
+                            feedback.classList.add('bg-green-100', 'text-green-800');
+                        } else {
+                            feedback.textContent = `Incorrect. The correct answer is "${q.answer}". ${q.explanation}`;
+                            feedback.classList.add('bg-red-100', 'text-red-800');
+                        }
+                    } else {
+                        // Find the original question to show the answer
+                        const firstRadio = questionDiv.querySelector(`input[name="q${index}"]`);
+                         // Ensure firstRadio exists before accessing dataset
+                        if (firstRadio) {
+                            const originalIndex = firstRadio.dataset.originalIndex;
+                            const q = quizData[originalIndex];
+                            
+                            feedback.textContent = `You did not answer this question. The correct answer is "${q.answer}". ${q.explanation}`;
+                            feedback.classList.add('bg-yellow-100', 'text-yellow-800');
+                        } else {
+                             // Handle case where no radio buttons were found (shouldn't happen with valid HTML)
+                             feedback.textContent = 'Error processing this question.';
+                             feedback.classList.add('bg-red-100', 'text-red-800');
+                        }
+                    }
+                    
+                    // Disable radio buttons after submitting
+                    radioButtons.forEach(radio => {
+                        radio.disabled = true;
+                    });
+                     feedback.classList.remove('hidden'); // Ensure feedback is shown
+                });
+
+                // Calculate and display results
+                const percentage = ((score / totalQuestions) * 100).toFixed(0);
+                quizScoreEl.textContent = `Your Score: ${score} / ${totalQuestions}`;
+                quizPercentageEl.textContent = `Percentage: ${percentage}%`;
+                
+                quizResultsDiv.classList.remove('hidden');
+                checkAnswersBtn.classList.add('hidden');
+                retakeQuizBtn.classList.remove('hidden');
+            });
+
+            retakeQuizBtn.addEventListener('click', () => {
+                // Hide results and retake button
+                quizResultsDiv.classList.add('hidden');
+                retakeQuizBtn.classList.add('hidden');
+                
+                // Show submit button
+                checkAnswersBtn.classList.remove('hidden');
+                
+                // Reload the quiz (clears answers and feedback)
+                loadQuiz();
+            });
+
+
+            // --- RESOURCES LIST ---
+             const resources = [
+                { name: "Texas Penal Code - Official Site", url: "https://statutes.capitol.texas.gov/Default.aspx?Code=PE" },
+                { name: "Penal Code Ch. 22 - Assaultive Offenses", url: "https://statutes.capitol.texas.gov/Docs/PE/htm/PE.22.htm" },
+                { name: "Penal Code Sec. 1.07 - Definitions", url: "https://statutes.capitol.texas.gov/Docs/PE/htm/PE.1.htm#1.07" },
+                { name: "Penal Code Ch. 9 - Justification", url: "https://statutes.capitol.texas.gov/Docs/PE/htm/PE.9.htm"},
+                { name: "Penal Code Ch. 19 - Criminal Homicide", url: "https://statutes.capitol.texas.gov/Docs/PE/htm/PE.19.htm" },
+                { name: "Penal Code Sec. 20.03 - Kidnapping", url: "https://statutes.capitol.texas.gov/Docs/PE/htm/PE.20.htm#20.03" },
+                { name: "Penal Code Sec. 20.04 - Aggravated Kidnapping", url: "https://statutes.capitol.texas.gov/Docs/PE/htm/PE.20.htm#20.04" },
+                { name: "Penal Code Sec. 20.05 - Smuggling of Persons", url: "https://statutes.capitol.texas.gov/Docs/PE/htm/PE.20.htm#20.05" },
+                { name: "Penal Code Sec. 20A.02 - Trafficking of Persons", url: "https://statutes.capitol.texas.gov/Docs/PE/htm/PE.20A.htm#20A.02" },
+                { name: "Penal Code Sec. 21.11 - Indecency with a Child", url: "https://statutes.capitol.texas.gov/Docs/PE/htm/PE.21.htm#21.11" },
+                { name: "Penal Code Ch. 25 - Offenses Against the Family", url: "https://statutes.capitol.texas.gov/Docs/PE/htm/PE.25.htm" },
+                { name: "Penal Code Sec. 25.07 - Violation of Protective Order", url: "https://statutes.capitol.texas.gov/Docs/PE/htm/PE.25.htm#25.07" },
+                { name: "Penal Code Sec. 25.072 - Repeated Violation of Protective Orders", url: "https://statutes.capitol.texas.gov/Docs/PE/htm/PE.25.htm#25.072"},
+                { name: "Penal Code Sec. 25.11 - Continuous Violence Against Family", url: "https://statutes.capitol.texas.gov/Docs/PE/htm/PE.25.htm#25.11" },
+                { name: "Penal Code Sec. 71.01 - Criminal Street Gang Definition", url: "https://statutes.capitol.texas.gov/Docs/PE/htm/PE.71.htm#71.01" },
+                { name: "Family Code Ch. 51 - General Provisions (Juvenile)", url: "https://statutes.capitol.texas.gov/Docs/FA/htm/FA.51.htm" },
+                { name: "Family Code Ch. 71 - Definitions (Family Violence)", url: "https://statutes.capitol.texas.gov/Docs/FA/htm/FA.71.htm" },
+                 { name: "Family Code Sec. 160.102 - Assisted Reproduction Definitions", url: "https://statutes.capitol.texas.gov/Docs/FA/htm/FA.160.htm#160.102"},
+                 { name: "Family Code Sec. 262.302 - Emergency Possession (Baby Moses)", url: "https://statutes.capitol.texas.gov/Docs/FA/htm/FA.262.htm#262.302"},
+                { name: "Govt Code Sec. 156.001 - Process Server Definition", url: "https://statutes.capitol.texas.gov/Docs/GV/htm/GV.156.htm#156.001"},
+                { name: "H&S Code Sec. 431.002 - Food/Drug Definitions", url: "https://statutes.capitol.texas.gov/Docs/HS/htm/HS.431.htm#431.002"},
+                { name: "H&S Code Sec. 773.003 - EMS Personnel Definition", url: "https://statutes.capitol.texas.gov/Docs/HS/htm/HS.773.htm#773.003"},
+                { name: "Occ Code Ch. 1702 - Security Officers", url: "https://statutes.capitol.texas.gov/Docs/OC/htm/OC.1702.htm" },
+                { name: "Trans Code Sec. 501.002 - Motor Vehicle Definition", url: "https://statutes.capitol.texas.gov/Docs/TN/htm/TN.501.htm#501.002"},
+                { name: "Utilities Code (Various Sections)", url: "https://statutes.capitol.texas.gov/Docs/UT/htm/UT.11.htm"} // Link to general area
+            ];
+            const resourcesList = document.getElementById('resources-list');
+            resources.sort((a, b) => a.name.localeCompare(b.name));
+            resources.forEach(res => {
+                const link = document.createElement('a'); // Use an anchor tag for links
+                link.href = res.url;
+                link.target = '_blank';
+                link.rel = 'noopener noreferrer'; // Good practice for security
+                link.className = 'text-blue-600 hover:underline p-2 bg-gray-50 rounded-md block hover:bg-gray-100';
+                link.innerHTML = `<i class="fas fa-external-link-alt mr-2"></i>${res.name}`;
+                resourcesList.appendChild(link);
+            });
+        });
+    </script>
+</body>
+</html>
+

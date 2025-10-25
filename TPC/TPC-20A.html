@@ -1,0 +1,731 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ch. 20A Study Guide: Texas Penal Code</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet">
+    <style>
+        :root {
+            --header-bg: #1f2937; /* Dark Gray */
+            --bg-color: #f3f4f6; /* Light Gray */
+            --tab-active-bg: #ef4444; /* Red */
+            --tab-active-text: #ffffff;
+            --card-bg: #ffffff;
+            --text-color: #111827;
+            --link-color: #dc2626; /* Red Link */
+        }
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            font-family: 'Inter', sans-serif;
+        }
+        @import url('https://rsms.me/inter/inter.css');
+        .tab-content { display: none; }
+        .tab-content.active { display: block; }
+        .tab.active {
+            background-color: var(--tab-active-bg);
+            color: var(--tab-active-text);
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .tab {
+            transition: all 0.3s ease-in-out;
+        }
+        .definition-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 1rem;
+        }
+        .definition-item {
+            background-color: #f9fafb;
+            padding: 0.75rem;
+            border-radius: 0.5rem;
+            border: 1px solid #e5e7eb;
+        }
+        .definition-term {
+            font-weight: 600;
+            color: #111827;
+        }
+        .definition-desc {
+            font-size: 0.875rem;
+            color: #4b5563;
+        }
+        .quiz-question p { margin-bottom: 0.5rem; }
+        .quiz-question label { display: block; margin-bottom: 0.5rem; padding: 0.5rem; border: 1px solid #e5e7eb; border-radius: 0.375rem; cursor: pointer; transition: background-color 0.2s; }
+        .quiz-question label:hover { background-color: #f9fafb; }
+        .quiz-question input[type="radio"] { margin-right: 0.5rem; }
+        .feedback { margin-top: 0.5rem; padding: 0.5rem; border-radius: 0.375rem; font-size: 0.875rem; }
+        .feedback.correct { background-color: #dcfce7; color: #166534; }
+        .feedback.incorrect { background-color: #fee2e2; color: #991b1b; }
+        .feedback.unanswered { background-color: #ffedd5; color: #9a3412; }
+        .hidden { display: none; }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Header -->
+    <header class="bg-gray-800 text-white p-4 shadow-md">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-2xl font-bold">
+                <i class="fas fa-user-lock mr-2"></i>Ch. 20A: Trafficking of Persons
+            </h1>
+            <a href="index.html" class="text-sm text-red-300 hover:text-red-100 hover:underline">
+                <i class="fas fa-arrow-left mr-1"></i> Back to Main Page
+            </a>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container mx-auto p-4 md:p-6">
+        <!-- Tab Navigation -->
+        <div class="mb-6 bg-white rounded-lg shadow-md overflow-x-auto">
+            <nav id="tabs" class="flex flex-row space-x-1 p-2">
+                <button data-tab="key-definitions" class="tab active flex-1 md:flex-none flex items-center justify-center px-4 py-2 text-sm font-semibold rounded-lg text-gray-600 hover:bg-red-100">
+                    <i class="fas fa-book mr-2"></i> <span class="hidden md:inline">Key Definitions</span>
+                </button>
+                <button data-tab="key-sections" class="tab flex-1 md:flex-none flex items-center justify-center px-4 py-2 text-sm font-semibold rounded-lg text-gray-600 hover:bg-red-100">
+                    <i class="fas fa-gavel mr-2"></i> <span class="hidden md:inline">Key Sections</span>
+                </button>
+                <button data-tab="knowledge-check" class="tab flex-1 md:flex-none flex items-center justify-center px-4 py-2 text-sm font-semibold rounded-lg text-gray-600 hover:bg-red-100">
+                    <i class="fas fa-question-circle mr-2"></i> <span class="hidden md:inline">Knowledge Check</span>
+                </button>
+                <button data-tab="resources" class="tab flex-1 md:flex-none flex items-center justify-center px-4 py-2 text-sm font-semibold rounded-lg text-gray-600 hover:bg-red-100">
+                    <i class="fas fa-link mr-2"></i> <span class="hidden md:inline">Resources</span>
+                </button>
+            </nav>
+        </div>
+
+        <!-- Tab Content -->
+        <div id="tab-contents">
+            <!-- Key Definitions Tab -->
+            <div id="key-definitions" class="tab-content active">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-2xl font-bold mb-4">Key Definitions (Ch. 20A)</h2>
+                    <div class="definition-grid">
+                        <div class="definition-item">
+                            <span class="definition-term">Child (20A.01(1))</span>
+                            <p class="definition-desc">A person younger than 18 years of age.</p>
+                        </div>
+                         <div class="definition-item">
+                            <span class="definition-term">Coercion (20A.01(1-a))</span>
+                            <p class="definition-desc">Includes (A) destroying/withholding documents, (B) causing intoxication without consent, or (C) withholding alcohol/drugs from a dependent person to impair their ability to resist.</p>
+                        </div>
+                        <div class="definition-item">
+                            <span class="definition-term">Disabled individual (20A.01(1-b))</span>
+                            <p class="definition-desc">Has the meaning assigned by Section 22.021(b) (Aggravated Sexual Assault).</p>
+                        </div>
+                        <div class="definition-item">
+                            <span class="definition-term">Forced labor or services (20A.01(2))</span>
+                            <p class="definition-desc">Labor or services (other than sexual conduct) performed by another and obtained through the actor's use of force, fraud, or coercion.</p>
+                        </div>
+                        <div class="definition-item">
+                            <span class="definition-term">Premises (20A.01(2-a))</span>
+                            <p class="definition-desc">Has the meaning assigned by Section 481.134, Health and Safety Code (related to drug-free zones).</p>
+                        </div>
+                         <div class="definition-item">
+                            <span class="definition-term">School (20A.01(2-b))</span>
+                            <p class="definition-desc">A public or private primary or secondary school.</p>
+                        </div>
+                        <div class="definition-item">
+                            <span class="definition-term">Sexual conduct (20A.01(3))</span>
+                            <p class="definition-desc">Has the meaning assigned by Section 43.25 (Sexual Performance by a Child).</p>
+                        </div>
+                        <div class="definition-item">
+                            <span class="definition-term">Traffic (20A.01(4))</span>
+                            <p class="definition-desc">To transport, entice, recruit, harbor, provide, or otherwise obtain another person by any means.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Key Sections Tab -->
+            <div id="key-sections" class="tab-content space-y-6">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-xl font-bold mb-4 border-b pb-2"><a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.20A.htm#20A.02" target="_blank" class="text-red-600 hover:underline">Sec. 20A.02. Trafficking of Persons</a></h2>
+                    <p class="text-xs text-gray-500 mb-2">Note: Penalties reflect amendments effective Sept 1, 2025, as provided in the source text.</p>
+                    <ul class="list-disc list-inside text-sm text-gray-700 space-y-2">
+                        <li><strong class="font-semibold">Offense (a):</strong> A person commits an offense if they knowingly:
+                            <ol class="list-decimal list-inside ml-4 space-y-1">
+                                <li><strong class="font-semibold">Traffics</strong> another with intent they engage in <strong class="font-semibold">forced labor/services</strong>.</li>
+                                <li><strong class="font-semibold">Receives benefit</strong> from a venture involving (1).</li>
+                                <li><strong class="font-semibold">Traffics</strong> another and uses <strong class="font-semibold">force, fraud, or coercion</strong> to cause them to engage in Prostitution (43.02), Promotion (43.03/43.031), Agg. Promotion (43.04/43.041), or Compelling Prostitution (43.05).</li>
+                                <li><strong class="font-semibold">Receives benefit</strong> from a venture involving (3) or <strong class="font-semibold">engages in sexual conduct</strong> with a person trafficked under (3).</li>
+                                <li><strong class="font-semibold">Traffics a child or disabled individual</strong> with intent they engage in <strong class="font-semibold">forced labor/services</strong> (culpability regarding age/disability not required).</li>
+                                <li><strong class="font-semibold">Receives benefit</strong> from a venture involving (5) (culpability regarding age/disability not required).</li>
+                                <li><strong class="font-semibold">Traffics a child or disabled individual</strong> and causes them to engage in or become victim of listed <strong class="font-semibold">sexual offenses</strong> (e.g., Continuous Sexual Abuse, Indecency, Sexual Assault, Agg. SA, Prostitution, Promotion, Compelling Prostitution, Sexual Performance, Employ Harmful, Child Porn) (culpability regarding age/disability not required).</li>
+                                <li><strong class="font-semibold">Receives benefit</strong> from a venture involving (7) or <strong class="font-semibold">engages in sexual conduct</strong> with a child/disabled individual trafficked under (7) (culpability regarding age/disability not required).</li>
+                            </ol>
+                        </li>
+                         <li><strong class="font-semibold">Base Penalty (b - per SB 955, SB 1212, HB 1778 eff 9/1/25):</strong> <strong class="font-semibold">Felony of the first degree</strong>. (Note: SB 955 also lists F2 base with F1 enhancements, presented below for context).</li>
+                         <li><strong class="font-semibold">Enhancements to F1 (per SB 955 eff 9/1/25):</strong> Becomes F1 if:
+                            <ul class="list-disc list-inside ml-4">
+                                <li>Offense involves a child/disabled individual (a)(5)-(8).</li>
+                                <li>Results in SBI or Death (of victim or unborn child).</li>
+                                <li>Actor used/exhibited deadly weapon, impeded breathing/circulation, or recruited from specific shelters/facilities/correctional facilities.</li>
+                            </ul>
+                         </li>
+                         <li><strong class="font-semibold">Enhanced Penalty Range (b-1 - per SB 955, SB 1212, HB 1778 eff 9/1/25):</strong> Becomes an F1 punishable by <strong class="font-semibold">life or 25-99 years</strong> if committed on or within 1000 ft of:
+                            <ul class="list-disc list-inside ml-4">
+                                <li>School, Higher Ed Institution, Juvenile Facility, Secure Correctional Facility, Shelter (runaway, foster, homeless, trafficking, DV, SA), Youth Community Center, Child-Care Facility, Correctional Facility (SB 955 only adds correctional facility).</li>
+                                <li>Official school function or UIL event.</li>
+                                <li>(SB 1212 / HB 1778 add: School bus stop, pick-up/drop-off zone, or school bus/transportation vehicle).</li>
+                            </ul>
+                         </li>
+                        <li><strong class="font-semibold">Overlap (c):</strong> Can be prosecuted under this section and another section if conduct fits both.</li>
+                        <li><strong class="font-semibold">Limitation (d):</strong> Cannot convict under (a)(7)(A) (causing victim Continuous Sexual Abuse) and Sec. 21.02 (Continuous Sexual Abuse) in the same action unless charged in alternative, occurred outside the period, or lesser included.</li>
+                        <li><strong class="font-semibold">No Defense (e):</strong> For prosecution under (a)(7) or (8) involving prostitution, it is NOT a defense that the child/disabled individual lacked culpable mental state or did not complete the act.</li>
+                    </ul>
+                </div>
+
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-xl font-bold mb-4 border-b pb-2"><a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.20A.htm#20A.03" target="_blank" class="text-red-600 hover:underline">Sec. 20A.03. Continuous Trafficking of Persons</a></h2>
+                    <ul class="list-disc list-inside text-sm text-gray-700 space-y-2">
+                        <li><strong class="font-semibold">Offense (a):</strong> A person commits an offense if, during a period of <strong class="font-semibold">30 or more days</strong>, the person engages <strong class="font-semibold">two or more times</strong> in conduct constituting an offense under Sec. 20A.02 against one or more victims.</li>
+                        <li><strong class="font-semibold">Jury Unanimity (b):</strong> Jury does *not* need to agree on specific conduct or exact dates, only that the defendant engaged twice or more during the 30+ day period.</li>
+                        <li><strong class="font-semibold">Conviction Limitation (c):</strong> Similar to 20A.02(d), cannot convict under this section AND 20A.02 in the same action unless charged in alternative, occurred outside the period, or lesser included.</li>
+                         <li><strong class="font-semibold">Charging Limitation (d):</strong> Cannot charge more than *one count* under (a) if all conduct is against the same victim.</li>
+                        <li><strong class="font-semibold">Penalty (e):</strong> <strong class="font-semibold">Felony of the first degree</strong>, punishable by <strong class="font-semibold">life or 25-99 years</strong>.</li>
+                        <li><strong class="font-semibold">No Defense (f):</strong> Similar to 20A.02(e), for prosecution based on causing prostitution, it's NOT a defense that the child/disabled victim lacked mental state or didn't complete the act.</li>
+                    </ul>
+                </div>
+
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-xl font-bold mb-4 border-b pb-2"><a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.20A.htm#20A.04" target="_blank" class="text-red-600 hover:underline">Sec. 20A.04. Accomplice Witness; Testimony and Immunity</a></h2>
+                    <ul class="list-disc list-inside text-sm text-gray-700 space-y-2">
+                        <li><strong class="font-semibold">Compelled Testimony (a):</strong> A party to a Ch. 20A offense may be required to testify.</li>
+                        <li><strong class="font-semibold">Immunity (b):</strong> A party required to testify *may not* be prosecuted for any offense they testify about (except Aggravated Perjury), and the testimony cannot be used against them.</li>
+                        <li><strong class="font-semibold">Uncorroborated Testimony (c):</strong> A conviction under Ch. 20A *may* be had on the uncorroborated testimony of a party to the offense.</li>
+                    </ul>
+                </div>
+
+                 <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-xl font-bold mb-4 border-b pb-2"><a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.20A.htm#20A.05" target="_blank" class="text-red-600 hover:underline">Sec. 20A.05. Prosecution by Attorney General</a></h2>
+                    <ul class="list-disc list-inside text-sm text-gray-700 space-y-2">
+                        <li><strong class="font-semibold">Jurisdiction:</strong> The Attorney General has jurisdiction to prosecute offenses under this chapter.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Knowledge Check Tab -->
+            <div id="knowledge-check" class="tab-content">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-2xl font-bold mb-4">Knowledge Check (Ch. 20A)</h2>
+                    <p class="mb-6 text-gray-600">Test your understanding of the material. (55 Questions)</p>
+                    <div id="quiz-container" class="space-y-8">
+                        <!-- Questions will be dynamically inserted here -->
+                    </div>
+                    <!-- Results Div -->
+                    <div id="quiz-results" class="hidden mt-8 text-center">
+                        <h3 class="text-2xl font-bold" id="quiz-score"></h3>
+                        <p class="text-lg text-gray-700" id="quiz-percentage"></p>
+                    </div>
+                    <!-- Button Container -->
+                    <div class="mt-8 text-center space-x-4">
+                        <button id="check-answers-btn" class="bg-red-600 text-white font-bold py-2 px-6 rounded-lg hover:bg-red-700 transition-colors">Submit Answers</button>
+                        <button id="retake-quiz-btn" class="hidden bg-gray-600 text-white font-bold py-2 px-6 rounded-lg hover:bg-gray-700 transition-colors">Retake Quiz</button>
+                    </div>
+                </div>
+            </div>
+        <div id="tab-contents">
+            <!-- Key Definitions Tab -->
+            <div id="key-definitions" class="tab-content active">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-2xl font-bold mb-4">External Resources</h2>
+                    <p class="mb-6 text-gray-600">Quick links to official Texas statutes and related definitions.</p>
+                    <div id="resources-list" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 text-sm">
+                        <!-- Links will be dynamically inserted here -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const tabs = document.querySelectorAll('#tabs button');
+            const tabContents = document.querySelectorAll('.tab-content');
+
+            tabs.forEach(tab => {
+                tab.addEventListener('click', () => {
+                    tabs.forEach(t => t.classList.remove('active'));
+                    tabContents.forEach(c => c.classList.remove('active'));
+                    tab.classList.add('active');
+                    document.getElementById(tab.dataset.tab).classList.add('active');
+                });
+            });
+
+            // --- QUIZ DATA (CHAPTER 20A) ---
+            const quizData = [
+                {
+                    question: "What is the definition of 'Child' in Chapter 20A?",
+                    options: ["Younger than 17", "Younger than 18", "16 or younger", "Younger than 15"],
+                    answer: "Younger than 18",
+                    explanation: "Sec. 20A.01(1) defines 'Child' as a person younger than 18 years of age."
+                },
+                {
+                    question: "Which of these is included in the definition of 'Coercion' under Sec. 20A.01(1-a)?",
+                    options: ["Offering someone a job.", "Withholding a trafficked person's passport or government ID.", "Paying someone less than minimum wage.", "Threatening to report lawful conduct."],
+                    answer: "Withholding a trafficked person's passport or government ID.",
+                    explanation: "Sec. 20A.01(1-a)(A) explicitly includes destroying, concealing, confiscating, or withholding government records or identifying information as coercion."
+                },
+                {
+                    question: "Is causing a trafficked person to become intoxicated without consent considered 'Coercion'?",
+                    options: ["No, only physical force counts.", "Yes, if it impairs their ability to appraise or resist conduct.", "Only if the substance is illegal.", "Only if the person is a child."],
+                    answer: "Yes, if it impairs their ability to appraise or resist conduct.",
+                    explanation: "Sec. 20A.01(1-a)(B) includes causing intoxication without consent if it impairs the person's ability to appraise the nature of or resist engaging in conduct."
+                },
+                {
+                    question: "Is withholding alcohol from a trafficked person with a chemical dependency considered 'Coercion' under 20A.01?",
+                    options: ["No, coercion only involves threats or physical force.", "Yes, if it impairs their ability to appraise or resist engaging in conduct.", "Only if the person dies from withdrawal.", "No, unless the actor provided the alcohol initially."],
+                    answer: "Yes, if it impairs their ability to appraise or resist engaging in conduct.",
+                    explanation: "Sec. 20A.01(1-a)(C) specifically includes withholding alcohol or controlled substances from a dependent person as a form of coercion."
+                },
+                {
+                    question: "The definition of 'Disabled individual' in 20A.01 points to the definition in which other section?",
+                    options: ["Sec. 22.01 (Assault)", "Sec. 22.021(b) (Agg. Sexual Assault)", "Sec. 1.07 (Definitions)", "Sec. 49.01 (Intoxication)"],
+                    answer: "Sec. 22.021(b) (Agg. Sexual Assault)",
+                    explanation: "Sec. 20A.01(1-b) states '\"Disabled individual\" has the meaning assigned by Section 22.021(b).'"
+                },
+                {
+                    question: "'Forced labor or services' under Sec. 20A.01(2) specifically excludes labor or services that constitute...?",
+                    options: ["Domestic work", "Agricultural work", "Sexual conduct", "Work under hazardous conditions"],
+                    answer: "Sexual conduct",
+                    explanation: "Sec. 20A.01(2) defines it as 'labor or services, *other than labor or services that constitute sexual conduct*...'"
+                },
+                {
+                    question: "The definition of 'Premises' in 20A.01 points to the definition in which other statute?",
+                    options: ["Sec. 481.134, Health and Safety Code", "Sec. 30.01, Penal Code", "Sec. 1.07, Penal Code", "Sec. 42.002, Human Resources Code"],
+                    answer: "Sec. 481.134, Health and Safety Code",
+                    explanation: "Sec. 20A.01(2-a) states '\"Premises\" has the meaning assigned by Section 481.134, Health and Safety Code.'"
+                },
+                {
+                    question: "What is the definition of 'School' in Sec. 20A.01(2-b)?",
+                    options: ["Only a public primary school.", "Only a private secondary school.", "A public or private primary or secondary school.", "Any institution of higher education."],
+                    answer: "A public or private primary or secondary school.",
+                    explanation: "Sec. 20A.01(2-b) provides this specific definition."
+                },
+                {
+                    question: "The definition of 'Sexual Conduct' in 20A.01 points to the definition in which other section?",
+                    options: ["Sec. 21.01", "Sec. 22.011", "Sec. 43.25", "Sec. 43.02"],
+                    answer: "Sec. 43.25",
+                    explanation: "Sec. 20A.01(3) states '\"Sexual conduct\" has the meaning assigned by Section 43.25.'"
+                },
+                {
+                    question: "How is 'Traffic' defined in Sec. 20A.01(4)?",
+                    options: ["Only transporting a person across state lines.", "Only recruiting a person for sexual conduct.", "To transport, entice, recruit, harbor, provide, or otherwise obtain another person by any means.", "Only obtaining a person through force or fraud."],
+                    answer: "To transport, entice, recruit, harbor, provide, or otherwise obtain another person by any means.",
+                    explanation: "Sec. 20A.01(4) provides a broad definition including transport, entice, recruit, harbor, provide, or otherwise obtain."
+                },
+                {
+                    question: "A person transports another person with the intent that the transported person will be forced to work in a field against their will. What offense is this?",
+                    options: ["Kidnapping", "Smuggling of Persons", "Trafficking of Persons (20A.02(a)(1))", "Unlawful Restraint"],
+                    answer: "Trafficking of Persons (20A.02(a)(1))",
+                    explanation: "Sec. 20A.02(a)(1) prohibits knowingly trafficking another person with the intent that they engage in forced labor or services."
+                },
+                {
+                    question: "A restaurant owner knowingly hires and benefits from the labor of workers who were trafficked and are being forced to work. What offense is this?",
+                    options: ["No offense, they didn't do the trafficking.", "Theft of Service", "Trafficking of Persons (20A.02(a)(2))", "Money Laundering"],
+                    answer: "Trafficking of Persons (20A.02(a)(2))",
+                    explanation: "Sec. 20A.02(a)(2) prohibits knowingly receiving a benefit from participating in a venture involving forced labor, including receiving labor known to be forced."
+                },
+                {
+                    question: "A person traffics an adult and uses coercion (e.g., withholding their passport) to force them into prostitution. What offense is this?",
+                    options: ["Promotion of Prostitution", "Compelling Prostitution", "Trafficking of Persons (20A.02(a)(3))", "Aggravated Promotion of Prostitution"],
+                    answer: "Trafficking of Persons (20A.02(a)(3))",
+                    explanation: "Sec. 20A.02(a)(3) specifically covers trafficking another and using force, fraud, or coercion to cause them to engage in conduct prohibited by listed prostitution offenses (including 43.02)."
+                },
+                {
+                    question: "Which of these offenses is listed under Sec. 20A.02(a)(3) (trafficking adult by F/F/C into prostitution-related offenses)?",
+                    options: ["Sec. 43.02 (Prostitution)", "Sec. 43.25 (Sexual Performance)", "Sec. 22.011 (Sexual Assault)", "Sec. 21.11 (Indecency with a Child)"],
+                    answer: "Sec. 43.02 (Prostitution)",
+                    explanation: "Sec. 20A.02(a)(3) lists 43.02, 43.03, 43.031, 43.04, 43.041, and 43.05. The others are listed under (a)(7) for trafficking a child."
+                },
+                {
+                    question: "A 'john' pays for sex with a person he knows was trafficked through force, fraud, or coercion under 20A.02(a)(3). What offense has the 'john' committed?",
+                    options: ["Prostitution", "Solicitation of Prostitution", "Trafficking of Persons (20A.02(a)(4))", "No trafficking offense, only solicitation."],
+                    answer: "Trafficking of Persons (20A.02(a)(4))",
+                    explanation: "Sec. 20A.02(a)(4) makes it an offense to 'engage in sexual conduct with a person trafficked in the manner described in Subdivision (3)'."
+                },
+                {
+                    question: "A person traffics a 16-year-old with the intent that the child will be forced to work in a factory. Does the actor need to know the victim is under 18?",
+                    options: ["Yes, knowledge of age is required.", "No, culpability regarding the age of the child is not required for this offense.", "Only if the actor receives a benefit.", "Yes, unless force was used."],
+                    answer: "No, culpability regarding the age of the child is not required for this offense.",
+                    explanation: "Sec. 20A.02(a)(5) explicitly states 'regardless of whether the person knows the age of the child'."
+                },
+                {
+                    question: "Trafficking a disabled individual for forced labor falls under which subdivision?",
+                    options: ["20A.02(a)(1)", "20A.02(a)(3)", "20A.02(a)(5)", "20A.02(a)(7)"],
+                    answer: "20A.02(a)(5)",
+                    explanation: "Sec. 20A.02(a)(5) specifically addresses trafficking a child OR disabled individual with intent they engage in forced labor or services."
+                },
+                {
+                    question: "A person traffics a child and causes the child to engage in conduct prohibited by Sec. 43.25 (Sexual Performance by a Child). What specific subdivision applies?",
+                    options: ["20A.02(a)(1)", "20A.02(a)(3)", "20A.02(a)(5)", "20A.02(a)(7)"],
+                    answer: "20A.02(a)(7)",
+                    explanation: "Sec. 20A.02(a)(7) covers trafficking a child and causing them to engage in or become a victim of various listed sexual offenses, including 43.25."
+                },
+                {
+                    question: "Which of these sexual offenses is listed under Sec. 20A.02(a)(7) (trafficking a child into sexual offenses)?",
+                    options: ["Sec. 22.011 (Sexual Assault)", "Sec. 43.01 (Prostitution definitions)", "Sec. 20.04 (Aggravated Kidnapping)", "Sec. 22.01 (Assault)"],
+                    answer: "Sec. 22.011 (Sexual Assault)",
+                    explanation: "Sec. 20A.02(a)(7) lists many offenses, including (C) Sec. 22.011 (Sexual Assault)."
+                },
+                {
+                    question: "Is knowledge of the victim's age or disability status required for an offense under Sec. 20A.02(a)(8) (benefiting from or engaging in sex with a trafficked child/disabled individual)?",
+                    options: ["Yes, always.", "Only if the actor is related to the victim.", "No, knowledge of age or disability is not required.", "Only if the underlying offense was a felony."],
+                    answer: "No, knowledge of age or disability is not required.",
+                    explanation: "Sec. 20A.02(a)(8) explicitly states 'regardless of whether the person knows the age of the child or whether the person knows the victim is disabled'."
+                },
+                {
+                    question: "Receiving a benefit from a venture involving trafficking a child for sexual conduct falls under which subdivision?",
+                    options: ["20A.02(a)(2)", "20A.02(a)(4)", "20A.02(a)(6)", "20A.02(a)(8)"],
+                    answer: "20A.02(a)(8)",
+                    explanation: "Sec. 20A.02(a)(8) covers receiving a benefit from a venture involving trafficking a child/disabled individual for sexual offenses listed under (a)(7)."
+                },
+                {
+                    question: "According to the 2025 amended versions provided (SB 1212/HB 1778), what is the default penalty for Trafficking of Persons (20A.02)?",
+                    options: ["Felony of the second degree", "Felony of the first degree", "State jail felony", "Felony of the third degree"],
+                    answer: "Felony of the first degree",
+                    explanation: "Sec. 20A.02(b) as reenacted by SB 1212 and HB 1778 (effective 9/1/2025) states: 'Except as otherwise provided by Subsection (b-1), an offense under this section is a felony of the first degree.'"
+                },
+                {
+                    question: "Under the 2025 amended version (SB 955), which of these circumstances enhances Trafficking of Persons to a first-degree felony?",
+                    options: ["The trafficked person was transported across state lines.", "The actor received more than $1,000.", "The offense involved trafficking a child or disabled individual (a)(5)-(8).", "The actor used deception but not force."],
+                    answer: "The offense involved trafficking a child or disabled individual (a)(5)-(8).",
+                    explanation: "Sec. 20A.02(b)(1) as amended by SB 955 (effective 9/1/2025) lists this as a condition for F1 enhancement."
+                },
+                {
+                    question: "Under the 2025 amended version (SB 955), which act during the commission of trafficking enhances the offense to a first-degree felony?",
+                    options: ["Using handcuffs", "Driving recklessly", "Impeding the normal breathing or circulation by applying pressure to the throat or neck.", "Threatening to call immigration."],
+                    answer: "Impeding the normal breathing or circulation by applying pressure to the throat or neck.",
+                    explanation: "Sec. 20A.02(b)(4)(B) as amended by SB 955 (effective 9/1/2025) lists this specific act as an F1 enhancement."
+                },
+                {
+                    question: "Under the 2025 amended version (SB 955), if trafficking results in the death of the trafficked person's *unborn child*, what is the penalty?",
+                    options: ["Felony of the second degree", "Felony of the first degree", "Capital Felony", "No enhancement for the unborn child."],
+                    answer: "Felony of the first degree",
+                    explanation: "Sec. 20A.02(b)(3) as amended by SB 955 (effective 9/1/2025) lists 'death of an unborn child of the person who is trafficked' as an F1 enhancement."
+                },
+                {
+                    question: "Under the 2025 amended version (SB 955), is recruiting a trafficked person from a *correctional facility* an F1 enhancement?",
+                    options: ["No, only from shelters.", "Yes, recruiting from a correctional facility while the person was confined is an F1 enhancement.", "Only if the person is a child.", "No, this is a separate offense."],
+                    answer: "Yes, recruiting from a correctional facility while the person was confined is an F1 enhancement.",
+                    explanation: "Sec. 20A.02(b)(4)(D) as amended by SB 955 (effective 9/1/2025) lists this as an F1 enhancement."
+                },
+                {
+                    question: "According to the 2025 amended versions (SB 955/SB 1212/HB 1778), what is the enhanced penalty range if trafficking occurs within 1000 ft of a school?",
+                    options: ["Life or 15-99 years", "Life or 25-99 years", "Life only", "Life or 5-99 years"],
+                    answer: "Life or 25-99 years",
+                    explanation: "Sec. 20A.02(b-1) as amended by all three 2025 bills specifies a first-degree felony 'punishable by imprisonment... for life or for a term of not more than 99 years or less than 25 years' for offenses near certain locations, including schools."
+                },
+                {
+                    question: "Which of these locations triggers the enhanced 'Life or 25-99' penalty range under the 2025 amended Sec. 20A.02(b-1)?",
+                    options: ["A public park", "A shopping mall", "A shelter serving runaway youth or trafficking victims.", "A movie theater"],
+                    answer: "A shelter serving runaway youth or trafficking victims.",
+                    explanation: "Sec. 20A.02(b-1)(1)(E) as amended specifically lists shelters or facilities serving runaway youth, foster children, homeless, or victims of trafficking, DV, or SA."
+                },
+                {
+                    question: "Under the 2025 amended versions, which location triggers the 'Life or 25-99' penalty range for trafficking?",
+                    options: ["Within 1000 ft of a public library.", "Within 1000 ft of a higher education institution.", "Within 1000 ft of a hospital.", "Within 1000 ft of a government building."],
+                    answer: "Within 1000 ft of a higher education institution.",
+                    explanation: "Sec. 20A.02(b-1)(1)(B) as amended by the 2025 bills includes 'an institution of higher education'."
+                },
+                {
+                    question: "Under the 2025 amended Sec. 20A.02(b-1), the enhanced 'Life or 25-99' penalty applies if the offense occurs on or within 1000 ft of what type of facility?",
+                    options: ["A sports arena", "A child-care facility", "A bank", "A grocery store"],
+                    answer: "A child-care facility",
+                    explanation: "Sec. 20A.02(b-1)(1)(G) (in SB 955/SB 1212/HB 1778) lists 'a child-care facility, as defined by Section 42.002, Human Resources Code'."
+                },
+                {
+                    question: "Does the 'Life or 25-99' enhancement under 20A.02(b-1) apply to an offense committed at a UIL event?",
+                    options: ["No, only on school property.", "Yes, it applies to an event sponsored or sanctioned by the University Interscholastic League.", "Only if the event is a state championship.", "Only if the actor is a student."],
+                    answer: "Yes, it applies to an event sponsored or sanctioned by the University Interscholastic League.",
+                    explanation: "Sec. 20A.02(b-1)(2)(B) as amended by the 2025 bills includes 'an event sponsored or sanctioned by the University Interscholastic League'."
+                },
+                {
+                    question: "According to the 2025 amended versions (SB 1212/HB 1778), does the 'Life or 25-99' enhancement apply if the trafficking occurs on a school bus?",
+                    options: ["No, only within 1000 ft of the school.", "Yes, it applies if the offense occurs in a school bus.", "Only if the bus is moving.", "Only if children are present."],
+                    answer: "Yes, it applies if the offense occurs in a school bus.",
+                    explanation: "Sec. 20A.02(b-1)(3) as amended by SB 1212 and HB 1778 specifically adds 'in a school bus or other passenger transportation vehicle of a school'."
+                },
+                {
+                    question: "Can a person be prosecuted for both Trafficking (20A.02) and another offense (like Assault) if the conduct fits both?",
+                    options: ["No, only the more serious offense.", "No, only the trafficking offense.", "Yes, the actor may be prosecuted under either or both sections.", "Only if the victim agrees."],
+                    answer: "Yes, the actor may be prosecuted under either or both sections.",
+                    explanation: "Sec. 20A.02(c) explicitly states the actor 'may be prosecuted under either section or under both sections.'"
+                },
+                {
+                    question: "A defendant is charged with 20A.02(a)(7)(A) (causing victim Continuous Sexual Abuse) and Sec. 21.02 (Continuous Sexual Abuse) for the same victim. Can they be convicted of both in the same trial?",
+                    options: ["Yes, 20A.02(c) allows it.", "No, unless one of the exceptions in 20A.02(d) applies (e.g., charged in alternative).", "Yes, because one is a trafficking offense and one is a sexual offense.", "No, this is always double jeopardy."],
+                    answer: "No, unless one of the exceptions in 20A.02(d) applies (e.g., charged in alternative).",
+                    explanation: "Sec. 20A.02(d) provides a specific limitation for this scenario, stating the defendant 'may not be convicted' of both unless an exception like (d)(1) 'charged in the alternative' applies."
+                },
+                {
+                    question: "For a prosecution under 20A.02(a)(7) involving causing a child victim to engage in prostitution, is it a defense that the child consented?",
+                    options: ["Yes, consent is always a defense.", "No, Sec. 20A.02(e) states it is not a defense that the child lacked culpable mental state.", "Only if the child initiated the act.", "Yes, if the child was over 16."],
+                    answer: "No, Sec. 20A.02(e) states it is not a defense that the child lacked culpable mental state.",
+                    explanation: "Sec. 20A.02(e) removes the defense that the child/disabled individual lacked the mental state for prostitution or didn't complete the act, effectively negating consent in this context."
+                },
+                {
+                    question: "Is it a defense under 20A.02(e) that the trafficked child did not complete the act of prostitution?",
+                    options: ["Yes, if the act was not completed, no offense occurred.", "No, it is not a defense.", "Yes, but only if the actor was not paid.", "No, unless the child was over 17."],
+                    answer: "No, it is not a defense.",
+                    explanation: "Sec. 20A.02(e)(2) explicitly states it is not a defense that the trafficked child or disabled individual 'did not complete the act of prostitution'."
+                },
+                {
+                    question: "What is the key conduct element for Continuous Trafficking of Persons (20A.03)?",
+                    options: ["Engaging once in trafficking involving multiple victims.", "Engaging two or more times in conduct violating 20A.02 during a period of 30 or more days.", "Engaging in trafficking for more than 30 days straight.", "Committing trafficking and another felony."],
+                    answer: "Engaging two or more times in conduct violating 20A.02 during a period of 30 or more days.",
+                    explanation: "Sec. 20A.03(a) defines the offense as engaging 'two or more times' in conduct constituting a 20A.02 offense during 'a period that is 30 or more days in duration'."
+                },
+                {
+                    question: "What is the required duration for the conduct in Continuous Trafficking of Persons (20A.03)?",
+                    options: ["10 or more days", "30 or more days", "60 or more days", "12 months or less"],
+                    answer: "30 or more days",
+                    explanation: "Sec. 20A.03(a) requires the two or more acts to occur 'during a period that is 30 or more days in duration'."
+                },
+                {
+                    question: "What is the minimum number of trafficking acts required for Continuous Trafficking (20A.03)?",
+                    options: ["One", "Two", "Three", "Five"],
+                    answer: "Two",
+                    explanation: "Sec. 20A.03(a) requires the person engages 'two or more times' in conduct constituting an offense under 20A.02."
+                },
+                {
+                    question: "For Continuous Trafficking (20A.03), does the jury need to agree unanimously on the specific dates of the underlying acts?",
+                    options: ["Yes, unanimous agreement on each specific act and date is required.", "No, they only need to agree unanimously that the defendant engaged twice or more during the 30+ day period.", "Yes, unless the victim is a child.", "No, only a majority vote is needed for this offense."],
+                    answer: "No, they only need to agree unanimously that the defendant engaged twice or more during the 30+ day period.",
+                    explanation: "Sec. 20A.03(b) explicitly states the jury is *not* required to agree on specific conduct or exact dates, just that the defendant engaged two or more times during the period."
+                },
+                {
+                    question: "If a defendant is convicted of Continuous Trafficking (20A.03), can they also be convicted in the same trial for one of the underlying 20A.02 offenses?",
+                    options: ["Yes, always.", "No, never.", "Only if the underlying offense occurred outside the 30+ day period or is charged in the alternative.", "Only if the victim was a child."],
+                    answer: "Only if the underlying offense occurred outside the 30+ day period or is charged in the alternative.",
+                    explanation: "Sec. 20A.03(c) provides these exceptions to the general rule against convicting for both in the same action."
+                },
+                {
+                    question: "What is the penalty for Continuous Trafficking of Persons (20A.03)?",
+                    options: ["Felony of the first degree (standard range)", "Felony of the first degree, punishable by life or 25-99 years.", "Felony of the second degree", "Life without parole"],
+                    answer: "Felony of the first degree, punishable by life or 25-99 years.",
+                    explanation: "Sec. 20A.03(e) specifies this enhanced F1 penalty range."
+                },
+                {
+                    question: "If a defendant commits trafficking conduct against the *same victim* multiple times within a 30+ day period, how many counts of Continuous Trafficking (20A.03) can they be charged with?",
+                    options: ["One count for each act.", "One count.", "Two counts.", "As many as the prosecutor decides."],
+                    answer: "One count.",
+                    explanation: "Sec. 20A.03(d) limits the charge to one count 'if all of the conduct... is alleged to have been committed against the same victim'."
+                },
+                {
+                    question: "Is it a defense to Continuous Trafficking (20A.03) involving prostitution that the trafficked child victim did not complete the act?",
+                    options: ["Yes, if the act was not completed.", "No, it is not a defense.", "Only if the victim was a disabled individual, not a child.", "Yes, this defense applies to 20A.03 but not 20A.02."],
+                    answer: "No, it is not a defense.",
+                    explanation: "Sec. 20A.03(f) provides the same 'no defense' rule as 20A.02(e), stating it's not a defense that the child/disabled individual lacked mental state or 'did not complete the act of prostitution'."
+                },
+                {
+                    question: "Under Sec. 20A.04, can a party to a trafficking offense be required to testify about the offense?",
+                    options: ["No, they can plead the Fifth Amendment.", "Yes, a party may be required to provide evidence or testify.", "Only if they are granted full immunity first.", "Only if they were not the primary actor."],
+                    answer: "Yes, a party may be required to provide evidence or testify.",
+                    explanation: "Sec. 20A.04(a) allows the state to compel testimony from a party to the offense."
+                },
+                {
+                    question: "If a party to a trafficking offense is required to testify under 20A.04, what protection do they receive?",
+                    options: ["A reduced sentence.", "They may not be prosecuted for any offense they testify about (except Agg. Perjury) and the testimony cannot be used against them.", "Witness protection program eligibility.", "No protection is guaranteed."],
+                    answer: "They may not be prosecuted for any offense they testify about (except Agg. Perjury) and the testimony cannot be used against them.",
+                    explanation: "Sec. 20A.04(b) provides transactional immunity ('may not be prosecuted') and use immunity ('may not be used against the party') for compelled testimony."
+                },
+                {
+                    question: "What does 'adjudicatory proceeding' mean in the context of immunity under Sec. 20A.04?",
+                    options: ["Only a criminal trial.", "Only a civil lawsuit.", "A proceeding before a court or government agency where legal rights/duties are determined.", "Any meeting where testimony is given."],
+                    answer: "A proceeding before a court or government agency where legal rights/duties are determined.",
+                    explanation: "Sec. 20A.04(b) provides this definition for the scope of the use immunity granted."
+                },
+                {
+                    question: "Does the immunity granted under Sec. 20A.04(b) for compelled testimony protect the witness from prosecution for Aggravated Perjury?",
+                    options: ["Yes, it protects from all prosecution.", "No, it explicitly excludes prosecution for Aggravated Perjury.", "Only if the perjury was unintentional.", "Only if the original offense was a misdemeanor."],
+                    answer: "No, it explicitly excludes prosecution for Aggravated Perjury.",
+                    explanation: "Sec. 20A.04(b) states the immunity applies 'except a prosecution for aggravated perjury'."
+                },
+                {
+                    question: "Can a person be convicted of Trafficking (Ch. 20A) based *only* on the uncorroborated testimony of an accomplice witness?",
+                    options: ["No, accomplice testimony always requires corroboration.", "Yes, a conviction may be had on the uncorroborated testimony of a party to the offense.", "Only if the victim is a child.", "Only if the defendant confessed."],
+                    answer: "Yes, a conviction may be had on the uncorroborated testimony of a party to the offense.",
+                    explanation: "Sec. 20A.04(c) explicitly removes the general accomplice witness corroboration requirement for Chapter 20A offenses."
+                },
+                {
+                    question: "Which state agency has specific jurisdiction to prosecute Trafficking of Persons offenses under Sec. 20A.05?",
+                    options: ["The Department of Public Safety (DPS)", "The Texas Rangers", "The Attorney General", "The Texas Commission on Law Enforcement (TCOLE)"],
+                    answer: "The Attorney General",
+                    explanation: "Sec. 20A.05 states 'The attorney general has jurisdiction to prosecute... an offense under this chapter'."
+                },
+                {
+                    question: "Trafficking a person and causing them to engage in Aggravated Promotion of Prostitution (43.04) falls under which subdivision?",
+                    options: ["20A.02(a)(1)", "20A.02(a)(3)", "20A.02(a)(5)", "20A.02(a)(7)"],
+                    answer: "20A.02(a)(3)",
+                    explanation: "Sec. 20A.02(a)(3) lists several prostitution-related offenses, including 43.04 (Aggravated Promotion)."
+                },
+                {
+                    question: "Trafficking a child and causing them to become a victim of Indecency with a Child (21.11) falls under which subdivision?",
+                    options: ["20A.02(a)(1)", "20A.02(a)(3)", "20A.02(a)(5)", "20A.02(a)(7)"],
+                    answer: "20A.02(a)(7)",
+                    explanation: "Sec. 20A.02(a)(7)(B) specifically lists causing the child to engage in or become the victim of conduct prohibited by 21.11."
+                },
+                {
+                    question: "According to the 2025 amended version (SB 955), is recruiting a person from a homeless shelter an F1 enhancement for Trafficking?",
+                    options: ["No, only from correctional facilities.", "Yes, recruiting from shelters serving the homeless is listed.", "Only if the person is a child.", "Only if the actor offered money."],
+                    answer: "Yes, recruiting from shelters serving the homeless is listed.",
+                    explanation: "Sec. 20A.02(b)(4)(C) as amended by SB 955 includes recruiting from 'a shelter or facility... that serves... the homeless'."
+                },
+                {
+                    question: "The definition of 'Coercion' in 20A.01 specifically references the general definition in which section?",
+                    options: ["Sec. 1.07", "Sec. 20A.02", "Sec. 43.01", "Sec. 22.01"],
+                    answer: "Sec. 1.07",
+                    explanation: "Sec. 20A.01(1-a) starts with '\"Coercion\" as defined by Section 1.07 includes...'"
+                }
+            ];
+
+
+            const quizContainer = document.getElementById('quiz-container');
+            const checkAnswersBtn = document.getElementById('check-answers-btn');
+            const retakeQuizBtn = document.getElementById('retake-quiz-btn');
+            const quizResultsDiv = document.getElementById('quiz-results');
+            const quizScoreEl = document.getElementById('quiz-score');
+            const quizPercentageEl = document.getElementById('quiz-percentage');
+
+            function loadQuiz() {
+                // Shuffle the quiz data for a new order each time
+                const shuffledQuizData = [...quizData].sort(() => Math.random() - 0.5);
+                
+                quizContainer.innerHTML = ''; // Clear previous questions
+                
+                shuffledQuizData.forEach((q, index) => {
+                    const questionDiv = document.createElement('div');
+                    questionDiv.className = 'quiz-question';
+                    
+                    // Store the original question index to check the answer later
+                    const originalIndex = quizData.indexOf(q);
+                    
+                    // Escape single quotes in the option value AND escape HTML entities
+                    let optionsHtml = q.options.map(option => {
+                        const escapedOptionValue = option.replace(/'/g, "&apos;").replace(/"/g, "&quot;");
+                        const escapedOptionText = option.replace(/</g, "&lt;").replace(/>/g, "&gt;");
+                        return `<label class="block"><input type="radio" name="q${index}" value="${escapedOptionValue}" data-original-index="${originalIndex}" class="mr-2">${escapedOptionText}</label>`;
+                    }).join('');
+                    
+                    // Escape HTML in the question
+                    const escapedQuestion = q.question.replace(/</g, "&lt;").replace(/>/g, "&gt;");
+
+                    questionDiv.innerHTML = `
+                        <p class="font-semibold mb-2">${index + 1}. ${escapedQuestion}</p>
+                        <div class="space-y-2">${optionsHtml}</div>
+                        <div class="feedback hidden mt-2 p-2 rounded-lg text-sm"></div>
+                    `;
+                    quizContainer.appendChild(questionDiv);
+                });
+            }
+
+
+            loadQuiz(); // Initial load
+
+            checkAnswersBtn.addEventListener('click', () => {
+                let score = 0;
+                const totalQuestions = quizData.length;
+                const questions = quizContainer.querySelectorAll('.quiz-question');
+
+                questions.forEach((questionDiv, index) => {
+                    const selected = questionDiv.querySelector(`input[name="q${index}"]:checked`);
+                    const feedback = questionDiv.querySelector('.feedback');
+                    const radioButtons = questionDiv.querySelectorAll(`input[name="q${index}"]`);
+                    
+                    feedback.classList.remove('hidden', 'bg-green-100', 'text-green-800', 'bg-red-100', 'text-red-800', 'bg-yellow-100', 'text-yellow-800', 'correct', 'incorrect', 'unanswered');
+                    
+                    if (selected) {
+                        const originalIndex = selected.dataset.originalIndex;
+                        const q = quizData[originalIndex];
+                        
+                        // Must escape the correct answer in the same way as the value
+                        const escapedAnswer = q.answer.replace(/'/g, "&apos;").replace(/"/g, "&quot;");
+                         const escapedExplanation = q.explanation.replace(/</g, "&lt;").replace(/>/g, "&gt;");
+                         const escapedCorrectAnswerText = q.answer.replace(/</g, "&lt;").replace(/>/g, "&gt;");
+
+
+                        if (selected.value === escapedAnswer) {
+                            score++;
+                            feedback.innerHTML = `<strong>Correct!</strong> ${escapedExplanation}`; // Use innerHTML
+                            feedback.classList.add('correct');
+                        } else {
+                            feedback.innerHTML = `<strong>Incorrect.</strong> The correct answer is "${escapedCorrectAnswerText}". ${escapedExplanation}`; // Use innerHTML
+                            feedback.classList.add('incorrect');
+                        }
+                    } else {
+                        // Find the original question to show the answer
+                        const firstRadio = questionDiv.querySelector(`input[name="q${index}"]`);
+                         if (firstRadio) { // Check if firstRadio exists
+                            const originalIndex = firstRadio.dataset.originalIndex;
+                            const q = quizData[originalIndex];
+                             const escapedExplanation = q.explanation.replace(/</g, "&lt;").replace(/>/g, "&gt;");
+                             const escapedCorrectAnswerText = q.answer.replace(/</g, "&lt;").replace(/>/g, "&gt;");
+
+                            feedback.innerHTML = `<strong>Unanswered.</strong> The correct answer is "${escapedCorrectAnswerText}". ${escapedExplanation}`; // Use innerHTML
+                        } else {
+                             feedback.innerHTML = `<strong>Error:</strong> Could not load feedback for this question.`;
+                        }
+                        feedback.classList.add('unanswered');
+                    }
+                    
+                    feedback.classList.remove('hidden'); // Show feedback
+                    
+                    // Disable radio buttons after submitting
+                    radioButtons.forEach(radio => {
+                        radio.disabled = true;
+                    });
+                });
+
+                // Calculate and display results
+                const percentage = ((score / totalQuestions) * 100).toFixed(0);
+                quizScoreEl.textContent = `Your Score: ${score} / ${totalQuestions}`;
+                quizPercentageEl.textContent = `Percentage: ${percentage}%`;
+                
+                quizResultsDiv.classList.remove('hidden');
+                checkAnswersBtn.classList.add('hidden');
+                retakeQuizBtn.classList.remove('hidden');
+            });
+
+            retakeQuizBtn.addEventListener('click', () => {
+                // Hide results and retake button
+                quizResultsDiv.classList.add('hidden');
+                retakeQuizBtn.classList.add('hidden');
+                
+                // Show submit button
+                checkAnswersBtn.classList.remove('hidden');
+                
+                // Reload the quiz (clears answers and feedback)
+                loadQuiz();
+            });
+
+
+            // --- RESOURCES LIST ---
+            const resources = [
+                 { name: "Texas Penal Code - Official Site", url: "https://statutes.capitol.texas.gov/Default.aspx?Code=PE" },
+                 { name: "Penal Code Ch. 20A - Trafficking of Persons", url: "https://statutes.capitol.texas.gov/Docs/PE/htm/PE.20A.htm" },
+                 { name: "Penal Code Sec. 1.07 - Definitions", url: "https://statutes.capitol.texas.gov/Docs/PE/htm/PE.1.htm#1.07" },
+                 { name: "Penal Code Sec. 43.25 - Sexual Performance by a Child", url: "https://statutes.capitol.texas.gov/Docs/PE/htm/PE.43.htm#43.25" },
+                 { name: "HSC Sec. 462.001 - Chemical Dependency Definitions", url: "https://statutes.capitol.texas.gov/Docs/HS/htm/HS.462.htm#462.001" },
+                 { name: "HSC Sec. 481.134 - Drug-Free Zones", url: "https://statutes.capitol.texas.gov/Docs/HS/htm/HS.481.htm#481.134" },
+                 { name: "Government Code Sec. 402.103 - AG Prosecution Authority", url: "https://statutes.capitol.texas.gov/Docs/GV/htm/GV.402.htm#402.103" }
+            ];
+            const resourcesList = document.getElementById('resources-list');
+            resources.sort((a, b) => a.name.localeCompare(b.name));
+            resources.forEach(res => {
+                const link = document.createElement('a'); // Use an anchor tag for links
+                link.href = res.url;
+                link.target = '_blank';
+                link.rel = 'noopener noreferrer'; // Good practice for security
+                link.className = 'text-red-600 hover:underline p-2 bg-gray-50 rounded-md block hover:bg-gray-100';
+                link.innerHTML = `<i class="fas fa-external-link-alt mr-2"></i>${res.name}`;
+                resourcesList.appendChild(link);
+            });
+        });
+    </script>
+</body>
+</html>
+

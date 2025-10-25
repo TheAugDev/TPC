@@ -1,0 +1,818 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ch. 12 Study Guide: Texas Penal Code</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet">
+    <style>
+        :root {
+            --header-bg: #1f2937;
+            --bg-color: #f3f4f6;
+            --tab-active-bg: #3b82f6;
+            --tab-active-text: #ffffff;
+            --card-bg: #ffffff;
+            --text-color: #111827;
+            --link-color: #2563eb;
+        }
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            font-family: 'Inter', sans-serif;
+        }
+        @import url('https://rsms.me/inter/inter.css');
+        .tab-content { display: none; }
+        .tab-content.active { display: block; }
+        .tab.active {
+            background-color: var(--tab-active-bg);
+            color: var(--tab-active-text);
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .tab {
+            transition: all 0.3s ease-in-out;
+        }
+        .punishment-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 1rem;
+        }
+        .punishment-card {
+            background-color: #f9fafb;
+            padding: 1.25rem;
+            border-radius: 0.5rem;
+            border: 1px solid #e5e7eb;
+            text-align: center;
+        }
+        .punishment-title {
+            font-weight: 700;
+            font-size: 1.125rem;
+            color: var(--tab-active-bg);
+        }
+        .punishment-jail {
+            font-size: 1rem;
+            color: #1f2937;
+            margin-top: 0.5rem;
+            font-weight: 500;
+        }
+        .punishment-fine {
+            font-size: 0.875rem;
+            color: #4b5563;
+            margin-top: 0.25rem;
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Header -->
+    <header class="bg-gray-800 text-white p-4 shadow-md">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-2xl font-bold">
+                <i class="fas fa-gavel mr-2"></i>Ch. 12: Punishments
+            </h1>
+            <a href="index.html" class="text-sm text-blue-300 hover:text-blue-100 hover:underline">
+                <i class="fas fa-arrow-left mr-1"></i> Back to Main Page
+            </a>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container mx-auto p-4 md:p-6">
+        <!-- Tab Navigation -->
+        <div class="mb-6 bg-white rounded-lg shadow-md overflow-x-auto">
+            <nav id="tabs" class="flex flex-row space-x-1 p-2">
+                <button data-tab="ch12-class" class="tab active flex-1 md:flex-none flex items-center justify-center px-4 py-2 text-sm font-semibold rounded-lg text-gray-600 hover:bg-blue-100">
+                    <i class="fas fa-list-ol mr-2"></i> <span class="hidden md:inline">Classifications (A)</span>
+                </button>
+                <button data-tab="ch12-punishments" class="tab flex-1 md:flex-none flex items-center justify-center px-4 py-2 text-sm font-semibold rounded-lg text-gray-600 hover:bg-blue-100">
+                    <i class="fas fa-balance-scale-right mr-2"></i> <span class="hidden md:inline">Punishments (B & C)</span>
+                </button>
+                <button data-tab="ch12-exceptional" class="tab flex-1 md:flex-none flex items-center justify-center px-4 py-2 text-sm font-semibold rounded-lg text-gray-600 hover:bg-blue-100">
+                    <i class="fas fa-level-up-alt mr-2"></i> <span class="hidden md:inline">Enhancements (D)</span>
+                </button>
+                <button data-tab="ch12-corporate" class="tab flex-1 md:flex-none flex items-center justify-center px-4 py-2 text-sm font-semibold rounded-lg text-gray-600 hover:bg-blue-100">
+                    <i class="fas fa-building mr-2"></i> <span class="hidden md:inline">Corporations (E)</span>
+                </button>
+                <button data-tab="knowledge-check" class="tab flex-1 md:flex-none flex items-center justify-center px-4 py-2 text-sm font-semibold rounded-lg text-gray-600 hover:bg-blue-100">
+                    <i class="fas fa-question-circle mr-2"></i> <span class="hidden md:inline">Knowledge Check</span>
+                </button>
+                <button data-tab="resources" class="tab flex-1 md:flex-none flex items-center justify-center px-4 py-2 text-sm font-semibold rounded-lg text-gray-600 hover:bg-blue-100">
+                    <i class="fas fa-link mr-2"></i> <span class="hidden md:inline">Resources</span>
+                </button>
+            </nav>
+        </div>
+
+        <!-- Tab Content -->
+        <div id="tab-contents">
+            <!-- Ch. 12: Classifications (A) Tab -->
+            <div id="ch12-class" class="tab-content active space-y-6">
+                
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-xl font-bold mb-4 border-b pb-2">Subchapter A: General Provisions</h2>
+                    <div class="space-y-4">
+                        <p class="text-sm"><strong class="font-semibold"><a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.12.htm#12.01" target="_blank" class="text-blue-600 hover:underline">Sec. 12.01. Punishment in Accordance with Code:</a></strong> A person adjudged guilty shall be punished in accordance with this chapter and the Code of Criminal Procedure. This chapter does <strong class="font-semibold">not</strong> remove a court's authority to impose civil penalties (e.g., forfeit property, suspend license, cite for contempt).</p>
+                        
+                        <p class="text-sm"><strong class="font-semibold"><a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.12.htm#12.02" target="_blank" class="text-blue-600 hover:underline">Sec. 12.02. Classification of Offenses:</a></strong> Offenses are designated as <strong class="font-semibold">felonies or misdemeanors</strong>.</p>
+                        
+                        <p class="text-sm"><strong class="font-semibold"><a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.12.htm#12.03" target="_blank" class="text-blue-600 hover:underline">Sec. 12.03. Classification of Misdemeanors:</a></strong> Misdemeanors are classified as <strong class="font-semibold">Class A, Class B, or Class C</strong>. An offense designated a misdemeanor without specification is a <strong class="font-semibold">Class C misdemeanor</strong>. A Class C conviction does <strong class="font-semibold">not</strong> impose any legal disability or disadvantage.</p>
+                        
+                        <p class="text-sm"><strong class="font-semibold"><a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.12.htm#12.04" target="_blank" class="text-blue-600 hover:underline">Sec. 12.04. Classification of Felonies:</a></strong> Felonies are classified as: (1) <strong class="font-semibold">capital felonies</strong>, (2) <strong class="font-semibold">first degree</strong>, (3) <strong class="font-semibold">second degree</strong>, (4) <strong class="font-semibold">third degree</strong>, and (5) <strong class="font-semibold">state jail felonies</strong>. An offense designated a felony without specification is a <strong class="font-semibold">state jail felony</strong>.</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Ch. 12: Punishments (B & C) Tab -->
+            <div id="ch12-punishments" class="tab-content space-y-6">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-xl font-bold mb-4 border-b pb-2">Subchapter B: Ordinary Misdemeanor Punishments</h2>
+                    <div class="punishment-grid">
+                        <div class="punishment-card">
+                            <h3 class="punishment-title"><a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.12.htm#12.21" target="_blank" class="hover:underline">Class A Misdemeanor</a></h3>
+                            <p class="punishment-jail"><i class="fas fa-balance-scale mr-2"></i>Up to 1 year in jail</p>
+                            <p class="punishment-fine"><i class="fas fa-dollar-sign mr-2"></i>Up to a $4,000 fine</p>
+                        </div>
+                        <div class="punishment-card">
+                            <h3 class="punishment-title"><a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.12.htm#12.22" target="_blank" class="hover:underline">Class B Misdemeanor</a></h3>
+                            <p class="punishment-jail"><i class="fas fa-balance-scale mr-2"></i>Up to 180 days in jail</p>
+                            <p class="punishment-fine"><i class="fas fa-dollar-sign mr-2"></i>Up to a $2,000 fine</p>
+                        </div>
+                        <div class="punishment-card">
+                            <h3 class="punishment-title"><a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.12.htm#12.23" target="_blank" class="hover:underline">Class C Misdemeanor</a></h3>
+                            <p class="punishment-jail" style="color: #4b5563;">(No jail time)</p>
+                            <p class="punishment-fine"><i class="fas fa-dollar-sign mr-2"></i>Up to a $500 fine</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-xl font-bold mb-4 border-b pb-2">Subchapter C: Ordinary Felony Punishments</h2>
+                    <div class="punishment-grid">
+                        <div class="punishment-card">
+                            <h3 class="punishment-title"><a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.12.htm#12.32" target="_blank" class="hover:underline">First Degree Felony</a></h3>
+                            <p class="punishment-jail"><i class="fas fa-balance-scale mr-2"></i>5 to 99 years or Life</p>
+                            <p class="punishment-fine"><i class="fas fa-dollar-sign mr-2"></i>Up to a $10,000 fine</p>
+                        </div>
+                        <div class="punishment-card">
+                            <h3 class="punishment-title"><a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.12.htm#12.33" target="_blank" class="hover:underline">Second Degree Felony</a></h3>
+                            <p class="punishment-jail"><i class="fas fa-balance-scale mr-2"></i>2 to 20 years</p>
+                            <p class="punishment-fine"><i class="fas fa-dollar-sign mr-2"></i>Up to a $10,000 fine</p>
+                        </div>
+                        <div class="punishment-card">
+                            <h3 class="punishment-title"><a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.12.htm#12.34" target="_blank" class="hover:underline">Third Degree Felony</a></h3>
+                            <p class="punishment-jail"><i class="fas fa-balance-scale mr-2"></i>2 to 10 years</p>
+                            <p class="punishment-fine"><i class="fas fa-dollar-sign mr-2"></i>Up to a $10,000 fine</p>
+                        </div>
+                        <div class="punishment-card">
+                            <h3 class="punishment-title"><a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.12.htm#12.35" target="_blank" class="hover:underline">State Jail Felony</a></h3>
+                            <p class="punishment-jail"><i class="fas fa-balance-scale mr-2"></i>180 days to 2 years</p>
+                            <p class="punishment-fine"><i class="fas fa-dollar-sign mr-2"></i>Up to a $10,000 fine</p>
+                        </div>
+                    </div>
+                    <div class="space-y-4 mt-6">
+                        <div>
+                            <h3 class="font-semibold"><a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.12.htm#12.31" target="_blank" class="text-blue-600 hover:underline">Sec. 12.31. Capital Felony</a></h3>
+                            <ul class="list-disc list-inside text-sm text-gray-700 space-y-2">
+                                <li>If state seeks death penalty: <strong class="font-semibold">Death</strong> or <strong class="font-semibold">Life Without Parole (LWOP)</strong>.</li>
+                                <li>If state does NOT seek death (offender 18+): <strong class="font-semibold">Life Without Parole (LWOP)</strong>.</li>
+                                <li>If state does NOT seek death (offender < 18): <strong class="font-semibold">Life</strong> (with possibility of parole).</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 class="font-semibold"><a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.12.htm#12.35" target="_blank" class="text-blue-600 hover:underline">Sec. 12.35. State Jail Felony Punishment</a></h3>
+                            <ul class="list-disc list-inside text-sm text-gray-700 space-y-2">
+                                <li>Base range is 180 days to 2 years in a *state jail* and an optional fine up to $10,000.</li>
+                                <li><strong class="font-semibold">(c) Enhancement:</strong> Punished as a <strong class="font-semibold">Third Degree Felony</strong> (2-10 years) if it's shown:
+                                    <ol class="list-decimal list-inside ml-6">
+                                        <li>A <strong class="font-semibold">deadly weapon</strong> was used/exhibited; OR</li>
+                                        <li>The individual has a <strong class="font-semibold">previous final felony conviction</strong> for certain offenses (e.g., Sec. 21.02, or offenses listed in Art. 42A.054(a) CCP).</li>
+                                    </ol>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Ch. 12: Enhancements (D) Tab -->
+            <div id="ch12-exceptional" class="tab-content space-y-6">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-xl font-bold mb-4 border-b pb-2">Subchapter D: Exceptional Sentences (Enhancements)</h2>
+                    <div class="space-y-4 text-sm">
+                        <!-- Sec. 12.41 -->
+                        <div>
+                            <h3 class="font-semibold"><a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.12.htm#12.41" target="_blank" class="text-blue-600 hover:underline">Sec. 12.41. Classification of Offenses Outside This Code</a></h3>
+                            <p class="text-gray-700">For enhancement purposes, convictions from other laws are classified as:
+                                <ul class="list-disc list-inside ml-4">
+                                <li><strong class="font-semibold">"Felony of the third degree"</strong> if penitentiary time was a possible punishment.</li>
+                                <li><strong class="font-semibold">"Class B misdemeanor"</strong> if it wasn't a felony but jail time was a possible punishment.</li>
+                                <li><strong class="font-semibold">"Class C misdemeanor"</strong> if punishable by fine only.</li>
+                            </ul>
+                            </p>
+                        </div>
+                        <!-- Sec. 12.42 -->
+                        <div>
+                            <h3 class="font-semibold"><a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.12.htm#12.42" target="_blank" class="text-blue-600 hover:underline">Sec. 12.42. Penalties for Repeat and Habitual Felony Offenders</a></h3>
+                            <ul class="list-disc list-inside text-gray-700 space-y-1">
+                                <li>3rd Degree Felony + 1 prior felony = <strong class="font-semibold">Punished as 2nd Degree</strong>.</li>
+                                <li>2nd Degree Felony + 1 prior felony = <strong class="font-semibold">Punished as 1st Degree</strong>.</li>
+                                <li>1st Degree Felony + 1 prior felony = <strong class="font-semibold">15-99 years or Life</strong> (min. 15 yrs).</li>
+                                <li>Any Felony (non-SJF) + 2 prior sequential felonies = <strong class="font-semibold">25-99 years or Life</strong> (min. 25 yrs).</li>
+                                <li><strong class="font-semibold">Note:</strong> Standard SJF priors cannot be used for these enhancements.</li>
+                                <li><strong class="font-semibold">Note:</strong> Subsections (c)(2), (c)(3), and (c)(4) create specific "Life" or "LWOP" sentences for repeat sexual offenders.</li>
+                            </ul>
+                        </div>
+                        <!-- Sec. 12.425 -->
+                        <div>
+                            <h3 class="font-semibold"><a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.12.htm#12.425" target="_blank" class="text-blue-600 hover:underline">Sec. 12.425. Penalties for Repeat State Jail Felony Offenders</a></h3>
+                            <ul class="list-disc list-inside text-gray-700 space-y-1">
+                                <li>SJF + 2 prior SJF convictions = <strong class="font-semibold">Punished as 3rd Degree</strong>.</li>
+                                <li>SJF + 2 prior *sequential* non-SJF felony convictions = <strong class="font-semibold">Punished as 2nd Degree</strong>.</li>
+                            </ul>
+                        </div>
+                        <!-- Sec. 12.43 -->
+                        <div>
+                            <h3 class="font-semibold"><a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.12.htm#12.43" target="_blank" class="text-blue-600 hover:underline">Sec. 12.43. Penalties for Repeat Misdemeanor Offenders</a></h3>
+                            <ul class="list-disc list-inside text-gray-700 space-y-1">
+                                <li>Class A + 1 prior (Class A or Felony) = <strong class="font-semibold">Min. 90 days jail</strong> (max 1yr / $4k).</li>
+                                <li>Class B + 1 prior (Class A, B, or Felony) = <strong class="font-semibold">Min. 30 days jail</strong> (max 180 days / $2k).</li>
+                            </ul>
+                        </div>
+                        <!-- Sec. 12.44 -->
+                        <div>
+                            <h3 class="font-semibold"><a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.12.htm#12.44" target="_blank" class="text-blue-600 hover:underline">Sec. 12.44. Reduction of State Jail Felony to Misdemeanor</a></h3>
+                            <ul class="list-disc list-inside text-gray-700 space-y-1">
+                                <li><strong class="font-semibold">(a)</strong> A court may punish a SJF as a <strong class="font-semibold">Class A misdemeanor</strong> if it finds it would best serve the ends of justice.</li>
+                                <li><strong class="font-semibold">(b)</strong> At the prosecutor's request, the court may allow a SJF to be prosecuted as a <strong class="font-semibold">Class A misdemeanor</strong>.</li>
+                            </ul>
+                        </div>
+                        <!-- Sec. 12.45 - 12.503 -->
+                        <div>
+                            <h3 class="font-semibold">Other Enhancements & Provisions</h3>
+                            <ul class="list-disc list-inside text-gray-700 space-y-2">
+                                <li><strong class="font-semibold"><a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.12.htm#12.45" target="_blank" class="text-blue-600 hover:underline">Sec. 12.45. Admission of Unadjudicated Offense:</a></strong> A defendant can (with state's consent) admit guilt to unadjudicated offenses during sentencing, and the court can take them into account. This <strong class="font-semibold">bars future prosecution</strong> for those admitted offenses.</li>
+                                <li><strong class="font-semibold"><a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.12.htm#12.46" target="_blank" class="text-blue-600 hover:underline">Sec. 12.46. Use of Prior Convictions:</a></strong> Using a conviction for enhancement once does <strong class="font-semibold">not</strong> preclude it from being used again for a subsequent enhancement.</li>
+                                <li><strong class="font-semibold"><a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.12.htm#12.47" target="_blank" class="text-blue-600 hover:underline">Sec. 12.47. Bias or Prejudice:</a></strong> (Hate Crime) If an affirmative finding is made, punishment is <strong class="font-semibold">increased to the next highest category</strong>. (Class A bumps to 180-day min).</li>
+                                <li><strong class="font-semibold"><a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.12.htm#12.49" target="_blank" class="text-blue-600 hover:underline">Sec. 12.49. Controlled Substance Used to Commit Offense:</a></strong> Punishment is <strong class="font-semibold">increased to the next highest category</strong>.</li>
+                                <li><strong class="font-semibold"><a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.12.htm#12.50" target="_blank" class="text-blue-600 hover:underline">Sec. 12.50. Offense in Disaster Area:</a></strong> For certain offenses (Burglary, Theft, Assault, etc.), punishment is <strong class="font-semibold">increased to the next highest category</strong>.</li>
+                                <li><strong class="font-semibold"><a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.12.htm#12.501" target="_blank" class="text-blue-600 hover:underline">Sec. 12.501. Retaliation vs. Public Servant:</a></strong> For certain offenses, punishment is <strong class="font-semibold">increased to the next highest category</strong>.</li>
+                                <li><strong class="font-semibold"><a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.12.htm#12.503" target="_blank" class="text-blue-600 hover:underline">Sec. 12.503. Metal/Body Armor Used:</a></strong> Punishment is <strong class="font-semibold">increased to the next highest category</strong>.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Ch. 12: Corporations (E) Tab -->
+            <div id="ch12-corporate" class="tab-content">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-xl font-bold mb-4 border-b pb-2"><a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.12.htm#12.51" target="_blank" class="text-blue-600 hover:underline">Subchapter E: Corporations and Associations</a></h2>
+                    <div class="space-y-4 text-sm">
+                        <p>Sec. 12.51 authorizes fines for corporations, associations, and other business entities adjudged guilty of an offense.</p>
+                        
+                        <h3 class="font-semibold text-base">Maximum Fines:</h3>
+                        <ul class="list-disc list-inside text-gray-700 space-y-2">
+                            <li><strong class="font-semibold">$50,000</strong> if an individual suffers <strong class="font-semibold">SBI or death</strong> as a result of a Felony or Class A Misdemeanor.</li>
+                            <li><strong class="font-semibold">$20,000</strong> if the offense is a <strong class="font-semibold">felony</strong> of any category.</li>
+                            <li><strong class="font-semibold">$10,000</strong> if the offense is a <strong class="font-semibold">Class A or B misdemeanor</strong>.</li>
+                            <li><strong class="font-semibold">$2,000</strong> if the offense is a <strong class="font-semibold">Class C misdemeanor</strong>.</li>
+                        </ul>
+
+                        <h3 class="font-semibold text-base mt-4">Alternative Fine (Sec. 12.51(c))</h3>
+                        <p class="text-gray-700">In lieu of the fines above (except Class C), if the court finds the entity <strong class="font-semibold">gained money/property</strong> or <strong class="font-semibold">caused loss/damage/injury</strong>, it may impose a fine up to <strong class="font-semibold">double the amount gained or lost</strong>, whichever is greater.</p>
+
+                        <h3 class="font-semibold text-base mt-4">Other Penalties</h3>
+                        <ul class="list-disc list-inside text-gray-700 space-y-2">
+                            <li>The court may order the entity to <strong class="font-semibold">give notice of the conviction</strong> to any person the court deems appropriate.</li>
+                            <li>The court <strong class="font-semibold">must notify the attorney general</strong> of the conviction.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Knowledge Check Tab -->
+            <div id="knowledge-check" class="tab-content">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-2xl font-bold mb-4">Knowledge Check (Ch. 12)</h2>
+                    <p class="mb-6 text-gray-600">Test your understanding of the material. (58 Questions)</p>
+                    <div id="quiz-container" class="space-y-8">
+                        <!-- Questions will be dynamically inserted here -->
+                    </div>
+                    <!-- New Results Div -->
+                    <div id="quiz-results" class="hidden mt-8 text-center">
+                        <h3 class="text-2xl font-bold" id="quiz-score"></h3>
+                        <p class="text-lg text-gray-700" id="quiz-percentage"></p>
+                    </div>
+                    <!-- Button Container -->
+                    <div class="mt-8 text-center space-x-4">
+                        <button id="check-answers-btn" class="bg-blue-600 text-white font-bold py-2 px-6 rounded-lg hover:bg-blue-700 transition-colors">Submit Answers</button>
+                        <button id="retake-quiz-btn" class="hidden bg-gray-600 text-white font-bold py-2 px-6 rounded-lg hover:bg-gray-700 transition-colors">Retake Quiz</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Resources Tab -->
+            <div id="resources" class="tab-content">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-2xl font-bold mb-4">External Resources</h2>
+                    <p class="mb-6 text-gray-600">Quick links to official Texas statutes referenced in this chapter.</p>
+                    <div id="resources-list" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 text-sm">
+                        <!-- Links will be dynamically inserted here -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const tabs = document.querySelectorAll('#tabs button');
+            const tabContents = document.querySelectorAll('.tab-content');
+
+            tabs.forEach(tab => {
+                tab.addEventListener('click', () => {
+                    tabs.forEach(t => t.classList.remove('active'));
+                    tabContents.forEach(c => c.classList.remove('active'));
+                    tab.classList.add('active');
+                    document.getElementById(tab.dataset.tab).classList.add('active');
+                });
+            });
+
+            // --- QUIZ DATA (CHAPTER 12) ---
+            const quizData = [
+                {
+                    question: `Under Sec. 12.01, this chapter does *not* deprive a court of authority to impose a...`,
+                    options: [`Civil penalty.`, `Federal penalty.`, `Moral penalty.`, `Enhanced penalty.`],
+                    answer: `Civil penalty.`,
+                    explanation: `Sec. 12.01(c) explicitly states the code does not deprive a court of authority to impose civil penalties like forfeiting property, citing for contempt, etc.`
+                },
+                {
+                    question: `According to Sec. 12.02, offenses are designated as...`,
+                    options: [`Infractions or Felonies.`, `Felonies or Misdemeanors.`, `Misdemeanors or Violations.`, `State or Federal crimes.`],
+                    answer: `Felonies or Misdemeanors.`,
+                    explanation: `Sec. 12.02 states the two main classifications.`
+                },
+                {
+                    question: `An offense designated a "misdemeanor" in the code, with no punishment or category specified, is a... (Sec. 12.03)`,
+                    options: [`Class A Misdemeanor.`, `Class B Misdemeanor.`, `Class C Misdemeanor.`, `Unclassified Misdemeanor.`],
+                    answer: `Class C Misdemeanor.`,
+                    explanation: `Sec. 12.03(b) states that an unspecified misdemeanor defaults to a Class C.`
+                },
+                {
+                    question: `What is the legal consequence of a Class C misdemeanor conviction, according to Sec. 12.03(c)?`,
+                    options: [`It imposes a one-year legal disability.`, `It prevents the person from voting.`, `It does not impose any legal disability or disadvantage.`, `It results in an automatic driver's license suspension.`],
+                    answer: `It does not impose any legal disability or disadvantage.`,
+                    explanation: `Sec. 12.03(c) explicitly states this, distinguishing Class C misdemeanors from all other offenses.`
+                },
+                {
+                    question: `An offense designated a "felony" in the code, with no category specified, is a... (Sec. 12.04)`,
+                    options: [`First Degree Felony.`, `Third Degree Felony.`, `Capital Felony.`, `State Jail Felony.`],
+                    answer: `State Jail Felony.`,
+                    explanation: `Sec. 12.04(b) states that an unspecified felony defaults to a state jail felony.`
+                },
+                {
+                    question: `What is the punishment range for a Class A Misdemeanor under Sec. 12.21?`,
+                    options: [`Up to 180 days in jail and/or a $2,000 fine.`, `Up to 1 year in jail and/or a $4,000 fine.`, `A fine not to exceed $500.`, `2 to 10 years in prison and/or a $10,000 fine.`],
+                    answer: `Up to 1 year in jail and/or a $4,000 fine.`,
+                    explanation: `Sec. 12.21 lists the maximum confinement as one year and the maximum fine as $4,000.`
+                },
+                {
+                    question: `What is the punishment range for a Class B Misdemeanor under Sec. 12.22?`,
+                    options: [`Up to 180 days in jail and/or a $2,000 fine.`, `Up to 1 year in jail and/or a $4,000 fine.`, `A fine not to exceed $500.`, `Up to 90 days in jail and/or a $1,000 fine.`],
+                    answer: `Up to 180 days in jail and/or a $2,000 fine.`,
+                    explanation: `Sec. 12.22 lists the maximum confinement as 180 days and the maximum fine as $2,000.`
+                },
+                {
+                    question: `What is the punishment for a Class C Misdemeanor under Sec. 12.23?`,
+                    options: [`Up to 30 days in jail.`, `Up to 90 days in jail and/or a $500 fine.`, `A fine not to exceed $500.`, `A fine not to exceed $1,000.`],
+                    answer: `A fine not to exceed $500.`,
+                    explanation: `Sec. 12.23 authorizes a fine only, with a maximum of $500.`
+                },
+                {
+                    question: `Under Sec. 12.31, an individual (age 18+) is convicted of a Capital Felony. The state *does not* seek the death penalty. What is the mandatory punishment?`,
+                    options: [`Life.`, `Life Without Parole.`, `Death.`, `5 to 99 years or Life.`],
+                    answer: `Life Without Parole.`,
+                    explanation: `Sec. 12.31(a)(2) mandates Life Without Parole for an adult offender when the state does not seek death.`
+                },
+                {
+                    question: `Under Sec. 12.31, an individual (age 17) is convicted of a Capital Felony. The state *does not* seek the death penalty. What is the mandatory punishment?`,
+                    options: [`Life.`, `Life Without Parole.`, `Death.`, `25 to 99 years or Life.`],
+                    answer: `Life.`,
+                    explanation: `Sec. 12.31(a)(1) mandates a Life sentence (with parole eligibility) for an offender younger than 18.`
+                },
+                {
+                    question: `What is the punishment range for a First Degree Felony under Sec. 12.32?`,
+                    options: [`2-20 years and/or $10,000 fine.`, `2-10 years and/or $10,000 fine.`, `5-99 years or Life, and/or $10,000 fine.`, `Life Without Parole.`],
+                    answer: `5-99 years or Life, and/or $10,000 fine.`,
+                    explanation: `Sec. 12.32 lists the confinement as 'life or for any term of not more than 99 years or less than 5 years' and an optional $10,000 fine.`
+                },
+                {
+                    question: `What is the punishment range for a Second Degree Felony under Sec. 12.33?`,
+                    options: [`2-20 years and/or $10,000 fine.`, `2-10 years and/or $10,000 fine.`, `5-99 years or Life, and/or $10,000 fine.`, `180 days - 2 years and/or $10,000 fine.`],
+                    answer: `2-20 years and/or $10,000 fine.`,
+                    explanation: `Sec. 12.33 lists the confinement as 'any term of not more than 20 years or less than 2 years' and an optional $10,000 fine.`
+                },
+                {
+                    question: `What is the punishment range for a Third Degree Felony under Sec. 12.34?`,
+                    options: [`2-20 years and/or $10,000 fine.`, `2-10 years and/or $10,000 fine.`, `5-99 years or Life, and/or $10,000 fine.`, `180 days - 2 years and/or $10,000 fine.`],
+                    answer: `2-10 years and/or $10,000 fine.`,
+                    explanation: `Sec. 12.34 lists the confinement as 'any term of not more than 10 years or less than 2 years' and an optional $10,000 fine.`
+                },
+                {
+                    question: `What is the punishment range for a State Jail Felony under Sec. 12.35(a)?`,
+                    options: [`2-10 years and/or $10,000 fine.`, `180 days - 2 years and/or $10,000 fine.`, `Up to 1 year and/or $4,000 fine.`, `Up to 180 days and/or $2,000 fine.`],
+                    answer: `180 days - 2 years and/or $10,000 fine.`,
+                    explanation: `Sec. 12.35(a) lists confinement as '180 days to 2 years' and Sec. 12.35(b) adds an optional $10,000 fine.`
+                },
+                {
+                    question: `Under Sec. 12.35(c), a State Jail Felony is punished as a Third Degree Felony if...`,
+                    options: [`The defendant has any prior conviction.`, `The defendant used or exhibited a deadly weapon.`, `The defendant has a prior Class A misdemeanor conviction.`, `The offense was committed at night.`],
+                    answer: `The defendant used or exhibited a deadly weapon.`,
+                    explanation: `Sec. 12.35(c)(1) provides this enhancement for the use of a deadly weapon during a state jail felony.`
+                },
+                {
+                    question: `Under Sec. 12.41, how is an offense from *outside* the Penal Code classified if it is punishable by imprisonment in a penitentiary?`,
+                    options: [`Felony of the first degree.`, `Felony of the third degree.`, `State jail felony.`, `Class A misdemeanor.`],
+                    answer: `Felony of the third degree.`,
+                    explanation: `Sec. 12.41(1) states that any offense punishable by penitentiary time is classified as a 3rd degree felony for enhancement purposes.`
+                },
+                {
+                    question: `Under Sec. 12.41, how is an offense from *outside* the Penal Code classified if it is punishable by fine only?`,
+                    options: [`Class A misdemeanor.`, `Class B misdemeanor.`, `Class C misdemeanor.`, `It is not classified.`],
+                    answer: `Class C misdemeanor.`,
+                    explanation: `Sec. 12.41(3) states that a fine-only offense is classified as a Class C misdemeanor.`
+                },
+                {
+                    question: `Under Sec. 12.42(a), if a defendant is on trial for a 3rd Degree Felony and has one prior non-SJF felony conviction, what is the punishment range?`,
+                    options: [`Punished as a 2nd Degree Felony (2-20 years).`, `Punished as a 1st Degree Felony (5-99/Life).`, `Punished with a minimum of 15 years.`, `The punishment is not enhanced.`],
+                    answer: `Punished as a 2nd Degree Felony (2-20 years).`,
+                    explanation: `Sec. 12.42(a) enhances a 3rd degree felony to a 2nd degree felony upon proof of one prior non-SJF felony.`
+                },
+                {
+                    question: `Under Sec. 12.42(b), if a defendant is on trial for a 2nd Degree Felony and has one prior non-SJF felony conviction, what is the punishment range?`,
+                    options: [`Punished as a 2nd Degree Felony (2-20 years).`, `Punished as a 1st Degree Felony (5-99/Life).`, `Punished with a minimum of 25 years.`, `The punishment is not enhanced.`],
+                    answer: `Punished as a 1st Degree Felony (5-99/Life).`,
+                    explanation: `Sec. 12.42(b) enhances a 2nd degree felony to a 1st degree felony upon proof of one prior non-SJF felony.`
+                },
+                {
+                    question: `Under Sec. 12.42(c)(1), if a defendant is on trial for a 1st Degree Felony and has one prior non-SJF felony conviction, what is the punishment range?`,
+                    options: [`Punished as a 2nd Degree Felony (2-20 years).`, `Punished as a 1st Degree Felony (5-99/Life).`, `15-99 years or Life (min. 15 years).`, `25-99 years or Life (min. 25 years).`],
+                    answer: `15-99 years or Life (min. 15 years).`,
+                    explanation: `Sec. 12.42(c)(1) enhances a 1st degree felony to a range of 15-99 years or life.`
+                },
+                {
+                    question: `Under Sec. 12.42(d) (Habitual Offender), a defendant on trial for a felony (non-SJF) with *two* prior sequential non-SJF felony convictions faces what punishment?`,
+                    options: [`15-99 years or Life.`, `Life Without Parole.`, `25-99 years or Life.`, `Death.`],
+                    answer: `25-99 years or Life.`,
+                    explanation: `Sec. 12.42(d) is the "habitual" statute, which sets a minimum of 25 years for a defendant with two sequential prior felony convictions.`
+                },
+                {
+                    question: `Under Sec. 12.425(a), if a defendant is on trial for a State Jail Felony and has *two* prior SJF convictions, what is the punishment?`,
+                    options: [`Punished as a 3rd Degree Felony.`, `Punished as a 2nd Degree Felony.`, `Punished as a 1st Degree Felony.`, `The punishment is not enhanced.`],
+                    answer: `Punished as a 3rd Degree Felony.`,
+                    explanation: `Sec. 12.425(a) enhances a state jail felony to a 3rd degree felony upon proof of two prior SJF convictions.`
+                },
+                {
+                    question: `Under Sec. 12.425(b), if a defendant is on trial for a State Jail Felony and has *two* prior sequential *non-SJF* felony convictions, what is the punishment?`,
+                    options: [`Punished as a 3rd Degree Felony.`, `Punished as a 2nd Degree Felony.`, `Punished as a 1st Degree Felony.`, `The punishment is not enhanced.`],
+                    answer: `Punished as a 2nd Degree Felony.`,
+                    explanation: `Sec. 12.425(b) provides a harsher enhancement (to 2nd degree) if the two prior sequential convictions were for non-SJF felonies.`
+                },
+                {
+                    question: `Under Sec. 12.43(a), what is the punishment for a Class A Misdemeanor if the defendant has one prior conviction for *any* degree of felony?`,
+                    options: [`Confinement for 30-180 days.`, `Confinement for 90 days - 1 year.`, `Confinement for 1-2 years.`, `The punishment is not enhanced.`],
+                    answer: `Confinement for 90 days - 1 year.`,
+                    explanation: `Sec. 12.43(a) enhances a Class A misdemeanor by adding a minimum confinement of 90 days if there is a prior Class A or felony conviction.`
+                },
+                {
+                    question: `Under Sec. 12.43(b), what is the punishment for a Class B Misdemeanor if the defendant has one prior conviction for a Class A, Class B, or felony?`,
+                    options: [`Confinement for 30-180 days.`, `Confinement for 90 days - 1 year.`, `Confinement for 1-2 years.`, `The punishment is not enhanced.`],
+                    answer: `Confinement for 30-180 days.`,
+                    explanation: `Sec. 12.43(b) enhances a Class B misdemeanor by adding a minimum confinement of 30 days.`
+                },
+                {
+                    question: `Under Sec. 12.44(a), a court may find it 'would best serve the ends of justice' to punish a defendant convicted of a State Jail Felony as a...`,
+                    options: [`Class A Misdemeanor.`, `Class B Misdemeanor.`, `Class C Misdemeanor.`, `Third Degree Felony.`],
+                    answer: `Class A Misdemeanor.`,
+                    explanation: `Sec. 12.44(a) allows a court, on its own finding, to reduce a state jail felony punishment to the range of a Class A misdemeanor.`
+                },
+                {
+                    question: `Under Sec. 12.44(b), who must make the request for a court to authorize the *prosecution* of a state jail felony as a Class A misdemeanor?`,
+                    options: [`The defendant.`, `The defense attorney.`, `The prosecuting attorney.`, `The judge.`],
+                    answer: `The prosecuting attorney.`,
+                    explanation: `Sec. 12.44(b) states this action may be taken 'At the request of the prosecuting attorney.'`
+                },
+                {
+                    question: `If a defendant admits to unadjudicated offenses during sentencing under Sec. 12.45, what is the effect on those offenses?`,
+                    options: [`Future prosecution is barred for those offenses.`, `The punishment for them is doubled.`, `They are automatically added to his conviction record.`, `There is no effect, it is just for sentencing.`],
+                    answer: `Future prosecution is barred for those offenses.`,
+                    explanation: `Sec. 12.45(c) states that if the court lawfully takes the offense into account, 'prosecution is barred for that offense.'`
+                },
+                {
+                    question: `According to Sec. 12.46, if a prior conviction is used for enhancement, can it be used again for enhancement in a *future* case?`,
+                    options: [`No, a conviction can only be used once.`, `Yes, the use of a conviction does not preclude its subsequent use.`, `Only if it was a felony.`, `Only if it was a misdemeanor.`],
+                    answer: `Yes, the use of a conviction does not preclude its subsequent use.`,
+                    explanation: `Sec. 12.46 explicitly allows prior convictions to be reused for enhancement purposes.`
+                },
+                {
+                    question: `Under Sec. 12.47, what happens to the punishment for a 2nd Degree Felony if an affirmative finding of "Bias or Prejudice" (Hate Crime) is made?`,
+                    options: [`It is punished as a 1st Degree Felony.`, `It is punished as a 3rd Degree Felony.`, `The minimum term is increased to 180 days.`, `The punishment is not changed.`],
+                    answer: `It is punished as a 1st Degree Felony.`,
+                    explanation: `Sec. 12.47(a) increases the punishment to 'the next highest category of offense.' For a 2nd Degree, this is 1st Degree.`
+                },
+                {
+                    question: `What happens to the punishment for a Class A Misdemeanor if an affirmative finding of "Bias or Prejudice" (Hate Crime) is made under Sec. 12.47?`,
+                    options: [`It is punished as a State Jail Felony.`, `It is punished as a Class B Misdemeanor.`, `The minimum term of confinement is increased to 180 days.`, `The punishment is not changed.`],
+                    answer: `The minimum term of confinement is increased to 180 days.`,
+                    explanation: `Sec. 12.47(a) has a special rule for Class A misdemeanors, increasing the *minimum* confinement to 180 days.`
+                },
+                {
+                    question: `Committing certain offenses (like Theft or Burglary) in an area under a declaration of disaster results in what, under Sec. 12.50?`,
+                    options: [`The punishment is doubled.`, `The offense is automatically a felony.`, `The punishment is increased to the next highest category.`, `The fine is automatically $10,000.`],
+                    answer: `The punishment is increased to the next highest category.`,
+                    explanation: `Sec. 12.50(a) increases the punishment for listed offenses to the 'next higher category of offense.'`
+                },
+                {
+                    question: `Committing an offense (like Assault or Criminal Mischief) in retaliation against a person *because* they are a public servant results in what, under Sec. 12.501?`,
+                    options: [`A mandatory life sentence.`, `The punishment is increased to the next highest category.`, `The punishment is not changed, but a civil penalty applies.`, `It is automatically a federal offense.`],
+                    answer: `The punishment is increased to the next highest category.`,
+                    explanation: `Sec. 12.501(b) increases the punishment for listed offenses to the 'next higher category of offense' if committed in retaliation for the victim's status as a public servant.`
+                },
+                {
+                    question: `Under Sec. 12.51, what is the *maximum* fine for a corporation adjudged guilty of a *felony*?`,
+                    options: [`$10,000`, `$20,000`, `$50,000`, `$2,000`],
+                    answer: `$20,000`,
+                    explanation: `Sec. 12.51(b)(1) sets the maximum fine for a felony at $20,000.`
+                },
+                {
+                    question: `Under Sec. 12.51, what is the *maximum* fine for a corporation if an individual suffers Serious Bodily Injury or Death as a result of a Felony or Class A Misdemeanor?`,
+                    options: [`$10,000`, `$20,000`, `$50,000`, `$100,000`],
+                    answer: `$50,000`,
+                    explanation: `Sec. 12.51(b)(4) sets a higher maximum fine of $50,000 in cases involving SBI or death.`
+                },
+                {
+                    question: `Under Sec. 12.51(c), if a corporation *gained* $30,000 by committing a felony, what is the maximum fine a court may impose?`,
+                    options: [`$20,000 (the standard felony max).`, `$30,000 (the amount gained).`, `$50,000 (the SBI/death max).`, `$60,000 (double the amount gained).`],
+                    answer: `$60,000 (double the amount gained).`,
+                    explanation: `Sec. 12.51(c) provides an alternative fine of 'double the amount gained or... lost... whichever is greater,' which ($60,000) is greater than the standard $20,000 max.`
+                },
+                {
+                    question: `Upon conviction of a corporation, who must the court notify under Sec. 12.51(e)?`,
+                    options: [`The Secretary of State.`, `The Governor.`, `The Attorney General.`, `The Texas Rangers.`],
+                    answer: `The Attorney General.`,
+                    explanation: `Sec. 12.51(e) states, 'On conviction of a corporation... the court shall notify the attorney general of that fact.'`
+                },
+                // --- 20 NEW QUESTIONS START HERE ---
+                {
+                    question: `Under Sec. 12.01(b), penal laws enacted after the effective date of this code shall be...`,
+                    options: [`Classified in accordance with this chapter.`, `Handled by civil courts.`, `Default to Class C misdemeanors.`, `Considered federal offenses.`],
+                    answer: `Classified in accordance with this chapter.`,
+                    explanation: `Sec. 12.01(b) ensures that all new penal laws fit into the punishment classifications set by this chapter.`
+                },
+                {
+                    question: `According to Sec. 12.03(a), what are the three classifications of misdemeanors?`,
+                    options: [`Felony, Misdemeanor, Infraction.`, `Major, Minor, Petty.`, `Class A, Class B, Class C.`, `State Jail, County Jail, Fine-Only.`],
+                    answer: `Class A, Class B, Class C.`,
+                    explanation: `Sec. 12.03(a) lists the three categories as Class A, B, and C.`
+                },
+                {
+                    question: `According to Sec. 12.04(a), what are the five classifications of felonies?`,
+                    options: [`Capital, 1st Degree, 2nd Degree, 3rd Degree, and State Jail.`, `Capital, Aggravated, Enhanced, Standard, and State Jail.`, `Class A, B, C, D, and E.`, `Life, 20-year, 10-year, 5-year, and 2-year.`],
+                    answer: `Capital, 1st Degree, 2nd Degree, 3rd Degree, and State Jail.`,
+                    explanation: `Sec. 12.04(a) lists the five categories.`
+                },
+                {
+                    question: `If the state *seeks the death penalty* for a Capital Felony, what are the two possible punishments under Sec. 12.31(a)?`,
+                    options: [`Death or Life.`, `Death or Life Without Parole.`, `Life or Life Without Parole.`, `Death only.`],
+                    answer: `Death or Life Without Parole.`,
+                    explanation: `Sec. 12.31(a) states that if the state seeks death, the punishment shall be 'life without parole or by death.'`
+                },
+                {
+                    question: `Under Sec. 12.31(b), in a capital trial where the state does NOT seek death for an adult offender, prospective jurors must be informed that the mandatory sentence is...`,
+                    options: [`Life.`, `Life Without Parole.`, `To be determined by the jury.`, `5 to 99 years.`],
+                    answer: `Life Without Parole.`,
+                    explanation: `Sec. 12.31(b)(2) requires jurors to be informed that a sentence of life without parole is mandatory.`
+                },
+                {
+                    question: `A State Jail Felony is enhanced to a 3rd Degree Felony if a deadly weapon is used OR if the defendant has a previous final felony conviction for certain offenses, such as... (Sec. 12.35(c))`,
+                    options: [`Any felony.`, `Any Class A misdemeanor.`, `An offense under Sec. 21.02 (Continuous Sexual Abuse of Child).`, `Any two prior state jail felonies.`],
+                    answer: `An offense under Sec. 21.02 (Continuous Sexual Abuse of Child).`,
+                    explanation: `Sec. 12.35(c)(2) lists specific prior convictions, including Sec. 21.02, that enhance a SJF to a 3rd Degree Felony.`
+                },
+                {
+                    question: `Under Sec. 12.41(2), an offense from outside the Penal Code is classified as a "Class B misdemeanor" for enhancement purposes if it is not a felony and...`,
+                    options: [`Is punishable by fine only.`, `Confinement in a jail is affixed as a possible punishment.`, `The actor used a deadly weapon.`, `It involves theft.`],
+                    answer: `Confinement in a jail is affixed as a possible punishment.`,
+                    explanation: `Sec. 12.41(2) uses 'confinement in a jail' as the qualifier for a Class B misdemeanor classification.`
+                },
+                {
+                    question: `For the "Habitual Offender" enhancement (25-Life) under Sec. 12.42(d), what is required regarding the two previous felony convictions?`,
+                    options: [`They must both be 1st Degree Felonies.`, `They must have occurred within the last 10 years.`, `The second conviction must be for an offense that occurred *after* the first conviction was final.`, `They must both be for the same type of offense.`],
+                    answer: `The second conviction must be for an offense that occurred *after* the first conviction was final.`,
+                    explanation: `Sec. 12.42(d) requires the prior felonies to be sequential: commit crime 1 -> get final conviction 1 -> commit crime 2 -> get final conviction 2.`
+                },
+                {
+                    question: `Under Sec. 12.42(f), a juvenile adjudication can be used as a final felony conviction for enhancement *if* the child was committed to...`,
+                    options: [`Any juvenile probation.`, `A post-adjudication secure correctional facility.`, `A boot camp program.`, `An adult prison.`],
+                    answer: `A post-adjudication secure correctional facility.`,
+                    explanation: `Sec. 12.42(f) links the use of a juvenile adjudication to a commitment to the Texas Juvenile Justice Department or a 'post-adjudication secure correctional facility.'`
+                },
+                {
+                    question: `A defendant is on trial for a SJF enhanced under 12.35(c) (e.g., used a deadly weapon). He has one prior non-SJF felony. What is the punishment range? (Sec. 12.425(c))`,
+                    options: [`Punished as a 3rd Degree Felony.`, `Punished as a 2nd Degree Felony.`, `Punished as a 1st Degree Felony.`, `25-99 years or Life.`],
+                    answer: `Punished as a 2nd Degree Felony.`,
+                    explanation: `Sec. 12.425(c) enhances an already-enhanced SJF to a 2nd Degree Felony with one prior non-SJF conviction.`
+                },
+                {
+                    question: `If an offense (like DWI) has a specific enhancement provision in its own statute, which law controls for repeat offenders? (Sec. 12.43(d))`,
+                    options: [`Sec. 12.43 (Repeat Misdemeanor).`, `The specific enhancement provision for that offense.`, `Whichever provision is more lenient.`, `Whichever provision is harsher.`],
+                    answer: `The specific enhancement provision for that offense.`,
+                    explanation: `Sec. 12.43(d) states that the 'specific enhancement provision controls over this section.'`
+                },
+                {
+                    question: `Under Sec. 12.45(a), a defendant may admit to unadjudicated offenses during sentencing with the consent of...`,
+                    options: [`The judge only.`, `The attorney for the state.`, `The victim.`, `The jury.`],
+                    answer: `The attorney for the state.`,
+                    explanation: `Sec. 12.45(a) requires the 'consent of the attorney for the state.'`
+                },
+                {
+                    question: `To take an unadjudicated offense from another county into account under Sec. 12.45(b), the court must get permission from...`,
+                    options: [`The attorney general.`, `The judge in the other county.`, `The prosecuting attorney with jurisdiction over the offense.`, `The defendant's attorney.`],
+                    answer: `The prosecuting attorney with jurisdiction over the offense.`,
+                    explanation: `Sec. 12.45(b) requires permission from the prosecuting attorney who has jurisdiction in that other county.`
+                },
+                {
+                    question: `Under Sec. 12.47 (Bias/Prejudice), what is the enhancement for an offense that is *already* a 1st Degree Felony?`,
+                    options: [`It is punished as a Capital Felony.`, `The fine is doubled.`, `The punishment is not increased.`, `The minimum term becomes 25 years.`],
+                    answer: `The punishment is not increased.`,
+                    explanation: `Sec. 12.47(a) states the enhancement applies to an offense 'other than a first degree felony or a Class A misdemeanor' (though Class A has its own rule).`
+                },
+                {
+                    question: `Under Sec. 12.48, if a 3rd Degree Felony (Ch. 31/32) causes a loss to a nursing home, requiring a trustee, the punishment is...`,
+                    options: [`Increased to the next highest category (2nd Degree).`, `Doubled to 4-20 years.`, `Not enhanced.`, `Punished as a Class A misdemeanor.`],
+                    answer: `Increased to the next highest category (2nd Degree).`,
+                    explanation: `Sec. 12.48 increases the punishment to the 'next higher category of offense.'`
+                },
+                {
+                    question: `Under Sec. 12.48 (nursing home loss), if the offense is a 1st Degree Felony, the punishment is...`,
+                    options: [`Increased to a Capital Felony.`, `Punished as a felony of the first degree.`, `Punished with a mandatory life sentence.`, `Doubled.`],
+                    answer: `Punished as a felony of the first degree.`,
+                    explanation: `Sec. 12.48 states 'except that a felony of the first degree is punished as a felony of the first degree.'`
+                },
+                {
+                    question: `Under Sec. 12.50 (Disaster Area), what happens if the offense is a 1st Degree Felony (and not listed in 12.50(d))?`,
+                    options: [`It is punished as a Capital Felony.`, `The minimum term becomes 25 years.`, `The punishment may not be increased under this section.`, `The fine is doubled to $20,000.`],
+                    answer: `The punishment may not be increased under this section.`,
+                    explanation: `Sec. 12.50(c) states that 'if an offense... is punishable as a felony of the first degree, the punishment... may not be increased under this section.'`
+                },
+                {
+                    question: `Under Sec. 12.502, an offense like Unlawful Disclosure of Intimate Visual Material (Sec 21.16) that is normally a State Jail Felony is enhanced to what if committed on a college campus?`,
+                    options: [`A felony of the third degree.`, `A felony of the second degree.`, `A Class A misdemeanor.`, `The punishment is not changed.`],
+                    answer: `A felony of the third degree.`,
+                    explanation: `Sec. 12.502(b)(4) increases a state jail felony to a felony of the third degree.`
+                },
+                {
+                    question: `Under Sec. 12.51(b), what is the maximum fine for a corporation guilty of a Class A or Class B misdemeanor (assuming no SBI or death)?`,
+                    options: [`$2,000`, `$4,000`, `$10,000`, `$20,000`],
+                    answer: `$10,000`,
+                    explanation: `Sec. 12.51(b)(2) sets the maximum fine at $10,000 for a Class A or B misdemeanor.`
+                },
+                {
+                    question: `In addition to a fine, what may a court order a convicted corporation to do under Sec. 12.51(d)?`,
+                    options: [`Give notice of the conviction to any person the court deems appropriate.`, `Be dissolved.`, `Fire its CEO.`, `Pay restitution to the state.`],
+                    answer: `Give notice of the conviction to any person the court deems appropriate.`,
+                    explanation: `Sec. 12.51(d) specifically authorizes the court to order the corporation to give notice of the conviction.`
+                }
+            ];
+
+
+            const quizContainer = document.getElementById('quiz-container');
+            const checkAnswersBtn = document.getElementById('check-answers-btn');
+            const retakeQuizBtn = document.getElementById('retake-quiz-btn');
+            const quizResultsDiv = document.getElementById('quiz-results');
+            const quizScoreEl = document.getElementById('quiz-score');
+            const quizPercentageEl = document.getElementById('quiz-percentage');
+
+            function loadQuiz() {
+                // Shuffle the quiz data for a new order each time
+                const shuffledQuizData = [...quizData].sort(() => Math.random() - 0.5);
+                
+                quizContainer.innerHTML = ''; // Clear previous questions
+                
+                shuffledQuizData.forEach((q, index) => {
+                    const questionDiv = document.createElement('div');
+                    questionDiv.className = 'quiz-question';
+                    
+                    // Store the original question index to check the answer later
+                    const originalIndex = quizData.indexOf(q);
+                    
+                    let optionsHtml = q.options.map(option => {
+                        // Use template literals for the value to handle any special characters
+                        const escapedOption = `${option}`;
+                        return `<label class="block"><input type="radio" name="q${index}" value="${escapedOption.replace(/"/g, '&quot;')}" data-original-index="${originalIndex}" class="mr-2">${option}</label>`;
+                    }).join('');
+                    
+                    const escapedQuestion = q.question;
+
+                    questionDiv.innerHTML = `
+                        <p class="font-semibold mb-2">${index + 1}. ${escapedQuestion}</p>
+                        <div class="space-y-2">${optionsHtml}</div>
+                        <div class="feedback hidden mt-2 p-2 rounded-lg text-sm"></div>
+                    `;
+                    quizContainer.appendChild(questionDiv);
+                });
+            }
+
+
+            loadQuiz(); // Initial load
+
+            checkAnswersBtn.addEventListener('click', () => {
+                let score = 0;
+                const totalQuestions = quizData.length;
+                const questions = quizContainer.querySelectorAll('.quiz-question');
+
+                questions.forEach((questionDiv, index) => {
+                    const selected = questionDiv.querySelector(`input[name="q${index}"]:checked`);
+                    const feedback = questionDiv.querySelector('.feedback');
+                    const radioButtons = questionDiv.querySelectorAll(`input[name="q${index}"]`);
+                    
+                    feedback.classList.remove('hidden', 'bg-green-100', 'text-green-800', 'bg-red-100', 'text-red-800', 'bg-yellow-100', 'text-yellow-800');
+                    
+                    if (selected) {
+                        const originalIndex = selected.dataset.originalIndex;
+                        const q = quizData[originalIndex];
+
+                        // Compare the selected value with the answer
+                        if (selected.value === q.answer.replace(/"/g, '&quot;')) {
+                            score++;
+                            feedback.textContent = `Correct! ${q.explanation}`;
+                            feedback.classList.add('bg-green-100', 'text-green-800');
+                        } else {
+                            feedback.textContent = `Incorrect. The correct answer is "${q.answer}". ${q.explanation}`;
+                            feedback.classList.add('bg-red-100', 'text-red-800');
+                        }
+                    } else {
+                        // Find the original question to show the answer
+                        const firstRadio = questionDiv.querySelector(`input[name="q${index}"]`);
+                        const originalIndex = firstRadio.dataset.originalIndex;
+                        const q = quizData[originalIndex];
+                        
+                        feedback.textContent = `You did not answer this question. The correct answer is "${q.answer}". ${q.explanation}`;
+                        feedback.classList.add('bg-yellow-100', 'text-yellow-800');
+                    }
+                    
+                    // Disable radio buttons after submitting
+                    radioButtons.forEach(radio => {
+                        radio.disabled = true;
+                    });
+                });
+
+                // Calculate and display results
+                const percentage = ((score / totalQuestions) * 100).toFixed(0);
+                quizScoreEl.textContent = `Your Score: ${score} / ${totalQuestions}`;
+                quizPercentageEl.textContent = `Percentage: ${percentage}%`;
+                
+                quizResultsDiv.classList.remove('hidden');
+                checkAnswersBtn.classList.add('hidden');
+                retakeQuizBtn.classList.remove('hidden');
+            });
+
+            retakeQuizBtn.addEventListener('click', () => {
+                // Hide results and retake button
+                quizResultsDiv.classList.add('hidden');
+                retakeQuizBtn.classList.add('hidden');
+                
+                // Show submit button
+                checkAnswersBtn.classList.remove('hidden');
+                
+                // Reload the quiz (clears answers and feedback)
+                loadQuiz();
+            });
+
+
+            // --- RESOURCES LIST ---
+            const resources = [
+                { name: "Texas Penal Code - Official Site", url: "https://statutes.capitol.texas.gov/Default.aspx?Code=PE" },
+                { name: "Penal Code Ch. 12 - Punishments", url: "https://statutes.capitol.texas.gov/Docs/PE/htm/PE.12.htm" },
+                { name: "CCP Art. 42A.054 - SJF Community Supervision", url: "https://statutes.capitol.texas.gov/Docs/CR/htm/CR.42A.htm#42A.054" },
+                { name: "CCP Art. 42.012 - Finding on Controlled Substance", url: "https://statutes.capitol.texas.gov/Docs/CR/htm/CR.42.htm#42.012" },
+                { name: "CCP Art. 42.014 - Finding on Bias or Prejudice", url: "https://statutes.capitol.texas.gov/Docs/CR/htm/CR.42.htm#42.014" },
+                { name: "CCP Art. 62.001 - Sex Offender Registration Definitions", url: "https://statutes.capitol.texas.gov/Docs/CR/htm/CR.62.htm#62.001" },
+                { name: "Health & Safety Code Ch. 841 - Sexually Violent Predators", url: "https://statutes.capitol.texas.gov/Docs/HS/htm/HS.841.htm" }
+            ];
+            const resourcesList = document.getElementById('resources-list');
+            resources.sort((a, b) => a.name.localeCompare(b.name));
+            resources.forEach(res => {
+                const link = document.createElement('a'); // Use an anchor tag for links
+                link.href = res.url;
+                link.target = '_blank';
+                link.rel = 'noopener noreferrer'; // Good practice for security
+                link.className = 'text-blue-600 hover:underline p-2 bg-gray-50 rounded-md block hover:bg-gray-100';
+                link.innerHTML = `<i class="fas fa-external-link-alt mr-2"></i>${res.name}`;
+                resourcesList.appendChild(link);
+            });
+        });
+    </script>
+</body>
+</html>
+

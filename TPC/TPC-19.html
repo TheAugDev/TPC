@@ -1,0 +1,721 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ch. 19 Study Guide: Texas Penal Code</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet">
+    <style>
+        :root {
+            --header-bg: #1f2937;
+            --bg-color: #f3f4f6;
+            --tab-active-bg: #3b82f6;
+            --tab-active-text: #ffffff;
+            --card-bg: #ffffff;
+            --text-color: #111827;
+            --link-color: #2563eb;
+        }
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            font-family: 'Inter', sans-serif;
+        }
+        @import url('https://rsms.me/inter/inter.css');
+        .tab-content { display: none; }
+        .tab-content.active { display: block; }
+        .tab.active {
+            background-color: var(--tab-active-bg);
+            color: var(--tab-active-text);
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .tab {
+            transition: all 0.3s ease-in-out;
+        }
+        .grid-definitions {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 1rem;
+        }
+        .definition-card {
+            background-color: #f9fafb;
+            border: 1px solid #e5e7eb;
+            border-left: 4px solid var(--tab-active-bg);
+            padding: 1rem;
+            border-radius: 0.5rem;
+        }
+        .mental-state-grid {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 0.5rem;
+            border-radius: 0.5rem;
+            overflow: hidden;
+            border: 1px solid #e5e7eb;
+        }
+        .mental-state-grid div {
+            padding: 0.75rem 1rem;
+        }
+        .mental-state-grid .grid-header {
+            background-color: #f3f4f6;
+            font-weight: 600;
+        }
+         .mental-state-grid .grid-row:not(:last-child) {
+            border-bottom: 1px solid #e5e7eb;
+        }
+         .mental-state-grid .grid-cell-1 {
+            background-color: #f9fafb;
+            font-weight: 500;
+        }
+        .mental-state-grid .grid-cell-2 {
+            background-color: #ffffff;
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Header -->
+    <header class="bg-gray-800 text-white p-4 shadow-md">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-xl md:text-2xl font-bold">
+                <i class="fas fa-skull-crossbones mr-2"></i>Ch. 19: Criminal Homicide
+            </h1>
+            <a href="index.html" class="text-sm text-blue-300 hover:text-blue-100 hover:underline">
+                <i class="fas fa-arrow-left mr-1"></i> Back to Main Page
+            </a>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container mx-auto p-4 md:p-6">
+        <!-- Tab Navigation -->
+        <div class="mb-6 bg-white rounded-lg shadow-md overflow-x-auto">
+            <nav id="tabs" class="flex flex-row space-x-1 p-2">
+                <button data-tab="ch19-types" class="tab active flex-1 md:flex-none flex items-center justify-center px-4 py-2 text-sm font-semibold rounded-lg text-gray-600 hover:bg-blue-100">
+                    <i class="fas fa-balance-scale mr-2"></i> <span class="hidden md:inline">Homicide Types</span>
+                </button>
+                <button data-tab="ch19-murder" class="tab flex-1 md:flex-none flex items-center justify-center px-4 py-2 text-sm font-semibold rounded-lg text-gray-600 hover:bg-blue-100">
+                    <i class="fas fa-gavel mr-2"></i> <span class="hidden md:inline">Murder (19.02)</span>
+                </button>
+                <button data-tab="ch19-capital-murder" class="tab flex-1 md:flex-none flex items-center justify-center px-4 py-2 text-sm font-semibold rounded-lg text-gray-600 hover:bg-blue-100">
+                    <i class="fas fa-exclamation-triangle mr-2"></i> <span class="hidden md:inline">Capital Murder (19.03)</span>
+                </button>
+                <button data-tab="ch19-definitions" class="tab flex-1 md:flex-none flex items-center justify-center px-4 py-2 text-sm font-semibold rounded-lg text-gray-600 hover:bg-blue-100">
+                    <i class="fas fa-book mr-2"></i> <span class="hidden md:inline">Definitions & Exceptions</span>
+                </button>
+                <button data-tab="knowledge-check" class="tab flex-1 md:flex-none flex items-center justify-center px-4 py-2 text-sm font-semibold rounded-lg text-gray-600 hover:bg-blue-100">
+                    <i class="fas fa-question-circle mr-2"></i> <span class="hidden md:inline">Knowledge Check</span>
+                </button>
+                <button data-tab="resources" class="tab flex-1 md:flex-none flex items-center justify-center px-4 py-2 text-sm font-semibold rounded-lg text-gray-600 hover:bg-blue-100">
+                    <i class="fas fa-link mr-2"></i> <span class="hidden md:inline">Resources</span>
+                </button>
+            </nav>
+        </div>
+
+        <!-- Tab Content -->
+        <div id="tab-contents">
+            <!-- Ch. 19: Homicide Types Tab -->
+            <div id="ch19-types" class="tab-content active space-y-6">
+                
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-xl font-bold mb-4 border-b pb-2"><a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.19.htm#19.01" target="_blank" class="text-blue-600 hover:underline">Sec. 19.01. Types of Criminal Homicide</a></h2>
+                    <div class="space-y-4 text-sm">
+                        <ul class="list-disc list-inside ml-4 text-gray-700 space-y-2">
+                            <li><strong class="font-semibold">(a) Definition:</strong> A person commits criminal homicide if they <strong class="font-semibold">intentionally, knowingly, recklessly, or with criminal negligence</strong> causes the death of an individual.</li>
+                            <li><strong class="font-semibold">(b) Types:</strong> Criminal homicide is <strong class="font-semibold">Murder, Capital Murder, Manslaughter, or Criminally Negligent Homicide.</strong></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-xl font-bold mb-4 border-b pb-2"><a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.19.htm#19.04" target="_blank" class="text-blue-600 hover:underline">Sec. 19.04. Manslaughter</a></h2>
+                    <div class="space-y-4 text-sm">
+                         <ul class="list-disc list-inside ml-4 text-gray-700 space-y-2">
+                            <li><strong class="font-semibold">(a) Definition:</strong> A person commits an offense if he <strong class="font-semibold">recklessly</strong> causes the death of an individual.</li>
+                            <li><strong class="font-semibold">(b) Punishment:</strong> <strong class="font-semibold">Felony of the Second Degree</strong>.</li>
+                            <li><strong class="font-semibold">(b) Enhancement:</strong> Becomes a <strong class="font-semibold">Felony of the First Degree</strong> if it's shown the actor committed an offense under <strong class="font-semibold">Sec. 28.09</strong> (Impairment of Public Comm/Transport) and that conduct caused the death.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-xl font-bold mb-4 border-b pb-2"><a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.19.htm#19.05" target="_blank" class="text-blue-600 hover:underline">Sec. 19.05. Criminally Negligent Homicide</a></h2>
+                    <div class="space-y-4 text-sm">
+                         <ul class="list-disc list-inside ml-4 text-gray-700 space-y-2">
+                            <li><strong class="font-semibold">(a) Definition:</strong> A person commits an offense if he causes the death of an individual by <strong class="font-semibold">criminal negligence</strong>.</li>
+                            <li><strong class="font-semibold">(b) Punishment:</strong> <strong class="font-semibold">State Jail Felony</strong>.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-xl font-bold mb-4 border-b pb-2">Homicide by Culpable Mental State</h2>
+                    <div class="mental-state-grid text-sm">
+                        <div class="grid-header grid-cell-1">Offense</div>
+                        <div class="grid-header grid-cell-2">Culpable Mental State (Minimum)</div>
+                        
+                        <div class="grid-row grid-cell-1">Murder (19.02(b)(1))</div>
+                        <div class="grid-row grid-cell-2"><strong class="font-semibold">Intentionally</strong> or <strong class="font-semibold">Knowingly</strong></div>
+                        
+                        <div class="grid-row grid-cell-1">Manslaughter (19.04)</div>
+                        <div class="grid-row grid-cell-2"><strong class="font-semibold">Recklessly</strong></div>
+                        
+                        <div class="grid-row grid-cell-1">Criminally Negligent Homicide (19.05)</div>
+                        <div class="grid-row grid-cell-2"><strong class="font-semibold">Criminal Negligence</strong></div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Ch. 19: Murder (19.02) Tab -->
+            <div id="ch19-murder" class="tab-content space-y-6">
+                
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-xl font-bold mb-4 border-b pb-2"><a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.19.htm#19.02" target="_blank" class="text-blue-600 hover:underline">Sec. 19.02. Murder</a></h2>
+                    <div class="space-y-4 text-sm">
+                        <h3 class="font-semibold">Four Ways to Commit Murder (19.02(b)):</h3>
+                        <p class="text-gray-700">A person commits murder if they:</p>
+                        <ol class="list-decimal list-inside ml-4 text-gray-700 space-y-2">
+                            <li><strong class="font-semibold">(b)(1): Intentionally or knowingly</strong> cause the death of an individual.</li>
+                            <li><strong class="font-semibold">(b)(2): Intend to cause serious bodily injury</strong> and commit an act <strong class="font-semibold">clearly dangerous to human life</strong> that causes the death.</li>
+                            <li><strong class="font-semibold">(b)(3): Commit or attempt a felony (other than manslaughter)</strong>, and in furtherance of or in flight from, commit an act <strong class="font-semibold">clearly dangerous to human life</strong> that causes the death. (Felony Murder)</li>
+                            <li><strong class="font-semibold">(b)(4): Knowingly manufacture or deliver a controlled substance (PG 1-B)</strong>... and an individual dies as a result of using <strong class="font-semibold">any amount</strong> of it.</li>
+                        </ol>
+
+                        <h3 class="font-semibold">Punishment (c):</h3>
+                        <ul class="list-disc list-inside ml-4 text-gray-700 space-y-2">
+                            <li>An offense under this section is a <strong class="font-semibold">Felony of the First Degree</strong>.</li>
+                        </ul>
+
+                         <h3 class="font-semibold">Defense for (b)(4) Offense (e):</h3>
+                        <ul class="list-disc list-inside ml-4 text-gray-700 space-y-2">
+                            <li>It is a defense to prosecution under (b)(4) (Fentanyl delivery) that the actor's conduct was <strong class="font-semibold">authorized</strong> by law (e.g., a pharmacist).</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-xl font-bold mb-4 border-b pb-2"><a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.19.htm#19.02" target="_blank" class="text-blue-600 hover:underline">Sudden Passion (19.02(d))</a></h2>
+                    <div class="space-y-4 text-sm">
+                        <ul class="list-disc list-inside ml-4 text-gray-700 space-y-2">
+                            <li><strong class="font-semibold">When:</strong> Raised at the <strong class="font-semibold">punishment stage</strong> of a trial.</li>
+                            <li><strong class="font-semibold">Issue:</strong> That the defendant caused the death under the immediate influence of <strong class="font-semibold">sudden passion</strong> arising from an <strong class="font-semibold">adequate cause</strong>.</li>
+                            <li><strong class="font-semibold">Burden of Proof:</strong> The <strong class="font-semibold">defendant</strong> must prove the issue by a <strong class="font-semibold">preponderance of the evidence</strong>.</li>
+                            <li><strong class="font-semibold">Effect:</strong> If proven, the offense is reduced from a Felony of the First Degree to a <strong class="font-semibold">Felony of the Second Degree</strong>.</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Ch. 19: Capital Murder (19.03) Tab -->
+            <div id="ch19-capital-murder" class="tab-content space-y-6">
+
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-xl font-bold mb-4 border-b pb-2"><a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.19.htm#19.03" target="_blank" class="text-blue-600 hover:underline">Sec. 19.03. Capital Murder</a></h2>
+                    <div class="space-y-4 text-sm">
+                        <h3 class="font-semibold">Base Requirement (a):</h3>
+                        <p class="text-gray-700">A person must first commit <strong class="font-semibold">Murder as defined under Sec. 19.02(b)(1)</strong> (intentionally or knowingly causes death) AND one of the following 10 factors must be present:</p>
+
+                        <h3 class="font-semibold">Aggravating Factors (a)(1) - (a)(10):</h3>
+                        <ol class="list-decimal list-inside ml-4 text-gray-700 space-y-2">
+                            <li>Murders a <strong class="font-semibold">peace officer or fireman</strong> (who is on duty and actor knows is PO/FF).</li>
+                            <li>Intentionally murders in the course of <strong class="font-semibold">kidnapping, burglary, robbery, aggravated sexual assault, arson, obstruction or retaliation, or terroristic threat</strong>.</li>
+                            <li>Murders for <strong class="font-semibold">remuneration</strong> (murder for hire, either paying or being paid).</li>
+                            <li>Murders while <strong class="font-semibold">escaping or attempting to escape</strong> from a penal institution.</li>
+                            <li>While <strong class="font-semibold">incarcerated</strong>, murders an <strong class="font-semibold">employee</strong> OR murders with <strong class="font-semibold">intent to participate in a combination</strong>.</li>
+                            <li>While incarcerated for Murder (or other specific serious felonies), murders another.</li>
+                            <li>Murders <strong class="font-semibold">more than one person</strong> (either in the same transaction or same scheme).</li>
+                            <li>Murders an individual <strong class="font-semibold">under 10 years of age</strong>.</li>
+                            <li>Murders an individual <strong class="font-semibold">10 years or older but younger than 15</strong>.</li>
+                            <li>Murders a <strong class="font-semibold">judge or justice</strong> in retaliation for their service.</li>
+                        </ol>
+
+                        <h3 class="font-semibold">Punishment & Other Provisions:</h3>
+                        <ul class="list-disc list-inside ml-4 text-gray-700 space-y-2">
+                            <li><strong class="font-semibold">(b) Punishment:</strong> An offense under this section is a <strong class="font-semibold">Capital Felony</strong>.</li>
+                            <li><strong class="font-semibold">(c) Lesser Included:</strong> If a jury does not find guilt for Capital Murder, they may convict of Murder or any other lesser included offense.</li>
+                            <li><strong class="font-semibold">(d) Presumption for (a)(1):</strong> The actor is <strong class="font-semibold">presumed to have known</strong> the victim was a PO/FF if they were wearing a <strong class="font-semibold">distinctive uniform or badge</strong>.</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Ch. 19: Definitions & Exceptions Tab -->
+            <div id="ch19-definitions" class="tab-content space-y-6">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-xl font-bold mb-4 border-b pb-2">Key Definitions (19.02(a))</h2>
+                    <div class="grid-definitions">
+                        <div class="definition-card">
+                            <h3 class="font-bold text-gray-900">Adequate Cause (19.02(a)(1))</h3>
+                            <p class="text-sm text-gray-700">Cause that would commonly produce a degree of anger, rage, resentment, or terror in a <strong class="font-semibold">person of ordinary temper</strong>, sufficient to render the mind <strong class="font-semibold">incapable of cool reflection</strong>.</p>
+                        </div>
+                        <div class="definition-card">
+                            <h3 class="font-bold text-gray-900">Sudden Passion (19.02(a)(2))</h3>
+                            <p class="text-sm text-gray-700">Passion directly caused by and arising out of <strong class="font-semibold">provocation by the individual killed</strong> (or another acting with them), which passion arises <strong class="font-semibold">at the time of the offense</strong> and is <strong class="font-semibold">not solely the result of former provocation</strong>.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-xl font-bold mb-4 border-b pb-2"><a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.19.htm#19.06" target="_blank" class="text-blue-600 hover:underline">Sec. 19.06. Applicability to Certain Conduct</a></h2>
+                    <div class="space-y-4 text-sm">
+                        <p class="text-gray-700">This chapter (Criminal Homicide) <strong class="font-semibold">does not apply</strong> to the death of an <strong class="font-semibold">unborn child</strong> if the conduct charged is:</p>
+                        <ul class="list-disc list-inside ml-4 text-gray-700 space-y-2">
+                            <li><strong class="font-semibold">(1)</strong> Conduct committed by the <strong class="font-semibold">mother</strong> of the unborn child.</li>
+                            <li><strong class="font-semibold">(2)</strong> A <strong class="font-semibold">lawful medical procedure</strong> (e.g., abortion) where the death was the intended result.</li>
+                            <li><strong class="font-semibold">(3)</strong> A lawful medical procedure as part of an <strong class="font-semibold">assisted reproduction</strong>.</li>
+                            <li><strong class="font-semibold">(4)</strong> The <strong class="font-semibold">lawful dispensation</strong> or administration of a drug.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Knowledge Check Tab -->
+            <div id="knowledge-check" class="tab-content">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-2xl font-bold mb-4">Knowledge Check (Ch. 19)</h2>
+                    <p class="mb-6 text-gray-600">Test your understanding of the material. (45 Questions)</p>
+                    <div id="quiz-container" class="space-y-8">
+                        <!-- Questions will be dynamically inserted here -->
+                    </div>
+                    <!-- New Results Div -->
+                    <div id="quiz-results" class="hidden mt-8 text-center">
+                        <h3 class="text-2xl font-bold" id="quiz-score"></h3>
+                        <p class="text-lg text-gray-700" id="quiz-percentage"></p>
+                    </div>
+                    <!-- Button Container -->
+                    <div class="mt-8 text-center space-x-4">
+                        <button id="check-answers-btn" class="bg-blue-600 text-white font-bold py-2 px-6 rounded-lg hover:bg-blue-700 transition-colors">Submit Answers</button>
+                        <button id="retake-quiz-btn" class="hidden bg-gray-600 text-white font-bold py-2 px-6 rounded-lg hover:bg-gray-700 transition-colors">Retake Quiz</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Resources Tab -->
+            <div id="resources" class="tab-content">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-2xl font-bold mb-4">External Resources</h2>
+                    <p class="mb-6 text-gray-600">Quick links to official Texas statutes referenced in this chapter.</p>
+                    <div id="resources-list" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 text-sm">
+                        <!-- Links will be dynamically inserted here -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const tabs = document.querySelectorAll('#tabs button');
+            const tabContents = document.querySelectorAll('.tab-content');
+
+            tabs.forEach(tab => {
+                tab.addEventListener('click', () => {
+                    tabs.forEach(t => t.classList.remove('active'));
+                    tabContents.forEach(c => c.classList.remove('active'));
+                    tab.classList.add('active');
+                    document.getElementById(tab.dataset.tab).classList.add('active');
+                });
+            });
+
+            // --- QUIZ DATA (CHAPTER 19) ---
+            const quizData = [
+                {
+                    question: `Under Sec. 19.01, what are the four culpable mental states for Criminal Homicide?`,
+                    options: [`Intentionally, Knowingly, Recklessly, or with Criminal Negligence.`, `Intentionally, Knowingly, Recklessly, or Maliciously.`, `Intentionally, Knowingly, Carelessly, or Negligently.`, `Intentionally, Knowingly, Recklessly, or Unlawfully.`],
+                    answer: `Intentionally, Knowingly, Recklessly, or with Criminal Negligence.`,
+                    explanation: `Sec. 19.01(a) lists these four specific mental states.`
+                },
+                {
+                    question: `Under Sec. 19.01(b), what are the four types of Criminal Homicide?`,
+                    options: [`Murder, Capital Murder, Manslaughter, and Assault.`, `Murder, Capital Murder, Manslaughter, and Criminally Negligent Homicide.`, `Murder, Felony Murder, Manslaughter, and Negligent Homicide.`, `Capital Murder, First Degree Murder, Second Degree Murder, and Manslaughter.`],
+                    answer: `Murder, Capital Murder, Manslaughter, and Criminally Negligent Homicide.`,
+                    explanation: `Sec. 19.01(b) lists these four distinct offenses.`
+                },
+                {
+                    question: `What is the culpable mental state for Manslaughter under Sec. 19.04?`,
+                    options: [`Intentionally.`, `Knowingly.`, `Recklessly.`, `Criminal Negligence.`],
+                    answer: `Recklessly.`,
+                    explanation: `Sec. 19.04(a) states: 'A person commits an offense if he recklessly causes the death of an individual.'`
+                },
+                {
+                    question: `What is the standard punishment for Manslaughter under Sec. 19.04?`,
+                    options: [`State Jail Felony.`, `Felony of the Third Degree.`, `Felony of the Second Degree.`, `Felony of the First Degree.`],
+                    answer: `Felony of the Second Degree.`,
+                    explanation: `Sec. 19.04(b) defines Manslaughter as a Felony of the Second Degree.`
+                },
+                {
+                    question: `When is Manslaughter enhanced to a Felony of the First Degree? (Sec. 19.04(b))`,
+                    options: [`If a deadly weapon was used.`, `If the victim was a child.`, `If the actor was intoxicated.`, `If the actor committed an offense under Sec. 28.09 (Impair/Interrupt Transport).`],
+                    answer: `If the actor committed an offense under Sec. 28.09 (Impair/Interrupt Transport).`,
+                    explanation: `Sec. 19.04(b) provides a specific enhancement to F1 if the death was caused by conduct violating Sec. 28.09.`
+                },
+                {
+                    question: `What is the culpable mental state for Criminally Negligent Homicide under Sec. 19.05?`,
+                    options: [`Intentionally.`, `Knowingly.`, `Recklessly.`, `Criminal Negligence.`],
+                    answer: `Criminal Negligence.`,
+                    explanation: `Sec. 19.05(a) states: 'A person commits an offense if he causes the death of an individual by criminal negligence.'`
+                },
+                {
+                    question: `What is the punishment for Criminally Negligent Homicide under Sec. 19.05?`,
+                    options: [`State Jail Felony.`, `Felony of the Third Degree.`, `Felony of the Second Degree.`, `Class A Misdemeanor.`],
+                    answer: `State Jail Felony.`,
+                    explanation: `Sec. 19.05(b) defines this offense as a State Jail Felony.`
+                },
+                {
+                    question: `Under Sec. 19.02(a)(1), what is "Adequate Cause"?`,
+                    options: [`Any cause that makes a person angry.`, `A cause that renders a person's mind incapable of cool reflection.`, `A cause that is the result of former provocation.`, `A cause that would produce rage in a hot-tempered person.`],
+                    answer: `A cause that renders a person's mind incapable of cool reflection.`,
+                    explanation: `The definition is 'cause that would commonly produce a degree of anger... in a person of ordinary temper, sufficient to render the mind incapable of cool reflection.'`
+                },
+                {
+                    question: `Under Sec. 19.02(a)(2), "Sudden Passion" must *not* be...`,
+                    options: [`Directly caused by the victim.`, `Arising at the time of the offense.`, `Sufficient to cause rage.`, `Solely the result of former provocation.`],
+                    answer: `Solely the result of former provocation.`,
+                    explanation: `The definition in 19.02(a)(2) specifies it 'is not solely the result of former provocation.'`
+                },
+                {
+                    question: `A person intends to shoot another person in the leg (SBI), but commits an act clearly dangerous to human life (shoots them in the torso) and kills them. What offense? (Sec. 19.02(b)(2))`,
+                    options: [`Manslaughter.`, `Criminally Negligent Homicide.`, `Murder.`, `Aggravated Assault.`],
+                    answer: `Murder.`,
+                    explanation: `Sec. 19.02(b)(2) (SBI Murder) applies: (1) Intends to cause SBI, and (2) commits an act clearly dangerous to human life that (3) causes death.`
+                },
+                {
+                    question: `A person is robbing a bank (a felony) and, in immediate flight, pushes a security guard (an act clearly dangerous) who falls, hits his head, and dies. What offense? (Sec. 19.02(b)(3))`,
+                    options: [`Murder.`, `Manslaughter.`, `Criminally Negligent Homicide.`, `Robbery.`],
+                    answer: `Murder.`,
+                    explanation: `This is "Felony Murder" under Sec. 19.02(b)(3). The death occurred during immediate flight from a felony (Robbery) and was caused by an act clearly dangerous to human life.`
+                },
+                {
+                    question: `A person is committing Manslaughter (a felony) and, in furtherance, commits an act clearly dangerous to human life that causes *another* death. Is this "Felony Murder" under 19.02(b)(3)?`,
+                    options: [`Yes, Manslaughter is a felony.`, `No, 19.02(b)(3) specifically excludes Manslaughter as the underlying felony.`, `Yes, because a death occurred.`, `No, because the actor did not intend to kill.`],
+                    answer: `No, 19.02(b)(3) specifically excludes Manslaughter as the underlying felony.`,
+                    explanation: `Sec. 19.02(b)(3) states: 'commits or attempts to commit a felony, *other than manslaughter*...' This is a key exception.`
+                },
+                {
+                    question: `What is the standard punishment for Murder under Sec. 19.02(c)?`,
+                    options: [`Capital Felony.`, `Felony of the First Degree.`, `Felony of the Second Degree.`, `Felony of the Third Degree.`],
+                    answer: `Felony of the First Degree.`,
+                    explanation: `Sec. 19.02(c) states the offense is a Felony of the First Degree, unless the (d) (Sudden Passion) provision applies.`
+                },
+                {
+                    question: `A drug dealer knowingly delivers a substance containing PG 1-B (fentanyl). The user dies from ingesting it. What offense? (Sec. 19.02(b)(4))`,
+                    options: [`Manslaughter.`, `Criminally Negligent Homicide.`, `Delivery of a Controlled Substance only.`, `Murder.`],
+                    answer: `Murder.`,
+                    explanation: `Sec. 19.02(b)(4) was added to specifically make this conduct Murder.`
+                },
+                {
+                    question: `Under 19.02(b)(4), the person dies from the controlled substance 'regardless of whether the controlled substance was used by itself or with another substance, including...'`,
+                    options: [`Alcohol or marijuana.`, `A drug, adulterant, or dilutant.`, `An illegal narcotic.`, `A prescription medication.`],
+                    answer: `A drug, adulterant, or dilutant.`,
+                    explanation: `Sec. 19.02(b)(4) is very broad and includes death even if the PG 1-B substance was mixed with 'a drug, adulterant, or dilutant.'`
+                },
+                {
+                    question: `A pharmacist lawfully dispenses a PG 1-B substance to a patient with a valid prescription. The patient abuses it and dies. What is this for the pharmacist? (Sec. 19.02(e))`,
+                    options: [`Murder.`, `Manslaughter.`, `Criminally Negligent Homicide.`, `A defense to prosecution under 19.02(b)(4).`],
+                    answer: `A defense to prosecution under 19.02(b)(4).`,
+                    explanation: `Sec. 19.02(e) provides a defense for conduct under (b)(4) if the delivery was authorized by law.`
+                },
+                {
+                    question: `When is the issue of "Sudden Passion" raised at a trial? (Sec. 19.02(d))`,
+                    options: [`During jury selection.`, `During the guilt-innocence phase.`, `At the punishment stage.`, `During appeal.`],
+                    answer: `At the punishment stage.`,
+                    explanation: `Sec. 19.02(d) states: 'At the punishment stage of a trial, the defendant may raise the issue...'`
+                },
+                {
+                    question: `Who has the burden of proof for "Sudden Passion" and what is the standard? (Sec. 19.02(d))`,
+                    options: [`The State, beyond a reasonable doubt.`, `The State, by a preponderance of the evidence.`, `The Defendant, beyond a reasonable doubt.`, `The Defendant, by a preponderance of the evidence.`],
+                    answer: `The Defendant, by a preponderance of the evidence.`,
+                    explanation: `Sec. 19.02(d) states: 'If the defendant proves the issue in the affirmative by a preponderance of the evidence...'`
+                },
+                {
+                    question: `If a defendant successfully proves "Sudden Passion," what is the effect? (Sec. 19.02(d))`,
+                    options: [`The offense is reduced to a Felony of the Second Degree.`, `The defendant is found not guilty.`, `The offense is reduced to Manslaughter.`, `The jury is instructed to give a minimum sentence.`],
+                    answer: `The offense is reduced to a Felony of the Second Degree.`,
+                    explanation: `Sec. 19.02(d) states the offense (normally F1) 'is a felony of the second degree.'`
+                },
+                {
+                    question: `What is the *required* mental state for Capital Murder under Sec. 19.03(a)?`,
+                    options: [`Intentionally or Knowingly (19.02(b)(1)).`, `Intends SBI (19.02(b)(2)).`, `Felony Murder (19.02(b)(3)).`, `Recklessly.`],
+                    answer: `Intentionally or Knowingly (19.02(b)(1)).`,
+                    explanation: `Sec. 19.03(a) explicitly states the person must 'commit murder as defined under Section 19.02(b)(1)' *and* have an aggravating factor.`
+                },
+                {
+                    question: `A person commits murder under 19.02(b)(2) (intends SBI) while also robbing a bank. Is this Capital Murder?`,
+                    options: [`Yes, it's murder in the course of a robbery.`, `No, Capital Murder requires the mental state from 19.02(b)(1).`, `Yes, any murder during a felony is Capital Murder.`, `No, Robbery is not a listed felony.`],
+                    answer: `No, Capital Murder requires the mental state from 19.02(b)(1).`,
+                    explanation: `This is a critical distinction. Capital Murder *requires* the (b)(1) mental state (intentional/knowing killing), not the (b)(2) (SBI) or (b)(3) (Felony Murder) mental states.`
+                },
+                {
+                    question: `A person murders a uniformed peace officer, who the person knows is on duty. What offense? (Sec. 19.03(a)(1))`,
+                    options: [`Murder (F1).`, `Manslaughter.`, `Capital Murder.`, `Aggravated Assault on a Public Servant.`],
+                    answer: `Capital Murder.`,
+                    explanation: `This is a specific aggravator under Sec. 19.03(a)(1).`
+                },
+                {
+                    question: `What is the presumption regarding the (a)(1) offense? (Sec. 19.03(d))`,
+                    options: [`The officer is presumed to be on duty.`, `The actor is presumed to have known the victim was a peace officer if they were in uniform or had a badge.`, `The actor is presumed to be resisting arrest.`, `The officer is presumed to have used lawful force.`],
+                    answer: `The actor is presumed to have known the victim was a peace officer if they were in uniform or had a badge.`,
+                    explanation: `Sec. 19.03(d) creates this presumption about the actor's knowledge.`
+                },
+                {
+                    question: `Which of the following felonies is *NOT* listed as an aggravator for Capital Murder under 19.03(a)(2)?`,
+                    options: [`Burglary.`, `Robbery.`, `Arson.`, `Theft.`],
+                    answer: `Theft.`,
+                    explanation: `Sec. 19.03(a)(2) lists kidnapping, burglary, robbery, aggravated sexual assault, arson, obstruction or retaliation, or terroristic threat. Simple Theft is not on the list.`
+                },
+                {
+                    question: `A person intentionally commits murder while in the course of committing Terroristic Threat under 22.07(a)(1) (Threatening a mass shooting). What offense?`,
+                    options: [`Murder (F1).`, `Capital Murder.`, `Manslaughter.`, `Terroristic Threat.`],
+                    answer: `Capital Murder.`,
+                    explanation: `Sec. 19.03(a)(2) was updated to include 'terroristic threat under Section 22.07(a)(1), (3), (4), (5), or (6)' as an underlying felony for Capital Murder.`
+                },
+                {
+                    question: `A person pays a friend $10,000 to kill their spouse. The friend commits the murder. What offense for the *friend*? (Sec. 19.03(a)(3))`,
+                    options: [`Murder (F1).`, `Capital Murder (Remuneration).`, `Manslaughter.`, `Criminally Negligent Homicide.`],
+                    answer: `Capital Murder (Remuneration).`,
+                    explanation: `Sec. 19.03(a)(3) applies to both the person who *commits* the murder for remuneration and the person who *employs* them.`
+                },
+                {
+                    question: `A person pays a friend $10,000 to kill their spouse. The friend commits the murder. What offense for the *person who paid*? (Sec. 19.03(a)(3))`,
+                    options: [`Murder (F1).`, `Capital Murder (Remuneration).`, `Solicitation of Murder.`, `Conspiracy to Commit Murder.`],
+                    answer: `Capital Murder (Remuneration).`,
+                    explanation: `Sec. 19.03(a)(3) applies to both the person who 'employs another to commit the murder for remuneration' and the person who commits it.`
+                },
+                {
+                    question: `A person kills two people in a single bank robbery. What offense? (Sec. 19.03(a)(7))`,
+                    options: [`Two counts of Murder (F1).`, `Capital Murder.`, `One count of Murder, one of Manslaughter.`, `Felony Murder.`],
+                    answer: `Capital Murder.`,
+                    explanation: `Sec. 19.03(a)(7)(A) makes murdering more than one person 'during the same criminal transaction' Capital Murder.`
+                },
+                {
+                    question: `A person murders a 9-year-old child. What offense? (Sec. 19.03(a)(8))`,
+                    options: [`Capital Murder.`, `Murder (F1).`, `Manslaughter.`, `Injury to a Child.`],
+                    answer: `Capital Murder.`,
+                    explanation: `Sec. 19.03(a)(8) makes murdering an individual *under 10* Capital Murder.`
+                },
+                {
+                    question: `A person murders a 12-year-old child. What offense? (Sec. 19.03(a)(9))`,
+                    options: [`Capital Murder.`, `Murder (F1).`, `Manslaughter.`, `Injury to a Child.`],
+                    answer: `Capital Murder.`,
+                    explanation: `Sec. 19.03(a)(9) makes murdering an individual *10 or older but younger than 15* Capital Murder.`
+                },
+                {
+                    question: `A person murders a 16-year-old child. What offense?`,
+                    options: [`Capital Murder (under 19.03(a)(9)).`, `Murder (F1) (assuming no other aggravator).`, `Manslaughter.`, `Criminally Negligent Homicide.`],
+                    answer: `Murder (F1) (assuming no other aggravator).`,
+                    explanation: `A 16-year-old does not fall under (a)(8) (under 10) or (a)(9) (10-14). Therefore, it is Murder, but not Capital Murder based *only* on the age.`
+                },
+                {
+                    question: `A person murders a municipal court judge in retaliation for a ruling. What offense? (Sec. 19.03(a)(10))`,
+                    options: [`Capital Murder.`, `Murder (F1).`, `Manslaughter.`, `Obstruction or Retaliation.`],
+                    answer: `Capital Murder.`,
+                    explanation: `Sec. 19.03(a)(10) makes murdering a judge (including a municipal court judge) in retaliation for their service Capital Murder.`
+                },
+                {
+                    question: `What is the punishment for Capital Murder under Sec. 19.03(b)?`,
+                    options: [`A Capital Felony.`, `Life without parole.`, `A Felony of the First Degree.`, `99 years.`],
+                    answer: `A Capital Felony.`,
+                    explanation: `Sec. 19.03(b) states the offense is a Capital Felony. The *punishment* for a capital felony (death or life w/o parole) is defined in Chapter 12.`
+                },
+                {
+                    question: `A person murders another person while escaping from a county jail (a penal institution). What offense? (Sec. 19.03(a)(4))`,
+                    options: [`Murder (F1).`, `Escape.`, `Capital Murder.`, `Manslaughter.`],
+                    answer: `Capital Murder.`,
+                    explanation: `Sec. 19.03(a)(4) makes murdering while escaping or *attempting to escape* from a penal institution Capital Murder.`
+                },
+                {
+                    question: `An inmate in a penal institution murders a jail guard (an employee). What offense? (Sec. 19.03(a)(5))`,
+                    options: [`Murder (F1).`, `Capital Murder.`, `Manslaughter.`, `Aggravated Assault.`],
+                    answer: `Capital Murder.`,
+                    explanation: `Sec. 19.03(a)(5)(A) applies: (1) incarcerated, and (2) murders another who is (A) employed in the operation.`
+                },
+                {
+                    question: `An inmate murders another inmate to further the goals of his "combination" (gang). What offense? (Sec. 19.03(a)(5))`,
+                    options: [`Murder (F1).`, `Capital Murder.`, `Manslaughter.`, `Engaging in Organized Criminal Activity.`],
+                    answer: `Capital Murder.`,
+                    explanation: `Sec. 19.03(a)(5)(B) applies: (1) incarcerated, and (2) murders another (B) with intent to participate in a combination.`
+                },
+                {
+                    question: `What is the difference between 19.03(a)(3) and 19.03(a)(5)(A)?`,
+                    options: [`(a)(3) is murder for hire, (a)(5)(A) is murdering an employee while incarcerated.`, `(a)(3) is for inmates, (a)(5)(A) is for employees.`, `There is no difference, they are the same.`, `(a)(3) is a Capital Felony, (a)(5)(A) is a F1.`],
+                    answer: `(a)(3) is murder for hire, (a)(5)(A) is murdering an employee while incarcerated.`,
+                    explanation: `(a)(3) is murder for *remuneration* (payment). (a)(5)(A) is murdering a person who is *employed* by the penal institution while the actor is incarcerated.`
+                },
+                {
+                    question: `An inmate serving a 99-year sentence for Aggravated Robbery murders another person. What offense? (Sec. 19.03(a)(6))`,
+                    options: [`Murder (F1).`, `Capital Murder.`, `Manslaughter.`, `This is not a capital offense.`],
+                    answer: `Capital Murder.`,
+                    explanation: `Sec. 19.03(a)(6)(B) makes it Capital Murder if a person 'while serving a sentence of... 99 years for an offense under Section... 29.03, murders another.'`
+                },
+                {
+                    question: `A person kills two people in two different cities, one year apart, but both are part of the same "serial killing" scheme. What offense? (Sec. 19.03(a)(7))`,
+                    options: [`Two separate Murders (F1).`, `Capital Murder.`, `Manslaughter.`, `Murder (F1) and Manslaughter.`],
+                    answer: `Capital Murder.`,
+                    explanation: `Sec. 19.03(a)(7)(B) applies: murders more than one person 'during different criminal transactions but the murders are committed pursuant to the same scheme or course of conduct.'`
+                },
+                {
+                    question: `If a jury, in a Capital Murder trial, does not find the defendant guilty *beyond a reasonable doubt* of the capital offense, what can they do? (Sec. 19.03(c))`,
+                    options: [`The defendant must be acquitted.`, `They may convict of Murder or any other lesser included offense.`, `The judge must order a new trial.`, `They must find the defendant guilty of Manslaughter.`],
+                    answer: `They may convict of Murder or any other lesser included offense.`,
+                    explanation: `Sec. 19.03(c) explicitly allows the jury to convict of 'murder or of any other lesser included offense' if the capital charge is not proven.`
+                },
+                {
+                    question: `Does Chapter 19 (Criminal Homicide) apply to a mother who causes the death of her own unborn child? (Sec. 19.06)`,
+                    options: [`Yes, it is Capital Murder.`, `Yes, it is Manslaughter.`, `No, Sec. 19.06(1) states the chapter does not apply.`, `Yes, it is Criminally Negligent Homicide.`],
+                    answer: `No, Sec. 19.06(1) states the chapter does not apply.`,
+                    explanation: `Sec. 19.06 provides specific exceptions for the death of an unborn child, and (1) is 'conduct committed by the mother of the unborn child.'`
+                },
+                {
+                    question: `A doctor performs a lawful medical procedure with consent, and the intended result is the death of the unborn child. What offense? (Sec. 19.06)`,
+                    options: [`Murder.`, `Manslaughter.`, `None, Sec. 19.06(2) states the chapter does not apply.`, `Criminally Negligent Homicide.`],
+                    answer: `None, Sec. 19.06(2) states the chapter does not apply.`,
+                    explanation: `Sec. 19.06(2) provides an exception for a 'lawful medical procedure performed... with the requisite consent, if the death of the unborn child was the intended result'.`
+                },
+                {
+                    question: `A doctor performs a lawful medical procedure as part of 'assisted reproduction' and an unborn child dies. What offense? (Sec. 19.06)`,
+                    options: [`Murder.`, `Manslaughter.`, `None, Sec. 19.06(3) states the chapter does not apply.`, `Criminally Negligent Homicide.`],
+                    answer: `None, Sec. 19.06(3) states the chapter does not apply.`,
+                    explanation: `Sec. 19.06(3) provides a specific exception for 'assisted reproduction'.`
+                },
+                {
+                    question: `A person lawfully administers a prescribed drug, which results in the death of an unborn child. What offense? (Sec. 19.06)`,
+                    options: [`Murder.`, `Manslaughter.`, `None, Sec. 19.06(4) states the chapter does not apply.`, `Criminally Negligent Homicide.`],
+                    answer: `None, Sec. 19.06(4) states the chapter does not apply.`,
+                    explanation: `Sec. 19.06(4) provides an exception for the 'administration of a drug prescribed in accordance with law.'`
+                },
+                {
+                    question: `What is the minimum age of a victim for the Capital Murder aggravator under 19.03(a)(9)?`,
+                    options: [`Under 10.`, `10 years of age.`, `15 years of age.`, `Under 18.`],
+                    answer: `10 years of age.`,
+                    explanation: `Sec. 19.03(a)(9) covers victims '10 years of age or older but younger than 15 years of age.' Sec. 19.03(a)(8) covers victims 'under 10'.`
+                }
+            ];
+
+
+            const quizContainer = document.getElementById('quiz-container');
+            const checkAnswersBtn = document.getElementById('check-answers-btn');
+            const retakeQuizBtn = document.getElementById('retake-quiz-btn');
+            const quizResultsDiv = document.getElementById('quiz-results');
+            const quizScoreEl = document.getElementById('quiz-score');
+            const quizPercentageEl = document.getElementById('quiz-percentage');
+
+            function loadQuiz() {
+                // Shuffle the quiz data for a new order each time
+                const shuffledQuizData = [...quizData].sort(() => Math.random() - 0.5);
+                
+                quizContainer.innerHTML = ''; // Clear previous questions
+                
+                shuffledQuizData.forEach((q, index) => {
+                    const questionDiv = document.createElement('div');
+                    questionDiv.className = 'quiz-question';
+                    
+                    // Store the original question index to check the answer later
+                    const originalIndex = quizData.indexOf(q);
+                    
+                    let optionsHtml = q.options.map(option => {
+                        // Use template literals for the value to handle any special characters
+                        const escapedOption = `${option}`;
+                        return `<label class="block"><input type="radio" name="q${index}" value="${escapedOption.replace(/"/g, '&quot;')}" data-original-index="${originalIndex}" class="mr-2">${option}</label>`;
+                    }).join('');
+                    
+                    const escapedQuestion = q.question;
+
+                    questionDiv.innerHTML = `
+                        <p class="font-semibold mb-2">${index + 1}. ${escapedQuestion}</p>
+                        <div class="space-y-2">${optionsHtml}</div>
+                        <div class="feedback hidden mt-2 p-2 rounded-lg text-sm"></div>
+                    `;
+                    quizContainer.appendChild(questionDiv);
+                });
+            }
+
+
+            loadQuiz(); // Initial load
+
+            checkAnswersBtn.addEventListener('click', () => {
+                let score = 0;
+                const totalQuestions = quizData.length;
+                const questions = quizContainer.querySelectorAll('.quiz-question');
+
+                questions.forEach((questionDiv, index) => {
+                    const selected = questionDiv.querySelector(`input[name="q${index}"]:checked`);
+                    const feedback = questionDiv.querySelector('.feedback');
+                    const radioButtons = questionDiv.querySelectorAll(`input[name="q${index}"]`);
+                    
+                    feedback.classList.remove('hidden', 'bg-green-100', 'text-green-800', 'bg-red-100', 'text-red-800', 'bg-yellow-100', 'text-yellow-800');
+                    
+                    if (selected) {
+                        const originalIndex = selected.dataset.originalIndex;
+                        const q = quizData[originalIndex];
+
+                        // Compare the selected value with the answer
+                        if (selected.value === q.answer.replace(/"/g, '&quot;')) {
+                            score++;
+                            feedback.textContent = `Correct! ${q.explanation}`;
+                            feedback.classList.add('bg-green-100', 'text-green-800');
+                        } else {
+                            feedback.textContent = `Incorrect. The correct answer is "${q.answer}". ${q.explanation}`;
+                            feedback.classList.add('bg-red-100', 'text-red-800');
+                        }
+                    } else {
+                        // Find the original question to show the answer
+                        const firstRadio = questionDiv.querySelector(`input[name="q${index}"]`);
+                        const originalIndex = firstRadio.dataset.originalIndex;
+                        const q = quizData[originalIndex];
+                        
+                        feedback.textContent = `You did not answer this question. The correct answer is "${q.answer}". ${q.explanation}`;
+                        feedback.classList.add('bg-yellow-100', 'text-yellow-800');
+                    }
+                    
+                    // Disable radio buttons after submitting
+                    radioButtons.forEach(radio => {
+                        radio.disabled = true;
+                    });
+                });
+
+                // Calculate and display results
+                const percentage = ((score / totalQuestions) * 100).toFixed(0);
+                quizScoreEl.textContent = `Your Score: ${score} / ${totalQuestions}`;
+                quizPercentageEl.textContent = `Percentage: ${percentage}%`;
+                
+                quizResultsDiv.classList.remove('hidden');
+                checkAnswersBtn.classList.add('hidden');
+                retakeQuizBtn.classList.remove('hidden');
+            });
+
+            retakeQuizBtn.addEventListener('click', () => {
+                // Hide results and retake button
+                quizResultsDiv.classList.add('hidden');
+                retakeQuizBtn.classList.add('hidden');
+                
+                // Show submit button
+                checkAnswersBtn.classList.remove('hidden');
+                
+                // Reload the quiz (clears answers and feedback)
+                loadQuiz();
+            });
+
+
+            // --- RESOURCES LIST ---
+            const resources = [
+                { name: "Texas Penal Code - Official Site", url: "https://statutes.capitol.texas.gov/Default.aspx?Code=PE" },
+                { name:"Penal Code Ch. 19 - Criminal Homicide", url: "https://statutes.capitol.texas.gov/Docs/PE/htm/PE.19.htm" },
+                { name: "HSC Ch. 481 - Texas Controlled Substances Act", url: "https://statutes.capitol.texas.gov/Docs/HS/htm/HS.481.htm" }
+            ];
+            const resourcesList = document.getElementById('resources-list');
+            resources.sort((a, b) => a.name.localeCompare(b.name));
+            resources.forEach(res => {
+                const link = document.createElement('a'); // Use an anchor tag for links
+                link.href = res.url;
+                link.target = '_blank';
+                link.rel = 'noopener noreferrer'; // Good practice for security
+                link.className = 'text-blue-600 hover:underline p-2 bg-gray-50 rounded-md block hover:bg-gray-100';
+                link.innerHTML = `<i class="fas fa-external-link-alt mr-2"></i>${res.name}`;
+                resourcesList.appendChild(link);
+            });
+        });
+    </script>
+</body>
+</html>
+

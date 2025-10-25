@@ -1,0 +1,1132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ch. 30 Study Guide: Texas Penal Code</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet">
+    <style>
+        :root {
+            --header-bg: #1f2937; /* Dark Gray */
+            --bg-color: #f3f4f6; /* Light Gray */
+            --tab-active-bg: #ef4444; /* Red */
+            --tab-active-text: #ffffff;
+            --card-bg: #ffffff;
+            --text-color: #111827;
+            --link-color: #dc2626; /* Red Link */
+        }
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            font-family: 'Inter', sans-serif;
+        }
+        @import url('https://rsms.me/inter/inter.css');
+        .tab-content { display: none; }
+        .tab-content.active { display: block; }
+        .tab.active {
+            background-color: var(--tab-active-bg);
+            color: var(--tab-active-text);
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .tab {
+            transition: all 0.3s ease-in-out;
+        }
+        .definition-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 1rem;
+        }
+        .definition-item {
+            background-color: #f9fafb;
+            padding: 0.75rem;
+            border-radius: 0.5rem;
+            border: 1px solid #e5e7eb;
+        }
+        .definition-term {
+            font-weight: 600;
+            color: #111827;
+        }
+        .definition-desc {
+            font-size: 0.875rem;
+            color: #4b5563;
+        }
+        .quiz-question p { margin-bottom: 0.5rem; }
+        .quiz-question label { display: block; margin-bottom: 0.5rem; padding: 0.5rem; border: 1px solid #e5e7eb; border-radius: 0.375rem; cursor: pointer; transition: background-color 0.2s; }
+        .quiz-question label:hover { background-color: #f9fafb; }
+        .quiz-question input[type="radio"] { margin-right: 0.5rem; }
+        .feedback { margin-top: 0.5rem; padding: 0.5rem; border-radius: 0.375rem; font-size: 0.875rem; }
+        .feedback.correct { background-color: #dcfce7; color: #166534; }
+        .feedback.incorrect { background-color: #fee2e2; color: #991b1b; }
+        .feedback.unanswered { background-color: #ffedd5; color: #9a3412; }
+        .hidden { display: none; }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Header -->
+    <header class="bg-gray-800 text-white p-4 shadow-md">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-xl md:text-2xl font-bold">
+                <i class="fas fa-door-open mr-2"></i>Ch. 30: Burglary & Criminal Trespass
+            </h1>
+            <a href="index.html" class="text-sm text-red-300 hover:text-red-100 hover:underline">
+                <i class="fas fa-arrow-left mr-1"></i> Back to Main Page
+            </a>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container mx-auto p-4 md:p-6">
+        <!-- Tab Navigation -->
+        <div class="mb-6 bg-white rounded-lg shadow-md overflow-x-auto">
+            <nav id="tabs" class="flex flex-col sm:flex-row space-y-1 sm:space-y-0 sm:space-x-1 p-2">
+                <button data-tab="key-definitions" class="tab active flex items-center justify-center px-3 py-2 text-sm font-semibold rounded-lg text-gray-600 hover:bg-red-100">
+                    <i class="fas fa-book mr-2"></i> Definitions (30.01)
+                </button>
+                <button data-tab="burglary" class="tab flex items-center justify-center px-3 py-2 text-sm font-semibold rounded-lg text-gray-600 hover:bg-red-100">
+                    <i class="fas fa-home mr-2"></i> Burglary (30.02)
+                </button>
+                <button data-tab="burglary-other" class="tab flex items-center justify-center px-3 py-2 text-sm font-semibold rounded-lg text-gray-600 hover:bg-red-100">
+                    <i class="fas fa-car-side mr-2"></i> Burglary (Other) (30.03-04)
+                </button>
+                <button data-tab="trespass" class="tab flex items-center justify-center px-3 py-2 text-sm font-semibold rounded-lg text-gray-600 hover:bg-red-100">
+                    <i class="fas fa-shoe-prints mr-2"></i> Criminal Trespass (30.05)
+                </button>
+                <button data-tab="trespass-firearm" class="tab flex items-center justify-center px-3 py-2 text-sm font-semibold rounded-lg text-gray-600 hover:bg-red-100">
+                    <i class="fas fa-handgun mr-2"></i> Firearm Trespass (30.06-07)
+                </button>
+                <button data-tab="knowledge-check" class="tab flex items-center justify-center px-3 py-2 text-sm font-semibold rounded-lg text-gray-600 hover:bg-red-100">
+                    <i class="fas fa-question-circle mr-2"></i> Knowledge Check
+                </button>
+                <button data-tab="resources" class="tab flex items-center justify-center px-3 py-2 text-sm font-semibold rounded-lg text-gray-600 hover:bg-red-100">
+                    <i class="fas fa-link mr-2"></i> Resources
+                </button>
+            </nav>
+        </div>
+
+        <!-- Tab Content -->
+        <div id="tab-contents">
+            <!-- Key Definitions Tab -->
+            <div id="key-definitions" class="tab-content active">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-2xl font-bold mb-4">Key Definitions (Sec. 30.01)</h2>
+                    <div class="definition-grid">
+                        <div class="definition-item">
+                            <span class="definition-term">Habitation</span>
+                            <p class="definition-desc">A structure/vehicle adapted for overnight accommodation. Includes each separately secured portion AND each connected/appurtenant structure.</p>
+                        </div>
+                        <div class="definition-item">
+                            <span class="definition-term">Building</span>
+                            <p class="definition-desc">Any enclosed structure intended for use as a habitation or for trade, manufacture, ornament, or use.</p>
+                        </div>
+                        <div class="definition-item">
+                            <span class="definition-term">Vehicle</span>
+                            <p class="definition-desc">Any device for transporting people/property, *except* devices classified as "habitation."</p>
+                        </div>
+                        <div class="definition-item">
+                            <span class="definition-term">Controlled substance</span>
+                            <p class="definition-desc">Has the meaning assigned by Sec. 481.002, Health and Safety Code.</p>
+                        </div>
+                        <div class="definition-item">
+                            <span class="definition-term">Wholesale distributor...</span>
+                            <p class="definition-desc">A wholesale distributor as defined by Sec. 431.401, Health and Safety Code.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Burglary Tab -->
+            <div id="burglary" class="tab-content space-y-6">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-xl font-bold mb-4 border-b pb-2"><a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.30.htm#30.02" target="_blank" class="text-red-600 hover:underline">Sec. 30.02. Burglary</a></h2>
+                    <ul class="list-disc list-inside text-sm text-gray-700 space-y-2">
+                        <li><strong class="font-semibold">Offense (a):</strong> A person commits an offense if, without effective consent, they:
+                            <ol class="list-decimal list-inside ml-4 space-y-1">
+                                <li><strong>Enters</strong> a habitation or building (not open to public) with <strong>intent</strong> to commit a felony, theft, or assault; OR</li>
+                                <li><strong>Remains concealed</strong> in a building or habitation with <strong>intent</strong> to commit a felony, theft, or assault; OR</li>
+                                <li><strong>Enters</strong> a building or habitation AND <strong>commits or attempts</strong> to commit a felony, theft, or assault.</li>
+                            </ol>
+                        </li>
+                         <li><strong class="font-semibold">"Enter" (b):</strong> Means to intrude (1) <strong>any part of the body</strong>; or (2) <strong>any physical object connected with the body</strong>.</li>
+                        <li><strong class="font-semibold">Penalties (c), (c-1), (c-2), (d):</strong>
+                            <ul class="list-disc list-inside ml-4">
+                                <li><strong class="font-semibold text-red-700">State Jail Felony:</strong> Base offense for Burglary of a <strong>Building</strong>.</li>
+                                <li><strong class="font-semibold text-red-700">Felony of the Third Degree:</strong>
+                                    <ul>
+                                        <li>(c-1) Building is a commercial building (pharmacy, clinic, etc.) storing controlled substances, AND actor entered with <strong>intent to commit theft of a controlled substance</strong>.</li>
+                                         <li>(c-2) Building (non-habitation) + offense committed during <strong>Smuggling of Persons (20.05(a)(2))</strong>.</li>
+                                    </ul>
+                                </li>
+                                <li><strong class="font-semibold text-red-700">Felony of the Second Degree:</strong> Base offense for Burglary of a <strong>Habitation</strong>.</li>
+                                <li><strong class="font-semibold text-red-800">Felony of the First Degree:</strong>
+                                    <ul>
+                                        <li>(d) Premises is a <strong>Habitation</strong> AND any party to the offense:
+                                            <li>(1) Entered with intent to commit a <strong>felony other than felony theft</strong>; OR</li>
+                                            <li>(2) Committed or attempted to commit a <strong>felony other than felony theft</strong>.</li>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Burglary (Other) Tab -->
+            <div id="burglary-other" class="tab-content space-y-6">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-xl font-bold mb-4 border-b pb-2"><a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.30.htm#30.03" target="_blank" class="text-red-600 hover:underline">Sec. 30.03. Burglary of Coin-Operated... Machines</a></h2>
+                    <ul class="list-disc list-inside text-sm text-gray-700 space-y-2">
+                        <li><strong class="font-semibold">Offense (a):</strong> Without effective consent, <strong>breaks or enters into</strong> any coin-operated machine, coin collection machine, or similar equipment... with <strong>intent to obtain property or services</strong>.</li>
+                        <li><strong class="font-semibold">"Entry" (b):</strong> Includes every kind of entry except one with effective consent.</li>
+                        <li><strong class="font-semibold">Penalty (c):</strong> <strong class="font-semibold text-red-700">Class A Misdemeanor</strong>.</li>
+                    </ul>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-xl font-bold mb-4 border-b pb-2"><a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.30.htm#30.04" target="_blank" class="text-red-600 hover:underline">Sec. 30.04. Burglary of Vehicles</a></h2>
+                    <ul class="list-disc list-inside text-sm text-gray-700 space-y-2">
+                        <li><strong class="font-semibold">Offense (a):</strong> Without effective consent, <strong>breaks into or enters</strong> a vehicle (or any part) with <strong>intent to commit any felony or theft</strong>.</li>
+                        <li><strong class="font-semibold">"Enter" (b):</strong> Same as 30.02: (1) <strong>any part of the body</strong>; or (2) <strong>any physical object connected with the body</strong>.</li>
+                        <li><strong class="font-semibold">"Rail Car" (c):</strong> A container or trailer on a rail car is part of the rail car.</li>
+                        <li><strong class="font-semibold">Penalties (d):</strong>
+                            <ul class="list-disc list-inside ml-4">
+                                <li><strong class="font-semibold text-red-700">Class A Misdemeanor:</strong> Base offense.</li>
+                                <li><strong class="font-semibold text-red-700">Class A Misdemeanor (w/ 6mo min confinement):</strong> If <strong>1 prior conviction</strong> under this section.</li>
+                                <li><strong class="font-semibold text-red-700">State Jail Felony:</strong> If:
+                                    <ul>
+                                        <li>(A) <strong>2 or more prior convictions</strong> under this section; OR</li>
+                                        <li>(B) The vehicle is a <strong>rail car</strong>.</li>
+                                    </ul>
+                                </li>
+                                <li><strong class="font-semibold text-red-700">Felony of the Third Degree:</strong> If:
+                                    <ul>
+                                        <li>(A) Vehicle is owned by <strong>wholesale distributor of prescription drugs</strong> AND actor intended to steal a <strong>controlled substance</strong>; OR</li>
+                                        <li>(B) Offense committed during <strong>Smuggling of Persons (20.05(a)(2))</strong>.</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li><strong class="font-semibold">"Previously Convicted" (d-1):</strong> Includes <strong>deferred adjudication</strong>.</li>
+                        <li><strong class="font-semibold">Defense (e):</strong> Actor was an employee/rep exercising a right under the <strong>Railway Labor Act</strong>.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Criminal Trespass Tab -->
+            <div id="trespass" class="tab-content space-y-6">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-xl font-bold mb-4 border-b pb-2"><a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.30.htm#30.05" target="_blank" class="text-red-600 hover:underline">Sec. 30.05. Criminal Trespass</a></h2>
+                    <ul class="list-disc list-inside text-sm text-gray-700 space-y-2">
+                        <li><strong class="font-semibold">Offense (a):</strong> Person <strong>enters or remains on or in property</strong> of another without effective consent, AND the person:
+                            <ol class="list-decimal list-inside ml-4">
+                                <li>Had <strong>notice</strong> that the entry was forbidden; OR</li>
+                                <li>Received <strong>notice to depart</strong> but failed to do so.</li>
+                            </ol>
+                        </li>
+                        <li><strong class="font-semibold">"Entry" (b)(1):</strong> Intrusion of the <strong>entire body</strong>. (DIFFERENT from Burglary)</li>
+                        <li><strong class="font-semibold">"Notice" (b)(2):</strong> (A) Oral/written communication; (B) Fencing/enclosure; (C) Signs; (D) <strong>Purple paint marks</strong> (8"x1" lines, 3-5ft off ground, 100ft apart forest / 1000ft apart non-forest); (E) Visible crops.</li>
+                        <li><strong class="font-semibold">Key Definitions (b):</strong> Includes "Critical infrastructure facility" (must be fenced/barriered), "Residential land", "Institution of higher education", etc.</li>
+                        <li><strong class="font-semibold">Firearm Sign (c):</strong> Specific requirements for a 30.05 sign prohibiting firearms (Eng/Span, 1" letters, conspicuous).</li>
+                        <li><strong class="font-semibold">Penalties (d):</strong>
+                            <ul class="list-disc list-inside ml-4">
+                                <li><strong class="font-semibold text-red-700">Class B Misdemeanor:</strong> Base offense.</li>
+                                <li><strong class="font-semibold text-red-700">Class C Misdemeanor:</strong> On (A) ag land (w/in 100ft of boundary) OR (B) residential land (w/in 100ft of protected freshwater area).</li>
+                                <li><strong class="font-semibold text-red-700">Class A Misdemeanor:</strong> If:
+                                    <ul>
+                                        <li>(A) In a <strong>habitation</strong>, shelter, Superfund site, or <strong>critical infrastructure facility</strong>; OR</li>
+                                        <li>(B) On campus w/ prior trespass conviction; OR</li>
+                                        <li>(C) Person carries a <strong>deadly weapon</strong>; OR</li>
+                                        <li>(D) At a general residential operation.</li>
+                                    </ul>
+                                </li>
+                                <li><strong class="font-semibold text-red-700">Felony of the Third Degree:</strong> If committed during <strong>Smuggling of Persons (20.05(a)(2))</strong>.</li>
+                            </ul>
+                        </li>
+                        <li><strong class="font-semibold">Firearm Trespass Penalty (d-3):</strong> If *sole basis* for trespass is a firearm:
+                            <ul>
+                                <li><strong class="font-semibold text-red-700">Class C Misdemeanor (max $200 fine)</strong>.</li>
+                                <li>Becomes <strong class="font-semibold text-red-700">Class A Misdemeanor</strong> if actor receives *personal* oral notice and *fails to depart*.</li>
+                            </ul>
+                        </li>
+                        <li><strong class="font-semibold">Defenses (e):</strong> (1) Firefighter/EMS; (2) Utility worker/agent; (3) Other authorized agent.</li>
+                        <li><strong class="font-semibold">Defenses (f, f-1, f-2, f-3, f-4):</strong> (f) LTC holder w/ concealed/holstered handgun; (f-1) Condo owner/tenant/guest w/ firearm; (f-2) Tenant w/ firearm; (f-3) Mfg. home tenant w/ firearm; (f-4) Hotel guest w/ firearm.</li>
+                        <li><strong class="font-semibold">Exception (i):</strong> Section does not apply to <strong>Peace Officers</strong> (or recognized state POs) carrying a weapon.</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- Firearm Trespass Tab -->
+            <div id="trespass-firearm" class="tab-content space-y-6">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-xl font-bold mb-4 border-b pb-2"><a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.30.htm#30.06" target="_blank" class="text-red-600 hover:underline">Sec. 30.06. Trespass by LTC Holder (Concealed)</a></h2>
+                    <ul class="list-disc list-inside text-sm text-gray-700 space-y-2">
+                        <li><strong class="font-semibold">Offense (a):</strong> A <strong>license holder</strong> carries a <strong>concealed handgun</strong> on property of another without effective consent AND received <strong>notice</strong> it was forbidden.</li>
+                        <li><strong class="font-semibold">Notice (b, c):</strong> Oral communication OR "Written communication" (a specific card OR a sign with <strong>exact 30.06 language</strong>, Eng/Span, 1" letters, conspicuous).</li>
+                        <li><strong class="font-semibold">Penalty (d):</strong> <strong class="font-semibold text-red-700">Class C Misdemeanor (max $200 fine)</strong>.
+                            <ul>
+                                <li>Becomes <strong class="font-semibold text-red-700">Class A Misdemeanor</strong> if actor receives *personal* oral notice and *fails to depart*.</li>
+                            </ul>
+                        </li>
+                        <li><strong class="font-semibold">Exception (e):</strong> Does not apply to most government property (where carrying isn't already banned by 46.03).</li>
+                        <li><strong class="font-semibold">Defense (g):</strong> Actor was given oral notice and <strong>promptly departed</strong>.</li>
+                        <li><strong class="font-semibold">Defenses (e-1 - f-2):</strong> Includes defenses for condo/tenant/hotel guest, volunteer emergency services, first responders, etc.</li>
+                    </ul>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-xl font-bold mb-4 border-b pb-2"><a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.30.htm#30.07" target="_blank" class="text-red-600 hover:underline">Sec. 30.07. Trespass by LTC Holder (Openly Carried)</a></h2>
+                    <ul class="list-disc list-inside text-sm text-gray-700 space-y-2">
+                        <li><strong class="font-semibold">Offense (a):</strong> A <strong>license holder</strong> <strong>openly carries a handgun</strong> on property of another without effective consent AND received <strong>notice</strong> it was forbidden.</li>
+                         <li><strong class="font-semibold">Notice (b, c):</strong> Oral communication OR "Written communication" (a specific card OR a sign with <strong>exact 30.07 language</strong>, Eng/Span, 1" letters, conspicuous, <strong>at each entrance</strong>).</li>
+                        <li><strong class="font-semibold">Penalty (d):</strong> <strong class="font-semibold text-red-700">Class C Misdemeanor (max $200 fine)</strong>.
+                            <ul>
+                                <li>Becomes <strong class="font-semibold text-red-700">Class A Misdemeanor</strong> if actor receives *personal* oral notice and *fails to depart*.</li>
+                            </ul>
+                        </li>
+                        <li><strong class="font-semibold">No Defense (f):</strong> It is <strong>NOT</strong> a defense that the handgun was in a holster.</li>
+                        <li><strong class="font-semibold">Defense (h):</strong> Actor was given oral notice and <strong>promptly departed</strong>.</li>
+                        <li><strong class="font-semibold">Other Defenses:</strong> Same exceptions/defenses as 30.06 (govt property, condo/tenant/hotel, emergency services, etc.).</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Knowledge Check Tab -->
+            <div id="knowledge-check" class="tab-content">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-2xl font-bold mb-4">Knowledge Check (Ch. 30)</h2>
+                    <p class="mb-6 text-gray-600">Test your understanding of the material. (75 Questions)</p>
+                    <div id="quiz-container" class="space-y-8">
+                        <!-- Questions will be dynamically inserted here -->
+                    </div>
+                    <!-- Results Div -->
+                    <div id="quiz-results" class="hidden mt-8 text-center">
+                        <h3 class="text-2xl font-bold" id="quiz-score"></h3>
+                        <p class="text-lg text-gray-700" id="quiz-percentage"></p>
+                    </div>
+                    <!-- Button Container -->
+                    <div class="mt-8 text-center space-x-4">
+                        <button id="check-answers-btn" class="bg-red-600 text-white font-bold py-2 px-6 rounded-lg hover:bg-red-700 transition-colors">Submit Answers</button>
+                        <button id="retake-quiz-btn" class="hidden bg-gray-600 text-white font-bold py-2 px-6 rounded-lg hover:bg-gray-700 transition-colors">Retake Quiz</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Resources Tab -->
+            <div id="resources" class="tab-content">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-2xl font-bold mb-4">External Resources</h2>
+                    <p class="mb-6 text-gray-600">Quick links to official Texas statutes and related definitions.</p>
+                    <div id="resources-list" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 text-sm">
+                        <!-- Links will be dynamically inserted here -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const tabs = document.querySelectorAll('#tabs button');
+            const tabContents = document.querySelectorAll('.tab-content');
+
+            tabs.forEach(tab => {
+                tab.addEventListener('click', () => {
+                    tabs.forEach(t => t.classList.remove('active'));
+                    tabContents.forEach(c => c.classList.remove('active'));
+                    tab.classList.add('active');
+                    document.getElementById(tab.dataset.tab).classList.add('active');
+                });
+            });
+
+            // --- QUIZ DATA (CHAPTER 30) ---
+            const quizData = [
+                {
+                    question: "Under 30.01, what is a 'Habitation'?",
+                    options: ["Any enclosed structure.", "A structure or vehicle adapted for the overnight accommodation of persons.", "A building used for trade or manufacture.", "Only a person's primary residence."],
+                    answer: "A structure or vehicle adapted for the overnight accommodation of persons.",
+                    explanation: "Sec. 30.01(1) defines 'Habitation' as 'a structure or vehicle that is adapted for the overnight accommodation of persons...'"
+                },
+                {
+                    question: "Does the definition of 'Habitation' in 30.01 include a detached garage?",
+                    options: ["No, it must be the main structure.", "Yes, if it is a structure appurtenant to or connected with the structure.", "No, a garage is a 'building,' not a 'habitation'.", "Only if a person is sleeping in it at the time."],
+                    answer: "Yes, if it is a structure appurtenant to or connected with the structure.",
+                    explanation: "Sec. 30.01(1)(B) states that 'habitation' includes 'each structure appurtenant to or connected with the structure or vehicle.'"
+                },
+                {
+                    question: "What is the key difference between a 'Vehicle' and a 'Habitation' under 30.01?",
+                    options: ["A vehicle moves, a habitation does not.", "A vehicle is excluded from the 'vehicle' definition *if* it is classified as a 'habitation'.", "A habitation must be a structure, a vehicle cannot be.", "There is no difference."],
+                    answer: "A vehicle is excluded from the 'vehicle' definition *if* it is classified as a 'habitation'.",
+                    explanation: "Sec. 30.01(3) defines 'Vehicle' and ends with '...except such devices as are classified as \"habitation.\"'. An RV, for example, could be a habitation."
+                },
+                {
+                    question: "What is the primary function intended for a 'Building' under 30.01, besides habitation?",
+                    options: ["Trade, manufacture, ornament, or use.", "Storage of personal property.", "Public assembly or worship.", "Only commercial purposes."],
+                    answer: "Trade, manufacture, ornament, or use.",
+                    explanation: "Sec. 30.01(2) defines 'Building' as 'any enclosed structure intended for use or occupation as a habitation or for some purpose of trade, manufacture, ornament, or use.'"
+                },
+                {
+                    question: "What is the meaning of 'Building' regarding a portion of a structure in the context of Burglary (30.02)?",
+                    options: ["The entire structure only.", "The common areas only.", "Any portion of a building.", "Only the portion not then open to the public."],
+                    answer: "Only the portion not then open to the public.",
+                    explanation: "Sec. 30.02(a)(1) specifies 'a building (or any portion of a building) not then open to the public.'"
+                },
+                {
+                    question: "Which of these is NOT a way to commit Burglary under 30.02(a)?",
+                    options: ["Enter a habitation with intent to commit theft.", "Enter a building and attempt to commit assault.", "Remain concealed in a habitation with intent to commit a felony.", "Enter a habitation with criminal negligence, causing damage."],
+                    answer: "Enter a habitation with criminal negligence, causing damage.",
+                    explanation: "Burglary (30.02) requires a specific intent (felony, theft, or assault) or the actual commission/attempt of one of those offenses. Criminal negligence is not a sufficient mental state."
+                },
+                {
+                    question: "What is the definition of 'Enter' for Burglary (30.02)?",
+                    options: ["Intrusion of the entire body.", "Intrusion of any part of the body or any physical object connected with the body.", "Opening a door or window without consent.", "Remaining on property after being told to leave."],
+                    answer: "Intrusion of any part of the body or any physical object connected with the body.",
+                    explanation: "Sec. 30.02(b) provides this definition, meaning breaking the 'close' of the building with a finger or a tool is sufficient."
+                },
+                {
+                    question: "What is the base penalty for Burglary of a Building (non-habitation) under 30.02(c)?",
+                    options: ["Class A Misdemeanor", "State Jail Felony", "Felony of the Third Degree", "Felony of the Second Degree"],
+                    answer: "State Jail Felony",
+                    explanation: "Sec. 30.02(c)(1) makes the base offense for a building a state jail felony."
+                },
+                {
+                    question: "What is the base penalty for Burglary of a Habitation under 30.02(c)?",
+                    options: ["State Jail Felony", "Felony of the Third Degree", "Felony of the Second Degree", "Felony of the First Degree"],
+                    answer: "Felony of the Second Degree",
+                    explanation: "Sec. 30.02(c)(2) makes burglary of a habitation an F2."
+                },
+                {
+                    question: "A person breaks into a habitation with the intent to commit *felony theft*. What is the offense level?",
+                    options: ["Felony of the First Degree", "Felony of the Second Degree", "Felony of the Third Degree", "State Jail Felony"],
+                    answer: "Felony of the Second Degree",
+                    explanation: "This is a base Burglary of Habitation (F2). It is *not* F1 because the F1 enhancement (30.02(d)) requires intent to commit a felony *other than* felony theft."
+                },
+                {
+                    question: "A person breaks into a habitation with the intent to commit *Aggravated Assault*. What is the offense level?",
+                    options: ["Felony of the First Degree", "Felony of the Second Degree", "Felony of the Third Degree", "State Jail Felony"],
+                    answer: "Felony of the First Degree",
+                    explanation: "This is an F1. The premises is a habitation (F2 base) AND the person entered with intent to commit a felony *other than* felony theft (Aggravated Assault). This meets 30.02(d)(1)."
+                },
+                {
+                    question: "In Burglary (30.02), if the premises is a habitation, what must the intended felony *not* be for the offense to be F1 under 30.02(d)?",
+                    options: ["Assault", "Felony theft", "Kidnapping", "Murder"],
+                    answer: "Felony theft",
+                    explanation: "Sec. 30.02(d) specifically excludes 'felony theft' from the F1 enhancement criteria."
+                },
+                {
+                    question: "If any party to the Burglary offense commits *or attempts* to commit a felony other than felony theft in a habitation, what is the offense level?",
+                    options: ["Felony of the Second Degree", "Felony of the First Degree", "State Jail Felony", "Aggravated Misdemeanor"],
+                    answer: "Felony of the First Degree",
+                    explanation: "Sec. 30.02(d)(2) states the offense is an F1 if any party 'committed or attempted to commit a felony other than felony theft' in a habitation."
+                },
+                {
+                    question: "A person breaks into a pharmacy with intent to steal OxyContin (a controlled substance). What is the offense level?",
+                    options: ["State Jail Felony", "Felony of the Third Degree", "Felony of the Second Degree", "Felony of the First Degree"],
+                    answer: "Felony of the Third Degree",
+                    explanation: "This is an F3. The building is a commercial building storing CS, and the actor had intent to steal a controlled substance, meeting 30.02(c-1)."
+                },
+                {
+                    question: "Which of these premises is NOT listed as a commercial building where a controlled substance is generally stored for the 30.02(c-1) enhancement?",
+                    options: ["Pharmacy", "Clinic", "Warehouse", "Apartment complex"],
+                    answer: "Apartment complex",
+                    explanation: "Sec. 30.02(c-1)(1) lists pharmacy, clinic, hospital, nursing facility, or warehouse."
+                },
+                {
+                    question: "A person breaks into a building (non-habitation) during an act of Smuggling of Persons (20.05a2). What is the offense level?",
+                    options: ["State Jail Felony", "Felony of the Third Degree", "Felony of the Second Degree", "Felony of the First Degree"],
+                    answer: "Felony of the Third Degree",
+                    explanation: "This is an F3. The premises is a building and the offense was committed during Smuggling of Persons, meeting 30.02(c-2)."
+                },
+                {
+                    question: "A person enters an open store, hides in a bathroom until after closing, and then emerges with intent to steal. What offense?",
+                    options: ["Burglary (30.02a2 - remains concealed)", "Criminal Trespass (30.05)", "No offense, entry was lawful.", "Theft only"],
+                    answer: "Burglary (30.02a2 - remains concealed)",
+                    explanation: "This meets 30.02(a)(2): 'remains concealed... in a building... with intent to commit... theft'."
+                },
+                {
+                    question: "What intent is required for Burglary of a Coin-Operated Machine (30.03)?",
+                    options: ["Intent to commit a felony or theft.", "Intent to damage the machine.", "Intent to obtain property or services.", "Intent to commit assault."],
+                    answer: "Intent to obtain property or services.",
+                    explanation: "Sec. 30.03(a) requires intent to obtain property or services."
+                },
+                {
+                    question: "What is the definition of 'Entry' for Burglary of a Coin-Operated Machine (30.03)?",
+                    options: ["Intrusion of the entire body.", "Intrusion of any part of the body.", "Every kind of entry except one made with effective consent.", "Only breaking into the machine."],
+                    answer: "Every kind of entry except one made with effective consent.",
+                    explanation: "Sec. 30.03(b) states 'entry' includes every kind of entry except one made with the effective consent of the owner."
+                },
+                {
+                    question: "What is the penalty for Burglary of a Coin-Operated Machine (30.03)?",
+                    options: ["Class C Misdemeanor", "Class B Misdemeanor", "Class A Misdemeanor", "State Jail Felony"],
+                    answer: "Class A Misdemeanor",
+                    explanation: "Sec. 30.03(c) states the offense is a Class A misdemeanor."
+                },
+                {
+                    question: "A person reaches into an open car window with intent to steal a wallet. What is the offense?",
+                    options: ["Robbery", "Theft", "Burglary of Vehicles", "No offense, the window was open."],
+                    answer: "Burglary of Vehicles",
+                    explanation: "Reaching a hand (part of the body) into the vehicle without consent, with intent to commit theft, meets the elements of 30.04(a) and 30.04(b)(1)."
+                },
+                {
+                    question: "What is the intent required for Burglary of Vehicles (30.04)?",
+                    options: ["Intent to commit only theft.", "Intent to commit any felony or theft.", "Intent to commit felony theft only.", "Intent to cause damage to the vehicle."],
+                    answer: "Intent to commit any felony or theft.",
+                    explanation: "Sec. 30.04(a) requires intent to commit 'any felony or theft.'"
+                },
+                {
+                    question: "What is the base penalty for Burglary of Vehicles (30.04)?",
+                    options: ["Class B Misdemeanor", "Class A Misdemeanor", "State Jail Felony", "Felony of the Third Degree"],
+                    answer: "Class A Misdemeanor",
+                    explanation: "Sec. 30.04(d) states the base offense is a Class A misdemeanor."
+                },
+                {
+                    question: "A person has *one* prior conviction for 30.04. They commit 30.04 again. What is the penalty?",
+                    options: ["Class A Misdemeanor", "Class A Misdemeanor (w/ 6mo min confinement)", "State Jail Felony", "Felony of the Third Degree"],
+                    answer: "Class A Misdemeanor (w/ 6mo min confinement)",
+                    explanation: "Sec. 30.04(d)(1) enhances to a Class A with a 6-month minimum term for one prior conviction."
+                },
+                {
+                    question: "A person has *two* prior convictions for 30.04. They commit 30.04 again. What is the penalty?",
+                    options: ["Class A Misdemeanor", "Class A Misdemeanor (w/ 6mo min confinement)", "State Jail Felony", "Felony of the Third Degree"],
+                    answer: "State Jail Felony",
+                    explanation: "Sec. 30.04(d)(2)(A) enhances to a State Jail Felony for two or more prior convictions."
+                },
+                {
+                    question: "Does a deferred adjudication for 30.04 count as a 'previously convicted' for enhancement purposes?",
+                    options: ["Yes", "No, only a final conviction.", "Only if they violated probation.", "Only if it was a felony."],
+                    answer: "Yes",
+                    explanation: "Sec. 30.04(d-1) explicitly states that 'previously convicted' includes a 'plea of guilty or nolo contendere in return for a grant of deferred adjudication'."
+                },
+                {
+                    question: "What is the penalty for Burglary of a *rail car*?",
+                    options: ["Class A Misdemeanor", "State Jail Felony", "Felony of the Third Degree", "Felony of the Second Degree"],
+                    answer: "State Jail Felony",
+                    explanation: "Sec. 30.04(d)(2)(B) makes burglary of a rail car a State Jail Felony."
+                },
+                {
+                    question: "According to 30.04(c), what part of a rail car is a container or trailer carried on it considered?",
+                    options: ["Separate property.", "A separate building.", "Part of the rail car.", "A vehicle for purposes of theft."],
+                    answer: "Part of the rail car.",
+                    explanation: "Sec. 30.04(c) states 'a container or trailer carried on a rail car is a part of the rail car.'"
+                },
+                {
+                    question: "The defense to 30.04 (Burglary of Vehicles) involving the Railway Labor Act applies to what type of property?",
+                    options: ["Rail cars.", "Commercial vehicles.", "Buses and taxis.", "Any vehicle carrying property."],
+                    answer: "Rail cars.",
+                    explanation: "Sec. 30.04(e) refers to entering a rail car as an employee or representative exercising a right under the Railway Labor Act."
+                },
+                {
+                    question: "A person commits Criminal Trespass (30.05) if, without effective consent, they enter property and...",
+                    options: ["Intended to commit any offense.", "Caused less than $100 damage.", "Had notice the entry was forbidden OR received notice to depart but failed to do so.", "Used force to enter the property."],
+                    answer: "Had notice the entry was forbidden OR received notice to depart but failed to do so.",
+                    explanation: "Sec. 30.05(a)(1) and (2) define the required mental state/notice."
+                },
+                {
+                    question: "What is the definition of 'Entry' for Criminal Trespass (30.05)?",
+                    options: ["Intrusion of any part of the body.", "Intrusion of any physical object connected with the body.", "The intrusion of the entire body.", "Breaking the plane of a window or door."],
+                    answer: "The intrusion of the entire body.",
+                    explanation: "Sec. 30.05(b)(1). This is a key distinction from Burglary."
+                },
+                {
+                    question: "Which of these is NOT an element required for a Critical Infrastructure Facility definition under 30.05(b)(7)?",
+                    options: ["A refinery.", "A chemical manufacturing facility.", "Completely enclosed by a fence or physical barrier.", "Must be owned by the State of Texas."],
+                    answer: "Must be owned by the State of Texas.",
+                    explanation: "Sec. 30.05(b)(7) lists many types of facilities but does not require state ownership; it does require a complete enclosure."
+                },
+                {
+                    question: "Which of these is a valid form of 'Notice' under 30.05(b)(2)?",
+                    options: ["A friend of the owner told the actor not to enter one week ago.", "The placement of purple paint marks on trees.", "A handwritten note placed on the property.", "A news article stating the property is private."],
+                    answer: "The placement of purple paint marks on trees.",
+                    explanation: "Sec. 30.05(b)(2)(D) explicitly recognizes purple paint marks as a form of notice."
+                },
+                {
+                    question: "What is the minimum length and width for purple paint marks to constitute 'Notice'?",
+                    options: ["4 inches long and 1 inch wide.", "8 inches long and 1 inch wide.", "10 inches long and 2 inches wide.", "12 inches long and 3 inches wide."],
+                    answer: "8 inches long and 1 inch wide.",
+                    explanation: "Sec. 30.05(b)(2)(D)(i) requires 'vertical lines of not less than eight inches in length and not less than one inch in width'."
+                },
+                {
+                    question: "What is the height requirement for the bottom of the purple paint mark from the ground?",
+                    options: ["Not less than 2 feet or more than 4 feet.", "Not less than 3 feet or more than 5 feet.", "Exactly 4 feet.", "Not less than 5 feet or more than 7 feet."],
+                    answer: "Not less than 3 feet or more than 5 feet.",
+                    explanation: "Sec. 30.05(b)(2)(D)(ii) requires the bottom of the mark to be 'not less than three feet from the ground or more than five feet from the ground'."
+                },
+                {
+                    question: "What is the maximum spacing for purple paint marks on **forest land**?",
+                    options: ["50 feet apart.", "100 feet apart.", "500 feet apart.", "1,000 feet apart."],
+                    answer: "100 feet apart.",
+                    explanation: "Sec. 30.05(b)(2)(D)(iii)(a) specifies '100 feet apart on forest land'."
+                },
+                {
+                    question: "What is the maximum spacing for purple paint marks on **land other than forest land**?",
+                    options: ["100 feet apart.", "500 feet apart.", "1,000 feet apart.", "1,500 feet apart."],
+                    answer: "1,000 feet apart.",
+                    explanation: "Sec. 30.05(b)(2)(D)(iii)(b) specifies '1,000 feet apart on land other than forest land'."
+                },
+                {
+                    question: "What is the base penalty for Criminal Trespass (30.05)?",
+                    options: ["Class C Misdemeanor", "Class B Misdemeanor", "Class A Misdemeanor", "State Jail Felony"],
+                    answer: "Class B Misdemeanor",
+                    explanation: "Sec. 30.05(d)(1) states the base offense is a Class B misdemeanor."
+                },
+                {
+                    question: "Criminal Trespass is a Class C Misdemeanor if committed...",
+                    options: ["In a habitation.", "While carrying a deadly weapon.", "On agricultural land within 100 feet of the boundary.", "At a critical infrastructure facility."],
+                    answer: "On agricultural land within 100 feet of the boundary.",
+                    explanation: "Sec. 30.05(d)(2)(A) provides this Class C offense."
+                },
+                {
+                    question: "Criminal Trespass is a Class A Misdemeanor if committed...",
+                    options: ["On agricultural land.", "On residential land.", "In a habitation or a shelter center.", "On property that has a fence."],
+                    answer: "In a habitation or a shelter center.",
+                    explanation: "Sec. 30.05(d)(3)(A)(i) enhances trespass to a Class A if committed in a habitation or shelter center."
+                },
+                {
+                    question: "A person trespasses on a fenced electrical substation. What is the offense level?",
+                    options: ["Class C Misdemeanor", "Class B Misdemeanor", "Class A Misdemeanor", "State Jail Felony"],
+                    answer: "Class A Misdemeanor",
+                    explanation: "An electrical substation is a 'critical infrastructure facility' (30.05(b)(7)(C)). Trespass is a Class A offense under 30.05(d)(3)(A)(iii)."
+                },
+                {
+                    question: "A person trespasses while carrying a deadly weapon. What is the offense level?",
+                    options: ["Class C Misdemeanor", "Class B Misdemeanor", "Class A Misdemeanor", "State Jail Felony"],
+                    answer: "Class A Misdemeanor",
+                    explanation: "Sec. 30.05(d)(3)(C) enhances trespass to a Class A if the person 'carries a deadly weapon during the commission of the offense'."
+                },
+                {
+                    question: "What is the penalty for Criminal Trespass if committed during Smuggling of Persons (20.05a2)?",
+                    options: ["Class A Misdemeanor", "State Jail Felony", "Felony of the Third Degree", "Felony of the Second Degree"],
+                    answer: "Felony of the Third Degree",
+                    explanation: "Sec. 30.05(d)(4) enhances the offense to an F3."
+                },
+                {
+                    question: "What is the explicit penalty for 30.05 if the *sole basis* for forbidding entry was a firearm or other weapon?",
+                    options: ["Class A Misdemeanor", "Class B Misdemeanor", "Class C Misdemeanor (max $200 fine)", "State Jail Felony"],
+                    answer: "Class C Misdemeanor (max $200 fine)",
+                    explanation: "Sec. 30.05(d-3) states the base penalty in this specific circumstance is a Class C Misdemeanor punishable by a fine not to exceed $200."
+                },
+                {
+                    question: "A person enters a store with a handgun (30.05 sign). The owner tells them to leave, but they refuse. What is the offense?",
+                    options: ["Class C Misdemeanor (max $200)", "Class B Misdemeanor", "Class A Misdemeanor", "No offense"],
+                    answer: "Class A Misdemeanor",
+                    explanation: "Sec. 30.05(d-3)(2) enhances the offense to a Class A if the actor received *personal* notice and subsequently failed to depart."
+                },
+                {
+                    question: "Which of these is a defense to prosecution for Criminal Trespass (30.05)?",
+                    options: ["The actor was an off-duty civilian.", "The actor was an on-duty firefighter under exigent circumstances.", "The actor was retrieving their dog.", "The actor was carrying a rifle, not a handgun."],
+                    answer: "The actor was an on-duty firefighter under exigent circumstances.",
+                    explanation: "Sec. 30.05(e)(1) provides a defense for firefighters/EMS acting in the lawful discharge of official duty under exigent circumstances."
+                },
+                {
+                    question: "Is it a defense to 30.05 for a licensed LTC holder to carry a concealed handgun where a general 'No Firearms' sign is posted?",
+                    options: ["No, they must obey the sign.", "Yes, 30.05(f) provides a defense for an LTC holder carrying concealed or in a holster.", "Only if the sign is not a valid 30.06 sign.", "No, this is a Class A misdemeanor."],
+                    answer: "Yes, 30.05(f) provides a defense for an LTC holder carrying concealed or in a holster.",
+                    explanation: "Sec. 30.05(f) is the defense for LTC holders, meaning general 30.05 firearm signs do not prohibit them."
+                },
+                {
+                    question: "Does 30.05 (Criminal Trespass) apply to a commissioned peace officer of a recognized state carrying a weapon?",
+                    options: ["Yes, if the owner posts a sign.", "No, Sec. 30.05(i) provides an exception for peace officers.", "Only if they are not engaged in official duty.", "Only if they are not from Texas."],
+                    answer: "No, Sec. 30.05(i) provides an exception for peace officers.",
+                    explanation: "Sec. 30.05(i) explicitly exempts peace officers (including from recognized states) carrying a weapon, regardless of official duty."
+                },
+                {
+                    question: "What are the required sign languages for a 30.05 sign prohibiting firearms (30.05c)?",
+                    options: ["English only", "English and Spanish", "English, Spanish, and Vietnamese", "The primary language of the county."],
+                    answer: "English and Spanish",
+                    explanation: "Sec. 30.05(c)(2) requires the language 'in both English and Spanish'."
+                },
+                {
+                    question: "What minimum letter height is required for a 30.05 sign prohibiting firearms?",
+                    options: ["Half an inch", "One inch", "Two inches", "Three inches"],
+                    answer: "One inch",
+                    explanation: "Sec. 30.05(c)(3) requires 'block letters at least one inch in height'."
+                },
+                {
+                    question: "What is the basis for the offense under 30.06 (Concealed Handgun Trespass)?",
+                    options: ["Carrying an illegal weapon.", "Carrying a concealed handgun without effective consent after receiving notice.", "Carrying any weapon into a school.", "Failure to promptly depart the property."],
+                    answer: "Carrying a concealed handgun without effective consent after receiving notice.",
+                    explanation: "Sec. 30.06(a) defines the offense based on the LTC holder carrying a concealed handgun on property without consent and after notice."
+                },
+                {
+                    question: "What is the base penalty for 30.06 (Trespass by LTC w/ Concealed Handgun)?",
+                    options: ["Class C Misdemeanor (max $200)", "Class B Misdemeanor", "Class A Misdemeanor", "No offense"],
+                    answer: "Class C Misdemeanor (max $200)",
+                    explanation: "Sec. 30.06(d) sets the base penalty as a Class C misdemeanor with a fine not to exceed $200."
+                },
+                {
+                    question: "When does a 30.06 (Concealed) offense become a Class A Misdemeanor?",
+                    options: ["If the handgun is loaded.", "If it's on school property.", "If the actor was personally given oral notice and failed to depart.", "If the actor has a prior conviction."],
+                    answer: "If the actor was personally given oral notice and failed to depart.",
+                    explanation: "Sec. 30.06(d) enhances the penalty to Class A if the actor was personally given oral notice and subsequently failed to depart."
+                },
+                {
+                    question: "Is it a defense to 30.06 if the LTC holder was given oral notice to leave and they 'promptly departed'?",
+                    options: ["Yes", "No, it's still a Class C offense.", "Only if they apologize.", "No, they must have a written defense."],
+                    answer: "Yes",
+                    explanation: "Sec. 30.06(g) provides a specific defense: 'It is a defense... that the license holder was personally given notice by oral communication... and promptly departed from the property.'"
+                },
+                {
+                    question: "What is the key language on a sign required by 30.06?",
+                    options: ["May not enter this property with a firearm.", "May not enter this property with a concealed handgun.", "May not enter this property with a handgun that is carried openly.", "No weapons allowed."],
+                    answer: "May not enter this property with a concealed handgun.",
+                    explanation: "Sec. 30.06(c)(3)(A) specifies the language: 'may not enter this property with a concealed handgun'."
+                },
+                {
+                    question: "What is the key language on a sign required by 30.07?",
+                    options: ["May not enter this property with a firearm.", "May not enter this property with a concealed handgun.", "May not enter this property with a handgun that is carried openly.", "No guns or rifles allowed."],
+                    answer: "May not enter this property with a handgun that is carried openly.",
+                    explanation: "Sec. 30.07(c)(3)(A) specifies the language: 'may not enter this property with a handgun that is carried openly'."
+                },
+                {
+                    question: "Where must a 30.07 sign be displayed?",
+                    options: ["In a conspicuous manner clearly visible to the public.", "At the property entrance only.", "At each entrance to the property.", "On the front door only."],
+                    answer: "At each entrance to the property.",
+                    explanation: "Sec. 30.07(c)(3)(B)(iii) requires the sign to be 'displayed in a conspicuous manner clearly visible to the public at each entrance to the property.'"
+                },
+                {
+                    question: "An LTC holder openly carries a handgun in a holster into a business with a valid 30.07 sign. What offense?",
+                    options: ["No offense, it was in a holster.", "Class C Misdemeanor (max $200)", "Class A Misdemeanor", "Deadly Conduct"],
+                    answer: "Class C Misdemeanor (max $200)",
+                    explanation: "Sec. 30.07(f) explicitly states: 'It is not a defense... that the handgun was carried in a holster.'"
+                },
+                {
+                    question: "What is the penalty for 30.07 (Open Carry) if the actor is given oral notice and fails to depart?",
+                    options: ["Class C Misdemeanor (max $200)", "Class B Misdemeanor", "Class A Misdemeanor", "State Jail Felony"],
+                    answer: "Class A Misdemeanor",
+                    explanation: "Sec. 30.07(d) enhances the penalty to Class A if the actor is given oral notice and fails to depart."
+                },
+                {
+                    question: "Is it a defense to 30.06/30.07 for a tenant of a leased premises (Chapter 92) to carry a handgun directly en route to their rental unit?",
+                    options: ["No, this is only a defense for owners.", "Yes, provided the actor is not otherwise prohibited by law from possessing the handgun.", "Only if they have the landlord's permission.", "No, only storing it is a defense."],
+                    answer: "Yes, provided the actor is not otherwise prohibited by law from possessing the handgun.",
+                    explanation: "Sec. 30.06(e-2)(B) and 30.07(e-2)(B) establish this as a defense, provided the conditions in (4) are met (not prohibited by law from possessing)."
+                },
+                {
+                    question: "What is the defense related to a hotel guest under 30.07?",
+                    options: ["They must have notified the hotel owner.", "Carrying a handgun directly en route to or from the hotel or the actor's hotel room.", "Storing the handgun in the hotel safe.", "The handgun must be unloaded."],
+                    answer: "Carrying a handgun directly en route to or from the hotel or the actor's hotel room.",
+                    explanation: "Sec. 30.07(e-4) provides this defense, along with carrying/storing in the room or in the vehicle."
+                },
+                {
+                    question: "Which offense provides a defense for 'peaceful or lawful assembly' at the punishment stage to avoid a penalty enhancement?",
+                    options: ["Burglary of Habitation (30.02d)", "Trespass at a Critical Infrastructure Facility (30.05h)", "Burglary of Vehicles (30.04e)", "Trespass by LTC Holder (30.06g)"],
+                    answer: "Trespass at a Critical Infrastructure Facility (30.05h)",
+                    explanation: "Sec. 30.05(h) allows a defendant to raise this issue at punishment to avoid the Class A enhancement for trespassing at a critical infrastructure facility."
+                },
+                {
+                    question: "Which statute provides a defense for a railway employee exercising a right under the Railway Labor Act?",
+                    options: ["30.02 (Burglary)", "30.04 (Burglary of Vehicles) and 30.05 (Criminal Trespass)", "30.06 (Concealed) and 30.07 (Open)", "None of the above"],
+                    answer: "30.04 (Burglary of Vehicles) and 30.05 (Criminal Trespass)",
+                    explanation: "This defense is found in Sec. 30.04(e) (for rail cars) and Sec. 30.05(g) (for railroad switching yards)."
+                },
+                {
+                    question: "What is the penalty for 30.05 Criminal Trespass in a 'general residential operation operating as a residential treatment center'?",
+                    options: ["Class C Misdemeanor", "Class B Misdemeanor", "Class A Misdemeanor", "State Jail Felony"],
+                    answer: "Class A Misdemeanor",
+                    explanation: "Sec. 30.05(d)(3)(D) enhances the offense to a Class A misdemeanor."
+                },
+                {
+                    question: "A person breaks into a habitation and commits *misdemeanor* assault. What is the offense level?",
+                    options: ["Felony of the First Degree", "Felony of the Second Degree", "Class A Misdemeanor", "State Jail Felony"],
+                    answer: "Felony of the Second Degree",
+                    explanation: "This is Burglary of Habitation under 30.02(a)(3) ('commits... an assault'). The base penalty is F2. It is not F1 because misdemeanor assault is not a 'felony other than felony theft'."
+                },
+                {
+                    question: "For a vehicle to be excluded from the 30.01 'Vehicle' definition, it must be adapted for what specific purpose?",
+                    options: ["Trade or commerce.", "Temporary storage.", "Overnight accommodation of persons.", "Emergency transport."],
+                    answer: "Overnight accommodation of persons.",
+                    explanation: "Sec. 30.01(3) excludes devices classified as 'habitation', which is defined in 30.01(1) as adapted for 'overnight accommodation of persons'."
+                },
+                {
+                    question: "If a person enters a building that is not open to the public with intent to commit *misdemeanor* theft, what is the offense level?",
+                    options: ["Class A Misdemeanor", "State Jail Felony", "Felony of the Third Degree", "Felony of the Second Degree"],
+                    answer: "State Jail Felony",
+                    explanation: "This is base Burglary of a Building (30.02a1). The intended offense is 'theft,' which is one of the offenses listed, and the penalty is an SJF (30.02c1)."
+                },
+                {
+                    question: "If a person is charged with Burglary of Vehicle (30.04) and it's shown on trial they committed the offense during Smuggling of Persons (20.05a2), what is the penalty?",
+                    options: ["Class A Misdemeanor", "State Jail Felony", "Felony of the Third Degree", "Felony of the First Degree"],
+                    answer: "Felony of the Third Degree",
+                    explanation: "Sec. 30.04(d)(3)(B) provides this F3 enhancement."
+                },
+                {
+                    question: "For Burglary of Vehicle, how many prior convictions result in a State Jail Felony penalty?",
+                    options: ["One or more.", "Two or more.", "Three or more.", "Five or more."],
+                    answer: "Two or more.",
+                    explanation: "Sec. 30.04(d)(2)(A) requires 'two or more times of an offense under this section' for the SJF enhancement."
+                },
+                {
+                    question: "For the purposes of Criminal Trespass (30.05), what does 'Residential land' mean?",
+                    options: ["Any land with a fence.", "Real property improved by a dwelling and zoned for single-family or multifamily use.", "Any land used for farming.", "Land with a temporary structure on it."],
+                    answer: "Real property improved by a dwelling and zoned for single-family or multifamily use.",
+                    explanation: "Sec. 30.05(b)(11) provides this definition."
+                },
+                {
+                    question: "A person commits a Class C Misdemeanor trespass if it is committed on residential land and within 100 feet of a...?",
+                    options: ["School boundary.", "Protected freshwater area.", "Public road.", "Condo boundary."],
+                    answer: "Protected freshwater area.",
+                    explanation: "Sec. 30.05(d)(2)(B) sets the Class C penalty if the offense is committed on 'residential land and within 100 feet of a protected freshwater area.'"
+                },
+                {
+                    question: "What is the requirement for the purple paint marks to be readily visible?",
+                    options: ["They must be visible from the sky.", "They must be visible to any person approaching the property.", "They must be visible at night.", "They must be illuminated."],
+                    answer: "They must be visible to any person approaching the property.",
+                    explanation: "Sec. 30.05(b)(2)(D)(iii) states they must be 'placed at locations that are readily visible to any person approaching the property'."
+                },
+                {
+                    question: "Which method of notice is NOT valid for a 30.05 offense?",
+                    options: ["Oral communication from the owner.", "Written communication by someone with apparent authority.", "A handwritten note placed on the actor's windshield.", "A sign reasonably likely to come to the attention of intruders."],
+                    answer: "A handwritten note placed on the actor's windshield.",
+                    explanation: "Notice must generally be provided by the owner (or agent) or be posted/visible on the property itself. Placing a note on a personal item may not constitute valid notice under (b)(2)."
+                },
+                {
+                    question: "What must a person prove by a preponderance of the evidence to avoid the Class A enhancement for trespassing at a Critical Infrastructure Facility?",
+                    options: ["They were an employee.", "They were engaging in speech or expressive conduct protected by the First Amendment or Texas Constitution.", "They had effective consent.", "They did not intend to commit an offense."],
+                    answer: "They were engaging in speech or expressive conduct protected by the First Amendment or Texas Constitution.",
+                    explanation: "Sec. 30.05(h) allows the defendant to raise this issue at the punishment stage."
+                },
+                {
+                    question: "Which of these is explicitly *NOT* a defense to prosecution for 30.07 (Open Carry Trespass)?",
+                    options: ["Carrying the handgun in a holster.", "Promptly departing after oral notice.", "Being a tenant carrying to a rental unit.", "Being volunteer emergency services personnel."],
+                    answer: "Carrying the handgun in a holster.",
+                    explanation: "Sec. 30.07(f) states 'It is not a defense to prosecution under this section that the handgun was carried in a holster.'"
+                },
+                {
+                    question: "For a hotel guest defense under 30.06/30.07, what is the defined term for the handgun's location in the room?",
+                    options: ["Openly displayed.", "Locked in a safe.", "Carries or stores a handgun in the actor's hotel room.", "Under the mattress."],
+                    answer: "Carries or stores a handgun in the actor's hotel room.",
+                    explanation: "Sec. 30.06(e-4)(A) and 30.07(e-4)(1) use the phrase 'carries or stores a handgun in the license holder's hotel room'."
+                },
+                {
+                    question: "Which section of the Penal Code is referenced in 30.02 for the definition of 'theft'?",
+                    options: ["Chapter 29.", "Chapter 31.", "Chapter 28.", "Chapter 32."],
+                    answer: "Chapter 31.",
+                    explanation: "Sec. 30.02(a) refers to 'theft as defined in Chapter 31' (implied from the surrounding code sections)."
+                },
+                {
+                    question: "Under 30.02(c-1), the intent to commit theft must specifically be for theft of what?",
+                    options: ["Any property over $2,500.", "Any controlled substance.", "Any prescription drug.", "Any item of value."],
+                    answer: "Any controlled substance.",
+                    explanation: "Sec. 30.02(c-1)(2) specifies 'intent to commit a theft of a controlled substance'."
+                },
+                {
+                    question: "If a vehicle is broken into, and a container carried on it is entered, what is the offense?",
+                    options: ["Burglary of Vehicles (30.04).", "Criminal Trespass (30.05).", "Theft (Ch. 31).", "Burglary of Building (30.02)."],
+                    answer: "Burglary of Vehicles (30.04).",
+                    explanation: "Sec. 30.04(a) covers entering a vehicle or any part of a vehicle, and 30.04(c) treats containers on a rail car as part of the rail car."
+                },
+                {
+                    question: "What is the penalty for Burglary of a Vehicle if the actor has only one prior conviction for 30.04?",
+                    options: ["Class A Misdemeanor.", "Class A Misdemeanor with a minimum term of confinement of six months.", "State Jail Felony.", "Felony of the Third Degree."],
+                    answer: "Class A Misdemeanor with a minimum term of confinement of six months.",
+                    explanation: "Sec. 30.04(d)(1) details the penalty for one prior conviction."
+                },
+                {
+                    question: "What must be displayed conspicuously and clearly visible to the public on a 30.07 sign?",
+                    options: ["The official state seal.", "The language described by Paragraph (A).", "A picture of a crossed-out handgun.", "A list of prohibited items."],
+                    answer: "The language described by Paragraph (A).",
+                    explanation: "Sec. 30.07(c)(3)(B)(iii) requires the sign to be 'displayed in a conspicuous manner clearly visible to the public' and refers back to the required language."
+                },
+                {
+                    question: "What is the meaning of 'Entry' in 30.05 for a person who remains on property after notice to depart?",
+                    options: ["The initial intrusion of any part of the body.", "The intrusion of the entire body.", "The person did not need to make an 'entry' after notice to depart was given.", "Only intrusion by object connected to the body."],
+                    answer: "The intrusion of the entire body.",
+                    explanation: "Sec. 30.05(b)(1) defines 'Entry' as intrusion of the *entire body*, and this definition applies to both entering and remaining."
+                },
+                {
+                    question: "Can a written communication providing notice for 30.06 be a card or other document, instead of a sign?",
+                    options: ["No, it must be a sign.", "Yes, as long as it has the identical language.", "Only if it is notarized.", "No, only oral communication or signs are valid."],
+                    answer: "Yes, as long as it has the identical language.",
+                    explanation: "Sec. 30.06(c)(3)(A) defines 'written communication' to include 'a card or other document on which is written language identical to the following...'"
+                },
+                {
+                    question: "For a defense under 30.05(f-2) relating to a tenant carrying a firearm, the premises must be governed by which chapter of the Property Code?",
+                    options: ["Chapter 81.", "Chapter 82.", "Chapter 92.", "Chapter 94."],
+                    answer: "Chapter 92.",
+                    explanation: "Sec. 30.05(f-2) applies to 'a leased premises governed by Chapter 92, Property Code'."
+                },
+                {
+                    question: "Under 30.02(a)(1), if a building is open to the public, is it still Burglary if the actor enters with intent to commit a felony?",
+                    options: ["Yes, always.", "No, the building must be 'not then open to the public'.", "Only if the actor attempts the felony.", "Only if the felony is Aggravated Assault."],
+                    answer: "No, the building must be 'not then open to the public'.",
+                    explanation: "Sec. 30.02(a)(1) requires the building to be '(or any portion of a building) not then open to the public'."
+                },
+                {
+                    question: "If a licensed LTC holder is given oral notice to depart the property for carrying a concealed handgun (30.06) and they fail to depart, the offense is enhanced to what?",
+                    options: ["Felony of the Third Degree.", "State Jail Felony.", "Class A Misdemeanor.", "Class B Misdemeanor."],
+                    answer: "Class A Misdemeanor.",
+                    explanation: "Sec. 30.06(d) provides this enhancement."
+                },
+                {
+                    question: "Which type of property must be 'completely enclosed by a fence or other physical barrier' to qualify as a Critical Infrastructure Facility?",
+                    options: ["Residential land.", "A telecommunications central switching office.", "Agricultural land.", "A Superfund site."],
+                    answer: "A telecommunications central switching office.",
+                    explanation: "Sec. 30.05(b)(7) lists this facility type and requires the enclosure."
+                },
+                {
+                    question: "The defense under 30.05(f) for an LTC holder carrying a handgun requires the handgun to be carried in what manner?",
+                    options: ["Unloaded and secured.", "Concealed or in a holster.", "Openly displayed on a shoulder strap.", "Only concealed."],
+                    answer: "Concealed or in a holster.",
+                    explanation: "Sec. 30.05(f)(2) requires the person was carrying: (A) a license and (B) a handgun (i) in a concealed manner; or (ii) in a holster."
+                },
+                {
+                    question: "Which of the following utility employees/agents is NOT listed in the defense to Criminal Trespass (30.05e2)?",
+                    options: ["Electric utility.", "Gas utility.", "Water utility.", "Telecommunications provider."],
+                    answer: "Water utility.",
+                    explanation: "The section lists electric, gas, telecommunications, video/cable, and pipeline utilities, but not a general water utility in the main list, though water intake/treatment is a Critical Infrastructure Facility."
+                },
+                {
+                    question: "In Burglary (30.02), which of the following mental states is NOT listed for the underlying offense of causing bodily injury to commit Robbery (Chapter 29)?",
+                    options: ["Intent to commit assault.", "Intent to commit theft.", "Intent to commit a felony.", "Intent to commit criminal mischief."],
+                    answer: "Intent to commit criminal mischief.",
+                    explanation: "The three permissible intents for Burglary are felony, theft, or assault (30.02a1/2/3)."
+                },
+                {
+                    question: "If a person enters a habitation and commits *misdemeanor* theft, what is the penalty?",
+                    options: ["Felony of the First Degree.", "Felony of the Second Degree.", "Class A Misdemeanor.", "State Jail Felony."],
+                    answer: "Felony of the Second Degree.",
+                    explanation: "This is Burglary of Habitation (30.02a3). Since it is not a felony other than felony theft, it defaults to the F2 base penalty (30.02c2)."
+                },
+                {
+                    question: "What is the penalty for 30.05 Criminal Trespass on a Superfund site?",
+                    options: ["Class C Misdemeanor", "Class B Misdemeanor", "Class A Misdemeanor", "Felony of the Third Degree"],
+                    answer: "Class A Misdemeanor",
+                    explanation: "Sec. 30.05(d)(3)(A)(ii) enhances trespass on a Superfund site to a Class A misdemeanor."
+                },
+                {
+                    question: "What is the purpose of the 30.05(d-1) provision regarding previous convictions?",
+                    options: ["To prevent double jeopardy.", "To allow deferred adjudication to count as a prior conviction for enhancement.", "To require a jury finding.", "To specify the type of crime committed."],
+                    answer: "To allow deferred adjudication to count as a prior conviction for enhancement.",
+                    explanation: "Sec. 30.05(d-1) defines 'previously convicted' to include deferred adjudication community supervision for enhancement purposes."
+                },
+                {
+                    question: "Can an LTC holder carrying a concealed handgun be charged with Criminal Trespass (30.05) if the basis for forbidding entry was not a weapon sign (e.g., fencing)?",
+                    options: ["No, they are immune if they have an LTC.", "Yes, the LTC defense (30.05f) only applies if the *basis* was the handgun.", "Only if they fail to depart after oral notice.", "Yes, but it is only a Class C Misdemeanor."],
+                    answer: "Yes, the LTC defense (30.05f) only applies if the *basis* was the handgun.",
+                    explanation: "The LTC defense in 30.05(f) starts with: 'the basis on which entry on the property or land or in the building was forbidden is that entry with a handgun was forbidden'. If the basis was general trespassing (fencing), the defense does not apply, and they can be charged with the base 30.05 offense (Class B)."
+                },
+                {
+                    question: "What type of disability must a person have to be defined as a 'disabled person' (imported definition) under Aggravated Robbery?",
+                    options: ["Only a physical disability.", "Only a mental disability.", "Mental, physical, or developmental disability.", "Any long-term medical condition."],
+                    answer: "Mental, physical, or developmental disability.",
+                    explanation: "Although the definition comes from 29.03(c), it is an important concept: 'an individual with a mental, physical, or developmental disability who is substantially unable to protect himself from harm.'"
+                },
+                {
+                    question: "In Burglary (30.02), if a party attempts to commit Kidnapping in a habitation, what is the offense level?",
+                    options: ["Felony of the Second Degree.", "Felony of the First Degree.", "State Jail Felony.", "Kidnapping only."],
+                    answer: "Felony of the First Degree.",
+                    explanation: "Kidnapping is a felony other than felony theft, triggering the F1 enhancement under 30.02(d)(2)."
+                },
+                {
+                    question: "The defense for a first responder under 30.06 (concealed) requires them to hold an unexpired certificate of completion under which Government Code section?",
+                    options: ["411.1883.", "411.1884.", "46.01.", "179.001."],
+                    answer: "411.1883.",
+                    explanation: "Sec. 30.06(f-1)(1) requires an 'unexpired certificate of completion under Section 411.1883, Government Code'."
+                },
+                {
+                    question: "Which of the following is NOT required for a 30.06 sign's physical appearance?",
+                    options: ["Contrasting colors.", "Block letters.", "Red lettering on white background.", "Letters at least one inch in height."],
+                    answer: "Red lettering on white background.",
+                    explanation: "Sec. 30.06(c)(3)(B)(ii) only requires 'contrasting colors with block letters'."
+                },
+                {
+                    question: "For a condo owner's guest to have a defense under 30.05(f-1), the actor must *not* be otherwise prohibited by law from possessing what?",
+                    options: ["The handgun only.", "Any weapon.", "A firearm or firearm ammunition.", "A knife or club."],
+                    answer: "A firearm or firearm ammunition.",
+                    explanation: "Sec. 30.05(f-1)(4) requires the actor is 'not otherwise prohibited by law from possessing a firearm or firearm ammunition'."
+                },
+                {
+                    question: "A person breaks into a vehicle that is owned by a wholesale distributor of prescription drugs. They intended to steal tires. What is the offense level?",
+                    options: ["Class A Misdemeanor.", "State Jail Felony.", "Felony of the Third Degree.", "Felony of the First Degree."],
+                    answer: "Class A Misdemeanor.",
+                    explanation: "The F3 enhancement (30.04d3A) requires the intent to steal a *controlled substance*. Since the intent was to steal tires, the offense defaults to the base penalty of a Class A misdemeanor (30.04d)."
+                },
+                {
+                    question: "If the actor has a defense under 30.05(f) (LTC holder), what must they be carrying besides the handgun?",
+                    options: ["Only the handgun license.", "The handgun license and a cell phone.", "The handgun license and a photo ID.", "The handgun license and the handgun concealed or in a holster."],
+                    answer: "The handgun license and the handgun concealed or in a holster.",
+                    explanation: "Sec. 30.05(f)(2) requires carrying both (A) a license and (B) a handgun in a concealed manner or in a holster."
+                },
+                {
+                    question: "What is the key requirement distinguishing Burglary of a Building (30.02) from Burglary of a Vehicle (30.04) in the elements section?",
+                    options: ["Intent to commit assault.", "The term 'breaks into'.", "The requirement of lack of effective consent.", "The specific property type (building/habitation vs. vehicle/rail car)."],
+                    answer: "The specific property type (building/habitation vs. vehicle/rail car).",
+                    explanation: "The structure/object being entered is the fundamental difference, leading to different classification and punishment schemes."
+                },
+                {
+                    question: "Which defense applies to an LTC holder who is volunteer emergency services personnel?",
+                    options: ["30.05(f).", "30.06(f).", "30.07(g).", "Both 30.06(f) and 30.07(g)."],
+                    answer: "Both 30.06(f) and 30.07(g).",
+                    explanation: "The volunteer emergency services defense is listed in 30.06(f) and 30.07(g)."
+                },
+                {
+                    question: "A technical medical professional defense under 30.06/30.07 requires an unexpired certificate of completion under which Government Code section?",
+                    options: ["411.1883.", "411.1884.", "46.01.", "179.001."],
+                    answer: "411.1884.",
+                    explanation: "Sec. 30.06(f-2)(1) and 30.07(g-2)(1) require completion under Section 411.1884, Government Code."
+                },
+                {
+                    question: "What definition applies to 'Agricultural land' for the purpose of Criminal Trespass (30.05)?",
+                    options: ["The definition from the Agriculture Code.", "The meaning assigned by Section 75.001, Civil Practice and Remedies Code.", "Any land used for growing food.", "Land with livestock."],
+                    answer: "The meaning assigned by Section 75.001, Civil Practice and Remedies Code.",
+                    explanation: "Sec. 30.05(b)(5) provides this reference."
+                },
+                {
+                    question: "Which type of facility is NOT listed as a critical infrastructure facility under 30.05(b)(7)?",
+                    options: ["A refinery.", "A gas processing plant.", "A port.", "A private military training camp."],
+                    answer: "A private military training camp.",
+                    explanation: "Military camps are not listed; the list focuses on utility, manufacturing, and transportation infrastructure."
+                },
+                {
+                    question: "If an actor is trespassing on an institution of higher education and has a prior conviction under Sec. 51.204(b)(1), Education Code, the offense is a:",
+                    options: ["Class C Misdemeanor.", "Class B Misdemeanor.", "Class A Misdemeanor.", "State Jail Felony."],
+                    answer: "Class A Misdemeanor.",
+                    explanation: "Sec. 30.05(d)(3)(B)(ii) enhances the penalty to Class A."
+                },
+                {
+                    question: "Which subsection of 30.05 provides the defense for a person employed by or acting as agent for an entity that had, or reasonably believed it had, effective consent to enter?",
+                    options: ["(e)(1).", "(e)(2).", "(e)(3).", "(f)."],
+                    answer: "(e)(3).",
+                    explanation: "Sec. 30.05(e)(3) covers this generalized agent defense."
+                },
+                {
+                    question: "A person who commits Criminal Trespass on agricultural land within 100 feet of the boundary is guilty of a Class C Misdemeanor. This is found in which section?",
+                    options: ["30.05(d)(1).", "30.05(d)(2)(A).", "30.05(d)(3)(A).", "30.05(d-3)."],
+                    answer: "30.05(d)(2)(A).",
+                    explanation: "Sec. 30.05(d)(2)(A) specifies this Class C misdemeanor enhancement."
+                }
+            ];
+
+
+            // --- Shuffle and Load Quiz ---
+            const quizContainer = document.getElementById('quiz-container');
+            const checkAnswersBtn = document.getElementById('check-answers-btn');
+            const retakeQuizBtn = document.getElementById('retake-quiz-btn');
+            const quizResultsDiv = document.getElementById('quiz-results');
+            const quizScoreEl = document.getElementById('quiz-score');
+            const quizPercentageEl = document.getElementById('quiz-percentage');
+
+            function loadQuiz() {
+                // Shuffle the quiz data for a new order each time
+                const shuffledQuizData = [...quizData].sort(() => Math.random() - 0.5);
+                
+                quizContainer.innerHTML = ''; // Clear previous questions
+                
+                shuffledQuizData.forEach((q, index) => {
+                    const questionDiv = document.createElement('div');
+                    questionDiv.className = 'quiz-question';
+                    
+                    // Store the original question index to check the answer later
+                    const originalIndex = quizData.indexOf(q);
+                    
+                    // Use standard string concatenation and escape characters
+                    let optionsHtml = '';
+                    q.options.forEach(option => {
+                        const escapedOptionValue = option.replace(/'/g, "&apos;").replace(/"/g, "&quot;");
+                        const escapedOptionText = option.replace(/</g, "&lt;").replace(/>/g, "&gt;");
+                        optionsHtml += '<label class="block"><input type="radio" name="q' + index + '" value="' + escapedOptionValue + '" data-original-index="' + originalIndex + '" class="mr-2">' + escapedOptionText + '</label>';
+                    });
+                    
+                    const escapedQuestion = q.question.replace(/</g, "&lt;").replace(/>/g, "&gt;");
+
+                    questionDiv.innerHTML =
+                        '<p class="font-semibold mb-2">' + (index + 1) + '. ' + escapedQuestion + '</p>' +
+                        '<div class="space-y-2">' + optionsHtml + '</div>' +
+                        '<div class="feedback hidden mt-2 p-2 rounded-lg text-sm"></div>';
+                    
+                    quizContainer.appendChild(questionDiv);
+                });
+            }
+
+            loadQuiz(); // Initial load
+
+            checkAnswersBtn.addEventListener('click', () => {
+                let score = 0;
+                const totalQuestions = quizData.length;
+                const questions = quizContainer.querySelectorAll('.quiz-question');
+
+                questions.forEach((questionDiv, index) => {
+                    const selected = questionDiv.querySelector('input[name="q' + index + '"]:checked');
+                    const feedback = questionDiv.querySelector('.feedback');
+                    const radioButtons = questionDiv.querySelectorAll('input[name="q' + index + '"]');
+                    
+                    feedback.classList.remove('hidden', 'correct', 'incorrect', 'unanswered');
+                    
+                    if (selected) {
+                        const originalIndex = selected.dataset.originalIndex;
+                        const q = quizData[originalIndex];
+                        
+                        const escapedAnswer = q.answer.replace(/'/g, "&apos;").replace(/"/g, "&quot;");
+                        const escapedExplanation = q.explanation.replace(/</g, "&lt;").replace(/>/g, "&gt;");
+                        const escapedCorrectAnswerText = q.answer.replace(/</g, "&lt;").replace(/>/g, "&gt;");
+
+                        if (selected.value === escapedAnswer) {
+                            score++;
+                            feedback.innerHTML = '<strong>Correct!</strong> ' + escapedExplanation;
+                            feedback.classList.add('correct');
+                        } else {
+                            feedback.innerHTML = '<strong>Incorrect.</strong> The correct answer is "' + escapedCorrectAnswerText + '". ' + escapedExplanation;
+                            feedback.classList.add('incorrect');
+                        }
+                    } else {
+                        // Find the original question to show the answer
+                        const firstRadio = questionDiv.querySelector('input[name="q' + index + '"]');
+                         if (firstRadio) {
+                            const originalIndex = firstRadio.dataset.originalIndex;
+                            const q = quizData[originalIndex];
+                            const escapedExplanation = q.explanation.replace(/</g, "&lt;").replace(/>/g, "&gt;");
+                            const escapedCorrectAnswerText = q.answer.replace(/</g, "&lt;").replace(/>/g, "&gt;");
+                            feedback.innerHTML = '<strong>Unanswered.</strong> The correct answer is "' + escapedCorrectAnswerText + '". ' + escapedExplanation;
+                        } else {
+                             feedback.innerHTML = '<strong>Error:</strong> Could not load feedback.';
+                        }
+                        feedback.classList.add('unanswered');
+                    }
+                    
+                    feedback.classList.remove('hidden');
+                    
+                    radioButtons.forEach(radio => {
+                        radio.disabled = true;
+                    });
+                });
+
+                // Calculate and display results
+                const percentage = ((score / totalQuestions) * 100).toFixed(0);
+                quizScoreEl.textContent = 'Your Score: ' + score + ' / ' + totalQuestions;
+                quizPercentageEl.textContent = 'Percentage: ' + percentage + '%';
+                
+                quizResultsDiv.classList.remove('hidden');
+                checkAnswersBtn.classList.add('hidden');
+                retakeQuizBtn.classList.remove('hidden');
+            });
+
+            retakeQuizBtn.addEventListener('click', () => {
+                quizResultsDiv.classList.add('hidden');
+                retakeQuizBtn.classList.add('hidden');
+                checkAnswersBtn.classList.remove('hidden');
+                loadQuiz();
+            });
+
+            // --- RESOURCES LIST ---
+            const resources = [
+                 { name: "Texas Penal Code - Official Site", url: "https://statutes.capitol.texas.gov/Default.aspx?Code=PE" },
+                 { name: "Penal Code Ch. 30 - Burglary & Criminal Trespass", url: "https://statutes.capitol.texas.gov/Docs/PE/htm/PE.30.htm" },
+                 { name: "Penal Code Sec. 1.07 - Definitions (BI, SBI, Deadly Weapon)", url: "https://statutes.capitol.texas.gov/Docs/PE/htm/PE.1.htm#1.07" },
+                 { name: "Penal Code Sec. 20.05 - Smuggling of Persons", url: "https://statutes.capitol.texas.gov/Docs/PE/htm/PE.20.htm#20.05" },
+                 { name: "Penal Code Sec. 46.03 - Places Weapons Prohibited", url: "https://statutes.capitol.texas.gov/Docs/PE/htm/PE.46.htm#46.03" },
+                 { name: "Govt Code Ch. 411, Subch H - Handgun Licensing", url: "httpss://statutes.capitol.texas.gov/Docs/GV/htm/GV.411.htm#H" }
+            ];
+            const resourcesList = document.getElementById('resources-list');
+            resources.sort((a, b) => a.name.localeCompare(b.name));
+            resources.forEach(res => {
+                const link = document.createElement('a');
+                link.href = res.url;
+                link.target = '_blank';
+                link.rel = 'noopener noreferrer';
+                link.className = 'text-red-600 hover:underline p-2 bg-gray-50 rounded-md block hover:bg-gray-100';
+                link.innerHTML = '<i class="fas fa-external-link-alt mr-2"></i>' + res.name;
+                resourcesList.appendChild(link);
+            });
+        });
+    </script>
+</body>
+</html>

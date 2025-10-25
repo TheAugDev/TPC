@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ch. 29 Study Guide: Texas Penal Code</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet">
+    <style>
+        :root {
+            --header-bg: #1f2937; /* Dark Gray */
+            --bg-color: #f3f4f6; /* Light Gray */
+            --tab-active-bg: #ef4444; /* Red */
+            --tab-active-text: #ffffff;
+            --card-bg: #ffffff;
+            --text-color: #111827;
+            --link-color: #dc2626; /* Red Link */
+        }
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            font-family: 'Inter', sans-serif;
+        }
+        @import url('https://rsms.me/inter/inter.css');
+        .tab-content { display: none; }
+        .tab-content.active { display: block; }
+        .tab.active {
+            background-color: var(--tab-active-bg);
+            color: var(--tab-active-text);
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .tab {
+            transition: all 0.3s ease-in-out;
+        }
+        .definition-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 1rem;
+        }
+        .definition-item {
+            background-color: #f9fafb;
+            padding: 0.75rem;
+            border-radius: 0.5rem;
+            border: 1px solid #e5e7eb;
+        }
+        .definition-term {
+            font-weight: 600;
+            color: #111827;
+        }
+        .definition-desc {
+            font-size: 0.875rem;
+            color: #4b5563;
+        }
+        .quiz-question p { margin-bottom: 0.5rem; }
+        .quiz-question label { display: block; margin-bottom: 0.5rem; padding: 0.5rem; border: 1px solid #e5e7eb; border-radius: 0.375rem; cursor: pointer; transition: background-color 0.2s; }
+        .quiz-question label:hover { background-color: #f9fafb; }
+        .quiz-question input[type="radio"] { margin-right: 0.5rem; }
+        .feedback { margin-top: 0.5rem; padding: 0.5rem; border-radius: 0.375rem; font-size: 0.875rem; }
+        .feedback.correct { background-color: #dcfce7; color: #166534; }
+        .feedback.incorrect { background-color: #fee2e2; color: #991b1b; }
+        .feedback.unanswered { background-color: #ffedd5; color: #9a3412; }
+        .hidden { display: none; }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Header -->
+    <header class="bg-gray-800 text-white p-4 shadow-md">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-xl md:text-2xl font-bold">
+                <i class="fas fa-mask mr-2"></i>Ch. 29: Robbery
+            </h1>
+            <a href="index.html" class="text-sm text-red-300 hover:text-red-100 hover:underline">
+                <i class="fas fa-arrow-left mr-1"></i> Back to Main Page
+            </a>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container mx-auto p-4 md:p-6">
+        <!-- Tab Navigation -->
+        <div class="mb-6 bg-white rounded-lg shadow-md overflow-x-auto">
+            <nav id="tabs" class="flex flex-col sm:flex-row space-y-1 sm:space-y-0 sm:space-x-1 p-2">
+                <button data-tab="key-definitions" class="tab active flex items-center justify-center px-3 py-2 text-sm font-semibold rounded-lg text-gray-600 hover:bg-red-100">
+                    <i class="fas fa-book mr-2"></i> Definitions
+                </button>
+                <button data-tab="robbery" class="tab flex items-center justify-center px-3 py-2 text-sm font-semibold rounded-lg text-gray-600 hover:bg-red-100">
+                    <i class="fas fa-hand-rock mr-2"></i> Robbery (29.02)
+                </button>
+                <button data-tab="agg-robbery" class="tab flex items-center justify-center px-3 py-2 text-sm font-semibold rounded-lg text-gray-600 hover:bg-red-100">
+                    <i class="fas fa-skull-crossbones mr-2"></i> Agg. Robbery (29.03)
+                </button>
+                <button data-tab="jugging" class="tab flex items-center justify-center px-3 py-2 text-sm font-semibold rounded-lg text-gray-600 hover:bg-red-100">
+                    <i class="fas fa-car-side mr-2"></i> Jugging (29.04)
+                </button>
+                <button data-tab="knowledge-check" class="tab flex items-center justify-center px-3 py-2 text-sm font-semibold rounded-lg text-gray-600 hover:bg-red-100">
+                    <i class="fas fa-question-circle mr-2"></i> Knowledge Check
+                </button>
+                <button data-tab="resources" class="tab flex items-center justify-center px-3 py-2 text-sm font-semibold rounded-lg text-gray-600 hover:bg-red-100">
+                    <i class="fas fa-link mr-2"></i> Resources
+                </button>
+            </nav>
+        </div>
+
+        <!-- Tab Content -->
+        <div id="tab-contents">
+            <!-- Key Definitions Tab -->
+            <div id="key-definitions" class="tab-content active">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-2xl font-bold mb-4">Key Definitions</h2>
+                    <div class="definition-grid">
+                        <div class="definition-item">
+                            <span class="definition-term">In the course of committing theft (29.01)</span>
+                            <p class="definition-desc">Conduct that occurs in an <strong>attempt</strong> to commit, <strong>during</strong> the commission, or in <strong>immediate flight</strong> after the attempt or commission of theft.</p>
+                        </div>
+                        <div class="definition-item">
+                            <span class="definition-term">Property (29.01)</span>
+                            <p class="definition-desc">(A) Tangible or intangible personal property (including anything severed from land); or (B) A document, including money, that represents or embodies anything of value.</p>
+                        </div>
+                        <div class="definition-item">
+                            <span class="definition-term">Disabled person (29.03c)</span>
+                            <p class="definition-desc">An individual with a mental, physical, or developmental disability who is <strong>substantially unable to protect himself from harm</strong>.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Robbery Tab -->
+            <div id="robbery" class="tab-content space-y-6">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-xl font-bold mb-4 border-b pb-2"><a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.29.htm#29.02" target="_blank" class="text-red-600 hover:underline">Sec. 29.02. Robbery</a></h2>
+                    <ul class="list-disc list-inside text-sm text-gray-700 space-y-2">
+                        <li><strong class="font-semibold">Offense (a):</strong> A person commits an offense if, <strong>in the course of committing theft</strong> (as defined in Ch. 31) and with <strong>intent to obtain or maintain control of the property</strong>, he:
+                            <ol class="list-decimal list-inside ml-4 space-y-1">
+                                <li><strong class="font-semibold">Intentionally, Knowingly, or Recklessly</strong> causes <strong>bodily injury</strong> to another; OR</li>
+                                <li><strong class="font-semibold">Intentionally or Knowingly</strong> <strong>threatens or places another in fear</strong> of <strong>imminent</strong> bodily injury or death.</li>
+                            </ol>
+                        </li>
+                        <li><strong class="font-semibold">Penalty (b):</strong> An offense under this section is a <strong class="font-semibold text-red-700">Felony of the Second Degree</strong>.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Aggravated Robbery Tab -->
+            <div id="agg-robbery" class="tab-content space-y-6">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-xl font-bold mb-4 border-b pb-2"><a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.29.htm#29.03" target="_blank" class="text-red-600 hover:underline">Sec. 29.03. Aggravated Robbery</a></h2>
+                    <ul class="list-disc list-inside text-sm text-gray-700 space-y-2">
+                        <li><strong class="font-semibold">Offense (a):</strong> A person commits an offense if he commits <strong>Robbery (Sec. 29.02)</strong>, AND he:
+                            <ol class="list-decimal list-inside ml-4 space-y-1">
+                                <li>Causes <strong>serious bodily injury</strong> to another;</li>
+                                <li><strong>Uses or exhibits a deadly weapon</strong>; OR</li>
+                                <li>Causes <strong>bodily injury</strong> to another person or <strong>threatens or places another person in fear</strong> of imminent bodily injury or death, if the other person is:
+                                    <ul class="list-disc list-inside ml-6">
+                                        <li>(A) <strong>65 years of age or older</strong>; or</li>
+                                        <li>(B) a <strong>disabled person</strong>.</li>
+                                    </ul>
+                                </li>
+                            </ol>
+                        </li>
+                        <li><strong class="font-semibold">Penalty (b):</strong> An offense under this section is a <strong class="font-semibold text-red-800">Felony of the First Degree</strong>.</li>
+                        <li><strong class="font-semibold">Definition (c):</strong> "Disabled person" means an individual with a mental, physical, or developmental disability who is <strong>substantially unable to protect himself from harm</strong>.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Jugging Tab -->
+            <div id="jugging" class="tab-content space-y-6">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-xl font-bold mb-4 border-b pb-2"><a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.29.htm#29.04" target="_blank" class="text-red-600 hover:underline">Sec. 29.04. Jugging</a></h2>
+                    <ul class="list-disc list-inside text-sm text-gray-700 space-y-2">
+                        <li><strong class="font-semibold">Offense (a):</strong> A person commits an offense if, with <strong>intent to commit theft of another person's money</strong>, the person:
+                            <ol class="list-decimal list-inside ml-4 space-y-1">
+                                <li><strong class="font-semibold">Knowingly travels from a commercial business or financial institution</strong>... on the <strong>same path or route</strong> as another person without substantially deviating; AND</li>
+                                <li>Is in possession of <strong>two or more criminal instruments</strong> (as defined by Sec. 16.01).</li>
+                            </ol>
+                        </li>
+                        <li><strong class="font-semibold">Penalties (b):</strong>
+                            <ul class="list-disc list-inside ml-4">
+                                <li>Base Offense: <strong class="font-semibold text-red-700">State Jail Felony</strong>.</li>
+                                <li><strong class="font-semibold text-red-800">ENHANCED TO F3</strong> if, during the offense, the actor commits <strong>Burglary of a Vehicle (30.04)</strong>.</li>
+                                <li><strong class="font-semibold text-red-800">ENHANCED TO F1</strong> if, during the offense, the actor commits <strong>Robbery (29.02)</strong>.</li>
+                            </ul>
+                        </li>
+                        <li><strong class="font-semibold">Overlap (c):</strong> If conduct constitutes an offense under this section and another section, the actor may be prosecuted under <strong>either section or under both</strong>.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Knowledge Check Tab -->
+            <div id="knowledge-check" class="tab-content">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-2xl font-bold mb-4">Knowledge Check (Ch. 29)</h2>
+                    <p class="mb-6 text-gray-600">Test your understanding of the material. (50 Questions)</p>
+                    <div id="quiz-container" class="space-y-8">
+                        <!-- Questions will be dynamically inserted here -->
+                    </div>
+                    <!-- Results Div -->
+                    <div id="quiz-results" class="hidden mt-8 text-center">
+                        <h3 class="text-2xl font-bold" id="quiz-score"></h3>
+                        <p class="text-lg text-gray-700" id="quiz-percentage"></p>
+                    </div>
+                    <!-- Button Container -->
+                    <div class="mt-8 text-center space-x-4">
+                        <button id="check-answers-btn" class="bg-red-600 text-white font-bold py-2 px-6 rounded-lg hover:bg-red-700 transition-colors">Submit Answers</button>
+                        <button id="retake-quiz-btn" class="hidden bg-gray-600 text-white font-bold py-2 px-6 rounded-lg hover:bg-gray-700 transition-colors">Retake Quiz</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Resources Tab -->
+            <div id="resources" class="tab-content">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-2xl font-bold mb-4">External Resources</h2>
+                    <p class="mb-6 text-gray-600">Quick links to official Texas statutes and related definitions.</p>
+                    <div id="resources-list" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 text-sm">
+                        <!-- Links will be dynamically inserted here -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const tabs = document.querySelectorAll('#tabs button');
+            const tabContents = document.querySelectorAll('.tab-content');
+
+            tabs.forEach(tab => {
+                tab.addEventListener('click', () => {
+                    tabs.forEach(t => t.classList.remove('active'));
+                    tabContents.forEach(c => c.classList.remove('active'));
+                    tab.classList.add('active');
+                    document.getElementById(tab.dataset.tab).classList.add('active');
+                });
+            });
+
+            // --- QUIZ DATA (CHAPTER 29) ---
+            const quizData = [
+                {
+                    question: "What is the definition of 'In the course of committing theft' under 29.01?",
+                    options: ["Only during the actual commission of theft.", "Only in the immediate flight after a theft.", "Attempt, commission, or immediate flight after attempt or commission.", "Any conduct related to planning a theft."],
+                    answer: "Attempt, commission, or immediate flight after attempt or commission.",
+                    explanation: "Sec. 29.01(1) defines it as 'conduct that occurs in an attempt to commit, during the commission, or in immediate flight after the attempt or commission of theft.'"
+                },
+                {
+                    question: "Does 'Property' under 29.01 include intangible personal property?",
+                    options: ["No, only tangible property.", "Yes, it includes both tangible and intangible personal property.", "Only if the intangible property is money.", "No, it only includes real property."],
+                    answer: "Yes, it includes both tangible and intangible personal property.",
+                    explanation: "Sec. 29.01(2)(A) explicitly includes 'tangible or intangible personal property'."
+                },
+                {
+                    question: "What is the definition of 'Disabled person' under 29.03(c)?",
+                    options: ["Any person with a documented disability.", "An individual substantially unable to protect himself from harm due to a disability.", "A person who is 65 years of age or older.", "Any person receiving disability benefits."],
+                    answer: "An individual substantially unable to protect himself from harm due to a disability.",
+                    explanation: "Sec. 29.03(c) defines it as 'an individual with a mental, physical, or developmental disability who is substantially unable to protect himself from harm.'"
+                },
+                {
+                    question: "What is the required *intent* for Robbery under 29.02(a)?",
+                    options: ["Intent to cause bodily injury.", "Intent to obtain or maintain control of the property.", "Intent to commit a felony.", "Intent to use a deadly weapon."],
+                    answer: "Intent to obtain or maintain control of the property.",
+                    explanation: "Sec. 29.02(a) requires the act be 'with intent to obtain or maintain control of the property'."
+                },
+                {
+                    question: "What is the *minimum* culpable mental state for causing bodily injury to commit Robbery under 29.02(a)(1)?",
+                    options: ["Intentionally", "Knowingly", "Recklessly", "Criminal Negligence"],
+                    answer: "Recklessly",
+                    explanation: "Sec. 29.02(a)(1) lists 'intentionally, knowingly, or recklessly causes bodily injury'."
+                },
+                {
+                    question: "What is the *minimum* culpable mental state for threatening another to commit Robbery under 29.02(a)(2)?",
+                    options: ["Intentionally or Knowingly", "Recklessly", "Criminal Negligence", "No mental state required."],
+                    answer: "Intentionally or Knowingly",
+                    explanation: "Sec. 29.02(a)(2) lists 'intentionally or knowingly threatens or places another in fear'."
+                },
+                {
+                    question: "Under 29.02(a)(2), the threat must be of...?",
+                    options: ["Future bodily injury.", "Imminent bodily injury or death.", "Property damage.", "Any bodily injury."],
+                    answer: "Imminent bodily injury or death.",
+                    explanation: "Sec. 29.02(a)(2) specifies 'fear of *imminent* bodily injury or death.'"
+                },
+                {
+                    question: "A person steals items (theft) and, in immediate flight, recklessly pushes a guard, causing pain (bodily injury). What offense?",
+                    options: ["Theft only", "Assault only", "Robbery", "Aggravated Robbery"],
+                    answer: "Robbery",
+                    explanation: "The person, in the course of committing theft (immediate flight), with intent to maintain control, recklessly caused BI. This is Robbery under 29.02(a)(1)."
+                },
+                {
+                    question: "What is the base penalty for Robbery under 29.02(b)?",
+                    options: ["State Jail Felony", "Felony of the Third Degree", "Felony of the Second Degree", "Felony of the First Degree"],
+                    answer: "Felony of the Second Degree",
+                    explanation: "Sec. 29.02(b) states: 'An offense under this section is a felony of the second degree.'"
+                },
+                {
+                    question: "Which of these is NOT an element that elevates Robbery to Aggravated Robbery under 29.03(a)?",
+                    options: ["Causes serious bodily injury.", "Uses or exhibits a deadly weapon.", "Commits the robbery at nighttime.", "The victim is 65 years of age or older."],
+                    answer: "Commits the robbery at nighttime.",
+                    explanation: "Time of day is not an element. The aggravating factors are (1) SBI, (2) Deadly Weapon, or (3) Victim is 65+ or disabled (and BI/threat occurs)."
+                },
+                {
+                    question: "A person commits Robbery by threatening a clerk. During the threat, he *exhibits* a handgun. What offense?",
+                    options: ["Robbery (F2)", "Aggravated Robbery (F1)", "Deadly Conduct", "Terroristic Threat"],
+                    answer: "Aggravated Robbery (F1)",
+                    explanation: "The person committed Robbery (29.02) AND (2) used or exhibited a deadly weapon. This is Aggravated Robbery under 29.03(a)(2)."
+                },
+                {
+                    question: "A person commits Robbery by causing bodily injury. The punch breaks the victim's jaw. What is the most likely offense?",
+                    options: ["Robbery (F2)", "Aggravated Robbery (F1)", "Assault (Class A)", "Aggravated Assault (F2)"],
+                    answer: "Aggravated Robbery (F1)",
+                    explanation: "A broken jaw constitutes Serious Bodily Injury (SBI). Committing Robbery AND causing SBI is Aggravated Robbery under 29.03(a)(1)."
+                },
+                {
+                    question: "A person commits Robbery by threatening a 70-year-old person. What offense?",
+                    options: ["Robbery (F2)", "Aggravated Robbery (F1)", "Theft (SJF)", "Injury to the Elderly"],
+                    answer: "Aggravated Robbery (F1)",
+                    explanation: "The person committed Robbery (threatens... in fear) AND the victim was 65 years or older (70). This is Aggravated Robbery under 29.03(a)(3)(A)."
+                },
+                {
+                    question: "What is the penalty for Aggravated Robbery under 29.03(b)?",
+                    options: ["State Jail Felony", "Felony of the Third Degree", "Felony of the Second Degree", "Felony of the First Degree"],
+                    answer: "Felony of the First Degree",
+                    explanation: "Sec. 29.03(b) states: 'An offense under this section is a felony of the first degree.'"
+                },
+                {
+                    question: "What is the specific *intent* required for the offense of Jugging under 29.04(a)?",
+                    options: ["Intent to commit robbery.", "Intent to commit theft of another person's money.", "Intent to use a criminal instrument.", "Intent to follow another person."],
+                    answer: "Intent to commit theft of another person's money.",
+                    explanation: "Sec. 29.04(a) begins 'A person commits an offense if, with the intent to commit theft of another person's money...'"
+                },
+                {
+                    question: "To commit Jugging under 29.04(a), a person must knowingly travel from what type of location?",
+                    options: ["Any public place.", "A commercial business or financial institution.", "A private residence.", "A school or hospital."],
+                    answer: "A commercial business or financial institution.",
+                    explanation: "Sec. 29.04(a)(1) specifies 'knowingly travels from a commercial business or financial institution...'"
+                },
+                {
+                    question: "How many criminal instruments must a person possess to commit Jugging under 29.04(a)(2)?",
+                    options: ["One or more", "Two or more", "Three or more", "Zero, possession is not required."],
+                    answer: "Two or more",
+                    explanation: "Sec. 29.04(a)(2) requires the person 'is in possession of two or more criminal instruments'."
+                },
+                {
+                    question: "What is the *base* penalty for Jugging under 29.04(b)?",
+                    options: ["Class A Misdemeanor", "State Jail Felony", "Felony of the Third Degree", "Felony of the Second Degree"],
+                    answer: "State Jail Felony",
+                    explanation: "Sec. 29.04(b) states the base offense is a state jail felony."
+                },
+                {
+                    question: "If a person commits Jugging AND also commits Burglary of a Vehicle (30.04) during the offense, what is the penalty *for the Jugging offense*?",
+                    options: ["State Jail Felony", "Felony of the Third Degree", "Felony of the Second Degree", "Felony of the First Degree"],
+                    answer: "Felony of the Third Degree",
+                    explanation: "Sec. 29.04(b)(1) enhances the *Jugging offense* to a felony of the third degree if the actor commits an offense under Sec. 30.04."
+                },
+                {
+                    question: "If a person commits Jugging AND also commits Robbery (29.02) during the offense, what is the penalty *for the Jugging offense*?",
+                    options: ["State Jail Felony", "Felony of the Third Degree", "Felony of the Second Degree", "Felony of the First Degree"],
+                    answer: "Felony of the First Degree",
+                    explanation: "Sec. 29.04(b)(2) enhances the *Jugging offense* to a felony of the first degree if the actor commits an offense under Sec. 29.02."
+                },
+                {
+                    question: "If a person's conduct constitutes both Jugging (29.04) and Robbery (29.02), can they be prosecuted for both?",
+                    options: ["No, only the more serious offense (Robbery).", "No, only the more specific offense (Jugging).", "Yes, the actor may be prosecuted under either or both sections.", "Only if the prosecutor chooses to aggregate them."],
+                    answer: "Yes, the actor may be prosecuted under either or both sections.",
+                    explanation: "Sec. 29.04(c) explicitly states 'the actor may be prosecuted under either section or under both sections.'"
+                },
+                {
+                    question: "Does 'in the course of committing theft' include the *attempt* to commit theft?",
+                    options: ["Yes", "No, only the commission or flight.", "Only if the attempt was successful.", "Only if the attempt caused bodily injury."],
+                    answer: "Yes",
+                    explanation: "Sec. 29.01(1) clearly includes 'in an attempt to commit... theft.'"
+                },
+                {
+                    question: "Is 'money' considered property under Chapter 29?",
+                    options: ["No, only tangible goods.", "No, it's considered currency, not property.", "Yes, it is explicitly listed as a type of document that represents value.", "Only if it's over $100."],
+                    answer: "Yes, it is explicitly listed as a type of document that represents value.",
+                    explanation: "Sec. 29.01(2)(B) defines property as 'a document, including money...'"
+                },
+                {
+                    question: "A person attempts to steal a purse. The victim holds on, and the person gives up and runs. No injury or fear occurs. This is:",
+                    options: ["Robbery", "Attempted Theft", "Theft", "No offense"],
+                    answer: "Attempted Theft",
+                    explanation: "To be Robbery, the person must *cause* BI or *place in fear*. If they just try to grab and fail, it's Attempted Theft. If they had *pushed* the victim (causing BI) or *threatened* them, it would be Robbery."
+                },
+                {
+                    question: "A person shoplifts and, during immediate flight, shoves a 70-year-old greeter, causing pain (BI). What offense?",
+                    options: ["Robbery (F2)", "Aggravated Robbery (F1)", "Injury to the Elderly", "Theft + Assault"],
+                    answer: "Aggravated Robbery (F1)",
+                    explanation: "The person committed Robbery (29.02(a)(1) - causing BI in flight). Because the victim was 65 or older (70), it is elevated to Aggravated Robbery under 29.03(a)(3)(A)."
+                },
+                {
+                    question: "A person robs a victim who has a developmental disability and is substantially unable to protect themself. What offense?",
+                    options: ["Robbery (F2)", "Aggravated Robbery (F1)", "Theft (SJF)", "Injury to a Disabled Individual"],
+                    answer: "Aggravated Robbery (F1)",
+                    explanation: "Committing Robbery (causing BI or fear) against a 'disabled person' (as defined in 29.03c) is Aggravated Robbery under 29.03(a)(3)(B)."
+                },
+                {
+                    question: "What is the key difference between Robbery (29.02) and Aggravated Robbery (29.03)?",
+                    options: ["The value of the property taken.", "The time of day the offense occurs.", "The presence of an aggravating factor (SBI, deadly weapon, or protected victim status).", "The intent of the actor."],
+                    answer: "The presence of an aggravating factor (SBI, deadly weapon, or protected victim status).",
+                    explanation: "Aggravated Robbery is simply Robbery + one of the specific aggravating factors listed in 29.03(a)."
+                },
+                {
+                    question: "A person follows someone from a bank, intending to steal their money. They are stopped and have one criminal instrument (a window punch). What offense?",
+                    options: ["Jugging (SJF)", "Attempted Jugging", "Attempted Theft", "No offense, meets no elements."],
+                    answer: "Attempted Theft",
+                    explanation: "This is not Jugging because Sec. 29.04(a)(2) requires *two or more* criminal instruments. It would likely be prosecuted as Attempted Theft."
+                },
+                {
+                    question: "A person follows someone from a bank, intending to steal their money. They have a hammer and a screwdriver (2 criminal instruments). They are stopped before they do anything else. What offense?",
+                    options: ["Jugging (SJF)", "Attempted Jugging", "Attempted Theft", "No offense"],
+                    answer: "Jugging (SJF)",
+                    explanation: "The person had the intent (theft of money), performed the act (followed from bank, same path), and had the required items (2+ criminal instruments). This meets all elements of 29.04(a)."
+                },
+                {
+                    question: "A person commits Robbery (29.02(a)(1)) by causing bodily injury. This is a...",
+                    options: ["Felony of the First Degree", "Felony of the Second Degree", "Felony of the Third Degree", "State Jail Felony"],
+                    answer: "Felony of the Second Degree",
+                    explanation: "Causing bodily injury is one of the base elements of Robbery. The penalty for Robbery (29.02) is an F2."
+                },
+                {
+                    question: "A person commits Robbery (29.02(a)(1)) by causing *serious* bodily injury. This is a...",
+                    options: ["Felony of the First Degree", "Felony of the Second Degree", "Felony of the Third Degree", "State Jail Felony"],
+                    answer: "Felony of the First Degree",
+                    explanation: "Causing *serious* bodily injury (SBI) is an aggravating factor (29.03(a)(1)) that elevates the F2 Robbery to F1 Aggravated Robbery."
+                },
+                {
+                    question: "Can 'using' a deadly weapon (29.03a2) mean simply having it on your person?",
+                    options: ["No, it must be exhibited or brandished.", "Yes, if it is used to facilitate the offense, even if not seen.", "No, it must be discharged or used to cause injury.", "Yes, 'using' and 'possessing' are the same."],
+                    answer: "Yes, if it is used to facilitate the offense, even if not seen.",
+                    explanation: "Case law supports that 'uses' is broader than 'exhibits'. For example, having a handgun in a pocket that emboldens the actor can be 'using' it, even if the victim never sees it."
+                },
+                {
+                    question: "A person follows someone from a jewelry store (a commercial business), intending to steal their purchase. They have 2 criminal instruments. Is this Jugging?",
+                    options: ["No, Jugging is only for theft of money from a bank.", "No, Jugging is only for theft of money.", "Yes, it's a commercial business, and the intent is theft.", "Only if they follow them from a financial institution."],
+                    answer: "No, Jugging is only for theft of money.",
+                    explanation: "Sec. 29.04(a) specifically requires 'intent to commit theft of another person's *money*'. Stealing jewelry would be Attempted Theft or Robbery, but not Jugging."
+                },
+                {
+                    question: "A person commits Jugging (SJF) and, in the course of the offense, also commits Robbery (F2). What is the *total* potential prosecution?",
+                    options: ["Only Robbery (F2)", "Only Aggravated Jugging (F1)", "The actor can be prosecuted for Jugging (F1 enhancement) *and* Robbery (F2) separately.", "The offenses merge into one F1 offense."],
+                    answer: "The actor can be prosecuted for Jugging (F1 enhancement) *and* Robbery (F2) separately.",
+                    explanation: "Sec. 29.04(c) allows prosecution under either or both sections. The Jugging offense is enhanced to an F1 (per 29.04(b)(2)), and the Robbery (29.02) is a separate F2."
+                },
+                {
+                    question: "A person threatens to 'come back tomorrow and hurt' a clerk unless they give them money. The clerk gives them the money. Is this Robbery (29.02)?",
+                    options: ["Yes, a threat was made.", "No, the threat was not of *imminent* bodily injury or death.", "Yes, it's Aggravated Robbery.", "No, this is only Theft."],
+                    answer: "No, the threat was not of *imminent* bodily injury or death.",
+                    explanation: "Sec. 29.02(a)(2) requires a threat of *imminent* harm. A future threat ('tomorrow') does not meet the element for Robbery. This would likely be charged as Theft."
+                },
+                {
+                    question: "Is a stolen, uncashed check considered 'Property' under Sec. 29.01?",
+                    options: ["Yes, it is a document that represents or embodies value.", "No, it is just a document, not money.", "No, only tangible personal property is included.", "Only if it is cashed."],
+                    answer: "Yes, it is a document that represents or embodies value.",
+                    explanation: "Sec. 29.01(2)(B) defines 'Property' as 'a document, including money, that represents or embodies anything of value.' A check fits this definition."
+                },
+                {
+                    question: "Which culpable mental state is sufficient for Robbery by causing bodily injury (29.02a1) but *insufficient* for Robbery by threat (29.02a2)?",
+                    options: ["Intentionally", "Knowingly", "Recklessly", "Criminal Negligence"],
+                    answer: "Recklessly",
+                    explanation: "Robbery by BI (a)(1) can be committed Intentionally, Knowingly, or *Recklessly*. Robbery by threat (a)(2) must be Intentionally or Knowingly. 'Recklessly' does not apply to (a)(2)."
+                },
+                {
+                    question: "What key element elevates Theft from a person (Ch. 31) to Robbery (Ch. 29)?",
+                    options: ["The value of the property.", "The time of day.", "The location of the offense.", "Causing bodily injury or threatening imminent bodily injury/death."],
+                    answer: "Causing bodily injury or threatening imminent bodily injury/death.",
+                    explanation: "Robbery is essentially Theft + Assault. The use of force or threat of force is the key distinction."
+                },
+                {
+                    question: "A person shoplifts (Theft) and is confronted by a 30-year-old guard. The person pushes the guard, causing pain (BI), and escapes. What is the offense?",
+                    options: ["Robbery (F2)", "Aggravated Robbery (F1)", "Assault (Class A)", "Theft (Class B)"],
+                    answer: "Robbery (F2)",
+                    explanation: "The person caused BI while in immediate flight from a theft, with intent to maintain control of the property. This is Robbery (29.02). It is not Aggravated because the victim is not 65+ or disabled, no SBI, and no deadly weapon."
+                },
+                {
+                    question: "A person robs a 30-year-old victim by causing *bodily injury* (e.g., a punch). What is the penalty?",
+                    options: ["Felony of the First Degree", "Felony of the Second Degree", "Felony of the Third Degree", "State Jail Felony"],
+                    answer: "Felony of the Second Degree",
+                    explanation: "This is the definition of standard Robbery under 29.02(a)(1). The penalty is an F2. It is not Aggravated because the victim is not 65+."
+                },
+                {
+                    question: "A person robs a *65-year-old* victim by causing *bodily injury* (e.g., a punch). What is the penalty?",
+                    options: ["Felony of the First Degree", "Felony of the Second Degree", "Felony of the Third Degree", "State Jail Felony"],
+                    answer: "Felony of the First Degree",
+                    explanation: "This is Aggravated Robbery. The person committed Robbery (29.02a1) and the victim was 65 years of age or older (29.03a3A). The penalty is an F1."
+                },
+                {
+                    question: "A person robs a clerk by *claiming* to have a gun, but never shows one. The clerk is terrified and believes them. What is the most appropriate offense?",
+                    options: ["Aggravated Robbery (F1)", "Robbery (F2)", "Theft (SJF)", "Terroristic Threat (Class B)"],
+                    answer: "Robbery (F2)",
+                    explanation: "This is Robbery by threat (29.02a2). It is not Aggravated Robbery under (a)(2) because a deadly weapon was not *used or exhibited*. Claiming to have a weapon is not the same as exhibiting it."
+                },
+                {
+                    question: "To commit Aggravated Robbery under 29.03(a), what base offense must *also* be committed?",
+                    options: ["Theft (Ch. 31)", "Assault (Ch. 22)", "Robbery (Sec. 29.02)", "Deadly Conduct (Sec. 22.05)"],
+                    answer: "Robbery (Sec. 29.02)",
+                    explanation: "The statute begins: 'A person commits an offense if he commits *robbery as defined in Section 29.02*, and he...'"
+                },
+                {
+                    question: "A person robs a bank. In the course of the robbery, they *use* a handgun (a deadly weapon) to control the patrons. What is the offense?",
+                    options: ["Robbery (F2)", "Aggravated Robbery (F1)", "Deadly Conduct (F3)", "Theft (SJF)"],
+                    answer: "Aggravated Robbery (F1)",
+                    explanation: "The person committed Robbery (by placing in fear) AND (2) used or exhibited a deadly weapon. This is Aggravated Robbery under 29.03(a)(2)."
+                },
+                {
+                    question: "A person, with intent to steal money, follows someone from an ATM. They are on the same path and possess 3 criminal instruments. What offense?",
+                    options: ["No offense", "Attempted Theft", "Robbery (F2)", "Jugging (SJF)"],
+                    answer: "Jugging (SJF)",
+                    explanation: "This meets all elements: (1) intent to steal money, (2) follows from financial institution on same path, (3) possesses 2+ criminal instruments."
+                },
+                {
+                    question: "What is the culpable mental state required for the *traveling* element of Jugging under 29.04(a)(1)?",
+                    options: ["Intentionally", "Knowingly", "Recklessly", "No culpability required"],
+                    answer: "Knowingly",
+                    explanation: "Sec. 29.04(a)(1) states the person '*knowingly* travels from a commercial business or financial institution...'"
+                },
+                {
+                    question: "A person follows someone from a bank, takes a different route to their home, and then robs them. Is this Jugging?",
+                    options: ["Yes, it's enhanced to F1.", "No, it does not meet the 'same path or route' element.", "Yes, it's a SJF.", "No, it's just Robbery."],
+                    answer: "No, it does not meet the 'same path or route' element.",
+                    explanation: "The offense of Jugging (29.04) fails because the actor 'substantially deviated' and did not follow the 'same path or route'. The offense would be Robbery (29.02)."
+                },
+                {
+                    question: "Is property 'severed from land,' such as cut timber, considered 'Property' under Sec. 29.01?",
+                    options: ["No, it is real property.", "Yes, it is tangible personal property.", "Only if it is worth money.", "No, only documents are property."],
+                    answer: "Yes, it is tangible personal property.",
+                    explanation: "Sec. 29.01(2)(A) explicitly includes 'anything severed from land' as part of the definition of tangible personal property."
+                },
+                {
+                    question: "A person commits Jugging, and during the offense, breaks into the victim's car. The Jugging offense is enhanced to what?",
+                    options: ["State Jail Felony", "Felony of the Third Degree", "Felony of the Second Degree", "Felony of the First Degree"],
+                    answer: "Felony of the Third Degree",
+                    explanation: "Sec. 29.04(b)(1) enhances the Jugging offense from a SJF to an F3 if the actor commits Burglary of a Vehicle (30.04) during the offense."
+                },
+                {
+                    question: "A person commits Jugging, and during the offense, robs the victim. The Jugging offense is enhanced to what?",
+                    options: ["State Jail Felony", "Felony of the Third Degree", "Felony of the Second Degree", "Felony of the First Degree"],
+                    answer: "Felony of the First Degree",
+                    explanation: "Sec. 29.04(b)(2) enhances the Jugging offense from a SJF to an F1 if the actor commits Robbery (29.02) during the offense."
+                }
+            ];
+
+
+            // --- Shuffle and Load Quiz ---
+            const quizContainer = document.getElementById('quiz-container');
+            const checkAnswersBtn = document.getElementById('check-answers-btn');
+            const retakeQuizBtn = document.getElementById('retake-quiz-btn');
+            const quizResultsDiv = document.getElementById('quiz-results');
+            const quizScoreEl = document.getElementById('quiz-score');
+            const quizPercentageEl = document.getElementById('quiz-percentage');
+
+            function loadQuiz() {
+                // Shuffle the quiz data for a new order each time
+                const shuffledQuizData = [...quizData].sort(() => Math.random() - 0.5);
+                
+                quizContainer.innerHTML = ''; // Clear previous questions
+                
+                shuffledQuizData.forEach((q, index) => {
+                    const questionDiv = document.createElement('div');
+                    questionDiv.className = 'quiz-question';
+                    
+                    // Store the original question index to check the answer later
+                    const originalIndex = quizData.indexOf(q);
+                    
+                    // Use standard string concatenation and escape characters
+                    let optionsHtml = '';
+                    q.options.forEach(option => {
+                        const escapedOptionValue = option.replace(/'/g, "&apos;").replace(/"/g, "&quot;");
+                        const escapedOptionText = option.replace(/</g, "&lt;").replace(/>/g, "&gt;");
+                        optionsHtml += '<label class="block"><input type="radio" name="q' + index + '" value="' + escapedOptionValue + '" data-original-index="' + originalIndex + '" class="mr-2">' + escapedOptionText + '</label>';
+                    });
+                    
+                    const escapedQuestion = q.question.replace(/</g, "&lt;").replace(/>/g, "&gt;");
+
+                    questionDiv.innerHTML =
+                        '<p class="font-semibold mb-2">' + (index + 1) + '. ' + escapedQuestion + '</p>' +
+                        '<div class="space-y-2">' + optionsHtml + '</div>' +
+                        '<div class="feedback hidden mt-2 p-2 rounded-lg text-sm"></div>';
+                    
+                    quizContainer.appendChild(questionDiv);
+                });
+            }
+
+            loadQuiz(); // Initial load
+
+            checkAnswersBtn.addEventListener('click', () => {
+                let score = 0;
+                const totalQuestions = quizData.length;
+                const questions = quizContainer.querySelectorAll('.quiz-question');
+
+                questions.forEach((questionDiv, index) => {
+                    const selected = questionDiv.querySelector('input[name="q' + index + '"]:checked');
+                    const feedback = questionDiv.querySelector('.feedback');
+                    const radioButtons = questionDiv.querySelectorAll('input[name="q' + index + '"]');
+                    
+                    feedback.classList.remove('hidden', 'correct', 'incorrect', 'unanswered');
+                    
+                    if (selected) {
+                        const originalIndex = selected.dataset.originalIndex;
+                        const q = quizData[originalIndex];
+                        
+                        const escapedAnswer = q.answer.replace(/'/g, "&apos;").replace(/"/g, "&quot;");
+                        const escapedExplanation = q.explanation.replace(/</g, "&lt;").replace(/>/g, "&gt;");
+                        const escapedCorrectAnswerText = q.answer.replace(/</g, "&lt;").replace(/>/g, "&gt;");
+
+                        if (selected.value === escapedAnswer) {
+                            score++;
+                            feedback.innerHTML = '<strong>Correct!</strong> ' + escapedExplanation;
+                            feedback.classList.add('correct');
+                        } else {
+                            feedback.innerHTML = '<strong>Incorrect.</strong> The correct answer is "' + escapedCorrectAnswerText + '". ' + escapedExplanation;
+                            feedback.classList.add('incorrect');
+                        }
+                    } else {
+                        // Find the original question to show the answer
+                        const firstRadio = questionDiv.querySelector('input[name="q' + index + '"]');
+                         if (firstRadio) {
+                            const originalIndex = firstRadio.dataset.originalIndex;
+                            const q = quizData[originalIndex];
+                            const escapedExplanation = q.explanation.replace(/</g, "&lt;").replace(/>/g, "&gt;");
+                            const escapedCorrectAnswerText = q.answer.replace(/</g, "&lt;").replace(/>/g, "&gt;");
+                            feedback.innerHTML = '<strong>Unanswered.</strong> The correct answer is "' + escapedCorrectAnswerText + '". ' + escapedExplanation;
+                        } else {
+                             feedback.innerHTML = '<strong>Error:</strong> Could not load feedback.';
+                        }
+                        feedback.classList.add('unanswered');
+                    }
+                    
+                    feedback.classList.remove('hidden');
+                    
+                    radioButtons.forEach(radio => {
+                        radio.disabled = true;
+                    });
+                });
+
+                // Calculate and display results
+                const percentage = ((score / totalQuestions) * 100).toFixed(0);
+                quizScoreEl.textContent = 'Your Score: ' + score + ' / ' + totalQuestions;
+                quizPercentageEl.textContent = 'Percentage: ' + percentage + '%';
+                
+                quizResultsDiv.classList.remove('hidden');
+                checkAnswersBtn.classList.add('hidden');
+                retakeQuizBtn.classList.remove('hidden');
+            });
+
+            retakeQuizBtn.addEventListener('click', () => {
+                quizResultsDiv.classList.add('hidden');
+                retakeQuizBtn.classList.add('hidden');
+                checkAnswersBtn.classList.remove('hidden');
+                loadQuiz();
+            });
+
+            // --- RESOURCES LIST ---
+            const resources = [
+                 { name: "Texas Penal Code - Official Site", url: "https://statutes.capitol.texas.gov/Default.aspx?Code=PE" },
+                 { name: "Penal Code Ch. 29 - Robbery", url: "https://statutes.capitol.texas.gov/Docs/PE/htm/PE.29.htm" },
+                 { name: "Penal Code Sec. 1.07 - Definitions (BI, SBI, Deadly Weapon)", url: "https://statutes.capitol.texas.gov/Docs/PE/htm/PE.1.htm#1.07" },
+                 { name: "Penal Code Sec. 16.01 - Criminal Instrument", url: "https://statutes.capitol.texas.gov/Docs/PE/htm/PE.16.htm#16.01" },
+                 { name: "Penal Code Ch. 30 - Burglary (for 30.04)", url: "https://statutes.capitol.texas.gov/Docs/PE/htm/PE.30.htm" },
+                 { name: "Penal Code Ch. 31 - Theft", url: "https://statutes.capitol.texas.gov/Docs/PE/htm/PE.31.htm" }
+            ];
+            const resourcesList = document.getElementById('resources-list');
+            resources.sort((a, b) => a.name.localeCompare(b.name));
+            resources.forEach(res => {
+                const link = document.createElement('a');
+                link.href = res.url;
+                link.target = '_blank';
+                link.rel = 'noopener noreferrer';
+                link.className = 'text-red-600 hover:underline p-2 bg-gray-50 rounded-md block hover:bg-gray-100';
+                link.innerHTML = '<i class="fas fa-external-link-alt mr-2"></i>' + res.name;
+                resourcesList.appendChild(link);
+            });
+        });
+    </script>
+</body>
+</html>
+

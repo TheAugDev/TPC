@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ch. 6 Study Guide: Texas Penal Code</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet">
+    <style>
+        :root {
+            --header-bg: #1f2937;
+            --bg-color: #f3f4f6;
+            --tab-active-bg: #3b82f6;
+            --tab-active-text: #ffffff;
+            --card-bg: #ffffff;
+            --text-color: #111827;
+            --link-color: #2563eb;
+        }
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            font-family: 'Inter', sans-serif;
+        }
+        @import url('https://rsms.me/inter/inter.css');
+        .tab-content { display: none; }
+        .tab-content.active { display: block; }
+        .tab.active {
+            background-color: var(--tab-active-bg);
+            color: var(--tab-active-text);
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .tab {
+            transition: all 0.3s ease-in-out;
+        }
+        .definition-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 1rem;
+        }
+        .definition-item {
+            background-color: #f9fafb;
+            padding: 0.75rem;
+            border-radius: 0.5rem;
+            border: 1px solid #e5e7eb;
+        }
+        .definition-term {
+            font-weight: 600;
+            color: #111827;
+        }
+        .definition-desc {
+            font-size: 0.875rem;
+            color: #4b5563;
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Header -->
+    <header class="bg-gray-800 text-white p-4 shadow-md">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-2xl font-bold">
+                <i class="fas fa-brain mr-2"></i>Ch. 6: Culpability Generally
+            </h1>
+            <a href="index.html" class="text-sm text-blue-300 hover:text-blue-100 hover:underline">
+                <i class="fas fa-arrow-left mr-1"></i> Back to Main Page
+            </a>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container mx-auto p-4 md:p-6">
+        <!-- Tab Navigation -->
+        <div class="mb-6 bg-white rounded-lg shadow-md overflow-x-auto">
+            <nav id="tabs" class="flex flex-row space-x-1 p-2">
+                <button data-tab="ch6-provisions" class="tab active flex-1 md:flex-none flex items-center justify-center px-4 py-2 text-sm font-semibold rounded-lg text-gray-600 hover:bg-blue-100">
+                    <i class="fas fa-book mr-2"></i> <span class="hidden md:inline">Key Sections</span>
+                </button>
+                <button data-tab="ch6-definitions" class="tab flex-1 md:flex-none flex items-center justify-center px-4 py-2 text-sm font-semibold rounded-lg text-gray-600 hover:bg-blue-100">
+                    <i class="fas fa-list-ul mr-2"></i> <span class="hidden md:inline">Key Definitions (Sec 6.01, 6.03)</span>
+                </button>
+                <button data-tab="knowledge-check" class="tab flex-1 md:flex-none flex items-center justify-center px-4 py-2 text-sm font-semibold rounded-lg text-gray-600 hover:bg-blue-100">
+                    <i class="fas fa-question-circle mr-2"></i> <span class="hidden md:inline">Knowledge Check</span>
+                </button>
+                <button data-tab="resources" class="tab flex-1 md:flex-none flex items-center justify-center px-4 py-2 text-sm font-semibold rounded-lg text-gray-600 hover:bg-blue-100">
+                    <i class="fas fa-link mr-2"></i> <span class="hidden md:inline">Resources</span>
+                </button>
+            </nav>
+        </div>
+
+        <!-- Tab Content -->
+        <div id="tab-contents">
+            <!-- Ch. 6: Key Sections Tab -->
+            <div id="ch6-provisions" class="tab-content active space-y-6">
+                
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-xl font-bold mb-4 border-b pb-2"><a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.6.htm#6.01" target="_blank" class="text-blue-600 hover:underline">Sec. 6.01. Requirement of Voluntary Act or Omission</a></h2>
+                    <ul class="list-disc list-inside text-sm text-gray-700 space-y-2">
+                        <li><strong>Voluntary Conduct:</strong> A person only commits an offense if they *voluntarily* engage in conduct. This includes an act, an omission, or possession.</li>
+                        <li><strong>Voluntary Possession:</strong> Possession is considered a voluntary act if the person *knowingly* obtains or receives the item, OR is aware of their control over the item for long enough to be able to terminate that control.</li>
+                        <li><strong>Omission:</strong> A person only commits an offense by *omission* (failing to act) if a law (as defined in 1.07) specifically states that the omission is an offense OR that the person has a duty to perform the act.</li>
+                    </ul>
+                </div>
+
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-xl font-bold mb-4 border-b pb-2"><a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.6.htm#6.02" target="_blank" class="text-blue-600 hover:underline">Sec. 6.02. Requirement of Culpability</a></h2>
+                    <p class="text-sm text-gray-700 mb-2">This section establishes the necessity of a "guilty mind" or culpable mental state.</p>
+                    <ul class="list-disc list-inside text-sm text-gray-700 space-y-2">
+                        <li><strong class="font-semibold">General Rule:</strong> A person doesn't commit an offense unless they act with one of the four culpable mental states: <strong class="font-semibold">Intentionally, Knowingly, Recklessly, or with Criminal Negligence</strong> (as required by the offense definition).</li>
+                        <li><strong class="font-semibold">If No State is Prescribed:</strong> If an offense definition doesn't list a mental state, one is *still required* unless the definition *plainly dispenses* with any mental element.</li>
+                        <li><strong class="font-semibold">Default Mental State:</strong> If a mental state is required but not prescribed (per the rule above), then <strong class="font-semibold">Intent, Knowledge, or Recklessness</strong> is sufficient to establish guilt. (Note: Criminal Negligence is *not* included here).</li>
+                        <li><strong class="font-semibold">Hierarchy of Culpability:</strong> The mental states are ranked from highest to lowest:
+                            <ol class="list-decimal list-inside ml-6">
+                                <li>Intentional</li>
+                                <li>Knowing</li>
+                                <li>Reckless</li>
+                                <li>Criminal Negligence</li>
+                            </ol>
+                        </li>
+                        <li><strong class="font-semibold">Proof of Higher State:</strong> Proof of a higher degree of culpability (e.g., proving "Intentional") automatically constitutes proof of a lower culpability that was charged (e.g., "Reckless").</li>
+                        <li><strong class="font-semibold">Ordinance Limitation:</strong> A municipal or county ordinance *cannot* dispense with a culpable mental state if the fine for the offense is *greater than* the amount authorized by <a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.12.htm#12.23" target="_blank" class="text-blue-600 hover:underline">Sec. 12.23</a>.</li>
+                    </ul>
+                </div>
+
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-xl font-bold mb-4 border-b pb-2"><a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.6.htm#6.04" target="_blank" class="text-blue-600 hover:underline">Sec. 6.04. Causation: Conduct and Results</a></h2>
+                    <p class="text-sm text-gray-700 mb-2">This section defines when a person is legally responsible for causing a result.</p>
+                    <ul class="list-disc list-inside text-sm text-gray-700 space-y-2">
+                        <li><strong class="font-semibold">"But For" Test:</strong> A person is criminally responsible for a result if the result would *not* have occurred "but for" their conduct. This applies even if their conduct operated concurrently (at the same time) with another cause.</li>
+                        <li><strong class="font-semibold">Concurrent Cause Exception:</strong> A person is *NOT* responsible if the concurrent cause was *clearly sufficient* to produce the result on its own, AND the actor's own conduct was *clearly insufficient* to produce it.</li>
+                        <li><strong class="font-semibold">"Transferred Intent":</strong> A person is still responsible for causing a result even if the only difference between what they intended/risked and what actually happened is that:
+                            <ol class="list-decimal list-inside ml-6">
+                                <li>A *different offense* was committed; or</li>
+                                <li>A *different person or property* was injured or harmed.</li>
+                            </ol>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <!-- Ch. 6: Key Definitions (Sec 6.01, 6.03) Tab -->
+            <div id="ch6-definitions" class="tab-content space-y-6">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-xl font-bold mb-4 border-b pb-2"><a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.6.htm#6.03" target="_blank" class="text-blue-600 hover:underline">Sec. 6.03. Definitions of Culpable Mental States</a></h2>
+                    <div class="definition-grid">
+                        <div class="definition-item">
+                            <p class="definition-term">Intentionally (or with Intent)</p>
+                            <p class="definition-desc">It is the person's *conscious objective or desire* to engage in the conduct or cause the result.</p>
+                        </div>
+                        <div class="definition-item">
+                            <p class="definition-term">Knowingly (or with Knowledge)</p>
+                            <p class="definition-desc"><b>Nature of Conduct:</b> The person is *aware* of the nature of their conduct or that the circumstances exist.<br><b>Result of Conduct:</b> The person is *aware* that their conduct is *reasonably certain* to cause the result.</p>
+                        </div>
+                        <div class="definition-item">
+                            <p class="definition-term">Recklessly (or is Reckless)</p>
+                            <p class="definition-desc">The person is *aware of* but *consciously disregards* a substantial and unjustifiable risk. The disregard is a *gross deviation* from the standard of care an ordinary person would exercise.</p>
+                        </div>
+                        <div class="definition-item">
+                            <p class="definition-term">Criminal Negligence (or is Criminally Negligent)</p>
+                            <p class="definition-desc">The person *ought to be aware of* a substantial and unjustifiable risk. The *failure to perceive* the risk is a *gross deviation* from the standard of care an ordinary person would exercise.</p>
+                        </div>
+                    </div>
+                </div>
+                 <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-xl font-bold mb-4 border-b pb-2"><a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.6.htm#6.01" target="_blank" class="text-blue-600 hover:underline">Sec. 6.01. Other Key Definitions</a></h2>
+                    <div class="definition-grid">
+                        <div class="definition-item">
+                            <p class="definition-term">Possession (as a Voluntary Act)</p>
+                            <p class="definition-desc">The possessor *knowingly obtains or receives* the thing; OR<br>The possessor is *aware of his control* of the thing for a *sufficient time* to permit him to terminate his control.</p>
+                        </div>
+                        <div class="definition-item">
+                            <p class="definition-term">Omission (as an Offense)</p>
+                            <p class="definition-desc">A person's failure to act is only an offense if a law *provides that the omission is an offense* or otherwise *provides that he has a duty to perform the act*.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Knowledge Check Tab -->
+            <div id="knowledge-check" class="tab-content">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-2xl font-bold mb-4">Knowledge Check (Ch. 6)</h2>
+                    <p class="mb-6 text-gray-600">Test your understanding of the material. (26 Questions)</p>
+                    <div id="quiz-container" class="space-y-8">
+                        <!-- Questions will be dynamically inserted here -->
+                    </div>
+                    <!-- New Results Div -->
+                    <div id="quiz-results" class="hidden mt-8 text-center">
+                        <h3 class="text-2xl font-bold" id="quiz-score"></h3>
+                        <p class="text-lg text-gray-700" id="quiz-percentage"></p>
+                    </div>
+                    <!-- Button Container -->
+                    <div class="mt-8 text-center space-x-4">
+                        <button id="check-answers-btn" class="bg-blue-600 text-white font-bold py-2 px-6 rounded-lg hover:bg-blue-700 transition-colors">Submit Answers</button>
+                        <button id="retake-quiz-btn" class="hidden bg-gray-600 text-white font-bold py-2 px-6 rounded-lg hover:bg-gray-700 transition-colors">Retake Quiz</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Resources Tab -->
+            <div id="resources" class="tab-content">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-2xl font-bold mb-4">External Resources</h2>
+                    <p class="mb-6 text-gray-600">Quick links to official Texas statutes.</p>
+                    <div id="resources-list" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 text-sm">
+                        <!-- Links will be dynamically inserted here -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const tabs = document.querySelectorAll('#tabs button');
+            const tabContents = document.querySelectorAll('.tab-content');
+
+            tabs.forEach(tab => {
+                tab.addEventListener('click', () => {
+                    tabs.forEach(t => t.classList.remove('active'));
+                    tabContents.forEach(c => c.classList.remove('active'));
+                    tab.classList.add('active');
+                    document.getElementById(tab.dataset.tab).classList.add('active');
+                });
+            });
+
+            // --- QUIZ DATA (CHAPTER 6) ---
+            // Rebuilt array with 26 questions and corrected syntax
+            const quizData = [
+                {
+                    question: "Under Sec. 6.01, a person commits an offense only if they voluntarily engage in conduct, which includes...",
+                    options: ["An act, an omission, or possession.", "An act or possession only.", "An act or omission only.", "Only a physical act."],
+                    answer: "An act, an omission, or possession.",
+                    explanation: "Sec. 6.01(a) states: '...voluntarily engages in conduct, including an act, an omission, or possession.'"
+                },
+                {
+                    question: "When is possession considered a voluntary act under Sec. 6.01(b)?",
+                    options: ["Only if the person paid for the item.", "If the possessor knowingly obtains the item OR is aware of control long enough to terminate it.", "Only if the person has a receipt for the item.", "If the item is found on their person, regardless of knowledge."],
+                    answer: "If the possessor knowingly obtains the item OR is aware of control long enough to terminate it.",
+                    explanation: "Sec. 6.01(b) provides two conditions: (1) knowingly obtains or receives, or (2) is aware of control for a sufficient time to terminate control."
+                },
+                {
+                    question: "When does a person's omission (failure to act) constitute an offense under Sec. 6.01(c)?",
+                    options: ["Any time they fail to help someone in need.", "Only if they are a public servant.", "Only if a law provides that the omission is an offense or provides a duty to act.", "If a reasonable person would have acted."],
+                    answer: "Only if a law provides that the omission is an offense or provides a duty to act.",
+                    explanation: "Sec. 6.01(c) explicitly requires that a law (as defined by 1.07) must establish the offense or the duty."
+                },
+                {
+                    question: "What are the four culpable mental states listed in Sec. 6.02(a)?",
+                    options: ["Intentionally, Knowingly, Recklessly, or with Malice.", "Intentionally, Knowingly, Recklessly, or with Criminal Negligence.", "Intentionally, Willfully, Knowingly, or Recklessly.", "Intentionally, Knowingly, Maliciously, or Negligently."],
+                    answer: "Intentionally, Knowingly, Recklessly, or with Criminal Negligence.",
+                    explanation: "Sec. 6.02(a) lists these four specific terms."
+                },
+                {
+                    question: "If an offense definition does *not* prescribe a culpable mental state, what is the default rule under Sec. 6.02(b)?",
+                    options: ["No culpable mental state is required; it is a strict liability offense.", "The state must prove 'Intentional' as the default.", "A culpable mental state is still required unless the definition *plainly dispenses* with it.", "The offense is automatically a Class C misdemeanor."],
+                    answer: "A culpable mental state is still required unless the definition *plainly dispenses* with it.",
+                    explanation: "Sec. 6.02(b) states that a mental state is still required 'unless the definition plainly dispenses with any mental element.'"
+                },
+                {
+                    question: "If an offense requires a mental state but does *not* prescribe one, which mental states are sufficient to establish criminal responsibility under Sec. 6.02(c)?",
+                    options: ["Intent, Knowledge, or Recklessness.", "Only Intent.", "Only Intent or Knowledge.", "Any of the four: Intent, Knowledge, Recklessness, or Criminal Negligence."],
+                    answer: "Intent, Knowledge, or Recklessness.",
+                    explanation: "Sec. 6.02(c) states that 'intent, knowledge, or recklessness suffices.' It notably omits Criminal Negligence as a default."
+                },
+                {
+                    question: "What is the *highest* degree of culpability according to the hierarchy in Sec. 6.02(d)?",
+                    options: ["Knowing", "Reckless", "Intentional", "Criminal Negligence"],
+                    answer: "Intentional",
+                    explanation: "Sec. 6.02(d)(1) lists 'intentional' as the highest degree."
+                },
+                {
+                    question: "What is the *lowest* degree of culpability according to the hierarchy in Sec. 6.02(d)?",
+                    options: ["Knowing", "Reckless", "Intentional", "Criminal Negligence"],
+                    answer: "Criminal Negligence",
+                    explanation: "Sec. 6.02(d)(4) lists 'criminal negligence' as the lowest."
+                },
+                {
+                    question: "If the state charges a defendant with 'Reckless' conduct but proves 'Intentional' conduct, what is the result under Sec. 6.02(e)?",
+                    options: ["The defendant is found not guilty because the wrong state was charged.", "The charge must be upgraded to 'Intentional'.", "This constitutes proof of the 'Reckless' culpability charged.", "The case is dismissed and must be refiled with the correct charge."],
+                    answer: "This constitutes proof of the 'Reckless' culpability charged.",
+                    explanation: "Sec. 6.02(e) states: 'Proof of a higher degree of culpability than that charged constitutes proof of the culpability charged.'"
+                },
+                {
+                    question: "Which culpable mental state is defined as a person's 'conscious objective or desire' to engage in the conduct or cause the result?",
+                    options: ["Intentionally", "Knowingly", "Recklessly", "Criminal Negligence"],
+                    answer: "Intentionally",
+                    explanation: "This is the definition of 'Intentionally' from Sec. 6.03(a)."
+                },
+                {
+                    question: "A person is 'aware that his conduct is *reasonably certain* to cause the result.' Which mental state does this describe?",
+                    options: ["Intentionally", "Knowingly", "Recklessly", "Criminal Negligence"],
+                    answer: "Knowingly",
+                    explanation: "This is the 'result of conduct' definition for 'Knowingly' from Sec. 6.03(b)."
+                },
+                {
+                    question: "What is the key difference between 'Recklessly' and 'Criminal Negligence'?",
+                    options: ["'Recklessly' requires a 'conscious disregard' of a risk, while 'Criminal Negligence' involves a 'failure to perceive' a risk (that one *ought* to be aware of).", "'Recklessly' applies to felonies, 'Criminal Negligence' to misdemeanors.", "'Recklessly' involves causing bodily injury, 'Criminal Negligence' involves property damage.", "There is no functional difference; they are interchangeable."],
+                    answer: "'Recklessly' requires a 'conscious disregard' of a risk, while 'Criminal Negligence' involves a 'failure to perceive' a risk (that one *ought* to be aware of).",
+                    explanation: "Compare Sec. 6.03(c) (aware of but consciously disregards) with 6.03(d) (ought to be aware... failure to perceive)."
+                },
+                {
+                    question: "For both 'Recklessly' and 'Criminal Negligence', the risk must be 'substantial and unjustifiable,' and the actor's conduct must be a 'gross deviation' from what standard?",
+                    options: ["The standard of care a law enforcement officer would exercise.", "The standard of care that an ordinary person would exercise under all the circumstances.", "The standard of care the victim would have exercised.", "The standard of care of a 'reasonable person' with the same education."],
+                    answer: "The standard of care that an ordinary person would exercise under all the circumstances.",
+                    explanation: "Both Sec. 6.03(c) and 6.03(d) use this 'ordinary person' standard of care."
+                },
+                {
+                    question: "What is the basic test for causation under Sec. 6.04(a)?",
+                    options: ["The 'proximate cause' test.", "The 'but for' test: the result would not have occurred but for the actor's conduct.", "The 'sole cause' test: the actor's conduct was the only cause.", "The 'foreseeability' test."],
+                    answer: "The 'but for' test: the result would not have occurred but for the actor's conduct.",
+                    explanation: "Sec. 6.04(a) states: '...the result would not have occurred but for his conduct...'"
+                },
+                {
+                    question: "Under Sec. 6.04(a), if an actor's conduct and a 'concurrent cause' both lead to a result, when is the actor *NOT* responsible?",
+                    options: ["If the concurrent cause was 51% or more responsible.", "If the actor's conduct was not the 'sole cause' of the result.", "If the concurrent cause was an 'act of God'.", "If the concurrent cause was *clearly sufficient* to produce the result AND the actor's conduct was *clearly insufficient*."],
+                    answer: "If the concurrent cause was *clearly sufficient* to produce the result AND the actor's conduct was *clearly insufficient*.",
+                    explanation: "This is the specific exception provided in Sec. 6.04(a) for concurrent causation."
+                },
+                {
+                    question: "An actor shoots at Person A, intending to kill them. The actor misses, and the bullet hits and kills Person B, an unintended victim. Is the actor criminally responsible for Person B's death?",
+                    options: ["No, because the actor did not intend to harm Person B.", "Yes, under the 'transferred intent' rule of Sec. 6.04(b).", "Only if the actor was 'Reckless' toward Person B.", "No, this is considered a 'different offense' and must be charged separately."],
+                    answer: "Yes, under the 'transferred intent' rule of Sec. 6.04(b).",
+                    explanation: "Sec. 6.04(b)(2) states a person is still responsible if the only difference is that 'a different person... was injured, harmed, or otherwise affected.'"
+                },
+                {
+                    question: "An actor intends to commit criminal mischief (a property offense) by throwing a rock at a window. The rock misses the window and hits a person, committing an assault (a different offense). Is the actor responsible for the assault?",
+                    options: ["No, because they only intended to damage property, not harm a person.", "Only if they were 'Criminally Negligent' in throwing the rock.", "Yes, under Sec. 6.04(b)(1), because the only difference was that a 'different offense was committed'.", "No, the intent cannot transfer from a property crime to a crime against a person."],
+                    answer: "Yes, under Sec. 6.04(b)(1), because the only difference was that a 'different offense was committed'.",
+                    explanation: "Sec. 6.04(b)(1) explicitly covers the scenario where 'a different offense was committed' than what was desired, contemplated, or risked."
+                },
+                {
+                    question: "A municipal ordinance for 'loud noise' (punishable by a fine greater than a Class C misdemeanor) states that 'no culpable mental state is required.' Is this provision valid under Sec. 6.02(f)?",
+                    options: ["Yes, municipalities can create strict liability offenses.", "No, an ordinance may not dispense with culpability if the fine exceeds the amount authorized by Sec. 12.23.", "Yes, as long as the ordinance was passed by the city council.", "No, all offenses in Texas require a culpable mental state."],
+                    answer: "No, an ordinance may not dispense with culpability if the fine exceeds the amount authorized by Sec. 12.23.",
+                    explanation: "Sec. 6.02(f) places this specific limitation on municipal and county ordinances, referencing the fine amount in Sec. 12.23."
+                },
+                // --- Start of 8 new questions ---
+                {
+                    question: "According to Sec. 6.01(b), possession is a voluntary act if the possessor knowingly obtains the item OR is aware of their control for...",
+                    options: ["Any length of time, no matter how brief.", "A period of at least 24 hours.", "A 'sufficient time' to permit him to terminate his control.", "A time period specified by a magistrate."],
+                    answer: "A 'sufficient time' to permit him to terminate his control.",
+                    explanation: "Sec. 6.01(b) specifically uses the standard of 'a sufficient time to permit him to terminate his control'."
+                },
+                {
+                    question: "An offense definition 'plainly dispenses' with a mental element. What does this mean under Sec. 6.02(b)?",
+                    options: ["A culpable mental state is still required.", "The default mental state of 'Reckless' applies.", "No culpable mental state is required for this offense.", "The offense is unconstitutional."],
+                    answer: "No culpable mental state is required for this offense.",
+                    explanation: "Sec. 6.02(b) makes an exception for a required mental state *unless* the definition 'plainly dispenses' with it, meaning none is required."
+                },
+                {
+                    question: "A person acts 'Knowingly' with respect to the *nature of his conduct* when he is...",
+                    options: ["Aware of the nature of his conduct or that the circumstances exist.", "Reasonably certain his conduct will cause a result.", "His conscious objective to engage in the conduct.", "Aware of but consciously disregards a risk."],
+                    answer: "Aware of the nature of his conduct or that the circumstances exist.",
+                    explanation: "This is the definition for 'Knowingly' regarding the *nature* of conduct or *circumstances* from Sec. 6.03(b)."
+                },
+                {
+                    question: "When evaluating the 'substantial and unjustifiable risk' for 'Recklessness' and 'Criminal Negligence', the standard of care is viewed from...",
+                    options: ["The victim's standpoint.", "A reasonable person's standpoint.", "The 'actor's standpoint'.", "The standpoint of the investigating officer."],
+                    answer: "The 'actor's standpoint'.",
+                    explanation: "Both Sec. 6.03(c) and (d) explicitly state the circumstances are 'as viewed from the actor's standpoint'."
+                },
+                {
+                    question: "A key distinction between 'Recklessly' (6.03(c)) and 'Criminally Negligent' (6.03(d)) is that a reckless person is ____ of the risk, while a negligent person ____ be aware of it.",
+                    options: ["'Aware' / 'Ought to be'", "'Not aware' / 'Is'", "'Ought to be' / 'Is'", "'Aware' / 'Is also'"],
+                    answer: "'Aware' / 'Ought to be'",
+                    explanation: "Sec. 6.03(c) (Reckless) states 'is aware of but consciously disregards'. Sec. 6.03(d) (Negligent) states 'ought to be aware of'."
+                },
+                {
+                    question: "Under Sec. 6.04(b) (transferred intent), a person is still responsible for a result if the *only* difference from what they 'desired, contemplated, or risked' is that...",
+                    options: ["A different offense was committed OR a different person/property was harmed.", "The result was less serious than intended.", "The result was more serious than intended.", "The conduct was not the 'but for' cause."],
+                    answer: "A different offense was committed OR a different person/property was harmed.",
+                    explanation: "Sec. 6.04(b) lists these two specific exceptions: (1) different offense, or (2) different person or property."
+                },
+                {
+                    question: "Under Sec. 6.04(a), a person is criminally responsible if the result would not have occurred 'but for' their conduct, operating either alone OR...",
+                    options: ["With 'transferred intent'.", "Concurrently with another cause.", "With a 'reckless' mental state.", "As part of a criminal conspiracy."],
+                    answer: "Concurrently with another cause.",
+                    explanation: "Sec. 6.04(a) states: '...operating either alone or concurrently with another cause...'"
+                },
+                {
+                    question: "Under Sec. 6.01(a), 'conduct' is defined as...",
+                    options: ["Only a bodily movement.", "Only a failure to act.", "An act, an omission, or possession.", "A culpable mental state."],
+                    answer: "An act, an omission, or possession.",
+                    explanation: "Sec. 6.01(a) defines the scope of 'conduct' as 'including an act, an omission, or possession'."
+                }
+            ];
+
+            const quizContainer = document.getElementById('quiz-container');
+            const checkAnswersBtn = document.getElementById('check-answers-btn');
+            const retakeQuizBtn = document.getElementById('retake-quiz-btn');
+            const quizResultsDiv = document.getElementById('quiz-results');
+            const quizScoreEl = document.getElementById('quiz-score');
+            const quizPercentageEl = document.getElementById('quiz-percentage');
+
+            function loadQuiz() {
+                // Shuffle the quiz data for a new order each time
+                const shuffledQuizData = [...quizData].sort(() => Math.random() - 0.5);
+                
+                quizContainer.innerHTML = ''; // Clear previous questions
+                
+                shuffledQuizData.forEach((q, index) => {
+                    const questionDiv = document.createElement('div');
+                    questionDiv.className = 'quiz-question';
+                    
+                    // Store the original question index to check the answer later
+                    const originalIndex = quizData.indexOf(q);
+                    
+                    let optionsHtml = q.options.map(option => {
+                        // Escape HTML in options to prevent XSS
+                        const escapedOption = option.replace(/</g, "&lt;").replace(/>/g, "&gt;");
+                        return `<label class="block"><input type="radio" name="q${index}" value="${escapedOption}" data-original-index="${originalIndex}" class="mr-2">${escapedOption}</label>`;
+                    }).join('');
+                    
+                    // Escape HTML in the question
+                    const escapedQuestion = q.question.replace(/</g, "&lt;").replace(/>/g, "&gt;");
+
+                    questionDiv.innerHTML = `
+                        <p class="font-semibold mb-2">${index + 1}. ${escapedQuestion}</p>
+                        <div class="space-y-2">${optionsHtml}</div>
+                        <div class="feedback hidden mt-2 p-2 rounded-lg text-sm"></div>
+                    `;
+                    quizContainer.appendChild(questionDiv);
+                });
+            }
+
+
+            loadQuiz(); // Initial load
+
+            checkAnswersBtn.addEventListener('click', () => {
+                let score = 0;
+                const totalQuestions = quizData.length;
+                const questions = quizContainer.querySelectorAll('.quiz-question');
+
+                questions.forEach((questionDiv, index) => {
+                    const selected = questionDiv.querySelector(`input[name="q${index}"]:checked`);
+                    const feedback = questionDiv.querySelector('.feedback');
+                    const radioButtons = questionDiv.querySelectorAll(`input[name="q${index}"]`);
+                    
+                    feedback.classList.remove('hidden', 'bg-green-100', 'text-green-800', 'bg-red-100', 'text-red-800', 'bg-yellow-100', 'text-yellow-800');
+                    
+                    if (selected) {
+                        const originalIndex = selected.dataset.originalIndex;
+                        const q = quizData[originalIndex];
+
+                        // Compare the selected value (which was escaped) with the answer
+                        if (selected.value === q.answer.replace(/</g, "&lt;").replace(/>/g, "&gt;")) {
+                            score++;
+                            feedback.textContent = `Correct! ${q.explanation}`;
+                            feedback.classList.add('bg-green-100', 'text-green-800');
+                        } else {
+                            feedback.textContent = `Incorrect. The correct answer is "${q.answer}". ${q.explanation}`;
+                            feedback.classList.add('bg-red-100', 'text-red-800');
+                        }
+                    } else {
+                        // Find the original question to show the answer
+                        const firstRadio = questionDiv.querySelector(`input[name="q${index}"]`);
+                        const originalIndex = firstRadio.dataset.originalIndex;
+                        const q = quizData[originalIndex];
+                        
+                        feedback.textContent = `You did not answer this question. The correct answer is "${q.answer}". ${q.explanation}`;
+                        feedback.classList.add('bg-yellow-100', 'text-yellow-800');
+                    }
+                    
+                    // Disable radio buttons after submitting
+                    radioButtons.forEach(radio => {
+                        radio.disabled = true;
+                    });
+                });
+
+                // Calculate and display results
+                const percentage = ((score / totalQuestions) * 100).toFixed(0);
+                quizScoreEl.textContent = `Your Score: ${score} / ${totalQuestions}`;
+                quizPercentageEl.textContent = `Percentage: ${percentage}%`;
+                
+                quizResultsDiv.classList.remove('hidden');
+                checkAnswersBtn.classList.add('hidden');
+                retakeQuizBtn.classList.remove('hidden');
+            });
+
+            retakeQuizBtn.addEventListener('click', () => {
+                // Hide results and retake button
+                quizResultsDiv.classList.add('hidden');
+                retakeQuizBtn.classList.add('hidden');
+                
+                // Show submit button
+                checkAnswersBtn.classList.remove('hidden');
+                
+                // Reload the quiz (clears answers and feedback)
+                loadQuiz();
+            });
+
+
+            // --- RESOURCES LIST ---
+            const resources = [
+                { name: "Texas Penal Code - Official Site", url: "https://statutes.capitol.texas.gov/Default.aspx?Code=PE" },
+                { name: "Penal Code Ch. 6 - Culpability Generally", url: "https://statutes.capitol.texas.gov/Docs/PE/htm/PE.6.htm" },
+                { name: "Penal Code Ch. 12 - Punishments", url: "https://statutes.capitol.texas.gov/Docs/PE/htm/PE.12.htm" }
+            ];
+            const resourcesList = document.getElementById('resources-list');
+            resources.sort((a, b) => a.name.localeCompare(b.name));
+            resources.forEach(res => {
+                const link = document.createElement('a'); // Use an anchor tag for links
+                link.href = res.url;
+                link.target = '_blank';
+                link.rel = 'noopener noreferrer'; // Good practice for security
+                link.className = 'text-blue-600 hover:underline p-2 bg-gray-50 rounded-md block hover:bg-gray-100';
+                link.innerHTML = `<i class="fas fa-external-link-alt mr-2"></i>${res.name}`;
+                resourcesList.appendChild(link);
+            });
+        });
+    </script>
+</body>
+</html>
+

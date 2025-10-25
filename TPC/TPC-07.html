@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ch. 7 Study Guide: Texas Penal Code</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet">
+    <style>
+        :root {
+            --header-bg: #1f2937;
+            --bg-color: #f3f4f6;
+            --tab-active-bg: #3b82f6;
+            --tab-active-text: #ffffff;
+            --card-bg: #ffffff;
+            --text-color: #111827;
+            --link-color: #2563eb;
+        }
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            font-family: 'Inter', sans-serif;
+        }
+        @import url('https://rsms.me/inter/inter.css');
+        .tab-content { display: none; }
+        .tab-content.active { display: block; }
+        .tab.active {
+            background-color: var(--tab-active-bg);
+            color: var(--tab-active-text);
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .tab {
+            transition: all 0.3s ease-in-out;
+        }
+        .definition-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 1rem;
+        }
+        .definition-item {
+            background-color: #f9fafb;
+            padding: 0.75rem;
+            border-radius: 0.5rem;
+            border: 1px solid #e5e7eb;
+        }
+        .definition-term {
+            font-weight: 600;
+            color: #111827;
+        }
+        .definition-desc {
+            font-size: 0.875rem;
+            color: #4b5563;
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Header -->
+    <header class="bg-gray-800 text-white p-4 shadow-md">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-2xl font-bold">
+                <i class="fas fa-users mr-2"></i>Ch. 7: Criminal Responsibility for Conduct of Another
+            </h1>
+            <a href="index.html" class="text-sm text-blue-300 hover:text-blue-100 hover:underline">
+                <i class="fas fa-arrow-left mr-1"></i> Back to Main Page
+            </a>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container mx-auto p-4 md:p-6">
+        <!-- Tab Navigation -->
+        <div class="mb-6 bg-white rounded-lg shadow-md overflow-x-auto">
+            <nav id="tabs" class="flex flex-row space-x-1 p-2">
+                <button data-tab="ch7-complicity" class="tab active flex-1 md:flex-none flex items-center justify-center px-4 py-2 text-sm font-semibold rounded-lg text-gray-600 hover:bg-blue-100">
+                    <i class="fas fa-user-friends mr-2"></i> <span class="hidden md:inline">Complicity (Subchapter A)</span>
+                </button>
+                <button data-tab="ch7-corps" class="tab flex-1 md:flex-none flex items-center justify-center px-4 py-2 text-sm font-semibold rounded-lg text-gray-600 hover:bg-blue-100">
+                    <i class="fas fa-building mr-2"></i> <span class="hidden md:inline">Corps & Entities (Subchapter B)</span>
+                </button>
+                <button data-tab="knowledge-check" class="tab flex-1 md:flex-none flex items-center justify-center px-4 py-2 text-sm font-semibold rounded-lg text-gray-600 hover:bg-blue-100">
+                    <i class="fas fa-question-circle mr-2"></i> <span class="hidden md:inline">Knowledge Check</span>
+                </button>
+                <button data-tab="resources" class="tab flex-1 md:flex-none flex items-center justify-center px-4 py-2 text-sm font-semibold rounded-lg text-gray-600 hover:bg-blue-100">
+                    <i class="fas fa-link mr-2"></i> <span class="hidden md:inline">Resources</span>
+                </button>
+            </nav>
+        </div>
+
+        <!-- Tab Content -->
+        <div id="tab-contents">
+            <!-- Ch. 7: Complicity (Subchapter A) Tab -->
+            <div id="ch7-complicity" class="tab-content active space-y-6">
+                
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-xl font-bold mb-4 border-b pb-2"><a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.7.htm#7.01" target="_blank" class="text-blue-600 hover:underline">Sec. 7.01. Parties to Offenses</a></h2>
+                    <ul class="list-disc list-inside text-sm text-gray-700 space-y-2">
+                        <li>A person is criminally responsible as a "party" if the offense is committed by their own conduct, by the conduct of another (for which they are responsible), or by both.</li>
+                        <li>Each party to an offense may be charged with the commission of the offense.</li>
+                        <li>This section <strong class="font-semibold">abolishes all traditional distinctions between accomplices and principals</strong>. Every party can be charged directly for the offense.</li>
+                    </ul>
+                </div>
+
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-xl font-bold mb-4 border-b pb-2"><a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.7.htm#7.02" target="_blank" class="text-blue-600 hover:underline">Sec. 7.02. Criminal Responsibility for Conduct of Another</a></h2>
+                    <p class="text-sm text-gray-700 mb-2">A person is criminally responsible for another's conduct if:</p>
+                    <ul class="list-disc list-inside text-sm text-gray-700 space-y-2">
+                        <li><strong class="font-semibold">(a)(1):</strong> Acting with the required culpability, they <strong class="font-semibold">cause or aid an innocent or nonresponsible person</strong> to commit the offense.</li>
+                        <li><strong class="font-semibold">(a)(2):</strong> Acting with <strong class="font-semibold">intent to promote or assist</strong> the offense, they <strong class="font-semibold">solicit, encourage, direct, aid, or attempt to aid</strong> the other person to commit it. (This is the primary "party liability" statute).</li>
+                        <li><strong class="font-semibold">(a)(3):</strong> They have a <strong class="font-semibold">legal duty</strong> to prevent the offense AND act with <strong class="font-semibold">intent to promote or assist</strong> it, and then fail to make a reasonable effort to prevent it.</li>
+                        <li><strong class="font-semibold">(b) Conspiracy Liability:</strong> If in the attempt to carry out a conspiracy to commit *one felony*, *another felony* is committed by a co-conspirator, all conspirators are guilty of the felony actually committed (even with no intent to commit it) IF:
+                            <ol class="list-decimal list-inside ml-6">
+                                <li>The offense was committed <strong class="font-semibold">in furtherance</strong> of the unlawful purpose; AND</li>
+                                <li>The offense was one that <strong class="font-semibold">should have been anticipated</strong>.</li>
+                            </ol>
+                        </li>
+                        <li>(b) "Conspiracy" is defined here as an agreement between two or more persons to commit a felony.</li>
+                    </ul>
+                </div>
+
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-xl font-bold mb-4 border-b pb-2"><a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.7.htm#7.03" target="_blank" class="text-blue-600 hover:underline">Sec. 7.03. Defenses Excluded</a></h2>
+                    <p class="text-sm text-gray-700 mb-2">When being prosecuted as a party to an offense, it is <strong class="font-semibold">NOT</strong> a defense that:</p>
+                    <ul class="list-disc list-inside text-sm text-gray-700 space-y-2">
+                        <li><strong class_semibold>(1):</strong> The actor belongs to a class of persons <strong class="font-semibold">legally incapable</strong> of committing the offense in an individual capacity (e.g., a man being a party to an offense only a woman can commit).</li>
+                        <li><strong class_semibold>(2):</strong> The other person (the primary actor) has been <strong class="font-semibold">acquitted</strong>, has <strong class="font-semibold">not been prosecuted</strong> or convicted, has been convicted of a <strong class="font-semibold">different offense</strong>, or is <strong class="font-semibold">immune from prosecution</strong>.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Ch. 7: Corps & Entities (Subchapter B) Tab -->
+            <div id="ch7-corps" class="tab-content space-y-6">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-xl font-bold mb-4 border-b pb-2"><a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.7.htm#7.21" target="_blank" class="text-blue-600 hover:underline">Sec. 7.21. Key Definitions (Subchapter B)</a></h2>
+                    <div class="definition-grid">
+                        <div class="definition-item">
+                            <p class="definition-term">Agent</p>
+                            <p class="definition-desc">A director, officer, employee, or other person authorized to act in behalf of the business entity.</p>
+                        </div>
+                        <div class="definition-item">
+                            <p class="definition-term">Business entity</p>
+                            <p class="definition-desc">An entity or organization governed by the Business Organizations Code, other than a corporation, association, or limited liability company.</p>
+                        </div>
+                        <div class="definition-item">
+                            <p class="definition-term">High managerial agent</p>
+                            <p class="definition-desc">A partner; an officer; or an agent with duties of such responsibility that their conduct may be assumed to represent the entity's policy.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-xl font-bold mb-4 border-b pb-2"><a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.7.htm#7.22" target="_blank" class="text-blue-600 hover:underline">Sec. 7.22. Criminal Responsibility of Corporation, Association, etc.</a></h2>
+                    <ul class="list-disc list-inside text-sm text-gray-700 space-y-2">
+                        <li><strong class="font-semibold">(a) General Responsibility:</strong> An entity is responsible for an offense if an agent performs it on their behalf and within the scope of employment, AND the offense is defined by a law that intends to impose liability on such entities (or is a strict liability offense).</li>
+                        <li><strong class="font-semibold">(b) Felony Responsibility:</strong> An entity is responsible for a <strong class="font-semibold">FELONY</strong> *only if* its commission was authorized, requested, commanded, performed, or <strong class="font-semibold">recklessly tolerated</strong> by:
+                            <ol class="list-decimal list-inside ml-6">
+                                <li>A <strong class="font-semibold">majority of the governing body</strong>; or</li>
+                                <li>A <strong class="font-semibold">high managerial agent</strong> acting in behalf of the entity and within their scope of office/employment.</li>
+                            </ol>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-xl font-bold mb-4 border-b pb-2"><a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.7.htm#7.23" target="_blank" class="text-blue-600 hover:underline">Sec. 7.23. Criminal Responsibility of Person for Conduct in Behalf of Entity</a></h2>
+                    <ul class="list-disc list-inside text-sm text-gray-700 space-y-2">
+                        <li><strong class="font-semibold">(a) Individual Liability:</strong> An individual is criminally responsible for conduct they perform <strong class="font-semibold">in the name of or on behalf of</strong> an entity to the *same extent* as if they did it in their own name.</li>
+                        <li><strong class="font-semibold">(b) Omission Liability:</strong> An agent with <strong class="font-semibold">primary responsibility</strong> for a duty imposed by law on an entity is criminally responsible for *omitting* that duty, just as if the duty were imposed directly on them.</li>
+                        <li><strong class="font-semibold">(c) Sentencing:</strong> An individual convicted of an offense performed on behalf of an entity is subject to the sentence authorized by law for an *individual* (not the entity).</li>
+                    </ul>
+                </div>
+
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-xl font-bold mb-4 border-b pb-2"><a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.7.htm#7.24" target="_blank" class="text-blue-600 hover:underline">Sec. 7.24. Defense to Criminal Responsibility of Entity</a></h2>
+                    <ul class="list-disc list-inside text-sm text-gray-700 space-y-2">
+                        <li>It is an <strong class="font-semibold">AFFIRMATIVE DEFENSE</strong> to prosecution under 7.22(a)(1) or (a)(2) that the high managerial agent with supervisory responsibility employed <strong class="font-semibold">due diligence to prevent</strong> its commission.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Knowledge Check Tab -->
+            <div id="knowledge-check" class="tab-content">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-2xl font-bold mb-4">Knowledge Check (Ch. 7)</h2>
+                    <p class="mb-6 text-gray-600">Test your understanding of the material. (28 Questions)</p>
+                    <div id="quiz-container" class="space-y-8">
+                        <!-- Questions will be dynamically inserted here -->
+                    </div>
+                    <!-- New Results Div -->
+                    <div id="quiz-results" class="hidden mt-8 text-center">
+                        <h3 class="text-2xl font-bold" id="quiz-score"></h3>
+                        <p class="text-lg text-gray-700" id="quiz-percentage"></p>
+                    </div>
+                    <!-- Button Container -->
+                    <div class="mt-8 text-center space-x-4">
+                        <button id="check-answers-btn" class="bg-blue-600 text-white font-bold py-2 px-6 rounded-lg hover:bg-blue-700 transition-colors">Submit Answers</button>
+                        <button id="retake-quiz-btn" class="hidden bg-gray-600 text-white font-bold py-2 px-6 rounded-lg hover:bg-gray-700 transition-colors">Retake Quiz</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Resources Tab -->
+            <div id="resources" class="tab-content">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-2xl font-bold mb-4">External Resources</h2>
+                    <p class="mb-6 text-gray-600">Quick links to official Texas statutes.</p>
+                    <div id="resources-list" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 text-sm">
+                        <!-- Links will be dynamically inserted here -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const tabs = document.querySelectorAll('#tabs button');
+            const tabContents = document.querySelectorAll('.tab-content');
+
+            tabs.forEach(tab => {
+                tab.addEventListener('click', () => {
+                    tabs.forEach(t => t.classList.remove('active'));
+                    tabContents.forEach(c => c.classList.remove('active'));
+                    tab.classList.add('active');
+                    document.getElementById(tab.dataset.tab).classList.add('active');
+                });
+            });
+
+            // --- QUIZ DATA (CHAPTER 7) ---
+            const quizData = [
+                {
+                    question: "Under Sec. 7.01(a), a person is criminally responsible as a party to an offense if the offense is committed by...",
+                    options: ["His own conduct only.", "The conduct of another for which he is criminally responsible.", "His own conduct, by the conduct of another for which he is responsible, or by both.", "His own conduct or by agreeing to the conduct of another."],
+                    answer: "His own conduct, by the conduct of another for which he is responsible, or by both.",
+                    explanation: "Sec. 7.01(a) states liability rests on 'his own conduct, by the conduct of another for which he is criminally responsible, or by both.'"
+                },
+                {
+                    question: "What legal distinction does Sec. 7.01(c) abolish?",
+                    options: ["The distinction between felonies and misdemeanors.", "The distinction between principals and accomplices.", "The distinction between adult and juvenile offenders.", "The distinction between state and federal offenses."],
+                    answer: "The distinction between principals and accomplices.",
+                    explanation: "Sec. 7.01(c) states: 'All traditional distinctions between accomplices and principals are abolished by this section...'"
+                },
+                {
+                    question: "Under Sec. 7.02(a)(2), a person is a party if, acting with 'intent to promote or assist' the offense, he...",
+                    options: ["Only 'aids' the other person.", "Only 'solicits' or 'encourages' the other person.", "Solicits, encourages, directs, aids, or attempts to aid the other person.", "Is merely present at the scene of the offense."],
+                    answer: "Solicits, encourages, directs, aids, or attempts to aid the other person.",
+                    explanation: "Sec. 7.02(a)(2) lists all these actions: 'solicits, encourages, directs, aids, or attempts to aid'."
+                },
+                {
+                    question: "A person is criminally responsible under Sec. 7.02(a)(1) if, with the required culpability, they...",
+                    options: ["Cause or aid an innocent or nonresponsible person to engage in the conduct.", "Aid another person who is also fully culpable.", "Attempt to aid another person but fail.", "Are part of a conspiracy."],
+                    answer: "Cause or aid an innocent or nonresponsible person to engage in the conduct.",
+                    explanation: "Sec. 7.02(a)(1) specifically deals with using an 'innocent or nonresponsible person' as the instrument of the crime."
+                },
+                {
+                    question: "What two elements are required for party liability by *omission* under Sec. 7.02(a)(3)?",
+                    options: ["A moral duty to act and a failure to do so.", "A legal duty to prevent the offense and an intent to promote or assist its commission.", "Being present at the offense and failing to call the police.", "A legal duty to prevent and criminal negligence in failing to do so."],
+                    answer: "A legal duty to prevent the offense and an intent to promote or assist its commission.",
+                    explanation: "Sec. 7.02(a)(3) requires *both* a 'legal duty to prevent' and an 'intent to promote or assist'."
+                },
+                {
+                    question: "Under Sec. 7.02(b), what is the definition of 'conspiracy' for the purpose of this subsection?",
+                    options: ["An agreement between two or more persons to commit any offense.", "A 'criminal street gang' as defined by Ch. 71.", "An agreement between two or more persons to commit a felony.", "Any agreement to engage in conduct that constitutes an offense."],
+                    answer: "An agreement between two or more persons to commit a felony.",
+                    explanation: "Sec. 7.02(b) provides its own specific definition: 'an agreement between two or more persons to commit a felony.'"
+                },
+                {
+                    question: "Under the conspiracy liability rule in Sec. 7.02(b), when are conspirators guilty of an *unplanned* felony committed by a co-conspirator?",
+                    options: ["Always, regardless of the circumstances.", "Only if they were present when the second felony was committed.", "If the offense was 'in furtherance' of the conspiracy AND 'should have been anticipated'.", "Never, they are only guilty of the originally planned felony."],
+                    answer: "If the offense was 'in furtherance' of the conspiracy AND 'should have been anticipated'.",
+                    explanation: "Sec. 7.02(b) requires both conditions: 'in furtherance of the unlawful purpose' and 'should have been anticipated'."
+                },
+                {
+                    question: "A man helps a woman commit an offense that, by definition, only a woman can commit. Is it a defense for the man that he is 'legally incapable' of committing it himself?",
+                    options: ["Yes, he cannot be a party to an offense he cannot commit.", "No, this is specifically excluded as a defense by Sec. 7.03(1).", "Only if he was not present during the offense.", "Yes, he can only be charged with 'attempt'."],
+                    answer: "No, this is specifically excluded as a defense by Sec. 7.03(1).",
+                    explanation: "Sec. 7.03(1) states it is no defense that the actor belongs to a class 'legally incapable of committing the offense in an individual capacity'."
+                },
+                {
+                    question: "A person 'Aids' Person B to commit a robbery. Person B is later tried and acquitted. Can Person A still be convicted as a party to the robbery?",
+                    options: ["No, if the principal was acquitted, the party cannot be guilty.", "Yes, Sec. 7.03(2) states that the acquittal of the other person is no defense.", "Only if Person A testifies against Person B.", "No, the case against Person A must be dismissed."],
+                    answer: "Yes, Sec. 7.03(2) states that the acquittal of the other person is no defense.",
+                    explanation: "Sec. 7.03(2) explicitly states it is no defense that the person for whose conduct the actor is responsible 'has been acquitted'."
+                },
+                {
+                    question: "Which of the following is *NOT* a \"High managerial agent\" under Sec. 7.21(2)?",
+                    options: ["A partner in a partnership.", "A low-level employee with no policy-making duties.", "An officer of a corporation.", "An agent whose conduct represents the policy of the corporation."],
+                    answer: "A low-level employee with no policy-making duties.",
+                    explanation: "Sec. 7.21(2) defines a 'high managerial agent' as a partner, officer, or an agent with significant responsibility. A low-level employee does not fit this definition."
+                },
+                {
+                    question: "Under Sec. 7.22(b), a corporation is criminally responsible for a *FELONY* only if its commission was authorized, requested, commanded, performed, or *recklessly tolerated* by whom?",
+                    options: ["Any employee acting within the scope of their employment.", "A majority of the governing body OR a high managerial agent.", "Any agent of the corporation.", "A majority of the shareholders."],
+                    answer: "A majority of the governing body OR a high managerial agent.",
+                    explanation: "Sec. 7.22(b) sets this higher standard for felony offenses, requiring involvement from the 'majority of the governing body' or a 'high managerial agent'."
+                },
+                {
+                    question: "An individual performs an illegal act *in the name of* their employer, a corporation. Under Sec. 7.23(a), is the individual criminally responsible?",
+                    options: ["No, only the corporation is responsible.", "Yes, to the same extent as if the conduct were performed in their own name or behalf.", "Only if they are a high managerial agent.", "No, they are immune from prosecution if they were 'just doing their job'."],
+                    answer: "Yes, to the same extent as if the conduct were performed in their own name or behalf.",
+                    explanation: "Sec. 7.23(a) makes it clear that acting on behalf of a corporation does not shield an individual from their own criminal responsibility."
+                },
+                {
+                    question: "A law imposes a duty on a corporation. An agent has 'primary responsibility' for this duty and fails to perform it. Who is criminally responsible for this *omission* under Sec. 7.23(b)?",
+                    options: ["Only the corporation.", "Only the high managerial agent.", "The agent is responsible to the same extent as if the duty were imposed directly on them.", "No one, as the duty was on the corporation, not a person."],
+                    answer: "The agent is responsible to the same extent as if the duty were imposed directly on them.",
+                    explanation: "Sec. 7.23(b) transfers the criminal responsibility for an omission from the corporation to the agent with 'primary responsibility' for that duty."
+                },
+                {
+                    question: "What *type* of defense is provided to a corporation by Sec. 7.24?",
+                    options: ["A standard defense.", "An affirmative defense.", "A defense to prosecution for felonies only.", "An exception to liability."],
+                    answer: "An affirmative defense.",
+                    explanation: "Sec. 7.24 explicitly states: 'It is an affirmative defense to prosecution...'"
+                },
+                {
+                    question: "What must a corporation prove to establish the affirmative defense under Sec. 7.24?",
+                    options: ["That the offense was committed by a low-level employee.", "That the corporation had no knowledge of the offense.", "That the high managerial agent having supervision employed 'due diligence to prevent' the offense.", "That the corporation fired the agent who committed the offense."],
+                    answer: "That the high managerial agent having supervision employed 'due diligence to prevent' the offense.",
+                    explanation: "This is the specific standard for the affirmative defense in Sec. 7.24."
+                },
+                {
+                    question: "A corporation is prosecuted for an offense under a law *other than* the Penal Code that imposes *strict liability*. Is the corporation responsible under Sec. 7.22(a)(3)?",
+                    options: ["No, corporations are only liable for Penal Code offenses.", "Yes, unless a legislative purpose *NOT* to impose liability plainly appears.", "Only if a high managerial agent was involved.", "No, strict liability only applies to individuals."],
+                    answer: "Yes, unless a legislative purpose *NOT* to impose liability plainly appears.",
+                    explanation: "Sec. 7.22(a)(3) makes corporations responsible for strict liability offenses by default, unless the law 'plainly appears' to exempt them."
+                },
+                {
+                    question: "True or False: Under Sec. 7.01(c), the state must allege in the charging instrument whether the person acted as a 'principal' or an 'accomplice'.",
+                    options: ["True, the distinction is critical for charging.", "False, the section abolishes these distinctions and allows charging without such allegations."],
+                    answer: "False, the section abolishes these distinctions and allows charging without such allegations.",
+                    explanation: "Sec. 7.01(c) states each party 'may be charged and convicted without alleging that he acted as a principal or accomplice.'"
+                },
+                {
+                    question: "Under Sec. 7.02(a)(2), what *level of culpability* is required for a person to be a party by 'soliciting, encouraging, or aiding' another?",
+                    options: ["Recklessness", "Criminal Negligence", "Intent to promote or assist", "Knowing conduct"],
+                    answer: "Intent to promote or assist",
+                    explanation: "Sec. 7.02(a)(2) explicitly requires 'acting with intent to promote or assist the commission of the offense...'"
+                },
+                {
+                    question: "Two people agree to commit a felony. This agreement, under Sec. 7.02(b), is called a...",
+                    options: ["Partnership", "Complicity", "Conspiracy", "Criminal Enterprise"],
+                    answer: "Conspiracy",
+                    explanation: "Sec. 7.02(b) defines 'conspiracy' for its own purposes as 'an agreement between two or more persons to commit a felony.'"
+                },
+                {
+                    question: "Is it a defense to prosecution as a party that the other person was 'immune from prosecution'?",
+                    options: ["Yes, if the main actor is immune, no crime occurred.", "No, Sec. 7.03(2) explicitly states this is not a defense.", "Only if the immunity is 'diplomatic immunity'.", "Yes, but only for misdemeanor offenses."],
+                    answer: "No, Sec. 7.03(2) explicitly states this is not a defense.",
+                    explanation: "Sec. 7.03(2) lists 'is immune from prosecution' as one of the excluded defenses."
+                },
+                {
+                    question: "Who does Sec. 7.21(1) define as an 'Agent'?",
+                    options: ["Only an officer or director.", "Only an employee.", "A director, officer, employee, or other person authorized to act in behalf of the entity.", "Anyone who receives a paycheck from the entity."],
+                    answer: "A director, officer, employee, or other person authorized to act in behalf of the entity.",
+                    explanation: "This is the broad definition provided in Sec. 7.21(1)."
+                },
+                {
+                    question: "For a corporation to be held liable for a *non-felony* offense under Sec. 7.22(a), does a high managerial agent need to be involved?",
+                    options: ["Yes, always.", "No, the offense only needs to be performed by *any agent* acting in behalf of the entity and within their scope of employment.", "Only if the offense is a Class A misdemeanor.", "Yes, unless it's a strict liability offense."],
+                    answer: "No, the offense only needs to be performed by *any agent* acting in behalf of the entity and within their scope of employment.",
+                    explanation: "Sec. 7.22(a) (general liability) applies to 'an agent'. The higher standard in Sec. 7.22(b) (high managerial agent) applies *only* to felonies."
+                },
+                {
+                    question: "An individual is convicted of an offense they performed on behalf of a corporation. What sentence are they subject to under Sec. 7.23(c)?",
+                    options: ["The sentence authorized for the corporation (a fine).", "A reduced sentence.", "The sentence authorized by law for an *individual* convicted of the offense.", "No sentence, as the corporation is punished."],
+                    answer: "The sentence authorized by law for an *individual* convicted of the offense.",
+                    explanation: "Sec. 7.23(c) confirms that individuals face individual punishments (like jail time) even if acting for a corporation."
+                },
+                // --- 5 New Questions Added ---
+                {
+                    question: "Under Sec. 7.03(2), which of these is *NOT* a defense for an actor being prosecuted as a party?",
+                    options: ["The other person was convicted of a different offense.", "The other person was a family member.", "The other person has not been prosecuted.", "The other person was acquitted."],
+                    answer: "The other person was a family member.",
+                    explanation: "Sec. 7.03(2) lists acquittal, non-prosecution, and conviction of a different offense as excluded defenses. Family status is not mentioned."
+                },
+                {
+                    question: "What is the definition of a 'Business entity' under Sec. 7.21(1-a)?",
+                    options: ["Any company that makes a profit.", "A corporation, association, or limited liability company only.", "An entity governed by the Business Organizations Code, *other than* a corporation, association, or LLC.", "A sole proprietorship only."],
+                    answer: "An entity governed by the Business Organizations Code, *other than* a corporation, association, or LLC.",
+                    explanation: "Sec. 7.21(1-a) defines it as a BOC entity *not* already covered by the other terms (corporation, association, LLC)."
+                },
+                {
+                    question: "What is the *full* definition of 'Agent' under Sec. 7.21(1)?",
+                    options: ["A director, officer, or employee.", "Any person authorized to act in behalf of the entity.", "A director, officer, employee, or other person authorized to act in behalf of the entity.", "Only a 'high managerial agent'."],
+                    answer: "A director, officer, employee, or other person authorized to act in behalf of the entity.",
+                    explanation: "Sec. 7.21(1) provides this complete list."
+                },
+                {
+                    question: "Under Sec. 7.22(a)(1), an entity is criminally responsible for an offense defined in *this code* (the Penal Code) if...",
+                    options: ["The offense is a felony.", "The offense was committed by a high managerial agent.", "Corporations, associations, etc., are made subject to the offense.", "The offense is a strict liability offense."],
+                    answer: "Corporations, associations, etc., are made subject to the offense.",
+                    explanation: "Sec. 7.22(a)(1) states this specific condition for offenses defined *within* the Penal Code itself."
+                },
+                {
+                    question: "An individual convicted of an offense 'on behalf of a corporation' is subject to what sentence under Sec. 7.23(c)?",
+                    options: ["The sentence authorized by law for an individual.", "The sentence authorized for the corporation (e.g., a fine).", "A probated sentence, as the corporation is also liable.", "No sentence, as the corporation pays the fine."],
+                    answer: "The sentence authorized by law for an individual.",
+                    explanation: "Sec. 7.23(c) makes it clear that an individual faces the *individual's* penalty (which can include jail) regardless of their acting for an entity."
+                }
+            ];
+
+            const quizContainer = document.getElementById('quiz-container');
+            const checkAnswersBtn = document.getElementById('check-answers-btn');
+            const retakeQuizBtn = document.getElementById('retake-quiz-btn');
+            const quizResultsDiv = document.getElementById('quiz-results');
+            const quizScoreEl = document.getElementById('quiz-score');
+            const quizPercentageEl = document.getElementById('quiz-percentage');
+
+            function loadQuiz() {
+                // Shuffle the quiz data for a new order each time
+                const shuffledQuizData = [...quizData].sort(() => Math.random() - 0.5);
+                
+                quizContainer.innerHTML = ''; // Clear previous questions
+                
+                shuffledQuizData.forEach((q, index) => {
+                    const questionDiv = document.createElement('div');
+                    questionDiv.className = 'quiz-question';
+                    
+                    // Store the original question index to check the answer later
+                    const originalIndex = quizData.indexOf(q);
+                    
+                    let optionsHtml = q.options.map(option => {
+                        // Escape HTML in options to prevent XSS
+                        const escapedOption = option.replace(/</g, "&lt;").replace(/>/g, "&gt;");
+                        return `<label class="block"><input type="radio" name="q${index}" value="${escapedOption}" data-original-index="${originalIndex}" class="mr-2">${escapedOption}</label>`;
+                    }).join('');
+                    
+                    // Escape HTML in the question
+                    const escapedQuestion = q.question.replace(/</g, "&lt;").replace(/>/g, "&gt;");
+
+                    questionDiv.innerHTML = `
+                        <p class="font-semibold mb-2">${index + 1}. ${escapedQuestion}</p>
+                        <div class="space-y-2">${optionsHtml}</div>
+                        <div class="feedback hidden mt-2 p-2 rounded-lg text-sm"></div>
+                    `;
+                    quizContainer.appendChild(questionDiv);
+                });
+            }
+
+
+            loadQuiz(); // Initial load
+
+            checkAnswersBtn.addEventListener('click', () => {
+                let score = 0;
+                const totalQuestions = quizData.length;
+                const questions = quizContainer.querySelectorAll('.quiz-question');
+
+                questions.forEach((questionDiv, index) => {
+                    const selected = questionDiv.querySelector(`input[name="q${index}"]:checked`);
+                    const feedback = questionDiv.querySelector('.feedback');
+                    const radioButtons = questionDiv.querySelectorAll(`input[name="q${index}"]`);
+                    
+                    feedback.classList.remove('hidden', 'bg-green-100', 'text-green-800', 'bg-red-100', 'text-red-800', 'bg-yellow-100', 'text-yellow-800');
+                    
+                    if (selected) {
+                        const originalIndex = selected.dataset.originalIndex;
+                        const q = quizData[originalIndex];
+
+                        // Compare the selected value (which was escaped) with the answer
+                        if (selected.value === q.answer.replace(/</g, "&lt;").replace(/>/g, "&gt;")) {
+                            score++;
+                            feedback.textContent = `Correct! ${q.explanation}`;
+                            feedback.classList.add('bg-green-1E00', 'text-green-800');
+                        } else {
+                            feedback.textContent = `Incorrect. The correct answer is "${q.answer}". ${q.explanation}`;
+                            feedback.classList.add('bg-red-100', 'text-red-800');
+                        }
+                    } else {
+                        // Find the original question to show the answer
+                        const firstRadio = questionDiv.querySelector(`input[name="q${index}"]`);
+                        const originalIndex = firstRadio.dataset.originalIndex;
+                        const q = quizData[originalIndex];
+                        
+                        feedback.textContent = `You did not answer this question. The correct answer is "${q.answer}". ${q.explanation}`;
+                        feedback.classList.add('bg-yellow-100', 'text-yellow-800');
+                    }
+                    
+                    // Disable radio buttons after submitting
+                    radioButtons.forEach(radio => {
+                        radio.disabled = true;
+                    });
+                });
+
+                // Calculate and display results
+                const percentage = ((score / totalQuestions) * 100).toFixed(0);
+                quizScoreEl.textContent = `Your Score: ${score} / ${totalQuestions}`;
+                quizPercentageEl.textContent = `Percentage: ${percentage}%`;
+                
+                quizResultsDiv.classList.remove('hidden');
+                checkAnswersBtn.classList.add('hidden');
+                retakeQuizBtn.classList.remove('hidden');
+            });
+
+            retakeQuizBtn.addEventListener('click', () => {
+                // Hide results and retake button
+                quizResultsDiv.classList.add('hidden');
+                retakeQuizBtn.classList.add('hidden');
+                
+                // Show submit button
+                checkAnswersBtn.classList.remove('hidden');
+                
+                // Reload the quiz (clears answers and feedback)
+                loadQuiz();
+            });
+
+
+            // --- RESOURCES LIST ---
+            const resources = [
+                { name: "Texas Penal Code - Official Site", url: "https://statutes.capitol.texas.gov/Default.aspx?Code=PE" },
+                { name: "Penal Code Ch. 7 - Responsibility for Another", url: "https://statutes.capitol.texas.gov/Docs/PE/htm/PE.7.htm" }
+            ];
+            const resourcesList = document.getElementById('resources-list');
+            resources.sort((a, b) => a.name.localeCompare(b.name));
+            resources.forEach(res => {
+                const link = document.createElement('a'); // Use an anchor tag for links
+                link.href = res.url;
+                link.target = '_blank';
+                link.rel = 'noopener noreferrer'; // Good practice for security
+                link.className = 'text-blue-600 hover:underline p-2 bg-gray-50 rounded-md block hover:bg-gray-100';
+                link.innerHTML = `<i class="fas fa-external-link-alt mr-2"></i>${res.name}`;
+                resourcesList.appendChild(link);
+            });
+        });
+    </script>
+</body>
+</html>
+

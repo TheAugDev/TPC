@@ -1,0 +1,782 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ch. 20 Study Guide: Texas Penal Code</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet">
+    <style>
+        :root {
+            --header-bg: #1f2937;
+            --bg-color: #f3f4f6;
+            --tab-active-bg: #3b82f6;
+            --tab-active-text: #ffffff;
+            --card-bg: #ffffff;
+            --text-color: #111827;
+            --link-color: #2563eb;
+        }
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            font-family: 'Inter', sans-serif;
+        }
+        @import url('https://rsms.me/inter/inter.css');
+        .tab-content { display: none; }
+        .tab-content.active { display: block; }
+        .tab.active {
+            background-color: var(--tab-active-bg);
+            color: var(--tab-active-text);
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .tab {
+            transition: all 0.3s ease-in-out;
+        }
+        .grid-definitions {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 1rem;
+        }
+        .definition-card {
+            background-color: #f9fafb;
+            border: 1px solid #e5e7eb;
+            border-left: 4px solid var(--tab-active-bg);
+            padding: 1rem;
+            border-radius: 0.5rem;
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Header -->
+    <header class="bg-gray-800 text-white p-4 shadow-md">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-xl md:text-2xl font-bold">
+                <i class="fas fa-user-secret mr-2"></i>Ch. 20: Kidnapping, Restraint, & Smuggling
+            </h1>
+            <a href="index.html" class="text-sm text-blue-300 hover:text-blue-100 hover:underline">
+                <i class="fas fa-arrow-left mr-1"></i> Back to Main Page
+            </a>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container mx-auto p-4 md:p-6">
+        <!-- Tab Navigation -->
+        <div class="mb-6 bg-white rounded-lg shadow-md overflow-x-auto">
+            <nav id="tabs" class="flex flex-row space-x-1 p-2">
+                <button data-tab="ch20-definitions" class="tab active flex-1 md:flex-none flex items-center justify-center px-4 py-2 text-sm font-semibold rounded-lg text-gray-600 hover:bg-blue-100">
+                    <i class="fas fa-book mr-2"></i> <span class="hidden md:inline">Key Definitions (20.01)</span>
+                </button>
+                <button data-tab="ch20-kidnapping" class="tab flex-1 md:flex-none flex items-center justify-center px-4 py-2 text-sm font-semibold rounded-lg text-gray-600 hover:bg-blue-100">
+                    <i class="fas fa-handcuffs mr-2"></i> <span class="hidden md:inline">Restraint & Kidnapping</span>
+                </button>
+                <button data-tab="ch20-smuggling" class="tab flex-1 md:flex-none flex items-center justify-center px-4 py-2 text-sm font-semibold rounded-lg text-gray-600 hover:bg-blue-100">
+                    <i class="fas fa-shipping-fast mr-2"></i> <span class="hidden md:inline">Smuggling Offenses</span>
+                </button>
+                <button data-tab="knowledge-check" class="tab flex-1 md:flex-none flex items-center justify-center px-4 py-2 text-sm font-semibold rounded-lg text-gray-600 hover:bg-blue-100">
+                    <i class="fas fa-question-circle mr-2"></i> <span class="hidden md:inline">Knowledge Check</span>
+                </button>
+                <button data-tab="resources" class="tab flex-1 md:flex-none flex items-center justify-center px-4 py-2 text-sm font-semibold rounded-lg text-gray-600 hover:bg-blue-100">
+                    <i class="fas fa-link mr-2"></i> <span class="hidden md:inline">Resources</span>
+                </button>
+            </nav>
+        </div>
+
+        <!-- Tab Content -->
+        <div id="tab-contents">
+            <!-- Ch. 20: Key Definitions Tab -->
+            <div id="ch20-definitions" class="tab-content active">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-xl font-bold mb-4 border-b pb-2"><a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.20.htm#20.01" target="_blank" class="text-blue-600 hover:underline">Sec. 20.01. Key Definitions</a></h2>
+                    <div class="grid-definitions">
+                        <div class="definition-card">
+                            <h3 class="font-bold text-gray-900">Restrain (1)</h3>
+                            <p class="text-sm text-gray-700">To restrict a person's movements <strong class="font-semibold">without consent</strong>, so as to interfere substantially with the person's liberty, by <strong class="font-semibold">moving</strong> the person or by <strong class="font-semibold">confining</strong> the person.</p>
+                        </div>
+                        <div class="definition-card">
+                            <h3 class="font-bold text-gray-900">"Without Consent" (1)</h3>
+                            <p class="text-sm text-gray-700">Restraint is "without consent" if it is accomplished by: (A) <strong class="font-semibold">force, intimidation, or deception</strong>; OR (B) any means if the victim is a <strong class="font-semibold">child < 14</strong> (or incompetent) and parent has not acquiesced; OR (B)(ii) the victim is a child <strong class="font-semibold">14-17</strong>, is taken <strong class="font-semibold">out of state AND > 120 miles</strong> from home, and parent has not acquiesced.</p>
+                        </div>
+                        <div class="definition-card">
+                            <h3 class="font-bold text-gray-900">Abduct (2)</h3>
+                            <p class="text-sm text-gray-700">To <strong class="font-semibold">restrain</strong> a person with <strong class="font-semibold">intent to prevent his liberation</strong> by: (A) <strong class="font-semibold">secreting or holding</strong> him in a place where he is not likely to be found; OR (B) using or threatening to use <strong class="font-semibold">deadly force</strong>.</p>
+                        </div>
+                        <div class="definition-card">
+                            <h3 class="font-bold text-gray-900">Relative (3)</h3>
+                            <p class="text-sm text-gray-700">A parent or stepparent, ancestor, sibling, or uncle or aunt, including adoptive relatives of the same degree.</p>
+                        </div>
+                        <div class="definition-card">
+                            <h3 class="font-bold text-gray-900">Individual (5)</h3>
+                            <p class="text-sm text-gray-700">Notwithstanding Sec. 1.07, means a human being who has been <strong class="font-semibold">born and is alive</strong>.</p>
+                        </div>
+                        <div class="definition-card">
+                            <h3 class="font-bold text-gray-900">Special Investigator (8)</h3>
+                            <p class="text-sm text-gray-700">Includes an agent of the <strong class="font-semibold">United States Department of Homeland Security</strong>.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Ch. 20: Restraint & Kidnapping Tab -->
+            <div id="ch20-kidnapping" class="tab-content space-y-6">
+                
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-xl font-bold mb-4 border-b pb-2"><a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.20.htm#20.02" target="_blank" class="text-blue-600 hover:underline">Sec. 20.02. Unlawful Restraint</a></h2>
+                    <div class="space-y-4 text-sm">
+                        <ul class="list-disc list-inside text-gray-700 space-y-2">
+                            <li><strong class="font-semibold">(a) Offense:</strong> A person commits an offense if he <strong class="font-semibold">intentionally or knowingly restrains</strong> another person.</li>
+                            <li><strong class="font-semibold">(d) Exception:</strong> It is <strong class="font-semibold">no offense</strong> if it is for the purpose of a <strong class="font-semibold">lawful arrest</strong>.</li>
+                            <li><strong class="font-semibold">(b) Affirmative Defense (< 14):</strong> Actor is a <strong class="font-semibold">relative</strong>, victim is <strong class="font-semibold">< 14</strong>, and sole intent was to <strong class="font-semibold">assume lawful control</strong>.</li>
+                            <li><strong class="font-semibold">(e) Affirmative Defense (14-17):</strong> Actor is <strong class="font-semibold">not > 3 years older</strong>, victim is <strong class="font-semibold">14-17</strong>, and actor does <strong class="font-semibold">not use force, intimidation, or deception</strong>.</li>
+                        </ul>
+                        <h3 class="font-semibold">Punishments (c):</h3>
+                        <ul class="list-disc list-inside ml-4 text-gray-700 space-y-2">
+                            <li>Base Offense: <strong class="font-semibold">Class A Misdemeanor</strong>.</li>
+                            <li>Victim < 17: <strong class="font-semibold">State Jail Felony</strong>.</li>
+                            <li>Recklessly exposes to SBI: <strong class="font-semibold">Felony of the Third Degree</strong>.</li>
+                            <li>Restrains Public Servant on duty: <strong class="font-semibold">Felony of the Third Degree</strong>.</li>
+                            <li>Actor is in custody: <strong class="font-semibold">Felony of the Third Degree</strong>.</li>
+                            <li>Restrains Peace Officer or Judge on duty: <strong class="font-semibold">Felony of the Second Degree</strong>.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-xl font-bold mb-4 border-b pb-2"><a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.20.htm#20.03" target="_blank" class="text-blue-600 hover:underline">Sec. 20.03. Kidnapping</a></h2>
+                    <div class="space-y-4 text-sm">
+                         <ul class="list-disc list-inside text-gray-700 space-y-2">
+                            <li><strong class="font-semibold">(a) Offense:</strong> A person commits an offense if he <strong class="font-semibold">intentionally or knowingly abducts</strong> another person. (See 20.01 for "Abduct").</li>
+                            <li><strong class="font-semibold">(c) Punishment:</strong> <strong class="font-semibold">Felony of the Third Degree</strong>.</li>
+                            <li><strong class="font-semibold">(b) Affirmative Defense:</strong> (1) actor was a <strong class="font-semibold">relative</strong>, (2) sole intent was to <strong class="font-semibold">assume lawful control</strong>, AND (3) abduction was <strong class="font-semibold">not coupled with intent to use/threaten deadly force</strong>.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-xl font-bold mb-4 border-b pb-2"><a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.20.htm#20.04" target="_blank" class="text-blue-600 hover:underline">Sec. 20.04. Aggravated Kidnapping</a></h2>
+                    <div class="space-y-4 text-sm">
+                        <p class="text-gray-700">A person commits an offense if they intentionally or knowingly abduct another person:</p>
+                        <h3 class="font-semibold">(a) With specific intent to:</h3>
+                        <ul class="list-disc list-inside ml-4 text-gray-700 space-y-2">
+                            <li>(1) Hold for <strong class="font-semibold">ransom or reward</strong>.</li>
+                            <li>(2) Use as a <strong class="font-semibold">shield or hostage</strong>.</li>
+                            <li>(3) <strong class="font-semibold">Facilitate a felony</strong> or flight after a felony.</li>
+                            <li>(4) <strong class="font-semibold">Inflict bodily injury</strong> on him or <strong class="font-semibold">violate/abuse him sexually</strong>.</li>
+                            <li>(5) <strong class="font-semibold">Terrorize</strong> him or a third person.</li>
+                            <li>(6) Interfere with a <strong class="font-semibold">governmental or political function</strong>.</li>
+                        </ul>
+                         <h3 class="font-semibold">(b) OR:</h3>
+                         <ul class="list-disc list-inside ml-4 text-gray-700 space-y-2">
+                            <li>Uses or exhibits a <strong class="font-semibold">deadly weapon</strong> during the commission.</li>
+                        </ul>
+                        <h3 class="font-semibold">Punishments (c) & (d):</h3>
+                         <ul class="list-disc list-inside ml-4 text-gray-700 space-y-2">
+                            <li>Base Punishment: <strong class="font-semibold">Felony of the First Degree</strong>.</li>
+                            <li><strong class="font-semibold">Mitigation:</strong> At punishment, defendant can prove by <strong class="font-semibold">preponderance of the evidence</strong> that they <strong class="font-semibold">voluntarily released the victim in a safe place</strong>. If proven, offense becomes a <strong class="font-semibold">Felony of the Second Degree</strong>.</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+            
+            <!-- Ch. 20: Smuggling Offenses Tab -->
+            <div id="ch20-smuggling" class="tab-content space-y-6">
+
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-xl font-bold mb-4 border-b pb-2"><a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.20.htm#20.05" target="_blank" class="text-blue-600 hover:underline">Sec. 20.05. Smuggling of Persons</a></h2>
+                    <div class="space-y-4 text-sm">
+                        <h3 class="font-semibold">(a) Offense:</h3>
+                        <p class="text-gray-700">A person commits an offense if they knowingly:</p>
+                        <ul class="list-disc list-inside ml-4 text-gray-700 space-y-2">
+                            <li>(1) Use a conveyance to <strong class="font-semibold">transport</strong> an individual with intent to (A) <strong class="font-semibold">conceal</strong> from LEO or (B) <strong class="font-semibold">flee</strong> from LEO.</li>
+                            <li>(2) <strong class="font-semibold">Encourage or induce</strong> a person to enter/remain in US in violation of federal law by <strong class="font-semibold">concealing, harboring, or shielding</strong>.</li>
+                            <li>(3) Assist, guide, or direct <strong class="font-semibold">2 or more individuals</strong> onto <strong class="font-semibold">agricultural land</strong> without consent.</li>
+                        </ul>
+                        <h3 class="font-semibold">(b) Punishments:</h3>
+                         <ul class="list-disc list-inside ml-4 text-gray-700 space-y-2">
+                            <li>Base: <strong class="font-semibold">F3 with a 10-year term</strong>.</li>
+                            <li><strong class="font-semibold">F2 (w/ 10-year min) if:</strong>
+                                <ul class="list-disc list-inside ml-6">
+                                    <li>Creates substantial likelihood of SBI/death.</li>
+                                    <li>Smuggled individual is < 18.</li>
+                                    <li>Done for pecuniary benefit.</li>
+                                    <li>Actor possessed a firearm.</li>
+                                    <li>Actor was fleeing from LEO ((a)(1)(B)).</li>
+                                </ul>
+                            </li>
+                            <li><strong class="font-semibold">F1 (w/ 10-year min) if:</strong>
+                                 <ul class="list-disc list-inside ml-6">
+                                    <li>Direct result: victim of Sexual Assault / Agg SA.</li>
+                                    <li>Direct result: victim suffers SBI / death.</li>
+                                 </ul>
+                            </li>
+                         </ul>
+                         <h3 class="font-semibold">Defenses/Mitigation:</h3>
+                         <ul class="list-disc list-inside ml-4 text-gray-700 space-y-2">
+                             <li><strong class="font-semibold">(b-1) Mitigation:</strong> "Significant cooperation" can reduce F3 min term to <strong class="font-semibold">5 years</strong>.</li>
+                             <li><strong class="font-semibold">(b-2) Mitigation:</strong> Actor related in <strong class="font-semibold">3rd degree</strong> (consanguinity/affinity) can reduce F3 min term to <strong class="font-semibold">5 years</strong>.</li>
+                             <li><strong class="font-semibold">(c) Affirmative Defense:</strong> Actor related in <strong class="font-semibold">2nd degree</strong> (consanguinity/affinity). (Does not apply to all offenses).</li>
+                         </ul>
+                    </div>
+                </div>
+
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-xl font-bold mb-4 border-b pb-2"><a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.20.htm#20.06" target="_blank" class="text-blue-600 hover:underline">Sec. 20.06. Continuous Smuggling of Persons</a></h2>
+                    <div class="space-y-4 text-sm">
+                         <ul class="list-disc list-inside text-gray-700 space-y-2">
+                            <li><strong class="font-semibold">(a) Offense:</strong> Engages <strong class="font-semibold">2 or more times</strong> in conduct under 20.05, during a period that is <strong class="font-semibold">10 or more days</strong> in duration.</li>
+                            <li><strong class="font-semibold">(b) Jury:</strong> Jury does not need to be unanimous on specific dates/conduct, only that the actor engaged 2+ times in a 10+ day period.</li>
+                            <li><strong class="font-semibold">(e) Base Punishment:</strong> <strong class="font-semibold">F2 with a 10-year minimum</strong>.</li>
+                            <li><strong class="font-semibold">(f) Enhancement (F1 w/ 10-year min):</strong> Likelihood of SBI/death OR victim < 18.</li>
+                            <li><strong class="font-semibold">(g) Enhancement (F1 w/ 25-year min):</strong> Victim suffers SA / Agg SA / SBI / death.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-xl font-bold mb-4 border-b pb-2"><a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.20.htm#20.07" target="_blank" class="text-blue-600 hover:underline">Sec. 20.07. Operation of Stash House</a></h2>
+                    <div class="space-y-4 text-sm">
+                         <ul class="list-disc list-inside text-gray-700 space-y-2">
+                            <li><strong class="font-semibold">(a) Offense:</strong> Knowingly (1) <strong class="font-semibold">uses or permits use</strong> of property to commit/facilitate smuggling/trafficking OR (2) <strong class="font-semibold">rents or leases</strong> property *intending* it be used for this.</li>
+                            <li><strong class="font-semibold">(b) Base Punishment:</strong> <strong class="font-semibold">F3 with a 5-year minimum</strong>.</li>
+                            <li><strong class="font-semibold">(b) Enhancement (F2 w/ 5-year min):</strong> Property used for *Continuous* Smuggling (20.06) or other trafficking offenses OR victim suffers SA / Agg SA / SBI / death.</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+            
+            <!-- Knowledge Check Tab -->
+            <div id="knowledge-check" class="tab-content">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-2xl font-bold mb-4">Knowledge Check (Ch. 20)</h2>
+                    <p class="mb-6 text-gray-600">Test your understanding of the material. (60 Questions)</p>
+                    <div id="quiz-container" class="space-y-8">
+                        <!-- Questions will be dynamically inserted here -->
+                    </div>
+                    <!-- New Results Div -->
+                    <div id="quiz-results" class="hidden mt-8 text-center">
+                        <h3 class="text-2xl font-bold" id="quiz-score"></h3>
+                        <p class="text-lg text-gray-700" id="quiz-percentage"></p>
+                    </div>
+                    <!-- Button Container -->
+                    <div class="mt-8 text-center space-x-4">
+                        <button id="check-answers-btn" class="bg-blue-600 text-white font-bold py-2 px-6 rounded-lg hover:bg-blue-700 transition-colors">Submit Answers</button>
+                        <button id="retake-quiz-btn" class="hidden bg-gray-600 text-white font-bold py-2 px-6 rounded-lg hover:bg-gray-700 transition-colors">Retake Quiz</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Resources Tab -->
+            <div id="resources" class="tab-content">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-2xl font-bold mb-4">External Resources</h2>
+                    <p class="mb-6 text-gray-600">Quick links to official Texas statutes referenced in this chapter.</p>
+                    <div id="resources-list" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 text-sm">
+                        <!-- Links will be dynamically inserted here -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const tabs = document.querySelectorAll('#tabs button');
+            const tabContents = document.querySelectorAll('.tab-content');
+
+            tabs.forEach(tab => {
+                tab.addEventListener('click', () => {
+                    tabs.forEach(t => t.classList.remove('active'));
+                    tabContents.forEach(c => c.classList.remove('active'));
+                    tab.classList.add('active');
+                    document.getElementById(tab.dataset.tab).classList.add('active');
+                });
+            });
+
+            // --- QUIZ DATA (CHAPTER 20) ---
+            const quizData = [
+                {
+                    question: `Under Sec. 20.01, "Restrain" means to restrict a person's movements without consent by...`,
+                    options: [`Force or intimidation only.`, `Moving the person or confining the person.`, `Threatening deadly force.`, `Deception only.`],
+                    answer: `Moving the person or confining the person.`,
+                    explanation: `Sec. 20.01(1) defines "restrain" as interfering with liberty by "moving" or "confining." Force, intimidation, and deception are *means* of making it "without consent."`
+                },
+                {
+                    question: `Restraint is "without consent" if accomplished by force, intimidation, or...`,
+                    options: [`Acquiescence.`, `Deception.`, `Confinement.`, `Movement.`],
+                    answer: `Deception.`,
+                    explanation: `Sec. 20.01(1)(A) lists force, intimidation, or deception.`
+                },
+                {
+                    question: `Restraint of a 12-year-old child is "without consent" if...`,
+                    options: [`The child objects.`, `The parent has not acquiesced.`, `The child is moved more than 120 miles.`, `The actor is not a relative.`],
+                    answer: `The parent has not acquiesced.`,
+                    explanation: `Sec. 20.01(1)(B)(i) states for a child < 14, any restraint is without consent if the parent/guardian has not acquiesced, even if the child agrees.`
+                },
+                {
+                    question: `Restraint of a 15-year-old child is "without consent" if the child is taken outside the state AND...`,
+                    options: [`The child's parent has not acquiesced.`, `The child is taken more than 120 miles from their residence and the parent has not acquiesced.`, `The actor uses deception.`, `The actor is not a relative.`],
+                    answer: `The child is taken more than 120 miles from their residence and the parent has not acquiesced.`,
+                    explanation: `Sec. 20.01(1)(B)(ii) has three elements for this age group: (1) 14-17, (2) outside the state AND outside 120-mile radius, and (3) parent has not acquiesced.`
+                },
+                {
+                    question: `"Abduct" means to restrain a person with intent to prevent liberation by secreting them OR...`,
+                    options: [`Using or threatening to use deadly force.`, `Using force, intimidation, or deception.`, `Moving them across state lines.`, `Holding them for more than 24 hours.`],
+                    answer: `Using or threatening to use deadly force.`,
+                    explanation: `Sec. 20.01(2) lists two ways to abduct: (A) secreting/hiding, or (B) using or threatening to use deadly force.`
+                },
+                {
+                    question: `"Abduct" means to restrain a person with intent to prevent liberation by using or threatening to use deadly force OR...`,
+                    options: [`Secreting or holding him in a place where he is not likely to be found.`, `Using force, intimidation, or deception.`, `Moving them to another state.`, `Holding them for ransom.`],
+                    answer: `Secreting or holding him in a place where he is not likely to be found.`,
+                    explanation: `Sec. 20.01(2) lists two ways to abduct: (A) secreting/hiding, or (B) using or threatening to use deadly force.`
+                },
+                {
+                    question: `Which of the following is included in the definition of "Relative" under Sec. 20.01(3)?`,
+                    options: [`A close family friend.`, `A cousin.`, `A sibling or uncle.`, `A godparent.`],
+                    answer: `A sibling or uncle.`,
+                    explanation: `Sec. 20.01(3) defines "Relative" as a parent, stepparent, ancestor, sibling, or uncle or aunt.`
+                },
+                {
+                    question: `Under Sec. 20.01(5), an "individual" is a human being who...`,
+                    options: [`Has a heartbeat.`, `Is viable outside the womb.`, `Has been born and is alive.`, `Is not a corporation or entity.`],
+                    answer: `Has been born and is alive.`,
+                    explanation: `Sec. 20.01(5) gives a specific definition for this chapter, 'a human being who has been born and is alive.'`
+                },
+                {
+                    question: `What is the mental state for Unlawful Restraint (Sec. 20.02)?`,
+                    options: [`Intentionally or Knowingly.`, `Recklessly.`, `Criminal Negligence.`, `Intentionally, Knowingly, or Recklessly.`],
+                    answer: `Intentionally or Knowingly.`,
+                    explanation: `Sec. 20.02(a) states: 'if he intentionally or knowingly restrains another person.'`
+                },
+                {
+                    question: `What is the base punishment for Unlawful Restraint (Sec. 20.02)?`,
+                    options: [`Class C Misdemeanor.`, `Class B Misdemeanor.`, `Class A Misdemeanor.`, `State Jail Felony.`],
+                    answer: `Class A Misdemeanor.`,
+                    explanation: `Sec. 20.02(c) sets the base offense as a Class A Misdemeanor.`
+                },
+                {
+                    question: `Unlawful Restraint is a State Jail Felony if...`,
+                    options: [`The actor uses a deadly weapon.`, `The person restrained was a child younger than 17.`, `The actor recklessly exposes the victim to SBI.`, `The actor is in custody.`],
+                    answer: `The person restrained was a child younger than 17.`,
+                    explanation: `Sec. 20.02(c)(1) enhances the offense to a State Jail Felony if the victim is younger than 17.`
+                },
+                {
+                    question: `Unlawful Restraint is a Felony of the Third Degree if the actor restrains a public servant OR...`,
+                    options: [`The victim is < 17.`, `The actor recklessly exposes the victim to SBI.`, `The actor restrains a peace officer.`, `The actor is a relative.`],
+                    answer: `The actor recklessly exposes the victim to SBI.`,
+                    explanation: `Sec. 20.02(c)(2) lists three ways to get an F3: (A) risk of SBI, (B) restrains public servant, or (C) actor is in custody.`
+                },
+                {
+                    question: `Unlawful Restraint is a Felony of the Third Degree if the actor, while in custody, restrains any other person OR...`,
+                    options: [`Recklessly exposes the victim to a substantial risk of SBI.`, `Restrains a public servant.`, `Restrains a child < 17.`, `Both A and B.`],
+                    answer: `Both A and B.`,
+                    explanation: `Sec. 20.02(c)(2) lists three F3 enhancements: (A) risk of SBI, (B) restrains public servant, or (C) actor is in custody.`
+                },
+                {
+                    question: `Unlawful Restraint of a peace officer or judge is what level of offense?`,
+                    options: [`Class A Misdemeanor.`, `State Jail Felony.`, `Felony of the Third Degree.`, `Felony of the Second Degree.`],
+                    answer: `Felony of the Second Degree.`,
+                    explanation: `Sec. 20.02(c)(3) provides a specific, higher enhancement for restraining a peace officer or judge (F2) than for a general public servant (F3).`
+                },
+                {
+                    question: `A person detains another for the purpose of a lawful citizen's arrest. What offense? (Sec. 20.02(d))`,
+                    options: [`Unlawful Restraint (Class A).`, `Unlawful Restraint (SJF).`, `It is no offense.`, `Kidnapping.`],
+                    answer: `It is no offense.`,
+                    explanation: `Sec. 20.02(d) states: 'It is no offense to detain or move another... when it is for the purpose of effecting a lawful arrest...'`
+                },
+                {
+                    question: `It is an affirmative defense to Unlawful Restraint if the victim is 13, the actor is a relative, AND...`,
+                    options: [`The actor's sole intent was to assume lawful control.`, `The actor did not use deadly force.`, `The actor did not move the child.`, `The child acquiesced.`]
+                    ,answer: `The actor's sole intent was to assume lawful control.`,
+                    explanation: `Sec. 20.02(b) provides this affirmative defense: (1) victim < 14, (2) actor is a relative, and (3) actor's sole intent was to assume lawful control.`
+                },
+                {
+                    question: `It is an affirmative defense to Unlawful Restraint of a 15-year-old if the actor is 17 AND...`,
+                    options: [`The actor is a relative.`, `The actor does not use force, intimidation, or deception.`, `The actor's sole intent is to assume lawful control.`, `The actor does not move the victim.`]
+                    ,answer: `The actor does not use force, intimidation, or deception.`,
+                    explanation: `Sec. 20.02(e) provides this defense if (1) victim is 14-17, (2) actor uses no force/intim/deception, and (3) actor is not more than 3 years older.`
+                },
+                {
+                    question: `What is the offense under Sec. 20.03 (Kidnapping)?`,
+                    options: [`Intentionally or knowingly restrains another.`, `Intentionally or knowingly abducts another.`, `Intentionally or knowingly abducts another for ransom.`, `Recklessly abducts another.`],
+                    answer: `Intentionally or knowingly abducts another.`,
+                    explanation: `Sec. 20.03(a) states: 'if he intentionally or knowingly abducts another person.'`
+                },
+                {
+                    question: `What is the punishment for Kidnapping (Sec. 20.03)?`,
+                    options: [`State Jail Felony.`, `Felony of the Third Degree.`, `Felony of the Second Degree.`, `Felony of the First Degree.`],
+                    answer: `Felony of the Third Degree.`,
+                    explanation: `Sec. 20.03(c) states the offense is a Felony of the Third Degree.`
+                },
+                {
+                    question: `Which is *NOT* an element of the affirmative defense to Kidnapping under Sec. 20.03(b)?`,
+                    options: [`The actor was a relative.`, `The actor's sole intent was to assume lawful control.`, `The abduction was not coupled with intent to use deadly force.`, `The victim was younger than 14.`],
+                    answer: `The victim was younger than 14.`,
+                    explanation: `The Kidnapping defense in 20.03(b) requires (1) relative, (2) intent to assume control, and (3) no intent to use deadly force. It does not have an age requirement (unlike the Unlawful Restraint defense).`
+                },
+                {
+                    question: `A person abducts another with the intent to hold them for ransom. What offense? (Sec. 20.04(a))`,
+                    options: [`Kidnapping.`, `Aggravated Kidnapping.`, `Unlawful Restraint.`, `Terroristic Threat.`],
+                    answer: `Aggravated Kidnapping.`,
+                    explanation: `Sec. 20.04(a)(1) makes abducting with intent to 'hold him for ransom or reward' Aggravated Kidnapping.`
+                },
+                {
+                    question: `A person abducts another and uses them as a human shield. What offense? (Sec. 20.04(a))`,
+                    options: [`Kidnapping.`, `Aggravated Kidnapping.`, `Unlawful Restraint.`, `Deadly Conduct.`],
+                    answer: `Aggravated Kidnapping.`,
+                    explanation: `Sec. 20.04(a)(2) makes abducting with intent to 'use him as a shield or hostage' Aggravated Kidnapping.`
+                },
+                {
+                    question: `A person abducts another with the intent to inflict bodily injury OR...`,
+                    options: [`Commit a felony.`, `Terrorize them.`, `Violate or abuse them sexually.`, `Hold them for ransom.`],
+                    answer: `Violate or abuse them sexually.`,
+                    explanation: `Sec. 20.04(a)(4) lists both 'inflict bodily injury on him or violate or abuse him sexually.'`
+                },
+                {
+                    question: `A person abducts another to facilitate the commission of a felony. What offense? (Sec. 20.04(a))`,
+                    options: [`Kidnapping.`, `Aggravated Kidnapping.`, `Unlawful Restraint.`, `The underlying felony only.`],
+                    answer: `Aggravated Kidnapping.`,
+                    explanation: `Sec. 20.04(a)(3) makes abducting to 'facilitate the commission of a felony' Aggravated Kidnapping.`
+                },
+                {
+                    question: `A person abducts a bank teller with the intent to terrorize the bank manager into opening a vault. What offense?`,
+                    options: [`Kidnapping.`, `Aggravated Kidnapping.`, `Unlawful Restraint.`, `Terroristic Threat.`],
+                    answer: `Aggravated Kidnapping.`,
+                    explanation: `Sec. 20.04(a)(5) makes it Aggravated Kidnapping to abduct with intent to 'terrorize him or a third person.'`
+                },
+                {
+                    question: `A person abducts a city council member to prevent them from voting on an ordinance. What offense?`,
+                    options: [`Kidnapping.`, `Aggravated Kidnapping.`, `Unlawful Restraint.`, `Interference with Public Duties.`],
+                    answer: `Aggravated Kidnapping.`,
+                    explanation: `Sec. 20.04(a)(6) makes it Aggravated Kidnapping to abduct with intent to 'interfere with the performance of any governmental or political function.'`
+                },
+                {
+                    question: `A person abducts someone and, during the abduction, exhibits a deadly weapon. What offense? (Sec. 20.04(b))`,
+                    options: [`Kidnapping (F3).`, `Aggravated Kidnapping (F1).`, `Unlawful Restraint (F3).`, `Aggravated Assault (F2).`],
+                    answer: `Aggravated Kidnapping (F1).`,
+                    explanation: `Sec. 20.04(b) provides a separate path to Aggravated Kidnapping: 'abducts another person AND uses or exhibits a deadly weapon.' The punishment is F1 per (c).`
+                },
+                {
+                    question: `What is the base punishment for Aggravated Kidnapping (Sec. 20.04)?`,
+                    options: [`Felony of the Third Degree.`, `Felony of the Second Degree.`, `Felony of the First Degree.`, `Capital Felony.`],
+                    answer: `Felony of the First Degree.`,
+                    explanation: `Sec. 20.04(c) sets the base punishment as a Felony of the First Degree.`
+                },
+                {
+                    question: `How can a defendant mitigate the punishment for Aggravated Kidnapping? (Sec. 20.04(d))`,
+                    options: [`Prove they are a relative.`, `Prove they did not use a deadly weapon.`, `Prove they voluntarily released the victim in a safe place.`, `Prove they did not intend to harm the victim.`],
+                    answer: `Prove they voluntarily released the victim in a safe place.`,
+                    explanation: `Sec. 20.04(d) allows the defendant to raise this issue at punishment.`
+                },
+                {
+                    question: `If a defendant proves "voluntary release in a safe place" for Aggravated Kidnapping, what is the standard of proof and the effect?`,
+                    options: [`Beyond a reasonable doubt; reduces to F2.`, `Preponderance of the evidence; reduces to F2.`, `Beyond a reasonable doubt; reduces to F3.`, `Preponderance of the evidence; reduces to F3.`],
+                    answer: `Preponderance of the evidence; reduces to F2.`,
+                    explanation: `Sec. 20.04(d) states the defendant must prove it by 'a preponderance of the evidence,' and the offense becomes a Felony of the Second Degree.`
+                },
+                {
+                    question: `A person uses a truck to transport an individual, intending to hide them from a peace officer. What offense? (Sec. 20.05)`,
+                    options: [`Kidnapping.`, `Unlawful Restraint.`, `Smuggling of Persons.`, `Evading Arrest.`],
+                    answer: `Smuggling of Persons.`,
+                    explanation: `Sec. 20.05(a)(1)(A) makes it an offense to use a conveyance to transport someone with intent to 'conceal the individual from a peace officer.'`
+                },
+                {
+                    question: `A person uses a car to transport someone while fleeing from a person they know is a LEO. What offense? (Sec. 20.05)`,
+                    options: [`Evading Arrest.`, `Smuggling of Persons.`, `Unlawful Restraint.`, `Kidnapping.`],
+                    answer: `Smuggling of Persons.`,
+                    explanation: `Sec. 20.05(a)(1)(B) makes it an offense to transport someone with intent to 'flee from a person the actor knows is a peace officer.'`
+                },
+                {
+                    question: `A person "encourages or induces" someone to remain in the US in violation of federal law by "harboring" them. What offense? (Sec. 20.05)`,
+                    options: [`No offense in Texas.`, `Smuggling of Persons.`, `Kidnapping.`, `Unlawful Restraint.`],
+                    answer: `Smuggling of Persons.`,
+                    explanation: `Sec. 20.05(a)(2) covers encouraging/inducing by concealing, harboring, or shielding.`
+                },
+                {
+                    question: `A person guides *two or more* individuals onto agricultural land without the owner's consent. What offense? (Sec. 20.05)`,
+                    options: [`Criminal Trespass.`, `Smuggling of Persons.`, `No offense, it must be 5 or more people.`, `Kidnapping.`],
+                    answer: `Smuggling of Persons.`,
+                    explanation: `Sec. 20.05(a)(3) specifically criminalizes this act.`
+                },
+                {
+                    question: `What is the base punishment for Smuggling of Persons (Sec. 20.05)?`,
+                    options: [`Felony of the Third Degree.`, `Felony of the Second Degree.`, `Felony of the Third Degree with a 10-year term.`, `State Jail Felony.`],
+                    answer: `Felony of the Third Degree with a 10-year term.`,
+                    explanation: `Sec. 20.05(b) sets the base punishment as an F3 with a 10-year term.`
+                },
+                {
+                    question: `Smuggling of Persons (20.05) is enhanced to an F2 (w/ 10-yr min) if the actor commits the offense for pecuniary benefit OR...`,
+                    options: [`The smuggled individual is < 18.`, `The actor is a relative.`, `The actor has a prior conviction.`, `The offense occurs at night.`],
+                    answer: `The smuggled individual is < 18.`,
+                    explanation: `Sec. 20.05(b)(1) lists several F2 enhancements, including (B) victim < 18 and (C) pecuniary benefit.`
+                },
+                {
+                    question: `Smuggling of Persons (20.05) is enhanced to an F2 (w/ 10-yr min) if the actor possessed a firearm OR...`,
+                    options: [`Was fleeing from a LEO.`, `Was paid for the offense.`, `The victim was < 18.`, `All of the above.`],
+                    answer: `All of the above.`,
+                    explanation: `Sec. 20.05(b)(1) lists (B) child < 18, (C) pecuniary benefit, (D) possessed firearm, and (E) fleeing from LEO as F2 enhancements.`
+                },
+                {
+                    question: `Which is an F2 enhancement for Smuggling of Persons (20.05)?`,
+                    options: [`The smuggled individual suffers SBI.`, `The actor commits the offense in a manner that creates a substantial likelihood of SBI or death.`, `The actor is related to the victim.`, `The victim becomes a victim of Sexual Assault.`],
+                    answer: `The actor commits the offense in a manner that creates a substantial likelihood of SBI or death.`,
+                    explanation: `Sec. 20.05(b)(1)(A) lists 'creates a substantial likelihood' as an F2 enhancement. If SBI *actually* occurs, it's an F1 enhancement per (b)(2)(B).`
+                },
+                {
+                    question: `Smuggling of Persons (20.05) is enhanced to an F1 (w/ 10-yr min) if, as a direct result, the smuggled individual...`,
+                    options: [`Suffers SBI or death.`, `Becomes a victim of Sexual Assault.`, `Becomes a victim of Aggravated Sexual Assault.`, `All of the above.`],
+                    answer: `All of the above.`,
+                    explanation: `Sec. 20.05(b)(2) lists (A) SA or Agg SA, or (B) SBI or death as F1 enhancements.`
+                },
+                {
+                    question: `It is an affirmative defense to Smuggling of Persons (20.05) if the actor is related to the individual within what degree?`,
+                    options: [`First degree.`, `Second degree.`, `Third degree.`, `Any degree.`],
+                    answer: `Second degree.`,
+                    explanation: `Sec. 20.05(c) provides an affirmative defense for relation 'within the second degree of consanguinity or... affinity.'`
+                },
+                {
+                    question: `How can a defendant in a Smuggling of Persons (20.05) case (F3) get their minimum term reduced from 10 to 5 years?`,
+                    options: [`By providing "significant cooperation" OR proving they are related in the 3rd degree.`, `By proving they did not use a weapon.`, `By proving they are related in the 2nd degree.`, `By pleading guilty.`]
+                    ,answer: `By providing "significant cooperation" OR proving they are related in the 3rd degree.`,
+                    explanation: `Sec. 20.05(b-1) allows mitigation for "significant cooperation" and (b-2) allows mitigation for being related in the 3rd degree.`
+                },
+                {
+                    question: `What is "significant cooperation" under Sec. 20.05(b-1)?`,
+                    options: [`Testifying for the state.`, `Providing relevant information about the case/parties.`, `Providing information that aids law enforcement.`, `All of the above.`],
+                    answer: `All of the above.`,
+                    explanation: `Sec. 20.05(b-1) lists all these as examples of "significant cooperation."`
+                },
+                {
+                    question: `The affirmative defense for being related (2nd degree) in 20.05(c) does *not* apply if the offense was punishable under (b)(1)(A) or (b)(2), which means...`,
+                    options: [`The defense is not available if the actor was paid.`, `The defense is not available if the actor used a firearm.`, `The defense is not available if the offense created a likelihood of SBI/death or resulted in SA/SBI/death.`, `The defense is not available if the victim was < 18.`]
+                    ,answer: `The defense is not available if the offense created a likelihood of SBI/death or resulted in SA/SBI/death.`,
+                    explanation: `Sec. 20.05(c) creates an exception to the defense, stating it's not available for (b)(1)(A) (likelihood of SBI/death) or (b)(2) (resulted in SA/Agg SA/SBI/death).`
+                },
+                {
+                    question: `What is the offense of Continuous Smuggling of Persons (Sec. 20.06)?`,
+                    options: [`Smuggling 10 or more people at one time.`, `Committing smuggling 2 or more times during a period of 10 or more days.`, `Committing smuggling 10 or more times.`, `Committing smuggling against a child < 10.`]
+                    ,answer: `Committing smuggling 2 or more times during a period of 10 or more days.`,
+                    explanation: `Sec. 20.06(a) requires 'two or more times' in 'a period that is 10 or more days in duration.'`
+                },
+                {
+                    question: `What is the base punishment for Continuous Smuggling of Persons (Sec. 20.06)?`,
+                    options: [`F3 with a 10-year min.`, `F2 with a 10-year min.`, `F1 with a 10-year min.`, `F1 with a 25-year min.`],
+                    answer: `F2 with a 10-year min.`,
+                    explanation: `Sec. 20.06(e) sets the base punishment as an F2 with a 10-year minimum.`
+                },
+                {
+                    question: `Continuous Smuggling of Persons (Sec. 20.06) is enhanced to an F1 with a *25-year minimum* if...`,
+                    options: [`The victim is < 18.`, `The actor created a likelihood of SBI.`, `The victim suffers SA, Agg SA, SBI, or death.`, `The actor was paid.`],
+                    answer: `The victim suffers SA, Agg SA, SBI, or death.`,
+                    explanation: `Sec. 20.06(g) provides the highest enhancement (F1 w/ 25-yr min or life) if the victim suffers SA, Agg SA, SBI, or death.`
+                },
+                {
+                    question: `Continuous Smuggling of Persons (Sec. 20.06) is enhanced to an F1 with a *10-year minimum* if...`,
+                    options: [`The victim is < 18 or there was a likelihood of SBI/death.`, `The actor was paid.`, `The actor used a firearm.`, `The victim suffers SBI or death.`],
+                    answer: `The victim is < 18 or there was a likelihood of SBI/death.`,
+                    explanation: `Sec. 20.06(f) provides the F1 w/ 10-year min enhancement if (1) likelihood of SBI/death or (2) victim < 18.`
+                },
+                {
+                    question: `Under Sec. 20.06(b), a jury must be unanimous that...`,
+                    options: [`The actor committed 2 specific acts on 2 specific dates.`, `The actor engaged 2 or more times in smuggling conduct over a 10+ day period.`, `The actor smuggled at least 10 people.`, `The actor was paid for every act.`]
+                    ,answer: `The actor engaged 2 or more times in smuggling conduct over a 10+ day period.`,
+                    explanation: `Sec. 20.06(b) states the jury *is not* required to agree on specific conduct or exact dates, just on the general elements.`
+                },
+                {
+                    question: `A defendant is charged with 20.06 (Continuous) and 20.05 (Smuggling) for the same victim in the same action. This is...`,
+                    options: [`Allowed under 20.06(c).`, `Not allowed, unless one of the exceptions in 20.06(c) applies.`, `Standard procedure.`, `Allowed only if the victim is < 18.`],
+                    answer: `Not allowed, unless one of the exceptions in 20.06(c) applies.`,
+                    explanation: `Sec. 20.06(c) states a defendant *may not* be convicted of both in the same action, *unless* it's charged in the alternative, occurred outside the period, or is a lesser included.`
+                },
+                {
+                    question: `A defendant is charged with two counts of 20.06 (Continuous) for acts committed against the *same victim*. This is...`,
+                    options: [`Allowed if the acts occurred in different counties.`, `Not allowed under Sec. 20.06(d).`, `Allowed if the acts were more than 10 days apart.`, `Not allowed unless a firearm was used.`]
+                    ,answer: `Not allowed under Sec. 20.06(d).`,
+                    explanation: `Sec. 20.06(d) states: 'A defendant may not be charged with more than one count under Subsection (a) if all of the conduct... is alleged to have been committed against the same victim.'`
+                },
+                {
+                    question: `What is the offense of Operation of Stash House (Sec. 20.07)?`,
+                    options: [`Knowingly using or permits use of property to facilitate smuggling/trafficking.`, `Being present in a location where smuggling occurs.`, `Owning property where smuggling occurs.`, `Transporting 2 or more people.`]
+                    ,answer: `Knowingly using or permits use of property to facilitate smuggling/trafficking.`,
+                    explanation: `Sec. 20.07(a)(1) defines the offense as 'knowingly' 'uses or permits another to use' property to commit or facilitate listed offenses (like 20.05 or 20.06).`
+                },
+                {
+                    question: `Renting property to another *intending* it be used as a stash house is...`,
+                    options: [`No offense, only *using* it is an offense.`, `An offense under Sec. 20.07(a)(2).`, `A federal offense only.`, `A Class A Misdemeanor.`],
+                    answer: `An offense under Sec. 20.07(a)(2).`,
+                    explanation: `Sec. 20.07(a)(2) makes it an offense to 'rents or leases any property to another, intending that the property be used' as a stash house.`
+                },
+                {
+                    question: `What is the base punishment for Operation of Stash House (Sec. 20.07)?`,
+                    options: [`F3 with a 5-year min.`, `F2 with a 5-year min.`, `F3 with a 10-year min.`, `F2 with a 10-year min.`],
+                    answer: `F3 with a 5-year min.`,
+                    explanation: `Sec. 20.07(b) sets the base punishment as an F3 with a 5-year minimum.`
+                },
+                {
+                    question: `Operation of Stash House (Sec. 20.07) is enhanced to an F2 (w/ 5-yr min) if the property was used to facilitate...`,
+                    options: [`Smuggling of Persons (20.05).`, `Continuous Smuggling of Persons (20.06).`, `Any felony.`, `Kidnapping (20.03).`],
+                    answer: `Continuous Smuggling of Persons (20.06).`,
+                    explanation: `Sec. 20.07(b)(1) enhances the offense if the property was used for the more serious offenses, including *Continuous* Smuggling (20.06) or trafficking (20A.03, 43.05).`
+                },
+                {
+                    question: `Operation of Stash House (Sec. 20.07) is enhanced to an F2 (w/ 5-yr min) if, as a direct result...`,
+                    options: [`The actor was paid.`, `A firearm was used.`, `A victim suffers SA, Agg SA, SBI, or death.`, `The victim was < 18.`],
+                    answer: `A victim suffers SA, Agg SA, SBI, or death.`,
+                    explanation: `Sec. 20.07(b)(2) provides an enhancement if the offense results in SA, Agg SA, SBI, or death.`
+                },
+                {
+                    question: `If conduct constitutes Operation of Stash House (20.07) and Smuggling (20.05), the actor...`,
+                    options: [`Must be prosecuted for 20.07 only.`, `Must be prosecuted for 20.05 only.`, `May be prosecuted under either section or both.`, `Must be prosecuted under federal law.`]
+                    ,answer: `May be prosecuted under either section or both.`,
+                    explanation: `Sec. 20.07(c) explicitly states: 'the actor may be prosecuted under this section, the other law, or both.'`
+                },
+                {
+                    question: `Under Sec. 20.01, a "Special Investigator" includes an agent of...`,
+                    options: [`The FBI.`, `The DEA.`, `The US Department of Homeland Security.`, `The Texas Rangers.`],
+                    answer: `The US Department of Homeland Security.`,
+                    explanation: `Sec. 20.01(8) specifically 'includes an agent of the United States Department of Homeland Security.'`
+                },
+                {
+                    question: `A person knowingly assists *one* individual to enter agricultural land without consent. What offense?`,
+                    options: [`Smuggling of Persons (20.05).`, `Criminal Trespass.`, `No offense.`, `Kidnapping.`],
+                    answer: `Criminal Trespass.`,
+                    explanation: `Smuggling of Persons under Sec. 20.05(a)(3) requires assisting 'two or more individuals.' Assisting only one would likely be Criminal Trespass.`
+                },
+                {
+                    question: `What kind of "entity" can be a "Person" under Sec. 20.01(4)?`,
+                    options: [`An individual only.`, `A human being born and alive.`, `A corporation, association, or limited liability company.`, `A peace officer or special investigator.`],
+                    answer: `A corporation, association, or limited liability company.`,
+                    explanation: `Sec. 20.01(4) gives a broad definition of "Person" that includes business entities, while Sec. 20.01(5) gives a separate, specific definition for "individual."`
+                }
+            ];
+
+
+            const quizContainer = document.getElementById('quiz-container');
+            const checkAnswersBtn = document.getElementById('check-answers-btn');
+            const retakeQuizBtn = document.getElementById('retake-quiz-btn');
+            const quizResultsDiv = document.getElementById('quiz-results');
+            const quizScoreEl = document.getElementById('quiz-score');
+            const quizPercentageEl = document.getElementById('quiz-percentage');
+
+            function loadQuiz() {
+                // Shuffle the quiz data for a new order each time
+                const shuffledQuizData = [...quizData].sort(() => Math.random() - 0.5);
+                
+                quizContainer.innerHTML = ''; // Clear previous questions
+                
+                shuffledQuizData.forEach((q, index) => {
+                    const questionDiv = document.createElement('div');
+                    questionDiv.className = 'quiz-question';
+                    
+                    // Store the original question index to check the answer later
+                    const originalIndex = quizData.indexOf(q);
+                    
+                    let optionsHtml = q.options.map(option => {
+                        // Use template literals for the value to handle any special characters
+                        const escapedOption = `${option}`;
+                        return `<label class="block"><input type="radio" name="q${index}" value="${escapedOption.replace(/"/g, '&quot;')}" data-original-index="${originalIndex}" class="mr-2">${option}</label>`;
+                    }).join('');
+                    
+                    const escapedQuestion = q.question;
+
+                    questionDiv.innerHTML = `
+                        <p class="font-semibold mb-2">${index + 1}. ${escapedQuestion}</p>
+                        <div class="space-y-2">${optionsHtml}</div>
+                        <div class="feedback hidden mt-2 p-2 rounded-lg text-sm"></div>
+                    `;
+                    quizContainer.appendChild(questionDiv);
+                });
+            }
+
+
+            loadQuiz(); // Initial load
+
+            checkAnswersBtn.addEventListener('click', () => {
+                let score = 0;
+                const totalQuestions = quizData.length;
+                const questions = quizContainer.querySelectorAll('.quiz-question');
+
+                questions.forEach((questionDiv, index) => {
+                    const selected = questionDiv.querySelector(`input[name="q${index}"]:checked`);
+                    const feedback = questionDiv.querySelector('.feedback');
+                    const radioButtons = questionDiv.querySelectorAll(`input[name="q${index}"]`);
+                    
+                    feedback.classList.remove('hidden', 'bg-green-100', 'text-green-800', 'bg-red-100', 'text-red-800', 'bg-yellow-100', 'text-yellow-800');
+                    
+                    if (selected) {
+                        const originalIndex = selected.dataset.originalIndex;
+                        const q = quizData[originalIndex];
+
+                        // Compare the selected value with the answer
+                        if (selected.value === q.answer.replace(/"/g, '&quot;')) {
+                            score++;
+                            feedback.textContent = `Correct! ${q.explanation}`;
+                            feedback.classList.add('bg-green-100', 'text-green-800');
+                        } else {
+                            feedback.textContent = `Incorrect. The correct answer is "${q.answer}". ${q.explanation}`;
+                            feedback.classList.add('bg-red-100', 'text-red-800');
+                        }
+                    } else {
+                        // Find the original question to show the answer
+                        const firstRadio = questionDiv.querySelector(`input[name="q${index}"]`);
+                        const originalIndex = firstRadio.dataset.originalIndex;
+                        const q = quizData[originalIndex];
+                        
+                        feedback.textContent = `You did not answer this question. The correct answer is "${q.answer}". ${q.explanation}`;
+                        feedback.classList.add('bg-yellow-100', 'text-yellow-800');
+                    }
+                    
+                    // Disable radio buttons after submitting
+                    radioButtons.forEach(radio => {
+                        radio.disabled = true;
+                    });
+                });
+
+                // Calculate and display results
+                const percentage = ((score / totalQuestions) * 100).toFixed(0);
+                quizScoreEl.textContent = `Your Score: ${score} / ${totalQuestions}`;
+                quizPercentageEl.textContent = `Percentage: ${percentage}%`;
+                
+                quizResultsDiv.classList.remove('hidden');
+                checkAnswersBtn.classList.add('hidden');
+                retakeQuizBtn.classList.remove('hidden');
+            });
+
+            retakeQuizBtn.addEventListener('click', () => {
+                // Hide results and retake button
+                quizResultsDiv.classList.add('hidden');
+                retakeQuizBtn.classList.add('hidden');
+                
+                // Show submit button
+                checkAnswersBtn.classList.remove('hidden');
+                
+                // Reload the quiz (clears answers and feedback)
+                loadQuiz();
+            });
+
+
+            // --- RESOURCES LIST ---
+            const resources = [
+                { name: "Texas Penal Code - Official Site", url: "https://statutes.capitol.texas.gov/Default.aspx?Code=PE" },
+                { name:"Penal Code Ch. 20 - Kidnapping, Unlawful Restraint...", url: "https://statutes.capitol.texas.gov/Docs/PE/htm/PE.20.htm" },
+                { name: "CCP Ch. 75 - Contraband", url: "https://statutes.capitol.texas.gov/Docs/CP/htm/CP.75.htm" }
+            ];
+            const resourcesList = document.getElementById('resources-list');
+            resources.sort((a, b) => a.name.localeCompare(b.name));
+            resources.forEach(res => {
+                const link = document.createElement('a'); // Use an anchor tag for links
+                link.href = res.url;
+                link.target = '_blank';
+                link.rel = 'noopener noreferrer'; // Good practice for security
+                link.className = 'text-blue-600 hover:underline p-2 bg-gray-50 rounded-md block hover:bg-gray-100';
+                link.innerHTML = `<i class="fas fa-external-link-alt mr-2"></i>${res.name}`;
+                resourcesList.appendChild(link);
+            });
+        });
+    </script>
+</body>
+</html>
+

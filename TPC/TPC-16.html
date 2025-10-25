@@ -1,0 +1,763 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ch. 16 Study Guide: Texas Penal Code</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet">
+    <style>
+        :root {
+            --header-bg: #1f2937;
+            --bg-color: #f3f4f6;
+            --tab-active-bg: #3b82f6;
+            --tab-active-text: #ffffff;
+            --card-bg: #ffffff;
+            --text-color: #111827;
+            --link-color: #2563eb;
+        }
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            font-family: 'Inter', sans-serif;
+        }
+        @import url('https://rsms.me/inter/inter.css');
+        .tab-content { display: none; }
+        .tab-content.active { display: block; }
+        .tab.active {
+            background-color: var(--tab-active-bg);
+            color: var(--tab-active-text);
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .tab {
+            transition: all 0.3s ease-in-out;
+        }
+        .grid-definitions {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 1rem;
+        }
+        .definition-card {
+            background-color: #f9fafb;
+            border: 1px solid #e5e7eb;
+            border-left: 4px solid var(--tab-active-bg);
+            padding: 1rem;
+            border-radius: 0.5rem;
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Header -->
+    <header class="bg-gray-800 text-white p-4 shadow-md">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-xl md:text-2xl font-bold">
+                <i class="fas fa-user-secret mr-2"></i>Ch. 16: Criminal Instruments & Interception
+            </h1>
+            <a href="index.html" class="text-sm text-blue-300 hover:text-blue-100 hover:underline">
+                <i class="fas fa-arrow-left mr-1"></i> Back to Main Page
+            </a>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container mx-auto p-4 md:p-6">
+        <!-- Tab Navigation -->
+        <div class="mb-6 bg-white rounded-lg shadow-md overflow-x-auto">
+            <nav id="tabs" class="flex flex-row space-x-1 p-2">
+                <button data-tab="ch16-sections-1" class="tab active flex-1 md:flex-none flex items-center justify-center px-4 py-2 text-sm font-semibold rounded-lg text-gray-600 hover:bg-blue-100">
+                    <i class="fas fa-tools mr-2"></i> <span class="hidden md:inline">Sec 16.01 - 16.02</span>
+                </button>
+                <button data-tab="ch16-sections-2" class="tab flex-1 md:flex-none flex items-center justify-center px-4 py-2 text-sm font-semibold rounded-lg text-gray-600 hover:bg-blue-100">
+                    <i class="fas fa-satellite-dish mr-2"></i> <span class="hidden md:inline">Sec 16.03 - 16.06</span>
+                </button>
+                <button data-tab="ch16-definitions" class="tab flex-1 md:flex-none flex items-center justify-center px-4 py-2 text-sm font-semibold rounded-lg text-gray-600 hover:bg-blue-100">
+                    <i class="fas fa-book mr-2"></i> <span class="hidden md:inline">Key Definitions</span>
+                </button>
+                <button data-tab="knowledge-check" class="tab flex-1 md:flex-none flex items-center justify-center px-4 py-2 text-sm font-semibold rounded-lg text-gray-600 hover:bg-blue-100">
+                    <i class="fas fa-question-circle mr-2"></i> <span class="hidden md:inline">Knowledge Check</span>
+                </button>
+                <button data-tab="resources" class="tab flex-1 md:flex-none flex items-center justify-center px-4 py-2 text-sm font-semibold rounded-lg text-gray-600 hover:bg-blue-100">
+                    <i class="fas fa-link mr-2"></i> <span class="hidden md:inline">Resources</span>
+                </button>
+            </nav>
+        </div>
+
+        <!-- Tab Content -->
+        <div id="tab-contents">
+            <!-- Ch. 16: Sections 16.01 / 16.02 Tab -->
+            <div id="ch16-sections-1" class="tab-content active space-y-6">
+                
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-xl font-bold mb-4 border-b pb-2"><a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.16.htm#16.01" target="_blank" class="text-blue-600 hover:underline">Sec. 16.01. Unlawful Use of Criminal Instrument or Mechanical Security Device</a></h2>
+                    <div class="space-y-4 text-sm">
+                        <h3 class="font-semibold">Offenses:</h3>
+                        <ul class="list-disc list-inside ml-4 text-gray-700 space-y-2">
+                            <li><strong class="font-semibold">(a)(1) Possession:</strong> A person commits an offense if they <strong class="font-semibold">possess</strong> a criminal instrument or mechanical security device with the <strong class="font-semibold">intent to use it</strong> in committing an offense.</li>
+                            <li><strong class="font-semibold">(a)(2) Manufacture/Sell:</strong> A person commits an offense if, with knowledge and intent to aid in an offense, they <strong class="font-semibold">manufacture, adapt, sell, install, or set up</strong> the instrument/device.</li>
+                        </ul>
+                        <h3 class="font-semibold">Punishment (c):</h3>
+                        <ul class="list-disc list-inside ml-4 text-gray-700 space-y-2">
+                            <li><strong class="font-semibold">Possession (a)(1):</strong> <strong class="font-semibold">One category lower</strong> than the offense intended.</li>
+                            <li><strong class="font-semibold">Manufacture/Sell (a)(2):</strong> <strong class="font-semibold">State Jail Felony</strong>.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-xl font-bold mb-4 border-b pb-2"><a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.16.htm#16.02" target="_blank" class="text-blue-600 hover:underline">Sec. 16.02. Unlawful Interception, Use, or Disclosure of Wire, Oral, or Electronic Communications</a></h2>
+                    <div class="space-y-4 text-sm">
+                        <h3 class="font-semibold">Primary Offenses (b):</h3>
+                        <p class="text-gray-700">A person commits an offense if they intentionally:</p>
+                        <ul class="list-disc list-inside ml-4 text-gray-700 space-y-2">
+                            <li><strong class="font-semibold">(b)(1) Intercept:</strong> Intercept, try to intercept, or get someone else to intercept a wire, oral, or electronic communication.</li>
+                            <li><strong class="font-semibold">(b)(2) Disclose:</strong> Disclose the contents of a communication if they know it was obtained in violation of this section.</li>
+                            <li><strong class="font-semibold">(b)(3) Use:</strong> Use the contents of a communication if they know (or are reckless) it was obtained in violation of this section.</li>
+                            <li><strong class="font-semibold">(b)(4) Covert Entry:</strong> Knowingly effect a covert entry to intercept a communication without a court order.</li>
+                            <li><strong class="font-semibold">(b)(5) Device on Wire:</strong> Use a device to intercept an *oral* communication when the device is *affixed to* a wire/cable or transmits by radio.</li>
+                        </ul>
+                        <h3 class="font-semibold">Device / Notice Offenses:</h3>
+                         <ul class="list-disc list-inside ml-4 text-gray-700 space-y-2">
+                            <li><strong class="font-semibold">(d)(1) Manufacture/Possess/Sell Device:</strong> Intentionally manufacture, possess, or sell an interception device knowing it's designed for nonconsensual interception and will be used unlawfully.</li>
+                            <li><strong class="font-semibold">(d)(2) Advertise Device:</strong> Place an ad for an interception device promoting its nonconsensual use.</li>
+                            <li><strong class="font-semibold">(g) Give Notice of Interception:</strong> Knowing a LEO is authorized to intercept, gives notice to another person of the interception.</li>
+                        </ul>
+                        <h3 class="font-semibold">Key Provisions & Punishments (f):</h3>
+                        <ul class="list-disc list-inside ml-4 text-gray-700 space-y-2">
+                            <li><strong class="font-semibold">(c) & (e) Affirmative Defenses:</strong> This section provides <strong class="font-semibold">many specific affirmative defenses</strong> (e.g., a party to the call consents, LEO with a warrant, carrier protecting property, LEO in life-threatening situation, intercepting computer trespasser, etc.).</li>
+                            <li><strong class="font-semibold">(f) Punishment:</strong>
+                                <ul class="list-disc list-inside ml-6">
+                                    <li>Main Offenses (b): <strong class="font-semibold">Second Degree Felony</strong>.</li>
+                                    <li>Device (d) or Notice (g) Offenses: <strong class="font-semibold">State Jail Felony</strong>.</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Ch. 16: Sections 16.03 - 16.06 Tab -->
+            <div id="ch16-sections-2" class="tab-content space-y-6">
+
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-xl font-bold mb-4 border-b pb-2"><a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.16.htm#16.03" target="_blank" class="text-blue-600 hover:underline">Sec. 16.03. Unlawful Use of Pen Register or Trap and Trace Device</a></h2>
+                    <div class="space-y-4 text-sm">
+                        <ul class="list-disc list-inside text-gray-700 space-y-2">
+                            <li><strong class="font-semibold">Offense (a):</strong> Knowingly <strong class="font-semibold">installs or uses</strong> a pen register or trap and trace device to record/decode numbers.</li>
+                            <li><strong class="font-semibold">Punishment (d):</strong> <strong class="font-semibold">State Jail Felony</strong>.</li>
+                            <li><strong class="font-semibold">Affirmative Defenses (c):</strong> It is a defense if the actor is a <strong class="font-semibold">communication carrier</strong> (for service protection/assisting LEO), a <strong class="font-semibold">lawful enterprise</strong> (for internal service protection, not for LEO), or a <strong class="font-semibold">person authorized</strong> by the CCP (e.g., LEO with an order).</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-xl font-bold mb-4 border-b pb-2"><a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.16.htm#16.04" target="_blank" class="text-blue-600 hover:underline">Sec. 16.04. Unlawful Access to Stored Communications</a></h2>
+                    <div class="space-y-4 text-sm">
+                        <ul class="list-disc list-inside text-gray-700 space-y-2">
+                            <li><strong class="font-semibold">Offense (b):</strong> Intentionally <strong class="font-semibold">obtains, alters, or prevents authorized access</strong> to a wire or electronic communication while it is in <strong class="font-semibold">electronic storage</strong> by (1) accessing a facility without authorization, or (2) exceeding authorization.</li>
+                            <li><strong class="font-semibold">Punishment (c):</strong> <strong class="font-semibold">Class A Misdemeanor</strong>.</li>
+                            <li><strong class="font-semibold">Enhancement (d):</strong> Becomes a <strong class="font-semibold">State Jail Felony</strong> if committed <strong class="font-semibold">"to obtain a benefit or to harm another."</strong></li>
+                            <li><strong class="font-semibold">Affirmative Defenses (e):</strong> It is a defense if the conduct was authorized by the <strong class="font-semibold">provider</strong>, the <strong class="font-semibold">user</strong>, the <strong class="font-semibold">addressee/recipient</strong>, or the CCP.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-xl font-bold mb-4 border-b pb-2"><a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.16.htm#16.05" target="_blank" class="text-blue-600 hover:underline">Sec. 16.05. Illegal Divulgence of Public Communications</a></h2>
+                    <div class="space-y-4 text-sm">
+                        <ul class="list-disc list-inside text-gray-700 space-y-2">
+                            <li><strong class="font-semibold">Offense (b):</strong> A <strong class="font-semibold">provider of electronic communications service</strong> to the public knowingly <strong class="font-semibold">divulges the contents</strong> of a communication to someone other than the intended recipient.</li>
+                            <li><strong class="font-semibold">Punishments (d), (e):</strong>
+                                <ul class="list-disc list-inside ml-6">
+                                    <li>If scrambled/encrypted: <strong class="font-semibold">State Jail Felony</strong>.</li>
+                                    <li>If *not* scrambled + for tortious purpose/benefit: <strong class="font-semibold">Class A Misdemeanor</strong>.</li>
+                                    <li>If *not* scrambled + for tortious purpose/benefit + is public mobile/paging: <strong class="font-semibold">Class C Misdemeanor</strong>.</li>
+                                </ul>
+                            </li>
+                            <li><strong class="font-semibold">Affirmative Defenses (c):</strong> It is a defense if divulged (1) as authorized by law, (2) to a person forwarding the communication, or (3) to a LEO if contents <strong class="font-semibold">"reasonably appear to pertain to the commission of a crime."</strong></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-xl font-bold mb-4 border-b pb-2"><a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.16.htm#16.06" target="_blank" class="text-blue-600 hover:underline">Sec. 16.06. Unlawful Installation of Tracking Device</a></h2>
+                    <div class="space-y-4 text-sm">
+                         <ul class="list-disc list-inside text-gray-700 space-y-2">
+                            <li><strong class="font-semibold">Offense (b):</strong> Knowingly <strong class="font-semibold">installs a tracking device</strong> on a motor vehicle <strong class="font-semibold">owned or leased by another person</strong>.</li>
+                            <li><strong class="font-semibold">Punishment (c):</strong> <strong class="font-semibold">Class A Misdemeanor</strong>.</li>
+                            <li><strong class="font-semibold">Affirmative Defenses (d):</strong> It is a defense if the actor (1) had <strong class="font-semibold">consent</strong> of the owner/lessee, (2) was <strong class="font-semibold">assisting a LEO</strong>, or (3) was a <strong class="font-semibold">licensed Private Investigator</strong> with written consent or a court order.</li>
+                            <li><strong class="font-semibold">Exemption (e):</strong> This section <strong class="font-semibold">does not apply</strong> to a peace officer acting in the course of a criminal investigation.</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Ch. 16: Key Definitions Tab -->
+            <div id="ch16-definitions" class="tab-content">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-xl font-bold mb-4 border-b pb-2">Key Definitions (Ch. 16)</h2>
+                    <p class="text-sm text-gray-600 mb-4">Note: Many technical terms (e.g., "intercept," "oral communication") are defined in the Code of Criminal Procedure (CCP) Chapters 18A and 18B.</p>
+                    <div class="grid-definitions">
+                        <div class="definition-card">
+                            <h3 class="font-bold text-gray-900">Criminal Instrument (16.01)</h3>
+                            <p class="text-sm text-gray-700">Anything, (that is not otherwise illegal to possess/make/sell), that is <strong class="font-semibold">specially designed, made, or adapted</strong> for use in the commission of an offense.</p>
+                        </div>
+                        <div class="definition-card">
+                            <h3 class="font-bold text-gray-900">Mechanical Security Device (16.01)</h3>
+                            <p class="text-sm text-gray-700">A device designed or manufactured for use by a <strong class="font-semibold">locksmith</strong> to perform services for a customer (e.g., lockpicks, slim jims).</p>
+                        </div>
+                        <div class="definition-card">
+                            <h3 class="font-bold text-gray-900">Electronic or Mechanical Tracking Device (16.06)</h3>
+                            <p class="text-sm text-gray-700">A device capable of emitting an electronic frequency or other signal that may be used by a person to identify, monitor, or record the <strong class="font-semibold">location</strong> of another person or object.</p>
+                        </div>
+                         <div class="definition-card">
+                            <h3 class="font-bold text-gray-900">Readily Accessible to the General Public (16.02)</h3>
+                            <p class="text-sm text-gray-700">A radio communication that is <strong class="font-semibold">NOT</strong>: scrambled or encrypted; using withheld modulation techniques; carried on a subcarrier; a common carrier system (with exceptions); or an electronic communication.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Knowledge Check Tab -->
+            <div id="knowledge-check" class="tab-content">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-2xl font-bold mb-4">Knowledge Check (Ch. 16)</h2>
+                    <p class="mb-6 text-gray-600">Test your understanding of the material. (62 Questions)</p>
+                    <div id="quiz-container" class="space-y-8">
+                        <!-- Questions will be dynamically inserted here -->
+                    </div>
+                    <!-- New Results Div -->
+                    <div id="quiz-results" class="hidden mt-8 text-center">
+                        <h3 class="text-2xl font-bold" id="quiz-score"></h3>
+                        <p class="text-lg text-gray-700" id="quiz-percentage"></p>
+                    </div>
+                    <!-- Button Container -->
+                    <div class="mt-8 text-center space-x-4">
+                        <button id="check-answers-btn" class="bg-blue-600 text-white font-bold py-2 px-6 rounded-lg hover:bg-blue-700 transition-colors">Submit Answers</button>
+                        <button id="retake-quiz-btn" class="hidden bg-gray-600 text-white font-bold py-2 px-6 rounded-lg hover:bg-gray-700 transition-colors">Retake Quiz</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Resources Tab -->
+            <div id="resources" class="tab-content">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-2xl font-bold mb-4">External Resources</h2>
+                    <p class="mb-6 text-gray-600">Quick links to official Texas statutes referenced in this chapter.</p>
+                    <div id="resources-list" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 text-sm">
+                        <!-- Links will be dynamically inserted here -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const tabs = document.querySelectorAll('#tabs button');
+            const tabContents = document.querySelectorAll('.tab-content');
+
+            tabs.forEach(tab => {
+                tab.addEventListener('click', () => {
+                    tabs.forEach(t => t.classList.remove('active'));
+                    tabContents.forEach(c => c.classList.remove('active'));
+                    tab.classList.add('active');
+                    document.getElementById(tab.dataset.tab).classList.add('active');
+                });
+            });
+
+            // --- QUIZ DATA (CHAPTER 16) ---
+            const quizData = [
+                {
+                    question: `Under Sec. 16.01, a person commits an offense if they possess a criminal instrument with...`,
+                    options: [`A previous felony conviction.`, `The intent to use it in the commission of an offense.`, `No locksmith license.`, `The intent to sell it to a third party.`],
+                    answer: `The intent to use it in the commission of an offense.`,
+                    explanation: `Sec. 16.01(a)(1) requires possession *with the intent to use* it in an offense.`
+                },
+                {
+                    question: `What is the punishment for *possessing* a criminal instrument with intent to use it to commit a 2nd Degree Felony? (Sec. 16.01(c))`,
+                    options: [`Second Degree Felony.`, `Third Degree Felony.`, `State Jail Felony.`, `Class A Misdemeanor.`],
+                    answer: `Third Degree Felony.`,
+                    explanation: `Sec. 16.01(c) states the offense is 'one category lower than the offense intended.' One category lower than a 2nd Degree Felony is a 3rd Degree Felony.`
+                },
+                {
+                    question: `What is the punishment for *manufacturing or selling* a criminal instrument with intent to aid in an offense? (Sec. 16.01(c))`,
+                    options: [`One category lower than the offense intended.`, `The same as the offense intended.`, `A State Jail Felony.`, `A Class A Misdemeanor.`],
+                    answer: `A State Jail Felony.`,
+                    explanation: `Sec. 16.01(c) makes the offense under (a)(2) (manufacture/sell) a State Jail Felony, regardless of the offense intended.`
+                },
+                {
+                    question: `Under Sec. 16.01(b)(1), what is a "Criminal Instrument"?`,
+                    options: [`Any item used in a crime.`, `Any firearm, knife, or club.`, `Anything specially designed, made, or adapted for use in committing an offense.`, `Any tool that requires a license to possess.`],
+                    answer: `Anything specially designed, made, or adapted for use in committing an offense.`,
+                    explanation: `The key is 'specially designed, made, or adapted.' A crowbar is not a criminal instrument unless it's 'adapted' (e.g., shaved down) to slip a lock.`
+                },
+                {
+                    question: `What is a "Mechanical Security Device" under Sec. 16.01(b)(2)?`,
+                    options: [`A computer firewall.`, `A burglar alarm.`, `A device designed for use by a locksmith.`, `An anti-theft car alarm.`],
+                    answer: `A device designed for use by a locksmith.`,
+                    explanation: `Sec. 16.01(b)(2) specifically defines this as a tool for locksmiths (e.g., lockpicks, slim jims).`
+                },
+                {
+                    question: `What is the default punishment for unlawful interception of a wire, oral, or electronic communication under Sec. 16.02(f)?`,
+                    options: [`State Jail Felony.`, `Second Degree Felony.`, `First Degree Felony.`, `Class A Misdemeanor.`],
+                    answer: `Second Degree Felony.`,
+                    explanation: `Sec. 16.02(f) states that an offense under this section (which includes subsection (b) interception) is a 2nd Degree Felony.`
+                },
+                {
+                    question: `A person finds a recording of an illegally intercepted phone call. He knows it's illegal but *uses* it to blackmail someone. What offense? (Sec. 16.02(b)(3))`,
+                    options: [`Theft.`, `No offense, he didn't make the recording.`, `Unlawful *use* of wire, oral, or electronic communication.`, `Unlawful *disclosure* of wire, oral, or electronic communication.`],
+                    answer: `Unlawful *use* of wire, oral, or electronic communication.`,
+                    explanation: `Sec. 16.02(b)(3) makes it an offense to intentionally *use* the contents of an illegally intercepted communication.`
+                },
+                {
+                    question: `A person *manufactures* a "bug" (interception device) to sell to PIs. What is the punishment under Sec. 16.02?`,
+                    options: [`Second Degree Felony.`, `Third Degree Felony.`, `State Jail Felony.`, `Class A Misdemeanor.`],
+                    answer: `State Jail Felony.`,
+                    explanation: `Sec. 16.02(d)(1) makes it an offense to manufacture/sell an interception device. Sec. 16.02(f) sets the punishment for an offense under (d) as a State Jail Felony.`
+                },
+                {
+                    question: `A person finds out a LEO has a lawful wiretap on his friend and warns his friend. What offense? (Sec. 16.02(g))`,
+                    options: [`No offense, this is free speech.`, `Tampering with Evidence.`, `An offense under Sec. 16.02(g) (giving notice).`, `Hindering Apprehension.`],
+                    answer: `An offense under Sec. 16.02(g) (giving notice).`,
+                    explanation: `Sec. 16.02(g) makes it a specific offense to give notice of an authorized interception. Per (f), this is a State Jail Felony.`
+                },
+                {
+                    question: `A switchboard operator intercepts a call in the normal course of employment. What type of defense is this? (Sec. 16.02(c))`,
+                    options: [`An affirmative defense.`, `A standard defense.`, `An exemption from prosecution.`, `A mitigating factor at punishment.`],
+                    answer: `An affirmative defense.`,
+                    explanation: `Sec. 16.02(c) and (e) explicitly state, 'It is an affirmative defense to prosecution...'.`
+                },
+                {
+                    question: `A person *not* acting under color of law (a civilian) records a phone call. Under Sec. 16.02(c)(4), this is an affirmative defense if...`,
+                    options: [`The person is a party to the communication OR one party consents.`, `No one is harmed by the recording.`, `The person is a licensed Private Investigator.`, `The person deletes the recording within 24 hours.`],
+                    answer: `The person is a party to the communication OR one party consents.`,
+                    explanation: `Sec. 16.02(c)(4) establishes Texas as a "one-party consent" state for civilians. This is an affirmative defense.`
+                },
+                {
+                    question: `What is the *exception* to the one-party consent defense for civilians in Sec. 16.02(c)(4)?`,
+                    options: [`If the recording is used in court.`, `If the communication is intercepted for the purpose of committing an unlawful act.`, `If the recording is longer than 10 minutes.`, `If the other party is in another state.`],
+                    answer: `If the communication is intercepted for the purpose of committing an unlawful act.`,
+                    explanation: `Sec. 16.02(c)(4)(B) removes the consent defense if the interception itself is done 'for the purpose of committing an unlawful act' (e.g., blackmail).`
+                },
+                {
+                    question: `A LEO with a warrant intercepts a communication. This is... (Sec. 16.02(c)(3)(B))`,
+                    options: [`An affirmative defense.`, `A 2nd Degree Felony.`, `A 3rd Degree Felony.`, `An exemption.`],
+                    answer: `An affirmative defense.`,
+                    explanation: `Sec. 16.02(c)(3)(B) provides an affirmative defense for a person acting under color of law with authority from CCP 18A.`
+                },
+                {
+                    question: `A LEO intercepts a call in an "immediate life-threatening situation" without a warrant. This is... (Sec. 16.02(c)(5))`,
+                    options: [`A 2nd Degree Felony.`, `An affirmative defense, if specific conditions are met.`, `An offense, but mitigated to a SJF.`, `Not an offense, it is an exemption.`],
+                    answer: `An affirmative defense, if specific conditions are met.`,
+                    explanation: `Sec. 16.02(c)(5) provides an affirmative defense for this emergency situation, but requires (A) magistrate consent (oral/written), (B) life-threatening situation, (C) specially trained LEO, and (D) interception ceases immediately.`
+                },
+                {
+                    question: `A person listens to amateur (ham) radio frequencies. Is this an offense under 16.02?`,
+                    options: [`Yes, it's unlawful interception.`, `Yes, unless the person is a licensed ham operator.`, `No, it's an affirmative defense under (c)(8) as it's an amateur radio service.`, `No, it's an affirmative defense under (c)(7) as it's on a subcarrier.`],
+                    answer: `No, it's an affirmative defense under (c)(8) as it's an amateur radio service.`,
+                    explanation: `Sec. 16.02(c)(8)(D) provides an affirmative defense for intercepting communications on amateur, citizens band, or general mobile radio services.`
+                },
+                {
+                    question: `A communication is "readily accessible to the general public" if it is... (Sec. 16.02(a)(3))`,
+                    options: [`Scrambled or encrypted.`, `Transmitted on frequencies for broadcast auxiliary services.`, `A two-way voice communication by radio.`, `An electronic communication.`],
+                    answer: `A two-way voice communication by radio.`,
+                    explanation: `Sec. 16.02(a)(3) defines "readily accessible" by what it is *NOT*. It is *NOT* (A) scrambled, (E) on certain FCC parts (unless it's two-way voice), or (F) electronic comms.`
+                },
+                {
+                    question: `Who can lawfully manufacture/possess an interception device as an affirmative defense under Sec. 16.02(e)?`,
+                    options: [`A licensed Private Investigator.`, `A communication common carrier or LEO.`, `Any citizen with a concealed handgun license.`, `A news reporter.`],
+                    answer: `A communication common carrier or LEO.`,
+                    explanation: `Sec. 16.02(e) provides affirmative defenses for carriers, US/State contractors, DPS members, and local LEOs in special units.`
+                },
+                {
+                    question: `What is the offense under Sec. 16.03?`,
+                    options: [`Unlawful Interception of Communication.`, `Unlawful Access to Stored Communication.`, `Unlawful Use of Pen Register or Trap and Trace Device.`, `Unlawful Installation of Tracking Device.`],
+                    answer: `Unlawful Use of Pen Register or Trap and Trace Device.`,
+                    explanation: `Sec. 16.03(a) makes it an offense to knowingly install or use a pen register or trap and trace device.`
+                },
+                {
+                    question: `What is the punishment for Unlawful Use of a Pen Register (Sec. 16.03)?`,
+                    options: [`Class A Misdemeanor.`, `State Jail Felony.`, `Second Degree Felony.`, `Third Degree Felony.`],
+                    answer: `State Jail Felony.`,
+                    explanation: `Sec. 16.03(d) states, 'An offense under this section is a state jail felony.'`
+                },
+                {
+                    question: `Under Sec. 16.03(c), it is an affirmative defense if an employee of a "lawful enterprise" installs a pen register...`,
+                    options: [`To help a LEO gather information.`, `To spy on other employees.`, `To protect the property/services of the enterprise.`, `For any reason, as long as it's internal.`],
+                    answer: `To protect the property/services of the enterprise.`,
+                    explanation: `Sec. 16.03(c)(2) provides this defense *only if* it's for protecting the enterprise's own services and *not* for gathering info for LEOs.`
+                },
+                {
+                    question: `What is the offense under Sec. 16.04?`,
+                    options: [`Unlawful Interception of Communication.`, `Unlawful Access to Stored Communications.`, `Unlawful Use of Pen Register or Trap and Trace Device.`, `Illegal Divulgence of Public Communications.`],
+                    answer: `Unlawful Access to Stored Communications.`,
+                    explanation: `Sec. 16.04(b) makes it an offense to obtain/alter/prevent access to a communication 'while the communication is in electronic storage.'`
+                },
+                {
+                    question: `What is the *base* punishment for Unlawful Access to Stored Communications (Sec. 16.04)?`,
+                    options: [`Class C Misdemeanor.`, `Class A Misdemeanor.`, `State Jail Felony.`, `Third Degree Felony.`],
+                    answer: `Class A Misdemeanor.`,
+                    explanation: `Sec. 16.04(c) sets the base punishment as a Class A Misdemeanor.`
+                },
+                {
+                    question: `When is Unlawful Access to Stored Communications (Sec. 16.04) enhanced to a State Jail Felony?`,
+                    options: [`If the actor has a prior conviction.`, `If the actor used a criminal instrument.`, `If committed to obtain a benefit or to harm another.`, `If the communication was encrypted.`],
+                    answer: `If committed to obtain a benefit or to harm another.`,
+                    explanation: `Sec. 16.04(d) enhances the offense to an SJF if it's done for benefit or harm.`
+                },
+                {
+                    question: `Under Sec. 16.04(e), which of the following is an affirmative defense to Unlawful Access to Stored Communications?`,
+                    options: [`The actor was authorized by the provider, user, or recipient.`, `The actor deleted the communication immediately.`, `The actor was a licensed Private Investigator.`, `The actor reasonably believed the communication was abandoned.`],
+                    answer: `The actor was authorized by the provider, user, or recipient.`,
+                    explanation: `Sec. 16.04(e) lists authorization from the provider, user, addressee/recipient, or CCP as affirmative defenses.`
+                },
+                {
+                    question: `Who is the *only* person who can commit the offense of Illegal Divulgence of Public Communications (Sec. 16.05)?`,
+                    options: [`A person who provides electronic communications service.`, `Any person who intercepts a communication.`, `A law enforcement officer.`, `A person who is a party to the communication.`],
+                    answer: `A person who provides electronic communications service.`,
+                    explanation: `Sec. 16.05(b) specifically limits this offense to 'A person who provides electronic communications service to the public...'`
+                },
+                {
+                    question: `What is the punishment for Illegally Divulging (Sec. 16.05) a *scrambled or encrypted* radio communication?`,
+                    options: [`Class A Misdemeanor.`, `State Jail Felony.`, `Second Degree Felony.`, `No offense.`],
+                    answer: `State Jail Felony.`,
+                    explanation: `Sec. 16.05(d) makes this a State Jail Felony.`
+                },
+                {
+                    question: `A phone company employee (provider) divulges an *unscrambled* call for a tortious purpose. It is *not* a public mobile radio service. Punishment? (Sec. 16.05(e))`,
+                    options: [`Class C Misdemeanor.`, `Class A Misdemeanor.`, `State Jail Felony.`, `Second Degree Felony.`],
+                    answer: `Class A Misdemeanor.`,
+                    explanation: `Sec. 16.05(e)(1) applies, making it a Class A Misdemeanor.`
+                },
+                {
+                    question: `A phone company employee (provider) divulges an *unscrambled* call that *is* a paging service communication, for a tortious purpose. Punishment? (Sec. 16.05(e))`,
+                    options: [`Class C Misdemeanor.`, `Class A Misdemeanor.`, `State Jail Felony.`, `Second Degree Felony.`],
+                    answer: `Class C Misdemeanor.`,
+                    explanation: `Sec. 16.05(e)(2) applies, making it a Class C Misdemeanor.`
+                },
+                {
+                    question: `Under Sec. 16.05(c), it is an affirmative defense for a provider to divulge a communication to a LEO if...`,
+                    options: [`The LEO requests it.`, `The LEO has a warrant.`, `The contents reasonably appear to pertain to the commission of a crime.`, `The provider is paid for the information.`],
+                    answer: `The contents reasonably appear to pertain to the commission of a crime.`,
+                    explanation: `Sec. 16.05(c)(3) provides this "crime-stopper" style defense for providers.`
+                },
+                {
+                    question: `What is the offense under Sec. 16.06?`,
+                    options: [`Unlawful Use of Criminal Instrument.`, `Unlawful Installation of Tracking Device.`, `Unlawful Access to Stored Communications.`, `Illegal Divulgence of Public Communications.`],
+                    answer: `Unlawful Installation of Tracking Device.`,
+                    explanation: `Sec. 16.06(b) makes it an offense to knowingly install a tracking device on another's motor vehicle.`
+                },
+                {
+                    question: `What is the punishment for Unlawful Installation of a Tracking Device (Sec. 16.06)?`,
+                    options: [`Class A Misdemeanor.`, `State Jail Felony.`, `Second Degree Felony.`, `Class C Misdemeanor.`],
+                    answer: `Class A Misdemeanor.`,
+                    explanation: `Sec. 16.06(c) states the offense is a Class A Misdemeanor.`
+                },
+                {
+                    question: `Who does the offense of Unlawful Installation of a Tracking Device (Sec. 16.06) *not* apply to?`,
+                    options: [`A licensed Private Investigator.`, `The owner of the vehicle.`, `A peace officer acting in the course of a criminal investigation.`, `A mechanic repairing the vehicle.`],
+                    answer: `A peace officer acting in the course of a criminal investigation.`,
+                    explanation: `Sec. 16.06(e) is an *exemption* (not a defense) that states the entire section does not apply to LEOs on duty.`
+                },
+                {
+                    question: `Under Sec. 16.06(d), it is an affirmative defense if the actor had...`,
+                    options: [`A reasonable suspicion the vehicle was in a crime.`, `A verbal agreement from a family member of the owner.`, `The effective consent of the owner or lessee.`, `A personal grievance with the owner.`],
+                    answer: `The effective consent of the owner or lessee.`,
+                    explanation: `Sec. 16.06(d)(1) provides an affirmative defense for consent.`
+                },
+                {
+                    question: `Under Sec. 16.06(d)(3), a licensed Private Investigator can install a tracking device if they have...`,
+                    options: [`A reasonable suspicion.`, `Verbal consent from the owner.`, `A contract with a client.`, `Written consent from the owner OR a court order.`],
+                    answer: `Written consent from the owner OR a court order.`,
+                    explanation: `Sec. 16.06(d)(3) provides a specific affirmative defense for PIs, but requires *written* consent or a court order.`
+                },
+                {
+                    question: `What is the punishment for *possessing* a criminal instrument with intent to use it to commit a Class A Misdemeanor? (Sec. 16.01(c))`,
+                    options: [`Class A Misdemeanor.`, `Class B Misdemeanor.`, `Class C Misdemeanor.`, `State Jail Felony.`],
+                    answer: `Class B Misdemeanor.`,
+                    explanation: `Sec. 16.01(c) states the offense is 'one category lower than the offense intended.' One category lower than a Class A is a Class B.`
+                },
+                {
+                    question: `A person is *possessing* lockpicks (a mechanical security device) with the intent to use them to commit Burglary (a SJF). Punishment? (Sec. 16.01(c))`,
+                    options: [`State Jail Felony.`, `Class A Misdemeanor.`, `Class B Misdemeanor.`, `Third Degree Felony.`],
+                    answer: `Class A Misdemeanor.`,
+                    explanation: `The offense is Possession (a)(1). The punishment is one category lower. The intended offense is a State Jail Felony. One category lower than a State Jail Felony is a Class A Misdemeanor.`
+                },
+                {
+                    question: `A person is *selling* lockpicks (a mechanical security device) with the intent to aid another in committing Burglary. Punishment? (Sec. 16.01(c))`,
+                    options: [`State Jail Felony.`, `Class A Misdemeanor.`, `Class B Misdemeanor.`, `Third Degree Felony.`],
+                    answer: `State Jail Felony.`,
+                    explanation: `The offense is Selling (a)(2). The punishment under (c) for any (a)(2) offense is a State Jail Felony.`
+                },
+                {
+                    question: `A LEO records a phone call he is a party to (e.g., a call with a suspect). Is this an offense under 16.02?`,
+                    options: [`Yes, it's a 2nd Degree Felony.`, `No, it's an affirmative defense under (c)(3)(A) because he is a party to the communication.`, `Yes, unless he gets a warrant first.`, `No, it's an exemption under (e).`],
+                    answer: `No, it's an affirmative defense under (c)(3)(A) because he is a party to the communication.`,
+                    explanation: `Sec. 16.02(c)(3)(A) provides an affirmative defense for a person acting under color of law who is a party to the communication.`
+                },
+                {
+                    question: `A civilian intercepts a communication that is "readily accessible to the general public." This is...`,
+                    options: [`A 2nd Degree Felony.`, `An affirmative defense under (c)(7).`, `A Class A Misdemeanor.`, `A State Jail Felony.`],
+                    answer: `An affirmative defense under (c)(7).`,
+                    explanation: `Sec. 16.02(c)(7) provides a defense for intercepting communications from a system configured to be readily accessible to the public.`
+                },
+                {
+                    question: `A person *knows* a communication is in electronic storage. He hacks the server (exceeds authorization) to read it. What offense?`,
+                    options: [`Sec. 16.02 (Unlawful Interception).`, `Sec. 16.03 (Pen Register).`, `Sec. 16.04 (Unlawful Access to Stored Communications).`, `Sec. 16.05 (Illegal Divulgence).`],
+                    answer: `Sec. 16.04 (Unlawful Access to Stored Communications).`,
+                    explanation: `This is the key difference between 16.02 and 16.04. Interception (16.02) is capturing the communication *in transit*. Accessing it *in storage* (e.g., on a server) is 16.04.`
+                },
+                {
+                    question: `Which section does *not* apply to a peace officer acting in the course of a criminal investigation?`,
+                    options: [`Sec. 16.01 (Criminal Instrument).`, `Sec. 16.02 (Interception).`, `Sec. 16.04 (Stored Comms).`, `Sec. 16.06 (Tracking Device).`],
+                    answer: `Sec. 16.06 (Tracking Device).`,
+                    explanation: `Sec. 16.06(e) provides a specific *exemption* for LEOs. For the other offenses (like 16.02), LEOs are given *affirmative defenses* (e.g., (c)(3)), but the statute still applies to them.`
+                },
+                {
+                    question: `What is the punishment for Unlawful Use of a Criminal Instrument if the intended offense was a Class C Misdemeanor?`,
+                    options: [`Class C Misdemeanor.`, `Class B Misdemeanor.`, `Class A Misdemeanor.`, `State Jail Felony.`],
+                    answer: `Class C Misdemeanor.`,
+                    explanation: `Sec. 16.01(c) states it is 'one category lower.' The code generally treats 'one category lower than Class C' as still a Class C, as it's the lowest level.`
+                },
+                {
+                    question: `A person uses a "bug" (interception device) that is affixed to a telephone wire to intercept an *oral* communication (a conversation in the room). What offense?`,
+                    options: [`No offense, the device must intercept the *wire* communication.`, `Sec. 16.02(b)(5).`, `Sec. 16.01.`, `Sec. 16.04.`],
+                    answer: `Sec. 16.02(b)(5).`,
+                    explanation: `This is a specific offense. Sec. 16.02(b)(5) criminalizes using a device to intercept *oral* comms *when* the device is affixed to a wire/cable.`
+                },
+                {
+                    question: `A person intentionally effects a "covert entry" (e.g., breaks into a house) to install a bug, without a court order. What offense?`,
+                    options: [`Burglary only.`, `Sec. 16.02(b)(4) (Covert Entry).`, `Sec. 16.01 (Criminal Instrument).`, `No offense if the bug isn't turned on.`],
+                    answer: `Sec. 16.02(b)(4) (Covert Entry).`,
+                    explanation: `Sec. 16.02(b)(4) makes the covert entry *for the purpose of* intercepting communications a specific 2nd Degree Felony, separate from the interception itself.`
+                },
+                {
+                    question: `A person places an ad in a magazine for a device, *knowing* the ad will promote its use for nonconsensual interception. What offense and punishment?`,
+                    options: [`No offense, this is free speech.`, `Sec. 16.02(d)(2) - State Jail Felony.`, `Sec. 16.02(b)(1) - Second Degree Felony.`, `Sec. 16.01(a)(2) - State Jail Felony.`],
+                    answer: `Sec. 16.02(d)(2) - State Jail Felony.`,
+                    explanation: `Sec. 16.02(d)(2) criminalizes advertising an interception device this way. Per (f), the punishment is a State Jail Felony.`
+                },
+                {
+                    question: `An owner of a "protected computer" consents for LEOs to intercept communications from a "computer trespasser" (hacker). This is...`,
+                    options: [`An affirmative defense under Sec. 16.02(c)(3)(C).`, `Illegal without a warrant.`, `An affirmative defense under Sec. 16.04(e).`, `An exemption under Sec. 16.06(e).`],
+                    answer: `An affirmative defense under Sec. 16.02(c)(3)(C).`,
+                    explanation: `Sec. 16.02(c)(3)(C) provides a specific affirmative defense for LEOs to intercept a computer trespasser with the owner's consent and reasonable suspicion.`
+                },
+                {
+                    question: `A person intercepts a radio communication that is *not* scrambled, from a system that uses frequencies monitored by users (like a shared business radio). This is...`,
+                    options: [`A 2nd Degree Felony.`, `An affirmative defense under Sec. 16.02(c)(10).`, `A State Jail Felony.`, `A Class A Misdemeanor.`],
+                    answer: `An affirmative defense under Sec. 16.02(c)(10).`,
+                    explanation: `Sec. 16.02(c)(10) provides an affirmative defense for a user of the same frequency intercepting a non-scrambled communication on a monitored system.`
+                },
+                {
+                    question: `A phone provider records that a call was *initiated* to protect itself from fraud. This is...`,
+                    options: [`A 2nd Degree Felony.`, `A State Jail Felony.`, `An affirmative defense under Sec. 16.02(c)(11).`, `An affirmative defense under Sec. 16.03(c).`],
+                    answer: `An affirmative defense under Sec. 16.02(c)(11).`,
+                    explanation: `Sec. 16.02(c)(11) allows providers to record the *fact* (not contents) of a communication's initiation/completion to protect from fraud or abuse.`
+                },
+                {
+                    question: `A person intercepts a wire communication that is causing harmful interference to their TV, *only* to identify the source. This is...`,
+                    options: [`A 2nd Degree Felony.`, `An affirmative defense under Sec. 16.02(c)(9).`, `A State Jail Felony.`, `No offense.`],
+                    answer: `An affirmative defense under Sec. 16.02(c)(9).`,
+                    explanation: `Sec. 16.02(c)(9) provides a specific affirmative defense for this situation, 'to the extent necessary to identify the source of the interference.'`
+                },
+                {
+                    question: `An employee of the FCC intercepts a radio communication in the normal course of their monitoring duties. This is...`,
+                    options: [`A 2nd Degree Felony.`, `A State Jail Felony.`, `An affirmative defense under Sec. 16.02(c)(6).`, `A Class A Misdemeanor.`],
+                    answer: `An affirmative defense under Sec. 16.02(c)(6).`,
+                    explanation: `Sec. 16.02(c)(6) provides a specific affirmative defense for the FCC in the discharge of their monitoring responsibilities.`
+                },
+                {
+                    question: `What is the key difference between an offense under Sec. 16.02 (Interception) and Sec. 16.04 (Stored Comms)?`,
+                    options: [`16.02 is for LEOs, 16.04 is for civilians.`, `16.02 involves a device, 16.04 does not.`, `16.02 is intercepting *in transit*, 16.04 is accessing *in storage*.`, `16.02 is a felony, 16.04 is a misdemeanor.`],
+                    answer: `16.02 is intercepting *in transit*, 16.04 is accessing *in storage*.`,
+                    explanation: `This is the fundamental distinction. 16.02 (Interception) is capturing a communication as it happens. 16.04 (Stored) is accessing it *after* it has been stored (e.g., hacking an email server).`
+                },
+                {
+                    question: `A phone company employee (communication carrier) assists a LEO who is *authorized* to install a pen register. This is...`,
+                    options: [`A State Jail Felony.`, `An affirmative defense under Sec. 16.03(c)(1)(B).`, `A Class A Misdemeanor.`, `A 2nd Degree Felony.`],
+                    answer: `An affirmative defense under Sec. 16.03(c)(1)(B).`,
+                    explanation: `Sec. 16.03(c)(1)(B) provides an affirmative defense for a carrier's employee who 'reasonably believes' they are assisting an authorized peace officer.`
+                },
+                {
+                    question: `A person hacks a server and *prevents authorized access* (e.g., locks the owner out) to communications in storage. What offense?`,
+                    options: [`Sec. 16.02 (Interception).`, `Sec. 16.04 (Unlawful Access).`, `Sec. 16.03 (Pen Register).`, `No offense listed.`],
+                    answer: `Sec. 16.04 (Unlawful Access).`,
+                    explanation: `Sec. 16.04(b) covers not just *obtaining* or *altering* access, but also *preventing authorized access* to stored communications.`
+                },
+                {
+                    question: `Which of these is *NOT* an affirmative defense to Unlawful Access to Stored Communications (Sec. 16.04(e))?`,
+                    options: [`Authorized by the provider.`, `Authorized by the user.`, `Authorized by the addressee.`, `Authorized by a licensed Private Investigator.`],
+                    answer: `Authorized by a licensed Private Investigator.`,
+                    explanation: `Sec. 16.04(e) lists provider, user, recipient, and the CCP. It does *not* list 'licensed Private Investigator' as an affirmative defense, unlike Sec. 16.06.`
+                },
+                {
+                    question: `A provider of electronic communication service (Sec. 16.05) *lawfully* divulges a communication. Which is *NOT* a valid defense?`,
+                    options: [`As authorized by state law.`, `To a LEO because the contents *appear* to be criminal.`, `To another employee to forward the communication.`, `To a newspaper because the contents are newsworthy.`],
+                    answer: `To a newspaper because the contents are newsworthy.`,
+                    explanation: `Sec. 16.05(c) lists (1) authorized by law, (2) forwarding, and (3) LEO/crime. It does not provide a defense for "newsworthy" content.`
+                },
+                {
+                    question: `A person installs a tracking device (Sec. 16.06) on his *own* car, which his spouse drives. Is this an offense?`,
+                    options: [`Yes, it's a Class A Misdemeanor.`, `No, the statute only applies to a vehicle 'owned or leased by *another* person.'`, `Yes, unless he gets his spouse's consent.`, `No, this is an affirmative defense for spouses.`],
+                    answer: `No, the statute only applies to a vehicle 'owned or leased by *another* person.'`,
+                    explanation: `Sec. 16.06(b) specifies the vehicle must be 'owned or leased by another person.' If the actor is an owner, this statute does not apply.`
+                },
+                {
+                    question: `A civilian helps a person he *reasonably believes* is a LEO install a tracking device on a car. This is...`,
+                    options: [`A Class A Misdemeanor.`, `An affirmative defense under Sec. 16.06(d)(2).`, `A State Jail Felony.`, `An exemption under Sec. 16.06(e).`],
+                    answer: `An affirmative defense under Sec. 16.06(d)(2).`,
+                    explanation: `Sec. 16.06(d)(2) provides an affirmative defense for a person who 'reasonably believed' they were assisting a LEO.`
+                },
+                {
+                    question: `What *specific* type of consent must a Private Investigator get to install a tracking device on a car? (Sec. 16.06(d)(3))`,
+                    options: [`Verbal consent.`, `Written consent.`, `Implied consent.`, `Consent from their client.`],
+                    answer: `Written consent.`,
+                    explanation: `Sec. 16.06(d)(3)(A)(i) specifically requires *written consent* from the owner or lessee for a PI's affirmative defense.`
+                },
+                {
+                    question: `If a PI needs to enter a *private residential property* to install a tracking device, what do they need? (Sec. 16.06(d)(3))`,
+                    options: [`A warrant.`, `Reasonable suspicion.`, `Written consent to enter the property from the property owner/lessee.`, `They are not allowed to do this.`],
+                    answer: `Written consent to enter the property from the property owner/lessee.`,
+                    explanation: `Sec. 16.06(d)(3)(A)(ii) adds a second requirement for PIs: if entry to private residential property is needed, they must *also* have written consent to enter that property.`
+                },
+                {
+                    question: `Which offense in Ch. 16 is *not* an affirmative defense for a PI, even with consent or a court order?`,
+                    options: [`Sec. 16.06 (Tracking Device).`, `Sec. 16.02 (Interception).`, `Sec. 16.01 (Criminal Instrument).`, `Sec. 16.03 (Pen Register).`],
+                    answer: `Sec. 16.02 (Interception).`,
+                    explanation: `Sec. 16.06 (Tracking) has a specific PI defense. The other sections, like 16.02 (Interception), do *not* list "licensed Private Investigator" as an affirmative defense.`
+                }
+            ];
+
+
+            const quizContainer = document.getElementById('quiz-container');
+            const checkAnswersBtn = document.getElementById('check-answers-btn');
+            const retakeQuizBtn = document.getElementById('retake-quiz-btn');
+            const quizResultsDiv = document.getElementById('quiz-results');
+            const quizScoreEl = document.getElementById('quiz-score');
+            const quizPercentageEl = document.getElementById('quiz-percentage');
+
+            function loadQuiz() {
+                // Shuffle the quiz data for a new order each time
+                const shuffledQuizData = [...quizData].sort(() => Math.random() - 0.5);
+                
+                quizContainer.innerHTML = ''; // Clear previous questions
+                
+                shuffledQuizData.forEach((q, index) => {
+                    const questionDiv = document.createElement('div');
+                    questionDiv.className = 'quiz-question';
+                    
+                    // Store the original question index to check the answer later
+                    const originalIndex = quizData.indexOf(q);
+                    
+                    let optionsHtml = q.options.map(option => {
+                        // Use template literals for the value to handle any special characters
+                        const escapedOption = `${option}`;
+                        return `<label class="block"><input type="radio" name="q${index}" value="${escapedOption.replace(/"/g, '&quot;')}" data-original-index="${originalIndex}" class="mr-2">${option}</label>`;
+                    }).join('');
+                    
+                    const escapedQuestion = q.question;
+
+                    questionDiv.innerHTML = `
+                        <p class="font-semibold mb-2">${index + 1}. ${escapedQuestion}</p>
+                        <div class="space-y-2">${optionsHtml}</div>
+                        <div class="feedback hidden mt-2 p-2 rounded-lg text-sm"></div>
+                    `;
+                    quizContainer.appendChild(questionDiv);
+                });
+            }
+
+
+            loadQuiz(); // Initial load
+
+            checkAnswersBtn.addEventListener('click', () => {
+                let score = 0;
+                const totalQuestions = quizData.length;
+                const questions = quizContainer.querySelectorAll('.quiz-question');
+
+                questions.forEach((questionDiv, index) => {
+                    const selected = questionDiv.querySelector(`input[name="q${index}"]:checked`);
+                    const feedback = questionDiv.querySelector('.feedback');
+                    const radioButtons = questionDiv.querySelectorAll(`input[name="q${index}"]`);
+                    
+                    feedback.classList.remove('hidden', 'bg-green-100', 'text-green-800', 'bg-red-100', 'text-red-800', 'bg-yellow-100', 'text-yellow-800');
+                    
+                    if (selected) {
+                        const originalIndex = selected.dataset.originalIndex;
+                        const q = quizData[originalIndex];
+
+                        // Compare the selected value with the answer
+                        if (selected.value === q.answer.replace(/"/g, '&quot;')) {
+                            score++;
+                            feedback.textContent = `Correct! ${q.explanation}`;
+                            feedback.classList.add('bg-green-100', 'text-green-800');
+                        } else {
+                            feedback.textContent = `Incorrect. The correct answer is "${q.answer}". ${q.explanation}`;
+                            feedback.classList.add('bg-red-100', 'text-red-800');
+                        }
+                    } else {
+                        // Find the original question to show the answer
+                        const firstRadio = questionDiv.querySelector(`input[name="q${index}"]`);
+                        const originalIndex = firstRadio.dataset.originalIndex;
+                        const q = quizData[originalIndex];
+                        
+                        feedback.textContent = `You did not answer this question. The correct answer is "${q.answer}". ${q.explanation}`;
+                        feedback.classList.add('bg-yellow-100', 'text-yellow-800');
+                    }
+                    
+                    // Disable radio buttons after submitting
+                    radioButtons.forEach(radio => {
+                        radio.disabled = true;
+                    });
+                });
+
+                // Calculate and display results
+                const percentage = ((score / totalQuestions) * 100).toFixed(0);
+                quizScoreEl.textContent = `Your Score: ${score} / ${totalQuestions}`;
+                quizPercentageEl.textContent = `Percentage: ${percentage}%`;
+                
+                quizResultsDiv.classList.remove('hidden');
+                checkAnswersBtn.classList.add('hidden');
+                retakeQuizBtn.classList.remove('hidden');
+            });
+
+            retakeQuizBtn.addEventListener('click', () => {
+                // Hide results and retake button
+                quizResultsDiv.classList.add('hidden');
+                retakeQuizBtn.classList.add('hidden');
+                
+                // Show submit button
+                checkAnswersBtn.classList.remove('hidden');
+                
+                // Reload the quiz (clears answers and feedback)
+                loadQuiz();
+            });
+
+
+            // --- RESOURCES LIST ---
+            const resources = [
+                { name: "Texas Penal Code - Official Site", url: "https://statutes.capitol.texas.gov/Default.aspx?Code=PE" },
+                { name:"Penal Code Ch. 16 - Criminal Instruments...", url: "https://statutes.capitol.texas.gov/Docs/PE/htm/PE.16.htm" },
+                { name: "CCP Ch. 18A - Interception...", url: "https://statutes.capitol.texas.gov/Docs/CR/htm/CR.18A.htm" },
+                { name: "CCP Ch. 18B - Pen Registers...", url: "https://statutes.capitol.texas.gov/Docs/CR/htm/CR.18B.htm" },
+                { name: "Occupations Code Ch. 1702 - Private Investigators", url: "https://statutes.capitol.texas.gov/Docs/OC/htm/OC.1702.htm" }
+            ];
+            const resourcesList = document.getElementById('resources-list');
+            resources.sort((a, b) => a.name.localeCompare(b.name));
+            resources.forEach(res => {
+                const link = document.createElement('a'); // Use an anchor tag for links
+                link.href = res.url;
+                link.target = '_blank';
+                link.rel = 'noopener noreferrer'; // Good practice for security
+                link.className = 'text-blue-600 hover:underline p-2 bg-gray-50 rounded-md block hover:bg-gray-100';
+                link.innerHTML = `<i class="fas fa-external-link-alt mr-2"></i>${res.name}`;
+                resourcesList.appendChild(link);
+            });
+        });
+    </script>
+</body>
+</html>
+

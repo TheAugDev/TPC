@@ -1,0 +1,816 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Texas Penal Code Study Guides</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet">
+    <style>
+        :root {
+            --header-bg: #1f2937;
+            --bg-color: #f3f4f6;
+            --card-bg: #ffffff;
+            --text-color: #111827;
+            --link-color: #dc2626; /* Theme red */
+        }
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            font-family: 'Inter', sans-serif;
+        }
+        @import url('https://rsms.me/inter/inter.css');
+        .guide-card {
+            transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+            border-left: 5px solid #dc2626; /* Red accent border */
+            border-radius: 0.5rem;
+        }
+        .guide-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Header -->
+    <header class="bg-gray-800 text-white p-6 shadow-xl">
+        <div class="container mx-auto text-center">
+            <h1 class="text-3xl font-bold">
+                <i class="fas fa-book-open mr-2"></i>Texas Penal Code Study Guides
+            </h1>
+            <p class="text-lg text-gray-300 mt-1">Select a chapter to begin studying.</p>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container mx-auto p-4 md:p-8">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+            
+            <!-- Chapter 1 Card -->
+            <a href="TPC-01.html" class="guide-card bg-white shadow-lg overflow-hidden flex flex-col h-full">
+                <div class="p-6 flex-grow">
+                    <div class="flex items-center">
+                        <div class="p-3 rounded-full bg-red-100 text-red-600">
+                            <i class="fas fa-gavel fa-lg"></i>
+                        </div>
+                        <div class="ml-4">
+                            <h2 class="text-xl font-bold text-gray-900">Chapter 1</h2>
+                            <p class="text-gray-600">General Provisions</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-gray-50 px-6 py-3 text-right">
+                    <span class="text-sm font-medium text-red-600 hover:text-red-800">
+                        View Study Guide <i class="fas fa-arrow-right ml-1"></i>
+                    </span>
+                </div>
+            </a>
+
+            <!-- Chapter 2 Card -->
+            <a href="TPC-02.html" class="guide-card bg-white shadow-lg overflow-hidden flex flex-col h-full">
+                <div class="p-6 flex-grow">
+                    <div class="flex items-center">
+                        <div class="p-3 rounded-full bg-red-100 text-red-600">
+                            <i class="fas fa-users fa-lg"></i>
+                        </div>
+                        <div class="ml-4">
+                            <h2 class="text-xl font-bold text-gray-900">Chapter 2</h2>
+                            <p class="text-gray-600">Parties to Offenses</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-gray-50 px-6 py-3 text-right">
+                    <span class="text-sm font-medium text-red-600 hover:text-red-800">
+                        View Study Guide <i class="fas fa-arrow-right ml-1"></i>
+                    </span>
+                </div>
+            </a>
+
+            <!-- Chapter 3 Card -->
+            <a href="TPC-03.html" class="guide-card bg-white shadow-lg overflow-hidden flex flex-col h-full">
+                <div class="p-6 flex-grow">
+                    <div class="flex items-center">
+                        <div class="p-3 rounded-full bg-red-100 text-red-600">
+                            <i class="fas fa-balance-scale fa-lg"></i>
+                        </div>
+                        <div class="ml-4">
+                            <h2 class="text-xl font-bold text-gray-900">Chapter 3</h2>
+                            <p class="text-gray-600">Multiple Prosecutions</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-gray-50 px-6 py-3 text-right">
+                    <span class="text-sm font-medium text-red-600 hover:text-red-800">
+                        View Study Guide <i class="fas fa-arrow-right ml-1"></i>
+                    </span>
+                </div>
+            </a>
+
+            <!-- Chapter 6 Card -->
+            <a href="TPC-06.html" class="guide-card bg-white shadow-lg overflow-hidden flex flex-col h-full">
+                <div class="p-6 flex-grow">
+                    <div class="flex items-center">
+                        <div class="p-3 rounded-full bg-red-100 text-red-600">
+                            <i class="fas fa-brain fa-lg"></i>
+                        </div>
+                        <div class="ml-4">
+                            <h2 class="text-xl font-bold text-gray-900">Chapter 6</h2>
+                            <p class="text-gray-600">Culpability</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-gray-50 px-6 py-3 text-right">
+                    <span class="text-sm font-medium text-red-600 hover:text-red-800">
+                        View Study Guide <i class="fas fa-arrow-right ml-1"></i>
+                    </span>
+                </div>
+            </a>
+
+            <!-- Chapter 7 Card -->
+            <a href="TPC-07.html" class="guide-card bg-white shadow-lg overflow-hidden flex flex-col h-full">
+                <div class="p-6 flex-grow">
+                    <div class="flex items-center">
+                        <div class="p-3 rounded-full bg-red-100 text-red-600">
+                            <i class="fas fa-handshake fa-lg"></i>
+                        </div>
+                        <div class="ml-4">
+                            <h2 class="text-xl font-bold text-gray-900">Chapter 7</h2>
+                            <p class="text-gray-600">Criminal Responsibility for Conduct of Another</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-gray-50 px-6 py-3 text-right">
+                    <span class="text-sm font-medium text-red-600 hover:text-red-800">
+                        View Study Guide <i class="fas fa-arrow-right ml-1"></i>
+                    </span>
+                </div>
+            </a>
+            
+            <!-- Chapter 8 Card -->
+            <a href="TPC-08.html" class="guide-card bg-white shadow-lg overflow-hidden flex flex-col h-full">
+                <div class="p-6 flex-grow">
+                    <div class="flex items-center">
+                        <div class="p-3 rounded-full bg-red-100 text-red-600">
+                            <i class="fas fa-shield-alt fa-lg"></i>
+                        </div>
+                        <div class="ml-4">
+                            <h2 class="text-xl font-bold text-gray-900">Chapter 8</h2>
+                            <p class="text-gray-600">General Defenses to Criminal Responsibility</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-gray-50 px-6 py-3 text-right">
+                    <span class="text-sm font-medium text-red-600 hover:text-red-800">
+                        View Study Guide <i class="fas fa-arrow-right ml-1"></i>
+                    </span>
+                </div>
+            </a>
+
+            <!-- Chapter 9 Card -->
+            <a href="TPC-09.html" class="guide-card bg-white shadow-lg overflow-hidden flex flex-col h-full">
+                <div class="p-6 flex-grow">
+                    <div class="flex items-center">
+                        <div class="p-3 rounded-full bg-red-100 text-red-600">
+                            <i class="fas fa-fist-raised fa-lg"></i>
+                        </div>
+                        <div class="ml-4">
+                            <h2 class="text-xl font-bold text-gray-900">Chapter 9</h2>
+                            <p class="text-gray-600">Justification Excluding Criminal Responsibility</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-gray-50 px-6 py-3 text-right">
+                    <span class="text-sm font-medium text-red-600 hover:text-red-800">
+                        View Study Guide <i class="fas fa-arrow-right ml-1"></i>
+                    </span>
+                </div>
+            </a>
+
+            <!-- Chapter 12 Card -->
+            <a href="TPC-12.html" class="guide-card bg-white shadow-lg overflow-hidden flex flex-col h-full">
+                <div class="p-6 flex-grow">
+                    <div class="flex items-center">
+                        <div class="p-3 rounded-full bg-red-100 text-red-600">
+                            <i class="fas fa-money-bill-wave fa-lg"></i>
+                        </div>
+                        <div class="ml-4">
+                            <h2 class="text-xl font-bold text-gray-900">Chapter 12</h2>
+                            <p class="text-gray-600">Punishments</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-gray-50 px-6 py-3 text-right">
+                    <span class="text-sm font-medium text-red-600 hover:text-red-800">
+                        View Study Guide <i class="fas fa-arrow-right ml-1"></i>
+                    </span>
+                </div>
+            </a>
+
+            <!-- Chapter 15 Card -->
+            <a href="TPC-15.html" class="guide-card bg-white shadow-lg overflow-hidden flex flex-col h-full">
+                <div class="p-6 flex-grow">
+                    <div class="flex items-center">
+                        <div class="p-3 rounded-full bg-red-100 text-red-600">
+                            <i class="fas fa-drafting-compass fa-lg"></i>
+                        </div>
+                        <div class="ml-4">
+                            <h2 class="text-xl font-bold text-gray-900">Chapter 15</h2>
+                            <p class="text-gray-600">Preparatory Offenses</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-gray-50 px-6 py-3 text-right">
+                    <span class="text-sm font-medium text-red-600 hover:text-red-800">
+                        View Study Guide <i class="fas fa-arrow-right ml-1"></i>
+                    </span>
+                </div>
+            </a>
+
+            <!-- Chapter 16 Card -->
+            <a href="TPC-16.html" class="guide-card bg-white shadow-lg overflow-hidden flex flex-col h-full">
+                <div class="p-6 flex-grow">
+                    <div class="flex items-center">
+                        <div class="p-3 rounded-full bg-red-100 text-red-600">
+                            <i class="fas fa-tools fa-lg"></i>
+                        </div>
+                        <div class="ml-4">
+                            <h2 class="text-xl font-bold text-gray-900">Chapter 16</h2>
+                            <p class="text-gray-600">Criminal Instruments</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-gray-50 px-6 py-3 text-right">
+                    <span class="text-sm font-medium text-red-600 hover:text-red-800">
+                        View Study Guide <i class="fas fa-arrow-right ml-1"></i>
+                    </span>
+                </div>
+            </a>
+
+            <!-- Chapter 19 Card -->
+            <a href="TPC-19.html" class="guide-card bg-white shadow-lg overflow-hidden flex flex-col h-full">
+                <div class="p-6 flex-grow">
+                    <div class="flex items-center">
+                        <div class="p-3 rounded-full bg-red-100 text-red-600">
+                            <i class="fas fa-crosshairs fa-lg"></i>
+                        </div>
+                        <div class="ml-4">
+                            <h2 class="text-xl font-bold text-gray-900">Chapter 19</h2>
+                            <p class="text-gray-600">Criminal Homicide</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-gray-50 px-6 py-3 text-right">
+                    <span class="text-sm font-medium text-red-600 hover:text-red-800">
+                        View Study Guide <i class="fas fa-arrow-right ml-1"></i>
+                    </span>
+                </div>
+            </a>
+
+            <!-- Chapter 20 Card -->
+            <a href="TPC-20.html" class="guide-card bg-white shadow-lg overflow-hidden flex flex-col h-full">
+                <div class="p-6 flex-grow">
+                    <div class="flex items-center">
+                        <div class="p-3 rounded-full bg-red-100 text-red-600">
+                            <i class="fas fa-chain fa-lg"></i>
+                        </div>
+                        <div class="ml-4">
+                            <h2 class="text-xl font-bold text-gray-900">Chapter 20</h2>
+                            <p class="text-gray-600">Kidnapping, Restraint, and Smuggling</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-gray-50 px-6 py-3 text-right">
+                    <span class="text-sm font-medium text-red-600 hover:text-red-800">
+                        View Study Guide <i class="fas fa-arrow-right ml-1"></i>
+                    </span>
+                </div>
+            </a>
+
+            <!-- Chapter 20A Card -->
+            <a href="TPC-20A.html" class="guide-card bg-white shadow-lg overflow-hidden flex flex-col h-full">
+                <div class="p-6 flex-grow">
+                    <div class="flex items-center">
+                        <div class="p-3 rounded-full bg-red-100 text-red-600">
+                            <i class="fas fa-handcuffs fa-lg"></i>
+                        </div>
+                        <div class="ml-4">
+                            <h2 class="text-xl font-bold text-gray-900">Chapter 20A</h2>
+                            <p class="text-gray-600">Trafficking of Persons</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-gray-50 px-6 py-3 text-right">
+                    <span class="text-sm font-medium text-red-600 hover:text-red-800">
+                        View Study Guide <i class="fas fa-arrow-right ml-1"></i>
+                    </span>
+                </div>
+            </a>
+            
+            <!-- Chapter 25 Card -->
+            <a href="TPC-25.html" class="guide-card bg-white shadow-lg overflow-hidden flex flex-col h-full">
+                <div class="p-6 flex-grow">
+                    <div class="flex items-center">
+                        <div class="p-3 rounded-full bg-red-100 text-red-600">
+                            <i class="fas fa-users-cog fa-lg"></i>
+                        </div>
+                        <div class="ml-4">
+                            <h2 class="text-xl font-bold text-gray-900">Chapter 25</h2>
+                            <p class="text-gray-600">Offenses Against the Family</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-gray-50 px-6 py-3 text-right">
+                    <span class="text-sm font-medium text-red-600 hover:text-red-800">
+                        View Study Guide <i class="fas fa-arrow-right ml-1"></i>
+                    </span>
+                </div>
+            </a>
+
+            <!-- Chapter 28 Card -->
+            <a href="TPC-28.html" class="guide-card bg-white shadow-lg overflow-hidden flex flex-col h-full">
+                <div class="p-6 flex-grow">
+                    <div class="flex items-center">
+                        <div class="p-3 rounded-full bg-red-100 text-red-600">
+                            <i class="fas fa-fire fa-lg"></i>
+                        </div>
+                        <div class="ml-4">
+                            <h2 class="text-xl font-bold text-gray-900">Chapter 28</h2>
+                            <p class="text-gray-600">Arson & Criminal Mischief</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-gray-50 px-6 py-3 text-right">
+                    <span class="text-sm font-medium text-red-600 hover:text-red-800">
+                        View Study Guide <i class="fas fa-arrow-right ml-1"></i>
+                    </span>
+                </div>
+            </a>
+
+            <!-- Chapter 29 Card -->
+            <a href="TPC-29.html" class="guide-card bg-white shadow-lg overflow-hidden flex flex-col h-full">
+                <div class="p-6 flex-grow">
+                    <div class="flex items-center">
+                        <div class="p-3 rounded-full bg-red-100 text-red-600">
+                            <i class="fas fa-mask fa-lg"></i>
+                        </div>
+                        <div class="ml-4">
+                            <h2 class="text-xl font-bold text-gray-900">Chapter 29</h2>
+                            <p class="text-gray-600">Robbery</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-gray-50 px-6 py-3 text-right">
+                    <span class="text-sm font-medium text-red-600 hover:text-red-800">
+                        View Study Guide <i class="fas fa-arrow-right ml-1"></i>
+                    </span>
+                </div>
+            </a>
+
+            <!-- Chapter 30 Card -->
+            <a href="TPC-30.html" class="guide-card bg-white shadow-lg overflow-hidden flex flex-col h-full">
+                <div class="p-6 flex-grow">
+                    <div class="flex items-center">
+                        <div class="p-3 rounded-full bg-red-100 text-red-600">
+                            <i class="fas fa-door-open fa-lg"></i>
+                        </div>
+                        <div class="ml-4">
+                            <h2 class="text-xl font-bold text-gray-900">Chapter 30</h2>
+                            <p class="text-gray-600">Burglary and Criminal Trespass</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-gray-50 px-6 py-3 text-right">
+                    <span class="text-sm font-medium text-red-600 hover:text-red-800">
+                        View Study Guide <i class="fas fa-arrow-right ml-1"></i>
+                    </span>
+                </div>
+            </a>
+
+            <!-- Chapter 31 Card -->
+            <a href="TPC-31.html" class="guide-card bg-white shadow-lg overflow-hidden flex flex-col h-full">
+                <div class="p-6 flex-grow">
+                    <div class="flex items-center">
+                        <div class="p-3 rounded-full bg-red-100 text-red-600">
+                            <i class="fas fa-hand-holding-dollar fa-lg"></i>
+                        </div>
+                        <div class="ml-4">
+                            <h2 class="text-xl font-bold text-gray-900">Chapter 31</h2>
+                            <p class="text-gray-600">Theft</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-gray-50 px-6 py-3 text-right">
+                    <span class="text-sm font-medium text-red-600 hover:text-red-800">
+                        View Study Guide <i class="fas fa-arrow-right ml-1"></i>
+                    </span>
+                </div>
+            </a>
+
+            <!-- Chapter 32 Card -->
+            <a href="TPC-32.html" class="guide-card bg-white shadow-lg overflow-hidden flex flex-col h-full">
+                <div class="p-6 flex-grow">
+                    <div class="flex items-center">
+                        <div class="p-3 rounded-full bg-red-100 text-red-600">
+                            <i class="fas fa-credit-card fa-lg"></i>
+                        </div>
+                        <div class="ml-4">
+                            <h2 class="text-xl font-bold text-gray-900">Chapter 32</h2>
+                            <p class="text-gray-600">Fraud</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-gray-50 px-6 py-3 text-right">
+                    <span class="text-sm font-medium text-red-600 hover:text-red-800">
+                        View Study Guide <i class="fas fa-arrow-right ml-1"></i>
+                    </span>
+                </div>
+            </a>
+
+            <!-- Chapter 33 Card -->
+            <a href="TPC-33.html" class="guide-card bg-white shadow-lg overflow-hidden flex flex-col h-full">
+                <div class="p-6 flex-grow">
+                    <div class="flex items-center">
+                        <div class="p-3 rounded-full bg-red-100 text-red-600">
+                            <i class="fas fa-laptop-code fa-lg"></i>
+                        </div>
+                        <div class="ml-4">
+                            <h2 class="text-xl font-bold text-gray-900">Chapter 33</h2>
+                            <p class="text-gray-600">Computer Crimes</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-gray-50 px-6 py-3 text-right">
+                    <span class="text-sm font-medium text-red-600 hover:text-red-800">
+                        View Study Guide <i class="fas fa-arrow-right ml-1"></i>
+                    </span>
+                </div>
+            </a>
+
+            <!-- Chapter 33A Card -->
+            <a href="TPC-33A.html" class="guide-card bg-white shadow-lg overflow-hidden flex flex-col h-full">
+                <div class="p-6 flex-grow">
+                    <div class="flex items-center">
+                        <div class="p-3 rounded-full bg-red-100 text-red-600">
+                            <i class="fas fa-phone-volume fa-lg"></i>
+                        </div>
+                        <div class="ml-4">
+                            <h2 class="text-xl font-bold text-gray-900">Chapter 33A</h2>
+                            <p class="text-gray-600">Telecommunications Crimes</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-gray-50 px-6 py-3 text-right">
+                    <span class="text-sm font-medium text-red-600 hover:text-red-800">
+                        View Study Guide <i class="fas fa-arrow-right ml-1"></i>
+                    </span>
+                </div>
+            </a>
+
+            <!-- Chapter 34 Card -->
+            <a href="TPC-34.html" class="guide-card bg-white shadow-lg overflow-hidden flex flex-col h-full">
+                <div class="p-6 flex-grow">
+                    <div class="flex items-center">
+                        <div class="p-3 rounded-full bg-red-100 text-red-600">
+                            <i class="fas fa-money-bill-transfer fa-lg"></i>
+                        </div>
+                        <div class="ml-4">
+                            <h2 class="text-xl font-bold text-gray-900">Chapter 34</h2>
+                            <p class="text-gray-600">Money Laundering</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-gray-50 px-6 py-3 text-right">
+                    <span class="text-sm font-medium text-red-600 hover:text-red-800">
+                        View Study Guide <i class="fas fa-arrow-right ml-1"></i>
+                    </span>
+                </div>
+            </a>
+
+            <!-- Chapter 35 Card -->
+            <a href="TPC-35.html" class="guide-card bg-white shadow-lg overflow-hidden flex flex-col h-full">
+                <div class="p-6 flex-grow">
+                    <div class="flex items-center">
+                        <div class="p-3 rounded-full bg-red-100 text-red-600">
+                            <i class="fas fa-car-burst fa-lg"></i>
+                        </div>
+                        <div class="ml-4">
+                            <h2 class="text-xl font-bold text-gray-900">Chapter 35</h2>
+                            <p class="text-gray-600">Insurance Fraud</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-gray-50 px-6 py-3 text-right">
+                    <span class="text-sm font-medium text-red-600 hover:text-red-800">
+                        View Study Guide <i class="fas fa-arrow-right ml-1"></i>
+                    </span>
+                </div>
+            </a>
+
+            <!-- Chapter 35A Card -->
+            <a href="TPC-35A.html" class="guide-card bg-white shadow-lg overflow-hidden flex flex-col h-full">
+                <div class="p-6 flex-grow">
+                    <div class="flex items-center">
+                        <div class="p-3 rounded-full bg-red-100 text-red-600">
+                            <i class="fas fa-notes-medical fa-lg"></i>
+                        </div>
+                        <div class="ml-4">
+                            <h2 class="text-xl font-bold text-gray-900">Chapter 35A</h2>
+                            <p class="text-gray-600">Health Care Fraud</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-gray-50 px-6 py-3 text-right">
+                    <span class="text-sm font-medium text-red-600 hover:text-red-800">
+                        View Study Guide <i class="fas fa-arrow-right ml-1"></i>
+                    </span>
+                </div>
+            </a>
+
+            <!-- Chapter 36 Card -->
+            <a href="TPC-36.html" class="guide-card bg-white shadow-lg overflow-hidden flex flex-col h-full">
+                <div class="p-6 flex-grow">
+                    <div class="flex items-center">
+                        <div class="p-3 rounded-full bg-red-100 text-red-600">
+                            <i class="fas fa-briefcase fa-lg"></i>
+                        </div>
+                        <div class="ml-4">
+                            <h2 class="text-xl font-bold text-gray-900">Chapter 36</h2>
+                            <p class="text-gray-600">Bribery and Corrupt Influence</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-gray-50 px-6 py-3 text-right">
+                    <span class="text-sm font-medium text-red-600 hover:text-red-800">
+                        View Study Guide <i class="fas fa-arrow-right ml-1"></i>
+                    </span>
+                </div>
+            </a>
+
+            <!-- Chapter 37 Card -->
+            <a href="TPC-37.html" class="guide-card bg-white shadow-lg overflow-hidden flex flex-col h-full">
+                <div class="p-6 flex-grow">
+                    <div class="flex items-center">
+                        <div class="p-3 rounded-full bg-red-100 text-red-600">
+                            <i class="fas fa-file-signature fa-lg"></i>
+                        </div>
+                        <div class="ml-4">
+                            <h2 class="text-xl font-bold text-gray-900">Chapter 37</h2>
+                            <p class="text-gray-600">Perjury and Other Falsification</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-gray-50 px-6 py-3 text-right">
+                    <span class="text-sm font-medium text-red-600 hover:text-red-800">
+                        View Study Guide <i class="fas fa-arrow-right ml-1"></i>
+                    </span>
+                </div>
+            </a>
+
+            <!-- Chapter 38 Card -->
+            <a href="TPC-38.html" class="guide-card bg-white shadow-lg overflow-hidden flex flex-col h-full">
+                <div class="p-6 flex-grow">
+                    <div class="flex items-center">
+                        <div class="p-3 rounded-full bg-red-100 text-red-600">
+                            <i class="fas fa-hand fa-lg"></i>
+                        </div>
+                        <div class="ml-4">
+                            <h2 class="text-xl font-bold text-gray-900">Chapter 38</h2>
+                            <p class="text-gray-600">Obstructing Governmental Operation</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-gray-50 px-6 py-3 text-right">
+                    <span class="text-sm font-medium text-red-600 hover:text-red-800">
+                        View Study Guide <i class="fas fa-arrow-right ml-1"></i>
+                    </span>
+                </div>
+            </a>
+
+            <!-- Chapter 39 Card -->
+            <a href="TPC-39.html" class="guide-card bg-white shadow-lg overflow-hidden flex flex-col h-full">
+                <div class="p-6 flex-grow">
+                    <div class="flex items-center">
+                        <div class="p-3 rounded-full bg-red-100 text-red-600">
+                            <i class="fas fa-user-tie fa-lg"></i>
+                        </div>
+                        <div class="ml-4">
+                            <h2 class="text-xl font-bold text-gray-900">Chapter 39</h2>
+                            <p class="text-gray-600">Abuse of Office</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-gray-50 px-6 py-3 text-right">
+                    <span class="text-sm font-medium text-red-600 hover:text-red-800">
+                        View Study Guide <i class="fas fa-arrow-right ml-1"></i>
+                    </span>
+                </div>
+            </a>
+
+            <!-- Chapter 42 Card -->
+            <a href="TPC-42.html" class="guide-card bg-white shadow-lg overflow-hidden flex flex-col h-full">
+                <div class="p-6 flex-grow">
+                    <div class="flex items-center">
+                        <div class="p-3 rounded-full bg-red-100 text-red-600">
+                            <i class="fas fa-bullhorn fa-lg"></i>
+                        </div>
+                        <div class="ml-4">
+                            <h2 class="text-xl font-bold text-gray-900">Chapter 42</h2>
+                            <p class="text-gray-600">Disorderly Conduct and Related Offenses</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-gray-50 px-6 py-3 text-right">
+                    <span class="text-sm font-medium text-red-600 hover:text-red-800">
+                        View Study Guide <i class="fas fa-arrow-right ml-1"></i>
+                    </span>
+                </div>
+            </a>
+
+            <!-- Chapter 43 Card -->
+            <a href="TPC-43.html" class="guide-card bg-white shadow-lg overflow-hidden flex flex-col h-full">
+                <div class="p-6 flex-grow">
+                    <div class="flex items-center">
+                        <div class="p-3 rounded-full bg-red-100 text-red-600">
+                            <i class="fas fa-eye-slash fa-lg"></i>
+                        </div>
+                        <div class="ml-4">
+                            <h2 class="text-xl font-bold text-gray-900">Chapter 43</h2>
+                            <p class="text-gray-600">Public Indecency</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-gray-50 px-6 py-3 text-right">
+                    <span class="text-sm font-medium text-red-600 hover:text-red-800">
+                        View Study Guide <i class="fas fa-arrow-right ml-1"></i>
+                    </span>
+                </div>
+            </a>
+
+            <!-- Chapter 46 Card -->
+            <a href="TPC-46.html" class="guide-card bg-white shadow-lg overflow-hidden flex flex-col h-full">
+                <div class="p-6 flex-grow">
+                    <div class="flex items-center">
+                        <div class="p-3 rounded-full bg-red-100 text-red-600">
+                            <i class="fas fa-gun fa-lg"></i>
+                        </div>
+                        <div class="ml-4">
+                            <h2 class="text-xl font-bold text-gray-900">Chapter 46</h2>
+                            <p class="text-gray-600">Weapons</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-gray-50 px-6 py-3 text-right">
+                    <span class="text-sm font-medium text-red-600 hover:text-red-800">
+                        View Study Guide <i class="fas fa-arrow-right ml-1"></i>
+                    </span>
+                </div>
+            </a>
+
+            <!-- Chapter 47 Card -->
+            <a href="TPC-47.html" class="guide-card bg-white shadow-lg overflow-hidden flex flex-col h-full">
+                <div class="p-6 flex-grow">
+                    <div class="flex items-center">
+                        <div class="p-3 rounded-full bg-red-100 text-red-600">
+                            <i class="fas fa-dice fa-lg"></i>
+                        </div>
+                        <div class="ml-4">
+                            <h2 class="text-xl font-bold text-gray-900">Chapter 47</h2>
+                            <p class="text-gray-600">Gambling</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-gray-50 px-6 py-3 text-right">
+                    <span class="text-sm font-medium text-red-600 hover:text-red-800">
+                        View Study Guide <i class="fas fa-arrow-right ml-1"></i>
+                    </span>
+                </div>
+            </a>
+
+            <!-- Chapter 48 Card -->
+            <a href="TPC-48.html" class="guide-card bg-white shadow-lg overflow-hidden flex flex-col h-full">
+                <div class="p-6 flex-grow">
+                    <div class="flex items-center">
+                        <div class="p-3 rounded-full bg-red-100 text-red-600">
+                            <i class="fas fa-virus fa-lg"></i>
+                        </div>
+                        <div class="ml-4">
+                            <h2 class="text-xl font-bold text-gray-900">Chapter 48</h2>
+                            <p class="text-gray-600">Conduct Affecting Public Health</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-gray-50 px-6 py-3 text-right">
+                    <span class="text-sm font-medium text-red-600 hover:text-red-800">
+                        View Study Guide <i class="fas fa-arrow-right ml-1"></i>
+                    </span>
+                </div>
+            </a>
+
+            <!-- Chapter 49 Card -->
+            <a href="TPC-49.html" class="guide-card bg-white shadow-lg overflow-hidden flex flex-col h-full">
+                <div class="p-6 flex-grow">
+                    <div class="flex items-center">
+                        <div class="p-3 rounded-full bg-red-100 text-red-600">
+                            <i class="fas fa-whiskey-glass fa-lg"></i>
+                        </div>
+                        <div class="ml-4">
+                            <h2 class="text-xl font-bold text-gray-900">Chapter 49</h2>
+                            <p class="text-gray-600">Intoxication and Alcoholic Beverage Offenses</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-gray-50 px-6 py-3 text-right">
+                    <span class="text-sm font-medium text-red-600 hover:text-red-800">
+                        View Study Guide <i class="fas fa-arrow-right ml-1"></i>
+                    </span>
+                </div>
+            </a>
+
+            <!-- Chapter 51 Card -->
+            <a href="TPC-51.html" class="guide-card bg-white shadow-lg overflow-hidden flex flex-col h-full">
+                <div class="p-6 flex-grow">
+                    <div class="flex items-center">
+                        <div class="p-3 rounded-full bg-red-100 text-red-600">
+                            <i class="fas fa-person-through-window fa-lg"></i>
+                        </div>
+                        <div class="ml-4">
+                            <h2 class="text-xl font-bold text-gray-900">Chapter 51</h2>
+                            <p class="text-gray-600">Illegal Entry Into This State</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-gray-50 px-6 py-3 text-right">
+                    <span class="text-sm font-medium text-red-600 hover:text-red-800">
+                        View Study Guide <i class="fas fa-arrow-right ml-1"></i>
+                    </span>
+                </div>
+            </a>
+
+            <!-- Chapter 71 Card -->
+            <a href="TPC-71.html" class="guide-card bg-white shadow-lg overflow-hidden flex flex-col h-full">
+                <div class="p-6 flex-grow">
+                    <div class="flex items-center">
+                        <div class="p-3 rounded-full bg-red-100 text-red-600">
+                            <i class="fas fa-users-viewfinder fa-lg"></i>
+                        </div>
+                        <div class="ml-4">
+                            <h2 class="text-xl font-bold text-gray-900">Chapter 71</h2>
+                            <p class="text-gray-600">Organized Crime</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-gray-50 px-6 py-3 text-right">
+                    <span class="text-sm font-medium text-red-600 hover:text-red-800">
+                        View Study Guide <i class="fas fa-arrow-right ml-1"></i>
+                    </span>
+                </div>
+            </a>
+
+            <!-- Chapter 72 Card -->
+            <a href="TPC-72.html" class="guide-card bg-white shadow-lg overflow-hidden flex flex-col h-full">
+                <div class="p-6 flex-grow">
+                    <div class="flex items-center">
+                        <div class="p-3 rounded-full bg-red-100 text-red-600">
+                            <i class="fas fa-user-secret fa-lg"></i>
+                        </div>
+                        <div class="ml-4">
+                            <h2 class="text-xl font-bold text-gray-900">Chapter 72</h2>
+                            <p class="text-gray-600">Racketeering and Unlawful Debt Collection</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-gray-50 px-6 py-3 text-right">
+                    <span class_ ="text-sm font-medium text-red-600 hover:text-red-800">
+                        View Study Guide <i class="fas fa-arrow-right ml-1"></i>
+                    </span>
+                </div>
+            </a>
+
+            <!-- Chapter 76 Card -->
+            <a href="TPC-76.html" class="guide-card bg-white shadow-lg overflow-hidden flex flex-col h-full">
+                <div class="p-6 flex-grow">
+                    <div class="flex items-center">
+                        <div class="p-3 rounded-full bg-red-100 text-red-600">
+                            <i class="fas fa-bomb fa-lg"></i>
+                        </div>
+                        <div class="ml-4">
+                            <h2 class="text-xl font-bold text-gray-900">Chapter 76</h2>
+                            <p class="text-gray-600">Terroristic Offenses</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-gray-50 px-6 py-3 text-right">
+                    <span class="text-sm font-medium text-red-600 hover:text-red-800">
+                        View Study Guide <i class="fas fa-arrow-right ml-1"></i>
+                    </span>
+                </div>
+            </a>
+
+            <!-- Add new chapter cards here as needed -->
+
+        </div>
+    </main>
+
+</body>
+</html>

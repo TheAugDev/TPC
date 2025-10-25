@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ch. 3 Study Guide: Texas Penal Code</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet">
+    <style>
+        :root {
+            --header-bg: #1f2937;
+            --bg-color: #f3f4f6;
+            --tab-active-bg: #3b82f6;
+            --tab-active-text: #ffffff;
+            --card-bg: #ffffff;
+            --text-color: #111827;
+            --link-color: #2563eb;
+        }
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            font-family: 'Inter', sans-serif;
+        }
+        @import url('https://rsms.me/inter/inter.css');
+        .tab-content { display: none; }
+        .tab-content.active { display: block; }
+        .tab.active {
+            background-color: var(--tab-active-bg);
+            color: var(--tab-active-text);
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .tab {
+            transition: all 0.3s ease-in-out;
+        }
+        .definition-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 1rem;
+        }
+        .definition-item {
+            background-color: #f9fafb;
+            padding: 0.75rem;
+            border-radius: 0.5rem;
+            border: 1px solid #e5e7eb;
+        }
+        .definition-term {
+            font-weight: 600;
+            color: #111827;
+        }
+        .definition-desc {
+            font-size: 0.875rem;
+            color: #4b5563;
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Header -->
+    <header class="bg-gray-800 text-white p-4 shadow-md">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-2xl font-bold">
+                <i class="fas fa-copy mr-2"></i>Ch. 3: Multiple Prosecutions
+            </h1>
+            <a href="index.html" class="text-sm text-blue-300 hover:text-blue-100 hover:underline">
+                <i class="fas fa-arrow-left mr-1"></i> Back to Main Page
+            </a>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container mx-auto p-4 md:p-6">
+        <!-- Tab Navigation -->
+        <div class="mb-6 bg-white rounded-lg shadow-md overflow-x-auto">
+            <nav id="tabs" class="flex flex-row space-x-1 p-2">
+                <button data-tab="ch3-provisions" class="tab active flex-1 md:flex-none flex items-center justify-center px-4 py-2 text-sm font-semibold rounded-lg text-gray-600 hover:bg-blue-100">
+                    <i class="fas fa-book mr-2"></i> <span class="hidden md:inline">Key Sections</span>
+                </button>
+                <button data-tab="ch3-definitions" class="tab flex-1 md:flex-none flex items-center justify-center px-4 py-2 text-sm font-semibold rounded-lg text-gray-600 hover:bg-blue-100">
+                    <i class="fas fa-list-ul mr-2"></i> <span class="hidden md:inline">Key Definitions (Sec 3.01)</span>
+                </button>
+                <button data-tab="knowledge-check" class="tab flex-1 md:flex-none flex items-center justify-center px-4 py-2 text-sm font-semibold rounded-lg text-gray-600 hover:bg-blue-100">
+                    <i class="fas fa-question-circle mr-2"></i> <span class="hidden md:inline">Knowledge Check</span>
+                </button>
+                <button data-tab="resources" class="tab flex-1 md:flex-none flex items-center justify-center px-4 py-2 text-sm font-semibold rounded-lg text-gray-600 hover:bg-blue-100">
+                    <i class="fas fa-link mr-2"></i> <span class="hidden md:inline">Resources</span>
+                </button>
+            </nav>
+        </div>
+
+        <!-- Tab Content -->
+        <div id="tab-contents">
+            <!-- Ch. 3: Key Sections Tab -->
+            <div id="ch3-provisions" class="tab-content active space-y-6">
+                
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-xl font-bold mb-4 border-b pb-2"><a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.3.htm#3.02" target="_blank" class="text-blue-600 hover:underline">Sec. 3.02. Consolidation and Joinder of Prosecutions</a></h2>
+                    <ul class="list-disc list-inside text-sm text-gray-700 space-y-2">
+                        <li><strong>Single Action:</strong> A defendant *may* be prosecuted in a single criminal action (one trial) for all offenses that arise out of the same "criminal episode."</li>
+                        <li><strong>Written Notice:</strong> If the single action uses more than one charging instrument (e.g., multiple indictments), the state *must* file a written notice of this action at least 30 days before the trial.</li>
+                        <li><strong>New Trial Limitation:</strong> If a conviction is reversed and a new trial is ordered, the state *cannot* add new offenses that weren't joined in the first trial.
+                            <ul>
+                                <li class="ml-6 list-item list-['-(_)*']"><strong>Exception:</strong> This is allowed *only if* the evidence needed to establish probable guilt for that new offense was not known to the prosecutor when the first trial started.</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-xl font-bold mb-4 border-b pb-2"><a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.3.htm#3.03" target="_blank" class="text-blue-600 hover:underline">Sec. 3.03. Sentenses for Offenses from Same Criminal Episode</a></h2>
+                    <p class="text-sm text-gray-700 mb-2">This section governs how sentences are served when a defendant is convicted of multiple offenses in a single trial.</p>
+                    <ul class="list-disc list-inside text-sm text-gray-700 space-y-2">
+                        <li><strong class="font-semibold">General Rule: CONCURRENT.</strong> If found guilty of multiple offenses from the same criminal episode in a single action, a sentence is pronounced for each. These sentences *must* run concurrently (at the same time).</li>
+                        
+                        <li><strong class="font-semibold">Exception: CONSECUTIVE Allowed.</strong> Sentences *may* run concurrently OR consecutively (one after the other) if *each* conviction is for one of the following specific offenses (or a plea agreement for one):
+                            <ul class="list-decimal list-inside ml-6 mt-1 space-y-1">
+                                <li>Intoxication Manslaughter (<a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.49.htm#49.08" target="_blank" class="text-blue-600 hover:underline">49.08</a>) or Intoxication Assault (<a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.49.htm#49.07" target="_blank" class="text-blue-600 hover:underline">49.07</a>).</li>
+                                <li>Certain offenses against victims < 17 years old (e.g., <a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.33.htm#33.021" target="_blank" class="text-blue-600 hover:underline">Sec 33.021</a>, <a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.21.htm#21.02" target="_blank" class="text-blue-600 hover:underline">Sec 21.02</a>, <a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.21.htm#21.11" target="_blank" class="text-blue-600 hover:underline">21.11</a>, <a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.25.htm#25.02" target="_blank" class="text-blue-600 hover:underline">25.02</a>, or <a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.43.htm#43.25" target="_blank" class="text-blue-600 hover:underline">43.25</a>).</li>
+                                <li>Sexual Assault (<a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.22.htm#22.011" target="_blank" class="text-blue-600 hover:underline">22.011</a>) or Aggravated Sexual Assault (<a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.22.htm#22.021" target="_blank" class="text-blue-600 hover:underline">22.021</a>).</li>
+                                <li>Continuous Sexual Abuse of Child (<a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.21.htm#21.15" target="_blank" class="text-blue-600 hover:underline">21.15</a>) or Promotion of Child Pornography (<a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.43.htm#43.26" target="_blank" class="text-blue-600 hover:underline">43.26</a>).</li>
+                                <li>Offenses with an affirmative finding of bias/prejudice (CCP <a href="https://statutes.capitol.texas.gov/Docs/CR/htm/CR.42.htm#42.0197" target="_blank" class="text-blue-600 hover:underline">Art. 42.0197</a>).</li>
+                                <li>Trafficking of Persons (<a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.20A.htm#20A.02" target="_blank" class="text-blue-600 hover:underline">20A.02</a>), Continuous Trafficking (<a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.20A.htm#20A.03" target="_blank" class="text-blue-600 hover:underline">20A.03</a>), or Compelling Prostitution (<a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.43.htm#43.05" target="_blank" class="text-blue-600 hover:underline">43.05</a>).</li>
+                                <li>First-degree felony Injury to a Child/Elderly/Disabled (<a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.22.htm#22.04" target="_blank" class="text-blue-600 hover:underline">22.04(a)(1)/(2), (a-1)(1)/(2)</a>).</li>
+                                <li>Online Solicitation of a Minor (<a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.43.htm#43.235" target="_blank" class="text-blue-600 hover:underline">43.235</a>).</li>
+                                <li>Any combination of the above.</li>
+                            </ul>
+                        </li>
+                        
+                        <li><strong class="font-semibold">Exception to the Exception (Juvenile):</strong> The exception for bias findings (3.03(b)(4)) *does not* apply if the defendant's case was transferred from juvenile court (Sec 3.03(b-1)).</li>
+
+                        <li><strong class="font-semibold">Mandatory Consecutive Rule:</strong> Sentences *must* run consecutively if the defendant is convicted of more than one Aggravated Assault (<a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.22.htm#22.02" target="_blank" class="text-blue-600 hover:underline">22.02</a>) in the same trial, AND each assault is punishable as a first-degree felony under <a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.22.htm#22.02" target="_blank" class="text-blue-600 hover:underline">22.02(b)(4)</a>.</li>
+
+                        <li><strong class="font-semibold">Special Consecutive Rule (Smuggling):</strong> Creates a rule allowing consecutive sentencing for offenses like Smuggling of Persons (<a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.20.htm#20.05" target="_blank" class="text-blue-600 hover:underline">20.05(a)(2)</a>) or <a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.20.htm#20.06" target="_blank" class="text-blue-600 hover:underline">Sec 20.06</a> when tried alongside offenses like Unlawful Restraint (<a href="httpsG://statutes.capitol.texas.gov/Docs/PE/htm/PE.22.htm#22.01" target="_blank" class="text-blue-600 hover:underline">22.01(b-4)</a>), Burglary of Vehicle (<a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.30.htm#30.02" target="_blank" class="text-blue-600 hover:underline">30.02(c-2)</a>, <a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.30.htm#30.04" target="_blank" class="text-blue-600 hover:underline">30.04(d)(3)(B)</a>), Criminal Trespass (<a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.30.htm#30.05" target="_blank" class="text-blue-600 hover:underline">30.05(d)(4)</a>), or Evading Arrest (<a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.38.htm#38.04" target="_blank" class="text-blue-600 hover:underline">38.04(b-1)</a>) that arise from the same episode. (Note: Some sections like 28.10 were also listed in the statute text).
+                            <ul class="list-[circle] list-inside ml-6 mt-1">
+                                <li>If guilty of *more than one* Smuggling offense (20.05(a)(2)), those smuggling sentences *must run concurrently with each other* (3.03(d)(3)).</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-xl font-bold mb-4 border-b pb-2"><a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.3.htm#3.04" target="_blank" class="text-blue-600 hover:underline">Sec. 3.04. Severance</a></h2>
+                    <p class="text-sm text-gray-700 mb-2">This section details the defendant's right to separate trials.</p>
+                    <ul class="list-disc list-inside text-sm text-gray-700 space-y-2">
+                        <li><strong class="font-semibold">Defendant's Right:</strong> If offenses are joined under Sec. 3.02, the defendant has a *right to a severance* (i.e., to have the offenses tried separately).</li>
+                        <li><strong class="font-semibold">Effect of Severance:</strong> If a severance is granted:
+                            <ol class="list-decimal list-inside ml-6">
+                                <li>The general rule of concurrent sentences (Sec. 3.03) does *not* apply.</li>
+                                <li>The judge has the discretion to order the sentences to run concurrently or consecutively.</li>
+                            </ol>
+                        </li>
+                        <li><strong class="font-semibold">MAJOR Exception:</strong> The defendant's right to severance does *NOT* apply to the specific offenses listed in <a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.3.htm#3.03" target="_blank" class="text-blue-600 hover:underline">Sec 3.03(b)</a> (the consecutive exceptions like trafficking, sexual assault, etc.) or <a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.3.htm#3.03" target="_blank" class="text-blue-600 hover:underline">3.03(c)</a> (mandatory consecutive Agg. Assaults).
+                             <ul class="ml-6 list-item list-['-(_)*']">
+                                <li>A judge *can* still grant a severance for these, but only if they determine that a joinder would be *unfairly prejudicial* to either the defendant or the state.</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <!-- Ch. 3: Key Definitions (Sec 3.01) Tab -->
+            <div id="ch3-definitions" class="tab-content space-y-6">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-xl font-bold mb-4 border-b pb-2"><a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.3.htm#3.01" target="_blank" class="text-blue-600 hover:underline">Sec. 3.01. Key Definitions</a></h2>
+                    <p class="text-sm text-gray-700 mb-4">This chapter's central concept is the "criminal episode."</p>
+                    <div class="definition-grid">
+                        <div class="definition-item">
+                            <p class="definition-term">Criminal Episode</p>
+                            <p class="definition-desc">The commission of two or more offenses (even with different victims or property) under one of these two circumstances:
+                                <br>(1) The offenses are committed as part of the *same transaction* OR two or more transactions that are *connected or constitute a common scheme or plan*; OR
+                                <br>(2) The offenses are the *repeated commission of the same or similar offenses*.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Knowledge Check Tab -->
+            <div id="knowledge-check" class="tab-content">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-2xl font-bold mb-4">Knowledge Check (Ch. 3)</h2>
+                    <p class="mb-6 text-gray-600">Test your understanding of the material.</p>
+                    <div id="quiz-container" class="space-y-8">
+                        <!-- Questions will be dynamically inserted here -->
+                    </div>
+                    <!-- New Results Div -->
+                    <div id="quiz-results" class="hidden mt-8 text-center">
+                        <h3 class="text-2xl font-bold" id="quiz-score"></h3>
+                        <p class="text-lg text-gray-700" id="quiz-percentage"></p>
+                    </div>
+                    <!-- Button Container -->
+                    <div class="mt-8 text-center space-x-4">
+                        <button id="check-answers-btn" class="bg-blue-600 text-white font-bold py-2 px-6 rounded-lg hover:bg-blue-700 transition-colors">Submit Answers</button>
+                        <button id="retake-quiz-btn" class="hidden bg-gray-600 text-white font-bold py-2 px-6 rounded-lg hover:bg-gray-700 transition-colors">Retake Quiz</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Resources Tab -->
+            <div id="resources" class="tab-content">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-2xl font-bold mb-4">External Resources</h2>
+                    <p class="mb-6 text-gray-600">Quick links to official Texas statutes.</p>
+                    <div id="resources-list" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 text-sm">
+                        <!-- Links will be dynamically inserted here -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const tabs = document.querySelectorAll('#tabs button');
+            const tabContents = document.querySelectorAll('.tab-content');
+
+            tabs.forEach(tab => {
+                tab.addEventListener('click', () => {
+                    tabs.forEach(t => t.classList.remove('active'));
+                    tabContents.forEach(c => c.classList.remove('active'));
+                    tab.classList.add('active');
+                    document.getElementById(tab.dataset.tab).classList.add('active');
+                });
+            });
+
+            // --- QUIZ DATA ---
+            const quizData = [
+                {
+                    question: "What is the definition of a 'criminal episode' under Sec. 3.01?",
+                    options: ["Any two offenses committed in the same day.", "The commission of two or more offenses pursuant to the same transaction OR as a repeated commission of the same/similar offenses.", "Only felonies that are committed as part of a common scheme.", "Any offense that involves more than one victim."],
+                    answer: "The commission of two or more offenses pursuant to the same transaction OR as a repeated commission of the same/similar offenses.",
+                    explanation: "Sec. 3.01 defines 'criminal episode' using two main circumstances: (1) same transaction or common scheme/plan, or (2) repeated commission of same/similar offenses."
+                },
+                {
+                    question: "Under Sec. 3.02, can a defendant be prosecuted in a single criminal action for all offenses from the same criminal episode?",
+                    options: ["No, each offense must have its own trial.", "Yes, this is explicitly allowed.", "Only if the offenses are all misdemeanors.", "Only if the defendant agrees to it."],
+                    answer: "Yes, this is explicitly allowed.",
+                    explanation: "Sec. 3.02(a) states: 'A defendant may be prosecuted in a single criminal action for all offenses arising out of the same criminal episode.'"
+                },
+                {
+                    question: "What is the *general rule* for sentences when an accused is found guilty of more than one offense from the same criminal episode in a single action?",
+                    options: ["The sentences must run consecutively (one after the other).", "The sentences must run concurrently (at the same time).", "The judge always has discretion to choose.", "The defendant chooses whether they run concurrently or consecutively."],
+                    answer: "The sentences must run concurrently (at the same time).",
+                    explanation: "Sec. 3.03(a) establishes the general rule: 'Except as otherwise provided by this section, the sentences shall run concurrently.'"
+                },
+                {
+                    question: "If the state prosecutes multiple offenses in a single action using more than one charging instrument, what is required by Sec. 3.02(b)?",
+                    options: ["The state must get the judge's permission 10 days before trial.", "The state must notify the defendant verbally.", "The state must file written notice of the action at least 30 days before trial.", "Nothing, this is standard procedure."],
+                    answer: "The state must file written notice of the action at least 30 days before trial.",
+                    explanation: "Sec. 3.02(b) requires the state to 'file written notice of the action not less than 30 days prior to the trial.'"
+                },
+                {
+                    question: "Does a defendant *always* have a right to a severance (separate trials) if offenses are joined under Sec. 3.02?",
+                    options: ["Yes, the right to severance is absolute.", "No, the right does not apply to specific offenses listed in 3.03(b) and (c) unless there is unfair prejudice.", "No, a defendant never has a right to severance.", "Yes, but only if all offenses are felonies."],
+                    answer: "No, the right does not apply to specific offenses listed in 3.03(b) and (c) unless there is unfair prejudice.",
+                    explanation: "Sec. 3.04(c) creates a major exception to the right of severance for the offenses that are eligible for consecutive sentencing (like Sexual Assault, Trafficking, etc.)."
+                },
+                {
+                    question: "If a defendant's conviction is reversed and a new trial is ordered, can the state add a new offense that wasn't joined in the first trial?",
+                    options: ["Yes, at any time.", "Yes, but only if the new offense is a misdemeanor.", "No, this is never allowed.", "No, unless evidence for that offense was not known to the prosecutor when the first trial began."],
+                    answer: "No, unless evidence for that offense was not known to the prosecutor when the first trial began.",
+                    explanation: "Sec. 3.02(c) prohibits this *unless* 'evidence to establish probable guilt for that offense was not known to the appropriate prosecuting official at the time the first prosecution commenced.'"
+                },
+                {
+                    question: "For which of the following offenses *may* sentences run consecutively if prosecuted in a single action?",
+                    options: ["Two Class C misdemeanors.", "Two convictions for Intoxication Manslaughter (Sec. 49.08).", "Two convictions for Theft (Sec. 31.03).", "Two convictions for Criminal Trespass (Sec. 30.05)."],
+                    answer: "Two convictions for Intoxication Manslaughter (Sec. 49.08).",
+                    explanation: "Sec. 3.03(b)(1) specifically lists Sec. 49.07 (Intoxication Assault) and 49.08 (Intoxication Manslaughter) as exceptions where sentences *may* run consecutively."
+                },
+                {
+                    question: "What happens to the sentencing rules if a defendant *is* granted a severance under Sec. 3.04?",
+                    options: ["The concurrent sentence rule (Sec. 3.03) still applies.", "The concurrent sentence rule (Sec. 3.03) does NOT apply, and the judge has discretion to run sentences concurrently or consecutively.", "The sentences *must* run consecutively.", "The sentences *must* run concurrently."],
+                    answer: "The concurrent sentence rule (Sec. 3.03) does NOT apply, and the judge has discretion to run sentences concurrently or consecutively.",
+                    explanation: "Sec. 3.04(b) states that if a severance occurs, 'the provisions of Section 3.03 do not apply, and the court in its discretion may order the sentences to run either concurrently or consecutively.'"
+                },
+                {
+                    question: "Sec. 3.03(b)(2) allows for consecutive sentences for certain offenses (like Sec 21.11, Indecency) committed against a victim of what age?",
+                    options: ["Younger than 18 years of age.", "Younger than 17 years of age.", "Younger than 14 years of age.", "Any age, if it's a sexual offense."],
+                    answer: "Younger than 17 years of age.",
+                    explanation: "Sec. 3.03(b)(2) specifies 'a victim younger than 17 years of age at the time of the commission of the offense.'"
+                },
+                {
+                    question: "Under what specific circumstance *must* sentences run consecutively, according to Sec. 3.03(c)?",
+                    options: ["If the defendant is found guilty of any two felonies.", "If the defendant is found guilty of more than one offense under Sec. 22.02 (Agg. Assault) punishable as a first-degree felony.", "If the defendant is found guilty of any offense against a peace officer.", "If the defendant is found guilty of Smuggling of Persons (Sec. 20.05)."],
+                    answer: "If the defendant is found guilty of more than one offense under Sec. 22.02 (Agg. Assault) punishable as a first-degree felony.",
+                    explanation: "Sec. 3.03(c) creates a *mandatory* consecutive rule for multiple first-degree felony Aggravated Assaults (under 22.02(b)(4)) from the same criminal episode."
+                },
+                {
+                    question: "The right to severance under Sec 3.04(a) does NOT apply to offenses listed in Sec 3.03(b) (like Trafficking or Sexual Assault) *unless*...",
+                    options: ["...the defendant requests it in writing.", "...the state agrees to it.", "...the court determines that a joinder would be unfairly prejudicial.", "...the offenses are all state jail felonies."],
+                    answer: "...the court determines that a joinder would be unfairly prejudicial.",
+                    explanation: "Sec. 3.04(c) provides this 'unfairly prejudicial' exception, which gives the judge discretion to sever even these specific offenses."
+                },
+                {
+                    question: "Which of these definitions fits 'criminal episode'?",
+                    options: ["The repeated commission of the same or similar offenses.", "Two or more offenses committed pursuant to the same transaction.", "Two or more offenses connected or constituting a common scheme or plan.", "All of the above."],
+                    answer: "All of the above.",
+                    explanation: "Sec. 3.01 covers all of these scenarios: (1) same transaction or common scheme/plan, and (2) repeated commission."
+                },
+                {
+                    question: "Sentences *may* run consecutively for convictions of Sexual Assault (22.011) or Aggravated Sexual Assault (22.021).",
+                    options: ["True", "False"],
+                    answer: "True",
+                    explanation: "This is true. Sec. 3.03(b)(2-a) explicitly lists these offenses as exceptions to the general concurrent rule, meaning the judge *may* order consecutive sentences."
+                },
+                {
+                    question: "If a defendant is convicted of three counts of Theft (Sec. 31.03) in a single trial for offenses arising from one criminal episode, how must the sentences run?",
+                    options: ["They must run consecutively.", "They must run concurrently.", "The judge can decide whether they run concurrently or consecutively.", "The defendant gets to decide."],
+                    answer: "They must run concurrently.",
+                    explanation: "Theft (Sec. 31.03) is NOT listed as an exception in Sec. 3.03(b). Therefore, the general rule from Sec. 3.03(a) applies, and the sentences *must* run concurrently."
+                },
+                {
+                    question: "A defendant is convicted in a single trial of one count of Trafficking of Persons (20A.02) and one count of Sexual Assault (22.011) from the same criminal episode. How *may* the sentences run?",
+                    options: ["They must run concurrently.", "They may run concurrently or consecutively.", "They must run consecutively.", "They are probated automatically."],
+                    answer: "They may run concurrently or consecutively.",
+                    explanation: "Both Sec. 20A.02 (listed in 3.03(b)(5)) and Sec. 22.011 (listed in 3.03(b)(2-a)) are exceptions to the general rule. Because *each* offense is an exception, Sec. 3.03(b) gives the judge discretion to run them concurrently or consecutively."
+                },
+                {
+                    question: "A person robs one victim and burglarizes another victim's home two streets over as part of the same continuous spree. Can these two offenses be considered a 'criminal episode' under Sec. 3.01?",
+                    options: ["Yes, because they are part of the same transaction or common scheme, regardless of multiple victims.", "No, because there are two different victims.", "No, because the offenses are different types (robbery and burglary).", "Only if the victims are related."],
+                    answer: "Yes, because they are part of the same transaction or common scheme, regardless of multiple victims.",
+                    explanation: "Sec. 3.01 states a criminal episode can involve offenses 'regardless of whether the harm is directed toward... more than one person or item of property,' as long as they are part of the same transaction or scheme."
+                },
+                {
+                    question: "A defendant is convicted of one count of Sexual Assault (a 3.03(b) exception) and one count of Theft (NOT a 3.03(b) exception) from the same criminal episode. How must the sentences run?",
+                    options: ["They must run concurrently.", "They may run concurrently or consecutively.", "They must run consecutively.", "The Sexual Assault sentence is served first, then the Theft."],
+                    answer: "They must run concurrently.",
+                    explanation: "Sec. 3.03(b) (discretionary consecutive) only applies if *each* sentence is for a conviction of a listed offense. Since Theft is not on the list, the general rule of Sec. 3.03(a) applies, and the sentences *must* run concurrently."
+                },
+                {
+                    question: "An offense receives an affirmative finding under CCP Art. 42.0197 (bias/prejudice). Can this offense's sentence be run consecutively with another 3.03(b) offense?",
+                    options: ["Yes, this is a specific exception listed under Sec. 3.03(b)(4).", "No, this finding only affects the penalty, not sentencing sequence.", "No, only sexual offenses can run consecutively.", "Yes, but only if the offense was a felony."],
+                    answer: "Yes, this is a specific exception listed under Sec. 3.03(b)(4).",
+                    explanation: "Sec. 3.03(b)(4) explicitly lists an offense with an affirmative finding under CCP 42.0197 as one that qualifies for discretionary consecutive sentencing."
+                },
+                {
+                    question: "A defendant's case was transferred from juvenile court. He is convicted of an offense with a bias finding (3.03(b)(4)). Can this sentence be run consecutively based on that finding?",
+                    options: ["No, Sec. 3.03(b-1) states the bias finding exception (b)(4) does not apply to cases transferred from juvenile court.", "Yes, the bias finding always allows consecutive sentences.", "Only if the juvenile was certified as an adult.", "No, juvenile court findings are irrelevant."],
+                    answer: "No, Sec. 3.03(b-1) states the bias finding exception (b)(4) does not apply to cases transferred from juvenile court.",
+                    explanation: "Sec. 3.03(b-1) creates a specific carve-out: the discretionary consecutive sentencing for a bias finding (b)(4) is not available for defendants whose cases were transferred from juvenile court."
+                },
+                {
+                    question: "A defendant is convicted of Smuggling of Persons (20.05(a)(2)) and Evading Arrest (38.04(b-1)) from the same criminal episode. How *may* the sentences run?",
+                    options: ["The sentence for Smuggling *may* run consecutively with the sentence for Evading Arrest.", "The sentences *must* run concurrently.", "The sentences *must* run consecutively.", "The Evading sentence must be probated."],
+                    answer: "The sentence for Smuggling *may* run consecutively with the sentence for Evading Arrest.",
+                    explanation: "Sec. 3.03(d) provides a special rule allowing the sentence for Smuggling (20.05(a)(2)) to run consecutively with certain other offenses, including Evading Arrest (38.04(b-1)), from the same episode."
+                },
+                {
+                    question: "A defendant is convicted of *two counts* of Smuggling of Persons (20.05(a)(2)) and one count of Evading Arrest (38.04(b-1)). How must the *two smuggling sentences* run in relation to each other?",
+                    options: ["The two smuggling sentences *must* run concurrently with each other.", "The two smuggling sentences *must* run consecutively with each other.", "The judge has discretion to run the two smuggling sentences consecutively.", "All three sentences must run concurrently."],
+                    answer: "The two smuggling sentences *must* run concurrently with each other.",
+                    explanation: "Sec. 3.03(d)(3) states that if the accused is found guilty of more than one offense described by (d)(1)(A) (Smuggling), the sentences for *those offenses* must run concurrently with each other (even though they may run consecutively to the Evading charge)."
+                },
+                {
+                    question: "A defendant is charged with one count of Theft and one count of Burglary from the same criminal episode. Does the defendant have a right to separate trials (severance)?",
+                    options: ["Yes, Sec. 3.04(a) gives the defendant a right to severance for these joined offenses.", "No, because they are from the same criminal episode.", "No, the right to severance only applies to misdemeanors.", "Only if the judge agrees it would be fair."],
+                    answer: "Yes, Sec. 3.04(a) gives the defendant a right to severance for these joined offenses.",
+                    explanation: "Sec. 3.04(a) grants the defendant a right to severance. Since neither Theft nor Burglary are listed in the exceptions (3.03(b) or (c)), this right is not limited by 3.04(c), and the defendant *shall* have the right."
+                },
+                {
+                    question: "Which of the following offenses are exceptions to the general concurrent sentencing rule, allowing for *discretionary* consecutive sentences?",
+                    options: ["Trafficking of Persons (20A.02) and 1st Degree Felony Injury to a Child (22.04).", "Theft (31.03) and Burglary (30.02).", "Criminal Trespass (30.05) and DWI (49.04).", "All offenses can be run consecutively at the judge's discretion."],
+                    answer: "Trafficking of Persons (20A.02) and 1st Degree Felony Injury to a Child (22.04).",
+                    explanation: "Sec. 3.03(b) lists specific exceptions. (b)(5) lists Trafficking (20A.02) and (b)(6) lists 1st Degree Felony Injury to a Child (22.04). Theft, Burglary, Trespass, and DWI are not on this list."
+                }
+            ];
+
+            const quizContainer = document.getElementById('quiz-container');
+            const checkAnswersBtn = document.getElementById('check-answers-btn');
+            const retakeQuizBtn = document.getElementById('retake-quiz-btn');
+            const quizResultsDiv = document.getElementById('quiz-results');
+            const quizScoreEl = document.getElementById('quiz-score');
+            const quizPercentageEl = document.getElementById('quiz-percentage');
+
+            function loadQuiz() {
+                // Shuffle the quiz data for a new order each time
+                const shuffledQuizData = [...quizData].sort(() => Math.random() - 0.5);
+                
+                quizContainer.innerHTML = ''; // Clear previous questions
+                
+                shuffledQuizData.forEach((q, index) => {
+                    const questionDiv = document.createElement('div');
+                    questionDiv.className = 'quiz-question';
+                    
+                    // Store the original question index to check the answer later
+                    const originalIndex = quizData.indexOf(q);
+                    
+                    let optionsHtml = q.options.map(option => {
+                        // Escape HTML in options to prevent XSS
+                        const escapedOption = option.replace(/</g, "&lt;").replace(/>/g, "&gt;");
+                        return `<label class="block"><input type="radio" name="q${index}" value="${escapedOption}" data-original-index="${originalIndex}" class="mr-2">${escapedOption}</label>`;
+                    }).join('');
+                    
+                    // Escape HTML in the question
+                    const escapedQuestion = q.question.replace(/</g, "&lt;").replace(/>/g, "&gt;");
+
+                    questionDiv.innerHTML = `
+                        <p class="font-semibold mb-2">${index + 1}. ${escapedQuestion}</p>
+                        <div class="space-y-2">${optionsHtml}</div>
+                        <div class="feedback hidden mt-2 p-2 rounded-lg text-sm"></div>
+                    `;
+                    quizContainer.appendChild(questionDiv);
+                });
+            }
+
+
+            loadQuiz(); // Initial load
+
+            checkAnswersBtn.addEventListener('click', () => {
+                let score = 0;
+                const totalQuestions = quizData.length;
+                const questions = quizContainer.querySelectorAll('.quiz-question');
+
+                questions.forEach((questionDiv, index) => {
+                    const selected = questionDiv.querySelector(`input[name="q${index}"]:checked`);
+                    const feedback = questionDiv.querySelector('.feedback');
+                    const radioButtons = questionDiv.querySelectorAll(`input[name="q${index}"]`);
+                    
+                    feedback.classList.remove('hidden', 'bg-green-100', 'text-green-800', 'bg-red-100', 'text-red-800', 'bg-yellow-100', 'text-yellow-800');
+                    
+                    if (selected) {
+                        const originalIndex = selected.dataset.originalIndex;
+                        const q = quizData[originalIndex];
+
+                        // Compare the selected value (which was escaped) with the answer
+                        if (selected.value === q.answer.replace(/</g, "&lt;").replace(/>/g, "&gt;")) {
+                            score++;
+                            feedback.textContent = `Correct! ${q.explanation}`;
+                            feedback.classList.add('bg-green-100', 'text-green-800');
+                        } else {
+                            feedback.textContent = `Incorrect. The correct answer is "${q.answer}". ${q.explanation}`;
+                            feedback.classList.add('bg-red-100', 'text-red-800');
+                        }
+                    } else {
+                        // Find the original question to show the answer
+                        const firstRadio = questionDiv.querySelector(`input[name="q${index}"]`);
+                        const originalIndex = firstRadio.dataset.originalIndex;
+                        const q = quizData[originalIndex];
+                        
+                        feedback.textContent = `You did not answer this question. The correct answer is "${q.answer}". ${q.explanation}`;
+                        feedback.classList.add('bg-yellow-100', 'text-yellow-800');
+                    }
+                    
+                    // Disable radio buttons after submitting
+                    radioButtons.forEach(radio => {
+                        radio.disabled = true;
+                    });
+                });
+
+                // Calculate and display results
+                const percentage = ((score / totalQuestions) * 100).toFixed(0);
+                quizScoreEl.textContent = `Your Score: ${score} / ${totalQuestions}`;
+                quizPercentageEl.textContent = `Percentage: ${percentage}%`;
+                
+                quizResultsDiv.classList.remove('hidden');
+                checkAnswersBtn.classList.add('hidden');
+                retakeQuizBtn.classList.remove('hidden');
+            });
+
+            retakeQuizBtn.addEventListener('click', () => {
+                // Hide results and retake button
+                quizResultsDiv.classList.add('hidden');
+                retakeQuizBtn.classList.add('hidden');
+                
+                // Show submit button
+                checkAnswersBtn.classList.remove('hidden');
+                
+                // Reload the quiz (clears answers and feedback)
+                loadQuiz();
+            });
+
+
+            // --- RESOURCES LIST ---
+            const resources = [
+                { name: "Texas Penal Code - Official Site", url: "https://statutes.capitol.texas.gov/Default.aspx?Code=PE" },
+                { name: "Penal Code Ch. 3 - Multiple Prosecutions", url: "https://statutes.capitol.texas.gov/Docs/PE/htm/PE.3.htm" }
+            ];
+            const resourcesList = document.getElementById('resources-list');
+            resources.sort((a, b) => a.name.localeCompare(b.name));
+            resources.forEach(res => {
+                const link = document.createElement('a'); // Use an anchor tag for links
+                link.href = res.url;
+                link.target = '_blank';
+                link.rel = 'noopener noreferrer'; // Good practice for security
+                link.className = 'text-blue-600 hover:underline p-2 bg-gray-50 rounded-md block hover:bg-gray-100';
+                link.innerHTML = `<i class="fas fa-external-link-alt mr-2"></i>${res.name}`;
+                resourcesList.appendChild(link);
+            });
+        });
+    </script>
+</body>
+</html>
+
+

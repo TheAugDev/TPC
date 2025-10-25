@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ch. 1 Study Guide: Texas Penal Code</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet">
+    <style>
+        :root {
+            --header-bg: #1f2937;
+            --bg-color: #f3f4f6;
+            --tab-active-bg: #3b82f6;
+            --tab-active-text: #ffffff;
+            --card-bg: #ffffff;
+            --text-color: #111827;
+            --link-color: #2563eb;
+        }
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            font-family: 'Inter', sans-serif;
+        }
+        @import url('https://rsms.me/inter/inter.css');
+        .tab-content { display: none; }
+        .tab-content.active { display: block; }
+        .tab.active {
+            background-color: var(--tab-active-bg);
+            color: var(--tab-active-text);
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .tab {
+            transition: all 0.3s ease-in-out;
+        }
+        .definition-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 1rem;
+        }
+        .definition-item {
+            background-color: #f9fafb;
+            padding: 0.75rem;
+            border-radius: 0.5rem;
+            border: 1px solid #e5e7eb;
+        }
+        .definition-term {
+            font-weight: 600;
+            color: #111827;
+        }
+        .definition-desc {
+            font-size: 0.875rem;
+            color: #4b5563;
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Header -->
+    <header class="bg-gray-800 text-white p-4 shadow-md">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-2xl font-bold">
+                <i class="fas fa-gavel mr-2"></i>Ch. 1: General Provisions
+            </h1>
+            <a href="index.html" class="text-sm text-blue-300 hover:text-blue-100 hover:underline">
+                <i class="fas fa-arrow-left mr-1"></i> Back to Main Page
+            </a>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container mx-auto p-4 md:p-6">
+        <!-- Tab Navigation -->
+        <div class="mb-6 bg-white rounded-lg shadow-md overflow-x-auto">
+            <nav id="tabs" class="flex flex-row space-x-1 p-2">
+                <button data-tab="ch1-provisions" class="tab active flex-1 md:flex-none flex items-center justify-center px-4 py-2 text-sm font-semibold rounded-lg text-gray-600 hover:bg-blue-100">
+                    <i class="fas fa-book mr-2"></i> <span class="hidden md:inline">Key Sections</span>
+                </button>
+                <button data-tab="ch1-definitions" class="tab flex-1 md:flex-none flex items-center justify-center px-4 py-2 text-sm font-semibold rounded-lg text-gray-600 hover:bg-blue-100">
+                    <i class="fas fa-list-ul mr-2"></i> <span class="hidden md:inline">Key Definitions (Sec 1.07)</span>
+                </button>
+                <button data-tab="knowledge-check" class="tab flex-1 md:flex-none flex items-center justify-center px-4 py-2 text-sm font-semibold rounded-lg text-gray-600 hover:bg-blue-100">
+                    <i class="fas fa-question-circle mr-2"></i> <span class="hidden md:inline">Knowledge Check</span>
+                </button>
+                <button data-tab="resources" class="tab flex-1 md:flex-none flex items-center justify-center px-4 py-2 text-sm font-semibold rounded-lg text-gray-600 hover:bg-blue-100">
+                    <i class="fas fa-link mr-2"></i> <span class="hidden md:inline">Resources</span>
+                </button>
+            </nav>
+        </div>
+
+        <!-- Tab Content -->
+        <div id="tab-contents">
+            <!-- Ch. 1: General Provisions Tab -->
+            <div id="ch1-provisions" class="tab-content active space-y-6">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-xl font-bold mb-4 border-b pb-2"><a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.1.htm#1.02" target="_blank" class="text-blue-600 hover:underline">Sec. 1.02. Objectives of Code</a></h2>
+                    <p class="text-sm text-gray-700 mb-2">The Penal Code is intended to achieve the following objectives:</p>
+                    <ul class="list-disc list-inside text-sm text-gray-700 space-y-1">
+                        <li><strong>Insure public safety</strong> through deterrence, rehabilitation, and necessary punishment.</li>
+                        <li>Give <strong>fair warning</strong> of what is prohibited and the consequences.</li>
+                        <li>Prescribe <strong>proportionate penalties</strong> and allow for individual rehabilitation.</li>
+                        <li><strong>Safeguard conduct without guilt</strong> from being condemned as criminal.</li>
+                        <li><strong>Limit official discretion</strong> to prevent arbitrary or oppressive treatment.</li>
+                        <li>Define the scope of <strong>state interest</strong> and systematize jurisdiction.</li>
+                    </ul>
+                </div>
+
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-xl font-bold mb-4 border-b pb-2"><a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.1.htm#1.03" target="_blank" class="text-blue-600 hover:underline">Sec. 1.03. Effect of Code</a></h2>
+                    <p class="text-sm text-gray-700 mb-2">Key principles on how the code works:</p>
+                    <ul class="list-disc list-inside text-sm text-gray-700 space-y-1">
+                        <li><strong>Offenses must be defined by law:</strong> Conduct is not an offense unless defined by statute, municipal ordinance, county order, or a lawfully adopted rule.</li>
+                        <li><strong>Titles 1, 2, and 3 Apply Broadly:</strong> The general provisions (like definitions, culpability, and punishments) apply to offenses defined in *other* laws (like the Transportation Code or Health & Safety Code), unless that specific law says otherwise.</li>
+                        <li><strong>Civil Remedies are Separate:</strong> This code does *not* prevent a victim from seeking damages or other remedies in a civil lawsuit. A civil injury is not "merged" into the criminal offense.</li>
+                    </ul>
+                </div>
+
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-xl font-bold mb-4 border-b pb-2"><a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.1.htm#1.04" target="_blank" class="text-blue-600 hover:underline">Sec. 1.04. Territorial Jurisdiction</a></h2>
+                    <p class="text-sm text-gray-700 mb-2">Texas has jurisdiction (the power to prosecute) an offense if:</p>
+                    <ul class="list-disc list-inside text-sm text-gray-700 space-y-1">
+                        <li>The <strong>conduct</strong> or a <strong>result</strong> of the conduct occurs *inside* this state.</li>
+                        <li>The conduct *outside* the state is an <strong>attempt</strong> to commit an offense *inside* the state.</li>
+                        <li>The conduct *outside* the state is a <strong>conspiracy</strong> to commit an offense *inside* the state, AND an act furthering the conspiracy occurs *inside* the state.</li>
+                        <li>The conduct *inside* the state is an attempt, solicitation, or conspiracy to commit an offense in *another* jurisdiction (if it's also an offense in Texas).</li>
+                    </ul>
+                    <p class="text-sm text-gray-700 mt-3"><strong class="font-semibold">Homicide Specific:</strong> For homicide, a "result" is the impact causing death OR the death itself. If a body is found in Texas, it's *presumed* the death occurred in Texas.</p>
+                </div>
+                
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <h2 class="text-xl font-bold mb-4 border-b pb-2"><a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.1.htm#1.05" target="_blank" class="text-blue-600 hover:underline">Sec. 1.05. Construction of Code</a></h2>
+                        <ul class="list-disc list-inside text-sm text-gray-700 space-y-1">
+                            <li><strong>Not Strictly Construed:</strong> Unlike the old rule, this code is *not* to be strictly construed.</li>
+                            <li><strong>Fair Import:</strong> Provisions shall be construed according to the "fair import of their terms, to promote justice and effect the objectives of the code."</li>
+                            <li>Applies the Code Construction Act (Govt. Code Ch. 311).</li>
+                        </ul>
+                    </div>
+
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <h2 class="text-xl font-bold mb-4 border-b pb-2"><a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.1.htm#1.06" target="_blank" class="text-blue-600 hover:underline">Sec. 1.06. Computation of Age</a></h2>
+                        <ul class="list-disc list-inside text-sm text-gray-700 space-y-1">
+                            <li>A person attains a specified age on the <strong>day of the anniversary</strong> of their birthdate.</li>
+                            <li>(Example: If your 18th birthday is today, you are legally 18 today, not tomorrow).</li>
+                        </ul>
+                    </div>
+
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <h2 class="text-xl font-bold mb-4 border-b pb-2"><a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.1.htm#1.08" target="_blank" class="text-blue-600 hover:underline">Sec. 1.08. Preemption</a></h2>
+                        <ul class="list-disc list-inside text-sm text-gray-700 space-y-1">
+                            <li><strong>State Law Wins:</strong> No city, county, or other governmental subdivision can enact a law that makes conduct *already covered by this code* an offense with a criminal penalty.</li>
+                            <li>(In short: A city can't create its own ordinance for "Theft" with a different penalty; the Penal Code "preempts" this.)</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <h2 class="text-xl font-bold mb-4 border-b pb-2"><a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.1.htm#1.10" target="_blank" class="text-blue-600 hover:underline">Sec. 1.10. Enforcement of Certain Federal Firearm Laws</a></h2>
+                        <ul class="list-disc list-inside text-sm text-gray-700 space-y-1">
+                            <li><strong>No State Assistance:</strong> A Texas agency, political subdivision (city/county), or law enforcement officer *may not* provide assistance to a federal agency to enforce a federal firearm law that:
+                                <ol class="list-decimal list-inside ml-4">
+                                    <li>Does *not* exist under Texas law, AND</li>
+                                    <li>Relates to a registry, licensing, background check for private sales, or confiscation program.</li>
+                                </ol>
+                            </li>
+                            <li>Political subdivisions that violate this may be denied state funds.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Ch. 1: Key Definitions (Sec 1.07) Tab -->
+            <div id="ch1-definitions" class="tab-content space-y-6">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-xl font-bold mb-4 border-b pb-2"><a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.1.htm#1.07" target="_blank" class="text-blue-600 hover:underline">Sec. 1.07. Key Definitions</a></h2>
+                    <p class="text-sm text-gray-700 mb-4">These are the foundational building blocks for understanding offenses. Culpable mental states (Intentional, Knowing, Reckless, Criminal Negligence) are defined in Sec. 6.03, but referenced here.</p>
+                    <div class="definition-grid">
+                        <div class="definition-item"><p class="definition-term">(8) Bodily Injury</p><p class="definition-desc">Physical pain, illness, or any impairment of physical condition.</p></div>
+                        <div class="definition-item"><p class="definition-term">(10) Conduct</p><p class="definition-desc">An act or omission and its accompanying mental state.</p></div>
+                        <div class="definition-item"><p class="definition-term">(11) Consent</p><p class="definition-desc">Assent in fact, whether express or apparent.</p></div>
+                        <div class="definition-item"><p class="definition-term">(17) Deadly Weapon</p><p class="definition-desc">(A) A firearm or anything manifestly designed, made, or adapted to inflict death or SBI; OR (B) Anything that in the *manner of its use or intended use* is capable of causing death or SBI.</p></div>
+                        <div class="definition-item"><p class="definition-term">(19) Effective Consent</p><p class="definition-desc">Consent by a person legally authorized to act. Consent is *NOT* effective if: (A) induced by force, threat, or fraud; (B) given by a person the actor knows is not authorized; (C) given by someone unable to make reasonable decisions (youth, mental defect, intoxication); or (D) given solely to detect an offense.</p></div>
+                        <div class="definition-item"><p class="definition-term">(22) Element of Offense</p><p class="definition-desc">(A) The forbidden conduct; (B) The required culpability; (C) Any required result; AND (D) The negation of any exception.</p></div>
+                        <div class="definition-item"><p class="definition-term">(23) Felony</p><p class="definition-desc">An offense designated by law or punishable by death or confinement in a penitentiary.</p></div>
+                        <div class="definition-item"><p class="definition-term">(26) Individual</p><p class="definition-desc">A human being who is alive, including an unborn child at every stage of gestation.</p></div>
+                        <div class="definition-item"><p class="definition-term">(31) Misdemeanor</p><p class="definition-desc">An offense designated by law or punishable by fine, confinement in jail, or both.</p></div>
+                        <div class="definition-item"><p class="definition-term">(35) Owner</p><p class="definition-desc">A person who has (A) title to the property, (B) possession (lawful or not), or (C) a greater right to possession than the actor.</p></div>
+                        <div class="definition-item"><p class="definition-term">(36) Peace Officer</p><p class="definition-desc">A person elected, employed, or appointed as a peace officer under CCP Art. 2A.001, Education Code, or other law.</p></div>
+                        <div class="definition-item"><p class="definition-term">(38) Person</p><p class="definition-desc">An individual or a corporation, association, or other entity.</p></div>
+                        <div class="definition-item"><p class="definition-term">(39) Possession</p><p class="definition-desc">Actual care, custody, control, or management.</p></div>
+                        <div class="definition-item"><p class="definition-term">(40) Public Place</p><p class="definition-desc">Any place the public or a substantial group has access (streets, highways, common areas of schools, hospitals, apartments, etc.).</p></div>
+                        <div class="definition-item"><p class="definition-term">(41) Public Servant</p<p class="definition-desc">An officer, employee, or agent of government; juror; arbitrator; attorney (when performing a gov't function); or candidate for office.</p></div>
+                        <div class="definition-item"><p class="definition-term">(42) Reasonable Belief</p><p class="definition-desc">A belief that would be held by an ordinary and prudent man in the same circumstances as the actor.</p></div>
+                        <div class="definition-item"><p class="definition-term">(46) Serious Bodily Injury</p><p class="definition-desc">Bodily injury that creates a substantial risk of death or causes death, serious permanent disfigurement, or protracted loss or impairment of any bodily member or organ.</p></div>
+                        <div class="definition-item"><p class="definition-term">(48) Unlawful</p><p class="definition-desc">Criminal or tortious (wrongful, able to be a civil suit) or both.</p></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Knowledge Check Tab -->
+            <div id="knowledge-check" class="tab-content">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-2xl font-bold mb-4">Knowledge Check (Ch. 1)</h2>
+                    <p class="mb-6 text-gray-600">Test your understanding of the material.</p>
+                    <div id="quiz-container" class="space-y-8">
+                        <!-- Questions will be dynamically inserted here -->
+                    </div>
+                    <!-- New Results Div -->
+                    <div id="quiz-results" class="hidden mt-8 text-center">
+                        <h3 class="text-2xl font-bold" id="quiz-score"></h3>
+                        <p class="text-lg text-gray-700" id="quiz-percentage"></p>
+                    </div>
+                    <!-- Button Container -->
+                    <div class="mt-8 text-center space-x-4">
+                        <button id="check-answers-btn" class="bg-blue-600 text-white font-bold py-2 px-6 rounded-lg hover:bg-blue-700 transition-colors">Submit Answers</button>
+                        <button id="retake-quiz-btn" class="hidden bg-gray-600 text-white font-bold py-2 px-6 rounded-lg hover:bg-gray-700 transition-colors">Retake Quiz</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Resources Tab -->
+            <div id="resources" class="tab-content">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-2xl font-bold mb-4">External Resources</h2>
+                    <p class="mb-6 text-gray-600">Quick links to official Texas statutes.</p>
+                    <div id="resources-list" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 text-sm">
+                        <!-- Links will be dynamically inserted here -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const tabs = document.querySelectorAll('#tabs button');
+            const tabContents = document.querySelectorAll('.tab-content');
+
+            tabs.forEach(tab => {
+                tab.addEventListener('click', () => {
+                    tabs.forEach(t => t.classList.remove('active'));
+                    tabContents.forEach(c => c.classList.remove('active'));
+                    tab.classList.add('active');
+                    document.getElementById(tab.dataset.tab).classList.add('active');
+                });
+            });
+
+            // --- QUIZ DATA ---
+            const quizData = [
+                {
+                    question: "According to Sec. 1.07, 'physical pain, illness, or any impairment of physical condition' is the definition of:",
+                    options: ["Harm", "Serious Bodily Injury", "Bodily Injury", "Unlawful Act"],
+                    answer: "Bodily Injury",
+                    explanation: "Sec. 1.07(8) defines 'Bodily Injury' this way. 'Serious Bodily Injury' requires a substantial risk of death, permanent disfigurement, or protracted loss/impairment of a bodily member."
+                },
+                {
+                    question: "Which of the following is NOT a listed objective of the Penal Code under Sec. 1.02?",
+                    options: ["To insure public safety through deterrence and rehabilitation.", "To prescribe penalties that are proportionate to the offense.", "To guarantee civil damages for all victims of crime.", "To give fair warning of what conduct is prohibited."],
+                    answer: "To guarantee civil damages for all victims of crime.",
+                    explanation: "Sec. 1.03 states that civil remedies are *separate* from the Penal Code and not affected by it, but guaranteeing them is not a listed objective in Sec. 1.02."
+                },
+                {
+                    question: "Per Sec. 1.07, a 'Deadly Weapon' is a firearm OR anything that in the manner of its use or intended use is capable of causing death or...?",
+                    options: ["Bodily Injury", "Serious Bodily Injury", "Lasting Pain", "An offense"],
+                    answer: "Serious Bodily Injury",
+                    explanation: "Sec. 1.07(17)(B) defines the second part of 'deadly weapon' as anything 'capable of causing death or serious bodily injury' based on its use or intended use."
+                },
+                {
+                    question: "Texas has territorial jurisdiction (Sec. 1.04) if a person commits an act outside of Texas that is a conspiracy to commit an offense in Texas, AND...",
+                    options: ["The person is a Texas resident.", "The person is arrested in Texas.", "An act in furtherance of the conspiracy occurs inside this state.", "The offense is a felony."],
+                    answer: "An act in furtherance of the conspiracy occurs inside this state.",
+                    explanation: "Sec. 1.04(a)(3) requires both the conspiracy *and* an overt act inside the state for jurisdiction to apply to the out-of-state conduct."
+                },
+                {
+                    question: "Per Sec. 1.08 (Preemption), can the City of Houston enact an ordinance that defines 'Theft' differently and sets its own criminal penalty for it?",
+                    options: ["Yes, if the penalty is less severe than the state's.", "Yes, as long as the ordinance is approved by the state.", "No, because the Penal Code preempts local laws on conduct it already covers.", "No, unless it is a felony-level offense."],
+                    answer: "No, because the Penal Code preempts local laws on conduct it already covers.",
+                    explanation: "Sec. 1.08 explicitly prohibits a governmental subdivision from enforcing a law that makes conduct covered by the Penal Code an offense with a criminal penalty."
+                },
+                {
+                    question: "According to Sec. 1.07, consent is *NOT* effective if it is:",
+                    options: ["Given by a person who is intoxicated.", "Given by a person who is 17 years old.", "Given by a person the actor *knows* is unable to make reasonable decisions due to intoxication.", "Given silently, without speaking."],
+                    answer: "Given by a person the actor *knows* is unable to make reasonable decisions due to intoxication.",
+                    explanation: "Sec. 1.07(19)(C) states consent is not effective if 'given by a person who by reason of youth, mental disease or defect, or intoxication is *known by the actor* to be unable to make reasonable decisions'. The actor's knowledge is key."
+                },
+                {
+                    question: "Under Sec. 1.07, 'an act or omission and its accompanying mental state' is the definition of:",
+                    options: ["Conduct", "Act", "Omission", "Element of Offense"],
+                    answer: "Conduct",
+                    explanation: "Sec. 1.07(10) defines 'Conduct' as the act (or omission) *plus* the mental state (e.g., intentionally, knowingly)."
+                },
+                {
+                    question: "Sec. 1.07 defines 'Serious Bodily Injury' as bodily injury that creates a substantial risk of death or causes death, serious permanent disfigurement, OR...",
+                    options: ["Significant bruising.", "Any broken bone.", "Protracted loss or impairment of the function of any bodily member or organ.", "Bodily injury requiring hospitalization."],
+                    answer: "Protracted loss or impairment of the function of any bodily member or organ.",
+                    explanation: "Sec. 1.07(46) lists three specific outcomes for SBI: 1) substantial risk of death, 2) death or serious permanent disfigurement, or 3) protracted loss or impairment of a bodily member or organ."
+                },
+                {
+                    question: "When does a person attain a specified age according to Sec. 1.06?",
+                    options: ["The day after the anniversary of their birthdate.", "At 12:01 a.m. on the anniversary of their birthdate.", "On the day of the anniversary of their birthdate.", "At the exact time of birth on the anniversary of their birthdate."],
+                    answer: "On the day of the anniversary of their birthdate.",
+                    explanation: "Sec. 1.06 is simple: 'A person attains a specified age on the day of the anniversary of his birthdate.'"
+                },
+                {
+                    question: "Per Sec. 1.05, the rule that a penal statute is to be strictly construed...",
+                    options: ["...is the most important rule for this code.", "...does not apply to this code.", "...applies only to felonies.", "...applies only to misdemeanors."],
+                    answer: "...does not apply to this code.",
+                    explanation: "Sec. 1.05(a) explicitly states the old rule of strict construction does *not* apply. Instead, the code is to be 'construed according to the fair import of their terms, to promote justice...'"
+                },
+                {
+                    question: "Under Sec. 1.04, if the body of a criminal homicide victim is found in this state, it is...",
+                    options: ["...conclusive proof the homicide occurred in this state.", "...presumed that the death occurred in this state.", "...irrelevant to jurisdiction.", "...presumed the conduct causing death occurred in this state."],
+                    answer: "...presumed that the death occurred in this state.",
+                    explanation: "Sec. 1.04(b) creates a rebuttable presumption that the *death* occurred in Texas, which can be a basis for jurisdiction. It is not conclusive proof."
+                },
+                {
+                    question: "Which of the following is NOT a way for consent to be *ineffective* under Sec. 1.07?",
+                    options: ["It was induced by fraud.", "It was given by a person the actor *knows* is not legally authorized to act for the owner.", "It was given with reluctance or hesitation.", "It was given solely to detect the commission of an offense."],
+                    answer: "It was given with reluctance or hesitation.",
+                    explanation: "Sec. 1.07(19) lists specific reasons consent is ineffective (force, threat, fraud, lack of authority, inability to decide, given to detect). 'Reluctance' is not one of them if the person still gives 'assent in fact'."
+                },
+                {
+                    question: "Sec. 1.07 defines 'Possession' as:",
+                    options: ["Actual care, custody, control, or management.", "Only physical, hands-on control.", "Ownership of property.", "Having title or a greater right to property."],
+                    answer: "Actual care, custody, control, or management.",
+                    explanation: "Sec. 1.07(39) provides this specific definition, which is broader than just physically holding an item."
+                },
+                {
+                    question: "A police officer undercover as a prostitute agrees to have sex with a man for money. The man's 'consent' to the transaction is for the purpose of an offense (Prostitution). Why is the *officer's* 'consent' to the man's actions ineffective?",
+                    options: ["It was induced by fraud.", "The officer is a public servant.", "It was given by a person unable to make reasonable decisions.", "It was given solely to detect the commission of an offense."],
+                    answer: "It was given solely to detect the commission of an offense.",
+                    explanation: "This is a key exception. Per Sec. 1.07(19)(D), consent given *only* to detect a crime (like in a sting operation) is not effective consent."
+                },
+                {
+                    question: "Under Sec. 1.03, conduct does *not* constitute an offense unless it is defined by statute, municipal ordinance, rule, OR...",
+                    options: ["Common law.", "A judicial precedent.", "Order of a county commissioners court.", "A district attorney's official policy."],
+                    answer: "Order of a county commissioners court.",
+                    explanation: "Sec. 1.03(a) lists the four sources of law that can define an offense: statute, municipal ordinance, order of a county commissioners court, or a lawfully adopted rule."
+                },
+                {
+                    question: "Which of the following is included in the definition of 'Individual' in Sec. 1.07?",
+                    options: ["A corporation.", "An association.", "An unborn child at every stage of gestation.", "A government agency."],
+                    answer: "An unborn child at every stage of gestation.",
+                    explanation: "Sec. 1.07(26) defines an 'Individual' as 'a human being who is alive, including an unborn child at every stage of gestation from fertilization until birth.'"
+                },
+                {
+                    question: "A man uses a screwdriver to threaten a clerk during a robbery. The screwdriver is not designed as a weapon. Can it be a 'Deadly Weapon'?",
+                    options: ["No, it is not a firearm.", "No, it was not adapted for that purpose.", "Yes, because in the manner of its use, it was capable of causing serious bodily injury.", "Yes, but only if it actually causes serious bodily injury."],
+                    answer: "Yes, because in the manner of its use, it was capable of causing serious bodily injury.",
+                    explanation: "This fits Sec. 1.07(17)(B). A common object can become a deadly weapon if 'in the manner of its use or intended use' it is *capable* of causing death or SBI. It does not have to actually cause the injury."
+                },
+                {
+                    question: "Which of the following is NOT one of the 'Elements of an Offense' under Sec. 1.07?",
+                    options: ["The forbidden conduct.", "The required culpability (mental state).", "The punishment or penalty for the offense.", "The negation of any exception to the offense."],
+                    answer: "The punishment or penalty for the offense.",
+                    explanation: "Sec. 1.07(22) lists the four elements: (A) forbidden conduct, (B) required culpability, (C) any required result, and (D) the negation of any exception. The punishment is separate."
+                },
+                {
+                    question: "Which objective of the code (Sec. 1.02) aims to 'safeguard conduct that is without guilt from condemnation as criminal'?",
+                    options: ["To insure public safety.", "To limit official discretion.", "To safeguard conduct without guilt.", "To give fair warning."],
+                    answer: "To safeguard conduct without guilt.",
+                    explanation: "Sec. 1.02(4) lists this as a specific objective, meaning the code should not punish behavior that isn't actually criminal."
+                },
+                {
+                    question: "Do the general provisions of the Penal Code (Titles 1, 2, 3) apply to an offense defined in the Texas Health and Safety Code?",
+                    options: ["No, they only apply to the Penal Code.", "Yes, they apply to all offenses in other laws, with no exceptions.", "Yes, they apply unless the Health and Safety Code provides a different rule.", "No, because the Health and Safety Code is a civil statute."],
+                    answer: "Yes, they apply unless the Health and Safety Code provides a different rule.",
+                    explanation: "Sec. 1.03(b) states that Titles 1, 2, and 3 apply to offenses defined by other laws 'unless the statute defining the offense provides otherwise.'"
+                },
+                {
+                    question: "A person in Texas uses the mail to solicit someone in Oklahoma to commit an offense. Does Texas have jurisdiction under Sec. 1.04?",
+                    options: ["No, because the offense would occur in Oklahoma.", "Only if the person solicited is a Texas resident.", "Yes, if the solicitation is an offense in both Texas and Oklahoma.", "Yes, if the conduct *inside* Texas (the solicitation) constitutes an attempt, solicitation, or conspiracy to commit the offense in the other jurisdiction."],
+                    answer: "Yes, if the conduct *inside* Texas (the solicitation) constitutes an attempt, solicitation, or conspiracy to commit the offense in the other jurisdiction.",
+                    explanation: "Sec. 1.04(a)(4) gives Texas jurisdiction if the conduct *inside* the state is an attempt, solicitation, or conspiracy to commit an offense elsewhere (as long as that act is also an offense in the other jurisdiction)."
+                },
+                {
+                    question: "Instead of being 'strictly construed,' how does Sec. 1.05 state the code should be interpreted?",
+                    options: ["According to the 'fair import of their terms, to promote justice.'", "According to 'common law' principles.", "In the light most favorable to the defendant.", "Exactly as written, with no interpretation allowed."],
+                    answer: "According to the 'fair import of their terms, to promote justice.'",
+                    explanation: "Sec. 1.05(a) provides this as the standard of construction, replacing the old rule of 'strict construction.'"
+                },
+                {
+                    question: "A Texas LEO *may not* assist a federal agency in enforcing a federal firearm law if that law does not exist in Texas AND it relates to...",
+                    options: ["...the sale of firearms to a convicted felon.", "...a firearm registry, licensing, or private sale background checks.", "...a shooting on federal property.", "...any offense involving a firearm."],
+                    answer: "...a firearm registry, licensing, or private sale background checks.",
+                    explanation: "Sec. 1.10(b)(1) specifically lists these types of laws (and confiscation) as those Texas officers cannot help enforce if no state equivalent exists."
+                },
+                {
+                    question: "What is a potential consequence for a political subdivision (like a city) that violates Sec. 1.10 by assisting federal agencies with certain firearm laws?",
+                    options: ["The police chief can be arrested.", "The subdivision may be denied state grant funds.", "The subdivision is fined $10,000 per day.", "There is no listed consequence."],
+                    answer: "The subdivision may be denied state grant funds.",
+                    explanation: "Sec. 1.10(d) states that a political subdivision that violates this section may not receive state grant funds."
+                },
+                {
+                    question: "What is the simple definition of 'Consent' under Sec. 1.07?",
+                    options: ["A written and signed agreement.", "Assent in fact, whether express or apparent.", "A verbal 'yes' from all parties.", "Consent given only by a person over 18."],
+                    answer: "Assent in fact, whether express or apparent.",
+                    explanation: "Sec. 1.07(11) defines 'Consent' as 'assent in fact, whether express or apparent.' This is the base definition before considering 'effective consent'."
+                },
+                {
+                    question: "How is a 'Felony' distinguished from a 'Misdemeanor' in Sec. 1.07?",
+                    options: ["Felonies are violent, Misdemeanors are non-violent.", "Felonies are punishable by death or confinement in a penitentiary; Misdemeanors by fine or jail.", "Felonies are offenses against people, Misdemeanors are against property.", "Felonies require an indictment, Misdemeanors do not."],
+                    answer: "Felonies are punishable by death or confinement in a penitentiary; Misdemeanors by fine or jail.",
+                    explanation: "Sec. 1.07(23) & (31) define these offenses by their place of confinement (penitentiary vs. jail) or potential punishment (death/fine)."
+                },
+                {
+                    question: "Under Sec. 1.07, who qualifies as an 'Owner' of property?",
+                    options: ["Only the person with the title (deed).", "Only the person who is currently, physically holding the property.", "A person with title, possession (lawful or not), or a greater right to possession.", "Only the person who legally purchased the item."],
+                    answer: "A person with title, possession (lawful or not), or a greater right to possession.",
+                    explanation: "Sec. 1.07(35) provides a broad definition. A person who stole a car ('possession... whether lawful or not') is the 'owner' for the purposes of a *second* person stealing it from them."
+                },
+                {
+                    question: "Which of the following would be considered a 'Person' under Sec. 1.07?",
+                    options: ["A dog.", "A corporation.", "A deceased human being.", "A public park."],
+                    answer: "A corporation.",
+                    explanation: "Sec. 1.07(38) defines 'Person' as 'an individual or a corporation, association, limited liability company, or other entity.' 'Individual' (1.07(26)) is defined as a living human being."
+                },
+                {
+                    question: "What is the definition of a 'Public Place' according to Sec. 1.07?",
+                    options: ["Any place owned by the government.", "Any place the public or a substantial group of the public has access.", "Any place outdoors.", "Only a street, highway, or park."],
+                    answer: "Any place the public or a substantial group of the public has access.",
+                    explanation: "Sec. 1.07(40) provides this broad definition, which includes common areas of apartment houses, hospitals, etc., not just government property."
+                },
+                {
+                    question: "Which of the following is considered a 'Public Servant' under Sec. 1.07?",
+                    options: ["A juror.", "A candidate for office.", "An employee of a government agency.", "All of the above."],
+                    answer: "All of the above.",
+                    explanation: "Sec. 1.07(41) includes (A) officers/employees/agents of government, (B) jurors, (D) candidates for office, and others."
+                },
+                {
+                    question: "'A belief that would be held by an ordinary and prudent man in the same circumstances' is the definition of:",
+                    options: ["Reasonable Belief", "Culpable Mental State", "Probable Cause", "Reasonable Suspicion"],
+                    answer: "Reasonable Belief",
+                    explanation: "Sec. 1.07(42) defines 'Reasonable Belief' with this 'ordinary and prudent man' standard."
+                },
+                {
+                    question: "The definition of 'Unlawful' (Sec. 1.07) means an act is:",
+                    options: ["Only criminal.", "Only tortious (a civil wrong).", "Criminal or tortious or both.", "Immoral or unethical."],
+                    answer: "Criminal or tortious or both.",
+                    explanation: "Sec. 1.07(48) defines 'Unlawful' as 'criminal or tortious or both,' which is important for offenses that reference an 'unlawful' act."
+                }
+            ];
+
+            const quizContainer = document.getElementById('quiz-container');
+            const checkAnswersBtn = document.getElementById('check-answers-btn');
+            const retakeQuizBtn = document.getElementById('retake-quiz-btn');
+            const quizResultsDiv = document.getElementById('quiz-results');
+            const quizScoreEl = document.getElementById('quiz-score');
+            const quizPercentageEl = document.getElementById('quiz-percentage');
+
+            function loadQuiz() {
+                // Shuffle the quiz data for a new order each time
+                const shuffledQuizData = [...quizData].sort(() => Math.random() - 0.5);
+                
+                quizContainer.innerHTML = ''; // Clear previous questions
+                
+                shuffledQuizData.forEach((q, index) => {
+                    const questionDiv = document.createElement('div');
+                    questionDiv.className = 'quiz-question';
+                    
+                    // Store the original question index to check the answer later
+                    const originalIndex = quizData.indexOf(q);
+                    
+                    let optionsHtml = q.options.map(option => `
+                        <label class="block"><input type="radio" name="q${index}" value="${option}" data-original-index="${originalIndex}" class="mr-2">${option}</label>
+                    `).join('');
+                    
+                    questionDiv.innerHTML = `
+                        <p class="font-semibold mb-2">${index + 1}. ${q.question}</p>
+                        <div class="space-y-2">${optionsHtml}</div>
+                        <div class="feedback hidden mt-2 p-2 rounded-lg text-sm"></div>
+                    `;
+                    quizContainer.appendChild(questionDiv);
+                });
+            }
+
+
+            loadQuiz(); // Initial load
+
+            checkAnswersBtn.addEventListener('click', () => {
+                let score = 0;
+                const totalQuestions = quizData.length;
+                const questions = quizContainer.querySelectorAll('.quiz-question');
+
+                questions.forEach((questionDiv, index) => {
+                    const selected = questionDiv.querySelector(`input[name="q${index}"]:checked`);
+                    const feedback = questionDiv.querySelector('.feedback');
+                    const radioButtons = questionDiv.querySelectorAll(`input[name="q${index}"]`);
+                    
+                    feedback.classList.remove('hidden', 'bg-green-100', 'text-green-800', 'bg-red-100', 'text-red-800', 'bg-yellow-100', 'text-yellow-800');
+                    
+                    if (selected) {
+                        const originalIndex = selected.dataset.originalIndex;
+                        const q = quizData[originalIndex];
+
+                        if (selected.value === q.answer) {
+                            score++;
+                            feedback.textContent = `Correct! ${q.explanation}`;
+                            feedback.classList.add('bg-green-100', 'text-green-800');
+                        } else {
+                            feedback.textContent = `Incorrect. The correct answer is "${q.answer}". ${q.explanation}`;
+                            feedback.classList.add('bg-red-100', 'text-red-800');
+                        }
+                    } else {
+                        // Find the original question to show the answer
+                        const firstRadio = questionDiv.querySelector(`input[name="q${index}"]`);
+                        const originalIndex = firstRadio.dataset.originalIndex;
+                        const q = quizData[originalIndex];
+                        
+                        feedback.textContent = `You did not answer this question. The correct answer is "${q.answer}". ${q.explanation}`;
+                        feedback.classList.add('bg-yellow-100', 'text-yellow-800');
+                    }
+                    
+                    // Disable radio buttons after submitting
+                    radioButtons.forEach(radio => {
+                        radio.disabled = true;
+                    });
+                });
+
+                // Calculate and display results
+                const percentage = ((score / totalQuestions) * 100).toFixed(0);
+                quizScoreEl.textContent = `Your Score: ${score} / ${totalQuestions}`;
+                quizPercentageEl.textContent = `Percentage: ${percentage}%`;
+                
+                quizResultsDiv.classList.remove('hidden');
+                checkAnswersBtn.classList.add('hidden');
+                retakeQuizBtn.classList.remove('hidden');
+            });
+
+            retakeQuizBtn.addEventListener('click', () => {
+                // Hide results and retake button
+                quizResultsDiv.classList.add('hidden');
+                retakeQuizBtn.classList.add('hidden');
+                
+                // Show submit button
+                checkAnswersBtn.classList.remove('hidden');
+                
+                // Reload the quiz (clears answers and feedback)
+                loadQuiz();
+            });
+
+
+            // --- RESOURCES LIST ---
+            const resources = [
+                { name: "Texas Penal Code - Official Site", url: "https://statutes.capitol.texas.gov/Default.aspx?Code=PE" },
+                { name: "Penal Code Ch. 1 - General Provisions", url: "https://statutes.capitol.texas.gov/Docs/PE/htm/PE.1.htm" }
+            ];
+            const resourcesList = document.getElementById('resources-list');
+            resources.sort((a, b) => a.name.localeCompare(b.name));
+            resources.forEach(res => {
+                const link = new Image();
+                link.href = res.url;
+                link.target = '_blank';
+                link.className = 'text-blue-600 hover:underline';
+                link.textContent = res.name;
+                resourcesList.appendChild(link);
+            });
+        });
+    </script>
+</body>
+</html>
+

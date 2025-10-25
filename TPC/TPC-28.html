@@ -1,0 +1,1107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ch. 28 Study Guide: Texas Penal Code</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet">
+    <style>
+        :root {
+            --header-bg: #1f2937; /* Dark Gray */
+            --bg-color: #f3f4f6; /* Light Gray */
+            --tab-active-bg: #ef4444; /* Red */
+            --tab-active-text: #ffffff;
+            --card-bg: #ffffff;
+            --text-color: #111827;
+            --link-color: #dc2626; /* Red Link */
+        }
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            font-family: 'Inter', sans-serif;
+        }
+        @import url('https://rsms.me/inter/inter.css');
+        .tab-content { display: none; }
+        .tab-content.active { display: block; }
+        .tab.active {
+            background-color: var(--tab-active-bg);
+            color: var(--tab-active-text);
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .tab {
+            transition: all 0.3s ease-in-out;
+        }
+        .definition-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 1rem;
+        }
+        .definition-item {
+            background-color: #f9fafb;
+            padding: 0.75rem;
+            border-radius: 0.5rem;
+            border: 1px solid #e5e7eb;
+        }
+        .definition-term {
+            font-weight: 600;
+            color: #111827;
+        }
+        .definition-desc {
+            font-size: 0.875rem;
+            color: #4b5563;
+        }
+        .quiz-question p { margin-bottom: 0.5rem; }
+        .quiz-question label { display: block; margin-bottom: 0.5rem; padding: 0.5rem; border: 1px solid #e5e7eb; border-radius: 0.375rem; cursor: pointer; transition: background-color 0.2s; }
+        .quiz-question label:hover { background-color: #f9fafb; }
+        .quiz-question input[type="radio"] { margin-right: 0.5rem; }
+        .feedback { margin-top: 0.5rem; padding: 0.5rem; border-radius: 0.375rem; font-size: 0.875rem; }
+        .feedback.correct { background-color: #dcfce7; color: #166534; }
+        .feedback.incorrect { background-color: #fee2e2; color: #991b1b; }
+        .feedback.unanswered { background-color: #ffedd5; color: #9a3412; }
+        .hidden { display: none; }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Header -->
+    <header class="bg-gray-800 text-white p-4 shadow-md">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-xl md:text-2xl font-bold">
+                <i class="fas fa-fire-extinguisher mr-2"></i>Ch. 28: <!-- Chapter 25 Card -->
+            <a href="TPC-25.html" class="guide-card bg-white rounded-lg shadow-md overflow-hidden block">
+                <div class="p-6">
+                    <div class="flex items-center">
+                        <div class="p-3 rounded-full bg-blue-100 text-blue-600">
+                            <i class="fas fa-copy fa-lg"></i>
+                        </div>
+                        <div class="ml-4">
+                            <h2 class="text-xl font-bold text-gray-900">Chapter 25</h2>
+                            <p class="text-gray-600">Offenses Against the Family</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-gray-50 px-6 py-3 text-right">
+                    <span class="text-sm font-medium text-blue-600 hover:text-blue-800">
+                        View Study Guide <i class="fas fa-arrow-right ml-1"></i>
+                    </span>
+                </div>
+            </a>
+            </h1>
+            <a href="index.html" class="text-sm text-red-300 hover:text-red-100 hover:underline">
+                <i class="fas fa-arrow-left mr-1"></i> Back to Main Page
+            </a>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container mx-auto p-4 md:p-6">
+        <!-- Tab Navigation -->
+        <div class="mb-6 bg-white rounded-lg shadow-md overflow-x-auto">
+            <nav id="tabs" class="flex flex-col sm:flex-row space-y-1 sm:space-y-0 sm:space-x-1 p-2">
+                <button data-tab="key-definitions" class="tab active flex items-center justify-center px-3 py-2 text-sm font-semibold rounded-lg text-gray-600 hover:bg-red-100">
+                    <i class="fas fa-book mr-2"></i> Definitions
+                </button>
+                <button data-tab="arson" class="tab flex items-center justify-center px-3 py-2 text-sm font-semibold rounded-lg text-gray-600 hover:bg-red-100">
+                    <i class="fas fa-fire mr-2"></i> Arson
+                </button>
+                <button data-tab="criminal-mischief" class="tab flex items-center justify-center px-3 py-2 text-sm font-semibold rounded-lg text-gray-600 hover:bg-red-100">
+                    <i class="fas fa-hammer mr-2"></i> Criminal Mischief
+                </button>
+                <button data-tab="graffiti-railroads" class="tab flex items-center justify-center px-3 py-2 text-sm font-semibold rounded-lg text-gray-600 hover:bg-red-100">
+                    <i class="fas fa-spray-can mr-2"></i> Graffiti & Railroads
+                </button>
+                <button data-tab="infrastructure-other" class="tab flex items-center justify-center px-3 py-2 text-sm font-semibold rounded-lg text-gray-600 hover:bg-red-100">
+                    <i class="fas fa-bolt mr-2"></i> Infrastructure & Other
+                </button>
+                <button data-tab="knowledge-check" class="tab flex items-center justify-center px-3 py-2 text-sm font-semibold rounded-lg text-gray-600 hover:bg-red-100">
+                    <i class="fas fa-question-circle mr-2"></i> Knowledge Check
+                </button>
+                <button data-tab="resources" class="tab flex items-center justify-center px-3 py-2 text-sm font-semibold rounded-lg text-gray-600 hover:bg-red-100">
+                    <i class="fas fa-link mr-2"></i> Resources
+                </button>
+            </nav>
+        </div>
+
+        <!-- Tab Content -->
+        <div id="tab-contents">
+            <!-- Key Definitions Tab -->
+            <div id="key-definitions" class="tab-content active">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-2xl font-bold mb-4">Key Definitions (Sec. 28.01)</h2>
+                    <div class="definition-grid">
+                        <div class="definition-item">
+                            <span class="definition-term">Habitation</span>
+                            <p class="definition-desc">A structure or vehicle adapted for the overnight accommodation of persons. Includes each separately secured portion and connected structures.</p>
+                        </div>
+                        <div class="definition-item">
+                            <span class="definition-term">Building</span>
+                            <p class="definition-desc">Any structure or enclosure intended for use as a habitation or for trade, manufacture, ornament, or use.</p>
+                        </div>
+                        <div class="definition-item">
+                            <span class="definition-term">Property</span>
+                            <p class="definition-desc">(A) Real property; (B) Tangible or intangible personal property; or (C) A document (like money) that represents value.</p>
+                        </div>
+                        <div class="definition-item">
+                            <span class="definition-term">Vehicle</span>
+                            <p class="definition-desc">Any device in, on, or by which any person or property is or may be propelled, moved, or drawn in commerce or transportation.</p>
+                        </div>
+                        <div class="definition-item">
+                            <span class="definition-term">Open-space land</span>
+                            <p class="definition-desc">Real property that is undeveloped for the purpose of human habitation.</p>
+                        </div>
+                        <div class="definition-item">
+                            <span class="definition-term">Controlled burning</span>
+                            <p class="definition-desc">Burning unwanted vegetation with the owner's consent, controlled and limited to a designated area.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Arson Tab -->
+            <div id="arson" class="tab-content space-y-6">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-xl font-bold mb-4 border-b pb-2"><a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.28.htm#28.02" target="_blank" class="text-red-600 hover:underline">Sec. 28.02. Arson</a></h2>
+                    <ul class="list-disc list-inside text-sm text-gray-700 space-y-2">
+                        <li><strong class="font-semibold">Offense (a):</strong> A person commits arson if they start a fire or cause an explosion with intent to destroy or damage:
+                            <ol class="list-decimal list-inside ml-4 space-y-1">
+                                <li>Any vegetation, fence, or structure on <strong class="font-semibold">open-space land</strong>; OR</li>
+                                <li>Any building, habitation, or vehicle <strong class="font-semibold">knowing</strong> that it is:
+                                    <ul class="list-disc list-inside ml-6">
+                                        <li>(A) within an incorporated city or town;</li>
+                                        <li>(B) insured;</li>
+                                        <li>(C) subject to a mortgage;</li>
+                                        <li>(D) on property belonging to another;</li>
+                                        <li>(E) has property of another located within it; OR</li>
+                                        <li>(F) when the person is <strong class="font-semibold">reckless</strong> about whether it will endanger the life of an individual or safety of another's property.</li>
+                                    </ul>
+                                </li>
+                            </ol>
+                        </li>
+                        <li><strong class="font-semibold">Offense (a-1):</strong> A person commits an offense if they <strong class="font-semibold">recklessly</strong> start a fire/explosion <strong class="font-semibold">while manufacturing a controlled substance</strong> AND the fire/explosion damages any building, habitation, or vehicle.</li>
+                        <li><strong class="font-semibold">Offense (a-2):</strong> A person commits an offense if they <strong class="font-semibold">intentionally</strong> start a fire/explosion and in doing so:
+                            <ul class="list-disc list-inside ml-4">
+                                <li>(1) <strong class="font-semibold">recklessly</strong> damages or destroys a building of another; OR</li>
+                                <li>(2) <strong class="font-semibold">recklessly</strong> causes bodily injury or death to another.</li>
+                            </ul>
+                        </li>
+                        <li><strong class="font-semibold">Exception (b):</strong> It is an exception to (a)(1) (open-space land) if the fire was part of a <strong class="font-semibold">controlled burning</strong>.</li>
+                        <li><strong class="font-semibold">Defense (c):</strong> It is a defense to (a)(2)(A) (within city limits) if the actor got a <strong class="font-semibold">permit</strong> or written authorization.</li>
+                        <li><strong class="font-semibold">Penalties:</strong>
+                            <ul class="list-disc list-inside ml-4">
+                                <li><strong class="font-semibold">(d) Offense under (a):</strong> <strong class="font-semibold text-red-700">Felony of the Second Degree</strong>.
+                                    <ul>
+                                        <li><strong class="font-semibold text-red-800">ENHANCED TO F1</strong> if: (1) bodily injury or death was suffered, OR (2) the property was a habitation, place of assembly, or place of worship.</li>
+                                    </ul>
+                                </li>
+                                <li><strong class="font-semibold">(e) Offense under (a-1):</strong> <strong class="font-semibold text-red-700">State Jail Felony</strong>.
+                                    <ul>
+                                        <li><strong class="font-semibold text-red-800">ENHANCED TO F3</strong> if bodily injury or death was suffered.</li>
+                                    </ul>
+                                </li>
+                                <li><strong class="font-semibold">(f) Offense under (a-2):</strong> <strong class="font-semibold text-red-700">State Jail Felony</strong>.</li>
+                            </ul>
+                        </li>
+                        <li><strong class="font-semibold">Overlap (g):</strong> If conduct fits (a-1) or (a-2) AND another offense (e.g., Arson (a) or another PC section), the actor can be prosecuted under any applicable section.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Criminal Mischief Tab -->
+            <div id="criminal-mischief" class="tab-content space-y-6">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-xl font-bold mb-4 border-b pb-2"><a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.28.htm#28.03" target="_blank" class="text-red-600 hover:underline">Sec. 28.03. Criminal Mischief</a></h2>
+                    <ul class="list-disc list-inside text-sm text-gray-700 space-y-2">
+                        <li><strong class="font-semibold">Offense (a):</strong> A person commits an offense if, without the effective consent of the owner, they:
+                            <ol class="list-decimal list-inside ml-4">
+                                <li><strong class="font-semibold">Intentionally or Knowingly</strong> damages or destroys tangible property.</li>
+                                <li><strong class="font-semibold">Intentionally or Knowingly</strong> tampers with tangible property and causes pecuniary loss or substantial inconvenience.</li>
+                                <li><strong class="font-semibold">Intentionally or Knowingly</strong> makes markings (graffiti) on tangible property.</li>
+                            </ol>
+                        </li>
+                        <li><strong class="font-semibold">Penalties (b), (f), (h), (i), (j), (l):</strong> This offense is punished by a value ladder, with many specific enhancements:
+                            <ul class="list-disc list-inside ml-4">
+                                <li><strong class="font-semibold">Class C:</strong> < $100 or causes substantial inconvenience.</li>
+                                <li><strong class="font-semibold">Class B:</strong> $100 - $749.</li>
+                                <li><strong class="font-semibold">Class A:</strong> $750 - $2,499 OR impairs/diverts public water supply.</li>
+                                <li><strong class="font-semibold text-red-700">State Jail Felony:</strong>
+                                    <ul class="list-disc list-inside ml-6">
+                                        <li>$2,500 - $29,999</li>
+                                        <li>< $2,500 if habitation damaged by firearm/explosive.</li>
+                                        <li>< $2,500 if fence for livestock/game.</li>
+                                        <li>< $30,000 if impairs/diverts public comms, transport, gas, flood control, etc.</li>
+                                        <li>< $30,000 if damage to vehicle during catalytic converter removal.</li>
+                                        <li>(f) $750 - $29,999 if damage to place of worship, burial, monument, or community center.</li>
+                                        <li>(h) $750 - $29,999 if damage to a school or institution of higher education.</li>
+                                    </ul>
+                                </li>
+                                <li><strong class="font-semibold text-red-700">Felony of the Third Degree:</strong>
+                                    <ul class="list-disc list-inside ml-6">
+                                        <li>$30,000 - $149,999</li>
+                                        <li>Causes death of cattle, bison, or horse by firearm/weapon.</li>
+                                        <li>Impairs access to an ATM.</li>
+                                        <li>< $150,000 if impairs/diverts public power supply.</li>
+                                        <li>(j) < $150,000 if damage to transportation communications equipment.</li>
+                                        <li>(l) Damage to copper/brass components of a critical infrastructure facility causing impairment.</li>
+                                    </ul>
+                                </li>
+                                <li><strong class="font-semibold text-red-700">Felony of the Second Degree:</strong>
+                                    <ul class="list-disc list-inside ml-6">
+                                        <li>$150,000 - $299,999</li>
+                                        <li>$1,000 - $299,999 if habitation damaged during a Criminal Trespass (30.05).</li>
+                                    </ul>
+                                </li>
+                                <li><strong class="font-semibold text-red-700">Felony of the First Degree:</strong>
+                                    <ul class="list-disc list-inside ml-6">
+                                        <li>$300,000 or more.</li>
+                                        <li>(i) Damage to livestock by introducing "mad cow disease" or other listed animal disease.</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li><strong class="font-semibold">Presumption (c):</strong> A person receiving the benefit is presumed to have *knowingly* tampered if the supply (gas, water, etc.) is diverted from or prevented from being registered by a meter.</li>
+                        <li><strong class="font-semibold">Aggregation (e):</strong> Amounts can be aggregated into one offense if part of one scheme or continuing course of conduct.</li>
+                        <li><strong class="font-semibold">Exception (k):</strong> Does not apply to killing cattle/bison/horse if done during official military duties or regular agricultural labor.</li>
+                    </ul>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-xl font-bold mb-4 border-b pb-2"><a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.28.htm#28.04" target="_blank" class="text-red-600 hover:underline">Sec. 28.04. Reckless Damage or Destruction</a></h2>
+                    <ul class="list-disc list-inside text-sm text-gray-700 space-y-2">
+                        <li><strong class="font-semibold">Offense (a):</strong> A person commits an offense if, without effective consent, they <strong class="font-semibold">recklessly</strong> damage or destroy property.</li>
+                        <li><strong class="font-semibold">Penalty (b):</strong> <strong class="font-semibold text-red-700">Class C Misdemeanor</strong>.</li>
+                    </ul>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-xl font-bold mb-4 border-b pb-2"><a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.28.htm#28.06" target="_blank" class="text-red-600 hover:underline">Sec. 28.06. Amount of Pecuniary Loss</a></h2>
+                    <ul class="list-disc list-inside text-sm text-gray-700 space-y-2">
+                        <li><strong class="font-semibold">If Destroyed (a):</strong> Fair market value OR replacement cost.</li>
+                        <li><strong class="font-semibold">If Damaged (b):</strong> Cost of repairing or restoring.</li>
+                        <li><strong class="font-semibold">Documents (c):</strong> Amount due (if a debt) OR greatest amount of economic loss owner might suffer.</li>
+                        <li><strong class="font-semibold">If Unascertained (d):</strong> Deemed to be <strong class="font-semibold">$750 or more but less than $2,500</strong> (Class A).</li>
+                        <li><strong class="font-semibold">Actor's Interest (e):</strong> If actor proves they have an interest, the value of that interest is deducted from the pecuniary loss.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Graffiti & Railroads Tab -->
+            <div id="graffiti-railroads" class="tab-content space-y-6">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-xl font-bold mb-4 border-b pb-2"><a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.28.htm#28.07" target="_blank" class="text-red-600 hover:underline">Sec. 28.07. Interference with Railroad Property</a></h2>
+                    <ul class="list-disc list-inside text-sm text-gray-700 space-y-2">
+                        <li><strong class="font-semibold">Offense (b)(1):</strong> Throws an object or discharges a firearm/weapon at a train.
+                            <ul>
+                                <li><strong class="font-semibold text-red-700">Class B Misdemeanor</strong>. Enhanced to <strong class="font-semibold text-red-700">F3</strong> if it causes bodily injury.</li>
+                            </ul>
+                        </li>
+                        <li><strong class="font-semibold">Offense (b)(2)(A):</strong> Enters or remains on railroad property (trespass).
+                            <ul>
+                                <li><strong class="font-semibold text-red-700">Class C Misdemeanor</strong>.</li>
+                            </ul>
+                        </li>
+                        <li><strong class="font-semibold">Offense (b)(2)(B-D):</strong> Tampers with property, places obstruction, or causes derailment.
+                            <ul>
+                                <li>Follows the standard <strong class="font-semibold">pecuniary loss ladder</strong> (from Class C up to F1) identical to Criminal Mischief.</li>
+                            </ul>
+                        </li>
+                        <li><strong class="font-semibold">Exception (f):</strong> Trespass offense does not apply to railroad employees or union reps acting under the Railway Labor Act.</li>
+                    </ul>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-xl font-bold mb-4 border-b pb-2"><a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.28.htm#28.08" target="_blank" class="text-red-600 hover:underline">Sec. 28.08. Graffiti</a></h2>
+                    <ul class="list-disc list-inside text-sm text-gray-700 space-y-2">
+                        <li><strong class="font-semibold">Offense (a):</strong> Intentionally or knowingly makes markings on property without consent using <strong class="font-semibold">paint, an indelible marker, or an etching/engraving device</strong>.</li>
+                        <li><strong class="font-semibold">Penalties (b):</strong> Follows the standard <strong class="font-semibold">pecuniary loss ladder</strong> (from Class C up to F1) identical to Criminal Mischief.</li>
+                        <li><strong class="font-semibold">Aggregation (c):</strong> Amounts can be aggregated if part of one scheme or continuing course of conduct.</li>
+                        <li><strong class="font-semibold">Enhancement (d):</strong> Offense is a <strong class="font-semibold text-red-700">State Jail Felony</strong> if:
+                            <ul>
+                                <li>Loss is $750 - $29,999 AND</li>
+                                <li>Marking is on a school, institution of higher ed, place of worship/burial, public monument, or community center.</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Infrastructure & Other Tab -->
+            <div id="infrastructure-other" class="tab-content space-y-6">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-xl font-bold mb-4 border-b pb-2"><a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.28.htm#28.09" target="_blank" class="text-red-600 hover:underline">Sec. 28.09. Damaging Critical Infrastructure Facility</a></h2>
+                    <ul class="list-disc list-inside text-sm text-gray-700 space-y-2">
+                        <li><strong class="font-semibold">Definitions (a):</strong>
+                            <ul>
+                                <li><strong class="font-semibold">"Critical infrastructure facility"</strong> means a power generating facility, substation, switching station, control center, or transmission/distribution facility.</li>
+                                <li><strong class="font-semibold">"Extended power outage"</strong> means an outage lasting 2+ hours OR affecting 1,000+ meters.</li>
+                            </ul>
+                        </li>
+                        <li><strong class="font-semibold">Offense (b):</strong> Person I/K damages, destroys, vandalizes, or impairs a CIF AND as a result, causes an extended power outage.</li>
+                        <li><strong class="font-semibold">Penalty (c):</strong> <strong class="font-semibold text-red-700">Felony of the Second Degree</strong>.
+                            <ul>
+                                <li><strong class="font-semibold text-red-800">ENHANCED TO F1</strong> if: (1) pecuniary damage is $100,000 or more, OR (2) actor uses a firearm, drone, cyber attack, or explosive weapon.</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-xl font-bold mb-4 border-b pb-2"><a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.28.htm#28.10" target="_blank" class="text-red-600 hover:underline">Sec. 28.10. Enhanced Penalty</a></h2>
+                    <ul class="list-disc list-inside text-sm text-gray-700 space-y-2">
+                        <li><strong class="font-semibold">Enhancement:</strong> Any misdemeanor or state jail felony offense under Chapter 28 is <strong class="font-semibold text-red-700">increased to a Felony of the Third Degree</strong> if committed in the course of <strong class="font-semibold">Smuggling of Persons (Sec. 20.05(a)(2))</strong>.</li>
+                    </ul>
+                </div>
+                 <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-xl font-bold mb-4 border-b pb-2"><a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.28.htm#28.05" target="_blank" class="text-red-600 hover:underline">Sec. 28.05. Actor's Interest in Property</a></h2>
+                    <ul class="list-disc list-inside text-sm text-gray-700 space-y-2">
+                        <li><strong class="font-semibold">No Defense:</strong> It is <strong class="font-semibold">NOT</strong> a defense that the actor has an interest in the property (e.g., co-owns it) if another person also has an interest that the actor is not entitled to infringe.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Knowledge Check Tab -->
+            <div id="knowledge-check" class="tab-content">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-2xl font-bold mb-4">Knowledge Check (Ch. 28)</h2>
+                    <p class="mb-6 text-gray-600">Test your understanding of the material. (90 Questions)</p>
+                    <div id="quiz-container" class="space-y-8">
+                        <!-- Questions will be dynamically inserted here -->
+                    </div>
+                    <!-- Results Div -->
+                    <div id="quiz-results" class="hidden mt-8 text-center">
+                        <h3 class="text-2xl font-bold" id="quiz-score"></h3>
+                        <p class="text-lg text-gray-700" id="quiz-percentage"></p>
+                    </div>
+                    <!-- Button Container -->
+                    <div class="mt-8 text-center space-x-4">
+                        <button id="check-answers-btn" class="bg-red-600 text-white font-bold py-2 px-6 rounded-lg hover:bg-red-700 transition-colors">Submit Answers</button>
+                        <button id="retake-quiz-btn" class="hidden bg-gray-600 text-white font-bold py-2 px-6 rounded-lg hover:bg-gray-700 transition-colors">Retake Quiz</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Resources Tab -->
+            <div id="resources" class="tab-content">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-2xl font-bold mb-4">External Resources</h2>
+                    <p class="mb-6 text-gray-600">Quick links to official Texas statutes and related definitions.</p>
+                    <div id="resources-list" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 text-sm">
+                        <!-- Links will be dynamically inserted here -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const tabs = document.querySelectorAll('#tabs button');
+            const tabContents = document.querySelectorAll('.tab-content');
+
+            tabs.forEach(tab => {
+                tab.addEventListener('click', () => {
+                    tabs.forEach(t => t.classList.remove('active'));
+                    tabContents.forEach(c => c.classList.remove('active'));
+                    tab.classList.add('active');
+                    document.getElementById(tab.dataset.tab).classList.add('active');
+                });
+            });
+
+            // --- QUIZ DATA (CHAPTER 28) ---
+            const quizData = [
+                {
+                    question: "Under 28.01, what is 'Open-space land'?",
+                    options: ["Any public park.", "Real property undeveloped for human habitation.", "Any land outside city limits.", "Any field used for agriculture."],
+                    answer: "Real property undeveloped for human habitation.",
+                    explanation: "Sec. 28.01(5) defines it as 'real property that is undeveloped for the purpose of human habitation.'"
+                },
+                {
+                    question: "What is the definition of 'Habitation' under 28.01?",
+                    options: ["Any structure with a roof.", "A structure or vehicle adapted for overnight accommodation.", "A building used for trade or manufacture.", "Only a person's primary residence."],
+                    answer: "A structure or vehicle adapted for overnight accommodation.",
+                    explanation: "Sec. 28.01(1) defines 'Habitation' as 'a structure or vehicle that is adapted for the overnight accommodation of persons...'"
+                },
+                {
+                    question: "What is the definition of 'Building' under 28.01?",
+                    options: ["Only a habitation.", "Any structure or enclosure intended for use as a habitation or for trade, manufacture, ornament, or use.", "A structure that is permanently fixed to the land.", "A commercial establishment only."],
+                    answer: "Any structure or enclosure intended for use as a habitation or for trade, manufacture, ornament, or use.",
+                    explanation: "Sec. 28.01(2) provides this broad definition for 'Building'."
+                },
+                {
+                    question: "Under 28.01, does 'Property' include intangible personal property?",
+                    options: ["No, only real property.", "No, only tangible personal property.", "Yes, it includes real property, tangible or intangible personal property, and documents of value.", "Yes, but only if it's worth more than $100."],
+                    answer: "Yes, it includes real property, tangible or intangible personal property, and documents of value.",
+                    explanation: "Sec. 28.01(3) explicitly includes '(B) tangible or intangible personal property' and '(C) a document... that represents... anything of value.'"
+                },
+                {
+                    question: "Under 28.01, what is the definition of 'Controlled burning'?",
+                    options: ["Any fire set with the owner's consent.", "Burning vegetation with owner's consent, controlled and limited to a designated area.", "A fire set by a government agency.", "A fire that does not endanger a habitation."],
+                    answer: "Burning vegetation with owner's consent, controlled and limited to a designated area.",
+                    explanation: "Sec. 28.01(6) defines it as 'burning of unwanted vegetation with the consent of the owner... in such a manner that the fire is controlled and limited to a designated area.'"
+                },
+                {
+                    question: "A person commits Arson (28.02(a)) if they start a fire with intent to destroy a building, knowing what?",
+                    options: ["Knowing it is old.", "Knowing it is uninsured.", "Knowing it is within an incorporated city or town.", "Knowing it is empty."],
+                    answer: "Knowing it is within an incorporated city or town.",
+                    explanation: "Sec. 28.02(a)(2)(A) lists 'knowing that it is within the limits of an incorporated city or town' as one of the required knowledge elements."
+                },
+                {
+                    question: "What is the *minimum* culpability required for Arson under 28.02(a)(2)(F) regarding endangerment?",
+                    options: ["Intentionally", "Knowingly", "Recklessly", "Criminal Negligence"],
+                    answer: "Recklessly",
+                    explanation: "Sec. 28.02(a)(2)(F) applies when the person is 'reckless about whether the burning or explosion will endanger the life of some individual or the safety of the property of another.'"
+                },
+                {
+                    question: "A person recklessly starts a fire while manufacturing meth, and the fire damages a vehicle. What offense is this?",
+                    options: ["Arson (a)(2)", "Arson (a-1)", "Arson (a-2)", "Criminal Mischief"],
+                    answer: "Arson (a-1)",
+                    explanation: "Sec. 28.02(a-1) specifically covers 'recklessly starts a fire... while manufacturing or attempting to manufacture a controlled substance' and damages a bldg, hab, or vehicle."
+                },
+                {
+                    question: "A person *intentionally* starts a fire and *recklessly* causes bodily injury to another person. What offense is this?",
+                    options: ["Arson (a)", "Arson (a-1)", "Arson (a-2)", "Aggravated Assault"],
+                    answer: "Arson (a-2)",
+                    explanation: "Sec. 28.02(a-2)(2) covers intentionally starting a fire and 'recklessly causes another person to suffer bodily injury or death.'"
+                },
+                {
+                    question: "A person *intentionally* starts a fire and *recklessly* damages a building belonging to another. What offense is this?",
+                    options: ["Arson (a)", "Arson (a-1)", "Arson (a-2)", "Criminal Mischief"],
+                    answer: "Arson (a-2)",
+                    explanation: "Sec. 28.02(a-2)(1) covers intentionally starting a fire and 'recklessly damages or destroys a building belonging to another.'"
+                },
+                {
+                    question: "What is the exception to prosecution for Arson of open-space land (28.02(a)(1))?",
+                    options: ["The fire was small.", "The fire was part of a controlled burning.", "The person was clearing brush.", "The person owned the land."],
+                    answer: "The fire was part of a controlled burning.",
+                    explanation: "Sec. 28.02(b) states: 'It is an exception to the application of Subsection (a)(1) that the fire... was a part of the controlled burning of open-space land.'"
+                },
+                {
+                    question: "What is the defense to prosecution for Arson under 28.02(a)(2)(A) (in city limits)?",
+                    options: ["The fire department was notified.", "The actor obtained a permit or other written authorization.", "The fire was set during the day.", "The actor owned the building."],
+                    answer: "The actor obtained a permit or other written authorization.",
+                    explanation: "Sec. 28.02(c) provides this defense if the actor 'obtained a permit or other written authorization granted in accordance with a city ordinance'."
+                },
+                {
+                    question: "What is the base penalty for Arson under Sec. 28.02(a)?",
+                    options: ["State Jail Felony", "Felony of the Third Degree", "Felony of the Second Degree", "Felony of the First Degree"],
+                    answer: "Felony of the Second Degree",
+                    explanation: "Sec. 28.02(d) states: 'An offense under Subsection (a) is a felony of the second degree...'"
+                },
+                {
+                    question: "Arson under 28.02(a) is enhanced to a First Degree Felony if what property is damaged or destroyed?",
+                    options: ["A vehicle", "A fence", "A habitation or a place of assembly or worship.", "Any property in city limits."],
+                    answer: "A habitation or a place of assembly or worship.",
+                    explanation: "Sec. 28.02(d)(2) enhances the penalty to F1 if 'the property intended to be damaged... was a habitation or a place of assembly or worship.'"
+                },
+                {
+                    question: "What is the penalty for Arson under 28.02(a) if a person suffers bodily injury?",
+                    options: ["Felony of the First Degree", "Felony of the Second Degree", "Felony of the Third Degree", "State Jail Felony"],
+                    answer: "Felony of the First Degree",
+                    explanation: "Sec. 28.02(d)(1) enhances the penalty to F1 if 'bodily injury or death was suffered by any person'."
+                },
+                {
+                    question: "What is the base penalty for Arson (a-1) (reckless fire during drug mfg.)?",
+                    options: ["Class A Misdemeanor", "State Jail Felony", "Felony of the Third Degree", "Felony of the Second Degree"],
+                    answer: "State Jail Felony",
+                    explanation: "Sec. 28.02(e) states: 'An offense under Subsection (a-1) is a state jail felony...'"
+                },
+                {
+                    question: "What is the penalty for Arson (a-1) (reckless fire during drug mfg.) if bodily injury is suffered?",
+                    options: ["State Jail Felony", "Felony of the Third Degree", "Felony of the Second Degree", "Felony of the First Degree"],
+                    answer: "Felony of the Third Degree",
+                    explanation: "Sec. 28.02(e) enhances the penalty to F3 'if it is shown... that bodily injury or death was suffered'."
+                },
+                {
+                    question: "What is the penalty for Arson (a-2) (intentional fire, reckless damage/injury)?",
+                    options: ["Class A Misdemeanor", "State Jail Felony", "Felony of the Third Degree", "Felony of the Second Degree"],
+                    answer: "State Jail Felony",
+                    explanation: "Sec. 28.02(f) states: 'An offense under Subsection (a-2) is a state jail felony.'"
+                },
+                {
+                    question: "If conduct fits Arson (a-1) AND Arson (a), can the actor be prosecuted under both?",
+                    options: ["Yes, under 28.02(g) the actor may be prosecuted under (a-1) or (a).", "No, only the more serious offense.", "No, only (a-1) because it's more specific.", "No, this is double jeopardy."],
+                    answer: "Yes, under 28.02(g) the actor may be prosecuted under (a-1) or (a).",
+                    explanation: "Sec. 28.02(g) states if conduct fits (a-1) or (a-2) and another subsection or section, 'the actor may be prosecuted under Subsection (a-1) or (a-2), under the other subsection... or under the other section...'"
+                },
+                {
+                    question: "Which of these is NOT a way to commit Criminal Mischief under 28.03(a)?",
+                    options: ["I/K damages property.", "I/K tampers with property causing loss.", "I/K makes markings on property.", "Recklessly damages property."],
+                    answer: "Recklessly damages property.",
+                    explanation: "Criminal Mischief (28.03) requires an *Intentional or Knowing* mental state. Recklessly damaging property is a separate, lesser offense under 28.04."
+                },
+                {
+                    question: "A person intentionally makes graffiti markings on a wall without the owner's consent. What offense is this?",
+                    options: ["Criminal Mischief (a)(3)", "Criminal Mischief (a)(1)", "Graffiti (28.08)", "Both A and C are possible charges"],
+                    answer: "Both A and C are possible charges",
+                    explanation: "The conduct fits 28.03(a)(3) (makes markings). If the markings use paint, marker, or etching, it *also* fits 28.08 (Graffiti). The actor could be prosecuted under either."
+                },
+                {
+                    question: "A person intentionally tampers with a stop sign, causing a loss of $50. What offense level?",
+                    options: ["Class C Misdemeanor", "Class B Misdemeanor", "Class A Misdemeanor", "State Jail Felony"],
+                    answer: "Class C Misdemeanor",
+                    explanation: "Sec. 28.03(b)(1)(A) states the offense is a Class C misdemeanor if the pecuniary loss is less than $100."
+                },
+                {
+                    question: "A person I/K damages property, causing $1,000 in loss. What offense level?",
+                    options: ["Class C Misdemeanor", "Class B Misdemeanor", "Class A Misdemeanor", "State Jail Felony"],
+                    answer: "Class A Misdemeanor",
+                    explanation: "Sec. 28.03(b)(3)(A) states the offense is a Class A misdemeanor if the loss is $750 or more but less than $2,500."
+                },
+                {
+                    question: "A person I/K damages a fence used to contain cattle, causing $1,000 in loss. What offense level?",
+                    options: ["Class B Misdemeanor", "Class A Misdemeanor", "State Jail Felony", "Felony of the Third Degree"],
+                    answer: "State Jail Felony",
+                    explanation: "Sec. 28.03(b)(4)(C) makes it a State Jail Felony, even if loss is < $2,500, if the property was a fence for livestock."
+                },
+                {
+                    question: "A person I/K damages a habitation with a firearm, causing $1,000 in loss. What offense level?",
+                    options: ["Class A Misdemeanor", "State Jail Felony", "Felony of the Third Degree", "Felony of the Second Degree"],
+                    answer: "State Jail Felony",
+                    explanation: "Sec. 28.03(b)(4)(B) makes it a State Jail Felony if loss is < $2,500 but the property is a habitation damaged by a firearm or explosive weapon."
+                },
+                {
+                    question: "A person I/K damages a car while trying to remove its catalytic converter, causing $1,000 in loss. What offense level?",
+                    options: ["Class A Misdemeanor", "State Jail Felony", "Felony of the Third Degree", "Felony of the Second Degree"],
+                    answer: "State Jail Felony",
+                    explanation: "Sec. 28.03(b)(4)(E) makes it a State Jail Felony, if loss is < $30,000, and the damage occurred during removal of a catalytic converter."
+                },
+                {
+                    question: "A person I/K damages property, causing $40,000 in loss. What offense level?",
+                    options: ["Class A Misdemeanor", "State Jail Felony", "Felony of the Third Degree", "Felony of the Second Degree"],
+                    answer: "Felony of the Third Degree",
+                    explanation: "Sec. 28.03(b)(5)(A) makes it a Third Degree Felony if the loss is $30,000 or more but less than $150,000."
+                },
+                {
+                    question: "A person discharges a firearm and kills a horse belonging to another. What offense level?",
+                    options: ["Class A Misdemeanor", "State Jail Felony", "Felony of the Third Degree", "Felony of the Second Degree"],
+                    answer: "Felony of the Third Degree",
+                    explanation: "Sec. 28.03(b)(5)(B) makes it a Third Degree Felony if the actor 'causes the death of... one or more horses' by discharging a firearm."
+                },
+                {
+                    question: "A person I/K tampers with an ATM, causing $1,000 loss but also interrupting access to it. What is the *highest* offense level?",
+                    options: ["Class A Misdemeanor", "State Jail Felony", "Felony of the Third Degree", "Felony of the Second Degree"],
+                    answer: "Felony of the Third Degree",
+                    explanation: "Sec. 28.03(b)(5)(C) makes it a Third Degree Felony if the actor 'causes... impairment or interruption of access to an automated teller machine, regardless of the amount'."
+                },
+                {
+                    question: "A person I/K damages property, causing $200,000 in loss. What offense level?",
+                    options: ["State Jail Felony", "Felony of the Third Degree", "Felony of the Second Degree", "Felony of the First Degree"],
+                    answer: "Felony of the Second Degree",
+                    explanation: "Sec. 28.03(b)(6)(A) makes it a Second Degree Felony if the loss is $150,000 or more but less than $300,000."
+                },
+                {
+                    question: "A person damages a habitation, causing $5,000 loss, *while committing* Criminal Trespass (30.05). What offense level?",
+                    options: ["State Jail Felony", "Felony of the Third Degree", "Felony of the Second Degree", "Felony of the First Degree"],
+                    answer: "Felony of the Second Degree",
+                    explanation: "Sec. 28.03(b)(6)(B) makes it a Second Degree Felony if loss is $1,000 - $299,999, property is a habitation, AND it occurred during a 30.05 violation."
+                },
+                {
+                    question: "A person I/K damages property, causing $350,000 in loss. What offense level?",
+                    options: ["State Jail Felony", "Felony of the Third Degree", "Felony of the Second Degree", "Felony of the First Degree"],
+                    answer: "Felony of the First Degree",
+                    explanation: "Sec. 28.03(b)(7) makes it a First Degree Felony if the loss is $300,000 or more."
+                },
+                {
+                    question: "A person introduces 'mad cow disease' into a herd of livestock. What offense level?",
+                    options: ["State Jail Felony", "Felony of the Third Degree", "Felony of the Second Degree", "Felony of the First Degree"],
+                    answer: "Felony of the First Degree",
+                    explanation: "Sec. 28.03(i) makes it a First Degree Felony, notwithstanding (b), if damage is to livestock by introducing bovine spongiform encephalopathy."
+                },
+                {
+                    question: "A person damages a place of worship, causing $5,000 in loss. What offense level?",
+                    options: ["Class A Misdemeanor", "State Jail Felony", "Felony of the Third Degree", "Felony of the Second Degree"],
+                    answer: "State Jail Felony",
+                    explanation: "Sec. 28.03(f) makes it a State Jail Felony if damage is $750-$30,000 and inflicted on a place of worship."
+                },
+                {
+                    question: "A person damages a public elementary school, causing $10,000 in loss. What offense level?",
+                    options: ["Class A Misdemeanor", "State Jail Felony", "Felony of the Third Degree", "Felony of the Second Degree"],
+                    answer: "State Jail Felony",
+                    explanation: "Sec. 28.03(h) makes it a State Jail Felony if damage is $750-$30,000 and inflicted on a public or private elementary or secondary school."
+                },
+                {
+                    question: "A person damages transportation communications equipment, causing $10,000 in loss. What offense level?",
+                    options: ["State Jail Felony", "Felony of the Third Degree", "Felony of the Second Degree", "Felony of the First Degree"],
+                    answer: "Felony of the Third Degree",
+                    explanation: "Sec. 28.03(j) makes it a Third Degree Felony if the property is transportation comms equip and the loss is < $150,000."
+                },
+                {
+                    question: "A person damages copper wiring connected to a critical infrastructure facility, causing an interruption. The loss is $10,000. What offense level?",
+                    options: ["State Jail Felony", "Felony of the Third Degree", "Felony of the Second Degree", "Felony of the First Degree"],
+                    answer: "Felony of the Third Degree",
+                    explanation: "Sec. 28.03(l) makes it a Third Degree Felony to damage copper components of a critical infrastructure facility, causing impairment."
+                },
+                {
+                    question: "When can pecuniary losses from Criminal Mischief (28.03) be aggregated?",
+                    options: ["If they occur within 30 days.", "If they are against the same victim.", "If they are pursuant to one scheme or continuing course of conduct.", "They can never be aggregated."],
+                    answer: "If they are pursuant to one scheme or continuing course of conduct.",
+                    explanation: "Sec. 28.03(e) allows aggregation 'pursuant to one scheme or continuing course of conduct'."
+                },
+                {
+                    question: "A person, without consent, recklessly spray-paints a car. What offense is this?",
+                    options: ["Criminal Mischief", "Reckless Damage or Destruction", "Graffiti", "No offense, must be intentional or knowing."],
+                    answer: "Reckless Damage or Destruction",
+                    explanation: "Sec. 28.04(a) covers recklessly damaging property. Criminal Mischief (28.03) and Graffiti (28.08) both require an *intentional or knowing* mental state."
+                },
+                {
+                    question: "What is the penalty for Reckless Damage or Destruction (28.04)?",
+                    options: ["Class C Misdemeanor", "Class B Misdemeanor", "Class A Misdemeanor", "State Jail Felony"],
+                    answer: "Class C Misdemeanor",
+                    explanation: "Sec. 28.04(b) states: 'An offense under this section is a Class C misdemeanor.'"
+                },
+                {
+                    question: "Is it a defense to Arson or Criminal Mischief that the actor co-owns the property?",
+                    options: ["Yes, if they own 50% or more.", "No, it is no defense if another person also has an interest that the actor is not entitled to infringe.", "Yes, an owner cannot damage their own property.", "No, it is never a defense."],
+                    answer: "No, it is no defense if another person also has an interest that the actor is not entitled to infringe.",
+                    explanation: "Sec. 28.05 states it is no defense that the actor has an interest 'if another person also has an interest that the actor is not entitled to infringe.'"
+                },
+                {
+                    question: "How is pecuniary loss calculated for *damaged* property under 28.06?",
+                    options: ["Fair market value.", "Replacement cost.", "Cost of repairing or restoring.", "The greater of repair or replacement."],
+                    answer: "Cost of repairing or restoring.",
+                    explanation: "Sec. 28.06(b) states loss for damaged property 'is the cost of repairing or restoring the damaged property'."
+                },
+                {
+                    question: "How is pecuniary loss calculated for *destroyed* property under 28.06?",
+                    options: ["Cost of repair.", "Fair market value at time/place of destruction, or replacement cost if FMV can't be ascertained.", "The original purchase price.", "The lowest estimate of three repair shops."],
+                    answer: "Fair market value at time/place of destruction, or replacement cost if FMV can't be ascertained.",
+                    explanation: "Sec. 28.06(a) provides this two-part standard for destroyed property."
+                },
+                {
+                    question: "How is pecuniary loss calculated for a destroyed document that is evidence of a debt?",
+                    options: ["The cost to print a new document.", "The amount due and collectible at maturity, less any part satisfied.", "The greatest economic loss the owner might suffer.", "It is deemed to be $750."],
+                    answer: "The amount due and collectible at maturity, less any part satisfied.",
+                    explanation: "Sec. 28.06(c)(1) provides this specific method for documents that are evidence of a debt."
+                },
+                {
+                    question: "How is pecuniary loss calculated for a destroyed document that is *not* evidence of a debt (e.g., a will)?",
+                    options: ["The cost to print a new document.", "The amount due and collectible at maturity.", "The greatest amount of economic loss that the owner might reasonably suffer.", "It is deemed to be $750."],
+                    answer: "The greatest amount of economic loss that the owner might reasonably suffer.",
+                    explanation: "Sec. 28.06(c)(2) provides this standard for other types of documents."
+                },
+                {
+                    question: "If the pecuniary loss for Criminal Mischief *cannot be ascertained*, what is the amount deemed to be?",
+                    options: ["Less than $100 (Class C)", "$100 - $749 (Class B)", "$750 - $2,499 (Class A)", "Greater than $2,500 (SJF)"],
+                    answer: "$750 - $2,499 (Class A)",
+                    explanation: "Sec. 28.06(d) states if loss cannot be ascertained, it 'is deemed to be greater than $750 but less than $2,500.'"
+                },
+                {
+                    question: "If an actor proves they had a legal interest in destroyed property, what happens to the pecuniary loss amount?",
+                    options: ["The case is dismissed.", "The charge is reduced by one level.", "The value of the actor's interest is deducted from the loss.", "Nothing, the full loss is used."],
+                    answer: "The value of the actor's interest is deducted from the loss.",
+                    explanation: "Sec. 28.06(e)(1) states 'the value of the interest so proven shall be deducted from... the amount of pecuniary loss if the property is destroyed'."
+                },
+                {
+                    question: "If an actor proves they had a 50% interest in *damaged* property, what happens to the pecuniary loss amount?",
+                    options: ["The loss is reduced by 50%.", "The loss is deducted by the full value of the property.", "The case is dismissed.", "Nothing, this only applies to destroyed property."],
+                    answer: "The loss is reduced by 50%.",
+                    explanation: "Sec. 28.06(e)(2) states for damaged property, the loss is deducted 'to the extent of an amount equal to the ratio the value of the interest bears to the total value of the property'."
+                },
+                {
+                    question: "What is 'Railroad property' as defined in 28.07?",
+                    options: ["Only the train tracks.", "Only the locomotives and railroad cars.", "A train, car, track, bridge, or right-of-way owned or used by a railroad.", "Any property within 100 feet of a track."],
+                    answer: "A train, car, track, bridge, or right-of-way owned or used by a railroad.",
+                    explanation: "Sec. 28.07(a)(1) provides a broad definition including trains, cars, equipment, safety devices, tracks, rails, bridges, and right-of-ways."
+                },
+                {
+                    question: "A person throws a rock at a train, causing no damage. What offense level?",
+                    options: ["No offense", "Class C Misdemeanor", "Class B Misdemeanor", "Class A Misdemeanor"],
+                    answer: "Class B Misdemeanor",
+                    explanation: "Sec. 28.07(b)(1) makes it an offense to 'throw an object... at a train'. Sec. 28.07(c) states this is a Class B Misdemeanor."
+                },
+                {
+                    question: "A person throws a rock at a train, causing bodily injury to a passenger. What offense level?",
+                    options: ["Class B Misdemeanor", "Class A Misdemeanor", "State Jail Felony", "Felony of the Third Degree"],
+                    answer: "Felony of the Third Degree",
+                    explanation: "Sec. 28.07(c) enhances the offense to a Third Degree Felony 'if the person causes bodily injury to another'."
+                },
+                {
+                    question: "A person tampers with a railroad switch, causing $10,000 in loss. What offense level?",
+                    options: ["Class A Misdemeanor", "State Jail Felony", "Felony of the Third Degree", "Felony of the Second Degree"],
+                    answer: "State Jail Felony",
+                    explanation: "Sec. 28.07(e) follows the value ladder. A loss of $10,000 ($2,500 - $29,999) is a State Jail Felony per (e)(3)."
+                },
+                {
+                    question: "A person places an obstruction on a railroad track, causing $350,000 in loss. What offense level?",
+                    options: ["State Jail Felony", "Felony of the Third Degree", "Felony of the Second Degree", "Felony of the First Degree"],
+                    answer: "Felony of the First Degree",
+                    explanation: "Sec. 28.07(e)(6) follows the value ladder. A loss of $300,000 or more is a First Degree Felony."
+                },
+                {
+                    question: "Who is exempt from the railroad trespass offense under 28.07(b)(2)(A)?",
+                    options: ["Passengers with a valid ticket.", "Railroad employees or union reps acting under the Railway Labor Act.", "Anyone crossing the tracks at a designated crossing.", "Police officers in pursuit."],
+                    answer: "Railroad employees or union reps acting under the Railway Labor Act.",
+                    explanation: "Sec. 28.07(f) provides this specific exception."
+                },
+                {
+                    question: "A person spray-paints a building, causing $500 in loss. What offense level?",
+                    options: ["Class C Misdemeanor", "Class B Misdemeanor", "Class A Misdemeanor", "State Jail Felony"],
+                    answer: "Class B Misdemeanor",
+                    explanation: "Sec. 28.08(b)(2) follows the value ladder. A loss of $500 ($100 - $749) is a Class B Misdemeanor."
+                },
+                {
+                    question: "A person spray-paints a public monument, causing $1,000 in loss. What offense level?",
+                    options: ["Class B Misdemeanor", "Class A Misdemeanor", "State Jail Felony", "Felony of the Third Degree"],
+                    answer: "State Jail Felony",
+                    explanation: "Sec. 28.08(d) enhances Graffiti to a State Jail Felony if loss is $750-$30,000 and the property is a public monument."
+                },
+                {
+                    question: "What is the key difference between Criminal Mischief (a)(3) and Graffiti (a)?",
+                    options: ["The value of the property.", "The culpability (I/K vs. Reckless).", "Graffiti specifies the tool (paint, marker, etching device), while CM (a)(3) is just 'markings'.", "Graffiti can only be on a building."],
+                    answer: "Graffiti specifies the tool (paint, marker, etching device), while CM (a)(3) is just 'markings'.",
+                    explanation: "Sec. 28.08(a) is more specific, listing '(1) paint; (2) an indelible marker; or (3) an etching or engraving device'. Sec. 28.03(a)(3) is broader, covering all 'markings'."
+                },
+                {
+                    question: "Can losses from Graffiti (28.08) be aggregated?",
+                    options: ["No, each act is a separate offense.", "Yes, if against the same owner.", "Yes, if pursuant to one scheme or continuing course of conduct.", "Only if the total exceeds $30,000."],
+                    answer: "Yes, if pursuant to one scheme or continuing course of conduct.",
+                    explanation: "Sec. 28.08(c) allows aggregation, using the same language as Criminal Mischief: 'pursuant to one scheme or continuing course of conduct'."
+                },
+                {
+                    question: "Under 28.09, what is a 'Critical infrastructure facility'?",
+                    options: ["Any government building.", "A hospital or school.", "An electrical power generating facility, substation, switching station, control center, or transmission facility.", "Any property fenced and marked 'No Trespassing'."],
+                    answer: "An electrical power generating facility, substation, switching station, control center, or transmission facility.",
+                    explanation: "Sec. 28.09(a)(1) provides this specific definition related to the power grid."
+                },
+                {
+                    question: "Under 28.09, what constitutes an 'Extended power outage'?",
+                    options: ["Any outage over 30 minutes.", "An outage lasting 2 or more hours OR affecting 1,000 or more meters.", "An outage affecting an entire city.", "An outage costing $100,000 or more."],
+                    answer: "An outage lasting 2 or more hours OR affecting 1,000 or more meters.",
+                    explanation: "Sec. 28.09(a)(5) provides this two-part definition."
+                },
+                {
+                    question: "What is 'Cyber attack' defined as in 28.09?",
+                    options: ["Using the internet to commit fraud.", "An attempt to damage, disrupt, or gain unauthorized access to a computer, network, or system.", "Sending a phishing email.", "Any offense using a computer."],
+                    answer: "An attempt to damage, disrupt, or gain unauthorized access to a computer, network, or system.",
+                    explanation: "Sec. 28.09(a)(2) provides this specific definition."
+                },
+                {
+                    question: "A person I/K damages a substation, causing an outage that affects 1,500 meters. What offense level?",
+                    options: ["State Jail Felony", "Felony of the Third Degree", "Felony of the Second Degree", "Felony of the First Degree"],
+                    answer: "Felony of the Second Degree",
+                    explanation: "Sec. 28.09(b) defines the offense (damage CIF + extended outage), and 28.09(c) sets the base penalty as a Second Degree Felony."
+                },
+                {
+                    question: "A person uses a drone to drop an explosive on a power plant, causing an extended outage. What offense level?",
+                    options: ["State Jail Felony", "Felony of the Third Degree", "Felony of the Second Degree", "Felony of the First Degree"],
+                    answer: "Felony of the First Degree",
+                    explanation: "Sec. 28.09(c)(2) enhances the F2 offense to an F1 if the actor 'uses a... drone... or explosive weapon' in the commission."
+                },
+                {
+                    question: "A person I/K damages a substation with a cyber attack, causing an outage for 3 hours. What offense level?",
+                    options: ["State Jail Felony", "Felony of the Third Degree", "Felony of the Second Degree", "Felony of the First Degree"],
+                    answer: "Felony of the First Degree",
+                    explanation: "The offense is damaging a CIF + extended outage (F2). It is enhanced to F1 under 28.09(c)(2) because the actor used a 'cyber attack'."
+                },
+                {
+                    question: "A person I/K damages a substation, causing an outage for 1 hour. What offense?",
+                    options: ["Damaging CIF (28.09)", "Criminal Mischief (28.03)", "No offense", "Reckless Damage (28.04)"],
+                    answer: "Criminal Mischief (28.03)",
+                    explanation: "The offense under 28.09 requires an *extended* power outage (2+ hours or 1000+ meters). Since this was not met, the charge would be Criminal Mischief (28.03), graded by the value of the damage."
+                },
+                {
+                    question: "A person I/K damages a power substation, causing $150,000 in loss and an extended power outage. What offense level?",
+                    options: ["Felony of the Third Degree", "Felony of the Second Degree", "Felony of the First Degree", "Can be charged as F2 (CM) or F1 (Damaging CIF)"],
+                    answer: "Felony of the First Degree",
+                    explanation: "The conduct fits Damaging CIF (28.09), which is an F2. However, 28.09(c)(1) enhances it to an F1 if the pecuniary damage is $100,000 or more."
+                },
+                {
+                    question: "If conduct fits Damaging CIF (28.09) and also Criminal Mischief (28.03), can the actor be prosecuted under both?",
+                    options: ["No, only 28.09.", "No, only 28.03.", "Yes, the actor may be prosecuted under this section, the other law, or both.", "Only if the actor agrees to a plea."],
+                    answer: "Yes, the actor may be prosecuted under this section, the other law, or both.",
+                    explanation: "Sec. 28.09(d) explicitly states the actor 'may be prosecuted under this section, the other law, or both.'"
+                },
+                {
+                    question: "A person commits misdemeanor Criminal Mischief (Class B) *while in the course of* committing Smuggling of Persons (20.05(a)(2)). What is the new penalty for the Criminal Mischief?",
+                    options: ["Class A Misdemeanor", "State Jail Felony", "Felony of the Third Degree", "No change, it's still a Class B."],
+                    answer: "Felony of the Third Degree",
+                    explanation: "Sec. 28.10 increases the punishment for any misdemeanor or SJF under Ch. 28 'to the punishment for a felony of the third degree' if committed during 20.05(a)(2)."
+                },
+                {
+                    question: "Which of these is NOT a definition found in 28.01 (Definitions)?",
+                    options: ["Habitation", "Building", "Explosive Weapon", "Open-space land"],
+                    answer: "Explosive Weapon",
+                    explanation: "'Explosive weapon' is defined later in Sec. 28.03(g)(1) (Criminal Mischief) and 28.09(a)(4) (Damaging CIF)."
+                },
+                {
+                    question: "A person starts a fire to destroy a vehicle, *knowing* it is subject to a mortgage. What offense?",
+                    options: ["Arson (a)(2)(C)", "Criminal Mischief", "Reckless Damage", "No offense if they are the primary owner."],
+                    answer: "Arson (a)(2)(C)",
+                    explanation: "Sec. 28.02(a)(2)(C) makes it Arson to burn a building/hab/vehicle 'knowing that it is subject to a mortgage or other security interest.'"
+                },
+                {
+                    question: "A person starts a fire to destroy a building, *knowing* it has their friend's property inside. What offense?",
+                    options: ["Arson (a)(2)(E)", "Criminal Mischief", "Arson (a-2)", "No offense, the friend's property is not the building."],
+                    answer: "Arson (a)(2)(E)",
+                    explanation: "Sec. 28.02(a)(2)(E) makes it Arson to burn a building/hab/vehicle 'knowing that it has located within it property belonging to another.'"
+                },
+                {
+                    question: "Under 28.03, a person I/K impairs a public water supply, causing $500 loss. What offense level?",
+                    options: ["Class B Misdemeanor", "Class A Misdemeanor", "State Jail Felony", "Felony of the Third Degree"],
+                    answer: "Class A Misdemeanor",
+                    explanation: "Sec. 28.03(b)(3)(B) makes it a Class A Misdemeanor to 'impairment or interruption of any public water supply... regardless of the amount of the pecuniary loss.'"
+                },
+                {
+                    question: "Under 28.03, a person I/K impairs a public *gas* supply, causing $500 loss. What offense level?",
+                    options: ["Class B Misdemeanor", "Class A Misdemeanor", "State Jail Felony", "Felony of the Third Degree"],
+                    answer: "State Jail Felony",
+                    explanation: "Sec. 28.03(b)(4)(D) makes it a State Jail Felony to 'impairment or interruption of... public gas supply' if loss is < $30,000."
+                },
+                {
+                    question: "Under 28.03, a person I/K impairs a public *power* supply, causing $500 loss. What offense level?",
+                    options: ["Class A Misdemeanor", "State Jail Felony", "Felony of the Third Degree", "Felony of the Second Degree"],
+                    answer: "Felony of the Third Degree",
+                    explanation: "Sec. 28.03(b)(5)(D) makes it a Third Degree Felony to 'impairment or interruption of property used for public power supply' if loss is < $150,000."
+                },
+                {
+                    question: "What is the presumption in 28.03(c) regarding utility tampering?",
+                    options: ["The person is presumed to be the owner.", "The person receiving the benefit is presumed to have *knowingly* tampered if the meter is bypassed.", "The person is presumed to be reckless.", "The loss is presumed to be over $30,000."],
+                    answer: "The person receiving the benefit is presumed to have *knowingly* tampered if the meter is bypassed.",
+                    explanation: "Sec. 28.03(c) creates a presumption of a *knowing* mental state for the beneficiary if the meter is diverted, stopped, or bypassed."
+                },
+                {
+                    question: "What is the definition of 'Firearm' for Sec. 28.03 (Crim. Mischief)?",
+                    options: ["Any deadly weapon.", "A handgun, rifle, or shotgun.", "Has the meaning assigned by Section 46.01.", "Any device that can expel a projectile."],
+                    answer: "Has the meaning assigned by Section 46.01.",
+                    explanation: "Sec. 28.03(g)(2) explicitly states '\"Firearm\" has the meaning assigned by Section 46.01.'"
+                },
+                {
+                    question: "An agricultural worker, while performing regular duties, has to kill a horse. Is this an offense under 28.03?",
+                    options: ["Yes, F3 for killing a horse.", "No, Sec. 28.03(k) provides an exception for regular agricultural labor duties.", "Yes, but it's a Class A Misdemeanor.", "Only if they used a firearm."],
+                    answer: "No, Sec. 28.03(k) provides an exception for regular agricultural labor duties.",
+                    explanation: "Sec. 28.03(k)(2) states that (a)(1) or (2) does not apply if the horse was killed in the course of 'regular agricultural labor duties and practices.'"
+                },
+                {
+                    question: "A person enters railroad property, knowing it is railroad property, to take a shortcut. What offense level?",
+                    options: ["No offense", "Class C Misdemeanor", "Class B Misdemeanor", "Class A Misdemeanor"],
+                    answer: "Class C Misdemeanor",
+                    explanation: "Sec. 28.07(b)(2)(A) is the offense of 'enters or remains on railroad property'. Sec. 28.07(d) states this is a Class C Misdemeanor."
+                },
+                {
+                    question: "What is an 'indelible marker' under Sec. 28.08 (Graffiti)?",
+                    options: ["Any permanent marker.", "A marker with a tip wider than 1/4 inch.", "A device that makes a mark with paint or ink formulated to be difficult to erase or remove.", "A marker containing aerosol paint."],
+                    answer: "A device that makes a mark with paint or ink formulated to be difficult to erase or remove.",
+                    explanation: "Sec. 28.08(e)(3) provides this specific definition."
+                },
+                {
+                    question: "What is an 'etching or engraving device' under Sec. 28.08 (Graffiti)?",
+                    options: ["A key or a knife.", "A device that makes a delineation or impression, regardless of manufacturer's intended use.", "A sandblaster.", "Any sharp object."],
+                    answer: "A device that makes a delineation or impression, regardless of manufacturer's intended use.",
+                    explanation: "Sec. 28.08(e)(2) provides this broad definition."
+                },
+                {
+                    question: "A person I/K damages a substation with a cyber attack, causing an outage for 3 hours. What offense level?",
+                    options: ["State Jail Felony", "Felony of the Third Degree", "Felony of the Second Degree", "Felony of the First Degree"],
+                    answer: "Felony of the First Degree",
+                    explanation: "The offense is damaging a CIF + extended outage (F2). It is enhanced to F1 under 28.09(c)(2) because the actor used a 'cyber attack'."
+                },
+                {
+                    question: "A person I/K damages a substation, causing an outage for 1 hour. What offense?",
+                    options: ["Damaging CIF (28.09)", "Criminal Mischief (28.03)", "No offense", "Reckless Damage (28.04)"],
+                    answer: "Criminal Mischief (28.03)",
+                    explanation: "The offense under 28.09 requires an *extended* power outage (2+ hours or 1000+ meters). Since this was not met, the charge would be Criminal Mischief (28.03), graded by the value of the damage."
+                },
+                {
+                    question: "A person I/K damages a power substation, causing $150,000 in loss and an extended power outage. What offense level?",
+                    options: ["Felony of the Third Degree", "Felony of the Second Degree", "Felony of the First Degree", "Can be charged as F2 (CM) or F1 (Damaging CIF)"],
+                    answer: "Felony of the First Degree",
+                    explanation: "The conduct fits Damaging CIF (28.09), which is an F2. However, 28.09(c)(1) enhances it to an F1 if the pecuniary damage is $100,000 or more."
+                },
+                {
+                    question: "A person commits SJF-level Graffiti *while in the course of* committing Smuggling of Persons (20.05(a)(2)). What is the new penalty for the Graffiti?",
+                    options: ["State Jail Felony", "Felony of the Third Degree", "Felony of the Second Degree", "Felony of the First Degree"],
+                    answer: "Felony of the Third Degree",
+                    explanation: "Sec. 28.10 enhances any misdemeanor or state jail felony under Ch. 28 to a Third Degree Felony if committed during Smuggling of Persons."
+                },
+                {
+                    question: "A person I/K damages a habitation with an explosive weapon, causing $1,000 loss. What offense level?",
+                    options: ["Class A Misdemeanor", "State Jail Felony", "Felony of the Third Degree", "Felony of the Second Degree"],
+                    answer: "State Jail Felony",
+                    explanation: "Sec. 28.03(b)(4)(B) makes it a State Jail Felony if loss is < $2,500 but the property is a habitation damaged by a firearm or *explosive weapon*."
+                },
+                {
+                    question: "What is an 'explosive weapon' under 28.03(g)?",
+                    options: ["Any firearm.", "A device designed, made, or adapted to inflict SBI, death, or substantial property damage.", "A device designed to start a fire in a time-delayed manner.", "Both B and C are correct."],
+                    answer: "Both B and C are correct.",
+                    explanation: "Sec. 28.03(g)(1) provides a broad definition, which includes (A) bombs/grenades, etc., and (C) 'a device designed, made, or adapted to start a fire in a time-delayed manner.'"
+                },
+                {
+                    question: "What is 'copper wiring' defined as in 28.03(g)?",
+                    options: ["Any wire made of pure copper.", "Insulated or noninsulated wire or cable of at least 50% copper.", "Only wire used for public power supply.", "Wire or cable that is colored copper."],
+                    answer: "Insulated or noninsulated wire or cable of at least 50% copper.",
+                    explanation: "Sec. 28.03(g)(6) defines it as 'insulated or noninsulated wire or cable that consists of at least 50 percent copper...'"
+                },
+                {
+                    question: "What is 'transportation communications equipment' under 28.03(g)?",
+                    options: ["A vehicle's radio system.", "A cell phone tower near a highway.", "An official traffic-control signal or railroad sign.", "A GPS device in a commercial truck."],
+                    answer: "An official traffic-control signal or railroad sign.",
+                    explanation: "Sec. 28.03(g)(7)(A) defines it as 'an official traffic-control device, railroad sign or signal, or traffic-control signal...'"
+                },
+                {
+                    question: "A soldier, in the actual discharge of official duties, must kill a horse. Is this an offense under 28.03?",
+                    options: ["Yes, F3 for killing a horse.", "No, Sec. 28.03(k) provides an exception for official military duties.", "Yes, but it's a Class A Misdemeanor.", "Only if they used a firearm."],
+                    answer: "No, Sec. 28.03(k) provides an exception for official military duties.",
+                    explanation: "Sec. 28.03(k)(1) states that (a)(1) or (2) does not apply if the horse was killed in the course of 'actual discharge of official duties as a member of the United States armed forces...'"
+                },
+                {
+                    question: "What does 'tamper' mean in Sec. 28.07 (Interference with Railroad Property)?",
+                    options: ["To damage or destroy.", "To move, alter, or interfere with railroad property.", "To steal railroad property.", "To be on railroad property without consent."],
+                    answer: "To move, alter, or interfere with railroad property.",
+                    explanation: "Sec. 28.07(a)(2) provides this specific definition: '\"Tamper\" means to move, alter, or interfere with railroad property.'"
+                },
+                {
+                    question: "A person I/K tampers with railroad property, causing $50 in loss. What offense level?",
+                    options: ["Class C Misdemeanor", "Class B Misdemeanor", "No offense, loss is too low.", "State Jail Felony"],
+                    answer: "Class C Misdemeanor",
+                    explanation: "Sec. 28.07(e) states the offense under (b)(2)(B) is a Class C misdemeanor 'unless the person causes pecuniary loss of $100 or more...'"
+                },
+                {
+                    question: "A person I/K tampers with railroad property, causing $150 in loss. What offense level?",
+                    options: ["Class C Misdemeanor", "Class B Misdemeanor", "Class A Misdemeanor", "State Jail Felony"],
+                    answer: "Class B Misdemeanor",
+                    explanation: "Sec. 28.07(e)(1) follows the value ladder. A loss of $100 - $749 is a Class B Misdemeanor."
+                },
+                {
+                    question: "A person uses an etching device to scratch graffiti on a community center window, causing $1,000 loss. What offense level?",
+                    options: ["Class A Misdemeanor", "State Jail Felony", "Felony of the Third Degree", "Class B Misdemeanor"],
+                    answer: "State Jail Felony",
+                    explanation: "Sec. 28.08(a)(3) covers etching devices. Sec. 28.08(d) enhances the offense to SJF if loss is $750-$30,000 and it's on a community center."
+                },
+                {
+                    question: "What is the definition of 'School' in Sec. 28.08 (Graffiti)?",
+                    options: ["Any institution of higher education.", "A private or public elementary or secondary school.", "Only public schools.", "Any place of learning, including daycares."],
+                    answer: "A private or public elementary or secondary school.",
+                    explanation: "Sec. 28.08(e)(5) provides this specific definition for the Graffiti statute."
+                }
+            ];
+
+
+            // --- Shuffle and Load Quiz ---
+            const quizContainer = document.getElementById('quiz-container');
+            const checkAnswersBtn = document.getElementById('check-answers-btn');
+            const retakeQuizBtn = document.getElementById('retake-quiz-btn');
+            const quizResultsDiv = document.getElementById('quiz-results');
+            const quizScoreEl = document.getElementById('quiz-score');
+            const quizPercentageEl = document.getElementById('quiz-percentage');
+
+            function loadQuiz() {
+                // Shuffle the quiz data for a new order each time
+                const shuffledQuizData = [...quizData].sort(() => Math.random() - 0.5);
+                
+                quizContainer.innerHTML = ''; // Clear previous questions
+                
+                shuffledQuizData.forEach((q, index) => {
+                    const questionDiv = document.createElement('div');
+                    questionDiv.className = 'quiz-question';
+                    
+                    // Store the original question index to check the answer later
+                    const originalIndex = quizData.indexOf(q);
+                    
+                    // Use standard string concatenation and escape characters
+                    let optionsHtml = '';
+                    q.options.forEach(option => {
+                        const escapedOptionValue = option.replace(/'/g, "&apos;").replace(/"/g, "&quot;");
+                        const escapedOptionText = option.replace(/</g, "&lt;").replace(/>/g, "&gt;");
+                        optionsHtml += '<label class="block"><input type="radio" name="q' + index + '" value="' + escapedOptionValue + '" data-original-index="' + originalIndex + '" class="mr-2">' + escapedOptionText + '</label>';
+                    });
+                    
+                    const escapedQuestion = q.question.replace(/</g, "&lt;").replace(/>/g, "&gt;");
+
+                    questionDiv.innerHTML =
+                        '<p class="font-semibold mb-2">' + (index + 1) + '. ' + escapedQuestion + '</p>' +
+                        '<div class="space-y-2">' + optionsHtml + '</div>' +
+                        '<div class="feedback hidden mt-2 p-2 rounded-lg text-sm"></div>';
+                    
+                    quizContainer.appendChild(questionDiv);
+                });
+            }
+
+            loadQuiz(); // Initial load
+
+            checkAnswersBtn.addEventListener('click', () => {
+                let score = 0;
+                const totalQuestions = quizData.length;
+                const questions = quizContainer.querySelectorAll('.quiz-question');
+
+                questions.forEach((questionDiv, index) => {
+                    const selected = questionDiv.querySelector('input[name="q' + index + '"]:checked');
+                    const feedback = questionDiv.querySelector('.feedback');
+                    const radioButtons = questionDiv.querySelectorAll('input[name="q' + index + '"]');
+                    
+                    feedback.classList.remove('hidden', 'correct', 'incorrect', 'unanswered');
+                    
+                    if (selected) {
+                        const originalIndex = selected.dataset.originalIndex;
+                        const q = quizData[originalIndex];
+                        
+                        const escapedAnswer = q.answer.replace(/'/g, "&apos;").replace(/"/g, "&quot;");
+                        const escapedExplanation = q.explanation.replace(/</g, "&lt;").replace(/>/g, "&gt;");
+                        const escapedCorrectAnswerText = q.answer.replace(/</g, "&lt;").replace(/>/g, "&gt;");
+
+                        if (selected.value === escapedAnswer) {
+                            score++;
+                            feedback.innerHTML = '<strong>Correct!</strong> ' + escapedExplanation;
+                            feedback.classList.add('correct');
+                        } else {
+                            feedback.innerHTML = '<strong>Incorrect.</strong> The correct answer is "' + escapedCorrectAnswerText + '". ' + escapedExplanation;
+                            feedback.classList.add('incorrect');
+                        }
+                    } else {
+                        // Find the original question to show the answer
+                        const firstRadio = questionDiv.querySelector('input[name="q' + index + '"]');
+                         if (firstRadio) {
+                            const originalIndex = firstRadio.dataset.originalIndex;
+                            const q = quizData[originalIndex];
+                            const escapedExplanation = q.explanation.replace(/</g, "&lt;").replace(/>/g, "&gt;");
+                            const escapedCorrectAnswerText = q.answer.replace(/</g, "&lt;").replace(/>/g, "&gt;");
+                            feedback.innerHTML = '<strong>Unanswered.</strong> The correct answer is "' + escapedCorrectAnswerText + '". ' + escapedExplanation;
+                        } else {
+                             feedback.innerHTML = '<strong>Error:</strong> Could not load feedback.';
+                        }
+                        feedback.classList.add('unanswered');
+                    }
+                    
+                    feedback.classList.remove('hidden');
+                    
+                    radioButtons.forEach(radio => {
+                        radio.disabled = true;
+                    });
+                });
+
+                // Calculate and display results
+                const percentage = ((score / totalQuestions) * 100).toFixed(0);
+                quizScoreEl.textContent = 'Your Score: ' + score + ' / ' + totalQuestions;
+                quizPercentageEl.textContent = 'Percentage: ' + percentage + '%';
+                
+                quizResultsDiv.classList.remove('hidden');
+                checkAnswersBtn.classList.add('hidden');
+                retakeQuizBtn.classList.remove('hidden');
+            });
+
+            retakeQuizBtn.addEventListener('click', () => {
+                quizResultsDiv.classList.add('hidden');
+                retakeQuizBtn.classList.add('hidden');
+                checkAnswersBtn.classList.remove('hidden');
+                loadQuiz();
+            });
+
+            // --- RESOURCES LIST ---
+            const resources = [
+                 { name: "Texas Penal Code - Official Site", url: "https://statutes.capitol.texas.gov/Default.aspx?Code=PE" },
+                 { name: "Penal Code Ch. 28 - Arson, Crim. Mischief...", url: "https://statutes.capitol.texas.gov/Docs/PE/htm/PE.28.htm" },
+                 { name: "Penal Code Sec. 20.05 - Smuggling of Persons", url: "https://statutes.capitol.texas.gov/Docs/PE/htm/PE.20.htm#20.05" },
+                 { name: "Penal Code Sec. 30.05 - Criminal Trespass", url: "https://statutes.capitol.texas.gov/Docs/PE/htm/PE.30.htm#30.05" },
+                 { name: "Penal Code Sec. 46.01 - Weapons Definitions", url: "https://statutes.capitol.texas.gov/Docs/PE/htm/PE.46.htm#46.01" }
+            ];
+            const resourcesList = document.getElementById('resources-list');
+            resources.sort((a, b) => a.name.localeCompare(b.name));
+            resources.forEach(res => {
+                const link = document.createElement('a');
+                link.href = res.url;
+                link.target = '_blank';
+                link.rel = 'noopener noreferrer';
+                link.className = 'text-red-600 hover:underline p-2 bg-gray-50 rounded-md block hover:bg-gray-100';
+                link.innerHTML = '<i class="fas fa-external-link-alt mr-2"></i>' + res.name;
+                resourcesList.appendChild(link);
+            });
+        });
+    </script>
+</body>
+</html>
+

@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ch. 2 Study Guide: Texas Penal Code</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet">
+    <style>
+        :root {
+            --header-bg: #1f2937;
+            --bg-color: #f3f4f6;
+            --tab-active-bg: #3b82f6;
+            --tab-active-text: #ffffff;
+            --card-bg: #ffffff;
+            --text-color: #111827;
+            --link-color: #2563eb;
+        }
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            font-family: 'Inter', sans-serif;
+        }
+        @import url('https://rsms.me/inter/inter.css');
+        .tab-content { display: none; }
+        .tab-content.active { display: block; }
+        .tab.active {
+            background-color: var(--tab-active-bg);
+            color: var(--tab-active-text);
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .tab {
+            transition: all 0.3s ease-in-out;
+        }
+        .definition-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 1rem;
+        }
+        .definition-item {
+            background-color: #f9fafb;
+            padding: 0.75rem;
+            border-radius: 0.5rem;
+            border: 1px solid #e5e7eb;
+        }
+        .definition-term {
+            font-weight: 600;
+            color: #111827;
+        }
+        .definition-desc {
+            font-size: 0.875rem;
+            color: #4b5563;
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Header -->
+    <header class="bg-gray-800 text-white p-4 shadow-md">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-2xl font-bold">
+                <i class="fas fa-balance-scale mr-2"></i>Ch. 2: Burden of Proof
+            </h1>
+            <a href="index.html" class="text-sm text-blue-300 hover:text-blue-100 hover:underline">
+                <i class="fas fa-arrow-left mr-1"></i> Back to Main Page
+            </a>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container mx-auto p-4 md:p-6">
+        <!-- Tab Navigation -->
+        <div class="mb-6 bg-white rounded-lg shadow-md overflow-x-auto">
+            <nav id="tabs" class="flex flex-row space-x-1 p-2">
+                <button data-tab="ch2-provisions" class="tab active flex-1 md:flex-none flex items-center justify-center px-4 py-2 text-sm font-semibold rounded-lg text-gray-600 hover:bg-blue-100">
+                    <i class="fas fa-book mr-2"></i> <span class="hidden md:inline">Key Sections</span>
+                </button>
+                <button data-tab="ch2-concepts" class="tab flex-1 md:flex-none flex items-center justify-center px-4 py-2 text-sm font-semibold rounded-lg text-gray-600 hover:bg-blue-100">
+                    <i class="fas fa-list-ul mr-2"></i> <span class="hidden md:inline">Key Concepts</span>
+                </button>
+                <button data-tab="knowledge-check" class="tab flex-1 md:flex-none flex items-center justify-center px-4 py-2 text-sm font-semibold rounded-lg text-gray-600 hover:bg-blue-100">
+                    <i class="fas fa-question-circle mr-2"></i> <span class="hidden md:inline">Knowledge Check</span>
+                </button>
+                <button data-tab="resources" class="tab flex-1 md:flex-none flex items-center justify-center px-4 py-2 text-sm font-semibold rounded-lg text-gray-600 hover:bg-blue-100">
+                    <i class="fas fa-link mr-2"></i> <span class="hidden md:inline">Resources</span>
+                </button>
+            </nav>
+        </div>
+
+        <!-- Tab Content -->
+        <div id="tab-contents">
+            <!-- Ch. 2: Key Sections Tab -->
+            <div id="ch2-provisions" class="tab-content active space-y-6">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-xl font-bold mb-4 border-b pb-2"><a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.2.htm#2.01" target="_blank" class="text-blue-600 hover:underline">Sec. 2.01. Proof Beyond a Reasonable Doubt</a></h2>
+                    <p class="text-sm text-gray-700 mb-2">This is the cornerstone of the criminal justice system.</p>
+                    <ul class="list-disc list-inside text-sm text-gray-700 space-y-1">
+                        <li>All persons are <strong>presumed innocent</strong>.</li>
+                        <li>No person can be convicted unless <strong>each element</strong> of the offense is proved <strong>beyond a reasonable doubt</strong>.</li>
+                        <li>The fact that a person was arrested, confined, or indicted gives rise to <strong>no inference of guilt</strong> at trial.</li>
+                    </ul>
+                </div>
+
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <h2 class="text-xl font-bold mb-4 border-b pb-2"><a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.2.htm#2.02" target="_blank" class="text-blue-600 hover:underline">Sec. 2.02. Exception</a></h2>
+                        <ul class="list-disc list-inside text-sm text-gray-700 space-y-1">
+                            <li><strong>Label:</strong> "It is an exception to the application of . . . ."</li>
+                            <li><strong>Prosecutor's Burden:</strong> The prosecutor MUST <strong>negate the existence of the exception</strong> in the charging document (accusation).</li>
+                            <li><strong>At Trial:</strong> The prosecutor MUST prove <strong>beyond a reasonable doubt</strong> that the defendant's conduct does *not* fall within the exception.</li>
+                            <li>(This is a high burden for the State).</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <h2 class="text-xl font-bold mb-4 border-b pb-2"><a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.2.htm#2.03" target="_blank" class="text-blue-600 hover:underline">Sec. 2.03. Defense</a></h2>
+                        <ul class="list-disc list-inside text-sm text-gray-700 space-y-1">
+                            <li><strong>Label:</strong> "It is a defense to prosecution . . . ."</li>
+                            <li><strong>Prosecutor's Burden:</strong> The prosecutor is <strong>NOT</strong> required to negate the defense in the charging document.</li>
+                            <li><strong>At Trial:</strong> The issue is only submitted to the jury if <strong>evidence is admitted supporting the defense</strong> (the defendant must "raise" the defense).</li>
+                            <li><strong>Jury Charge:</strong> If submitted, the court tells the jury that a <strong>reasonable doubt on the issue requires acquittal</strong>. (i.e., the State must disprove the defense beyond a reasonable doubt).</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <h2 class="text-xl font-bold mb-4 border-b pb-2"><a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.2.htm#2.04" target="_blank" class="text-blue-600 hover:underline">Sec. 2.04. Affirmative Defense</a></h2>
+                        <ul class="list-disc list-inside text-sm text-gray-700 space-y-1">
+                            <li><strong>Label:</strong> "It is an affirmative defense to prosecution . . . ."</li>
+                            <li><strong>Prosecutor's Burden:</strong> The prosecutor is <strong>NOT</strong> required to negate the defense in the charging document.</li>
+                            <li><strong>At Trial:</strong> The issue is only submitted to the jury if <strong>evidence is admitted supporting the defense</strong>.</li>
+                            <li><strong>Jury Charge:</strong> If submitted, the court tells the jury that the <strong>defendant must prove the affirmative defense by a preponderance of evidence</strong>.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-xl font-bold mb-4 border-b pb-2"><a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.2.htm#2.05" target="_blank" class="text-blue-600 hover:underline">Sec. 2.05. Presumption</a></h2>
+                    <p class="text-sm text-gray-700 mb-4">This section details how juries must be instructed about legal presumptions.</p>
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div>
+                            <h3 class="font-semibold text-gray-800">Presumption (Against the Defendant)</h3>
+                            <ul class="list-disc list-inside text-sm text-gray-700 space-y-1 mt-2">
+                                <li>The facts giving rise to the presumption must be proven <strong>beyond a reasonable doubt</strong>.</li>
+                                <li>If proven, the jury <strong>MAY find</strong> the presumed element exists, but it is <strong>NOT BOUND</strong> to so find.</li>
+                                <li>The State must still prove all *other* elements beyond a reasonable doubt.</li>
+                                <li>If the jury has a reasonable doubt about the *facts* giving rise to the presumption, the presumption fails.</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 class="font-semibold text-gray-800">Presumption in Favor of the Defendant</h3>
+                            <ul class="list-disc list-inside text-sm text-gray-700 space-y-1 mt-2">
+                                <li>The presumption applies *unless* the State proves <strong>beyond a reasonable doubt</strong> that the facts giving rise to it do *not* exist.</li>
+                                <li>If the State fails to do this, the jury <strong>MUST find</strong> the presumed fact exists.</li>
+                                <li>If the jury has a reasonable doubt as to whether the presumed fact exists, the presumption applies and they must consider it to exist.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Ch. 2: Key Concepts Tab -->
+            <div id="ch2-concepts" class="tab-content space-y-6">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-xl font-bold mb-4 border-b pb-2">Key Concepts (Ch. 2)</h2>
+                    <p class="text-sm text-gray-700 mb-4">Chapter 2 does not contain a list of definitions like Chapter 1. Instead, it defines concepts by the burden of proof required for each.</p>
+                    <div class="definition-grid">
+                        <div class="definition-item"><p class="definition-term">Proof Beyond a Reasonable Doubt</p><p class="definition-desc">The high standard of proof the *State* must meet for every element of an offense to convict a defendant. It is the highest standard of proof in law.</p></div>
+                        <div class="definition-item"><p class="definition-term">Preponderance of Evidence</p><p class="definition-desc">The standard of proof where a party must show it is "more likely than not" (greater than 50%) that the fact is true. This is the burden the *defendant* has for an affirmative defense.</p></div>
+                        <div class="definition-item"><p class="definition-term">Exception (Sec. 2.02)</p><p class="definition-desc">A provision the *prosecutor must negate* in the charging document and *disprove beyond a reasonable doubt* at trial. The burden is entirely on the State.</p></div>
+                        <div class="definition-item"><p class="definition-term">Defense (Sec. 2.03)</p><p class="definition-desc">A provision that, once supported by evidence, the *prosecutor must disprove beyond a reasonable doubt*. The defendant only needs to raise the issue; the State must defeat it.</p></div>
+                        <div class="definition-item"><p class="definition-term">Affirmative Defense (Sec. 2.04)</p><p class="definition-desc">A provision that, once supported by evidence, the *defendant must prove by a preponderance of evidence*. The burden of proof shifts to the defendant for this issue.</p></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Knowledge Check Tab -->
+            <div id="knowledge-check" class="tab-content">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-2xl font-bold mb-4">Knowledge Check (Ch. 2)</h2>
+                    <p class="mb-6 text-gray-600">Test your understanding of the material.</p>
+                    <div id="quiz-container" class="space-y-8">
+                        <!-- Questions will be dynamically inserted here -->
+                    </div>
+                    <!-- New Results Div -->
+                    <div id="quiz-results" class="hidden mt-8 text-center">
+                        <h3 class="text-2xl font-bold" id="quiz-score"></h3>
+                        <p class="text-lg text-gray-700" id="quiz-percentage"></p>
+                    </div>
+                    <!-- Button Container -->
+                    <div class="mt-8 text-center space-x-4">
+                        <button id="check-answers-btn" class="bg-blue-600 text-white font-bold py-2 px-6 rounded-lg hover:bg-blue-700 transition-colors">Submit Answers</button>
+                        <button id="retake-quiz-btn" class="hidden bg-gray-600 text-white font-bold py-2 px-6 rounded-lg hover:bg-gray-700 transition-colors">Retake Quiz</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Resources Tab -->
+            <div id="resources" class="tab-content">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-2xl font-bold mb-4">External Resources</h2>
+                    <p class="mb-6 text-gray-600">Quick links to official Texas statutes.</p>
+                    <div id="resources-list" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 text-sm">
+                        <!-- Links will be dynamically inserted here -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const tabs = document.querySelectorAll('#tabs button');
+            const tabContents = document.querySelectorAll('.tab-content');
+
+            tabs.forEach(tab => {
+                tab.addEventListener('click', () => {
+                    tabs.forEach(t => t.classList.remove('active'));
+                    tabContents.forEach(c => c.classList.remove('active'));
+                    tab.classList.add('active');
+                    document.getElementById(tab.dataset.tab).classList.add('active');
+                });
+            });
+
+            // --- QUIZ DATA ---
+            const quizData = [
+                {
+                    question: "Under Sec. 2.01, what is the standard of proof required to convict a person of an offense?",
+                    options: ["Preponderance of evidence", "Clear and convincing evidence", "Proof beyond a reasonable doubt", "Probable cause"],
+                    answer: "Proof beyond a reasonable doubt",
+                    explanation: "Sec. 2.01 states 'no person may be convicted of an offense unless each element of the offense is proved beyond a reasonable doubt.'"
+                },
+                {
+                    question: "According to Sec. 2.01, the fact that a defendant has been arrested or indicted...",
+                    options: ["...gives rise to no inference of guilt at his trial.", "...can be used as evidence of guilt.", "...creates a presumption of guilt.", "...proves the first element of the offense."],
+                    answer: "...gives rise to no inference of guilt at his trial.",
+                    explanation: "Sec. 2.01 explicitly states that arrest or indictment 'gives rise to no inference of guilt at his trial.'"
+                },
+                {
+                    question: "Which of the following requires the prosecutor to *negate* its existence in the charging document?",
+                    options: ["A Defense", "An Affirmative Defense", "An Exception", "A Presumption"],
+                    answer: "An Exception",
+                    explanation: "Sec. 2.02(b) states 'The prosecuting attorney must negate the existence of an exception in the accusation charging commission of the offense...'"
+                },
+                {
+                    question: "A provision labeled 'It is a defense to prosecution...' is submitted to the jury. What must the court charge the jury?",
+                    options: ["That the defendant must prove the defense by a preponderance of evidence.", "That a reasonable doubt on the issue requires the defendant be acquitted.", "That the defense can be ignored if the State's evidence is strong.", "That the defendant must prove the defense beyond a reasonable doubt."],
+                    answer: "That a reasonable doubt on the issue requires the defendant be acquitted.",
+                    explanation: "Sec. 2.03(d) states the court shall charge that 'a reasonable doubt on the issue requires that the defendant be acquitted.' This means the State must disprove the defense BARD."
+                },
+                {
+                    question: "What is the defendant's burden of proof for an 'Affirmative Defense' under Sec. 2.04?",
+                    options: ["Proof beyond a reasonable doubt", "Preponderance of evidence", "Clear and convincing evidence", "The defendant has no burden of proof."],
+                    answer: "Preponderance of evidence",
+                    explanation: "Sec. 2.04(d) charges that 'the defendant must prove the affirmative defense by a preponderance of evidence.'"
+                },
+                {
+                    question: "When is the issue of an *affirmative defense* submitted to the jury?",
+                    options: ["Automatically, in all cases.", "Only if the prosecutor agrees.", "Only if evidence is admitted supporting the defense.", "Only if the defendant testifies."],
+                    answer: "Only if evidence is admitted supporting the defense.",
+                    explanation: "Sec. 2.04(c) (and 2.03(c) for regular defenses) states the issue is not submitted 'unless evidence is admitted supporting the defense.'"
+                },
+                {
+                    question: "If a presumption is established *against* the defendant (Sec 2.05a), and the facts giving rise to it are proven BARD, the jury:",
+                    options: ["MUST find the presumed element exists.", "MAY find the presumed element exists, but is not bound to.", "must acquit the defendant.", "must find the defendant guilty."],
+                    answer: "MAY find the presumed element exists, but is not bound to.",
+                    explanation: "Sec. 2.05(a)(2)(B) states the jury 'may find that the element of the offense sought to be presumed exists, but it is not bound to so find.' This is a 'permissive' presumption."
+                },
+                {
+                    question: "If a presumption is established *in favor* of the defendant (Sec 2.05b), when does the presumption fail?",
+                    options: ["When the defendant fails to prove it by a preponderance of evidence.", "When the State proves BARD that the facts giving rise to it do not exist.", "When the State proves by a preponderance of evidence it does not exist.", "When the jury has a reasonable doubt about it."],
+                    answer: "When the State proves BARD that the facts giving rise to it do not exist.",
+                    explanation: "Sec. 2.05(b)(2)(A) states the presumption applies *unless* 'the state proves beyond a reasonable doubt that the facts giving rise to the presumption do not exist.'"
+                },
+                {
+                    question: "What is the key difference between a 'Defense' (2.03) and an 'Affirmative Defense' (2.04) regarding burden of proof?",
+                    options: ["There is no difference.", "For a Defense, the State must disprove it BARD. For an Affirmative Defense, the Defendant must prove it by a preponderance.", "For a Defense, the Defendant must prove it BARD. For an Affirmative Defense, the State must disprove it.", "A Defense is negated in the indictment, but an Affirmative Defense is not."],
+                    answer: "For a Defense, the State must disprove it BARD. For an Affirmative Defense, the Defendant must prove it by a preponderance.",
+                    explanation: "This is the central distinction. The burden of proof shifts to the defendant for an affirmative defense (by a preponderance), while the State retains the burden to disprove a regular defense (BARD)."
+                },
+                {
+                    question: "If a jury has a reasonable doubt as to whether the presumed fact (in favor of the defendant) exists...",
+                    options: ["...the presumption fails and cannot be considered.", "...the defendant must prove it by a preponderance of evidence.", "...the presumption applies and the jury must consider the presumed fact to exist.", "...the State must prove the non-existence of the fact."],
+                    answer: "...the presumption applies and the jury must consider the presumed fact to exist.",
+                    explanation: "Sec. 2.05(b)(2)(D) states 'if the jury has a reasonable doubt as to whether the presumed fact exists, the presumption applies and the jury must consider the presumed fact to exist.'"
+                },
+                {
+                    question: "What is the State's burden of proof at trial regarding an 'Exception' (Sec. 2.02)?",
+                    options: ["Prove by a preponderance that the exception does not apply.", "Prove beyond a reasonable doubt that the defendant's conduct does not fall within the exception.", "The defendant must prove they fall within the exception.", "The State has no burden regarding exceptions."],
+                    answer: "Prove beyond a reasonable doubt that the defendant's conduct does not fall within the exception.",
+                    explanation: "Sec. 2.02(b) places a high burden on the State to not only negate the exception in the charging document but also 'prove beyond a reasonable doubt that the defendant or defendant's conduct does not fall within the exception.'"
+                },
+                {
+                    question: "Per Sec. 2.03(b), is the prosecuting attorney required to negate the existence of a 'Defense' in the charging document?",
+                    options: ["Yes, always.", "Only if it is a felony offense.", "No, the prosecutor is not required to negate a defense in the accusation.", "Yes, they must negate all defenses and exceptions."],
+                    answer: "No, the prosecutor is not required to negate a defense in the accusation.",
+                    explanation: "Sec. 2.03(b) explicitly states, 'The prosecuting attorney is not required to negate the existence of a defense in the accusation...' This is a key difference from an 'Exception'."
+                },
+                {
+                    question: "What happens if a ground of defense in a penal law is *not* plainly labeled 'It is a defense...' (Sec. 2.03e)?",
+                    options: ["It is disregarded by the court.", "It is treated as an affirmative defense.", "It has the procedural and evidentiary consequences of a defense anyway.", "The defendant must petition to have it recognized."],
+                    answer: "It has the procedural and evidentiary consequences of a defense anyway.",
+                    explanation: "Sec. 2.03(e) is a catch-all, stating that even unlabeled defenses are treated as 'Defenses' for procedural and evidentiary purposes (i.e., the State must disprove them BARD if raised by evidence)."
+                },
+                {
+                    question: "For a presumption *against* the defendant (Sec. 2.05a), what must be proven BARD before the jury can even consider the presumption?",
+                    options: ["The defendant's guilt.", "The facts that give rise to the presumption.", "The defendant's prior criminal history.", "That the defendant will not testify."],
+                    answer: "The facts that give rise to the presumption.",
+                    explanation: "Sec. 2.05(a)(2)(A) instructs the court to charge the jury 'that the facts giving rise to the presumption must be proven beyond a reasonable doubt.'"
+                },
+                {
+                    question: "For a presumption *against* the defendant (Sec. 2.05a), what happens if the jury has a reasonable doubt about the *facts* giving rise to the presumption?",
+                    options: ["The presumption fails and the jury shall not consider it.", "The jury must find the defendant guilty.", "The burden shifts to the defendant to disprove the presumption.", "The presumption is automatically applied."],
+                    answer: "The presumption fails and the jury shall not consider it.",
+                    explanation: "Sec. 2.05(a)(2)(D) states, 'if the jury has a reasonable doubt as to the existence of a fact or facts giving rise to the presumption, the presumption fails and the jury shall not consider the presumption for any purpose.'"
+                },
+                {
+                    question: "If a jury finds that a presumed element (against the defendant) exists, what else must the State prove?",
+                    options: ["Nothing, the presumption is sufficient for conviction.", "The defendant's motive.", "Each of the other elements of the offense charged BARD.", "That the defendant's act was intentional."],
+                    answer: "Each of the other elements of the offense charged BARD.",
+                    explanation: "Sec. 2.05(a)(2)(C) clarifies that a presumption only covers one element, and the State must still 'prove beyond a reasonable doubt each of the other elements of the offense charged.'"
+                },
+                {
+                    question: "If a presumption is *in favor* of the defendant (Sec. 2.05b), and the State fails to prove BARD that the facts giving rise to it do *not* exist, what MUST the jury do?",
+                    options: ["They must find that the presumed fact exists.", "They may find the presumed fact exists, but are not bound to.", "They must acquit the defendant.", "They must disregard the presumption."],
+                    answer: "They must find that the presumed fact exists.",
+                    explanation: "Sec. 2.05(b)(2)(B) states that if the State fails its burden, 'the jury must find that the presumed fact exists.' This is a mandatory presumption, unlike the permissive one for the State."
+                },
+                {
+                    question: "Even if a jury finds that a presumed fact *in favor* of the defendant does *not* exist (Sec. 2.05b), what is the State's remaining burden?",
+                    options: ["The State has no further burden.", "The State must prove the defendant's guilt by a preponderance.", "The State must still prove beyond a reasonable doubt each of the elements of the offense charged.", "The defendant is automatically found guilty."],
+                    answer: "The State must still prove beyond a reasonable doubt each of the elements of the offense charged.",
+                    explanation: "Sec. 2.05(b)(2)(C) makes it clear that defeating a presumption for the defendant does not equal guilt. The State must *still* prove its entire case BARD."
+                },
+                {
+                    question: "Is the prosecuting attorney required to negate the existence of an 'Affirmative Defense' in the charging document (Sec. 2.04b)?",
+                    options: ["Yes, just like an Exception.", "No, the prosecutor is not required to negate it.", "Only if the defendant provides notice.", "Yes, but only for felonies."],
+                    answer: "No, the prosecutor is not required to negate it.",
+                    explanation: "Sec. 2.04(b), just like for a 'Defense', states, 'The prosecuting attorney is not required to negate the existence of an affirmative defense in the accusation...'"
+                },
+                {
+                    question: "When is the issue of a presumption (against the defendant) *NOT* submitted to the jury, even if there is evidence of the basic facts (Sec. 2.05a)?",
+                    options: ["When the defendant objects.", "When the judge decides the presumption is unfair.", "When the court is satisfied that the evidence as a whole *clearly precludes* a finding BARD of the presumed fact.", "When it is a misdemeanor case."],
+                    answer: "When the court is satisfied that the evidence as a whole *clearly precludes* a finding BARD of the presumed fact.",
+                    explanation: "Sec. 2.05(a)(1) provides this judicial check, allowing a judge to withhold the presumption if the total evidence makes it impossible for a jury to find the presumed fact BARD."
+                },
+                {
+                    question: "Does Sec. 2.02, which defines the burden of proof for 'Exceptions,' apply to offenses that were enacted *before* the penal code's effective date (Sec. 2.02c)?",
+                    options: ["Yes, it applies to all offenses.", "No, it does not affect exceptions for offenses enacted prior to the code.", "Only if the old offense was a felony.", "Yes, it applies retroactively."],
+                    answer: "No, it does not affect exceptions for offenses enacted prior to the code.",
+                    explanation: "Sec. 2.02(c) explicitly grandfathers old exceptions, stating, 'This section does not affect exceptions applicable to offenses enacted prior to the effective date of this code.'"
+                },
+                {
+                    question: "When is the issue of a presumption *in favor* of the defendant NOT submitted to the jury, even if there is supporting evidence (Sec. 2.05b)?",
+                    options: ["When the defendant objects.", "When the State proves by a preponderance that the presumption is false.", "When the court is satisfied that the evidence as a whole *clearly precludes* a finding BARD of the presumed fact.", "It must always be submitted if there is any evidence."],
+                    answer: "When the court is satisfied that the evidence as a whole *clearly precludes* a finding BARD of the presumed fact.",
+                    explanation: "Sec. 2.05(b)(1) gives the judge the same power to withhold a presumption *for* the defendant as *against* them (Sec 2.05(a)(1)), if the evidence as a whole makes the presumption impossible to find BARD."
+                }
+            ];
+
+            const quizContainer = document.getElementById('quiz-container');
+            const checkAnswersBtn = document.getElementById('check-answers-btn');
+            const retakeQuizBtn = document.getElementById('retake-quiz-btn');
+            const quizResultsDiv = document.getElementById('quiz-results');
+            const quizScoreEl = document.getElementById('quiz-score');
+            const quizPercentageEl = document.getElementById('quiz-percentage');
+
+            function loadQuiz() {
+                // Shuffle the quiz data for a new order each time
+                const shuffledQuizData = [...quizData].sort(() => Math.random() - 0.5);
+                
+                quizContainer.innerHTML = ''; // Clear previous questions
+                
+                shuffledQuizData.forEach((q, index) => {
+                    const questionDiv = document.createElement('div');
+                    questionDiv.className = 'quiz-question';
+                    
+                    // Store the original question index to check the answer later
+                    const originalIndex = quizData.indexOf(q);
+                    
+                    let optionsHtml = q.options.map(option => `
+                        <label class="block"><input type="radio" name="q${index}" value="${option}" data-original-index="${originalIndex}" class="mr-2">${option}</label>
+                    `).join('');
+                    
+                    questionDiv.innerHTML = `
+                        <p class="font-semibold mb-2">${index + 1}. ${q.question}</p>
+                        <div class="space-y-2">${optionsHtml}</div>
+                        <div class="feedback hidden mt-2 p-2 rounded-lg text-sm"></div>
+                    `;
+                    quizContainer.appendChild(questionDiv);
+                });
+            }
+
+
+            loadQuiz(); // Initial load
+
+            checkAnswersBtn.addEventListener('click', () => {
+                let score = 0;
+                const totalQuestions = quizData.length;
+                const questions = quizContainer.querySelectorAll('.quiz-question');
+
+                questions.forEach((questionDiv, index) => {
+                    const selected = questionDiv.querySelector(`input[name="q${index}"]:checked`);
+                    const feedback = questionDiv.querySelector('.feedback');
+                    const radioButtons = questionDiv.querySelectorAll(`input[name="q${index}"]`);
+                    
+                    feedback.classList.remove('hidden', 'bg-green-100', 'text-green-800', 'bg-red-100', 'text-red-800', 'bg-yellow-100', 'text-yellow-800');
+                    
+                    if (selected) {
+                        const originalIndex = selected.dataset.originalIndex;
+                        const q = quizData[originalIndex];
+
+                        if (selected.value === q.answer) {
+                            score++;
+                            feedback.textContent = `Correct! ${q.explanation}`;
+                            feedback.classList.add('bg-green-100', 'text-green-800');
+                        } else {
+                            feedback.textContent = `Incorrect. The correct answer is "${q.answer}". ${q.explanation}`;
+                            feedback.classList.add('bg-red-100', 'text-red-800');
+                        }
+                    } else {
+                        // Find the original question to show the answer
+                        const firstRadio = questionDiv.querySelector(`input[name="q${index}"]`);
+                        const originalIndex = firstRadio.dataset.originalIndex;
+                        const q = quizData[originalIndex];
+                        
+                        feedback.textContent = `You did not answer this question. The correct answer is "${q.answer}". ${q.explanation}`;
+                        feedback.classList.add('bg-yellow-100', 'text-yellow-800');
+                    }
+                    
+                    // Disable radio buttons after submitting
+                    radioButtons.forEach(radio => {
+                        radio.disabled = true;
+                    });
+                });
+
+                // Calculate and display results
+                const percentage = ((score / totalQuestions) * 100).toFixed(0);
+                quizScoreEl.textContent = `Your Score: ${score} / ${totalQuestions}`;
+                quizPercentageEl.textContent = `Percentage: ${percentage}%`;
+                
+                quizResultsDiv.classList.remove('hidden');
+                checkAnswersBtn.classList.add('hidden');
+                retakeQuizBtn.classList.remove('hidden');
+            });
+
+            retakeQuizBtn.addEventListener('click', () => {
+                // Hide results and retake button
+                quizResultsDiv.classList.add('hidden');
+                retakeQuizBtn.classList.add('hidden');
+                
+                // Show submit button
+                checkAnswersBtn.classList.remove('hidden');
+                
+                // Reload the quiz (clears answers and feedback)
+                loadQuiz();
+            });
+
+
+            // --- RESOURCES LIST ---
+            const resources = [
+                { name: "Texas Penal Code - Official Site", url: "https://statutes.capitol.texas.gov/Default.aspx?Code=PE" },
+                { name: "Penal Code Ch. 2 - Burden of Proof", url: "https://statutes.capitol.texas.gov/Docs/PE/htm/PE.2.htm" }
+            ];
+            const resourcesList = document.getElementById('resources-list');
+            resources.sort((a, b) => a.name.localeCompare(b.name));
+            resources.forEach(res => {
+                const link = document.createElement('a'); // Fixed bug: was new Image()
+                link.href = res.url;
+                link.target = '_blank';
+                link.className = 'text-blue-600 hover:underline block p-4 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors';
+                link.textContent = res.name;
+                resourcesList.appendChild(link);
+            });
+        });
+    </script>
+</body>
+</html>
+
